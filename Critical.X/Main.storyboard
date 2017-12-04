@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6T2-1q-Sub">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueExtras.ttc">
+            <string>HelveticaNeue-CondensedBlack</string>
+            <string>HelveticaNeue-CondensedBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Fluids & Blood Products-->
+        <scene sceneID="YIc-Y9-Bjj">
+            <objects>
+                <tableViewController title="Fluids &amp; Blood Products" id="Cau-C6-sd1" customClass="CollapsibleTableViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="08p-M3-FTX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mXJ-z8-PfS">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mXJ-z8-PfS" id="0SJ-9T-4ak">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.73725490196078436" green="0.23137254901960785" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cau-C6-sd1" id="rTi-2X-ayO"/>
+                            <outlet property="delegate" destination="Cau-C6-sd1" id="1Rr-er-0bx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiU-ys-QzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="-30"/>
+        </scene>
+        <!--PedsStoryboard-->
+        <scene sceneID="0ma-UA-CL0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PedsStoryboard" id="f3O-iJ-r5y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDl-Vf-bso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="-418"/>
+        </scene>
+        <!--Ventilator Modes-->
+        <scene sceneID="LTE-Bh-Bq7">
+            <objects>
+                <viewController title="Ventilator Modes" id="WhO-To-vhH" customClass="ViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bnO-Q6-mUf"/>
+                        <viewControllerLayoutGuide type="bottom" id="mHM-RC-qV3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MyG-9T-wHN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VentilatorImage" translatesAutoresizingMaskIntoConstraints="NO" id="5Tc-1H-UVm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFn-Zr-VQu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rBH-fW-184">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical X" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYR-pu-kUD">
+                                            <rect key="frame" x="23" y="139.33333333333334" width="72.666666666666671" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRa-oz-t2f">
+                                            <rect key="frame" x="316" y="43" width="39" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="mM2-Ce-f0C"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                            <state key="normal" title="Close">
+                                                <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="dismissVentilatorModeVC:" destination="WhO-To-vhH" eventType="touchUpInside" id="lZv-xA-QIc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FRa-oz-t2f" firstAttribute="top" secondItem="rBH-fW-184" secondAttribute="top" constant="43" id="75P-mh-hn1"/>
+                                        <constraint firstItem="iYR-pu-kUD" firstAttribute="leading" secondItem="rBH-fW-184" secondAttribute="leading" constant="23" id="K3y-VG-0y2"/>
+                                        <constraint firstAttribute="trailing" secondItem="FRa-oz-t2f" secondAttribute="trailing" constant="20" id="WTT-Ke-LFM"/>
+                                        <constraint firstItem="FRa-oz-t2f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rBH-fW-184" secondAttribute="leading" constant="20" symbolic="YES" id="bSR-YV-Cqy"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iYR-pu-kUD" secondAttribute="trailing" id="u9N-Pn-jpO"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ventilator Modes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZB-XJ-LG8">
+                                <rect key="frame" x="16" y="77" width="335" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zZB-XJ-LG8" firstAttribute="top" secondItem="bnO-Q6-mUf" secondAttribute="bottom" constant="33" id="1VU-fd-eRB"/>
+                            <constraint firstItem="mHM-RC-qV3" firstAttribute="top" secondItem="PFn-Zr-VQu" secondAttribute="bottom" constant="212" id="4YU-ty-LPv"/>
+                            <constraint firstItem="PFn-Zr-VQu" firstAttribute="top" secondItem="MyG-9T-wHN" secondAttribute="top" id="8DQ-PA-7lT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Tc-1H-UVm" secondAttribute="trailing" constant="-16" id="8d6-VC-6km"/>
+                            <constraint firstAttribute="trailing" secondItem="PFn-Zr-VQu" secondAttribute="trailing" id="APw-K9-B8S"/>
+                            <constraint firstItem="5Tc-1H-UVm" firstAttribute="top" secondItem="bnO-Q6-mUf" secondAttribute="bottom" constant="-44" id="DZv-rZ-bsV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zZB-XJ-LG8" secondAttribute="trailingMargin" id="aCf-Do-TBm"/>
+                            <constraint firstItem="mHM-RC-qV3" firstAttribute="top" secondItem="5Tc-1H-UVm" secondAttribute="bottom" constant="212" id="bMh-Nj-lyg"/>
+                            <constraint firstItem="PFn-Zr-VQu" firstAttribute="leading" secondItem="MyG-9T-wHN" secondAttribute="leading" id="hlC-Ix-dlD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="zZB-XJ-LG8" secondAttribute="leading" id="oWM-RG-qiY"/>
+                            <constraint firstItem="5Tc-1H-UVm" firstAttribute="leading" secondItem="MyG-9T-wHN" secondAttribute="leadingMargin" constant="-16" id="s04-Im-4j6"/>
+                            <constraint firstItem="iYR-pu-kUD" firstAttribute="top" secondItem="zZB-XJ-LG8" secondAttribute="bottom" constant="2.3333333333332007" id="vPr-El-VKQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vzi-cr-MVO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3K-HP-OlM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-30"/>
+        </scene>
+        <!--Stack Element View Controller-->
+        <scene sceneID="hNZ-zC-4r5">
+            <objects>
+                <viewController storyboardIdentifier="StackElement" id="5mo-Hp-gGl" customClass="StackElementViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Nh-2Q-grb"/>
+                        <viewControllerLayoutGuide type="bottom" id="sqL-no-mFO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xge-vS-hBV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-RY-NrR">
+                                <rect key="frame" x="0.0" y="32" width="379" height="766"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is assist controll" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGr-Hg-Z8i">
+                                        <rect key="frame" x="14" y="90" width="345" height="686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="686" id="3yp-vH-QKU"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-AM-r6u">
+                                        <rect key="frame" x="20" y="65" width="339" height="16.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vent Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sl0-NN-JnG">
+                                        <rect key="frame" x="20" y="30" width="339" height="25"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sl0-NN-JnG" secondAttribute="trailing" constant="20" symbolic="YES" id="1Cw-Ho-GeV"/>
+                                    <constraint firstItem="w9t-AM-r6u" firstAttribute="centerX" secondItem="fMb-RY-NrR" secondAttribute="centerX" id="75E-0V-qMD"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w9t-AM-r6u" secondAttribute="trailing" id="A4a-sz-yDx"/>
+                                    <constraint firstItem="AGr-Hg-Z8i" firstAttribute="trailing" secondItem="w9t-AM-r6u" secondAttribute="trailing" id="ApR-6t-lvI"/>
+                                    <constraint firstItem="AGr-Hg-Z8i" firstAttribute="leading" secondItem="fMb-RY-NrR" secondAttribute="leading" constant="14" id="IcA-cN-K7e"/>
+                                    <constraint firstAttribute="bottom" secondItem="AGr-Hg-Z8i" secondAttribute="bottom" constant="-10" id="K2H-jY-u98"/>
+                                    <constraint firstItem="Sl0-NN-JnG" firstAttribute="top" secondItem="fMb-RY-NrR" secondAttribute="topMargin" constant="10" id="XqD-i9-Shj"/>
+                                    <constraint firstItem="Sl0-NN-JnG" firstAttribute="leading" secondItem="fMb-RY-NrR" secondAttribute="leading" constant="20" id="YtE-wK-42w"/>
+                                    <constraint firstItem="w9t-AM-r6u" firstAttribute="top" secondItem="Sl0-NN-JnG" secondAttribute="bottom" constant="7.6666666666666643" id="Zu8-J3-YvC"/>
+                                    <constraint firstAttribute="trailing" secondItem="AGr-Hg-Z8i" secondAttribute="trailing" constant="20" id="ep8-qc-JUn"/>
+                                    <constraint firstItem="AGr-Hg-Z8i" firstAttribute="top" secondItem="w9t-AM-r6u" secondAttribute="bottom" constant="8.3333333333333286" id="qgV-4P-zfe"/>
+                                    <constraint firstItem="Sl0-NN-JnG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="w9t-AM-r6u" secondAttribute="leading" id="yCi-ri-dJ1"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.048314336499999999" green="0.78707819440000004" blue="0.55679882189999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="fMb-RY-NrR" secondAttribute="bottom" constant="-20" id="Iwa-Lb-eq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fMb-RY-NrR" secondAttribute="trailing" constant="-20" id="Q4w-4v-8s0"/>
+                            <constraint firstItem="fMb-RY-NrR" firstAttribute="top" secondItem="Xge-vS-hBV" secondAttribute="topMargin" constant="-12" id="gIo-e0-CoB"/>
+                            <constraint firstItem="fMb-RY-NrR" firstAttribute="leading" secondItem="Xge-vS-hBV" secondAttribute="leading" id="yYA-JW-yDm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q0a-Ql-0YJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="Sl0-NN-JnG" id="lKl-Zk-r7v"/>
+                        <outlet property="subTitle" destination="w9t-AM-r6u" id="riY-ks-mSN"/>
+                        <outlet property="textDetailLabel" destination="AGr-Hg-Z8i" id="Dox-Ho-M6u"/>
+                        <outlet property="ventCardView" destination="Xge-vS-hBV" id="1iW-dk-mb1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GB1-4B-1cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480.8" y="-30.295566502463057"/>
+        </scene>
+        <!--Critical Main Menu-->
+        <scene sceneID="fae-xy-RMQ">
+            <objects>
+                <tableViewController storyboardIdentifier="MainView" title="Critical Main Menu" id="Qsj-gV-d08" customClass="MenuTableViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hfi-st-Bfz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="Critical Brain Logo" id="iTw-uH-I1F">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <sections>
+                            <tableViewSection id="ve9-lF-wbQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="c2l-lb-GRz" detailTextLabel="u9m-ai-2t2" imageView="f1O-dv-fvy" rowHeight="41" style="IBUITableViewCellStyleSubtitle" id="UuL-Ms-BvO">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UuL-Ms-BvO" id="Xex-tJ-K8N">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="About Critical- X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c2l-lb-GRz">
+                                                    <rect key="frame" x="92" y="3" width="111.33333333333333" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rate Critica, Email Us, Disclaimer Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u9m-ai-2t2">
+                                                    <rect key="frame" x="92" y="23.333333333333332" width="222" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="Critical Brain Logo" id="f1O-dv-fvy">
+                                                    <rect key="frame" x="16" y="0.0" width="61" height="40.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qln-jI-2Ld" kind="presentation" id="8OO-vl-LGe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="R2k-UZ-tMp" detailTextLabel="DRn-uS-Igf" imageView="9bH-1x-6Ak" rowHeight="46" style="IBUITableViewCellStyleSubtitle" id="96p-1Q-e8E">
+                                        <rect key="frame" x="0.0" y="203" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="96p-1Q-e8E" id="4xX-aI-gz7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Airway Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R2k-UZ-tMp">
+                                                    <rect key="frame" x="91.000000000000014" y="5.9999999999999982" width="139.33333333333334" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Intubation, Difficult Airway Algorithms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DRn-uS-Igf">
+                                                    <rect key="frame" x="91" y="26.333333333333332" width="226" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Lungs" id="9bH-1x-6Ak">
+                                                    <rect key="frame" x="16" y="0.0" width="60" height="45.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="hkF-n6-Iai" detailTextLabel="bkk-Dq-PsO" imageView="nnC-8z-9G1" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Mg1-Mt-8P6">
+                                        <rect key="frame" x="0.0" y="249" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mg1-Mt-8P6" id="fJG-WD-7Sh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Hemodynamics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hkF-n6-Iai">
+                                                    <rect key="frame" x="91" y="9.9999999999999982" width="103.66666666666667" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="CVP, Shock, Invasive Monitoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bkk-Dq-PsO">
+                                                    <rect key="frame" x="90.999999999999986" y="33.333333333333329" width="189.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical--Hemodynamics-4" id="nnC-8z-9G1">
+                                                    <rect key="frame" x="16" y="0.0" width="60" height="59.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="oBi-Qn-05K" detailTextLabel="xmm-ba-yT4" imageView="ABr-rs-gZu" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="OCa-PM-1DY">
+                                        <rect key="frame" x="0.0" y="309" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OCa-PM-1DY" id="Tcn-n4-qvQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ACLS &amp; EKG's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oBi-Qn-05K">
+                                                    <rect key="frame" x="87" y="9.9999999999999982" width="92.333333333333329" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xmm-ba-yT4">
+                                                    <rect key="frame" x="87" y="33.333333333333329" width="46.333333333333336" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Heart" id="ABr-rs-gZu">
+                                                    <rect key="frame" x="16" y="0.0" width="56" height="59.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Bgd-Rx-jTt" detailTextLabel="7bM-mW-6sZ" imageView="fV2-ww-hri" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="IEc-VO-jyH">
+                                        <rect key="frame" x="0.0" y="369" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IEc-VO-jyH" id="RtP-Oh-ItL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fluids and Blood Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bgd-Rx-jTt">
+                                                    <rect key="frame" x="88.999999999999986" y="8.9999999999999982" width="176.66666666666666" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="PRBC's, 0.9 % NS, FFP, Albumin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7bM-mW-6sZ">
+                                                    <rect key="frame" x="88.999999999999986" y="30.333333333333332" width="185.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="CBC" id="fV2-ww-hri">
+                                                    <rect key="frame" x="16" y="0.0" width="58" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Cau-C6-sd1" kind="show" id="wR8-HS-kah">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="gjk-fh-pUk" detailTextLabel="Clx-qP-STa" imageView="2z8-OZ-RJZ" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="Sr6-X2-hSM">
+                                        <rect key="frame" x="0.0" y="424" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sr6-X2-hSM" id="vl3-5t-HbM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Labratory Values" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gjk-fh-pUk">
+                                                    <rect key="frame" x="86" y="8.9999999999999982" width="113.33333333333333" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.564653933" green="0.45339596269999999" blue="0.35711643100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="CMP, Chemistries, Coags, LFT's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Clx-qP-STa">
+                                                    <rect key="frame" x="86.000000000000014" y="30.333333333333332" width="187.33333333333334" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical-NEWLab-Values-5" id="2z8-OZ-RJZ">
+                                                    <rect key="frame" x="16" y="0.0" width="55" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="OtH-MA-69k" detailTextLabel="r2e-oT-dXu" imageView="REd-IU-wIh" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="9ZD-CW-ZIc">
+                                        <rect key="frame" x="0.0" y="479" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9ZD-CW-ZIc" id="hMQ-PN-nlS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="IABP Monitoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OtH-MA-69k">
+                                                    <rect key="frame" x="86" y="8.9999999999999982" width="109.66666666666667" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Timing &amp; Complications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r2e-oT-dXu">
+                                                    <rect key="frame" x="85.999999999999986" y="30.333333333333332" width="139.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical--IABP-6" id="REd-IU-wIh">
+                                                    <rect key="frame" x="16" y="0.0" width="55" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="BN8-tg-ccp" detailTextLabel="MCs-gF-g55" imageView="mlU-zY-hHg" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="Gq2-ee-kbX">
+                                        <rect key="frame" x="0.0" y="534" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gq2-ee-kbX" id="Buq-b0-yB6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Neuro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BN8-tg-ccp">
+                                                    <rect key="frame" x="85" y="8.9999999999999982" width="40" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Assessments, Stoke, GCS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MCs-gF-g55">
+                                                    <rect key="frame" x="85" y="30.333333333333332" width="152" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical Neuro-7" id="mlU-zY-hHg">
+                                                    <rect key="frame" x="16" y="0.0" width="54" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="X9k-Uu-L5B" detailTextLabel="2Yk-5a-CB4" imageView="ROz-nV-PfI" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="saL-J4-WYt">
+                                        <rect key="frame" x="0.0" y="589" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="saL-J4-WYt" id="Y21-IL-J40">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Pediatrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X9k-Uu-L5B">
+                                                    <rect key="frame" x="86" y="8.9999999999999982" width="67.666666666666671" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.91498154399999998" green="0.3783349097" blue="0.73496383430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Neonatal Resuscitation Algorithms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Yk-5a-CB4">
+                                                    <rect key="frame" x="86" y="30.333333333333332" width="204" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical-NRP-8" id="ROz-nV-PfI">
+                                                    <rect key="frame" x="16" y="0.0" width="55" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="f3O-iJ-r5y" kind="show" identifier="PedsSegue" id="ndh-PM-KmT">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="hTr-Rk-XSg" detailTextLabel="Mg2-Ft-zzn" imageView="Zit-6l-sBa" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="Fxs-Xf-Z50">
+                                        <rect key="frame" x="0.0" y="644" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fxs-Xf-Z50" id="uD1-Qt-YJJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Obstetrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hTr-Rk-XSg">
+                                                    <rect key="frame" x="85" y="8.9999999999999982" width="68.666666666666671" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fetal Heart Monitoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mg2-Ft-zzn">
+                                                    <rect key="frame" x="85" y="30.333333333333332" width="133" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical-OBGYN-9" id="Zit-6l-sBa">
+                                                    <rect key="frame" x="16" y="0.0" width="54" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="f8k-Yd-6u1" detailTextLabel="Bd2-3l-SFQ" imageView="Dit-46-KRX" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="eJM-Dy-r5t">
+                                        <rect key="frame" x="0.0" y="699" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eJM-Dy-r5t" id="4GK-Xo-tsE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="References" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8k-Yd-6u1">
+                                                    <rect key="frame" x="85" y="8.9999999999999982" width="75.666666666666671" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Calculators, Medical Spanish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bd2-3l-SFQ">
+                                                    <rect key="frame" x="84.999999999999986" y="30.333333333333332" width="170.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical References-11" id="Dit-46-KRX">
+                                                    <rect key="frame" x="16" y="0.0" width="54" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="yLU-6J-RaN" detailTextLabel="ALa-O8-6QT" imageView="9Bz-4z-JjZ" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="syp-9Q-tcG">
+                                        <rect key="frame" x="0.0" y="754" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="syp-9Q-tcG" id="Lub-8E-VA9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Procedures and Imaging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yLU-6J-RaN">
+                                                    <rect key="frame" x="83" y="8.9999999999999982" width="165" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="CXR, CT, Central Lines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALa-O8-6QT">
+                                                    <rect key="frame" x="82.999999999999986" y="30.333333333333332" width="132.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical Syringes Logo" id="9Bz-4z-JjZ">
+                                                    <rect key="frame" x="15" y="0.0" width="53" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="HOg-Q5-drt" detailTextLabel="n06-Ek-LEd" imageView="nCY-y8-eD6" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="KpH-Tp-8oz">
+                                        <rect key="frame" x="0.0" y="809" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KpH-Tp-8oz" id="Qfp-cH-e4B">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Ventilator Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HOg-Q5-drt">
+                                                    <rect key="frame" x="84.000000000000014" y="8.9999999999999982" width="157.33333333333334" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.23018704349999999" green="0.77713233230000001" blue="0.31589496140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ABG Calculator, TV, MV, Modes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n06-Ek-LEd">
+                                                    <rect key="frame" x="83.999999999999986" y="30.333333333333332" width="182.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical-Ventilator-Green-Management-13" id="nCY-y8-eD6">
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WhO-To-vhH" kind="presentation" id="sin-sA-OIl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Qsj-gV-d08" id="0pp-6M-R3f"/>
+                            <outlet property="delegate" destination="Qsj-gV-d08" id="J9A-WI-Oy8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Welcome to Critical-X" id="Z6R-Uq-WJe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvX-em-slt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.8" y="-811.33004926108379"/>
+        </scene>
+        <!--Main Menu Navigation -->
+        <scene sceneID="lgT-dw-Orz">
+            <objects>
+                <navigationController title="Main Menu Navigation " id="6T2-1q-Sub" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="back.png" id="ssI-1H-r6l">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.73725490196078436" green="0.23137254901960785" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
+                            <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qsj-gV-d08" kind="relationship" relationship="rootViewController" id="1nr-Af-sOH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFe-9E-uGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182" y="-811"/>
+        </scene>
+        <!--Rate Critical Pop Up-->
+        <scene sceneID="I8R-JB-PFv">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="qln-jI-2Ld" customClass="RateCriticalPopUp" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26p-eB-MFi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-bp-nMr">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="807"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="l9L-HY-o3I">
+                                    <rect key="frame" x="0.0" y="0.0" width="378" height="807"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AME-gd-g8t">
+                                <rect key="frame" x="46" y="273" width="293" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvK-8O-Sdg">
+                                        <rect key="frame" x="13" y="225" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="DISCALIMER">
+                                            <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="AQW-3Z-ks2" kind="presentation" id="RLL-bY-CTj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTv-cx-lMf">
+                                        <rect key="frame" x="13" y="184" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="✦✦  RATE CRITICAL  ✦✦">
+                                            <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0N-t5-R9b">
+                                        <rect key="frame" x="13" y="143" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="EMAIL US">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendEmailFeedback:" destination="qln-jI-2Ld" eventType="touchUpInside" id="3zH-P5-wiN"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Critical Brain Logo" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-vh-it5">
+                                        <rect key="frame" x="25" y="7" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXS-mY-RF0">
+                                        <rect key="frame" x="241" y="13" width="37" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CloseButton"/>
+                                        <connections>
+                                            <action selector="dismissPopUpVC:" destination="qln-jI-2Ld" eventType="touchUpInside" id="AwF-aP-Sr8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="GBK-EK-NY9"/>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="AME-gd-g8t" id="tlP-HO-0Ff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9T-W1-fei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698" y="-811"/>
+        </scene>
+        <!--Disclaimer -->
+        <scene sceneID="cCt-Ai-TQ5">
+            <objects>
+                <viewController storyboardIdentifier="AcceptView" title="Disclaimer " useStoryboardIdentifierAsRestorationIdentifier="YES" id="AQW-3Z-ks2" customClass="Disclaimer" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NzV-IW-qFn"/>
+                        <viewControllerLayoutGuide type="bottom" id="CXj-RK-uGS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MFo-1C-QPy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-Ho-FoQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ge5-dx-ARh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVw-ga-gKq">
+                                <rect key="frame" x="8" y="84" width="351" height="1140"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imY-2g-ijQ">
+                                        <rect key="frame" x="0.0" y="44" width="351" height="1096"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgt-9g-71y">
+                                                <rect key="frame" x="15" y="8" width="320" height="1037"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="dLa-0I-Dnf"/>
+                                                    <constraint firstAttribute="height" constant="1037" id="maD-q6-4f2"/>
+                                                </constraints>
+                                                <mutableString key="text">The following user agreement and disclaimer applies to all The Barringer Group's programs, including but not limited to: Critical – X".
+
+Please be aware that all information as provided as part of Critical – X programs are not meant for definitive diagnostic purposes. They should be rechecked and confirmed against your facilities conventional medical devices, guidelines, and protocols. Critical's program is not a substitute for clinical judgment or standard – of – care medicine. While the authors and producers of critical strive to provide you with useful and accurate tools contained in this product, The Barringer group does not warrant and expressively disclaim that the information provided by this product is up – to – date, complete, or accurate.
+
+You agree to use the product only as an education aid and not to diagnose or treat a condition or as a substitute for any or to override the exercise of professional judgment by a healthcare professional. Given these possibilities of human errors or changes in medical science, you should confirm the information in the product through independent sources. The Barringer Group is not responsible for misdiagnosis of an element or misuse of treatment due to typographical or other errors in the product, user negligence or otherwise.
+
+You agree and acknowledge that you will, at all times, advise patients to seek professional diagnosis and treatment for any medical condition and to discuss information obtained for the product with healthcare providers. This product is, to the extent permitted by law, provided on an "as is" basis without warranties of any kind, express or implied, in the authors and producers of Critical disclaims any liability, loss, or damage caused by it or its content. By continuing to use this product, you indicate your acceptance of these terms. Updated January 1, 2018</mutableString>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWf-Xg-WO7">
+                                                <rect key="frame" x="10" y="1053" width="331" height="38"/>
+                                                <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Accept">
+                                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dismiss:" destination="AQW-3Z-ks2" eventType="touchUpInside" id="hGB-ah-GnU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Zgt-9g-71y" secondAttribute="trailing" constant="16" id="38E-0a-hOX"/>
+                                            <constraint firstItem="Zgt-9g-71y" firstAttribute="trailing" secondItem="zWf-Xg-WO7" secondAttribute="trailing" constant="-6" id="8Fx-7J-p8A"/>
+                                            <constraint firstItem="zWf-Xg-WO7" firstAttribute="leading" secondItem="Zgt-9g-71y" secondAttribute="leading" constant="-5" id="JYJ-xJ-rlg"/>
+                                            <constraint firstItem="zWf-Xg-WO7" firstAttribute="top" secondItem="Zgt-9g-71y" secondAttribute="bottom" constant="8" id="dbA-hD-KMk"/>
+                                            <constraint firstAttribute="bottom" secondItem="zWf-Xg-WO7" secondAttribute="bottom" constant="5" id="i7w-c3-9zL"/>
+                                            <constraint firstItem="Zgt-9g-71y" firstAttribute="top" secondItem="imY-2g-ijQ" secondAttribute="top" constant="8" id="mfI-T7-seX"/>
+                                            <constraint firstItem="zWf-Xg-WO7" firstAttribute="leading" secondItem="imY-2g-ijQ" secondAttribute="leading" constant="10" id="rCi-US-jyO"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqg-Xm-ETj">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="44"/>
+                                        <color key="barTintColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="DISCLAIMER AGREEMENT" id="C1g-EL-oJz"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="imY-2g-ijQ" firstAttribute="leading" secondItem="TVw-ga-gKq" secondAttribute="leading" id="GTh-3w-jn2"/>
+                                    <constraint firstItem="imY-2g-ijQ" firstAttribute="top" secondItem="tqg-Xm-ETj" secondAttribute="bottom" id="Hpe-Lb-7Yc"/>
+                                    <constraint firstItem="tqg-Xm-ETj" firstAttribute="leading" secondItem="imY-2g-ijQ" secondAttribute="leading" id="Jr6-EL-X0e"/>
+                                    <constraint firstItem="tqg-Xm-ETj" firstAttribute="top" secondItem="TVw-ga-gKq" secondAttribute="top" id="Xbs-Hg-q3n"/>
+                                    <constraint firstAttribute="bottom" secondItem="imY-2g-ijQ" secondAttribute="bottom" id="Z0p-ae-eAM"/>
+                                    <constraint firstItem="tqg-Xm-ETj" firstAttribute="trailing" secondItem="imY-2g-ijQ" secondAttribute="trailing" id="ekW-l9-cEv"/>
+                                    <constraint firstAttribute="trailing" secondItem="imY-2g-ijQ" secondAttribute="trailing" id="gzQ-BJ-XM1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TVw-ga-gKq" firstAttribute="leading" secondItem="lT0-E5-cHk" secondAttribute="leading" constant="8" id="9Ru-Wr-wZd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TVw-ga-gKq" secondAttribute="bottom" constant="-8" id="oym-by-Nqn"/>
+                            <constraint firstItem="TVw-ga-gKq" firstAttribute="trailing" secondItem="MFo-1C-QPy" secondAttribute="trailingMargin" id="vMr-ls-zR2"/>
+                            <constraint firstItem="TVw-ga-gKq" firstAttribute="top" secondItem="NzV-IW-qFn" secondAttribute="bottom" constant="40" id="vkA-ln-wM4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lT0-E5-cHk"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1250"/>
+                    <connections>
+                        <outlet property="disclaimerSubView" destination="TVw-ga-gKq" id="gZZ-5i-thD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMx-Gk-IoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3357.5999999999999" y="-650.2463054187192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SFT-Yo-Avp">
+            <objects>
+                <viewController id="GeO-G6-W0H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BeD-iW-NiX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Ezv-0G-9c1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWd-S1-2Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4080.8000000000002" y="-760.34482758620697"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CBC" width="350" height="328"/>
+        <image name="CloseButton" width="107" height="95"/>
+        <image name="Critical Brain Logo" width="408" height="272"/>
+        <image name="Critical Neuro-7" width="416" height="420"/>
+        <image name="Critical References-11" width="420" height="422"/>
+        <image name="Critical Syringes Logo" width="560" height="578"/>
+        <image name="Critical--Hemodynamics-4" width="423" height="424"/>
+        <image name="Critical--IABP-6" width="419" height="420"/>
+        <image name="Critical-NEWLab-Values-5" width="419" height="419"/>
+        <image name="Critical-NRP-8" width="423" height="423"/>
+        <image name="Critical-OBGYN-9" width="418" height="422"/>
+        <image name="Critical-Ventilator-Green-Management-13" width="420" height="423"/>
+        <image name="Heart" width="280" height="296"/>
+        <image name="Lungs" width="378" height="290"/>
+        <image name="VentilatorImage" width="600" height="409"/>
+        <image name="back.png" width="540" height="540"/>
+    </resources>
+</document>

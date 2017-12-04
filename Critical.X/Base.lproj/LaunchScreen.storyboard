@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueExtras.ttc">
+            <string>HelveticaNeue-CondensedBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,13 +22,74 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-tI-FwJ">
+                                <rect key="frame" x="16" y="99" width="343" height="83"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="70"/>
+                                <color key="textColor" red="0.95191878080368042" green="0.059696488082408905" blue="0.10953495651483536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-Mu-KAy">
+                                <rect key="frame" x="16" y="576" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="h4B-ea-FWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="THE BARRINGER GROUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-yU-j7H">
+                                <rect key="frame" x="16" y="608" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dh4-SV-OzG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Db-iT-bYU">
+                                <rect key="frame" x="16" y="79" width="343" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Critical Brain Logo" translatesAutoresizingMaskIntoConstraints="NO" id="TDa-dv-Gb1">
+                                <rect key="frame" x="103" y="210" width="168" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="9wN-Zo-HUg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TDa-dv-Gb1" firstAttribute="top" secondItem="OQe-tI-FwJ" secondAttribute="bottom" constant="28" id="1HF-Ix-cXW"/>
+                            <constraint firstItem="OQe-tI-FwJ" firstAttribute="top" secondItem="2Db-iT-bYU" secondAttribute="bottom" constant="2" id="9aH-4l-hkW"/>
+                            <constraint firstItem="vyC-Mu-KAy" firstAttribute="trailing" secondItem="37o-yU-j7H" secondAttribute="trailing" id="K6I-l6-9oQ"/>
+                            <constraint firstItem="OQe-tI-FwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mya-Yl-gfn"/>
+                            <constraint firstItem="2Db-iT-bYU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PuU-gH-fRx"/>
+                            <constraint firstItem="vyC-Mu-KAy" firstAttribute="leading" secondItem="37o-yU-j7H" secondAttribute="leading" id="TLV-gx-ro8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Db-iT-bYU" secondAttribute="trailing" constant="16" id="ToK-Vt-YBj"/>
+                            <constraint firstItem="TDa-dv-Gb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="Z8f-80-pBQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="37o-yU-j7H" secondAttribute="bottom" constant="38" id="bpB-wJ-yIr"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="top" secondItem="vyC-Mu-KAy" secondAttribute="bottom" constant="3" id="ekf-eJ-WtM"/>
+                            <constraint firstItem="OQe-tI-FwJ" firstAttribute="top" secondItem="2Db-iT-bYU" secondAttribute="bottom" constant="2" id="hdG-5T-kJh"/>
+                            <constraint firstItem="TDa-dv-Gb1" firstAttribute="centerX" secondItem="OQe-tI-FwJ" secondAttribute="centerX" id="iVy-II-64b"/>
+                            <constraint firstItem="2Db-iT-bYU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="kB6-gZ-gQ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TDa-dv-Gb1" secondAttribute="trailing" constant="104" id="mx1-t6-6eU"/>
+                            <constraint firstItem="vyC-Mu-KAy" firstAttribute="trailing" secondItem="OQe-tI-FwJ" secondAttribute="trailing" id="uFh-fm-epl"/>
+                            <constraint firstItem="OQe-tI-FwJ" firstAttribute="top" secondItem="2Db-iT-bYU" secondAttribute="bottom" constant="2" id="vVk-Qh-ozg"/>
+                            <constraint firstItem="vyC-Mu-KAy" firstAttribute="leading" secondItem="OQe-tI-FwJ" secondAttribute="leading" id="xwp-ge-Owy"/>
+                            <constraint firstItem="OQe-tI-FwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xxg-z2-kEL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Critical Brain Logo" width="408" height="272"/>
+    </resources>
 </document>
