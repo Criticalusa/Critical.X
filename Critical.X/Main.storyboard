@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3K-HP-OlM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-30"/>
+            <point key="canvasLocation" x="444" y="-80"/>
         </scene>
         <!--Stack Element View Controller-->
         <scene sceneID="hNZ-zC-4r5">
@@ -342,6 +342,12 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="C4O-KT-bHU" kind="presentation" id="UdM-zX-V9B">
+                                                <segue key="commit" inheritsFrom="parent" id="C48-F8-9gW"/>
+                                                <segue key="preview" inheritsFrom="commit" id="es5-FM-N1E"/>
+                                            </segue>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Bgd-Rx-jTt" detailTextLabel="7bM-mW-6sZ" imageView="fV2-ww-hri" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="IEc-VO-jyH">
                                         <rect key="frame" x="0.0" y="369" width="375" height="55"/>
@@ -861,6 +867,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 </state>
                                 <connections>
                                     <action selector="calculateDataButton:" destination="jNN-tc-qeN" eventType="touchUpInside" id="MCw-VR-dtx"/>
+                                    <action selector="calculateDataButton:" destination="GeO-G6-W0H" eventType="touchUpInside" id="bdf-fl-3Tr"/>
                                     <segue destination="GDC-86-wAR" kind="presentation" identifier="toDataSegue" id="Cxg-iu-muc"/>
                                 </connections>
                             </button>
@@ -875,12 +882,13 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-8g-YCH">
-                                <rect key="frame" x="334" y="32" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-8g-YCH">
+                                <rect key="frame" x="326" y="29" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="close-button-png-30238"/>
                                 <connections>
                                     <action selector="dismissTheView:" destination="jNN-tc-qeN" eventType="touchUpInside" id="5JV-m2-bXS"/>
+                                    <action selector="dismissTheView:" destination="GeO-G6-W0H" eventType="touchUpInside" id="DaH-4g-BAF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2782,6 +2790,584 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
             </objects>
             <point key="canvasLocation" x="4887" y="64"/>
         </scene>
+        <!--Critical EKG's-->
+        <scene sceneID="a3z-aQ-3AN">
+            <objects>
+                <tableViewController id="C4O-KT-bHU" customClass="EkgMenuTableViewController" customModule="ACLS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="vZ8-xt-0ed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Critical EKG's" id="fhW-YG-O6M">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="VFm-sx-Eaj" detailTextLabel="yQz-9q-sea" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="DVR-qT-vOB">
+                                        <rect key="frame" x="0.0" y="55.333333333333336" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DVR-qT-vOB" id="e0t-Z6-0Ci">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Normal Sinus Rhythm (NSR)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VFm-sx-Eaj">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="215" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15101002159999999" green="0.56891876460000002" blue="0.43715286250000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sinus Rhythm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yQz-9q-sea">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="72" height="13.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="NSR" id="iBb-ll-JrI">
+                                                <segue key="commit" inheritsFrom="parent" id="3E2-Xu-lH8"/>
+                                                <segue key="preview" inheritsFrom="commit" id="2h6-Cg-OmQ"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uBS-Tr-CSP" detailTextLabel="Afu-1e-mj9" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="P0H-cA-WRu">
+                                        <rect key="frame" x="0.0" y="120.33333333333334" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P0H-cA-WRu" id="3dl-gg-k6V">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sinus Bradycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uBS-Tr-CSP">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="137.66666666666666" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15101002159999999" green="0.56891876460000002" blue="0.43715286250000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Bradycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Afu-1e-mj9">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="67.666666666666671" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="SinusBrady" id="tJp-LK-7pG">
+                                                <segue key="commit" inheritsFrom="parent" id="saM-Vv-42n"/>
+                                                <segue key="preview" inheritsFrom="commit" id="iCx-J4-wZJ"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Cnj-R0-Qpl" detailTextLabel="vdc-UR-LYP" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="uJ9-1A-Ydn">
+                                        <rect key="frame" x="0.0" y="185.33333333333334" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uJ9-1A-Ydn" id="T8s-ff-bQv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sinus Tachycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cnj-R0-Qpl">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="137.66666666666666" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15101002159999999" green="0.56891876460000002" blue="0.43715286250000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tachycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vdc-UR-LYP">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="67.666666666666671" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="SinusTach" id="naj-DA-qRr">
+                                                <segue key="commit" inheritsFrom="parent" id="jwJ-rY-YYc"/>
+                                                <segue key="preview" inheritsFrom="commit" id="0Po-7b-DJ6"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="3bc-N5-ng3" detailTextLabel="emR-yF-CH1" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="7vz-Se-IeQ">
+                                        <rect key="frame" x="0.0" y="250.33333333333334" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7vz-Se-IeQ" id="ExS-er-h6b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Asystole / PEA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3bc-N5-ng3">
+                                                    <rect key="frame" x="15.999999999999993" y="12.999999999999998" width="110.33333333333333" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Cardiac Arrest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="emR-yF-CH1">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="81.333333333333329" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="Asystole" id="aoS-ow-MmO">
+                                                <segue key="commit" inheritsFrom="parent" id="Exd-4M-y9m"/>
+                                                <segue key="preview" inheritsFrom="commit" id="msx-2q-KXm"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="32a-69-AuL" detailTextLabel="XKy-01-kgB" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="SqO-vH-mMV">
+                                        <rect key="frame" x="0.0" y="315.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SqO-vH-mMV" id="acQ-T9-SwB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Atrial Flutter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="32a-69-AuL">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="93.333333333333329" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.93333333330000001" green="0.42352941179999998" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Atrial Dysrhythmia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XKy-01-kgB">
+                                                    <rect key="frame" x="16.000000000000007" y="36.333333333333329" width="103.66666666666667" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="Aflutter" id="9ga-UO-XdC">
+                                                <segue key="commit" inheritsFrom="parent" id="y4Z-Dd-AYf"/>
+                                                <segue key="preview" inheritsFrom="commit" id="iMn-29-yRo"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="PN2-Ex-E7U" detailTextLabel="zqK-og-ys2" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="KXE-Wg-hyH">
+                                        <rect key="frame" x="0.0" y="380.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KXE-Wg-hyH" id="qhO-AH-gAi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Supraventricular Tachycardia (SVT)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PN2-Ex-E7U">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="269.66666666666669" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.93333333330000001" green="0.42352941179999998" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Narrow Complex Tachycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zqK-og-ys2">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="164.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="SVT" id="BGp-eO-wGs">
+                                                <segue key="commit" inheritsFrom="parent" id="J2U-Rd-1uq"/>
+                                                <segue key="preview" inheritsFrom="commit" id="fRR-3B-PCg"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="hiC-Et-fHE" detailTextLabel="RYd-6b-5ql" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="JNv-pZ-G1r">
+                                        <rect key="frame" x="0.0" y="445.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JNv-pZ-G1r" id="thV-n9-2eI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Atrial Fibrillation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hiC-Et-fHE">
+                                                    <rect key="frame" x="15.999999999999993" y="12.999999999999998" width="122.33333333333333" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.93333333330000001" green="0.42352941179999998" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Atrial Dysrhythmia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RYd-6b-5ql">
+                                                    <rect key="frame" x="16.000000000000007" y="36.333333333333329" width="103.66666666666667" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="Afib" id="cHM-gC-D0T">
+                                                <segue key="commit" inheritsFrom="parent" id="La0-RZ-t07"/>
+                                                <segue key="preview" inheritsFrom="commit" id="OJD-K1-z4e"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="GHV-qe-Mva" detailTextLabel="JMa-Ie-kwz" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="pTa-nR-D2k">
+                                        <rect key="frame" x="0.0" y="510.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pTa-nR-D2k" id="Xzp-yG-ji3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Second Degree Type I AV Block  (Wenkeback)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GHV-qe-Mva">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="343" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Heart Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMa-Ie-kwz">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="66.333333333333329" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="Wenkeback" id="Xll-0z-NeG">
+                                                <segue key="commit" inheritsFrom="parent" id="Yhm-av-iOt"/>
+                                                <segue key="preview" inheritsFrom="commit" id="sdU-zl-tHH"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="DRK-Qu-wj2" detailTextLabel="30N-Yh-eLx" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="Iuf-jL-8Nf">
+                                        <rect key="frame" x="0.0" y="575.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iuf-jL-8Nf" id="EtT-RW-juc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Second Degree AV Block Type II" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DRK-Qu-wj2">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="245" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Heart Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30N-Yh-eLx">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="66.333333333333329" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="2ndDegreeTypeII" id="kfe-ff-Frq">
+                                                <segue key="commit" inheritsFrom="parent" id="ENz-iq-4Yn"/>
+                                                <segue key="preview" inheritsFrom="commit" id="Sx1-Qc-5rK"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="R5r-26-lSd" detailTextLabel="4or-iu-Q8w" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="uXS-C7-Ld6">
+                                        <rect key="frame" x="0.0" y="640.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXS-C7-Ld6" id="f1r-n6-aT5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Third Degree Heart AV Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R5r-26-lSd">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="219.66666666666666" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Complete Heart Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4or-iu-Q8w">
+                                                    <rect key="frame" x="15.999999999999993" y="36.333333333333329" width="124.33333333333333" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="ThirdDegree" id="537-ww-WNs">
+                                                <segue key="commit" inheritsFrom="parent" id="M8k-Ve-gxA"/>
+                                                <segue key="preview" inheritsFrom="commit" id="pPC-uB-TfC"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="A2U-3N-vL5" detailTextLabel="IMv-4a-hY1" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="j22-F4-qDM">
+                                        <rect key="frame" x="0.0" y="705.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j22-F4-qDM" id="vb4-M8-gx5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Torsades de pointes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A2U-3N-vL5">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="154.33333333333334" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Polymorphic V-Tach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IMv-4a-hY1">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="113" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="Torsades" id="akr-sf-Nje">
+                                                <segue key="commit" inheritsFrom="parent" id="orL-7A-pb0"/>
+                                                <segue key="preview" inheritsFrom="commit" id="udr-7P-o2Q"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="mel-LH-ErC" detailTextLabel="KlZ-PH-2sO" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="fRb-yW-0Me">
+                                        <rect key="frame" x="0.0" y="770.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fRb-yW-0Me" id="woL-c7-9fr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Ventricular Fibrillation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mel-LH-ErC">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="165.66666666666666" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Cardiac Arrest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KlZ-PH-2sO">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="81.333333333333329" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="V-fib" id="eXE-lY-fXP">
+                                                <segue key="commit" inheritsFrom="parent" id="Pqv-dD-wNO"/>
+                                                <segue key="preview" inheritsFrom="commit" id="Ueu-QW-eZA"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="d8c-eu-c56" detailTextLabel="0pd-wK-NAv" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="yCv-yP-Cv3">
+                                        <rect key="frame" x="0.0" y="835.33333333333337" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yCv-yP-Cv3" id="bql-TG-TAM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Ventricular Tachycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d8c-eu-c56">
+                                                    <rect key="frame" x="15" y="12.999999999999998" width="178.33333333333334" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Wide Complex Tachycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0pd-wK-NAv">
+                                                    <rect key="frame" x="15" y="36.333333333333329" width="152.66666666666666" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="VTach" id="ThU-kQ-9aj">
+                                                <segue key="commit" inheritsFrom="parent" id="Zc2-cu-sm4"/>
+                                                <segue key="preview" inheritsFrom="commit" id="VhD-BG-PqU"/>
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="C4O-KT-bHU" id="lXd-mE-wuz"/>
+                            <outlet property="delegate" destination="C4O-KT-bHU" id="o4n-ET-1Ac"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Critical EKG's" id="XMI-rA-dEf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJM-Z5-MvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-730" y="-1603"/>
+        </scene>
+        <!--ACLS Main-->
+        <scene sceneID="Es9-vL-esg">
+            <objects>
+                <viewController title="ACLS Main" id="nsf-3M-VmA" customClass="ACLSViewController" customModule="ACLS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9a-bn-Cbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Supraventricular Tachycardia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-Yn-QAT">
+                                <rect key="frame" x="8" y="44" width="359" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                <color key="textColor" red="0.1450980392" green="0.19215686269999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-uz-Qm4">
+                                <rect key="frame" x="0.0" y="85" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsZ-hz-JJB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9d-zO-54U">
+                                        <rect key="frame" x="0.0" y="237" width="375" height="1063"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PgT-GO-uIH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1063"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supraventricular Tachycardia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmZ-I4-MoR">
+                                                    <rect key="frame" x="8" y="33" width="359" height="37"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="27"/>
+                                                    <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-Yi-suD">
+                                                    <rect key="frame" x="331" y="8" width="27" height="27"/>
+                                                    <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="27" id="4Eo-0S-CWh"/>
+                                                        <constraint firstAttribute="height" constant="27" id="j5q-Ro-7bL"/>
+                                                    </constraints>
+                                                    <state key="normal" title="X">
+                                                        <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="dismissACLSView:" destination="nsf-3M-VmA" eventType="touchUpInside" id="36W-N8-FA5"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzm-0O-W52">
+                                                    <rect key="frame" x="8" y="78" width="359" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9FS-4Z-0MC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="15"/>
+                                                    <color key="textColor" red="0.93333333330000001" green="0.42352941179999998" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BV-6F-3Os">
+                                                    <rect key="frame" x="13" y="112" width="350" height="23"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <color key="textColor" red="0.96862745100000003" green="0.95686274510000002" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Critical--Hemodynamics-4" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-1P-hew">
+                                                    <rect key="frame" x="8" y="7" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medications / Treatment to consider 💉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW5-S9-cud">
+                                                    <rect key="frame" x="0.0" y="165.33333333333331" width="375" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <color key="textColor" red="0.47450980390000003" green="0.78823529410000004" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medication to consider" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ns-9K-Le9">
+                                                    <rect key="frame" x="13" y="207" width="354" height="23"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="fW5-S9-cud" secondAttribute="trailing" id="1lI-mB-VJD"/>
+                                                <constraint firstItem="6BV-6F-3Os" firstAttribute="leading" secondItem="PgT-GO-uIH" secondAttribute="leading" constant="13" id="DKu-oU-4Zy"/>
+                                                <constraint firstItem="fW5-S9-cud" firstAttribute="leading" secondItem="PgT-GO-uIH" secondAttribute="leading" id="GXx-wD-GzR"/>
+                                                <constraint firstItem="DbB-Yi-suD" firstAttribute="top" secondItem="PgT-GO-uIH" secondAttribute="top" constant="8" id="IKp-nX-vnU"/>
+                                                <constraint firstAttribute="trailing" secondItem="DbB-Yi-suD" secondAttribute="trailing" constant="17" id="Ift-T8-WV9"/>
+                                                <constraint firstItem="Nzm-0O-W52" firstAttribute="leading" secondItem="qmZ-I4-MoR" secondAttribute="leading" id="RGl-XD-SUd"/>
+                                                <constraint firstAttribute="trailing" secondItem="6BV-6F-3Os" secondAttribute="trailing" constant="12" id="SX8-JI-mzV"/>
+                                                <constraint firstItem="8ns-9K-Le9" firstAttribute="top" secondItem="fW5-S9-cud" secondAttribute="bottom" constant="17.666666666666686" id="VJB-ae-O8J"/>
+                                                <constraint firstItem="Nzm-0O-W52" firstAttribute="top" secondItem="PgT-GO-uIH" secondAttribute="top" constant="78" id="WMn-qA-e3V"/>
+                                                <constraint firstItem="fW5-S9-cud" firstAttribute="top" secondItem="6BV-6F-3Os" secondAttribute="bottom" constant="30.333333333333258" id="Yhx-4b-bPw"/>
+                                                <constraint firstItem="Nzm-0O-W52" firstAttribute="top" secondItem="qmZ-I4-MoR" secondAttribute="bottom" constant="8" symbolic="YES" id="cuv-0z-H4f"/>
+                                                <constraint firstItem="6BV-6F-3Os" firstAttribute="top" secondItem="Nzm-0O-W52" secondAttribute="bottom" constant="13" id="h7v-BS-Xrt"/>
+                                                <constraint firstItem="Nzm-0O-W52" firstAttribute="trailing" secondItem="6BV-6F-3Os" secondAttribute="trailing" constant="4" id="lE6-dH-RvO"/>
+                                                <constraint firstItem="8ns-9K-Le9" firstAttribute="leading" secondItem="PgT-GO-uIH" secondAttribute="leading" constant="13" id="lh7-C4-2HT"/>
+                                                <constraint firstAttribute="trailing" secondItem="8ns-9K-Le9" secondAttribute="trailing" constant="8" id="sAO-q3-oVt"/>
+                                                <constraint firstItem="Nzm-0O-W52" firstAttribute="leading" secondItem="6BV-6F-3Os" secondAttribute="leading" constant="-5" id="wQe-Ks-EOm"/>
+                                                <constraint firstItem="Nzm-0O-W52" firstAttribute="trailing" secondItem="qmZ-I4-MoR" secondAttribute="trailing" id="yfs-fb-dWp"/>
+                                            </constraints>
+                                        </view>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.41176470590000003" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1063" id="jcj-zs-h8l"/>
+                                        </constraints>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nzm-0O-W52" firstAttribute="trailing" secondItem="qmZ-I4-MoR" secondAttribute="trailing" id="CpB-ds-Qei"/>
+                                    <constraint firstItem="y9d-zO-54U" firstAttribute="top" secondItem="EsZ-hz-JJB" secondAttribute="top" constant="237" id="Gim-Jh-L40"/>
+                                    <constraint firstAttribute="trailing" secondItem="y9d-zO-54U" secondAttribute="trailing" id="VWN-3S-stN"/>
+                                    <constraint firstItem="Nzm-0O-W52" firstAttribute="leading" secondItem="qmZ-I4-MoR" secondAttribute="leading" id="ZJ6-j2-3Xd"/>
+                                    <constraint firstItem="Nzm-0O-W52" firstAttribute="top" secondItem="qmZ-I4-MoR" secondAttribute="bottom" constant="8" symbolic="YES" id="myk-8v-LmL"/>
+                                    <constraint firstItem="y9d-zO-54U" firstAttribute="leading" secondItem="EsZ-hz-JJB" secondAttribute="leading" id="yV1-8x-d7T"/>
+                                    <constraint firstItem="y9d-zO-54U" firstAttribute="centerX" secondItem="EsZ-hz-JJB" secondAttribute="centerX" id="ycT-8S-DBv"/>
+                                    <constraint firstAttribute="bottom" secondItem="y9d-zO-54U" secondAttribute="bottom" id="yin-IH-uvC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EsZ-hz-JJB" firstAttribute="top" secondItem="J9a-bn-Cbb" secondAttribute="top" id="4gc-Aw-5I5"/>
+                            <constraint firstItem="EsZ-hz-JJB" firstAttribute="leading" secondItem="0My-nT-Cds" secondAttribute="leading" id="5QJ-en-Th2"/>
+                            <constraint firstItem="DVq-Yn-QAT" firstAttribute="top" secondItem="J9a-bn-Cbb" secondAttribute="top" constant="44" id="GTc-WG-nKU"/>
+                            <constraint firstAttribute="bottom" secondItem="EsZ-hz-JJB" secondAttribute="bottom" id="W2Q-Tf-iNo"/>
+                            <constraint firstItem="DVq-Yn-QAT" firstAttribute="leading" secondItem="0My-nT-Cds" secondAttribute="leading" constant="8" id="a69-yh-nB8"/>
+                            <constraint firstItem="0My-nT-Cds" firstAttribute="trailing" secondItem="DVq-Yn-QAT" secondAttribute="trailing" constant="8" id="bjr-3X-CaL"/>
+                            <constraint firstItem="EsZ-hz-JJB" firstAttribute="trailing" secondItem="0My-nT-Cds" secondAttribute="trailing" id="koz-2J-vOx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0My-nT-Cds"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1300"/>
+                    <connections>
+                        <outlet property="acls2View" destination="PgT-GO-uIH" id="7iL-Ez-6f7"/>
+                        <outlet property="aclsViewScreen" destination="y9d-zO-54U" id="lpf-t3-4ho"/>
+                        <outlet property="closeButton" destination="DbB-Yi-suD" id="C77-dl-HHJ"/>
+                        <outlet property="ekgDescriptionLabel" destination="6BV-6F-3Os" id="wdQ-0R-snR"/>
+                        <outlet property="ekgImageView" destination="nVH-uz-Qm4" id="B3a-ar-Jz2"/>
+                        <outlet property="ekgSubtitle_Label" destination="Nzm-0O-W52" id="tci-Xn-GoT"/>
+                        <outlet property="header_Label" destination="DVq-Yn-QAT" id="YNk-WE-3fg"/>
+                        <outlet property="medication_Label" destination="8ns-9K-Le9" id="Of6-in-ftD"/>
+                        <outlet property="scroll_height" destination="jcj-zs-h8l" id="dHk-8k-NO7"/>
+                        <outlet property="title_Label" destination="qmZ-I4-MoR" id="2a6-A8-CzX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwg-VY-A3V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="-1604"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CBC" width="350" height="328"/>
@@ -2805,6 +3391,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
         <image name="close-button-png-30238" width="840" height="832"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eXE-lY-fXP"/>
+        <segue reference="UdM-zX-V9B"/>
         <segue reference="hNA-TA-77N"/>
     </inferredMetricsTieBreakers>
 </document>
