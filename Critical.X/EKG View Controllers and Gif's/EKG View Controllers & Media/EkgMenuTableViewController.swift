@@ -9,7 +9,7 @@
 import UIKit
 
 class EkgMenuTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +20,15 @@ class EkgMenuTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-   
+    @IBAction func dismissEkgTableView(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func dismissEkgTableViewBottom(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
    //MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -51,6 +51,10 @@
 		C48B9CCD1FF3468E001934BA /* 2ndDegreeTypeII.v2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBD1FF3468B001934BA /* 2ndDegreeTypeII.v2.gif */; };
 		C48B9CCE1FF3468E001934BA /* SVT1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBE1FF3468C001934BA /* SVT1.gif */; };
 		C48B9CCF1FF3468E001934BA /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBF1FF3468D001934BA /* 2ndDegreeTypeI ( Wenkeback).gif */; };
+		C498305C1FF6D36D00D3DB4D /* RSI_Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49830581FF6D36C00D3DB4D /* RSI_Additional.swift */; };
+		C498305D1FF6D36D00D3DB4D /* RSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49830591FF6D36D00D3DB4D /* RSIDetail.swift */; };
+		C498305E1FF6D36D00D3DB4D /* RSIProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498305A1FF6D36D00D3DB4D /* RSIProcess.swift */; };
+		C498305F1FF6D36D00D3DB4D /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498305B1FF6D36D00D3DB4D /* RSIMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +125,10 @@
 		C48B9CBD1FF3468B001934BA /* 2ndDegreeTypeII.v2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2ndDegreeTypeII.v2.gif; sourceTree = "<group>"; };
 		C48B9CBE1FF3468C001934BA /* SVT1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SVT1.gif; sourceTree = "<group>"; };
 		C48B9CBF1FF3468D001934BA /* 2ndDegreeTypeI ( Wenkeback).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2ndDegreeTypeI ( Wenkeback).gif"; sourceTree = "<group>"; };
+		C49830581FF6D36C00D3DB4D /* RSI_Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSI_Additional.swift; sourceTree = "<group>"; };
+		C49830591FF6D36D00D3DB4D /* RSIDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSIDetail.swift; sourceTree = "<group>"; };
+		C498305A1FF6D36D00D3DB4D /* RSIProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSIProcess.swift; sourceTree = "<group>"; };
+		C498305B1FF6D36D00D3DB4D /* RSIMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				795513481FD4B11A005856F3 /* MenuViewController.swift */,
-				79E2EF441F9CC18000701ACC /* AppDelegate.swift */,
 				7971CF381FCA47B200D3AEEB /* Fluids And Electorlytes */,
 				79BA78D41FABD68600F087AF /* Ventilator Modes */,
+				C47F946F1FEC032200DE44E1 /* FlatColors.swift */,
+				79E2EF441F9CC18000701ACC /* AppDelegate.swift */,
 				795497EB1FD4D7400026EEC7 /* MyViewController.swift */,
 				795497EF1FD55D7C0026EEC7 /* Disclaimer.swift */,
 				793BCA2C1FD56E3C001A4DFF /* RateCriticalPopUp.swift */,
@@ -208,13 +217,9 @@
 			children = (
 				79E2EF4D1F9CC18000701ACC /* LaunchScreen.storyboard */,
 				7955134A1FD4B4F6005856F3 /* Main.storyboard */,
+				C49830611FF6EE5300D3DB4D /* RSI */,
 				C48B9CD21FF346FA001934BA /* EKG View Controllers and Gif's */,
-				C47F94731FEC032300DE44E1 /* CalculatedDataViewController.swift */,
-				C47F946F1FEC032200DE44E1 /* FlatColors.swift */,
-				C47F94741FEC032300DE44E1 /* MiniDrugDataViewViewController.swift */,
-				C47F94711FEC032300DE44E1 /* MiniPopUpData.swift */,
-				C47F94701FEC032300DE44E1 /* PediatricCalculations.swift */,
-				C47F94721FEC032300DE44E1 /* PedsViewController.swift */,
+				C49830601FF6EE3400D3DB4D /* Pediatrics */,
 				793310A41FA9F56C00C955EF /* View Controller Classes */,
 				79E2EF4B1F9CC18000701ACC /* Assets.xcassets */,
 				79E2EF501F9CC18000701ACC /* Info.plist */,
@@ -282,6 +287,29 @@
 				C48B9CD01FF346B4001934BA /* EKG GIf's */,
 			);
 			path = "EKG View Controllers and Gif's";
+			sourceTree = "<group>";
+		};
+		C49830601FF6EE3400D3DB4D /* Pediatrics */ = {
+			isa = PBXGroup;
+			children = (
+				C47F94731FEC032300DE44E1 /* CalculatedDataViewController.swift */,
+				C47F94741FEC032300DE44E1 /* MiniDrugDataViewViewController.swift */,
+				C47F94711FEC032300DE44E1 /* MiniPopUpData.swift */,
+				C47F94701FEC032300DE44E1 /* PediatricCalculations.swift */,
+				C47F94721FEC032300DE44E1 /* PedsViewController.swift */,
+			);
+			path = Pediatrics;
+			sourceTree = "<group>";
+		};
+		C49830611FF6EE5300D3DB4D /* RSI */ = {
+			isa = PBXGroup;
+			children = (
+				C498305B1FF6D36D00D3DB4D /* RSIMain.swift */,
+				C49830591FF6D36D00D3DB4D /* RSIDetail.swift */,
+				C49830581FF6D36C00D3DB4D /* RSI_Additional.swift */,
+				C498305A1FF6D36D00D3DB4D /* RSIProcess.swift */,
+			);
+			path = RSI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,10 +469,14 @@
 				7971CF351FCA47A500D3AEEB /* ExampleData.swift in Sources */,
 				C47F94751FEC032300DE44E1 /* FlatColors.swift in Sources */,
 				C47F94761FEC032300DE44E1 /* PediatricCalculations.swift in Sources */,
+				C498305C1FF6D36D00D3DB4D /* RSI_Additional.swift in Sources */,
+				C498305E1FF6D36D00D3DB4D /* RSIProcess.swift in Sources */,
 				795497F01FD55D7C0026EEC7 /* Disclaimer.swift in Sources */,
+				C498305F1FF6D36D00D3DB4D /* RSIMain.swift in Sources */,
 				793BCA2D1FD56E3C001A4DFF /* RateCriticalPopUp.swift in Sources */,
 				C48B9CA11FF34153001934BA /* Swift+Gif.swift in Sources */,
 				7971CF331FCA47A500D3AEEB /* Extensions.swift in Sources */,
+				C498305D1FF6D36D00D3DB4D /* RSIDetail.swift in Sources */,
 				7971CF361FCA47A500D3AEEB /* CollapsibleTableViewHeader.swift in Sources */,
 				C47F94791FEC032300DE44E1 /* CalculatedDataViewController.swift in Sources */,
 				C48B9CA91FF34209001934BA /* EKGInformation.swift in Sources */,

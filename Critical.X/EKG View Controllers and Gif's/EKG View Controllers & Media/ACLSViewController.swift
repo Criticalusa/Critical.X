@@ -48,10 +48,10 @@ class ACLSViewController: UIViewController {
         // Takes the close button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         
+        //Hides the button becuase i have a Nav controller. 
+        closeButton.isHidden = true
         // Helper funtion to be initiated below.
         
-    
-
         updateEKGInfomation()
         
         
