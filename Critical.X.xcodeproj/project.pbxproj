@@ -7,54 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		793BCA2D1FD56E3C001A4DFF /* RateCriticalPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793BCA2C1FD56E3C001A4DFF /* RateCriticalPopUp.swift */; };
-		795497EC1FD4D7400026EEC7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795497EB1FD4D7400026EEC7 /* MyViewController.swift */; };
-		795497F01FD55D7C0026EEC7 /* Disclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795497EF1FD55D7C0026EEC7 /* Disclaimer.swift */; };
-		795513491FD4B11A005856F3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795513481FD4B11A005856F3 /* MenuViewController.swift */; };
 		7955134B1FD4B4F6005856F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7955134A1FD4B4F6005856F3 /* Main.storyboard */; };
-		7971CF331FCA47A500D3AEEB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7971CF2E1FCA47A400D3AEEB /* Extensions.swift */; };
-		7971CF341FCA47A500D3AEEB /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7971CF2F1FCA47A500D3AEEB /* CollapsibleTableViewController.swift */; };
-		7971CF351FCA47A500D3AEEB /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7971CF301FCA47A500D3AEEB /* ExampleData.swift */; };
-		7971CF361FCA47A500D3AEEB /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7971CF311FCA47A500D3AEEB /* CollapsibleTableViewHeader.swift */; };
-		7971CF371FCA47A500D3AEEB /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7971CF321FCA47A500D3AEEB /* CollapsibleTableViewCell.swift */; };
-		79BA78D21FABCD2800F087AF /* StackElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA78D01FABCD2600F087AF /* StackElementViewController.swift */; };
-		79BA78D31FABCD2800F087AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA78D11FABCD2700F087AF /* ViewController.swift */; };
-		79E2EF451F9CC18000701ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2EF441F9CC18000701ACC /* AppDelegate.swift */; };
 		79E2EF4C1F9CC18000701ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E2EF4B1F9CC18000701ACC /* Assets.xcassets */; };
 		79E2EF4F1F9CC18000701ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E2EF4D1F9CC18000701ACC /* LaunchScreen.storyboard */; };
 		79E2EF5A1F9CC18100701ACC /* Critical_XTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2EF591F9CC18100701ACC /* Critical_XTests.swift */; };
 		79E2EF651F9CC18100701ACC /* Critical_XUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2EF641F9CC18100701ACC /* Critical_XUITests.swift */; };
-		C47F94751FEC032300DE44E1 /* FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F946F1FEC032200DE44E1 /* FlatColors.swift */; };
-		C47F94761FEC032300DE44E1 /* PediatricCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F94701FEC032300DE44E1 /* PediatricCalculations.swift */; };
-		C47F94771FEC032300DE44E1 /* MiniPopUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F94711FEC032300DE44E1 /* MiniPopUpData.swift */; };
-		C47F94781FEC032300DE44E1 /* PedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F94721FEC032300DE44E1 /* PedsViewController.swift */; };
-		C47F94791FEC032300DE44E1 /* CalculatedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F94731FEC032300DE44E1 /* CalculatedDataViewController.swift */; };
-		C47F947A1FEC032300DE44E1 /* MiniDrugDataViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F94741FEC032300DE44E1 /* MiniDrugDataViewViewController.swift */; };
-		C48B9CA11FF34153001934BA /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B9CA01FF34153001934BA /* Swift+Gif.swift */; };
-		C48B9CA91FF34209001934BA /* EKGInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B9CA81FF34209001934BA /* EKGInformation.swift */; };
-		C48B9CAB1FF3421F001934BA /* EkgMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B9CAA1FF3421F001934BA /* EkgMenuTableViewController.swift */; };
-		C48B9CAD1FF3422E001934BA /* ACLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B9CAC1FF3422E001934BA /* ACLSViewController.swift */; };
-		C48B9CAF1FF345DD001934BA /* VFib.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CAE1FF345DC001934BA /* VFib.gif */; };
-		C48B9CC01FF3468E001934BA /* 3rdDegreeHB.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB01FF3467B001934BA /* 3rdDegreeHB.gif */; };
-		C48B9CC11FF3468E001934BA /* Polymorphic_VTach.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB11FF3467C001934BA /* Polymorphic_VTach.gif */; };
-		C48B9CC21FF3468E001934BA /* AtrialFib.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB21FF3467E001934BA /* AtrialFib.gif */; };
-		C48B9CC31FF3468E001934BA /* SinusBradyv.2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB31FF3467F001934BA /* SinusBradyv.2.gif */; };
-		C48B9CC41FF3468E001934BA /* NormalSinus.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB41FF34680001934BA /* NormalSinus.gif */; };
-		C48B9CC51FF3468E001934BA /* Aflutter.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB51FF34681001934BA /* Aflutter.gif */; };
-		C48B9CC61FF3468E001934BA /* SVT.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB61FF34682001934BA /* SVT.gif */; };
-		C48B9CC71FF3468E001934BA /* Asystole.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB71FF34683001934BA /* Asystole.gif */; };
-		C48B9CC81FF3468E001934BA /* VentricularFibrillation.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB81FF34685001934BA /* VentricularFibrillation.gif */; };
-		C48B9CC91FF3468E001934BA /* 2ndDegreeTypeII.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CB91FF34686001934BA /* 2ndDegreeTypeII.gif */; };
-		C48B9CCA1FF3468E001934BA /* SinusTachycardia.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBA1FF34687001934BA /* SinusTachycardia.gif */; };
-		C48B9CCB1FF3468E001934BA /* VTach.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBB1FF34688001934BA /* VTach.gif */; };
-		C48B9CCC1FF3468E001934BA /* SinusBradycardia.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBC1FF34689001934BA /* SinusBradycardia.gif */; };
-		C48B9CCD1FF3468E001934BA /* 2ndDegreeTypeII.v2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBD1FF3468B001934BA /* 2ndDegreeTypeII.v2.gif */; };
-		C48B9CCE1FF3468E001934BA /* SVT1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBE1FF3468C001934BA /* SVT1.gif */; };
-		C48B9CCF1FF3468E001934BA /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */ = {isa = PBXBuildFile; fileRef = C48B9CBF1FF3468D001934BA /* 2ndDegreeTypeI ( Wenkeback).gif */; };
-		C498305C1FF6D36D00D3DB4D /* RSI_Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49830581FF6D36C00D3DB4D /* RSI_Additional.swift */; };
-		C498305D1FF6D36D00D3DB4D /* RSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49830591FF6D36D00D3DB4D /* RSIDetail.swift */; };
-		C498305E1FF6D36D00D3DB4D /* RSIProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498305A1FF6D36D00D3DB4D /* RSIProcess.swift */; };
-		C498305F1FF6D36D00D3DB4D /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498305B1FF6D36D00D3DB4D /* RSIMain.swift */; };
+		C42F417B1FF90CA2003BE489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F417A1FF90CA2003BE489 /* AppDelegate.swift */; };
+		C42F41821FF90E2B003BE489 /* PopTip+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F417C1FF90E27003BE489 /* PopTip+Draw.swift */; };
+		C42F41831FF90E2B003BE489 /* IdealBWDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F417D1FF90E28003BE489 /* IdealBWDataView.swift */; };
+		C42F41841FF90E2B003BE489 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F417E1FF90E29003BE489 /* Popover.swift */; };
+		C42F41851FF90E2B003BE489 /* PopTip+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F417F1FF90E2A003BE489 /* PopTip+Transitions.swift */; };
+		C42F41861FF90E2B003BE489 /* IdealBodyWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F41801FF90E2A003BE489 /* IdealBodyWeight.swift */; };
+		C42F41871FF90E2B003BE489 /* PopTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42F41811FF90E2B003BE489 /* PopTip.swift */; };
+		C4C25EEE1FF9099600C5CD42 /* RSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */; };
+		C4C25EEF1FF9099600C5CD42 /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */; };
+		C4C25EF01FF9099600C5CD42 /* RSI_Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBC1FF9099500C5CD42 /* RSI_Additional.swift */; };
+		C4C25EF11FF9099600C5CD42 /* RSIProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBD1FF9099500C5CD42 /* RSIProcess.swift */; };
+		C4C25EF21FF9099600C5CD42 /* FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBF1FF9099500C5CD42 /* FlatColors.swift */; };
+		C4C25EF41FF9099600C5CD42 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EC21FF9099500C5CD42 /* MyViewController.swift */; };
+		C4C25EF51FF9099600C5CD42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EC41FF9099500C5CD42 /* ViewController.swift */; };
+		C4C25EF61FF9099600C5CD42 /* StackElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EC51FF9099500C5CD42 /* StackElementViewController.swift */; };
+		C4C25EF71FF9099600C5CD42 /* RateCriticalPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EC61FF9099500C5CD42 /* RateCriticalPopUp.swift */; };
+		C4C25EF81FF9099600C5CD42 /* Disclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EC71FF9099500C5CD42 /* Disclaimer.swift */; };
+		C4C25EFA1FF9099600C5CD42 /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25ECA1FF9099500C5CD42 /* CollapsibleTableViewCell.swift */; };
+		C4C25EFB1FF9099600C5CD42 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25ECB1FF9099500C5CD42 /* ExampleData.swift */; };
+		C4C25EFC1FF9099600C5CD42 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25ECC1FF9099500C5CD42 /* Extensions.swift */; };
+		C4C25EFD1FF9099600C5CD42 /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25ECD1FF9099500C5CD42 /* CollapsibleTableViewController.swift */; };
+		C4C25EFE1FF9099600C5CD42 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25ECE1FF9099500C5CD42 /* CollapsibleTableViewHeader.swift */; };
+		C4C25EFF1FF9099600C5CD42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25ECF1FF9099500C5CD42 /* MenuViewController.swift */; };
+		C4C25F001FF9099600C5CD42 /* 2ndDegreeTypeII.v2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED21FF9099500C5CD42 /* 2ndDegreeTypeII.v2.gif */; };
+		C4C25F011FF9099600C5CD42 /* SinusBradyv.2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED31FF9099500C5CD42 /* SinusBradyv.2.gif */; };
+		C4C25F021FF9099600C5CD42 /* 3rdDegreeHB.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED41FF9099500C5CD42 /* 3rdDegreeHB.gif */; };
+		C4C25F031FF9099600C5CD42 /* AtrialFib.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED51FF9099500C5CD42 /* AtrialFib.gif */; };
+		C4C25F041FF9099600C5CD42 /* SVT.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED61FF9099500C5CD42 /* SVT.gif */; };
+		C4C25F051FF9099600C5CD42 /* SVT1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED71FF9099500C5CD42 /* SVT1.gif */; };
+		C4C25F061FF9099600C5CD42 /* SinusTachycardia.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED81FF9099500C5CD42 /* SinusTachycardia.gif */; };
+		C4C25F071FF9099600C5CD42 /* NormalSinus.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25ED91FF9099500C5CD42 /* NormalSinus.gif */; };
+		C4C25F081FF9099600C5CD42 /* SinusBradycardia.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EDA1FF9099500C5CD42 /* SinusBradycardia.gif */; };
+		C4C25F091FF9099600C5CD42 /* Polymorphic_VTach.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EDB1FF9099500C5CD42 /* Polymorphic_VTach.gif */; };
+		C4C25F0A1FF9099600C5CD42 /* VFib.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EDC1FF9099500C5CD42 /* VFib.gif */; };
+		C4C25F0B1FF9099600C5CD42 /* 2ndDegreeTypeII.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EDD1FF9099500C5CD42 /* 2ndDegreeTypeII.gif */; };
+		C4C25F0C1FF9099600C5CD42 /* VentricularFibrillation.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EDE1FF9099500C5CD42 /* VentricularFibrillation.gif */; };
+		C4C25F0D1FF9099600C5CD42 /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EDF1FF9099500C5CD42 /* 2ndDegreeTypeI ( Wenkeback).gif */; };
+		C4C25F0E1FF9099600C5CD42 /* VTach.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EE01FF9099500C5CD42 /* VTach.gif */; };
+		C4C25F0F1FF9099600C5CD42 /* Aflutter.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EE11FF9099500C5CD42 /* Aflutter.gif */; };
+		C4C25F101FF9099600C5CD42 /* Asystole.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4C25EE21FF9099500C5CD42 /* Asystole.gif */; };
+		C4C25F111FF9099600C5CD42 /* EKGInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EE41FF9099500C5CD42 /* EKGInformation.swift */; };
+		C4C25F121FF9099600C5CD42 /* EkgMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EE51FF9099500C5CD42 /* EkgMenuTableViewController.swift */; };
+		C4C25F131FF9099600C5CD42 /* ACLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EE61FF9099500C5CD42 /* ACLSViewController.swift */; };
+		C4C25F141FF9099600C5CD42 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EE71FF9099500C5CD42 /* Swift+Gif.swift */; };
+		C4C25F151FF9099600C5CD42 /* CalculatedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EE91FF9099600C5CD42 /* CalculatedDataViewController.swift */; };
+		C4C25F161FF9099600C5CD42 /* PedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEA1FF9099600C5CD42 /* PedsViewController.swift */; };
+		C4C25F171FF9099600C5CD42 /* PediatricCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */; };
+		C4C25F181FF9099600C5CD42 /* MiniPopUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */; };
+		C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,20 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		793BCA2C1FD56E3C001A4DFF /* RateCriticalPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCriticalPopUp.swift; sourceTree = "<group>"; };
-		795497EB1FD4D7400026EEC7 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
-		795497EF1FD55D7C0026EEC7 /* Disclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disclaimer.swift; sourceTree = "<group>"; };
-		795513481FD4B11A005856F3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7955134A1FD4B4F6005856F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7971CF2E1FCA47A400D3AEEB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		7971CF2F1FCA47A500D3AEEB /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
-		7971CF301FCA47A500D3AEEB /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
-		7971CF311FCA47A500D3AEEB /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
-		7971CF321FCA47A500D3AEEB /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
-		79BA78D01FABCD2600F087AF /* StackElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackElementViewController.swift; sourceTree = "<group>"; };
-		79BA78D11FABCD2700F087AF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79E2EF411F9CC18000701ACC /* Critical.X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Critical.X.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79E2EF441F9CC18000701ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Critical.X/View Controller Classes/Disclaimer /AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		79E2EF4B1F9CC18000701ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E2EF4E1F9CC18000701ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79E2EF501F9CC18000701ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,37 +92,55 @@
 		79E2EF601F9CC18100701ACC /* Critical.XUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Critical.XUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E2EF641F9CC18100701ACC /* Critical_XUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Critical_XUITests.swift; sourceTree = "<group>"; };
 		79E2EF661F9CC18100701ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C47F946F1FEC032200DE44E1 /* FlatColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatColors.swift; sourceTree = "<group>"; };
-		C47F94701FEC032300DE44E1 /* PediatricCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediatricCalculations.swift; sourceTree = "<group>"; };
-		C47F94711FEC032300DE44E1 /* MiniPopUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPopUpData.swift; sourceTree = "<group>"; };
-		C47F94721FEC032300DE44E1 /* PedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedsViewController.swift; sourceTree = "<group>"; };
-		C47F94731FEC032300DE44E1 /* CalculatedDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedDataViewController.swift; sourceTree = "<group>"; };
-		C47F94741FEC032300DE44E1 /* MiniDrugDataViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniDrugDataViewViewController.swift; sourceTree = "<group>"; };
-		C48B9CA01FF34153001934BA /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
-		C48B9CA81FF34209001934BA /* EKGInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGInformation.swift; sourceTree = "<group>"; };
-		C48B9CAA1FF3421F001934BA /* EkgMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkgMenuTableViewController.swift; sourceTree = "<group>"; };
-		C48B9CAC1FF3422E001934BA /* ACLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLSViewController.swift; sourceTree = "<group>"; };
-		C48B9CAE1FF345DC001934BA /* VFib.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VFib.gif; sourceTree = "<group>"; };
-		C48B9CB01FF3467B001934BA /* 3rdDegreeHB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3rdDegreeHB.gif; sourceTree = "<group>"; };
-		C48B9CB11FF3467C001934BA /* Polymorphic_VTach.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Polymorphic_VTach.gif; sourceTree = "<group>"; };
-		C48B9CB21FF3467E001934BA /* AtrialFib.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AtrialFib.gif; sourceTree = "<group>"; };
-		C48B9CB31FF3467F001934BA /* SinusBradyv.2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SinusBradyv.2.gif; sourceTree = "<group>"; };
-		C48B9CB41FF34680001934BA /* NormalSinus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = NormalSinus.gif; sourceTree = "<group>"; };
-		C48B9CB51FF34681001934BA /* Aflutter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Aflutter.gif; sourceTree = "<group>"; };
-		C48B9CB61FF34682001934BA /* SVT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SVT.gif; sourceTree = "<group>"; };
-		C48B9CB71FF34683001934BA /* Asystole.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Asystole.gif; sourceTree = "<group>"; };
-		C48B9CB81FF34685001934BA /* VentricularFibrillation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VentricularFibrillation.gif; sourceTree = "<group>"; };
-		C48B9CB91FF34686001934BA /* 2ndDegreeTypeII.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2ndDegreeTypeII.gif; sourceTree = "<group>"; };
-		C48B9CBA1FF34687001934BA /* SinusTachycardia.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SinusTachycardia.gif; sourceTree = "<group>"; };
-		C48B9CBB1FF34688001934BA /* VTach.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VTach.gif; sourceTree = "<group>"; };
-		C48B9CBC1FF34689001934BA /* SinusBradycardia.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SinusBradycardia.gif; sourceTree = "<group>"; };
-		C48B9CBD1FF3468B001934BA /* 2ndDegreeTypeII.v2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2ndDegreeTypeII.v2.gif; sourceTree = "<group>"; };
-		C48B9CBE1FF3468C001934BA /* SVT1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SVT1.gif; sourceTree = "<group>"; };
-		C48B9CBF1FF3468D001934BA /* 2ndDegreeTypeI ( Wenkeback).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2ndDegreeTypeI ( Wenkeback).gif"; sourceTree = "<group>"; };
-		C49830581FF6D36C00D3DB4D /* RSI_Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSI_Additional.swift; sourceTree = "<group>"; };
-		C49830591FF6D36D00D3DB4D /* RSIDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSIDetail.swift; sourceTree = "<group>"; };
-		C498305A1FF6D36D00D3DB4D /* RSIProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSIProcess.swift; sourceTree = "<group>"; };
-		C498305B1FF6D36D00D3DB4D /* RSIMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
+		C42F417A1FF90CA2003BE489 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C42F417C1FF90E27003BE489 /* PopTip+Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopTip+Draw.swift"; sourceTree = "<group>"; };
+		C42F417D1FF90E28003BE489 /* IdealBWDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdealBWDataView.swift; sourceTree = "<group>"; };
+		C42F417E1FF90E29003BE489 /* Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		C42F417F1FF90E2A003BE489 /* PopTip+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopTip+Transitions.swift"; sourceTree = "<group>"; };
+		C42F41801FF90E2A003BE489 /* IdealBodyWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdealBodyWeight.swift; sourceTree = "<group>"; };
+		C42F41811FF90E2B003BE489 /* PopTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTip.swift; sourceTree = "<group>"; };
+		C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIDetail.swift; sourceTree = "<group>"; };
+		C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
+		C4C25EBC1FF9099500C5CD42 /* RSI_Additional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSI_Additional.swift; sourceTree = "<group>"; };
+		C4C25EBD1FF9099500C5CD42 /* RSIProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIProcess.swift; sourceTree = "<group>"; };
+		C4C25EBF1FF9099500C5CD42 /* FlatColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatColors.swift; sourceTree = "<group>"; };
+		C4C25EC21FF9099500C5CD42 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		C4C25EC41FF9099500C5CD42 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4C25EC51FF9099500C5CD42 /* StackElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackElementViewController.swift; sourceTree = "<group>"; };
+		C4C25EC61FF9099500C5CD42 /* RateCriticalPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateCriticalPopUp.swift; sourceTree = "<group>"; };
+		C4C25EC71FF9099500C5CD42 /* Disclaimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disclaimer.swift; sourceTree = "<group>"; };
+		C4C25ECA1FF9099500C5CD42 /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		C4C25ECB1FF9099500C5CD42 /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		C4C25ECC1FF9099500C5CD42 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C4C25ECD1FF9099500C5CD42 /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		C4C25ECE1FF9099500C5CD42 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		C4C25ECF1FF9099500C5CD42 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C4C25ED21FF9099500C5CD42 /* 2ndDegreeTypeII.v2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2ndDegreeTypeII.v2.gif; sourceTree = "<group>"; };
+		C4C25ED31FF9099500C5CD42 /* SinusBradyv.2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SinusBradyv.2.gif; sourceTree = "<group>"; };
+		C4C25ED41FF9099500C5CD42 /* 3rdDegreeHB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3rdDegreeHB.gif; sourceTree = "<group>"; };
+		C4C25ED51FF9099500C5CD42 /* AtrialFib.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AtrialFib.gif; sourceTree = "<group>"; };
+		C4C25ED61FF9099500C5CD42 /* SVT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SVT.gif; sourceTree = "<group>"; };
+		C4C25ED71FF9099500C5CD42 /* SVT1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SVT1.gif; sourceTree = "<group>"; };
+		C4C25ED81FF9099500C5CD42 /* SinusTachycardia.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SinusTachycardia.gif; sourceTree = "<group>"; };
+		C4C25ED91FF9099500C5CD42 /* NormalSinus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = NormalSinus.gif; sourceTree = "<group>"; };
+		C4C25EDA1FF9099500C5CD42 /* SinusBradycardia.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SinusBradycardia.gif; sourceTree = "<group>"; };
+		C4C25EDB1FF9099500C5CD42 /* Polymorphic_VTach.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Polymorphic_VTach.gif; sourceTree = "<group>"; };
+		C4C25EDC1FF9099500C5CD42 /* VFib.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VFib.gif; sourceTree = "<group>"; };
+		C4C25EDD1FF9099500C5CD42 /* 2ndDegreeTypeII.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2ndDegreeTypeII.gif; sourceTree = "<group>"; };
+		C4C25EDE1FF9099500C5CD42 /* VentricularFibrillation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VentricularFibrillation.gif; sourceTree = "<group>"; };
+		C4C25EDF1FF9099500C5CD42 /* 2ndDegreeTypeI ( Wenkeback).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2ndDegreeTypeI ( Wenkeback).gif"; sourceTree = "<group>"; };
+		C4C25EE01FF9099500C5CD42 /* VTach.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = VTach.gif; sourceTree = "<group>"; };
+		C4C25EE11FF9099500C5CD42 /* Aflutter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Aflutter.gif; sourceTree = "<group>"; };
+		C4C25EE21FF9099500C5CD42 /* Asystole.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Asystole.gif; sourceTree = "<group>"; };
+		C4C25EE41FF9099500C5CD42 /* EKGInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKGInformation.swift; sourceTree = "<group>"; };
+		C4C25EE51FF9099500C5CD42 /* EkgMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EkgMenuTableViewController.swift; sourceTree = "<group>"; };
+		C4C25EE61FF9099500C5CD42 /* ACLSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLSViewController.swift; sourceTree = "<group>"; };
+		C4C25EE71FF9099500C5CD42 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		C4C25EE91FF9099600C5CD42 /* CalculatedDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatedDataViewController.swift; sourceTree = "<group>"; };
+		C4C25EEA1FF9099600C5CD42 /* PedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedsViewController.swift; sourceTree = "<group>"; };
+		C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PediatricCalculations.swift; sourceTree = "<group>"; };
+		C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniPopUpData.swift; sourceTree = "<group>"; };
+		C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniDrugDataViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,42 +168,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		793310A41FA9F56C00C955EF /* View Controller Classes */ = {
-			isa = PBXGroup;
-			children = (
-				795513481FD4B11A005856F3 /* MenuViewController.swift */,
-				7971CF381FCA47B200D3AEEB /* Fluids And Electorlytes */,
-				79BA78D41FABD68600F087AF /* Ventilator Modes */,
-				C47F946F1FEC032200DE44E1 /* FlatColors.swift */,
-				79E2EF441F9CC18000701ACC /* AppDelegate.swift */,
-				795497EB1FD4D7400026EEC7 /* MyViewController.swift */,
-				795497EF1FD55D7C0026EEC7 /* Disclaimer.swift */,
-				793BCA2C1FD56E3C001A4DFF /* RateCriticalPopUp.swift */,
-			);
-			path = "View Controller Classes";
-			sourceTree = "<group>";
-		};
-		7971CF381FCA47B200D3AEEB /* Fluids And Electorlytes */ = {
-			isa = PBXGroup;
-			children = (
-				7971CF321FCA47A500D3AEEB /* CollapsibleTableViewCell.swift */,
-				7971CF2F1FCA47A500D3AEEB /* CollapsibleTableViewController.swift */,
-				7971CF311FCA47A500D3AEEB /* CollapsibleTableViewHeader.swift */,
-				7971CF301FCA47A500D3AEEB /* ExampleData.swift */,
-				7971CF2E1FCA47A400D3AEEB /* Extensions.swift */,
-			);
-			path = "Fluids And Electorlytes";
-			sourceTree = "<group>";
-		};
-		79BA78D41FABD68600F087AF /* Ventilator Modes */ = {
-			isa = PBXGroup;
-			children = (
-				79BA78D01FABCD2600F087AF /* StackElementViewController.swift */,
-				79BA78D11FABCD2700F087AF /* ViewController.swift */,
-			);
-			path = "Ventilator Modes";
-			sourceTree = "<group>";
-		};
 		79E2EF381F9CC18000701ACC = {
 			isa = PBXGroup;
 			children = (
@@ -215,12 +191,18 @@
 		79E2EF431F9CC18000701ACC /* Critical.X */ = {
 			isa = PBXGroup;
 			children = (
+				C42F41801FF90E2A003BE489 /* IdealBodyWeight.swift */,
+				C42F417D1FF90E28003BE489 /* IdealBWDataView.swift */,
+				C42F417E1FF90E29003BE489 /* Popover.swift */,
+				C42F41811FF90E2B003BE489 /* PopTip.swift */,
+				C42F417C1FF90E27003BE489 /* PopTip+Draw.swift */,
+				C42F417F1FF90E2A003BE489 /* PopTip+Transitions.swift */,
+				C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */,
+				C4C25EE81FF9099600C5CD42 /* Pediatrics */,
+				C4C25EB91FF9099500C5CD42 /* RSI */,
+				C4C25EBE1FF9099500C5CD42 /* View Controller Classes */,
 				79E2EF4D1F9CC18000701ACC /* LaunchScreen.storyboard */,
 				7955134A1FD4B4F6005856F3 /* Main.storyboard */,
-				C49830611FF6EE5300D3DB4D /* RSI */,
-				C48B9CD21FF346FA001934BA /* EKG View Controllers and Gif's */,
-				C49830601FF6EE3400D3DB4D /* Pediatrics */,
-				793310A41FA9F56C00C955EF /* View Controller Classes */,
 				79E2EF4B1F9CC18000701ACC /* Assets.xcassets */,
 				79E2EF501F9CC18000701ACC /* Info.plist */,
 			);
@@ -245,71 +227,115 @@
 			path = Critical.XUITests;
 			sourceTree = "<group>";
 		};
-		C48B9CD01FF346B4001934BA /* EKG GIf's */ = {
+		C4C25EB91FF9099500C5CD42 /* RSI */ = {
 			isa = PBXGroup;
 			children = (
-				C48B9CBF1FF3468D001934BA /* 2ndDegreeTypeI ( Wenkeback).gif */,
-				C48B9CB91FF34686001934BA /* 2ndDegreeTypeII.gif */,
-				C48B9CBD1FF3468B001934BA /* 2ndDegreeTypeII.v2.gif */,
-				C48B9CB01FF3467B001934BA /* 3rdDegreeHB.gif */,
-				C48B9CB51FF34681001934BA /* Aflutter.gif */,
-				C48B9CB71FF34683001934BA /* Asystole.gif */,
-				C48B9CB21FF3467E001934BA /* AtrialFib.gif */,
-				C48B9CB41FF34680001934BA /* NormalSinus.gif */,
-				C48B9CB11FF3467C001934BA /* Polymorphic_VTach.gif */,
-				C48B9CBC1FF34689001934BA /* SinusBradycardia.gif */,
-				C48B9CB31FF3467F001934BA /* SinusBradyv.2.gif */,
-				C48B9CBA1FF34687001934BA /* SinusTachycardia.gif */,
-				C48B9CB61FF34682001934BA /* SVT.gif */,
-				C48B9CBE1FF3468C001934BA /* SVT1.gif */,
-				C48B9CB81FF34685001934BA /* VentricularFibrillation.gif */,
-				C48B9CBB1FF34688001934BA /* VTach.gif */,
-				C48B9CAE1FF345DC001934BA /* VFib.gif */,
+				C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */,
+				C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */,
+				C4C25EBC1FF9099500C5CD42 /* RSI_Additional.swift */,
+				C4C25EBD1FF9099500C5CD42 /* RSIProcess.swift */,
 			);
-			path = "EKG GIf's";
+			path = RSI;
 			sourceTree = "<group>";
 		};
-		C48B9CD11FF346D9001934BA /* EKG View Controllers & Media */ = {
+		C4C25EBE1FF9099500C5CD42 /* View Controller Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C48B9CA01FF34153001934BA /* Swift+Gif.swift */,
-				C48B9CAA1FF3421F001934BA /* EkgMenuTableViewController.swift */,
-				C48B9CAC1FF3422E001934BA /* ACLSViewController.swift */,
-				C48B9CA81FF34209001934BA /* EKGInformation.swift */,
+				C4C25EBF1FF9099500C5CD42 /* FlatColors.swift */,
+				C4C25EC01FF9099500C5CD42 /* Disclaimer  */,
+				C4C25EC21FF9099500C5CD42 /* MyViewController.swift */,
+				C4C25EC31FF9099500C5CD42 /* Ventilator Modes */,
+				C4C25EC61FF9099500C5CD42 /* RateCriticalPopUp.swift */,
+				C4C25EC71FF9099500C5CD42 /* Disclaimer.swift */,
+				C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */,
+				C4C25ECF1FF9099500C5CD42 /* MenuViewController.swift */,
 			);
-			path = "EKG View Controllers & Media";
+			path = "View Controller Classes";
 			sourceTree = "<group>";
 		};
-		C48B9CD21FF346FA001934BA /* EKG View Controllers and Gif's */ = {
+		C4C25EC01FF9099500C5CD42 /* Disclaimer  */ = {
 			isa = PBXGroup;
 			children = (
-				C48B9CD11FF346D9001934BA /* EKG View Controllers & Media */,
-				C48B9CD01FF346B4001934BA /* EKG GIf's */,
+				C42F417A1FF90CA2003BE489 /* AppDelegate.swift */,
+			);
+			path = "Disclaimer ";
+			sourceTree = "<group>";
+		};
+		C4C25EC31FF9099500C5CD42 /* Ventilator Modes */ = {
+			isa = PBXGroup;
+			children = (
+				C4C25EC41FF9099500C5CD42 /* ViewController.swift */,
+				C4C25EC51FF9099500C5CD42 /* StackElementViewController.swift */,
+			);
+			path = "Ventilator Modes";
+			sourceTree = "<group>";
+		};
+		C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */ = {
+			isa = PBXGroup;
+			children = (
+				C4C25ECA1FF9099500C5CD42 /* CollapsibleTableViewCell.swift */,
+				C4C25ECB1FF9099500C5CD42 /* ExampleData.swift */,
+				C4C25ECC1FF9099500C5CD42 /* Extensions.swift */,
+				C4C25ECD1FF9099500C5CD42 /* CollapsibleTableViewController.swift */,
+				C4C25ECE1FF9099500C5CD42 /* CollapsibleTableViewHeader.swift */,
+			);
+			path = "Fluids And Electorlytes";
+			sourceTree = "<group>";
+		};
+		C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */ = {
+			isa = PBXGroup;
+			children = (
+				C4C25ED11FF9099500C5CD42 /* EKG GIf's */,
+				C4C25EE31FF9099500C5CD42 /* EKG View Controllers & Media */,
 			);
 			path = "EKG View Controllers and Gif's";
 			sourceTree = "<group>";
 		};
-		C49830601FF6EE3400D3DB4D /* Pediatrics */ = {
+		C4C25ED11FF9099500C5CD42 /* EKG GIf's */ = {
 			isa = PBXGroup;
 			children = (
-				C47F94731FEC032300DE44E1 /* CalculatedDataViewController.swift */,
-				C47F94741FEC032300DE44E1 /* MiniDrugDataViewViewController.swift */,
-				C47F94711FEC032300DE44E1 /* MiniPopUpData.swift */,
-				C47F94701FEC032300DE44E1 /* PediatricCalculations.swift */,
-				C47F94721FEC032300DE44E1 /* PedsViewController.swift */,
+				C4C25ED21FF9099500C5CD42 /* 2ndDegreeTypeII.v2.gif */,
+				C4C25ED31FF9099500C5CD42 /* SinusBradyv.2.gif */,
+				C4C25ED41FF9099500C5CD42 /* 3rdDegreeHB.gif */,
+				C4C25ED51FF9099500C5CD42 /* AtrialFib.gif */,
+				C4C25ED61FF9099500C5CD42 /* SVT.gif */,
+				C4C25ED71FF9099500C5CD42 /* SVT1.gif */,
+				C4C25ED81FF9099500C5CD42 /* SinusTachycardia.gif */,
+				C4C25ED91FF9099500C5CD42 /* NormalSinus.gif */,
+				C4C25EDA1FF9099500C5CD42 /* SinusBradycardia.gif */,
+				C4C25EDB1FF9099500C5CD42 /* Polymorphic_VTach.gif */,
+				C4C25EDC1FF9099500C5CD42 /* VFib.gif */,
+				C4C25EDD1FF9099500C5CD42 /* 2ndDegreeTypeII.gif */,
+				C4C25EDE1FF9099500C5CD42 /* VentricularFibrillation.gif */,
+				C4C25EDF1FF9099500C5CD42 /* 2ndDegreeTypeI ( Wenkeback).gif */,
+				C4C25EE01FF9099500C5CD42 /* VTach.gif */,
+				C4C25EE11FF9099500C5CD42 /* Aflutter.gif */,
+				C4C25EE21FF9099500C5CD42 /* Asystole.gif */,
 			);
-			path = Pediatrics;
+			path = "EKG GIf's";
 			sourceTree = "<group>";
 		};
-		C49830611FF6EE5300D3DB4D /* RSI */ = {
+		C4C25EE31FF9099500C5CD42 /* EKG View Controllers & Media */ = {
 			isa = PBXGroup;
 			children = (
-				C498305B1FF6D36D00D3DB4D /* RSIMain.swift */,
-				C49830591FF6D36D00D3DB4D /* RSIDetail.swift */,
-				C49830581FF6D36C00D3DB4D /* RSI_Additional.swift */,
-				C498305A1FF6D36D00D3DB4D /* RSIProcess.swift */,
+				C4C25EE41FF9099500C5CD42 /* EKGInformation.swift */,
+				C4C25EE51FF9099500C5CD42 /* EkgMenuTableViewController.swift */,
+				C4C25EE61FF9099500C5CD42 /* ACLSViewController.swift */,
+				C4C25EE71FF9099500C5CD42 /* Swift+Gif.swift */,
 			);
-			path = RSI;
+			path = "EKG View Controllers & Media";
+			sourceTree = "<group>";
+		};
+		C4C25EE81FF9099600C5CD42 /* Pediatrics */ = {
+			isa = PBXGroup;
+			children = (
+				C4C25EE91FF9099600C5CD42 /* CalculatedDataViewController.swift */,
+				C4C25EEA1FF9099600C5CD42 /* PedsViewController.swift */,
+				C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */,
+				C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */,
+				C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */,
+			);
+			path = Pediatrics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,26 +445,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48B9CCE1FF3468E001934BA /* SVT1.gif in Resources */,
-				C48B9CCC1FF3468E001934BA /* SinusBradycardia.gif in Resources */,
-				C48B9CCF1FF3468E001934BA /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */,
-				C48B9CC11FF3468E001934BA /* Polymorphic_VTach.gif in Resources */,
+				C4C25F081FF9099600C5CD42 /* SinusBradycardia.gif in Resources */,
+				C4C25F041FF9099600C5CD42 /* SVT.gif in Resources */,
+				C4C25F091FF9099600C5CD42 /* Polymorphic_VTach.gif in Resources */,
+				C4C25F021FF9099600C5CD42 /* 3rdDegreeHB.gif in Resources */,
+				C4C25F011FF9099600C5CD42 /* SinusBradyv.2.gif in Resources */,
+				C4C25F0A1FF9099600C5CD42 /* VFib.gif in Resources */,
+				C4C25F061FF9099600C5CD42 /* SinusTachycardia.gif in Resources */,
+				C4C25F031FF9099600C5CD42 /* AtrialFib.gif in Resources */,
+				C4C25F101FF9099600C5CD42 /* Asystole.gif in Resources */,
+				C4C25F001FF9099600C5CD42 /* 2ndDegreeTypeII.v2.gif in Resources */,
+				C4C25F071FF9099600C5CD42 /* NormalSinus.gif in Resources */,
+				C4C25F0F1FF9099600C5CD42 /* Aflutter.gif in Resources */,
+				C4C25F051FF9099600C5CD42 /* SVT1.gif in Resources */,
+				C4C25F0E1FF9099600C5CD42 /* VTach.gif in Resources */,
 				79E2EF4F1F9CC18000701ACC /* LaunchScreen.storyboard in Resources */,
-				C48B9CC21FF3468E001934BA /* AtrialFib.gif in Resources */,
-				C48B9CCB1FF3468E001934BA /* VTach.gif in Resources */,
-				C48B9CCA1FF3468E001934BA /* SinusTachycardia.gif in Resources */,
-				C48B9CC01FF3468E001934BA /* 3rdDegreeHB.gif in Resources */,
+				C4C25F0D1FF9099600C5CD42 /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */,
 				79E2EF4C1F9CC18000701ACC /* Assets.xcassets in Resources */,
-				C48B9CCD1FF3468E001934BA /* 2ndDegreeTypeII.v2.gif in Resources */,
-				C48B9CC91FF3468E001934BA /* 2ndDegreeTypeII.gif in Resources */,
-				C48B9CC41FF3468E001934BA /* NormalSinus.gif in Resources */,
+				C4C25F0C1FF9099600C5CD42 /* VentricularFibrillation.gif in Resources */,
+				C4C25F0B1FF9099600C5CD42 /* 2ndDegreeTypeII.gif in Resources */,
 				7955134B1FD4B4F6005856F3 /* Main.storyboard in Resources */,
-				C48B9CAF1FF345DD001934BA /* VFib.gif in Resources */,
-				C48B9CC71FF3468E001934BA /* Asystole.gif in Resources */,
-				C48B9CC61FF3468E001934BA /* SVT.gif in Resources */,
-				C48B9CC31FF3468E001934BA /* SinusBradyv.2.gif in Resources */,
-				C48B9CC81FF3468E001934BA /* VentricularFibrillation.gif in Resources */,
-				C48B9CC51FF3468E001934BA /* Aflutter.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,32 +489,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7971CF341FCA47A500D3AEEB /* CollapsibleTableViewController.swift in Sources */,
-				79BA78D31FABCD2800F087AF /* ViewController.swift in Sources */,
-				7971CF371FCA47A500D3AEEB /* CollapsibleTableViewCell.swift in Sources */,
-				7971CF351FCA47A500D3AEEB /* ExampleData.swift in Sources */,
-				C47F94751FEC032300DE44E1 /* FlatColors.swift in Sources */,
-				C47F94761FEC032300DE44E1 /* PediatricCalculations.swift in Sources */,
-				C498305C1FF6D36D00D3DB4D /* RSI_Additional.swift in Sources */,
-				C498305E1FF6D36D00D3DB4D /* RSIProcess.swift in Sources */,
-				795497F01FD55D7C0026EEC7 /* Disclaimer.swift in Sources */,
-				C498305F1FF6D36D00D3DB4D /* RSIMain.swift in Sources */,
-				793BCA2D1FD56E3C001A4DFF /* RateCriticalPopUp.swift in Sources */,
-				C48B9CA11FF34153001934BA /* Swift+Gif.swift in Sources */,
-				7971CF331FCA47A500D3AEEB /* Extensions.swift in Sources */,
-				C498305D1FF6D36D00D3DB4D /* RSIDetail.swift in Sources */,
-				7971CF361FCA47A500D3AEEB /* CollapsibleTableViewHeader.swift in Sources */,
-				C47F94791FEC032300DE44E1 /* CalculatedDataViewController.swift in Sources */,
-				C48B9CA91FF34209001934BA /* EKGInformation.swift in Sources */,
-				C47F94771FEC032300DE44E1 /* MiniPopUpData.swift in Sources */,
-				79BA78D21FABCD2800F087AF /* StackElementViewController.swift in Sources */,
-				C48B9CAD1FF3422E001934BA /* ACLSViewController.swift in Sources */,
-				795513491FD4B11A005856F3 /* MenuViewController.swift in Sources */,
-				79E2EF451F9CC18000701ACC /* AppDelegate.swift in Sources */,
-				C47F94781FEC032300DE44E1 /* PedsViewController.swift in Sources */,
-				C47F947A1FEC032300DE44E1 /* MiniDrugDataViewViewController.swift in Sources */,
-				C48B9CAB1FF3421F001934BA /* EkgMenuTableViewController.swift in Sources */,
-				795497EC1FD4D7400026EEC7 /* MyViewController.swift in Sources */,
+				C4C25EFD1FF9099600C5CD42 /* CollapsibleTableViewController.swift in Sources */,
+				C42F41831FF90E2B003BE489 /* IdealBWDataView.swift in Sources */,
+				C4C25EFB1FF9099600C5CD42 /* ExampleData.swift in Sources */,
+				C42F41871FF90E2B003BE489 /* PopTip.swift in Sources */,
+				C4C25EF81FF9099600C5CD42 /* Disclaimer.swift in Sources */,
+				C4C25EF11FF9099600C5CD42 /* RSIProcess.swift in Sources */,
+				C4C25EFA1FF9099600C5CD42 /* CollapsibleTableViewCell.swift in Sources */,
+				C42F41851FF90E2B003BE489 /* PopTip+Transitions.swift in Sources */,
+				C4C25EF01FF9099600C5CD42 /* RSI_Additional.swift in Sources */,
+				C42F41841FF90E2B003BE489 /* Popover.swift in Sources */,
+				C4C25F141FF9099600C5CD42 /* Swift+Gif.swift in Sources */,
+				C4C25EF41FF9099600C5CD42 /* MyViewController.swift in Sources */,
+				C4C25EFE1FF9099600C5CD42 /* CollapsibleTableViewHeader.swift in Sources */,
+				C4C25F181FF9099600C5CD42 /* MiniPopUpData.swift in Sources */,
+				C4C25F131FF9099600C5CD42 /* ACLSViewController.swift in Sources */,
+				C4C25EEE1FF9099600C5CD42 /* RSIDetail.swift in Sources */,
+				C4C25F151FF9099600C5CD42 /* CalculatedDataViewController.swift in Sources */,
+				C42F41861FF90E2B003BE489 /* IdealBodyWeight.swift in Sources */,
+				C4C25EF21FF9099600C5CD42 /* FlatColors.swift in Sources */,
+				C4C25F111FF9099600C5CD42 /* EKGInformation.swift in Sources */,
+				C4C25EFC1FF9099600C5CD42 /* Extensions.swift in Sources */,
+				C42F41821FF90E2B003BE489 /* PopTip+Draw.swift in Sources */,
+				C4C25EFF1FF9099600C5CD42 /* MenuViewController.swift in Sources */,
+				C4C25F171FF9099600C5CD42 /* PediatricCalculations.swift in Sources */,
+				C4C25EF51FF9099600C5CD42 /* ViewController.swift in Sources */,
+				C4C25F121FF9099600C5CD42 /* EkgMenuTableViewController.swift in Sources */,
+				C42F417B1FF90CA2003BE489 /* AppDelegate.swift in Sources */,
+				C4C25EEF1FF9099600C5CD42 /* RSIMain.swift in Sources */,
+				C4C25EF61FF9099600C5CD42 /* StackElementViewController.swift in Sources */,
+				C4C25F161FF9099600C5CD42 /* PedsViewController.swift in Sources */,
+				C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */,
+				C4C25EF71FF9099600C5CD42 /* RateCriticalPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
