@@ -68,7 +68,7 @@ class IdealBWDataView: UIViewController {
         
         
         //MARK: Guard function during the calculations.
-        guard let myCalculations = heightEntered, (desiredTV != nil)  else {
+        guard let myCalculations = heightEntered else {
             
             
             print("Cannot calculate because weight out of normal parameters")
@@ -79,7 +79,9 @@ class IdealBWDataView: UIViewController {
             ettDepth.isHidden = true
             genderHeading.isHidden = true
             return }
-        
+        guard let dTV = desiredTV else {
+            print("Cannot calculate because weight out of normal parameters")
+            return }
         
         let TV = (Int(desiredTV!))
         

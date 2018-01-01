@@ -81,6 +81,11 @@ class IdealBodyWeight: UIViewController {
                 switch idealBodyWeightSegment.selectedSegmentIndex {
                 case 0:
                     
+                    
+                    ///Guard statement if no values in the textField. 
+                    guard let _ = desiredTV , let _ = heightEntered  else {
+                        print("Error! out of normal parameters"); return }
+                    
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 1
                     

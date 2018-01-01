@@ -54,13 +54,29 @@ class RSIMain: UIViewController {
 
     }
   
+    // Dismisses the keyboard when the user taps on the outside of any textField
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true) //This will hide the keyboard
+    }
+    
+    @IBAction func CalculateBtn(_ sender: Any) {
+        
+            /// if the textField is empty. the text will be set to zero and the UI Alert will come up.
+            guard let theText = rsiTextField.text, theText.isEmpty else {
+                // theText is empty
+                return // or throw
+            }
+            rsiTextField.text = "0"
+            
+            let alert = UIAlertController(title: "Please enter a numeric value", message:  "Enter an appropriate weight greater than zero to calcualte.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Got it", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert,animated: true, completion: nil)
+            
+        }
+        
+    }
     
     
-    
-    
-    
-    
-    
-}
+
 
 

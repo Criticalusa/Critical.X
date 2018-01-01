@@ -1914,15 +1914,6 @@ public class CalculatedDataViewController: UIViewController {
         }
     
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
     
 

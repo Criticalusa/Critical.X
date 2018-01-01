@@ -20,6 +20,7 @@ class PedsViewController: UIViewController {
     @IBOutlet weak var pediatricSubView: UIView!
     @IBOutlet weak var textFieldData: UITextField!
     @IBOutlet weak var calculate_Button: UIButton!
+    @IBOutlet weak var closeBtnPeds: UIButton!
     
     
     
@@ -37,6 +38,8 @@ class PedsViewController: UIViewController {
         pediatricSubView.layer.cornerRadius = 20
         pediatricSubView.layer.shadowOpacity = 0.00
         
+        // Takes the button and makes it into a circle
+        closeBtnPeds.layer.cornerRadius = closeBtnPeds.frame.size.width / 2
         
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
@@ -45,6 +48,10 @@ class PedsViewController: UIViewController {
         //tap.cancelsTouchesInView = false…
     }
     
+    // Dismisses the keyboard when the user taps on the outside of any textField
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true) //This will hide the keyboard
+    }
    
     //MARK:  Dismisses the ViewController
     
@@ -61,15 +68,12 @@ class PedsViewController: UIViewController {
             // theText is empty
             return // or throw
         }
-        
-        
         textFieldData.text = "0.0"
         
         let alert = UIAlertController(title: "Please enter a numeric value", message:  "Enter a weight greater than zero, and less than 80 kg's. to calcualte.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Got it", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert,animated: true, completion: nil)
-        
-        
+
     }
     
     //MARK: Prepare for the SEGUE
@@ -85,16 +89,6 @@ class PedsViewController: UIViewController {
         }
             
             
-            //        else if ageWeightSegmentController.selectedSegmentIndex == 0 {
-            //
-            //            if let destination = segue.destination as? CalculatedDataViewController {
-            //
-            //                destination.ageEntered = Double (calcNum)
-            //
-            //            }
-            
-            //        }
-            
         else  {
             
             ///// Checks the segue destination, grabs the number value from the textfield and passes the data. 
@@ -104,13 +98,6 @@ class PedsViewController: UIViewController {
                 
             }
         }
-        
-        //if let destination = segue.destination as? CalculatedDataViewController {
-        
-        //destination.number = Double (textFieldData.text!)
-        
-        //}
-        
         
     }
     
