@@ -154,6 +154,21 @@ class IdealBodyWeight: UIViewController {
     }
    
     
+    /// Cancels the segue transition if the textBox is empty
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "ibwShow" {
+            if (desiredTVText.text?.isEmpty)! && (heightText.text?.isEmpty)! || (desiredTVText.text == "0.0") && (heightText.text == "0.0") {
+                print(" Ideal body weight segue cancelled")
+                return false
+            }
+        }
+        
+        // by default, transition
+        return true
+    }
+    
+
+    
     @IBAction func segmentSElected(_ sender: Any) {
         
         

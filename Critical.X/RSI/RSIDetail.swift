@@ -54,13 +54,7 @@ class RSIDetail: UIViewController {
         
     }
 
-    
-   
-
-    
-    
-    
-    
+    //Mark: RSI Calculations 
     func rsiCalculation(){
         
         //MARK: GUARD Guard statement saying that if the weight is not enterend and the calculated button is pushed, Print this statement.

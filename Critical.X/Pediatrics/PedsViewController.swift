@@ -76,6 +76,10 @@ class PedsViewController: UIViewController {
 
     }
     
+
+    
+    
+    
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -86,10 +90,7 @@ class PedsViewController: UIViewController {
         if (textFieldData.text?.isEmpty)! 
         {
             textFieldData.text = "0.0"
-        }
-            
-            
-        else  {
+        } else  {
             
             ///// Checks the segue destination, grabs the number value from the textfield and passes the data. 
             if let destination = segue.destination as? CalculatedDataViewController {
@@ -99,6 +100,19 @@ class PedsViewController: UIViewController {
             }
         }
         
+    }
+    
+    /// Cancels the segue transition if the textBox is empty
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "toDataSegue" {
+            if (textFieldData.text?.isEmpty)! || (textFieldData.text == "0.0") {
+                print("segue cancelled")
+                return false
+            }
+        }
+        
+        // by default, transition
+        return true
     }
     
 }

@@ -26,11 +26,7 @@ class FreeWaterDeficit: UIViewController {
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
             
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
