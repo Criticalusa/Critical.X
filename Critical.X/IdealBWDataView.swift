@@ -67,18 +67,18 @@ class IdealBWDataView: UIViewController {
         //        var idealBwCalc: Double { return 50 + 2.3 * (heightEntered! - 60 ) }
         
         
-        //MARK: Guard function during the calculations.
-        guard let myCalculations = heightEntered, let tv = desiredTV else {
-            
-            
-            print("Cannot calculate Ideal body weight because weight out of normal parameters")
-            self.idealBodyweightCalc.isHidden = true
-            genderHeading.text = "Fill in both parameters"
-            tvCalculation.isHidden = true
-            IBW_Pounds.isHidden = true
-            ettDepth.isHidden = true
-            genderHeading.isHidden = true
-            return }
+//        //MARK: Guard function during the calculations.
+//        guard let myCalculations = heightEntered, let tv = desiredTV else {
+//
+//
+//            print("Cannot calculate Ideal body weight because weight out of normal parameters")
+//            self.idealBodyweightCalc.isHidden = true
+//            genderHeading.text = "Fill in both parameters"
+//            tvCalculation.isHidden = true
+//            IBW_Pounds.isHidden = true
+//            ettDepth.isHidden = true
+//            genderHeading.isHidden = true
+//            return }
         
         
         let TV = (Int(desiredTV!))
@@ -153,7 +153,7 @@ class IdealBWDataView: UIViewController {
         
         switch idBlock {
             
-            //MARK: - MALE METHODS
+        //MARK: - MALE METHODS
         // In the event MALE is selected
         case 1:
             IBW_Pounds.text = String(format:"%.1f",poundsMale) + " lbs" // Rounds to the 1st decimal place
@@ -170,7 +170,7 @@ class IdealBWDataView: UIViewController {
             
             print("Male calculations were executed uder the switch")
             
-            //MARK: - FEMALE METHODS
+        //MARK: - FEMALE METHODS
         // In the event FEMALE is selected
         case 2:
             IBW_Pounds.text =  String(format:"%.1f",poundsFemale) + " lbs"  // Rounds to the 1st decimal place

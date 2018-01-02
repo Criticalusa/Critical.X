@@ -68,7 +68,6 @@ class UrineOutput: UIViewController {
                     let weight = Double(weightTextField.text!)
                     let urineOutput = Double(urineOurputTextField.text!)
                     let time = Double(hoursTextField.text!)
-                    let oliguria = ""
                     
                    
                     

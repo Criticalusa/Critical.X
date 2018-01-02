@@ -130,7 +130,7 @@ class UrineOutputData: UIViewController {
         popTip.actionAnimation = .float(0.5) // This will float for 0.5 instead of the default value
         
         // Identified where in the view to make the popUp show
-        let here = CGRect (x: 150, y: 650, width: 100, height: 100)
+        let here = CGRect (x: 140, y: 720, width: 100, height: 100)
         
         
         popTip.show(text: "Adult oliguria is U/O < 500 mL in 24 hrs (0.5 mL/kg/hr) Peds: < 1L in 24 hrs (1 mL/kg/hr) ", direction: .up, maxWidth: 200, in: view, from: here)
@@ -143,7 +143,7 @@ class UrineOutputData: UIViewController {
         popTip.shouldDismissOnTap = true
         
         //Changes the font of the pop-up and size
-        popTip.font = UIFont(name: "AvenirNextCondensed-Heavy", size: 10.0)!
+//        popTip.font = UIFont(name: "AvenirNextCondensed-Heavy", size: 10.0)!
         
     }
     
