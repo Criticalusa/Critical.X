@@ -55,8 +55,15 @@ class O2TankCalculator: UIViewController {
         
         let psi = Double(psitTxt.text!)
         let liters = Double(litersMinTxt.text!)
-        let result = Double(resultsLabel.text!)
+        _ = Double(resultsLabel.text!)
         
+        guard let _ = psi, let _ = liters else {
+            
+            _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the fields before calculating.", closeButtonTitle:"OK")
+            //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+        
+            return print("Oops none of the textFields were closed.") }
+
         /* Tank Conversion Coefficients
          Calculation is ((psi! - 200) * 0.16 / liters!)
          D = 0.16
@@ -70,8 +77,6 @@ class O2TankCalculator: UIViewController {
         let G: Double = ((psi! - 200) * 2.41 / liters!)
         let HK: Double = ((psi! - 200) * 3.14 / liters!)
         let M: Double = ((psi! - 200) * 1.56 / liters!)
-        
-        
         
         if (resultsLabel.text! > "0.0") {
             switch segmento2?.selectedIndex {
