@@ -101,17 +101,17 @@ class IdealBodyWeight: UIViewController {
                     //                    // set the TV to the corresponding text field
                     IBW.desiredTV = Double (desiredTVText.text!)
                     //
-                    //
-                    //                    // maleIBWCalculation is set to zero on the receiving view controller, here I tell it if the segment is equal to zero from these calculations.
+                    
+                                        // maleIBWCalculation is set to zero on the receiving view controller, here I tell it if the segment is equal to zero from these calculations.
                     IBW.maleIBWCalculation =  (50 + 2.3 * (Double (heightText.text!)! - 60))
-                    //
-                    //
-                    //                    //Set the female calculations to zero, or it will crash showing nil.
+                    
+                    
+                                        //Set the female calculations to zero, or it will crash showing nil.
                     IBW.femaleIBWCalculation = 0
                     IBW .femalelbs = 0
-                    //
-                    //
-                    //                    // I declared a global gender label on the receiving view controller and send it with the text.
+                    
+                    
+                                // I declared a global gender label on the receiving view controller and send it with the text.
                     IBW.genderLabel = "Male"
                     //
                     
