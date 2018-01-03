@@ -19,12 +19,13 @@ class O2TankCalculator: UIViewController {
     
     @IBOutlet weak var resultsLabel: UILabel!
     
-    @IBOutlet weak var segmento2: UISegmentedControl!
+    @IBOutlet weak var segmento2: CustomSegmentedController?
     
     @IBOutlet weak var minutesLabel: UILabel!
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var closebutton02: UIButton!
     @IBOutlet weak var calculateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,11 @@ class O2TankCalculator: UIViewController {
         //Hides the view initally
         o2DetailView.isHidden = true
         
+        // Takes the button and makes it into a circle
+        closebutton02.layer.cornerRadius = closebutton02.frame.size.width / 2
+        
+        //Add items to the segmented Control // Takes the button and makes it into a circle
+        segmento2?.items = ["D", "E", "G", "H/K", "M"]
         
     }
     
@@ -68,8 +74,8 @@ class O2TankCalculator: UIViewController {
         
         
         if (resultsLabel.text! > "0.0") {
-            switch segmento2.selectedSegmentIndex {
-            case 0:
+            switch segmento2?.selectedIndex {
+            case 0?:
                 resultsLabel.text = String(format:"%.1f",D) // Rounds to the 1st decimal place
                 print("Tank D was selected")
                 o2DetailView.isHidden = false
@@ -79,6 +85,7 @@ class O2TankCalculator: UIViewController {
                
                 if (resultsLabel.text! < "0.0") {
                    
+                    
                     minutesLabel.text = "Refill the tank"
                     
                     resultsLabel.text = "Tank is empty"
@@ -92,7 +99,7 @@ class O2TankCalculator: UIViewController {
                     showAnimate()
                 }
                 
-            case 1:
+            case 1?:
                 resultsLabel.text = String(format:"%.1f",E)
                 print("Tank E was selected")
                 o2DetailView.isHidden = false
@@ -101,7 +108,7 @@ class O2TankCalculator: UIViewController {
 
                 showAnimate()
                 
-            case 2:
+            case 2?:
                 resultsLabel.text = String(format:"%.1f",G)
                 print("Tank G was selected")
                 o2DetailView.isHidden = false
@@ -112,7 +119,7 @@ class O2TankCalculator: UIViewController {
 
                 showAnimate()
                 
-            case 3:
+            case 3?:
                 resultsLabel.text = String(format:"%.1f",HK)
                 print("Tank HK was selected")
                 o2DetailView.isHidden = false
@@ -122,7 +129,7 @@ class O2TankCalculator: UIViewController {
 
                 showAnimate()
                 
-            case 4:
+            case 4?:
                 resultsLabel.text = String(format:"%.1f",M)
                 print("Tank M was selected")
                 o2DetailView.isHidden = false
@@ -142,6 +149,8 @@ class O2TankCalculator: UIViewController {
             o2DetailView.isHidden = false
             showAnimate()
         }
+        
+        self.view.endEditing(true)
         
     }
     
@@ -169,7 +178,12 @@ class O2TankCalculator: UIViewController {
         });
     }
     
-    
+    @IBAction func dismiss02View(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        print("View Controller was dismissed")
+        
+    }
     
 }
 
