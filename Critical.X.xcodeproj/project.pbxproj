@@ -252,8 +252,8 @@
 				79E2EF4D1F9CC18000701ACC /* LaunchScreen.storyboard */,
 				7955134A1FD4B4F6005856F3 /* Main.storyboard */,
 				C4B912AE2000FD950008B159 /* New Group */,
-				C4B912AD2000FD5B0008B159 /* Models */,
 				C4C25EBE1FF9099500C5CD42 /* Views */,
+				C4B912AD2000FD5B0008B159 /* Models */,
 				79E2EF4B1F9CC18000701ACC /* Assets.xcassets */,
 				79E2EF501F9CC18000701ACC /* Info.plist */,
 			);
@@ -392,6 +392,30 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
+		C4B912B3200102B10008B159 /* Anion Gap */ = {
+			isa = PBXGroup;
+			children = (
+				C47551EB1FFDD8E300400C0C /* AnionGap.swift */,
+			);
+			path = "Anion Gap";
+			sourceTree = "<group>";
+		};
+		C4B912B4200102BA0008B159 /* WintersFormula */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */,
+			);
+			path = WintersFormula;
+			sourceTree = "<group>";
+		};
+		C4B912B5200102C50008B159 /* o2Tank Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C47FECE51FFC5DDF00E2C273 /* O2TankCalculator.swift */,
+			);
+			path = "o2Tank Calculator";
+			sourceTree = "<group>";
+		};
 		C4C25EB91FF9099500C5CD42 /* RSI */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,11 +430,10 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C47551EB1FFDD8E300400C0C /* AnionGap.swift */,
-				C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */,
-				C47FECE51FFC5DDF00E2C273 /* O2TankCalculator.swift */,
-				C4C25EC61FF9099500C5CD42 /* RateCriticalPopUp.swift */,
-				C4C25EC71FF9099500C5CD42 /* Disclaimer.swift */,
+				C42F417A1FF90CA2003BE489 /* AppDelegate.swift */,
+				C4B912B5200102C50008B159 /* o2Tank Calculator */,
+				C4B912B4200102BA0008B159 /* WintersFormula */,
+				C4B912B3200102B10008B159 /* Anion Gap */,
 				C470BB031FFB14A60085F0FF /* Free Water Deficit */,
 				C470BB041FFB14D00085F0FF /* Urine Output */,
 				C470BAFF1FFB0A300085F0FF /* Free Water Deficit */,
@@ -418,19 +441,20 @@
 				C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */,
 				C4C25EE81FF9099600C5CD42 /* Pediatrics */,
 				C4C25EB91FF9099500C5CD42 /* RSI */,
-				C4C25EC01FF9099500C5CD42 /* Disclaimer  */,
+				C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */,
 				C4C25EC31FF9099500C5CD42 /* Ventilator Modes */,
 				C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C4C25EC01FF9099500C5CD42 /* Disclaimer  */ = {
+		C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */ = {
 			isa = PBXGroup;
 			children = (
-				C42F417A1FF90CA2003BE489 /* AppDelegate.swift */,
+				C4C25EC61FF9099500C5CD42 /* RateCriticalPopUp.swift */,
+				C4C25EC71FF9099500C5CD42 /* Disclaimer.swift */,
 			);
-			path = "Disclaimer ";
+			path = "Disclaimer & Rate ";
 			sourceTree = "<group>";
 		};
 		C4C25EC31FF9099500C5CD42 /* Ventilator Modes */ = {

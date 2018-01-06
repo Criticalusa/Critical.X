@@ -17,6 +17,7 @@ class IdealBodyWeight: UIViewController {
     @IBOutlet weak var heightText: UITextField!
     @IBOutlet weak var closeButton: UIButton!
     
+    @IBOutlet weak var calculateButton: UIButton!
     
     @IBOutlet weak var idealBodyWeightSegment: CustomSegmentedController?
     
@@ -25,6 +26,12 @@ class IdealBodyWeight: UIViewController {
         
         // Takes the button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
+        
+        /// Rounds the corners 15 pixels of the button name
+        calculateButton.clipsToBounds = true
+        calculateButton.layer.cornerRadius = 4
+        
+        
         
         idealBodyWeightSegment?.items = ["M", "F"]
         

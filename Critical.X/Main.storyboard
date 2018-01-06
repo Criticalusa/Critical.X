@@ -15,8 +15,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Heavy</string>
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Bold</string>
+            <string>AppleSDGothicNeo-Regular</string>
         </array>
         <array key="AvenirNext.ttc">
             <string>AvenirNext-DemiBold</string>
@@ -25,7 +26,11 @@
             <string>AvenirNextCondensed-Bold</string>
             <string>AvenirNextCondensed-Heavy</string>
         </array>
+        <array key="Futura.ttc">
+            <string>Futura-Bold</string>
+        </array>
         <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
         </array>
         <array key="HelveticaNeueExtras.ttc">
@@ -64,7 +69,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiU-ys-QzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3140" y="-856"/>
+            <point key="canvasLocation" x="2919" y="-841"/>
         </scene>
         <!--Ventilator Modes-->
         <scene sceneID="LTE-Bh-Bq7">
@@ -148,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3K-HP-OlM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253" y="-1733"/>
+            <point key="canvasLocation" x="1535" y="-1736"/>
         </scene>
         <!--Stack Element View Controller-->
         <scene sceneID="hNZ-zC-4r5">
@@ -224,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GB1-4B-1cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="-1735"/>
+            <point key="canvasLocation" x="2260" y="-1736"/>
         </scene>
         <!--Critical Main Menu-->
         <scene sceneID="fae-xy-RMQ">
@@ -703,7 +708,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFe-9E-uGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="-842"/>
+            <point key="canvasLocation" x="1534" y="-842"/>
         </scene>
         <!--Rate Critical Pop Up-->
         <scene sceneID="I8R-JB-PFv">
@@ -784,7 +789,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9T-W1-fei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3583" y="-856"/>
+            <point key="canvasLocation" x="3582" y="-841"/>
         </scene>
         <!--Disclaimer -->
         <scene sceneID="cCt-Ai-TQ5">
@@ -826,7 +831,7 @@ Please be aware that all information as provided as part of Critical – X progr
 You agree to use the product only as an education aid and not to diagnose or treat a condition or as a substitute for any or to override the exercise of professional judgment by a healthcare professional. Given these possibilities of human errors or changes in medical science, you should confirm the information in the product through independent sources. The Barringer Group is not responsible for misdiagnosis of an element or misuse of treatment due to typographical or other errors in the product, user negligence or otherwise.
 
 You agree and acknowledge that you will, at all times, advise patients to seek professional diagnosis and treatment for any medical condition and to discuss information obtained for the product with healthcare providers. This product is, to the extent permitted by law, provided on an "as is" basis without warranties of any kind, express or implied, in the authors and producers of Critical disclaims any liability, loss, or damage caused by it or its content. By continuing to use this product, you indicate your acceptance of these terms. Updated January 1, 2018</string>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -893,7 +898,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMx-Gk-IoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4002" y="-651"/>
+            <point key="canvasLocation" x="4209" y="-681"/>
         </scene>
         <!--Peds View Controller-->
         <scene sceneID="SFT-Yo-Avp">
@@ -903,48 +908,89 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-Xb-2Zg">
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-Xb-2Zg">
                                 <rect key="frame" x="0.0" y="243" width="375" height="569"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENTER WEIGHT IN KG'S TO CALCULATE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-Ng-Tcf">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="60"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG-WhiteGreen" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-rF-mfD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Blue"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vJ-F5-fj6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ZNY-rr-1qY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <color key="backgroundColor" name="BalletSlipper"/>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter pediatric weight to calculate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csc-Ng-Tcf">
+                                        <rect key="frame" x="0.0" y="8" width="375" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="qAG-4s-OH9"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
-                                        <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cr-8p-Kf1">
+                                        <rect key="frame" x="75" y="129" width="225" height="36"/>
+                                        <color key="backgroundColor" red="0.91498154401779175" green="0.37833490967750549" blue="0.73496383428573608" alpha="0.30353638285024154" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="BAN-6F-AVt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateDataButton:" destination="GeO-G6-W0H" eventType="touchUpInside" id="bdf-fl-3Tr"/>
+                                            <segue destination="GDC-86-wAR" kind="presentation" identifier="toDataSegue" id="Cxg-iu-muc"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight in kg's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEc-he-Tsv">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="NfR-EI-5id"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.43137254899999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.51784205439999997" green="0.58159953360000005" blue="0.58617168659999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2cr-8p-Kf1" firstAttribute="top" secondItem="SEc-he-Tsv" secondAttribute="bottom" constant="8" symbolic="YES" id="Fsf-aN-aYh"/>
+                                    <constraint firstItem="csc-Ng-Tcf" firstAttribute="top" secondItem="eRs-Xb-2Zg" secondAttribute="topMargin" id="N7k-hL-6PY"/>
+                                    <constraint firstItem="SEc-he-Tsv" firstAttribute="top" secondItem="csc-Ng-Tcf" secondAttribute="bottom" constant="31" id="N9L-Ic-SYh"/>
+                                    <constraint firstItem="csc-Ng-Tcf" firstAttribute="leading" secondItem="SEc-he-Tsv" secondAttribute="leading" id="PeK-Qh-vkp"/>
+                                    <constraint firstItem="csc-Ng-Tcf" firstAttribute="trailing" secondItem="SEc-he-Tsv" secondAttribute="trailing" id="a4R-ON-QDb"/>
+                                    <constraint firstAttribute="trailing" secondItem="csc-Ng-Tcf" secondAttribute="trailing" id="aqa-cL-CFL"/>
+                                    <constraint firstItem="SEc-he-Tsv" firstAttribute="centerX" secondItem="2cr-8p-Kf1" secondAttribute="centerX" id="bZq-5C-o2E"/>
+                                    <constraint firstItem="csc-Ng-Tcf" firstAttribute="leading" secondItem="eRs-Xb-2Zg" secondAttribute="leading" id="dr3-Sy-j3x"/>
+                                    <constraint firstItem="2cr-8p-Kf1" firstAttribute="leading" secondItem="eRs-Xb-2Zg" secondAttribute="leading" constant="75" id="oSY-6b-bxL"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cr-8p-Kf1">
-                                <rect key="frame" x="20" y="367" width="339" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.43137254899999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="PRESS TO CALCULATE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="calculateDataButton:" destination="GeO-G6-W0H" eventType="touchUpInside" id="bdf-fl-3Tr"/>
-                                    <segue destination="GDC-86-wAR" kind="presentation" identifier="toDataSegue" id="Cxg-iu-muc"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pediatrics" translatesAutoresizingMaskIntoConstraints="NO" id="frm-sS-OVc">
+                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatrics" translatesAutoresizingMaskIntoConstraints="NO" id="frm-sS-OVc">
                                 <rect key="frame" x="0.0" y="85" width="375" height="156"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="KG" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdK-2r-rOw">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdK-2r-rOw">
                                 <rect key="frame" x="130" y="303" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.34509803919999998" green="0.57254901960000004" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="miF-Li-k4x"/>
+                                </constraints>
+                                <color key="textColor" name="Concentrate"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-8g-YCH">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4P-8g-YCH">
                                 <rect key="frame" x="321" y="39" width="38" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="PLq-Yc-1cl"/>
+                                </constraints>
                                 <state key="normal" title="X">
                                     <color key="titleColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -954,6 +1000,22 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eRs-Xb-2Zg" secondAttribute="bottom" id="7w0-Hi-mP4"/>
+                            <constraint firstItem="frm-sS-OVc" firstAttribute="leading" secondItem="BeD-iW-NiX" secondAttribute="leading" id="8XR-Ey-Fz2"/>
+                            <constraint firstItem="H4P-8g-YCH" firstAttribute="leading" secondItem="Ezv-0G-9c1" secondAttribute="leading" constant="321" id="Ffe-jN-xAU"/>
+                            <constraint firstItem="H4P-8g-YCH" firstAttribute="top" secondItem="BeD-iW-NiX" secondAttribute="topMargin" constant="-5" id="Hd0-GG-el0"/>
+                            <constraint firstItem="Ezv-0G-9c1" firstAttribute="bottom" secondItem="IdK-2r-rOw" secondAttribute="bottom" constant="445" id="Pis-hl-I29"/>
+                            <constraint firstItem="IdK-2r-rOw" firstAttribute="leading" secondItem="Ezv-0G-9c1" secondAttribute="leading" constant="130" id="Rrj-h4-0O1"/>
+                            <constraint firstItem="frm-sS-OVc" firstAttribute="leading" secondItem="eRs-Xb-2Zg" secondAttribute="leading" id="RvJ-R3-69r"/>
+                            <constraint firstItem="IdK-2r-rOw" firstAttribute="top" secondItem="frm-sS-OVc" secondAttribute="bottom" constant="62" id="SGa-2z-b8p"/>
+                            <constraint firstAttribute="trailing" secondItem="frm-sS-OVc" secondAttribute="trailing" id="i3w-ZG-lL8"/>
+                            <constraint firstItem="frm-sS-OVc" firstAttribute="top" secondItem="H4P-8g-YCH" secondAttribute="bottom" constant="8" symbolic="YES" id="je2-7J-5iy"/>
+                            <constraint firstItem="eRs-Xb-2Zg" firstAttribute="top" secondItem="frm-sS-OVc" secondAttribute="bottom" constant="2" id="mMj-GT-b6i"/>
+                            <constraint firstItem="frm-sS-OVc" firstAttribute="trailing" secondItem="eRs-Xb-2Zg" secondAttribute="trailing" id="qRS-DC-CFx"/>
+                            <constraint firstItem="frm-sS-OVc" firstAttribute="centerX" secondItem="IdK-2r-rOw" secondAttribute="centerX" id="qnv-iz-yV9"/>
+                            <constraint firstItem="H4P-8g-YCH" firstAttribute="trailing" secondItem="BeD-iW-NiX" secondAttribute="trailingMargin" id="vUr-wb-ohR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ezv-0G-9c1"/>
                     </view>
                     <connections>
@@ -965,7 +1027,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWd-S1-2Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4825" y="-856"/>
+            <point key="canvasLocation" x="4845.6000000000004" y="-842.36453201970448"/>
         </scene>
         <!--Calculated Data View Controller-->
         <scene sceneID="2F6-JZ-RaO">
@@ -2737,7 +2799,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cw-HJ-kJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5686" y="487"/>
+            <point key="canvasLocation" x="6110" y="151"/>
         </scene>
         <!--Mini Drug Data View View Controller-->
         <scene sceneID="ltv-IU-9lx">
@@ -2756,7 +2818,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uk5-gV-3fK">
-                                <rect key="frame" x="36" y="114.00000000000003" width="302" height="327.66666666666674"/>
+                                <rect key="frame" x="36" y="114.00000000000003" width="302" height="324.66666666666674"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-sD-Euq">
                                         <rect key="frame" x="267" y="0.0" width="27" height="26"/>
@@ -2786,8 +2848,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 -12 mg/kg: Max 6mg" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NB-fi-nii">
-                                        <rect key="frame" x="8" y="107" width="286" height="23.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <rect key="frame" x="8" y="107" width="286" height="20.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2834,7 +2896,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YV-2e-LqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5232" y="-856"/>
+            <point key="canvasLocation" x="5466" y="-842"/>
         </scene>
         <!--Critical EKG's-->
         <scene sceneID="a3z-aQ-3AN">
@@ -3277,7 +3339,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJM-Z5-MvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3140" y="1168"/>
+            <point key="canvasLocation" x="2818" y="1003"/>
         </scene>
         <!--ACLS Main-->
         <scene sceneID="Es9-vL-esg">
@@ -3288,8 +3350,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supraventricular Tachycardia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-Yn-QAT">
-                                <rect key="frame" x="8" y="44" width="359" height="34.333333333333343"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                <rect key="frame" x="8" y="44" width="359" height="26.666666666666671"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <color key="textColor" red="0.1450980392" green="0.19215686269999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -3427,7 +3489,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwg-VY-A3V" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3582" y="1411"/>
+            <point key="canvasLocation" x="3623" y="1182"/>
         </scene>
         <!--RSI Main-->
         <scene sceneID="9ju-Sg-WdI">
@@ -3437,7 +3499,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue flare abstract blur iPhone X Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="lSB-tf-jlJ">
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG-WhiteGreen" translatesAutoresizingMaskIntoConstraints="NO" id="lSB-tf-jlJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -3446,7 +3508,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20u-ZU-imQ">
+                            <visualEffectView opaque="NO" alpha="0.64000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20u-ZU-imQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="AnM-ks-8qr">
@@ -3454,9 +3516,9 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJC-QD-PVv">
-                                            <rect key="frame" x="334" y="45" width="30" height="28"/>
+                                            <rect key="frame" x="334" y="45" width="30" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.40123037439613529" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <state key="normal" title="X">
                                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3467,7 +3529,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </button>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.15868747234344482" green="0.21822044253349304" blue="0.30320093035697937" alpha="0.16294912439613526" colorSpace="calibratedRGB"/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rapid Sequence Intubation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa0-j9-fen">
@@ -3475,28 +3536,42 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xa0-j9-fen" secondAttribute="height" multiplier="49:5" id="scC-Rh-vy9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter weight in KG's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7Q-f6-Kfa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7Q-f6-Kfa">
                                 <rect key="frame" x="16" y="283" width="343" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="m7Q-f6-Kfa" secondAttribute="height" multiplier="343:13" id="fyi-UM-3gv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter weight in ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="KG's">
+                                        <attributes>
+                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="11" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwu-iu-LHZ">
-                                <rect key="frame" x="68" y="319" width="239" height="33"/>
-                                <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="75" y="319" width="225" height="36"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Mwu-iu-LHZ" secondAttribute="height" multiplier="239:33" id="y4E-XC-CDL"/>
+                                    <constraint firstAttribute="width" secondItem="Mwu-iu-LHZ" secondAttribute="height" multiplier="239:33" constant="-35.727272727272748" id="y4E-XC-CDL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="CALCULATE">
-                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="0.74594278380000001" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="CalculateBtn:" destination="0ZM-Cb-f2u" eventType="touchUpInside" id="idY-Bf-IDa"/>
@@ -3513,17 +3588,17 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstAttribute="width" secondItem="okp-4R-boS" secondAttribute="height" multiplier="49:5" id="c8Z-PQ-LKf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="29"/>
-                                <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kg's" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-33-Ena">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-33-Ena">
                                 <rect key="frame" x="139" y="243" width="97" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PlY-33-Ena" secondAttribute="height" multiplier="97:32" id="mhr-H1-Nb4"/>
                                 </constraints>
                                 <color key="textColor" red="0.2470588235" green="0.53333333329999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.84705882349999995" green="0.3803921569" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -3539,9 +3614,9 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="loX-4u-wYA" firstAttribute="trailing" secondItem="Mwu-iu-LHZ" secondAttribute="trailing" constant="68" id="0tl-iC-Ao0"/>
+                            <constraint firstItem="loX-4u-wYA" firstAttribute="trailing" secondItem="Mwu-iu-LHZ" secondAttribute="trailing" constant="75" id="0tl-iC-Ao0"/>
                             <constraint firstItem="Xa0-j9-fen" firstAttribute="top" secondItem="loX-4u-wYA" secondAttribute="top" constant="48" id="0uq-LP-QRG"/>
-                            <constraint firstItem="Mwu-iu-LHZ" firstAttribute="leading" secondItem="loX-4u-wYA" secondAttribute="leading" constant="68" id="1yZ-D2-8mx"/>
+                            <constraint firstItem="Mwu-iu-LHZ" firstAttribute="leading" secondItem="loX-4u-wYA" secondAttribute="leading" constant="75" id="1yZ-D2-8mx"/>
                             <constraint firstItem="loX-4u-wYA" firstAttribute="trailing" secondItem="okp-4R-boS" secondAttribute="trailing" constant="16" id="47P-6w-AC3"/>
                             <constraint firstItem="PlY-33-Ena" firstAttribute="top" secondItem="okp-4R-boS" secondAttribute="bottom" constant="79" id="6VZ-MX-jgK"/>
                             <constraint firstItem="okp-4R-boS" firstAttribute="leading" secondItem="loX-4u-wYA" secondAttribute="leading" constant="16" id="Cgg-WA-xU5"/>
@@ -3550,7 +3625,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <constraint firstItem="m7Q-f6-Kfa" firstAttribute="leading" secondItem="loX-4u-wYA" secondAttribute="leading" constant="16" id="Kvy-CS-6Bg"/>
                             <constraint firstItem="loX-4u-wYA" firstAttribute="trailing" secondItem="PlY-33-Ena" secondAttribute="trailing" constant="139" id="Y4Q-jk-3v2"/>
                             <constraint firstItem="m7Q-f6-Kfa" firstAttribute="top" secondItem="PlY-33-Ena" secondAttribute="bottom" constant="8" id="ZUe-Ff-pd2"/>
-                            <constraint firstItem="loX-4u-wYA" firstAttribute="bottom" secondItem="Mwu-iu-LHZ" secondAttribute="bottom" constant="426" id="cRT-M4-AVl"/>
+                            <constraint firstItem="loX-4u-wYA" firstAttribute="bottom" secondItem="Mwu-iu-LHZ" secondAttribute="bottom" constant="423" id="cRT-M4-AVl"/>
                             <constraint firstItem="Mwu-iu-LHZ" firstAttribute="top" secondItem="m7Q-f6-Kfa" secondAttribute="bottom" constant="23" id="qWQ-5u-rs5"/>
                             <constraint firstItem="PlY-33-Ena" firstAttribute="leading" secondItem="loX-4u-wYA" secondAttribute="leading" constant="139" id="twY-1W-5Ng"/>
                             <constraint firstItem="okp-4R-boS" firstAttribute="top" secondItem="Xa0-j9-fen" secondAttribute="bottom" constant="2" id="vNj-8N-Twj"/>
@@ -3559,14 +3634,14 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <viewLayoutGuide key="safeArea" id="loX-4u-wYA"/>
                     </view>
                     <connections>
-                        <outlet property="calcualeButton" destination="Mwu-iu-LHZ" id="Xaf-mw-3jo"/>
+                        <outlet property="calulateRSIButton" destination="Mwu-iu-LHZ" id="Xaf-mw-3jo"/>
                         <outlet property="closeButton" destination="CJC-QD-PVv" id="Xqn-vM-zyb"/>
                         <outlet property="rsiTextField" destination="PlY-33-Ena" id="BWM-zH-1VM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olg-sy-TPs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3140" y="81"/>
+            <point key="canvasLocation" x="2817" y="81"/>
         </scene>
         <!--RSI Detail Screen-->
         <scene sceneID="VmT-Dh-NXL">
@@ -3591,13 +3666,13 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-Treatment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1A-jx-era">
                                                             <rect key="frame" x="0.0" y="0.0" width="377" height="45"/>
                                                             <color key="backgroundColor" red="0.2470588235" green="0.53333333329999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="29"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="29"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E8-gz-RHO">
                                                             <rect key="frame" x="333" y="7" width="30" height="30"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="0.3977770229468599" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="97M-Lj-Okj"/>
                                                             </constraints>
@@ -3677,18 +3752,18 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Induction Agents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sor-y1-eND">
                                                             <rect key="frame" x="0.0" y="259" width="377" height="45"/>
-                                                            <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" name="Cool Mint"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="45" id="KOG-aR-Qly"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="29"/>
-                                                            <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="29"/>
+                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neuromuscular Blockades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfe-pp-LBn">
                                                             <rect key="frame" x="1" y="500" width="377" height="45"/>
                                                             <color key="backgroundColor" red="0.67455112930000005" green="0.15692374110000001" blue="0.10914970929999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="29"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="29"/>
                                                             <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -4262,7 +4337,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                         <constraint firstAttribute="height" constant="32" id="Msl-BN-fCX"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="19"/>
-                                                    <color key="textColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" name="Cool Mint"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -4325,7 +4400,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Typ-q9-dGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3584" y="174"/>
+            <point key="canvasLocation" x="3537" y="151"/>
         </scene>
         <!--RSI Additional-->
         <scene sceneID="54T-GM-g9y">
@@ -4589,7 +4664,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn1-3s-ZMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4002" y="389"/>
+            <point key="canvasLocation" x="4209" y="81"/>
         </scene>
         <!--RSI Process-->
         <scene sceneID="vvN-yw-E0K">
@@ -4713,7 +4788,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYg-nv-MTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4409" y="149"/>
+            <point key="canvasLocation" x="4847" y="151"/>
         </scene>
         <!--References-->
         <scene sceneID="BNp-Cr-chW">
@@ -5155,7 +5230,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Uq-au-Rnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="-842"/>
+            <point key="canvasLocation" x="679" y="-842"/>
         </scene>
         <!--Ideal Body Weight Main-->
         <scene sceneID="az7-ma-ie2">
@@ -5180,8 +5255,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWZ-zc-yAG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c81-Fg-c1r" customClass="CustomSegmentedController" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="242" width="121" height="29"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c81-Fg-c1r" customClass="CustomSegmentedController" customModule="Critical_X" customModuleProvider="target">
+                                        <rect key="frame" x="208.33333333333337" y="239" width="114.66666666666666" height="27.333333333333314"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="c81-Fg-c1r" secondAttribute="height" multiplier="121:29" id="NzK-7E-crG"/>
@@ -5205,7 +5280,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="inches" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31j-Le-zlK" customClass="KaedeTextField" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="226" y="287.33333333333331" width="97" height="34"/>
+                                        <rect key="frame" x="201" y="285.66666666666669" width="97" height="35.666666666666686"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.6460786533816425" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="97" id="SOz-pT-cbz"/>
@@ -5227,11 +5302,11 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ideal Body Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxr-mO-T13">
                                         <rect key="frame" x="16" y="110" width="343" height="42"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="33"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcQ-Qd-yfE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcQ-Qd-yfE">
                                         <rect key="frame" x="16" y="292" width="117" height="31.333333333333314"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="117" id="ixo-p3-QZR"/>
@@ -5240,8 +5315,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ3-eq-I2q">
-                                        <rect key="frame" x="16" y="237" width="39" height="39"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ3-eq-I2q">
+                                        <rect key="frame" x="16.000000000000004" y="237" width="45.333333333333343" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="39" id="0Yo-6X-6EU"/>
                                         </constraints>
@@ -5255,7 +5330,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <constraint firstAttribute="width" constant="130" id="F08-ar-4YB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
-                                        <color key="textColor" red="0.18039215689999999" green="0.69411764710000001" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" name="Cool Mint"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3L-IH-cUc">
@@ -5268,11 +5343,11 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <action selector="popBtn:" destination="Ojx-6e-2g9" eventType="touchUpInside" id="O9z-nj-cgy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMr-cR-lwD">
-                                        <rect key="frame" x="75" y="398.33333333333331" width="225" height="42"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
-                                        <state key="normal" title="CALCULATE">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMr-cR-lwD">
+                                        <rect key="frame" x="75" y="398.33333333333331" width="225" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="0.30312122584541062" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
+                                        <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="0.75" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -5289,7 +5364,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZz-JZ-tsQ">
-                                        <rect key="frame" x="301" y="55" width="35" height="35"/>
+                                        <rect key="frame" x="321" y="55" width="35" height="35"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="Mdg-ZP-YNI"/>
@@ -5304,7 +5379,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL/kg" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tgh-dw-Wdt" customClass="KaedeTextField" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="226" y="344.33333333333331" width="97" height="30"/>
+                                        <rect key="frame" x="201" y="344.33333333333331" width="97" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.64704106280193241" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
@@ -5326,7 +5401,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="RJ3-eq-I2q" firstAttribute="top" secondItem="pxr-mO-T13" secondAttribute="bottom" constant="85" id="2Yk-NB-iUq"/>
                                     <constraint firstItem="31j-Le-zlK" firstAttribute="trailing" secondItem="Tgh-dw-Wdt" secondAttribute="trailing" id="5ct-GM-xru"/>
                                     <constraint firstItem="RJ3-eq-I2q" firstAttribute="top" secondItem="0Lr-gu-uXF" secondAttribute="bottom" constant="68" id="5d3-Xr-9Xy"/>
-                                    <constraint firstItem="31j-Le-zlK" firstAttribute="trailing" secondItem="c81-Fg-c1r" secondAttribute="trailing" id="7au-EW-eXW"/>
+                                    <constraint firstItem="31j-Le-zlK" firstAttribute="trailing" secondItem="c81-Fg-c1r" secondAttribute="trailing" constant="-25" id="7au-EW-eXW"/>
                                     <constraint firstItem="pxr-mO-T13" firstAttribute="top" secondItem="oWZ-zc-yAG" secondAttribute="top" constant="110" id="9R5-wR-B3L"/>
                                     <constraint firstItem="N3L-IH-cUc" firstAttribute="top" secondItem="BcQ-Qd-yfE" secondAttribute="bottom" constant="24" id="BbV-Q8-5ka"/>
                                     <constraint firstItem="pxr-mO-T13" firstAttribute="centerX" secondItem="oWZ-zc-yAG" secondAttribute="centerX" id="C2V-Lf-GWI"/>
@@ -5347,7 +5422,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="pxr-mO-T13" firstAttribute="top" secondItem="wZz-JZ-tsQ" secondAttribute="bottom" constant="20" id="nCl-zl-Ush"/>
                                     <constraint firstItem="Tgh-dw-Wdt" firstAttribute="top" secondItem="31j-Le-zlK" secondAttribute="bottom" constant="23" id="qPc-dx-46u"/>
                                     <constraint firstItem="NVo-g9-uxE" firstAttribute="leading" secondItem="oWZ-zc-yAG" secondAttribute="leading" constant="18" id="rpC-DC-KCP"/>
-                                    <constraint firstAttribute="trailing" secondItem="wZz-JZ-tsQ" secondAttribute="trailing" constant="39" id="shs-Oy-Crw"/>
+                                    <constraint firstAttribute="trailing" secondItem="wZz-JZ-tsQ" secondAttribute="trailing" constant="19" id="shs-Oy-Crw"/>
                                     <constraint firstAttribute="trailing" secondItem="c81-Fg-c1r" secondAttribute="trailing" constant="52" id="sou-H8-IgP"/>
                                     <constraint firstItem="31j-Le-zlK" firstAttribute="leading" secondItem="Tgh-dw-Wdt" secondAttribute="leading" id="tIY-sK-hhv"/>
                                     <constraint firstItem="NVo-g9-uxE" firstAttribute="top" secondItem="BcQ-Qd-yfE" secondAttribute="bottom" constant="16.666666666666686" id="tK0-wu-bJC"/>
@@ -5376,6 +5451,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <viewLayoutGuide key="safeArea" id="RAg-7a-JMf"/>
                     </view>
                     <connections>
+                        <outlet property="calculateButton" destination="lMr-cR-lwD" id="pav-0A-sgX"/>
                         <outlet property="closeButton" destination="wZz-JZ-tsQ" id="dwB-3L-sh7"/>
                         <outlet property="desiredTVText" destination="Tgh-dw-Wdt" id="MTU-ME-2Ow"/>
                         <outlet property="heightText" destination="31j-Le-zlK" id="A8e-sA-UZ3"/>
@@ -5401,60 +5477,64 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFT-jP-TC7">
                                 <rect key="frame" x="0.0" y="444" width="375" height="368"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3t-8a-8aB">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="39"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="qWh-u5-qbM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                        <color key="textColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ideal Body Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDP-pb-mko">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <color key="backgroundColor" red="0.98431372549019602" green="0.7803921568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="NDP-pb-mko" secondAttribute="height" multiplier="375:44" id="IHz-jO-ne2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3t-8a-8aB">
-                                        <rect key="frame" x="8" y="63" width="363" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ideal Body Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29C-jv-fBo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ideal Body Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29C-jv-fBo">
                                         <rect key="frame" x="15" y="87" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="zxl-kz-drs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="23"/>
                                         <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-gb-kQL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-gb-kQL">
                                         <rect key="frame" x="15" y="144" width="242" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="akO-pL-OeS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="23"/>
                                         <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-Oc-pR5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-Oc-pR5">
                                         <rect key="frame" x="15" y="196" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="lAw-Q3-FgM"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="23"/>
                                         <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETT Depth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHK-Bp-n9t">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETT Depth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHK-Bp-n9t">
                                         <rect key="frame" x="15" y="257" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ls6-d5-UYK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="23"/>
                                         <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-QM-ukE">
-                                        <rect key="frame" x="265" y="87" width="110" height="40"/>
+                                        <rect key="frame" x="265" y="87" width="110" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="ZLM-AB-kBE"/>
                                         </constraints>
@@ -5463,19 +5543,19 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v41-yZ-lX2">
-                                        <rect key="frame" x="265" y="144" width="100" height="40"/>
+                                        <rect key="frame" x="265" y="141" width="100" height="42"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdo-0M-VCL">
-                                        <rect key="frame" x="265" y="196" width="100" height="40"/>
+                                        <rect key="frame" x="265" y="193" width="100" height="42"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETT Depth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22H-eA-OBj">
-                                        <rect key="frame" x="265" y="257" width="100" height="40"/>
+                                        <rect key="frame" x="265" y="254" width="100" height="42"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -5485,6 +5565,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0hi-ed-3VP" secondAttribute="height" multiplier="1:1" id="EPd-SU-8TG"/>
+                                            <constraint firstAttribute="width" secondItem="0hi-ed-3VP" secondAttribute="height" multiplier="1:1" id="Wat-bQ-r7O"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="X">
@@ -5500,16 +5581,14 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="XoX-Oc-pR5" firstAttribute="trailing" secondItem="kHK-Bp-n9t" secondAttribute="trailing" id="0KF-SH-ahd"/>
+                                    <constraint firstItem="0hi-ed-3VP" firstAttribute="leading" secondItem="jFT-jP-TC7" secondAttribute="leading" constant="328" id="0Ws-2s-eMX"/>
                                     <constraint firstAttribute="trailing" secondItem="fNF-QM-ukE" secondAttribute="trailing" id="1aa-X9-kFP"/>
-                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="top" secondItem="NDP-pb-mko" secondAttribute="bottom" constant="19" id="4Kr-yV-mrF"/>
                                     <constraint firstItem="kHK-Bp-n9t" firstAttribute="firstBaseline" secondItem="22H-eA-OBj" secondAttribute="firstBaseline" id="7ah-pv-8sX"/>
-                                    <constraint firstAttribute="trailing" secondItem="E3t-8a-8aB" secondAttribute="trailing" constant="4" id="BI3-MT-A8Y"/>
                                     <constraint firstItem="XoX-Oc-pR5" firstAttribute="top" secondItem="ExT-gb-kQL" secondAttribute="bottom" constant="12" id="DbO-hT-FGo"/>
                                     <constraint firstItem="cdo-0M-VCL" firstAttribute="leading" secondItem="22H-eA-OBj" secondAttribute="leading" id="HcL-a8-kHQ"/>
-                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="top" secondItem="0hi-ed-3VP" secondAttribute="bottom" constant="26" id="Ilx-ZO-W6A"/>
                                     <constraint firstItem="kHK-Bp-n9t" firstAttribute="top" secondItem="XoX-Oc-pR5" secondAttribute="bottom" constant="21" id="JCn-d5-Xwb"/>
                                     <constraint firstAttribute="trailing" secondItem="0hi-ed-3VP" secondAttribute="trailing" constant="17" id="Mta-Hh-hfA"/>
-                                    <constraint firstItem="29C-jv-fBo" firstAttribute="top" secondItem="E3t-8a-8aB" secondAttribute="bottom" constant="3" id="Oyp-wT-6Im"/>
+                                    <constraint firstAttribute="trailing" secondItem="0hi-ed-3VP" secondAttribute="trailing" constant="17" id="NLp-GD-Vqs"/>
                                     <constraint firstItem="29C-jv-fBo" firstAttribute="leading" secondItem="ExT-gb-kQL" secondAttribute="leading" id="SR3-C1-QMC"/>
                                     <constraint firstItem="kHK-Bp-n9t" firstAttribute="baseline" secondItem="22H-eA-OBj" secondAttribute="baseline" id="UMX-Z5-3PC"/>
                                     <constraint firstItem="29C-jv-fBo" firstAttribute="leading" secondItem="jFT-jP-TC7" secondAttribute="leading" constant="15" id="VWC-Df-VIP"/>
@@ -5521,17 +5600,22 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstAttribute="bottom" secondItem="kHK-Bp-n9t" secondAttribute="bottom" constant="71" id="dsS-Kx-gW7"/>
                                     <constraint firstItem="ExT-gb-kQL" firstAttribute="leading" secondItem="XoX-Oc-pR5" secondAttribute="leading" id="eZu-dO-Kty"/>
                                     <constraint firstItem="v41-yZ-lX2" firstAttribute="leading" secondItem="cdo-0M-VCL" secondAttribute="leading" id="fCD-pR-H70"/>
-                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="leading" secondItem="jFT-jP-TC7" secondAttribute="leadingMargin" id="fE3-Ak-ArI"/>
                                     <constraint firstItem="cdo-0M-VCL" firstAttribute="trailing" secondItem="22H-eA-OBj" secondAttribute="trailing" id="gV7-WT-LNZ"/>
                                     <constraint firstItem="XoX-Oc-pR5" firstAttribute="firstBaseline" secondItem="cdo-0M-VCL" secondAttribute="firstBaseline" id="iqW-ZM-TW7"/>
                                     <constraint firstItem="ExT-gb-kQL" firstAttribute="top" secondItem="29C-jv-fBo" secondAttribute="bottom" constant="17" id="j47-Rk-TEB"/>
+                                    <constraint firstItem="0hi-ed-3VP" firstAttribute="top" secondItem="jFT-jP-TC7" secondAttribute="top" constant="7" id="jDv-CM-JX7"/>
                                     <constraint firstItem="ExT-gb-kQL" firstAttribute="baseline" secondItem="v41-yZ-lX2" secondAttribute="baseline" id="kpq-tx-OGk"/>
                                     <constraint firstItem="ExT-gb-kQL" firstAttribute="firstBaseline" secondItem="v41-yZ-lX2" secondAttribute="firstBaseline" id="mgn-DC-WHT"/>
+                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="trailing" secondItem="fNF-QM-ukE" secondAttribute="trailing" id="mmd-3b-Uwa"/>
                                     <constraint firstItem="fNF-QM-ukE" firstAttribute="leading" secondItem="v41-yZ-lX2" secondAttribute="leading" id="oRo-v7-4De"/>
                                     <constraint firstItem="v41-yZ-lX2" firstAttribute="top" secondItem="fNF-QM-ukE" secondAttribute="bottom" constant="17" id="obI-1j-BXf"/>
                                     <constraint firstItem="v41-yZ-lX2" firstAttribute="trailing" secondItem="cdo-0M-VCL" secondAttribute="trailing" id="rGD-Ql-BSC"/>
+                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="top" secondItem="0hi-ed-3VP" secondAttribute="bottom" constant="6" id="rVg-FJ-M0v"/>
+                                    <constraint firstItem="29C-jv-fBo" firstAttribute="top" secondItem="E3t-8a-8aB" secondAttribute="bottom" constant="5" id="s54-Vn-n6U"/>
                                     <constraint firstAttribute="trailing" secondItem="NDP-pb-mko" secondAttribute="trailing" id="sdN-Xt-G34"/>
+                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="top" secondItem="0hi-ed-3VP" secondAttribute="bottom" constant="6" id="uOH-Sa-cAM"/>
                                     <constraint firstItem="fNF-QM-ukE" firstAttribute="top" secondItem="NDP-pb-mko" secondAttribute="bottom" constant="43" id="viC-AZ-HWa"/>
+                                    <constraint firstItem="E3t-8a-8aB" firstAttribute="leading" secondItem="NDP-pb-mko" secondAttribute="leading" id="yzc-RG-iWv"/>
                                     <constraint firstItem="0hi-ed-3VP" firstAttribute="centerY" secondItem="NDP-pb-mko" secondAttribute="centerY" id="z17-Va-2PZ"/>
                                     <constraint firstItem="XoX-Oc-pR5" firstAttribute="leading" secondItem="kHK-Bp-n9t" secondAttribute="leading" id="zd6-I8-u1p"/>
                                     <constraint firstItem="XoX-Oc-pR5" firstAttribute="baseline" secondItem="cdo-0M-VCL" secondAttribute="baseline" id="zrn-Xh-Dcs"/>
@@ -5568,7 +5652,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1674" y="106"/>
+            <point key="canvasLocation" x="1925.5999999999999" y="80.541871921182263"/>
         </scene>
         <!--FreeWaterDeficitMain-->
         <scene sceneID="Oaa-I0-M3O">
@@ -5676,11 +5760,14 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGn-DJ-Lfr">
-                                        <rect key="frame" x="75" y="457" width="225" height="42"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
+                                        <rect key="frame" x="75" y="457" width="225" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="0.40023022342995168" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="oNN-pa-i7w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
                                         <state key="normal" title="Calculate">
-                                            <color key="titleColor" red="0.84705882349999995" green="0.3803921569" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="0.74594278380000001" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="showPopup:" destination="InP-fk-gWN" eventType="touchUpInside" id="2EA-L0-n9s"/>
@@ -5752,6 +5839,11 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-4S-r0h">
                                         <rect key="frame" x="17" y="98" width="342" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="popBtnReference:" destination="Zfj-K4-Jgj" eventType="touchUpInside" id="kZm-ek-MCr"/>
                                         </connections>
@@ -5772,7 +5864,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="s4G-Fr-Vw1" firstAttribute="leading" secondItem="qug-fd-QrO" secondAttribute="leading" id="4FM-1m-ojg"/>
                                     <constraint firstItem="Rey-Fj-4KM" firstAttribute="top" secondItem="s4G-Fr-Vw1" secondAttribute="bottom" constant="11" id="63T-6q-ZAF"/>
                                     <constraint firstItem="h6E-iE-eK9" firstAttribute="top" secondItem="mTC-06-xvi" secondAttribute="bottom" constant="20" id="6Z3-QF-LQK"/>
-                                    <constraint firstItem="YGn-DJ-Lfr" firstAttribute="top" secondItem="nfO-TE-7Lc" secondAttribute="bottom" constant="40" id="A8t-BF-0cy"/>
                                     <constraint firstItem="FkU-UE-ZrG" firstAttribute="leading" secondItem="xfV-BO-xRs" secondAttribute="leading" constant="17" id="Afp-CH-H4t"/>
                                     <constraint firstItem="s4G-Fr-Vw1" firstAttribute="trailing" secondItem="EAp-fC-Mo4" secondAttribute="trailing" id="AwY-nH-2k5"/>
                                     <constraint firstItem="mTC-06-xvi" firstAttribute="top" secondItem="xfV-BO-xRs" secondAttribute="top" constant="55" id="BrZ-7p-3ey"/>
@@ -5780,7 +5871,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="FkU-UE-ZrG" firstAttribute="centerY" secondItem="s4G-Fr-Vw1" secondAttribute="centerY" id="CXy-Nx-Abg"/>
                                     <constraint firstItem="ZSM-O1-lq4" firstAttribute="top" secondItem="mTC-06-xvi" secondAttribute="bottom" constant="61" id="CqS-qm-bg6"/>
                                     <constraint firstItem="tMs-hh-mP0" firstAttribute="top" secondItem="HxM-fm-hWp" secondAttribute="bottom" constant="1" id="Ghg-ET-7vB"/>
-                                    <constraint firstItem="YGn-DJ-Lfr" firstAttribute="leading" secondItem="xfV-BO-xRs" secondAttribute="leading" constant="75" id="Jal-Rm-hZt"/>
+                                    <constraint firstItem="YGn-DJ-Lfr" firstAttribute="centerX" secondItem="ZSM-O1-lq4" secondAttribute="centerX" id="Icf-T4-db8"/>
+                                    <constraint firstItem="YGn-DJ-Lfr" firstAttribute="top" secondItem="nfO-TE-7Lc" secondAttribute="bottom" constant="40" id="L1B-8a-pIg"/>
                                     <constraint firstItem="s4G-Fr-Vw1" firstAttribute="trailing" secondItem="Rey-Fj-4KM" secondAttribute="trailing" id="Lfw-Og-X6T"/>
                                     <constraint firstItem="h6E-iE-eK9" firstAttribute="centerX" secondItem="xfV-BO-xRs" secondAttribute="centerX" id="MJh-e0-ytC"/>
                                     <constraint firstItem="qug-fd-QrO" firstAttribute="top" secondItem="3w4-Wu-OmS" secondAttribute="bottom" constant="15" id="Q9v-TA-LYy"/>
@@ -5802,11 +5894,11 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="HUi-VV-B6c" firstAttribute="top" secondItem="tMs-hh-mP0" secondAttribute="bottom" constant="17" id="akq-18-eaL"/>
                                     <constraint firstItem="HUi-VV-B6c" firstAttribute="top" secondItem="HxM-fm-hWp" secondAttribute="bottom" constant="57" id="bIN-k2-oma"/>
                                     <constraint firstItem="3w4-Wu-OmS" firstAttribute="leading" secondItem="tMs-hh-mP0" secondAttribute="trailing" constant="8" symbolic="YES" id="bK8-Nx-cJD"/>
+                                    <constraint firstItem="YGn-DJ-Lfr" firstAttribute="leading" secondItem="xfV-BO-xRs" secondAttribute="leading" constant="75" id="cnf-hy-ZvN"/>
                                     <constraint firstAttribute="trailing" secondItem="mTC-06-xvi" secondAttribute="trailing" constant="29" id="dIF-6O-QSG"/>
                                     <constraint firstItem="HxM-fm-hWp" firstAttribute="top" secondItem="h6E-iE-eK9" secondAttribute="bottom" constant="50" id="dy1-Ev-az0"/>
                                     <constraint firstItem="tMs-hh-mP0" firstAttribute="leading" secondItem="HxM-fm-hWp" secondAttribute="leading" id="eVC-rd-JIs"/>
                                     <constraint firstItem="3w4-Wu-OmS" firstAttribute="top" secondItem="yT0-EE-Ssg" secondAttribute="bottom" constant="14" id="f2C-bv-Z0b"/>
-                                    <constraint firstItem="YGn-DJ-Lfr" firstAttribute="centerX" secondItem="ZSM-O1-lq4" secondAttribute="centerX" id="hhP-ds-2CA"/>
                                     <constraint firstItem="FkU-UE-ZrG" firstAttribute="top" secondItem="55Y-Ld-Ifa" secondAttribute="top" constant="10" id="ifc-No-cWg"/>
                                     <constraint firstItem="nfO-TE-7Lc" firstAttribute="centerY" secondItem="Rey-Fj-4KM" secondAttribute="centerY" id="mYD-mC-7oJ"/>
                                     <constraint firstItem="ZSM-O1-lq4" firstAttribute="leading" secondItem="HxM-fm-hWp" secondAttribute="leading" id="n1N-cs-wpY"/>
@@ -5839,6 +5931,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <viewLayoutGuide key="safeArea" id="uvf-am-ASR"/>
                     </view>
                     <connections>
+                        <outlet property="calculateButton" destination="YGn-DJ-Lfr" id="8BV-mE-Ac7"/>
                         <outlet property="closeButton" destination="mTC-06-xvi" id="88d-bM-CCk"/>
                         <outlet property="currentNaTxt" destination="s4G-Fr-Vw1" id="Bit-Cg-Du9"/>
                         <outlet property="desiredNaTxt" destination="Rey-Fj-4KM" id="7Fd-pF-AfP"/>
@@ -5849,7 +5942,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae1-vZ-Cq4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="-1733"/>
+            <point key="canvasLocation" x="81" y="-1733"/>
         </scene>
         <!--FreeWaterDeficitDetail-->
         <scene sceneID="vMB-lv-lkL">
@@ -5994,16 +6087,19 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-WhiteGreen" translatesAutoresizingMaskIntoConstraints="NO" id="QAj-mc-5jK">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-WhiteGreen" translatesAutoresizingMaskIntoConstraints="NO" id="QAj-mc-5jK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eww-na-3qD">
+                            <visualEffectView opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eww-na-3qD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OTH-zZ-hgi">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <color key="backgroundColor" name="Concentrate"/>
+                                <vibrancyEffect>
+                                    <blurEffect style="extraLight"/>
+                                </vibrancyEffect>
                             </visualEffectView>
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ2-MN-wAf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -6051,8 +6147,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urine Output" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywy-j8-PGK">
-                                        <rect key="frame" x="16" y="98" width="343" height="37"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="31"/>
+                                        <rect key="frame" x="16" y="98" width="343" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="34"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -6071,20 +6167,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <color key="textColor" red="0.18039215689999999" green="0.69411764710000001" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGQ-zs-cZM">
-                                        <rect key="frame" x="17" y="393" width="342" height="42"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
-                                        <state key="normal" title="Calculate">
-                                            <color key="titleColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="0.75" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="calculateAction:" destination="CA6-Zl-60b" eventType="touchUpInside" id="bnj-eg-gLA"/>
-                                            <segue destination="DjJ-jn-lZw" kind="show" identifier="urineSegue" id="DIm-Be-7ue">
-                                                <nil key="action"/>
-                                            </segue>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGb-M8-3nV">
                                         <rect key="frame" x="16" y="136" width="343" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
@@ -6179,17 +6261,35 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <action selector="UrineSegmentChange:" destination="CA6-Zl-60b" eventType="valueChanged" id="c0c-YK-yAb"/>
                                         </connections>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGQ-zs-cZM">
+                                        <rect key="frame" x="75" y="404" width="225" height="36"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="ciJ-xP-SuU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="0.75" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateAction:" destination="CA6-Zl-60b" eventType="touchUpInside" id="bnj-eg-gLA"/>
+                                            <segue destination="DjJ-jn-lZw" kind="show" identifier="urineSegue" id="DIm-Be-7ue">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="xGQ-zs-cZM" firstAttribute="top" secondItem="7xV-bJ-aL3" secondAttribute="bottom" constant="13" id="3eA-l2-hIf"/>
+                                    <constraint firstItem="xGQ-zs-cZM" firstAttribute="top" secondItem="7xV-bJ-aL3" secondAttribute="bottom" constant="24" id="4oG-wf-CN5"/>
                                     <constraint firstItem="EgK-xd-KHC" firstAttribute="leading" secondItem="cZ2-MN-wAf" secondAttribute="leading" constant="17" id="7Pb-PH-k1l"/>
                                     <constraint firstItem="Pec-zn-DYq" firstAttribute="leading" secondItem="cZ2-MN-wAf" secondAttribute="leading" constant="16" id="98U-5x-Ufl"/>
                                     <constraint firstItem="xxf-RT-6Dp" firstAttribute="leading" secondItem="EgK-xd-KHC" secondAttribute="leading" id="9ko-IT-DAG"/>
                                     <constraint firstItem="xxf-RT-6Dp" firstAttribute="trailing" secondItem="T5h-cV-9l7" secondAttribute="trailing" id="Ak5-zf-Sdg"/>
                                     <constraint firstItem="wDX-QR-UzJ" firstAttribute="baseline" secondItem="3Nv-dq-RnW" secondAttribute="baseline" id="BYd-qe-uKU"/>
+                                    <constraint firstItem="xGQ-zs-cZM" firstAttribute="centerX" secondItem="dGb-M8-3nV" secondAttribute="centerX" id="Cg6-a8-hYi"/>
                                     <constraint firstItem="utD-wf-bWZ" firstAttribute="leading" secondItem="7xV-bJ-aL3" secondAttribute="leading" id="DBg-rR-qE1"/>
+                                    <constraint firstItem="xGQ-zs-cZM" firstAttribute="leading" secondItem="cZ2-MN-wAf" secondAttribute="leading" constant="75" id="DXC-zd-9hi"/>
                                     <constraint firstItem="Ywy-j8-PGK" firstAttribute="leading" secondItem="cZ2-MN-wAf" secondAttribute="leading" constant="16" id="DXa-Yg-trW"/>
-                                    <constraint firstItem="xGQ-zs-cZM" firstAttribute="trailing" secondItem="dGb-M8-3nV" secondAttribute="trailing" id="Fgr-v7-IyJ"/>
                                     <constraint firstItem="T5h-cV-9l7" firstAttribute="top" secondItem="xxf-RT-6Dp" secondAttribute="bottom" constant="42" id="HZk-Yg-T9w"/>
                                     <constraint firstItem="Ywy-j8-PGK" firstAttribute="trailing" secondItem="dGb-M8-3nV" secondAttribute="trailing" id="HjV-LO-0VT"/>
                                     <constraint firstItem="dGb-M8-3nV" firstAttribute="top" secondItem="CfQ-wd-rbp" secondAttribute="bottom" constant="66" id="MTf-rK-N1U"/>
@@ -6198,7 +6298,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="Ywy-j8-PGK" firstAttribute="top" secondItem="CfQ-wd-rbp" secondAttribute="bottom" constant="28" id="PLN-qM-b4h"/>
                                     <constraint firstItem="xxf-RT-6Dp" firstAttribute="top" secondItem="Pec-zn-DYq" secondAttribute="bottom" constant="13" id="Pmb-8O-U7d"/>
                                     <constraint firstItem="wDX-QR-UzJ" firstAttribute="leading" secondItem="utD-wf-bWZ" secondAttribute="leading" id="QAg-Hk-mT3"/>
-                                    <constraint firstItem="xGQ-zs-cZM" firstAttribute="leading" secondItem="T5h-cV-9l7" secondAttribute="leading" id="WrJ-Hq-OJ6"/>
                                     <constraint firstItem="CfQ-wd-rbp" firstAttribute="top" secondItem="cZ2-MN-wAf" secondAttribute="top" constant="35" id="YOt-CL-10r"/>
                                     <constraint firstAttribute="trailing" secondItem="wDX-QR-UzJ" secondAttribute="trailing" constant="56" id="dpL-vD-45q"/>
                                     <constraint firstItem="utD-wf-bWZ" firstAttribute="trailing" secondItem="7xV-bJ-aL3" secondAttribute="trailing" id="duN-8Z-Vbe"/>
@@ -6235,6 +6334,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <viewLayoutGuide key="safeArea" id="v0O-rP-i0X"/>
                     </view>
                     <connections>
+                        <outlet property="calculateButton" destination="xGQ-zs-cZM" id="LTY-pT-UaQ"/>
                         <outlet property="closeButtonMain" destination="CfQ-wd-rbp" id="Uc0-Kr-Q1v"/>
                         <outlet property="hoursTextField" destination="7xV-bJ-aL3" id="dgi-jN-jk4"/>
                         <outlet property="segmentUrineOutput" destination="EgK-xd-KHC" id="aig-Ah-H78"/>
@@ -6245,7 +6345,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWD-xe-TzG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="-841"/>
+            <point key="canvasLocation" x="-679" y="-842"/>
         </scene>
         <!--Urine Output Detail-->
         <scene sceneID="sgt-Ws-bNU">
@@ -6378,7 +6478,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddp-8q-uTV" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803" y="-841"/>
+            <point key="canvasLocation" x="-39" y="-842"/>
         </scene>
         <!--o2 Tank-->
         <scene sceneID="akm-lk-rxz">
@@ -6424,12 +6524,12 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70P-Mv-skT">
-                                        <rect key="frame" x="75" y="399" width="225" height="36"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="75" y="434" width="225" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="ng7-cP-pAb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="0.74594278381642509" colorSpace="calibratedRGB"/>
                                         </state>
@@ -6501,7 +6601,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-in-hOu">
-                                        <rect key="frame" x="17" y="475" width="342" height="312"/>
+                                        <rect key="frame" x="17" y="514" width="342" height="177"/>
                                         <subviews>
                                             <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-5y-TdN">
                                                 <rect key="frame" x="0.0" y="0.0" width="342" height="344"/>
@@ -6528,28 +6628,28 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28.7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nj-vf-cFd">
-                                                <rect key="frame" x="0.0" y="78" width="342" height="90"/>
+                                                <rect key="frame" x="0.0" y="43" width="342" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="100"/>
                                                 <color key="textColor" red="0.62745098040000002" green="0.93333333330000001" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtu-dP-2Rf">
-                                                <rect key="frame" x="0.0" y="171" width="342" height="21"/>
+                                                <rect key="frame" x="0.0" y="136" width="342" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A D cylinder with 2300 PSI at 4 L/min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx2-oe-S5S">
-                                                <rect key="frame" x="0.0" y="49" width="342" height="29"/>
+                                                <rect key="frame" x="0.0" y="9" width="342" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.90980392160000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="0.34865640096618367" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cb-sQ-IuG" customClass="CustomSegmentedController" customModule="Critical_X" customModuleProvider="target">
                                         <rect key="frame" x="17" y="296" width="343" height="42"/>
@@ -6587,18 +6687,18 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstAttribute="trailing" secondItem="Sp7-e7-VPV" secondAttribute="trailing" constant="29" id="THV-yK-mds"/>
                                     <constraint firstItem="2cb-sQ-IuG" firstAttribute="leading" secondItem="HdV-7N-n3v" secondAttribute="leading" id="TiY-o4-X3v"/>
                                     <constraint firstItem="HdV-7N-n3v" firstAttribute="top" secondItem="2cb-sQ-IuG" secondAttribute="bottom" constant="13" id="XEi-J9-ZsO"/>
-                                    <constraint firstAttribute="bottom" secondItem="r2n-in-hOu" secondAttribute="bottom" constant="25" id="XrA-gr-Yr2"/>
+                                    <constraint firstAttribute="bottom" secondItem="r2n-in-hOu" secondAttribute="bottom" constant="121" id="XrA-gr-Yr2"/>
                                     <constraint firstItem="ACw-Co-Y4L" firstAttribute="top" secondItem="nmM-Rj-gPk" secondAttribute="bottom" constant="59" id="YBE-A1-zsU"/>
                                     <constraint firstAttribute="trailing" secondItem="ZaO-OC-Wh8" secondAttribute="trailing" constant="67" id="YLC-n8-pah"/>
                                     <constraint firstAttribute="bottom" secondItem="2cb-sQ-IuG" secondAttribute="bottom" constant="474" id="YwH-fR-3fw"/>
-                                    <constraint firstItem="70P-Mv-skT" firstAttribute="top" secondItem="HdV-7N-n3v" secondAttribute="bottom" constant="9" id="bJh-H1-Qg5"/>
+                                    <constraint firstItem="70P-Mv-skT" firstAttribute="top" secondItem="HdV-7N-n3v" secondAttribute="bottom" constant="44" id="bJh-H1-Qg5"/>
                                     <constraint firstItem="2cb-sQ-IuG" firstAttribute="leading" secondItem="gVn-96-rBy" secondAttribute="leading" id="c0k-bE-UU7"/>
                                     <constraint firstItem="gVn-96-rBy" firstAttribute="trailing" secondItem="HdV-7N-n3v" secondAttribute="trailing" id="cV5-9M-rEL"/>
                                     <constraint firstItem="70P-Mv-skT" firstAttribute="leading" secondItem="7cc-RO-5e1" secondAttribute="leading" constant="75" id="dLB-7t-Fvt"/>
                                     <constraint firstItem="r2n-in-hOu" firstAttribute="centerX" secondItem="nmM-Rj-gPk" secondAttribute="centerX" id="dPV-ss-NsY"/>
                                     <constraint firstItem="2cb-sQ-IuG" firstAttribute="top" secondItem="7cc-RO-5e1" secondAttribute="top" constant="296" id="g0A-GO-O31"/>
                                     <constraint firstItem="ACw-Co-Y4L" firstAttribute="top" secondItem="gTt-WD-zlb" secondAttribute="bottom" constant="44" id="gQe-Us-e7i"/>
-                                    <constraint firstItem="r2n-in-hOu" firstAttribute="top" secondItem="70P-Mv-skT" secondAttribute="bottom" constant="40" id="i9V-qm-hFN"/>
+                                    <constraint firstItem="r2n-in-hOu" firstAttribute="top" secondItem="70P-Mv-skT" secondAttribute="bottom" constant="44" id="i9V-qm-hFN"/>
                                     <constraint firstItem="nmM-Rj-gPk" firstAttribute="top" secondItem="Sp7-e7-VPV" secondAttribute="bottom" constant="28" id="nKi-qN-d3S"/>
                                     <constraint firstItem="2cb-sQ-IuG" firstAttribute="top" secondItem="gVn-96-rBy" secondAttribute="bottom" constant="17" id="nT6-5e-HuR"/>
                                     <constraint firstItem="2cb-sQ-IuG" firstAttribute="centerX" secondItem="r2n-in-hOu" secondAttribute="centerX" id="oF9-8X-zQt"/>
@@ -6628,6 +6728,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <viewLayoutGuide key="safeArea" id="FNv-5K-bJM"/>
                     </view>
                     <connections>
+                        <outlet property="calculateButton" destination="70P-Mv-skT" id="o8g-fg-TaT"/>
                         <outlet property="closebutton02" destination="Sp7-e7-VPV" id="Xzp-4T-E6b"/>
                         <outlet property="descriptionLabel" destination="mx2-oe-S5S" id="5bW-KT-3OR"/>
                         <outlet property="litersMinTxt" destination="ZaO-OC-Wh8" id="TSc-7O-MHP"/>
@@ -6640,27 +6741,26 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H28-Xs-R64" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="1003"/>
+            <point key="canvasLocation" x="1672.8" y="1002.7093596059113"/>
         </scene>
-        <!--Main-->
+        <!--Anion Gap-->
         <scene sceneID="QHa-qt-9p1">
             <objects>
-                <viewController title="Main" id="Eoc-nT-YqF" customClass="AnionGap" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Anion Gap" id="Eoc-nT-YqF" customClass="AnionGap" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5BH-I7-fxY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue flare abstract blur iPhone X Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-sX-gLv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-WhiteGreen" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-sX-gLv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lA-yS-0Ak">
+                            <visualEffectView opaque="NO" alpha="0.64000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lA-yS-0Ak">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Y5F-ud-emH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <color key="backgroundColor" red="0.76089900730000004" green="0.25649610160000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAf-yn-G44">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -6690,11 +6790,11 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA3-pI-RVx">
-                                        <rect key="frame" x="75" y="399" width="225" height="36"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="75" y="429" width="225" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Calculate">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="0.74594278380000001" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="anionGapCalculateButton:" destination="Eoc-nT-YqF" eventType="touchUpInside" id="qLt-Pe-cYX"/>
@@ -6702,8 +6802,8 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wC-8F-HNv">
                                         <rect key="frame" x="16" y="144" width="343" height="18"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                        <color key="textColor" red="0.62745098040000002" green="0.93333333330000001" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltm-DH-0QS">
@@ -6722,10 +6822,24 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <action selector="dismissAnionGapMain:" destination="Eoc-nT-YqF" eventType="touchUpInside" id="cml-nY-lbr"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="135-147 mEq/L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et3-HQ-IDr">
-                                        <rect key="frame" x="17" y="231" width="89" height="28"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="0.98431372549999996" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et3-HQ-IDr">
+                                        <rect key="frame" x="17" y="236" width="90" height="15"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="135-147 ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.98431372549999996" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="mEq/L">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-EG-0Qq">
@@ -6757,67 +6871,95 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okK-Go-sOt">
-                                        <rect key="frame" x="17" y="443" width="342" height="344"/>
+                                        <rect key="frame" x="17" y="510" width="342" height="182"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyH-Mo-jQj">
-                                                <rect key="frame" x="125" y="106" width="91" height="86"/>
+                                                <rect key="frame" x="125" y="51" width="91" height="86"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="86" id="8LP-b3-zA2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="87"/>
-                                                <color key="textColor" red="0.62745098040000002" green="0.93333333330000001" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" name="Pomegranate"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mEq/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-VS-UMk">
-                                                <rect key="frame" x="3" y="196" width="335" height="21"/>
+                                                <rect key="frame" x="3" y="141" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With a Na: 144, Cl: 98 and HC03: 24" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-d3-K2e">
-                                                <rect key="frame" x="8" y="56" width="326" height="47"/>
+                                                <rect key="frame" x="8" y="1" width="326" height="47"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="47" id="ZEf-LX-egE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
-                                                <color key="textColor" red="0.98431372549999996" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" name="Dark Gray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="hfx-VS-UMk" firstAttribute="leading" secondItem="okK-Go-sOt" secondAttribute="leading" constant="3" id="29N-nh-dAr"/>
                                             <constraint firstItem="hfx-VS-UMk" firstAttribute="top" secondItem="HyH-Mo-jQj" secondAttribute="bottom" constant="4" id="2CT-2q-qqm"/>
                                             <constraint firstItem="MBd-d3-K2e" firstAttribute="trailing" secondItem="okK-Go-sOt" secondAttribute="trailingMargin" id="9GE-va-2zl"/>
                                             <constraint firstItem="HyH-Mo-jQj" firstAttribute="centerX" secondItem="hfx-VS-UMk" secondAttribute="centerX" id="BlA-pf-4eq"/>
                                             <constraint firstItem="MBd-d3-K2e" firstAttribute="leading" secondItem="okK-Go-sOt" secondAttribute="leadingMargin" id="GYL-Oq-xHU"/>
-                                            <constraint firstItem="MBd-d3-K2e" firstAttribute="top" secondItem="okK-Go-sOt" secondAttribute="top" constant="56" id="OU9-Li-SHS"/>
+                                            <constraint firstItem="MBd-d3-K2e" firstAttribute="top" secondItem="okK-Go-sOt" secondAttribute="top" constant="1" id="OU9-Li-SHS"/>
                                             <constraint firstItem="MBd-d3-K2e" firstAttribute="centerX" secondItem="HyH-Mo-jQj" secondAttribute="centerX" id="mpF-IC-Vv5"/>
                                             <constraint firstItem="HyH-Mo-jQj" firstAttribute="top" secondItem="MBd-d3-K2e" secondAttribute="bottom" constant="3" id="v5d-d2-y74"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22-26 mEq/L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFl-S3-EFH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFl-S3-EFH">
                                         <rect key="frame" x="17" y="372" width="64" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="dUZ-PS-oXh"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="22-26 ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="mEq/L">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chloride" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-jW-6FL">
-                                        <rect key="frame" x="17" y="272" width="89" height="31"/>
+                                        <rect key="frame" x="17" y="272" width="131" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95-105 mEq/L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vo-Yp-4UB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vo-Yp-4UB">
                                         <rect key="frame" x="17" y="308" width="70" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="RZ4-Dx-6mv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="95-105 ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="mEq/L">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZa-Mw-Zgw">
@@ -6837,42 +6979,41 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ltm-DH-0QS" firstAttribute="top" secondItem="pAf-yn-G44" secondAttribute="top" constant="35" id="0Kt-RM-9nm"/>
+                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="trailing" secondItem="0LW-3H-xNd" secondAttribute="trailing" id="2Cx-uu-472"/>
                                     <constraint firstItem="8wC-8F-HNv" firstAttribute="trailing" secondItem="okK-Go-sOt" secondAttribute="trailing" id="2I0-KA-cDQ"/>
-                                    <constraint firstItem="LA3-pI-RVx" firstAttribute="top" secondItem="6G2-EG-0Qq" secondAttribute="bottom" constant="28" id="2q4-lx-nEo"/>
+                                    <constraint firstItem="LA3-pI-RVx" firstAttribute="top" secondItem="6G2-EG-0Qq" secondAttribute="bottom" constant="58" id="2q4-lx-nEo"/>
                                     <constraint firstItem="096-bu-qu6" firstAttribute="leading" secondItem="pAf-yn-G44" secondAttribute="leading" constant="16" id="3vX-q8-VoQ"/>
                                     <constraint firstAttribute="trailing" secondItem="ltm-DH-0QS" secondAttribute="trailing" constant="14" id="3zk-uV-pen"/>
-                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="top" secondItem="wig-Zw-5lv" secondAttribute="bottom" constant="39" id="AeR-nG-0eq"/>
-                                    <constraint firstAttribute="bottom" secondItem="okK-Go-sOt" secondAttribute="bottom" constant="25" id="DoN-Vq-CAJ"/>
+                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="baseline" secondItem="RZa-Mw-Zgw" secondAttribute="baseline" id="43n-2v-25g"/>
+                                    <constraint firstAttribute="bottom" secondItem="okK-Go-sOt" secondAttribute="bottom" constant="120" id="DoN-Vq-CAJ"/>
+                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="leading" secondItem="9Vo-Yp-4UB" secondAttribute="leading" id="Ec5-WE-vaG"/>
                                     <constraint firstItem="6G2-EG-0Qq" firstAttribute="leading" secondItem="0LW-3H-xNd" secondAttribute="trailing" constant="85" id="Em6-lg-b8J"/>
-                                    <constraint firstItem="Et3-HQ-IDr" firstAttribute="top" secondItem="8wC-8F-HNv" secondAttribute="bottom" constant="69" id="Faq-Ib-N7U"/>
-                                    <constraint firstItem="okK-Go-sOt" firstAttribute="top" secondItem="LA3-pI-RVx" secondAttribute="bottom" constant="8" symbolic="YES" id="Hch-Nr-BSn"/>
+                                    <constraint firstItem="Et3-HQ-IDr" firstAttribute="top" secondItem="8wC-8F-HNv" secondAttribute="bottom" constant="74" id="Faq-Ib-N7U"/>
+                                    <constraint firstItem="okK-Go-sOt" firstAttribute="top" secondItem="LA3-pI-RVx" secondAttribute="bottom" constant="45" id="Hch-Nr-BSn"/>
                                     <constraint firstItem="0LW-3H-xNd" firstAttribute="leading" secondItem="fFl-S3-EFH" secondAttribute="leading" id="JPP-WU-29h"/>
                                     <constraint firstItem="RZa-Mw-Zgw" firstAttribute="trailing" secondItem="6G2-EG-0Qq" secondAttribute="trailing" id="JPS-6E-bmm"/>
-                                    <constraint firstItem="LA3-pI-RVx" firstAttribute="top" secondItem="fFl-S3-EFH" secondAttribute="bottom" constant="12" id="MvA-uM-O8N"/>
-                                    <constraint firstItem="9Vo-Yp-4UB" firstAttribute="top" secondItem="YTy-jW-6FL" secondAttribute="bottom" constant="5" id="N5M-cr-gfl"/>
-                                    <constraint firstItem="Et3-HQ-IDr" firstAttribute="leading" secondItem="YTy-jW-6FL" secondAttribute="leading" id="Pdg-Ym-bed"/>
+                                    <constraint firstItem="LA3-pI-RVx" firstAttribute="top" secondItem="fFl-S3-EFH" secondAttribute="bottom" constant="42" id="MvA-uM-O8N"/>
                                     <constraint firstItem="096-bu-qu6" firstAttribute="centerX" secondItem="pAf-yn-G44" secondAttribute="centerX" id="QnV-yS-NfS"/>
                                     <constraint firstItem="RZa-Mw-Zgw" firstAttribute="leading" secondItem="6G2-EG-0Qq" secondAttribute="leading" id="RfB-MA-lpM"/>
                                     <constraint firstItem="096-bu-qu6" firstAttribute="top" secondItem="ltm-DH-0QS" secondAttribute="bottom" constant="28" id="Wfu-yG-uca"/>
                                     <constraint firstItem="8wC-8F-HNv" firstAttribute="top" secondItem="096-bu-qu6" secondAttribute="bottom" constant="2" id="Xfd-aY-mTk"/>
-                                    <constraint firstItem="Et3-HQ-IDr" firstAttribute="trailing" secondItem="YTy-jW-6FL" secondAttribute="trailing" id="av5-9g-XAt"/>
                                     <constraint firstItem="0LW-3H-xNd" firstAttribute="top" secondItem="9Vo-Yp-4UB" secondAttribute="bottom" constant="13" id="dZL-5H-Ubv"/>
-                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="top" secondItem="Et3-HQ-IDr" secondAttribute="bottom" constant="13" id="egY-ZC-dbh"/>
                                     <constraint firstItem="fFl-S3-EFH" firstAttribute="top" secondItem="0LW-3H-xNd" secondAttribute="bottom" constant="2" id="fKI-8D-Et8"/>
                                     <constraint firstItem="096-bu-qu6" firstAttribute="leading" secondItem="8wC-8F-HNv" secondAttribute="leading" id="fTH-nC-npX"/>
                                     <constraint firstItem="096-bu-qu6" firstAttribute="trailing" secondItem="8wC-8F-HNv" secondAttribute="trailing" id="hcx-c1-rDB"/>
-                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="baseline" secondItem="RZa-Mw-Zgw" secondAttribute="baseline" id="hvQ-EI-NT9"/>
                                     <constraint firstItem="6G2-EG-0Qq" firstAttribute="top" secondItem="RZa-Mw-Zgw" secondAttribute="bottom" constant="35" id="i6C-rN-sgv"/>
                                     <constraint firstItem="8wC-8F-HNv" firstAttribute="leading" secondItem="wig-Zw-5lv" secondAttribute="leading" id="ifa-mI-F6V"/>
-                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="leading" secondItem="9Vo-Yp-4UB" secondAttribute="leading" id="mTd-Jh-sY8"/>
+                                    <constraint firstItem="9Vo-Yp-4UB" firstAttribute="top" secondItem="YTy-jW-6FL" secondAttribute="bottom" constant="5" id="jXX-Te-fXA"/>
                                     <constraint firstItem="LA3-pI-RVx" firstAttribute="centerX" secondItem="okK-Go-sOt" secondAttribute="centerX" id="muK-RP-Gwi"/>
                                     <constraint firstItem="wig-Zw-5lv" firstAttribute="top" secondItem="8wC-8F-HNv" secondAttribute="bottom" constant="39" id="nZs-8l-4OY"/>
+                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="leading" secondItem="Et3-HQ-IDr" secondAttribute="leading" id="oI3-XD-FtH"/>
                                     <constraint firstItem="d98-AF-l87" firstAttribute="trailing" secondItem="RZa-Mw-Zgw" secondAttribute="trailing" id="pUS-80-sPa"/>
                                     <constraint firstItem="LA3-pI-RVx" firstAttribute="leading" secondItem="pAf-yn-G44" secondAttribute="leading" constant="75" id="qqK-nM-Yxj"/>
                                     <constraint firstItem="RZa-Mw-Zgw" firstAttribute="top" secondItem="d98-AF-l87" secondAttribute="bottom" constant="35" id="rzq-N3-8b6"/>
                                     <constraint firstItem="9Vo-Yp-4UB" firstAttribute="leading" secondItem="0LW-3H-xNd" secondAttribute="leading" id="uKz-qb-ir4"/>
                                     <constraint firstItem="8wC-8F-HNv" firstAttribute="centerX" secondItem="LA3-pI-RVx" secondAttribute="centerX" id="uhf-Ny-3R9"/>
                                     <constraint firstItem="d98-AF-l87" firstAttribute="leading" secondItem="RZa-Mw-Zgw" secondAttribute="leading" id="uun-tp-LEo"/>
+                                    <constraint firstItem="YTy-jW-6FL" firstAttribute="top" secondItem="Et3-HQ-IDr" secondAttribute="bottom" constant="21" id="xA0-KR-rTd"/>
                                     <constraint firstItem="fFl-S3-EFH" firstAttribute="leading" secondItem="okK-Go-sOt" secondAttribute="leading" id="ymM-wa-XrF"/>
                                     <constraint firstAttribute="trailing" secondItem="d98-AF-l87" secondAttribute="trailing" constant="32" id="zJP-H5-lbJ"/>
                                 </constraints>
@@ -6898,6 +7039,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                     <connections>
                         <outlet property="Cltxt" destination="RZa-Mw-Zgw" id="FJr-Vc-fFf"/>
                         <outlet property="NaTxt" destination="d98-AF-l87" id="se7-vH-gDd"/>
+                        <outlet property="calculateButton" destination="LA3-pI-RVx" id="vbG-m7-E0Q"/>
                         <outlet property="closeAnionGapButton" destination="ltm-DH-0QS" id="pwd-Qj-FhD"/>
                         <outlet property="descriptionLabel" destination="MBd-d3-K2e" id="BZt-Ey-RZv"/>
                         <outlet property="hc03Txt" destination="6G2-EG-0Qq" id="Uvc-5H-S7F"/>
@@ -6907,7 +7049,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpO-nJ-fhs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="981"/>
+            <point key="canvasLocation" x="980" y="1002.7093596059113"/>
         </scene>
         <!--Winter Formula Main-->
         <scene sceneID="yqB-4N-IWF">
@@ -6916,10 +7058,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                     <view key="view" contentMode="scaleToFill" id="pii-O6-VbP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <userGuides>
-                            <userLayoutGuide location="406" affinity="minY"/>
-                            <userLayoutGuide location="198" affinity="minX"/>
-                        </userGuides>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-WhiteGreen" translatesAutoresizingMaskIntoConstraints="NO" id="kNq-s4-umP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -6932,19 +7070,19 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winters Formula" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-H2-J7s">
                                             <rect key="frame" x="8" y="64" width="359" height="59"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="43"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="43"/>
                                             <color key="textColor" name="Clouds"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-lH-Rhc">
-                                            <rect key="frame" x="48" y="335" width="274" height="33"/>
-                                            <color key="backgroundColor" name="Amber"/>
+                                            <rect key="frame" x="78" y="335" width="225" height="36"/>
+                                            <color key="backgroundColor" red="1" green="0.75700002909999997" blue="0.027000000699999999" alpha="0.39717315821256038" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="33" id="q2q-mO-zRh"/>
+                                                <constraint firstAttribute="height" constant="36" id="b6s-SE-u88"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
                                             <state key="normal" title="Calculate">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="0.74594278380000001" colorSpace="calibratedRGB"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isMotionEnabled" value="YES"/>
@@ -6962,15 +7100,29 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             </constraints>
                                             <color key="textColor" name="Gray"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter serum HC03" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExQ-Ns-Sjv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExQ-Ns-Sjv">
                                             <rect key="frame" x="8" y="175" width="359" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="pnX-Rx-2Ko"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" name="Clouds"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Enter serum ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="Clouds"/>
+                                                        <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="HC03">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2v-lV-MDT">
@@ -6983,16 +7135,16 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khe-Yk-hut">
-                                            <rect key="frame" x="8" y="414" width="359" height="155"/>
+                                            <rect key="frame" x="8" y="417" width="359" height="152"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35.0 - 40.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVc-9L-e3a">
-                                                    <rect key="frame" x="0.0" y="24" width="359" height="116"/>
+                                                    <rect key="frame" x="0.0" y="24" width="359" height="113"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="70"/>
                                                     <color key="textColor" name="Cool Mint"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mmHg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czX-YS-EES">
-                                                    <rect key="frame" x="0.0" y="112" width="359" height="21"/>
+                                                    <rect key="frame" x="0.0" y="112" width="359" height="18"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" name="Pomegranate"/>
                                                     <nil key="highlightedColor"/>
@@ -7034,7 +7186,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                     <rect key="frame" x="8" y="35" width="343" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Calculates the expected pCO₂ compensation in a purely metabolic acidosis using the calculation: Expected pCO2 = 1.5 * HCO3- + 8 +/- 2 </string>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="13"/>
                                                     <color key="textColor" name="Cool Mint"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -7067,15 +7219,43 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             </constraints>
                                             <color key="textColor" name="Gray"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter current pC02 (Optional)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrP-C3-Eic">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrP-C3-Eic">
                                             <rect key="frame" x="8" y="254" width="359" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="o9H-en-Z6I"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" name="Clouds"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Enter current ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="Clouds"/>
+                                                        <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="pC02">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="Clouds"/>
+                                                        <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="(Optional)">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="11" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or7-h5-D3o">
@@ -7099,24 +7279,22 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraints>
                                         <constraint firstItem="Or7-h5-D3o" firstAttribute="trailing" secondItem="HEa-H2-J7s" secondAttribute="trailing" id="10f-dF-LV7"/>
                                         <constraint firstItem="HEa-H2-J7s" firstAttribute="trailing" secondItem="J2v-lV-MDT" secondAttribute="trailing" id="1sA-he-V5s"/>
+                                        <constraint firstAttribute="trailing" secondItem="0Gg-lH-Rhc" secondAttribute="trailing" constant="72" id="2x1-n5-mtb"/>
                                         <constraint firstItem="J2v-lV-MDT" firstAttribute="trailing" secondItem="ExQ-Ns-Sjv" secondAttribute="trailing" id="4Ax-cf-6U4"/>
-                                        <constraint firstItem="0Gg-lH-Rhc" firstAttribute="top" secondItem="tVs-HJ-wWx" secondAttribute="bottom" constant="18" id="5A4-UO-KtM"/>
                                         <constraint firstItem="t5V-xc-A8l" firstAttribute="top" secondItem="E0L-qN-GhZ" secondAttribute="top" constant="592" id="5rD-Cn-tZ6"/>
                                         <constraint firstItem="ExQ-Ns-Sjv" firstAttribute="trailing" secondItem="vrP-C3-Eic" secondAttribute="trailing" id="82F-U5-UcT"/>
                                         <constraint firstItem="Isp-p4-uZC" firstAttribute="leading" secondItem="tVs-HJ-wWx" secondAttribute="leading" id="BJ4-of-WV3"/>
                                         <constraint firstItem="vrP-C3-Eic" firstAttribute="leading" secondItem="khe-Yk-hut" secondAttribute="leading" id="GBq-Hc-hBk"/>
                                         <constraint firstAttribute="bottom" secondItem="t5V-xc-A8l" secondAttribute="bottom" constant="78" id="IL7-64-DdQ"/>
+                                        <constraint firstItem="0Gg-lH-Rhc" firstAttribute="top" secondItem="tVs-HJ-wWx" secondAttribute="bottom" constant="18" id="JfI-0a-Z5w"/>
                                         <constraint firstItem="ExQ-Ns-Sjv" firstAttribute="leading" secondItem="vrP-C3-Eic" secondAttribute="leading" id="PE8-ID-tU8"/>
-                                        <constraint firstAttribute="trailing" secondItem="0Gg-lH-Rhc" secondAttribute="trailing" constant="53" id="UKJ-Ed-meo"/>
                                         <constraint firstItem="vrP-C3-Eic" firstAttribute="trailing" secondItem="khe-Yk-hut" secondAttribute="trailing" id="UZI-Cu-mlU"/>
                                         <constraint firstItem="Isp-p4-uZC" firstAttribute="trailing" secondItem="tVs-HJ-wWx" secondAttribute="trailing" id="Xbv-17-ZkQ"/>
-                                        <constraint firstItem="khe-Yk-hut" firstAttribute="top" secondItem="0Gg-lH-Rhc" secondAttribute="bottom" constant="46" id="Z5l-jo-OEo"/>
                                         <constraint firstItem="Or7-h5-D3o" firstAttribute="trailing" secondItem="E0L-qN-GhZ" secondAttribute="trailingMargin" id="a1h-1u-e3v"/>
                                         <constraint firstItem="HEa-H2-J7s" firstAttribute="leading" secondItem="J2v-lV-MDT" secondAttribute="leading" id="aoz-fI-cYa"/>
                                         <constraint firstItem="ExQ-Ns-Sjv" firstAttribute="top" secondItem="J2v-lV-MDT" secondAttribute="bottom" constant="38" id="bML-7I-VtP"/>
                                         <constraint firstItem="khe-Yk-hut" firstAttribute="leading" secondItem="t5V-xc-A8l" secondAttribute="leading" id="cEv-QY-fkZ"/>
                                         <constraint firstItem="Isp-p4-uZC" firstAttribute="top" secondItem="ExQ-Ns-Sjv" secondAttribute="bottom" constant="8" symbolic="YES" id="d9m-kf-jcy"/>
-                                        <constraint firstItem="0Gg-lH-Rhc" firstAttribute="leading" secondItem="E0L-qN-GhZ" secondAttribute="leading" constant="48" id="f5z-yV-v5u"/>
                                         <constraint firstItem="tVs-HJ-wWx" firstAttribute="top" secondItem="vrP-C3-Eic" secondAttribute="bottom" constant="8" symbolic="YES" id="gUQ-f8-qZX"/>
                                         <constraint firstItem="ExQ-Ns-Sjv" firstAttribute="centerX" secondItem="Isp-p4-uZC" secondAttribute="centerX" id="lIa-Eg-WIb"/>
                                         <constraint firstItem="HEa-H2-J7s" firstAttribute="leading" secondItem="E0L-qN-GhZ" secondAttribute="leadingMargin" id="mKt-Ko-REY"/>
@@ -7125,6 +7303,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <constraint firstItem="t5V-xc-A8l" firstAttribute="top" secondItem="khe-Yk-hut" secondAttribute="bottom" constant="23" id="rBv-5v-IoI"/>
                                         <constraint firstItem="khe-Yk-hut" firstAttribute="trailing" secondItem="t5V-xc-A8l" secondAttribute="trailing" id="rKN-3U-qKc"/>
                                         <constraint firstItem="HEa-H2-J7s" firstAttribute="top" secondItem="E0L-qN-GhZ" secondAttribute="top" constant="64" id="rua-Na-xqT"/>
+                                        <constraint firstItem="0Gg-lH-Rhc" firstAttribute="leading" secondItem="E0L-qN-GhZ" secondAttribute="leading" constant="78" id="sbU-tZ-f32"/>
                                         <constraint firstItem="J2v-lV-MDT" firstAttribute="leading" secondItem="ExQ-Ns-Sjv" secondAttribute="leading" id="xRa-58-slc"/>
                                         <constraint firstItem="ExQ-Ns-Sjv" firstAttribute="top" secondItem="HEa-H2-J7s" secondAttribute="bottom" constant="52" id="zAm-JV-ezp"/>
                                         <constraint firstItem="Or7-h5-D3o" firstAttribute="top" secondItem="E0L-qN-GhZ" secondAttribute="top" constant="34" id="zoK-kF-ty9"/>
@@ -7166,7 +7345,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="802" y="106"/>
+            <point key="canvasLocation" x="494" y="81"/>
         </scene>
     </scenes>
     <resources>
@@ -7197,17 +7376,32 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
         <namedColor name="Amber">
             <color red="1" green="0.75700002909999997" blue="0.027000000699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="BalletSlipper">
+            <color red="0.92199999094009399" green="0.80800002813339233" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue">
+            <color red="0.1289999932050705" green="0.58799999952316284" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Clouds">
             <color red="0.92500001190000003" green="0.94099998470000001" blue="0.94499999280000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Concentrate">
+            <color red="0.58399999141693115" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Cool Mint">
             <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Cool Mint">
-            <color red="0.62699997429999998" green="0.93300002810000005" blue="0.75300002099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark Gray">
+            <color red="0.40000000596046448" green="0.42699998617172241" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gray">
             <color red="0.56000000240000003" green="0.55000001190000003" blue="0.56000000240000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pomegranate">
+            <color red="0.75300002098083496" green="0.22400000691413879" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Pomegranate">
             <color red="0.75300002098083496" green="0.22400000691413879" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -7219,7 +7413,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
         <segue reference="2ad-87-Iaf"/>
         <segue reference="ThU-kQ-9aj"/>
         <segue reference="yex-Dw-N4D"/>
-        <segue reference="m2Q-Lo-0RZ"/>
+        <segue reference="ND3-VR-94M"/>
         <segue reference="OBv-lZ-qC5"/>
         <segue reference="8OO-vl-LGe"/>
         <segue reference="wR8-HS-kah"/>
