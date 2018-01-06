@@ -40,7 +40,8 @@ public class FlatColor:NSObject {
         switch self {
             
         case .Red:
-            return UIColor(red:0.90, green:0.30, blue:0.26, alpha:1.00)
+            return #colorLiteral(red: 0.8881979585, green: 0.3072378635, blue: 0.2069461644, alpha: 1)
+            // UIColor(red:0.90, green:0.30, blue:0.26, alpha:1.00)
             
         case .Orange:
             return UIColor(red:1.00, green:0.60, blue:0.00, alpha:1.0)
