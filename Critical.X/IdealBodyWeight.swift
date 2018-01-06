@@ -18,7 +18,7 @@ class IdealBodyWeight: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     
     
-    @IBOutlet weak var idealBodyWeightSegment: UISegmentedControl!
+    @IBOutlet weak var idealBodyWeightSegment: CustomSegmentedController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,9 @@ class IdealBodyWeight: UIViewController {
         // Takes the button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         
-        // Do any additional setup after loading the view.
+        idealBodyWeightSegment?.items = ["M", "F"]
+        
+        
     }
     
     @IBAction func closeIdealBodyWeightScreen(_ sender: Any) {
@@ -78,8 +80,8 @@ class IdealBodyWeight: UIViewController {
             // We segue to ACLSVC and pass the infomation from which row is pressed
             if let IBW = segue.destination as? IdealBWDataView {
                 
-                switch idealBodyWeightSegment.selectedSegmentIndex {
-                case 0:
+                switch idealBodyWeightSegment?.selectedIndex {
+                case 0?:
                     
                     
                     //                    ///Guard statement if no values in the textField.
@@ -119,7 +121,7 @@ class IdealBodyWeight: UIViewController {
                     
                     print("OK OK OK First Segment Selected")
                     print("")//create space on the console
-                case 1:
+                case 1?:
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 2
@@ -159,6 +161,10 @@ class IdealBodyWeight: UIViewController {
         if identifier == "ibwShow" {
             if (desiredTVText.text?.isEmpty)! && (heightText.text?.isEmpty)! || (desiredTVText.text == "0.0") && (heightText.text == "0.0") {
                 print(" Ideal body weight segue cancelled")
+                
+                //Displays alert
+                _ = SCLAlertView().showWarning("Error!", subTitle: "Make sure all of the text fields have values before calculating.")
+               
                 return false
             }
         }
@@ -167,20 +173,22 @@ class IdealBodyWeight: UIViewController {
         return true
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view.endEditing(true)
+    }
     
     @IBAction func segmentSElected(_ sender: Any) {
         
         
         
-        if(idealBodyWeightSegment.selectedSegmentIndex == 0)
+        if(idealBodyWeightSegment?.selectedIndex == 0)
         {
             
             
             print("Male Segment Selected")
             
         }
-        else if(idealBodyWeightSegment.selectedSegmentIndex == 1)
+        else if(idealBodyWeightSegment?.selectedIndex == 1)
         {
             print("Female Segment Selected")
         }
