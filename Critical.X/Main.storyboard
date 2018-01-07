@@ -3537,6 +3537,10 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <constraint firstItem="CJC-QD-PVv" firstAttribute="top" secondItem="AnM-ks-8qr" secondAttribute="top" constant="45" id="IvS-QA-erg"/>
                                     </constraints>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="20u-ZU-imQ" secondAttribute="height" multiplier="375:812" id="pdJ-Cp-lfc"/>
+                                    <constraint firstAttribute="width" constant="375" id="s9p-wW-PNC"/>
+                                </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rapid Sequence Intubation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa0-j9-fen">
@@ -3610,6 +3614,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <constraints>
                             <constraint firstItem="Mwu-iu-LHZ" firstAttribute="top" secondItem="m7Q-f6-Kfa" secondAttribute="bottom" constant="23" id="3nn-Ft-2l1"/>
                             <constraint firstItem="Xa0-j9-fen" firstAttribute="leading" secondItem="okp-4R-boS" secondAttribute="leading" id="3pZ-wC-vby"/>
+                            <constraint firstItem="AnM-ks-8qr" firstAttribute="top" secondItem="okp-4R-boS" secondAttribute="bottom" constant="-164" id="3rS-pk-O8g"/>
                             <constraint firstItem="SGN-S6-kuv" firstAttribute="centerX" secondItem="m7Q-f6-Kfa" secondAttribute="centerX" id="6Tc-Sf-e21"/>
                             <constraint firstItem="20u-ZU-imQ" firstAttribute="trailing" secondItem="lSB-tf-jlJ" secondAttribute="trailing" id="6Zo-dN-1LK"/>
                             <constraint firstItem="Mwu-iu-LHZ" firstAttribute="leading" secondItem="loX-4u-wYA" secondAttribute="leading" constant="75" id="7TH-E5-oyz"/>
@@ -6773,7 +6778,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <action selector="dismissAnionGapMain:" destination="Eoc-nT-YqF" eventType="touchUpInside" id="cml-nY-lbr"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et3-HQ-IDr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et3-HQ-IDr">
                                         <rect key="frame" x="17" y="236" width="90" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="e5n-70-OfA"/>
@@ -6936,7 +6941,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             <constraint firstItem="MBd-d3-K2e" firstAttribute="leading" secondItem="okK-Go-sOt" secondAttribute="leadingMargin" id="hT6-CW-djk"/>
                                             <constraint firstItem="MBd-d3-K2e" firstAttribute="trailing" secondItem="okK-Go-sOt" secondAttribute="trailingMargin" id="hdW-ti-ZHX"/>
                                             <constraint firstItem="hfx-VS-UMk" firstAttribute="top" secondItem="HyH-Mo-jQj" secondAttribute="bottom" constant="4" id="nj8-qk-KPS"/>
-                                            <constraint firstAttribute="width" secondItem="MBd-d3-K2e" secondAttribute="height" multiplier="114:7" id="ukc-gB-w2r"/>
                                             <constraint firstItem="hfx-VS-UMk" firstAttribute="width" secondItem="HyH-Mo-jQj" secondAttribute="height" multiplier="163:43" id="yj7-98-hNh"/>
                                             <constraint firstItem="HyH-Mo-jQj" firstAttribute="trailing" secondItem="hfx-VS-UMk" secondAttribute="trailing" id="zIh-Qp-bjn"/>
                                             <constraint firstItem="hfx-VS-UMk" firstAttribute="trailing" secondItem="HyH-Mo-jQj" secondAttribute="trailing" id="zP6-Ei-NoS"/>
@@ -6961,7 +6965,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="8wC-8F-HNv" firstAttribute="trailing" secondItem="okK-Go-sOt" secondAttribute="trailing" id="Gdy-nq-7zf"/>
                                     <constraint firstItem="YTy-jW-6FL" firstAttribute="top" secondItem="Et3-HQ-IDr" secondAttribute="bottom" constant="21" id="Hw1-qG-bts"/>
                                     <constraint firstItem="wig-Zw-5lv" firstAttribute="top" secondItem="8wC-8F-HNv" secondAttribute="bottom" constant="39" id="Ilb-jc-yFb"/>
-                                    <constraint firstItem="okK-Go-sOt" firstAttribute="width" secondItem="pAf-yn-G44" secondAttribute="height" multiplier="171:406" id="IsB-Wl-LZV"/>
                                     <constraint firstItem="8wC-8F-HNv" firstAttribute="top" secondItem="096-bu-qu6" secondAttribute="bottom" constant="2" id="Ixb-Yv-DqE"/>
                                     <constraint firstItem="LA3-pI-RVx" firstAttribute="top" secondItem="6G2-EG-0Qq" secondAttribute="bottom" constant="58" id="J61-fn-6cV"/>
                                     <constraint firstItem="YTy-jW-6FL" firstAttribute="baseline" secondItem="RZa-Mw-Zgw" secondAttribute="baseline" id="KUx-dq-mRw"/>

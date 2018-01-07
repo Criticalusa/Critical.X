@@ -12,21 +12,36 @@ class FreeWaterDeficit: UIViewController {
     
     ///Outlets
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var segmentMaleFemale: UISegmentedControl!
-    @IBOutlet weak var segmentAdultChildElderly: UISegmentedControl!
+    
+    @IBOutlet weak var segmentMaleFemale: CustomSegmentedController?
+    @IBOutlet weak var segmentAdultChildElderly: CustomSegmentedController!
+    
     @IBOutlet weak var weightTxt: UITextField!
     @IBOutlet weak var desiredNaTxt: UITextField!
     @IBOutlet weak var currentNaTxt: UITextField!
     
+    @IBOutlet weak var calculateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Takes the button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
-            
+        
+        /// Rounds the corners 15 pixels of the UIView name
+        calculateButton.clipsToBounds = true
+        calculateButton.layer.cornerRadius = 4
+        
+        // Setting up the segments
+        segmentMaleFemale?.items = ["Male", "Female"]
+        segmentAdultChildElderly?.items = ["Child", "Adult", "Elderly"]
     }
-  
+    
+    // Closes the keyboard befor ethe view is dismissed
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view.endEditing(true)
+    }
+    
     
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,9 +64,9 @@ class FreeWaterDeficit: UIViewController {
         if segue.identifier == "freeWaterShow" {
             // We segue to ACLSVC and pass the infomation from which row is pressed
             if let freeWaterVC = segue.destination as? FreeWaterDeficitDetail {
-               
-                switch (segmentMaleFemale.selectedSegmentIndex, segmentAdultChildElderly.selectedSegmentIndex) {
-                case (0,0): //Mark:Male Child
+                
+                switch (segmentMaleFemale?.selectedIndex, segmentAdultChildElderly?.selectedIndex) {
+                case (0?,0?): //Mark:Male Child
                     
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
@@ -70,8 +85,13 @@ class FreeWaterDeficit: UIViewController {
                     
                     
                     guard let _ = weight , let _ = sodium, let _ = desiredSodium  else {
-                        print("Error! out of normal parameters"); return }
-                   
+                        print("Error! out of normal parameters")
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Make sure all of the text fields have values before calculating.", closeButtonTitle:"OK")
+                        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+                        
+                        return }
+                    
                     /// Settng the Child Male calculation to the resultMale double on the receiving VC.
                     freeWaterVC.resultChildMale = (0.6 * weight! * ((sodium! / desiredSodium!)-1))
                     
@@ -79,7 +99,7 @@ class FreeWaterDeficit: UIViewController {
                     print("")//create space on the console
                     
                     
-                case (0,1): //Mark:Male Adult
+                case (0?,1?): //Mark:Male Adult
                     
                     //MARK: Guard function during the calculations.
                     guard let _ = weightTxt, let _ = currentNaTxt, let _ = desiredNaTxt  else {
@@ -106,7 +126,7 @@ class FreeWaterDeficit: UIViewController {
                     
                     
                     
-                case (0,2): //Mark: Male Elderly
+                case (0?,2?): //Mark: Male Elderly
                     
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
@@ -129,8 +149,8 @@ class FreeWaterDeficit: UIViewController {
                     
                     //Mark: FEMALE CALCULATIONS
                     
-                case (1,0): //Mark:Female Child
-                   
+                case (1?,0?): //Mark:Female Child
+                    
                     
                     
                     
@@ -151,9 +171,9 @@ class FreeWaterDeficit: UIViewController {
                     
                     
                     
-                case (1,1): //Mark:Female Adult
+                case (1?,1?): //Mark:Female Adult
                     
-                   
+                    
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 5
                     // I set the ID block,  that is an INT  on the receiving view controller so I can access this in a switch statement.
@@ -170,8 +190,8 @@ class FreeWaterDeficit: UIViewController {
                     
                     
                     
-                case (1,2): //Mark: Female Elderly
-                 
+                case (1?,2?): //Mark: Female Elderly
+                    
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 6
@@ -208,21 +228,21 @@ class FreeWaterDeficit: UIViewController {
         popTip.actionAnimation = .float(0.5) // This will float for 0.5 instead of the default value
         
         // Identified where in the view to make the popUp show
-        let here = CGRect (x: 100, y: 120, width: 100, height: 100)
+        let here = CGRect (x: view.frame.width/2, y: 120, width: 100, height: 100)
         
         
         popTip.show(text: "Calculation is based on the formula:Male- 0.6 x weight(kg) x (currentNa / 140)-1)", direction: .up, maxWidth: 200, in: view, from: here)
         
-        //        popTip.show(text: "Devine BJ. Gentamicin therapy. Drug Intell Clin Pharm. 1974;8:650–655.", direction: .down, maxWidth: 200, in: view, from: here)
+        //popTip.show(text: "Devine BJ. Gentamicin therapy. Drug Intell Clin Pharm. 1974;8:650–655.", direction: .down, maxWidth: 200, in: view, from: here)
         
         //Background color changes. Not sure how to dismiss.
-        //        view.backgroundColor = UIColor.init(white: 0.4, alpha: 0.8)
+        //view.backgroundColor = UIColor.init(white: 0.4, alpha: 0.8)
         
         //let the user dismiss the popover by tapping on it
         popTip.shouldDismissOnTap = true
         
         //Changes the font of the pop-up and size
-        //        popTip.font = UIFont(name: "AvenirNextCondensed-Heavy", size: 10.0)!
+        //popTip.font = UIFont(name: "AvenirNextCondensed-Heavy", size: 10.0)!
         
         
     }
@@ -265,5 +285,7 @@ class FreeWaterDeficit: UIViewController {
         
         dismiss(animated: true, completion: nil)
     }
+    
+    
     
 }

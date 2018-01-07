@@ -11,14 +11,15 @@ import UIKit
 class UrineOutput: UIViewController {
     
     // Outlets
-    @IBOutlet weak var segmentWeight: UISegmentedControl!
-    @IBOutlet weak var segmentUrineOutput: UISegmentedControl!
+    @IBOutlet weak var segmentWeight: CustomSegmentedController?
+    @IBOutlet weak var segmentUrineOutput: CustomSegmentedController?
     @IBOutlet weak var liters_mL_Label: UILabel!
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var urineOurputTextField: UITextField!
     @IBOutlet weak var hoursTextField: UITextField!
     @IBOutlet weak var closeButtonMain: UIButton!
 
+    @IBOutlet weak var calculateButton: UIButton!
     var finalCalculation:Double?
     
     
@@ -28,6 +29,12 @@ class UrineOutput: UIViewController {
         // Takes the button and makes it into a circle
         closeButtonMain.layer.cornerRadius = closeButtonMain.frame.size.width / 2
     
+        /// Rounds the corners 15 pixels of the UIView name
+        calculateButton.clipsToBounds = true
+        calculateButton.layer.cornerRadius = 4
+        
+        segmentWeight?.items = ["Adult", "Peds"]
+        segmentUrineOutput?.items = ["mL", "Liters"]
     }
     
     func urineOutputFormula(weight: Double, UrineOutput: Double, Time: Double) -> Double {
@@ -37,6 +44,9 @@ class UrineOutput: UIViewController {
         return urineOut
   }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view.endEditing(true)
+    }
     
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -54,9 +64,10 @@ class UrineOutput: UIViewController {
             // We segue to ACLSVC and pass the infomation from which row is pressed
             if let urineOutputData = segue.destination as? UrineOutputData {
                 
-                switch (segmentWeight.selectedSegmentIndex, segmentUrineOutput.selectedSegmentIndex) {
+                switch (segmentWeight?.selectedIndex, segmentUrineOutput?.selectedIndex) {
                     
-                case (0,0): // Adult mLs
+                // Need to use ? because of the optional in the Custom segment IBOutlet
+                case (0?,0?): // Adult mLs
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 0
@@ -73,7 +84,7 @@ class UrineOutput: UIViewController {
                     
                     urineOutputData.result = Double (urineOutput! / (weight! * time!))
                     
-                case (0,1): // Adult Liters
+                case (0?,1?): // Adult Liters
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 1
@@ -92,7 +103,7 @@ class UrineOutput: UIViewController {
                     
                     urineOutputData.result = Double (urineOutputLitersConversion / (weight! * time!))
                 
-                case (1,0):// Peds mLs
+                case (1?,0?):// Peds mLs
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 2
@@ -109,7 +120,7 @@ class UrineOutput: UIViewController {
                     urineOutputData.result = Double (urineOutput! / (weight! * time!))
                     
                     
-                case (1,1): // Peds Liters
+                case (1?,1?): // Peds Liters
                     
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 3
@@ -135,11 +146,14 @@ class UrineOutput: UIViewController {
     
     @IBAction func UrineSegmentChange(_ sender: Any) {
     
-        switch segmentUrineOutput.selectedSegmentIndex {
-        case 0:
-            liters_mL_Label.text = "mL"
-        case 1:
-            liters_mL_Label.text = "L"
+        switch segmentUrineOutput?.selectedIndex {
+        case 0?: // Need to use ? because of the optional in the Custom segment IBOutlet
+//            liters_mL_Label.text = "mL"
+            urineOurputTextField.placeholder = "mL"
+        case 1?:
+//            liters_mL_Label.text = "L"
+            urineOurputTextField.placeholder = "L"
+
         default:
             break
         }
@@ -159,13 +173,27 @@ class UrineOutput: UIViewController {
        
         weightTextField.text = "0"; urineOurputTextField.text = "0"; hoursTextField.text = "0"
         
-        let alert = UIAlertController(title: "Please enter a numeric value", message:  "Enter an appropriate weight greater than zero to calcualte.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Got it", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert,animated: true, completion: nil)
+        
+        _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate weight greater than zero to calculate", closeButtonTitle:"OK")
+        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+        
         
     }
     
+    /// Cancels the segue transition if the textBox is empty
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "urineSegue" {
+            if (weightTextField.text?.isEmpty)! || (urineOurputTextField.text == "0.0") || (urineOurputTextField.text?.isEmpty)! || (weightTextField.text == "0.0") {
+                print("segue cancelled")
+                return false
+            }
+        }
+        
+        // by default, transition
+        return true
+    }
     
+
     
     @IBAction func dismissMainUrineOutputMain(_ sender: Any) {
         
