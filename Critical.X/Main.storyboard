@@ -586,21 +586,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rapid Sequence Intubation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kQE-7y-GqL">
-                                                    <rect key="frame" x="84.999999999999986" y="8.9999999999999982" width="181.66666666666666" height="20.333333333333332"/>
+                                                    <rect key="frame" x="85.999999999999986" y="8.9999999999999982" width="181.66666666666666" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.45882352941176469" green="0.74117647058823533" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Dosage calculator &amp; 7P's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hI1-mH-k2C">
-                                                    <rect key="frame" x="85.000000000000014" y="30.333333333333332" width="146.33333333333334" height="14.333333333333334"/>
+                                                    <rect key="frame" x="86.000000000000014" y="30.333333333333332" width="146.33333333333334" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                     <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="laryngescope" id="X89-GY-Xbs">
-                                                    <rect key="frame" x="15" y="0.0" width="55" height="54.666666666666664"/>
+                                                    <rect key="frame" x="16" y="0.0" width="55" height="54.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -620,25 +620,28 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Procedures and Imaging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yLU-6J-RaN">
-                                                    <rect key="frame" x="83" y="8.9999999999999982" width="165" height="20.333333333333332"/>
+                                                    <rect key="frame" x="84" y="8.9999999999999982" width="165" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="CXR, CT, Central Lines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALa-O8-6QT">
-                                                    <rect key="frame" x="82.999999999999986" y="30.333333333333332" width="132.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="83.999999999999986" y="30.333333333333332" width="132.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                     <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical Syringes Logo" id="9Bz-4z-JjZ">
-                                                    <rect key="frame" x="15" y="0.0" width="53" height="54.666666666666664"/>
+                                                    <rect key="frame" x="16" y="0.0" width="53" height="54.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="77R-a4-g1P" kind="show" id="X7I-Uf-Cxc"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="HOg-Q5-drt" detailTextLabel="n06-Ek-LEd" imageView="nCY-y8-eD6" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="KpH-Tp-8oz">
                                         <rect key="frame" x="0.0" y="864" width="375" height="55"/>
@@ -648,21 +651,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Ventilator Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HOg-Q5-drt">
-                                                    <rect key="frame" x="84.000000000000014" y="8.9999999999999982" width="157.33333333333334" height="20.333333333333332"/>
+                                                    <rect key="frame" x="85.000000000000014" y="8.9999999999999982" width="157.33333333333334" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.23018704349999999" green="0.77713233230000001" blue="0.31589496140000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ABG Calculator, TV, MV, Modes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n06-Ek-LEd">
-                                                    <rect key="frame" x="83.999999999999986" y="30.333333333333332" width="182.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="84.999999999999986" y="30.333333333333332" width="182.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                     <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Critical-Ventilator-Green-Management-13" id="nCY-y8-eD6">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.666666666666664"/>
+                                                    <rect key="frame" x="16" y="0.0" width="54" height="54.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -5886,7 +5889,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae1-vZ-Cq4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="-1733"/>
+            <point key="canvasLocation" x="-2215" y="-848"/>
         </scene>
         <!--FreeWaterDeficitDetail-->
         <scene sceneID="vMB-lv-lkL">
@@ -6021,7 +6024,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5x-z4-kZ8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803" y="-1734"/>
+            <point key="canvasLocation" x="-1457" y="-847"/>
         </scene>
         <!--Urine Output Main-->
         <scene sceneID="iDZ-Dl-URQ">
@@ -7719,18 +7722,18 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-jp-HWo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-jp-HWo">
                                 <rect key="frame" x="-7" y="0.0" width="388" height="812"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.95999997854232788" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3u1-Aw-IZ2">
+                            <visualEffectView opaque="NO" alpha="0.76000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3u1-Aw-IZ2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X2X-CD-HPz">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <blurEffect style="extraLight"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSw-5U-rqe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -7749,7 +7752,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nk-ee-ep8">
                                         <rect key="frame" x="75" y="439" width="223" height="36"/>
-                                        <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="0.59803366550000003" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="0.52094655797101452" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="0.74594278380000001" colorSpace="calibratedRGB"/>
@@ -7994,14 +7997,18 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <constraint firstItem="VSw-5U-rqe" firstAttribute="trailing" secondItem="3u1-Aw-IZ2" secondAttribute="trailing" id="7DW-Dl-hR9"/>
                             <constraint firstItem="3u1-Aw-IZ2" firstAttribute="leading" secondItem="gpc-rh-3aT" secondAttribute="leading" id="9s0-Zf-TY6"/>
                             <constraint firstItem="3u1-Aw-IZ2" firstAttribute="leading" secondItem="VSw-5U-rqe" secondAttribute="leading" id="Dhe-Pi-3EJ"/>
+                            <constraint firstItem="3u1-Aw-IZ2" firstAttribute="trailing" secondItem="e4r-35-rYt" secondAttribute="trailing" id="Fji-s3-MOS"/>
                             <constraint firstItem="VSw-5U-rqe" firstAttribute="bottom" secondItem="3u1-Aw-IZ2" secondAttribute="bottom" id="LJO-fS-4th"/>
                             <constraint firstItem="Iqh-jp-HWo" firstAttribute="centerX" secondItem="3u1-Aw-IZ2" secondAttribute="centerX" id="MLa-M0-NEj"/>
+                            <constraint firstItem="3u1-Aw-IZ2" firstAttribute="top" secondItem="gpc-rh-3aT" secondAttribute="top" id="RKG-3h-Js1"/>
                             <constraint firstItem="Iqh-jp-HWo" firstAttribute="leading" secondItem="gpc-rh-3aT" secondAttribute="leadingMargin" constant="-23" id="TvG-fK-PfZ"/>
                             <constraint firstItem="Iqh-jp-HWo" firstAttribute="top" secondItem="VSw-5U-rqe" secondAttribute="top" id="aqi-Uk-jEQ"/>
                             <constraint firstItem="3u1-Aw-IZ2" firstAttribute="top" secondItem="VSw-5U-rqe" secondAttribute="top" id="k6b-tS-0Wh"/>
                             <constraint firstAttribute="bottom" secondItem="VSw-5U-rqe" secondAttribute="bottom" id="oj7-Eb-qv8"/>
+                            <constraint firstItem="3u1-Aw-IZ2" firstAttribute="leading" secondItem="e4r-35-rYt" secondAttribute="leading" id="t4x-Ec-cRm"/>
                             <constraint firstAttribute="trailing" secondItem="3u1-Aw-IZ2" secondAttribute="trailing" id="uD8-gL-d4h"/>
                             <constraint firstItem="VSw-5U-rqe" firstAttribute="top" secondItem="gpc-rh-3aT" secondAttribute="top" id="uP4-zR-9g3"/>
+                            <constraint firstAttribute="bottom" secondItem="3u1-Aw-IZ2" secondAttribute="bottom" id="ys8-gH-7WX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e4r-35-rYt"/>
                     </view>
@@ -8124,7 +8131,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exY-kx-AHQ">
-                                <rect key="frame" x="214" y="221" width="97" height="26"/>
+                                <rect key="frame" x="254" y="221" width="97" height="26"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" name="Cool Mint"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
@@ -8187,7 +8194,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZcP-I2-DUl">
-                                <rect key="frame" x="214" y="171" width="97" height="28"/>
+                                <rect key="frame" x="254" y="171" width="97" height="28"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="0c1-F1-uC3"/>
@@ -8197,13 +8204,13 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pc-1A-NbL">
-                                <rect key="frame" x="285" y="177" width="22" height="17"/>
+                                <rect key="frame" x="325" y="177" width="22" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
                                 <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdw-l6-jQo">
-                                <rect key="frame" x="285" y="227" width="22" height="17"/>
+                                <rect key="frame" x="325" y="227" width="22" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
                                 <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -8225,7 +8232,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <constraint firstItem="9m4-0l-p0b" firstAttribute="bottom" secondItem="ups-KT-Cxb" secondAttribute="bottom" id="GHz-Cw-gEG"/>
                             <constraint firstItem="pdw-l6-jQo" firstAttribute="top" secondItem="ZcP-I2-DUl" secondAttribute="bottom" constant="28" id="GNO-IY-Tt2"/>
                             <constraint firstItem="NF2-Td-aEk" firstAttribute="trailing" secondItem="ux9-EB-Nxn" secondAttribute="trailing" constant="213" id="Gna-Lu-xhH"/>
-                            <constraint firstItem="pdw-l6-jQo" firstAttribute="leading" secondItem="mFq-G1-OnK" secondAttribute="trailing" constant="77" id="I6c-Kw-Vd3"/>
+                            <constraint firstItem="pdw-l6-jQo" firstAttribute="leading" secondItem="mFq-G1-OnK" secondAttribute="trailing" constant="117" id="I6c-Kw-Vd3"/>
                             <constraint firstItem="hV4-Fp-Hnl" firstAttribute="top" secondItem="ux9-EB-Nxn" secondAttribute="bottom" constant="19" id="IAO-IN-JiP"/>
                             <constraint firstItem="JvJ-D5-UlI" firstAttribute="leading" secondItem="NF2-Td-aEk" secondAttribute="leading" constant="15" id="Ib3-Bm-EZF"/>
                             <constraint firstItem="lsz-fN-Kkj" firstAttribute="top" secondItem="ZcP-I2-DUl" secondAttribute="top" constant="5" id="LOq-XX-V3R"/>
@@ -8239,14 +8246,14 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <constraint firstAttribute="bottom" secondItem="ups-KT-Cxb" secondAttribute="bottom" id="VG3-eZ-M9v"/>
                             <constraint firstItem="b3V-Nl-798" firstAttribute="top" secondItem="JvJ-D5-UlI" secondAttribute="bottom" constant="30" id="VSZ-r4-ukU"/>
                             <constraint firstItem="8Pc-1A-NbL" firstAttribute="centerY" secondItem="ZcP-I2-DUl" secondAttribute="centerY" id="Vdg-jc-Avh"/>
-                            <constraint firstItem="ZcP-I2-DUl" firstAttribute="leading" secondItem="lsz-fN-Kkj" secondAttribute="trailing" constant="6" id="Vge-SP-alU"/>
+                            <constraint firstItem="ZcP-I2-DUl" firstAttribute="leading" secondItem="lsz-fN-Kkj" secondAttribute="trailing" constant="46" id="Vge-SP-alU"/>
                             <constraint firstItem="lcY-AN-K29" firstAttribute="leading" secondItem="NF2-Td-aEk" secondAttribute="leading" constant="15" id="Vwz-Hz-I8G"/>
                             <constraint firstItem="JvJ-D5-UlI" firstAttribute="top" secondItem="yK7-TD-am3" secondAttribute="bottom" constant="13" id="Wuk-Hb-pUw"/>
                             <constraint firstItem="lsz-fN-Kkj" firstAttribute="top" secondItem="SJ7-kp-KiV" secondAttribute="top" constant="176" id="auD-3R-4o6"/>
                             <constraint firstItem="lsz-fN-Kkj" firstAttribute="trailing" secondItem="mFq-G1-OnK" secondAttribute="trailing" id="bBf-a8-dCT"/>
                             <constraint firstItem="lsz-fN-Kkj" firstAttribute="bottom" secondItem="ZcP-I2-DUl" secondAttribute="bottom" constant="-5" id="cf6-3j-anC"/>
                             <constraint firstItem="b3V-Nl-798" firstAttribute="centerX" secondItem="yK7-TD-am3" secondAttribute="centerX" constant="1" id="cgx-p5-V3i"/>
-                            <constraint firstItem="NF2-Td-aEk" firstAttribute="trailing" secondItem="pdw-l6-jQo" secondAttribute="trailing" constant="68" id="d2x-lO-BO6"/>
+                            <constraint firstItem="NF2-Td-aEk" firstAttribute="trailing" secondItem="pdw-l6-jQo" secondAttribute="trailing" constant="28" id="d2x-lO-BO6"/>
                             <constraint firstItem="ivg-T6-aTc" firstAttribute="leading" secondItem="hV4-Fp-Hnl" secondAttribute="trailing" constant="4" id="dQP-UK-Lc5"/>
                             <constraint firstItem="ivg-T6-aTc" firstAttribute="top" secondItem="ux9-EB-Nxn" secondAttribute="bottom" constant="21" id="dTT-o6-s7X"/>
                             <constraint firstAttribute="trailing" secondItem="ups-KT-Cxb" secondAttribute="trailing" id="eBk-1x-Nnh"/>
@@ -8266,7 +8273,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <constraint firstItem="9m4-0l-p0b" firstAttribute="top" secondItem="ups-KT-Cxb" secondAttribute="top" id="rlw-m2-VXd"/>
                             <constraint firstItem="0MH-6u-bOg" firstAttribute="top" secondItem="NF2-Td-aEk" secondAttribute="top" constant="27" id="sPo-Uh-lQN"/>
                             <constraint firstItem="NF2-Td-aEk" firstAttribute="trailing" secondItem="JvJ-D5-UlI" secondAttribute="trailing" constant="14" id="uDd-Qm-7xA"/>
-                            <constraint firstItem="NF2-Td-aEk" firstAttribute="trailing" secondItem="ZcP-I2-DUl" secondAttribute="trailing" constant="64" id="x4t-iD-yET"/>
+                            <constraint firstItem="NF2-Td-aEk" firstAttribute="trailing" secondItem="ZcP-I2-DUl" secondAttribute="trailing" constant="24" id="x4t-iD-yET"/>
                             <constraint firstItem="lcY-AN-K29" firstAttribute="centerX" secondItem="SJ7-kp-KiV" secondAttribute="centerX" id="zDR-hR-MR0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NF2-Td-aEk"/>
@@ -8669,13 +8676,187 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
             </objects>
             <point key="canvasLocation" x="505" y="906"/>
         </scene>
+        <!--References-->
+        <scene sceneID="olx-4R-W4E">
+            <objects>
+                <tableViewController title="References" id="77R-a4-g1P" customClass="EkgMenuTableViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="o9H-zF-QZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Imaging" id="8j3-Xe-qoF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="KBk-So-8CU" detailTextLabel="3Ie-1Z-pOZ" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="bbc-2i-fxn">
+                                        <rect key="frame" x="0.0" y="55.333333333333336" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bbc-2i-fxn" id="Aa3-uS-0fj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Chest X-ray Interpretation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KBk-So-8CU">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="175.66666666666666" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Normal chest x-ray with a detailed overlay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Ie-1Z-pOZ">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="238" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GNA-bU-pP4" kind="showDetail" id="OcO-bg-uT4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Procedures" id="5g5-q4-b2H">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="huC-cd-pJh" detailTextLabel="bW2-Wz-UgW" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="Jta-WO-Zvz">
+                                        <rect key="frame" x="0.0" y="176.33333333333334" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jta-WO-Zvz" id="GwN-nC-0tr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Central Line insetion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="huC-cd-pJh">
+                                                    <rect key="frame" x="16" y="12.999999999999998" width="139" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" name="Alizarin"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Mean Arterial Pressure and Cerebral Perfusion Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bW2-Wz-UgW">
+                                                    <rect key="frame" x="16" y="36.333333333333329" width="315" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="77R-a4-g1P" id="EjS-vv-Ukq"/>
+                            <outlet property="delegate" destination="77R-a4-g1P" id="Stb-ke-5YP"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Procedures &amp; Imaging" id="Z1v-MO-s2s"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csh-oA-Rdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="-1736"/>
+        </scene>
+        <!--Chest Xray-->
+        <scene sceneID="Mnq-Hv-AwQ">
+            <objects>
+                <viewController id="GNA-bU-pP4" customClass="ChestXray" customModule="ChestXray" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MQW-Hl-DX4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Dark Blue Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-vi-AAm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccJ-Oq-FpF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="a3R-x1-86W">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.31372779610000001" green="0.31372129920000003" blue="0.31372570989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest X-Ray Imaging" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIT-ME-EOG">
+                                <rect key="frame" x="10" y="60" width="359" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CXR1" translatesAutoresizingMaskIntoConstraints="NO" id="E8w-U4-egK">
+                                <rect key="frame" x="9" y="110" width="358" height="371"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal Chest X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq4-0w-8Xo">
+                                <rect key="frame" x="0.0" y="567" width="375" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1k-EB-bos">
+                                <rect key="frame" x="327" y="44" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeChestXrayView:" destination="GNA-bU-pP4" eventType="touchUpInside" id="mk0-Ia-8SW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ccJ-Oq-FpF" firstAttribute="leading" secondItem="gb1-vi-AAm" secondAttribute="leading" id="0LX-3H-6xm"/>
+                            <constraint firstItem="C1k-EB-bos" firstAttribute="top" secondItem="n1c-Ft-l1g" secondAttribute="top" id="432-DH-DGs"/>
+                            <constraint firstItem="E8w-U4-egK" firstAttribute="top" secondItem="C1k-EB-bos" secondAttribute="bottom" constant="31" id="Bgk-aO-T53"/>
+                            <constraint firstItem="E8w-U4-egK" firstAttribute="trailing" secondItem="MQW-Hl-DX4" secondAttribute="trailingMargin" constant="8" id="FTm-UP-apl"/>
+                            <constraint firstItem="nq4-0w-8Xo" firstAttribute="top" secondItem="E8w-U4-egK" secondAttribute="bottom" constant="86" id="Ffg-nt-Hjm"/>
+                            <constraint firstItem="E8w-U4-egK" firstAttribute="leading" secondItem="MQW-Hl-DX4" secondAttribute="leadingMargin" constant="-7" id="Fmz-i9-H2l"/>
+                            <constraint firstItem="E8w-U4-egK" firstAttribute="top" secondItem="n1c-Ft-l1g" secondAttribute="top" constant="66" id="Gzi-hi-BWR"/>
+                            <constraint firstItem="E8w-U4-egK" firstAttribute="top" secondItem="mIT-ME-EOG" secondAttribute="bottom" constant="17" id="IYl-cO-6t8"/>
+                            <constraint firstItem="nq4-0w-8Xo" firstAttribute="centerX" secondItem="E8w-U4-egK" secondAttribute="centerX" id="JVg-7g-VAY"/>
+                            <constraint firstItem="n1c-Ft-l1g" firstAttribute="trailing" secondItem="C1k-EB-bos" secondAttribute="trailing" constant="13" id="K7T-Bc-htZ"/>
+                            <constraint firstItem="ccJ-Oq-FpF" firstAttribute="leading" secondItem="MQW-Hl-DX4" secondAttribute="leading" id="USb-Pg-WC9"/>
+                            <constraint firstItem="mIT-ME-EOG" firstAttribute="leading" secondItem="n1c-Ft-l1g" secondAttribute="leading" constant="10" id="Wb8-xK-sz0"/>
+                            <constraint firstItem="gb1-vi-AAm" firstAttribute="trailing" secondItem="ccJ-Oq-FpF" secondAttribute="trailing" id="dh9-YF-pSi"/>
+                            <constraint firstItem="n1c-Ft-l1g" firstAttribute="bottom" secondItem="nq4-0w-8Xo" secondAttribute="bottom" constant="173" id="iYw-iI-ttx"/>
+                            <constraint firstItem="ccJ-Oq-FpF" firstAttribute="top" secondItem="gb1-vi-AAm" secondAttribute="top" id="jTq-qA-1sI"/>
+                            <constraint firstItem="gb1-vi-AAm" firstAttribute="leading" secondItem="nq4-0w-8Xo" secondAttribute="leading" id="jai-Cv-Ny5"/>
+                            <constraint firstAttribute="bottom" secondItem="gb1-vi-AAm" secondAttribute="bottom" id="k0H-xG-qKg"/>
+                            <constraint firstItem="mIT-ME-EOG" firstAttribute="top" secondItem="n1c-Ft-l1g" secondAttribute="top" constant="16" id="msd-bB-zfm"/>
+                            <constraint firstItem="n1c-Ft-l1g" firstAttribute="trailing" secondItem="mIT-ME-EOG" secondAttribute="trailing" constant="6" id="pOT-Zp-Q46"/>
+                            <constraint firstItem="n1c-Ft-l1g" firstAttribute="bottom" secondItem="E8w-U4-egK" secondAttribute="bottom" constant="297" id="qVV-ZJ-6kL"/>
+                            <constraint firstItem="ccJ-Oq-FpF" firstAttribute="bottom" secondItem="gb1-vi-AAm" secondAttribute="bottom" id="s5j-eh-uwX"/>
+                            <constraint firstItem="ccJ-Oq-FpF" firstAttribute="trailing" secondItem="nq4-0w-8Xo" secondAttribute="trailing" id="smn-ow-aBA"/>
+                            <constraint firstItem="gb1-vi-AAm" firstAttribute="top" secondItem="MQW-Hl-DX4" secondAttribute="top" id="yJz-72-pTT"/>
+                            <constraint firstItem="C1k-EB-bos" firstAttribute="leading" secondItem="n1c-Ft-l1g" secondAttribute="leading" constant="327" id="znz-Zh-kX0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n1c-Ft-l1g"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="C1k-EB-bos" id="XBc-eh-axM"/>
+                        <outlet property="cxrImageView" destination="E8w-U4-egK" id="nhN-JP-mhI"/>
+                        <outlet property="titleLabel" destination="nq4-0w-8Xo" id="Ogr-Db-O07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7N-eU-BPG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="-1736"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="BG-Clouds" width="640" height="1136"/>
         <image name="BG-Dark Blue Gradient" width="164" height="307"/>
         <image name="BG-WhiteGreen" width="168" height="300"/>
         <image name="BG-soft-cream-blue-red-gradation-blur-33-iphone6-wallpaper" width="750" height="1334"/>
         <image name="Blue flare abstract blur iPhone X Wallpaper" width="1125" height="2437"/>
         <image name="CBC" width="350" height="328"/>
+        <image name="CXR1" width="628" height="610"/>
         <image name="CloseButton" width="107" height="95"/>
         <image name="Critical Brain Logo" width="408" height="272"/>
         <image name="Critical Neuro-7" width="416" height="420"/>
@@ -8697,13 +8878,16 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
         <image name="laryngescope" width="225" height="225"/>
         <image name="lungs-512" width="512" height="512"/>
         <namedColor name="Alizarin">
-            <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90600001809999997" green="0.29800000789999997" blue="0.23499999939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Alizarin">
             <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Alizarin">
             <color red="0.90600001809999997" green="0.29800000789999997" blue="0.23499999939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Alizarin">
+            <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Amber">
             <color red="1" green="0.75700002909999997" blue="0.027000000699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

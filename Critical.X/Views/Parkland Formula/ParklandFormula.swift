@@ -52,12 +52,24 @@ class ParklandFormula: UIViewController {
     func parklandFormulaCalculation(BSA: Double, Weight: Double) -> String {
         
         //Variables
-        let parklandFormula = BSA * Weight * 4
-        let firstEight = parklandFormula / 2
-        let overSixteen = parklandFormula / 2
+        // Calculates the Parkland Formula
+        
+        let parklandFormula1 = BSA * Weight * 4
+        let parklandFormulaLiters = parklandFormula1 / 1000
+        let parklandFormula = String(format:"%.1f",parklandFormulaLiters) // Rounds to the 1st decimal place
+        
+        let firstEight1 = parklandFormula1 / 2
+        let firstEightLiters = firstEight1 / 1000
+        let firstEight = String(format:"%.1f",firstEightLiters) // Rounds to the 1st decimal place and rounds the figure
+        
+        
+        let overSixteen1 = parklandFormula1 / 2
+        let overSixteenLiters = overSixteen1 / 1000
+        let overSixteen = String(format:"%.1f",overSixteenLiters) // Rounds to the 1st decimal place and rounds the figure
+
         print("parkland formula was calculated")
 
-        return "With a weight of \(Weight) kg's and BSA of \(BSA)%, a total of \(parklandFormula.rounded()/1000) L  needs to be delivered over 24 hours.\n\nDeliver a total of \(firstEight.rounded()/1000) L over the first 8 hours.\n\nThe remaining \(overSixteen.rounded()/1000) L to be delivered over the last 16 hours."
+        return "With a weight of \(Weight) kg's and BSA of \(BSA)%, a total of \(parklandFormula) L  needs to be delivered over 24 hours.\n\nDeliver a total of \(firstEight) L over the first 8 hours.\n\nThe remaining \(overSixteen) L to be delivered over the last 16 hours."
         
     }
     
@@ -67,14 +79,21 @@ class ParklandFormula: UIViewController {
         let Weight = Double(weightTxt.text!)
         
         let parklandFormula = BSA! * Weight! * 4
-        let firstEight = parklandFormula / 2
-        let overSixteen = parklandFormula / 2
         
+        let firstEight1 = parklandFormula / 2
+        let firstEightLiters = firstEight1 / 1000
+        let firstEight = String(format:"%.1f",firstEightLiters) // Rounds to the 1st decimal place and rounds the figure
+       
+        
+        let overSixteen1 = parklandFormula / 2
+        let overSixteenLiters = overSixteen1 / 1000
+        let overSixteen = String(format:"%.1f",overSixteenLiters) // Rounds to the 1st decimal place and rounds the figure
+
         let infusionRateEight = parklandFormula / timeEight
         let infusionRateSisteen = parklandFormula / timeSixteen
         
 
-        return "To infuse \(firstEight.rounded()/1000) L's over 8 hrs., consider an infusion rate of \(infusionRateEight / 2 ) mL/hr.\n\nFor the final 16 hrs., consider an infusion rate of \(infusionRateSisteen / 2) mL/hr to infuse remainder \(overSixteen.rounded()/1000) L."
+        return "To infuse \(firstEight) L's over 8 hrs., consider an infusion rate of \(infusionRateEight / 2 ) mL/hr.\n\nFor the final 16 hrs., consider an infusion rate of \(infusionRateSisteen / 2) mL/hr to infuse remainder \(overSixteen ) L."
     }
 
     func analyzeParkland() {
@@ -141,8 +160,18 @@ class ParklandFormula: UIViewController {
 
         showAnimate()
         print("parkland formula was displayed")
+        
+        //Dismissed the keyboard on calculation
+        self.view.endEditing(true)
+
 
     }
+    
+    // Closes the keyboard befor ethe view is dismissed
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view.endEditing(true)
+    }
+    
     
     @IBAction func dismissMainParkland(_ sender: Any) {
         
