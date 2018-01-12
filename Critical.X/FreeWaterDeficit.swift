@@ -104,6 +104,7 @@ class FreeWaterDeficit: UIViewController {
                     //MARK: Guard function during the calculations.
                     guard let _ = weightTxt, let _ = currentNaTxt, let _ = desiredNaTxt  else {
                         
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
                         print("Error! out of normal parameters")
                         
                         return }

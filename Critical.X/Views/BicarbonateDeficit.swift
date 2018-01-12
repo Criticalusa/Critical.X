@@ -69,7 +69,9 @@ class BicarbonateDeficit: UIViewController, UITextFieldDelegate {
         let HC03 = Double(currentBicarbTxt.text!)
         
         //Throw function is the weight or bicarb is left blank
-        guard let _ = weight, let _ = HC03 else { print("Values not entered properly."); return "" }
+        guard let _ = weight, let _ = HC03 else {
+        _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
+            print("Values not entered properly."); return "" }
         
         //Unhides the view
         resultsView.isHidden = false

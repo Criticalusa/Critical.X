@@ -54,6 +54,9 @@ class UrineOutput: UIViewController {
         let time = Double(hoursTextField.text!)
         
         guard let _  = urineOutput, let _ = time else {
+            
+            _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
+            
             print("No UO or time entered")
             return 0 }
         return urineOutput! / time!
@@ -186,7 +189,8 @@ class UrineOutput: UIViewController {
     @IBAction func calculateAction(_ sender: Any) {
         
     guard let theWeight = weightTextField.text, theWeight.isEmpty,  let theHours = hoursTextField.text, theHours.isEmpty, let Urine = urineOurputTextField.text, Urine.isEmpty else {
-            
+        
+       
             print("Paramaters variables are not met"); return }
        
         weightTextField.text = "0"; urineOurputTextField.text = "0"; hoursTextField.text = "0"

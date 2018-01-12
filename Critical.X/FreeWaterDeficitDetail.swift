@@ -51,7 +51,8 @@ class FreeWaterDeficitDetail: UIViewController {
         
         //Guard statemtent for the Optional values only.// When  weight parameter is only met
         guard let _ = weight, let _ = currentNa, let _ = desiredNa  else {
-            
+            _ = SCLAlertView().showWarning("Hold On...", subTitle: "Check all of the fields before calculating.")
+
             freeWaterResultLabel.text = "Error!"
             iVFlowRateTxt.text = "Please all the values, then calculate"
            
