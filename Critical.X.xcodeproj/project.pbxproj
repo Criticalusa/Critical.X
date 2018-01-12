@@ -47,6 +47,7 @@
 		C4A776DF2008E893002EEC86 /* JPSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A776DE2008E893002EEC86 /* JPSwitchButton.swift */; };
 		C4A776E12008E89A002EEC86 /* ChestXray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A776E02008E89A002EEC86 /* ChestXray.swift */; };
 		C4A77721200932E2002EEC86 /* IVDripRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A77720200932E1002EEC86 /* IVDripRate.swift */; };
+		C4A7775F20095EA3002EEC86 /* FeNa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7775E20095EA3002EEC86 /* FeNa.swift */; };
 		C4BC94EB1FFFEB9200F06E82 /* WinterFormulaMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */; };
 		C4C25EEE1FF9099600C5CD42 /* RSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */; };
 		C4C25EEF1FF9099600C5CD42 /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */; };
@@ -165,6 +166,7 @@
 		C4A776DE2008E893002EEC86 /* JPSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPSwitchButton.swift; sourceTree = "<group>"; };
 		C4A776E02008E89A002EEC86 /* ChestXray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestXray.swift; sourceTree = "<group>"; };
 		C4A77720200932E1002EEC86 /* IVDripRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVDripRate.swift; sourceTree = "<group>"; };
+		C4A7775E20095EA3002EEC86 /* FeNa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeNa.swift; sourceTree = "<group>"; };
 		C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterFormulaMain.swift; sourceTree = "<group>"; };
 		C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIDetail.swift; sourceTree = "<group>"; };
 		C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
@@ -349,6 +351,46 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		C4A7776120096381002EEC86 /* IV Flow Rate */ = {
+			isa = PBXGroup;
+			children = (
+				C4A77720200932E1002EEC86 /* IVDripRate.swift */,
+			);
+			path = "IV Flow Rate";
+			sourceTree = "<group>";
+		};
+		C4A77762200963A2002EEC86 /* CXR  */ = {
+			isa = PBXGroup;
+			children = (
+				C4A776E02008E89A002EEC86 /* ChestXray.swift */,
+			);
+			path = "CXR ";
+			sourceTree = "<group>";
+		};
+		C4A77763200963B2002EEC86 /* Bicarb Deficit */ = {
+			isa = PBXGroup;
+			children = (
+				C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */,
+			);
+			path = "Bicarb Deficit";
+			sourceTree = "<group>";
+		};
+		C4A77764200963D2002EEC86 /* FeNa */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7775E20095EA3002EEC86 /* FeNa.swift */,
+			);
+			path = FeNa;
+			sourceTree = "<group>";
+		};
+		C4A77765200963F1002EEC86 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C42F417A1FF90CA2003BE489 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
 		C4B912AD2000FD5B0008B159 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,10 +499,11 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C42F417A1FF90CA2003BE489 /* AppDelegate.swift */,
-				C4A776E02008E89A002EEC86 /* ChestXray.swift */,
-				C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */,
-				C4A77720200932E1002EEC86 /* IVDripRate.swift */,
+				C4A77765200963F1002EEC86 /* App Delegate */,
+				C4A77762200963A2002EEC86 /* CXR  */,
+				C4A77763200963B2002EEC86 /* Bicarb Deficit */,
+				C4A7776120096381002EEC86 /* IV Flow Rate */,
+				C4A77764200963D2002EEC86 /* FeNa */,
 				C4B912AE2000FD950008B159 /* Parkland Formula */,
 				C436ED7C20027476008ACDC7 /* Ventilator Optimization */,
 				C436ED412001B3B5008ACDC7 /* PF Ratio */,
@@ -878,6 +921,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C25EFD1FF9099600C5CD42 /* CollapsibleTableViewController.swift in Sources */,
+				C4A7775F20095EA3002EEC86 /* FeNa.swift in Sources */,
 				C42F41831FF90E2B003BE489 /* IdealBWDataView.swift in Sources */,
 				C4DF418F1FFD095700AD1229 /* SCLExtensions.swift in Sources */,
 				C4C25EFB1FF9099600C5CD42 /* ExampleData.swift in Sources */,
