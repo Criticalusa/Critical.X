@@ -43,6 +43,7 @@
 		C47FECF91FFC5DF000E2C273 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECEF1FFC5DEF00E2C273 /* JiroTextField.swift */; };
 		C47FECFA1FFC5DF000E2C273 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECF01FFC5DEF00E2C273 /* HoshiTextField.swift */; };
 		C47FECFB1FFC5DF000E2C273 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECF11FFC5DEF00E2C273 /* AkiraTextField.swift */; };
+		C4A77697200822B8002EEC86 /* BicarbonateDeficit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */; };
 		C4BC94EB1FFFEB9200F06E82 /* WinterFormulaMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */; };
 		C4C25EEE1FF9099600C5CD42 /* RSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */; };
 		C4C25EEF1FF9099600C5CD42 /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */; };
@@ -157,6 +158,7 @@
 		C47FECEF1FFC5DEF00E2C273 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
 		C47FECF01FFC5DEF00E2C273 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		C47FECF11FFC5DEF00E2C273 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicarbonateDeficit.swift; sourceTree = "<group>"; };
 		C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterFormulaMain.swift; sourceTree = "<group>"; };
 		C4C25EBA1FF9099500C5CD42 /* RSIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIDetail.swift; sourceTree = "<group>"; };
 		C4C25EBB1FF9099500C5CD42 /* RSIMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
@@ -259,7 +261,6 @@
 			children = (
 				79E2EF4D1F9CC18000701ACC /* LaunchScreen.storyboard */,
 				7955134A1FD4B4F6005856F3 /* Main.storyboard */,
-				C4B912AE2000FD950008B159 /* New Group */,
 				C4C25EBE1FF9099500C5CD42 /* Views */,
 				C4B912AD2000FD5B0008B159 /* Models */,
 				79E2EF4B1F9CC18000701ACC /* Assets.xcassets */,
@@ -354,11 +355,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C4B912AE2000FD950008B159 /* New Group */ = {
+		C4B912AE2000FD950008B159 /* Parkland Formula */ = {
 			isa = PBXGroup;
 			children = (
+				C472EFA82006920C00501217 /* ParklandFormula.swift */,
+				C472EFA72006920B00501217 /* ParklandData.swift */,
 			);
-			path = "New Group";
+			path = "Parkland Formula";
 			sourceTree = "<group>";
 		};
 		C4B912AF2000FDA40008B159 /* Custom TextFields */ = {
@@ -448,8 +451,8 @@
 			isa = PBXGroup;
 			children = (
 				C42F417A1FF90CA2003BE489 /* AppDelegate.swift */,
-				C472EFA72006920B00501217 /* ParklandData.swift */,
-				C472EFA82006920C00501217 /* ParklandFormula.swift */,
+				C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */,
+				C4B912AE2000FD950008B159 /* Parkland Formula */,
 				C436ED7C20027476008ACDC7 /* Ventilator Optimization */,
 				C436ED412001B3B5008ACDC7 /* PF Ratio */,
 				C4B912B5200102C50008B159 /* o2Tank Calculator */,
@@ -899,6 +902,7 @@
 				C4C25F151FF9099600C5CD42 /* CalculatedDataViewController.swift in Sources */,
 				C42F41861FF90E2B003BE489 /* IdealBodyWeight.swift in Sources */,
 				C4C25EF21FF9099600C5CD42 /* FlatColors.swift in Sources */,
+				C4A77697200822B8002EEC86 /* BicarbonateDeficit.swift in Sources */,
 				C4C25F111FF9099600C5CD42 /* EKGInformation.swift in Sources */,
 				C470BAB21FF9939E0085F0FF /* FreeWaterDeficit.swift in Sources */,
 				C4C25EFC1FF9099600C5CD42 /* Extensions.swift in Sources */,

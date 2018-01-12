@@ -20,6 +20,7 @@ class UrineOutput: UIViewController {
     @IBOutlet weak var closeButtonMain: UIButton!
 
     @IBOutlet weak var calculateButton: UIButton!
+    
     var finalCalculation:Double?
     
     
@@ -48,6 +49,16 @@ class UrineOutput: UIViewController {
         self.view.endEditing(true)
     }
     
+    func calculateHourlyOutput() -> Double {
+        let urineOutput = Double(urineOurputTextField.text!)
+        let time = Double(hoursTextField.text!)
+        
+        guard let _  = urineOutput, let _ = time else {
+            print("No UO or time entered")
+            return 0 }
+        return urineOutput! / time!
+    }
+
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -58,11 +69,14 @@ class UrineOutput: UIViewController {
             //Im setting the result of the UO to equal the var result on the rec VC
             destination.result = finalCalculation
             
+            //Sets the avgUrineOutput ariable on the data swift file ( which is a double) as calculatedHourlyOutput
+            destination.avgUrineOutput = calculateHourlyOutput()
         }
         
         if segue.identifier == "urineSegue" {
             // We segue to ACLSVC and pass the infomation from which row is pressed
             if let urineOutputData = segue.destination as? UrineOutputData {
+                
                 
                 switch (segmentWeight?.selectedIndex, segmentUrineOutput?.selectedIndex) {
                     
@@ -99,7 +113,8 @@ class UrineOutput: UIViewController {
                     let urineOutputLitersConversion = Double(urineOurputTextField.text!)! * 1000
 
                     
-                   
+                    //Sets up the hourly urine output converseion from Liters to ML
+                    urineOutputData.avgUrineOutput = urineOutputLitersConversion / time!
                     
                     urineOutputData.result = Double (urineOutputLitersConversion / (weight! * time!))
                 
@@ -134,6 +149,9 @@ class UrineOutput: UIViewController {
                     let time = Double(hoursTextField.text!)
                     
                     
+                    //Sets up the hourly urine output converseion from Liters to ML
+                    urineOutputData.avgUrineOutput = urineOutputLitersConversion / time!
+
                 
                     urineOutputData.result = Double (urineOutputLitersConversion / (weight! * time!))
                     

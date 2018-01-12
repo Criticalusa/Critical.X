@@ -15,13 +15,15 @@ class UrineOutputData: UIViewController {
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var resultButton: UIButton!
 
-
+    @IBOutlet weak var averageUO: UILabel!
+    
     
     
     var result: Double?
     var idBlock = Int()
     var resultLiters: Double?
     var oliguriaResult:String = ""
+    var avgUrineOutput: Double?
     
     
     override func viewDidLoad() {
@@ -46,6 +48,20 @@ class UrineOutputData: UIViewController {
         
         urineOutputResultLabel.text = String(finalResult)
         
+        //Sets the average U/O label to display the hourly output. If its less than 0 or zero, pt is anuric
+        let avgUO = String(format:"%.1f",avgUrineOutput!) // Rounds to the 1st decimal place
+        
+        if avgUrineOutput! <= 1 {
+             averageUO.text = "Anuric"
+            averageUO.textColor = Colorify.Alizarin
+        } else {
+            averageUO.text = "Average urine output: \(avgUO) mL/hr"
+            averageUO.textColor = Colorify.Steel
+        }
+        
+        
+        
+        //MARK: -  Switch on the Segments
         
         switch idBlock {
         
@@ -120,8 +136,6 @@ class UrineOutputData: UIViewController {
     
     
     //MARK: Popover Function
-    
-    
     @IBAction func popOverButtonFunction(_ sender: Any) {
         
         let popTip = PopTip()
