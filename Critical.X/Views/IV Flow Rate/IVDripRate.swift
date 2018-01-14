@@ -22,6 +22,11 @@ class IVDripRate: UIViewController {
             resultView.layer.cornerRadius = 10
         }
     }
+    @IBOutlet weak var calculateButton: UIButton! {
+        // Takes the button and rounds the corners 
+        didSet {calculateButton.clipsToBounds = true; calculateButton.layer.cornerRadius = 4}
+    }
+    
     
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
@@ -64,7 +69,7 @@ class IVDripRate: UIViewController {
         let drip =  Double(dripSetTxt.text!)
         
         
-        guard let v = vol, let d = duration, let drip1 = drip else {
+        guard let _ = vol, let _ = duration, let _ = drip else {
             //Return the alert
             _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
             //Also hides the view from animating.

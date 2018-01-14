@@ -229,10 +229,10 @@ class FreeWaterDeficit: UIViewController {
         popTip.actionAnimation = .float(0.5) // This will float for 0.5 instead of the default value
         
         // Identified where in the view to make the popUp show
-        let here = CGRect (x: view.frame.width/2, y: 120, width: 100, height: 100)
+        let here = CGRect (x: view.frame.width/3, y: 120, width: 100, height: 100)
         
         
-        popTip.show(text: "Calculation is based on the formula:Male- 0.6 x weight(kg) x (currentNa / 140)-1)", direction: .up, maxWidth: 200, in: view, from: here)
+        popTip.show(text: "Calculation is based on the formula:Male- 0.6 x weight(kg) x (currentNa / 140)-1)", direction: .down, maxWidth: 200, in: view, from: here)
         
         //popTip.show(text: "Devine BJ. Gentamicin therapy. Drug Intell Clin Pharm. 1974;8:650–655.", direction: .down, maxWidth: 200, in: view, from: here)
         
