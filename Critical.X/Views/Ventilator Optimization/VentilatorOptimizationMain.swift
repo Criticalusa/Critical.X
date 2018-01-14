@@ -28,8 +28,9 @@ class VentilatorOptimizationMain: UIViewController {
     //Buttons
     @IBOutlet weak var closeButtonMain: UIButton!
     @IBOutlet weak var calculateButton: UIButton!
-    
-    
+    @IBOutlet weak var BGView: UIView!
+
+ 
     // MARK: - View Didload method
     override func viewDidLoad() {
         
@@ -38,6 +39,11 @@ class VentilatorOptimizationMain: UIViewController {
         /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
         calculateButton.clipsToBounds = true
         calculateButton.layer.cornerRadius = 4
+        
+        // Round top of the View only
+        BGView.clipsToBounds = true
+        BGView.layer.cornerRadius = 10
+        BGView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         
         // Do any additional setup after loading the view.
