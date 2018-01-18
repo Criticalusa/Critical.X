@@ -15,6 +15,8 @@ class IVDripRate: UIViewController {
     @IBOutlet weak var volumeTxt: UITextField!
     @IBOutlet weak var dripSetTxt: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var mLresultLabel: UILabel!
+    
     
     @IBOutlet weak var resultView: UIView! {
         didSet {
@@ -22,11 +24,6 @@ class IVDripRate: UIViewController {
             resultView.layer.cornerRadius = 10
         }
     }
-    @IBOutlet weak var calculateButton: UIButton! {
-        // Takes the button and rounds the corners 
-        didSet {calculateButton.clipsToBounds = true; calculateButton.layer.cornerRadius = 4}
-    }
-    
     
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
@@ -60,6 +57,7 @@ class IVDripRate: UIViewController {
         //Unhides the resultView on calculation
         resultView.isHidden = false
         
+        
         //Animates the view
         showAnimate()
         
@@ -69,12 +67,14 @@ class IVDripRate: UIViewController {
         let drip =  Double(dripSetTxt.text!)
         
         
-        guard let _ = vol, let _ = duration, let _ = drip else {
-            //Return the alert
-            _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
-            //Also hides the view from animating.
-            resultView.isHidden = true
-            return  }
+        // Calculates the mL/hour and populates the result label.
+        let mLresult = (mLperHours(duration: duration!, volume: vol!))
+        let shortMLResult = String(format:"%.1f",mLresult) // Rounds to the 1st decimal place
+        mLresultLabel.text = shortMLResult
+        print("mL per hour is \(mLperHours(duration: duration!, volume: vol!))")
+        print(shortMLResult)
+        
+        
         switch segment?.selectedIndex {
         case 0?:
             print("0 selected, minutes calculated")
@@ -96,8 +96,6 @@ class IVDripRate: UIViewController {
         default: //Break out
             break
         }
-        //Gets rid of keyboard
-        self.view.endEditing(true)
         
     }
     
@@ -140,6 +138,24 @@ class IVDripRate: UIViewController {
             self.resultView.alpha = 1.0
             self.resultView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         })
+        
+    }
+    
+    
+    //MARK: - Calcualte mL per hour
+    /**
+     Calculate mL/hrbutton
+     - parameters:
+     -no parameters
+     */
+    
+    func mLperHours(duration: Double, volume: Double) -> Double {
+        
+        
+        let resultMl =  volume / duration
+        
+        return resultMl
+        
     }
     
     /**
