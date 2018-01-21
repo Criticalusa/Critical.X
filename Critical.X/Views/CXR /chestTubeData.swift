@@ -37,7 +37,7 @@ class ChestXrayData: UIViewController {
         // Chest tubes
         chestTubeData.text = "Pleural Effusions\n\n▶︎ Should be inferiorposterior at the level of the 8th intercostal space - directily posterior. The tip of the tube should be aimed towards the lower part of the pleural cavity\n\nPneumothorax\n\n▶︎ Should be located anteriorly mid-clavicular at the level if the 3rd intercostal space or anterior axillary directed toward the apex of the 4-5 intercostal space. The tip if the chest tube should be aimed towards the upper pleural cavity."
         
-        centralLineData.text = "Catheter Tip\n\n▶︎ The catheter tip of the central line should end approx. at the level of the right trachealbronchial angle. The tip of the tube should be aimed towards the lower part of the pleural cavity.\n\n▶︎ Rule out any pnuemothorax.\n\n▶︎ If you notice any medial stinal widening, this may be a direct result of great vessel damage"
+        centralLineData.text = "Catheter Tip\n\n▶︎ The catheter tip of the central line should end approx. at the level of the right trachealbronchial angle. The tip of the tube should be aimed towards the lower part of the pleural cavity.\n\n▶︎ Rule out any pnuemothorax.\n\n▶︎ If you notice any mediastinal widening, this may be a direct result of great vessel damage"
         
         ettData.text = "▶︎ The tip of the endotracheal tube should be approx. 3cm below the vocal chords and 2-4 cm above the carina - this should be approx. at the level of the aortic arch."
         

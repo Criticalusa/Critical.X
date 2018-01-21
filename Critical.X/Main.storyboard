@@ -2943,18 +2943,21 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="aPV-Ri-eAl" kind="showDetail" id="xZt-o8-I7f"/>
+                                            <segue destination="aPV-Ri-eAl" kind="show" action="showDetailViewController:sender:" id="xZt-o8-I7f">
+                                                <segue key="commit" inheritsFrom="parent" id="bjt-kg-x8i"/>
+                                                <segue key="preview" inheritsFrom="commit" id="BLi-dz-b5U"/>
+                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Sinus Rhythms" id="0cH-DB-2tO">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ehN-ti-NUV" detailTextLabel="x3z-XI-PKW" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="tMn-St-Opo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ehN-ti-NUV" detailTextLabel="x3z-XI-PKW" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="tMn-St-Opo">
                                         <rect key="frame" x="0.0" y="176.33333333333334" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tMn-St-Opo" id="SU3-ol-K6C">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="64.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Normal Sinus Rhythm (NSR)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ehN-ti-NUV">
@@ -2973,12 +2976,18 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="show" identifier="NSR" id="HMS-H7-V45">
+                                                <segue key="commit" inheritsFrom="parent" id="eS5-8W-Mem"/>
+                                                <segue key="preview" inheritsFrom="commit" id="vaz-zf-Nyd"/>
+                                            </segue>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="EgK-Nh-iTC" detailTextLabel="Jdb-v6-ZhD" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="k3O-5h-17B">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="EgK-Nh-iTC" detailTextLabel="Jdb-v6-ZhD" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="k3O-5h-17B">
                                         <rect key="frame" x="0.0" y="241.33333333333334" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k3O-5h-17B" id="85f-ok-Mgp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="64.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sinus Bradycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EgK-Nh-iTC">
@@ -2997,12 +3006,18 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="show" identifier="SinusBrady" id="OWn-aC-GKv">
+                                                <segue key="commit" inheritsFrom="parent" id="rQe-Ce-mtE"/>
+                                                <segue key="preview" inheritsFrom="commit" id="w5s-S2-MfH"/>
+                                            </segue>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="KXG-yn-V5P" detailTextLabel="WaU-oD-TIk" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="u0i-6r-5EN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KXG-yn-V5P" detailTextLabel="WaU-oD-TIk" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="u0i-6r-5EN">
                                         <rect key="frame" x="0.0" y="306.33333333333337" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u0i-6r-5EN" id="ib1-f2-ZIF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="64.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sinus Tachycardia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KXG-yn-V5P">
@@ -3021,6 +3036,12 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nsf-3M-VmA" kind="show" identifier="SinusTach" id="TEh-CG-s0o">
+                                                <segue key="commit" inheritsFrom="parent" id="cb2-HA-iLC"/>
+                                                <segue key="preview" inheritsFrom="commit" id="ZHJ-Un-J9D"/>
+                                            </segue>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -3147,7 +3168,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nsf-3M-VmA" kind="showDetail" identifier="Wenkeback" id="Xll-0z-NeG">
+                                            <segue destination="nsf-3M-VmA" kind="show" identifier="Wenkeback" id="Xll-0z-NeG">
                                                 <segue key="commit" inheritsFrom="parent" id="Yhm-av-iOt"/>
                                                 <segue key="preview" inheritsFrom="commit" id="sdU-zl-tHH"/>
                                                 <nil key="action"/>
@@ -3360,16 +3381,16 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
             </objects>
             <point key="canvasLocation" x="2617" y="907"/>
         </scene>
-        <!--ACLS Main-->
+        <!--EKG's-->
         <scene sceneID="Es9-vL-esg">
             <objects>
-                <viewController title="ACLS Main" id="nsf-3M-VmA" customClass="ACLSViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EKG's" id="nsf-3M-VmA" customClass="ACLSViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J9a-bn-Cbb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supraventricular Tachycardia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-Yn-QAT">
-                                <rect key="frame" x="8" y="44" width="359" height="26.666666666666671"/>
+                                <rect key="frame" x="8" y="44" width="359" height="27"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <color key="textColor" red="0.1450980392" green="0.19215686269999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -3381,6 +3402,20 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsZ-hz-JJB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                                 <subviews>
+                                    <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-Yi-suD">
+                                        <rect key="frame" x="334" y="41" width="27" height="27"/>
+                                        <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="27" id="AxF-IK-s4u"/>
+                                            <constraint firstAttribute="height" constant="27" id="Yc4-UN-eGh"/>
+                                        </constraints>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissACLSView:" destination="nsf-3M-VmA" eventType="touchUpInside" id="36W-N8-FA5"/>
+                                        </connections>
+                                    </button>
                                     <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9d-zO-54U">
                                         <rect key="frame" x="0.0" y="237" width="375" height="1063"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PgT-GO-uIH">
@@ -3393,20 +3428,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                     <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-Yi-suD">
-                                                    <rect key="frame" x="331" y="8" width="27" height="27"/>
-                                                    <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="27" id="4Eo-0S-CWh"/>
-                                                        <constraint firstAttribute="height" constant="27" id="j5q-Ro-7bL"/>
-                                                    </constraints>
-                                                    <state key="normal" title="X">
-                                                        <color key="titleColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="dismissACLSView:" destination="nsf-3M-VmA" eventType="touchUpInside" id="36W-N8-FA5"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzm-0O-W52">
                                                     <rect key="frame" x="8" y="78" width="359" height="21"/>
                                                     <constraints>
@@ -3427,7 +3448,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medications / Treatment to consider 💉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW5-S9-cud">
-                                                    <rect key="frame" x="0.0" y="165.33333333333331" width="375" height="24"/>
+                                                    <rect key="frame" x="0.0" y="165" width="375" height="24"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
                                                     <color key="textColor" red="0.47450980390000003" green="0.78823529410000004" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -3443,8 +3464,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                 <constraint firstAttribute="trailing" secondItem="fW5-S9-cud" secondAttribute="trailing" id="1lI-mB-VJD"/>
                                                 <constraint firstItem="6BV-6F-3Os" firstAttribute="leading" secondItem="PgT-GO-uIH" secondAttribute="leading" constant="13" id="DKu-oU-4Zy"/>
                                                 <constraint firstItem="fW5-S9-cud" firstAttribute="leading" secondItem="PgT-GO-uIH" secondAttribute="leading" id="GXx-wD-GzR"/>
-                                                <constraint firstItem="DbB-Yi-suD" firstAttribute="top" secondItem="PgT-GO-uIH" secondAttribute="top" constant="8" id="IKp-nX-vnU"/>
-                                                <constraint firstAttribute="trailing" secondItem="DbB-Yi-suD" secondAttribute="trailing" constant="17" id="Ift-T8-WV9"/>
                                                 <constraint firstItem="Nzm-0O-W52" firstAttribute="leading" secondItem="qmZ-I4-MoR" secondAttribute="leading" id="RGl-XD-SUd"/>
                                                 <constraint firstAttribute="trailing" secondItem="6BV-6F-3Os" secondAttribute="trailing" constant="12" id="SX8-JI-mzV"/>
                                                 <constraint firstItem="8ns-9K-Le9" firstAttribute="top" secondItem="fW5-S9-cud" secondAttribute="bottom" constant="17.666666666666686" id="VJB-ae-O8J"/>
@@ -3472,7 +3491,9 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                     <constraint firstItem="y9d-zO-54U" firstAttribute="top" secondItem="EsZ-hz-JJB" secondAttribute="top" constant="237" id="Gim-Jh-L40"/>
                                     <constraint firstAttribute="trailing" secondItem="y9d-zO-54U" secondAttribute="trailing" id="VWN-3S-stN"/>
                                     <constraint firstItem="Nzm-0O-W52" firstAttribute="leading" secondItem="qmZ-I4-MoR" secondAttribute="leading" id="ZJ6-j2-3Xd"/>
+                                    <constraint firstItem="DbB-Yi-suD" firstAttribute="top" secondItem="EsZ-hz-JJB" secondAttribute="top" constant="41" id="jK3-zR-EVl"/>
                                     <constraint firstItem="Nzm-0O-W52" firstAttribute="top" secondItem="qmZ-I4-MoR" secondAttribute="bottom" constant="8" symbolic="YES" id="myk-8v-LmL"/>
+                                    <constraint firstAttribute="trailing" secondItem="DbB-Yi-suD" secondAttribute="trailing" constant="14" id="v6V-XO-xnh"/>
                                     <constraint firstItem="y9d-zO-54U" firstAttribute="leading" secondItem="EsZ-hz-JJB" secondAttribute="leading" id="yV1-8x-d7T"/>
                                     <constraint firstItem="y9d-zO-54U" firstAttribute="centerX" secondItem="EsZ-hz-JJB" secondAttribute="centerX" id="ycT-8S-DBv"/>
                                     <constraint firstAttribute="bottom" secondItem="y9d-zO-54U" secondAttribute="bottom" id="yin-IH-uvC"/>
@@ -3491,6 +3512,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0My-nT-Cds"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zxi-sM-Jqx"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1300"/>
                     <connections>
@@ -3508,7 +3530,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwg-VY-A3V" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3318" y="1086"/>
+            <point key="canvasLocation" x="3317.5999999999999" y="1085.4679802955666"/>
         </scene>
         <!--RSI Main-->
         <scene sceneID="9ju-Sg-WdI">
@@ -11499,19 +11521,19 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACLS CHANGES 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTF-QJ-GLC">
-                                        <rect key="frame" x="15" y="52" width="343" height="28"/>
+                                        <rect key="frame" x="15" y="96" width="343" height="28"/>
                                         <color key="backgroundColor" name="Alizarin"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQm-xn-cij">
-                                        <rect key="frame" x="0.0" y="81" width="375" height="28"/>
+                                        <rect key="frame" x="0.0" y="125" width="375" height="28"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezj-RN-Mb0" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="254" width="343" height="146"/>
+                                        <rect key="frame" x="15" y="298" width="343" height="146"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwD-Mt-bIY">
                                                 <rect key="frame" x="0.0" y="13" width="343" height="30"/>
@@ -11557,7 +11579,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aD6-Yi-WeB" userLabel="Post Cardiac Arrest" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="423" width="343" height="146"/>
+                                        <rect key="frame" x="16" y="467" width="343" height="146"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Cardiac Arrest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-XU-b4h">
                                                 <rect key="frame" x="0.0" y="13" width="343" height="30"/>
@@ -12657,9 +12679,10 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="xZt-o8-I7f"/>
         <segue reference="5Jc-0k-DyU"/>
         <segue reference="2ad-87-Iaf"/>
-        <segue reference="ThU-kQ-9aj"/>
+        <segue reference="TEh-CG-s0o"/>
         <segue reference="yex-Dw-N4D"/>
         <segue reference="yKl-1X-uKr"/>
         <segue reference="OBv-lZ-qC5"/>
