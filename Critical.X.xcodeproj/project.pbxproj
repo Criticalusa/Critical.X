@@ -167,6 +167,8 @@
 		C4C25F171FF9099600C5CD42 /* PediatricCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */; };
 		C4C25F181FF9099600C5CD42 /* MiniPopUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */; };
 		C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */; };
+		C4D55DE52014F3A2002199DA /* CheckMyDrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DE42014F3A2002199DA /* CheckMyDrips.swift */; };
+		C4D55DE82014FC78002199DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DE72014FC78002199DA /* CardView.swift */; };
 		C4DF418E1FFD095700AD1229 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF418C1FFD095600AD1229 /* SCLAlertView.swift */; };
 		C4DF418F1FFD095700AD1229 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF418D1FFD095700AD1229 /* SCLExtensions.swift */; };
 		D70D08FFC163B72AD0CEA40A /* Pods_Critical_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A962D86B917D11C4C08F5ED /* Pods_Critical_XTests.framework */; };
@@ -364,6 +366,8 @@
 		C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PediatricCalculations.swift; sourceTree = "<group>"; };
 		C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniPopUpData.swift; sourceTree = "<group>"; };
 		C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniDrugDataViewViewController.swift; sourceTree = "<group>"; };
+		C4D55DE42014F3A2002199DA /* CheckMyDrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyDrips.swift; sourceTree = "<group>"; };
+		C4D55DE72014FC78002199DA /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C4DF418C1FFD095600AD1229 /* SCLAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		C4DF418D1FFD095700AD1229 /* SCLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		E472C06F94433A8189BAC2BD /* Pods_Critical_XUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Critical_XUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -719,6 +723,7 @@
 		C4B912AD2000FD5B0008B159 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C4D55DE92014FC9D002199DA /* Card View */,
 				C4A7776620096454002EEC86 /* Custom Segment */,
 				C4A7776720096477002EEC86 /* Custom JPSwitch */,
 				C4B912B22000FF520008B159 /* Colors */,
@@ -846,6 +851,7 @@
 				C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */,
 				C4C25EC31FF9099500C5CD42 /* Ventilator Modes */,
 				C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */,
+				C4D55DE62014F983002199DA /* Check My Drips */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -934,6 +940,22 @@
 				C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */,
 			);
 			path = Pediatrics;
+			sourceTree = "<group>";
+		};
+		C4D55DE62014F983002199DA /* Check My Drips */ = {
+			isa = PBXGroup;
+			children = (
+				C4D55DE42014F3A2002199DA /* CheckMyDrips.swift */,
+			);
+			path = "Check My Drips";
+			sourceTree = "<group>";
+		};
+		C4D55DE92014FC9D002199DA /* Card View */ = {
+			isa = PBXGroup;
+			children = (
+				C4D55DE72014FC78002199DA /* CardView.swift */,
+			);
+			path = "Card View";
 			sourceTree = "<group>";
 		};
 		CB3E5E48187B73271AB2D335 /* Pods */ = {
@@ -1371,6 +1393,7 @@
 				C4A5566020101F160087B014 /* ACLSChanges2015.swift in Sources */,
 				C4A776E12008E89A002EEC86 /* ChestXray.swift in Sources */,
 				C470BAB11FF9939E0085F0FF /* FreeWaterDeficitDetail.swift in Sources */,
+				C4D55DE52014F3A2002199DA /* CheckMyDrips.swift in Sources */,
 				C470BAFE1FFAF4BC0085F0FF /* UrineOutputData.swift in Sources */,
 				C44166101FFCEF4F00EB8D80 /* CustomSegmentedController.swift in Sources */,
 				C472EFAA2006920C00501217 /* ParklandFormula.swift in Sources */,
@@ -1381,6 +1404,7 @@
 				C4C25F121FF9099600C5CD42 /* EkgMenuTableViewController.swift in Sources */,
 				C42F417B1FF90CA2003BE489 /* AppDelegate.swift in Sources */,
 				C4C25EEF1FF9099600C5CD42 /* RSIMain.swift in Sources */,
+				C4D55DE82014FC78002199DA /* CardView.swift in Sources */,
 				C4C25EF61FF9099600C5CD42 /* StackElementViewController.swift in Sources */,
 				C4C25F161FF9099600C5CD42 /* PedsViewController.swift in Sources */,
 				C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */,
