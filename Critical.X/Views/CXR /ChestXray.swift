@@ -13,17 +13,22 @@ class ChestXray: UIViewController {
     //Outlets
     @IBOutlet weak var cxrImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet weak var cxrbgView : UIView! {
+        didSet {
+            cxrbgView.clipsToBounds = true
+            cxrbgView.layer.cornerRadius = 5
+        }
+    }
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             // Takes the button and makes it into a circle
             closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
         cxrImageView.clipsToBounds = true
         cxrImageView.layer.cornerRadius = 15
@@ -37,7 +42,7 @@ class ChestXray: UIViewController {
         
         
         let switchButton = JPSwitchButton(frame: buttonFrame, offColor: .white, onColor: green, image: nil, title: "Tap for detailed view", description: "", isOn: false)
-     
+        
         switchButton.onClick =  {
             switchButton.switchState()
             switchButton.buttonTitle = switchButton.isOn ? "Press to see normal CXR" : "Press to see detailed CXR"
@@ -48,13 +53,13 @@ class ChestXray: UIViewController {
                 // Diaply detailed CXR
                 self.cxrImageView.image = #imageLiteral(resourceName: "CXR_Detail.png")
                 self.titleLabel.text = "Illustrated Chest-Xray"
-
+                
             } else {
                 //Switch back to the regular chest xray
                 self.cxrImageView.image = #imageLiteral(resourceName: "CXR1.png")
                 // Changes the title // Takes the button and makes it into a circle
                 self.titleLabel.text = "Normal Chest-Xray"
-
+                
             }
             
         }
@@ -69,6 +74,7 @@ class ChestXray: UIViewController {
         print("Chest xray Controller was dismissed")
         
     }
+    
     
     
 }

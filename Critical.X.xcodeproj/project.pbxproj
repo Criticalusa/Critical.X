@@ -169,6 +169,7 @@
 		C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */; };
 		C4D55DE52014F3A2002199DA /* CheckMyDrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DE42014F3A2002199DA /* CheckMyDrips.swift */; };
 		C4D55DE82014FC78002199DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DE72014FC78002199DA /* CardView.swift */; };
+		C4D55DED201545FB002199DA /* chestTubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DEC201545FB002199DA /* chestTubeData.swift */; };
 		C4DF418E1FFD095700AD1229 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF418C1FFD095600AD1229 /* SCLAlertView.swift */; };
 		C4DF418F1FFD095700AD1229 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF418D1FFD095700AD1229 /* SCLExtensions.swift */; };
 		D70D08FFC163B72AD0CEA40A /* Pods_Critical_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A962D86B917D11C4C08F5ED /* Pods_Critical_XTests.framework */; };
@@ -368,6 +369,7 @@
 		C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniDrugDataViewViewController.swift; sourceTree = "<group>"; };
 		C4D55DE42014F3A2002199DA /* CheckMyDrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyDrips.swift; sourceTree = "<group>"; };
 		C4D55DE72014FC78002199DA /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C4D55DEC201545FB002199DA /* chestTubeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chestTubeData.swift; sourceTree = "<group>"; };
 		C4DF418C1FFD095600AD1229 /* SCLAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		C4DF418D1FFD095700AD1229 /* SCLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		E472C06F94433A8189BAC2BD /* Pods_Critical_XUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Critical_XUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -649,6 +651,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A776E02008E89A002EEC86 /* ChestXray.swift */,
+				C4D55DEC201545FB002199DA /* chestTubeData.swift */,
 			);
 			path = "CXR ";
 			sourceTree = "<group>";
@@ -724,12 +727,12 @@
 			isa = PBXGroup;
 			children = (
 				C4D55DE92014FC9D002199DA /* Card View */,
-				C4A7776620096454002EEC86 /* Custom Segment */,
-				C4A7776720096477002EEC86 /* Custom JPSwitch */,
 				C4B912B22000FF520008B159 /* Colors */,
-				C4B912B12000FF300008B159 /* PopOver */,
 				C4B912B02000FE110008B159 /* Custom Alerts */,
+				C4A7776720096477002EEC86 /* Custom JPSwitch */,
+				C4A7776620096454002EEC86 /* Custom Segment */,
 				C4B912AF2000FDA40008B159 /* Custom TextFields */,
+				C4B912B12000FF300008B159 /* PopOver */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -830,28 +833,28 @@
 			isa = PBXGroup;
 			children = (
 				C4A5566120102BBB0087B014 /* ACLS 2015 Changes */,
-				C418AC6C200BB7C7001EBB04 /* Medical Spanish */,
-				C4A77765200963F1002EEC86 /* App Delegate */,
-				C4A77762200963A2002EEC86 /* CXR  */,
-				C4A77763200963B2002EEC86 /* Bicarb Deficit */,
-				C4A7776120096381002EEC86 /* IV Flow Rate */,
-				C4A77764200963D2002EEC86 /* FeNa */,
-				C4B912AE2000FD950008B159 /* Parkland Formula */,
-				C436ED7C20027476008ACDC7 /* Ventilator Optimization */,
-				C436ED412001B3B5008ACDC7 /* PF Ratio */,
-				C4B912B5200102C50008B159 /* o2Tank Calculator */,
-				C4B912B4200102BA0008B159 /* WintersFormula */,
 				C4B912B3200102B10008B159 /* Anion Gap */,
-				C4A7776A20096507002EEC86 /* Free Water Deficit */,
-				C4A77768200964AC002EEC86 /* Urine Output */,
-				C4A77769200964DF002EEC86 /* Ideal Body Weight */,
-				C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */,
-				C4C25EE81FF9099600C5CD42 /* Pediatrics */,
-				C4C25EB91FF9099500C5CD42 /* RSI */,
-				C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */,
-				C4C25EC31FF9099500C5CD42 /* Ventilator Modes */,
-				C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */,
+				C4A77765200963F1002EEC86 /* App Delegate */,
+				C4A77763200963B2002EEC86 /* Bicarb Deficit */,
 				C4D55DE62014F983002199DA /* Check My Drips */,
+				C4A77762200963A2002EEC86 /* CXR  */,
+				C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */,
+				C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */,
+				C4A77764200963D2002EEC86 /* FeNa */,
+				C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */,
+				C4A7776A20096507002EEC86 /* Free Water Deficit */,
+				C4A77769200964DF002EEC86 /* Ideal Body Weight */,
+				C4A7776120096381002EEC86 /* IV Flow Rate */,
+				C418AC6C200BB7C7001EBB04 /* Medical Spanish */,
+				C4B912B5200102C50008B159 /* o2Tank Calculator */,
+				C4B912AE2000FD950008B159 /* Parkland Formula */,
+				C4C25EE81FF9099600C5CD42 /* Pediatrics */,
+				C436ED412001B3B5008ACDC7 /* PF Ratio */,
+				C4C25EB91FF9099500C5CD42 /* RSI */,
+				C4A77768200964AC002EEC86 /* Urine Output */,
+				C4C25EC31FF9099500C5CD42 /* Ventilator Modes */,
+				C436ED7C20027476008ACDC7 /* Ventilator Optimization */,
+				C4B912B4200102BA0008B159 /* WintersFormula */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1360,6 +1363,7 @@
 				C47FECF31FFC5DF000E2C273 /* YokoTextField.swift in Sources */,
 				C45AC31B1FFF219C000CF2CF /* Gradient.swift in Sources */,
 				C4C25EF01FF9099600C5CD42 /* RSI_Additional.swift in Sources */,
+				C4D55DED201545FB002199DA /* chestTubeData.swift in Sources */,
 				C42F41841FF90E2B003BE489 /* Popover.swift in Sources */,
 				C472EF1520027E6C00501217 /* VentilatorOptimizationMain.swift in Sources */,
 				C47FECF91FFC5DF000E2C273 /* JiroTextField.swift in Sources */,

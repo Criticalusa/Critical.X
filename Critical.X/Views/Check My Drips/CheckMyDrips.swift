@@ -285,13 +285,11 @@ class CheckMyDrips: UIViewController {
                         self.resultView.isHidden = true
                         self.theResultDetailLabel.text = "Enter the weight"
                         // Show the alert
-                        
                         ///Red Alert
-                        //_ = SCLAlertView().showError("Hold On...", subTitle:"Check the weight text field then recalculate", closeButtonTitle:"OK")
-                        
-                        
-                        
-                        return }//
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Check the weight before calculating.", closeButtonTitle:"OK")
+                      return }
+                    
+                    
                     //calculation closure.
                     var calculationOfMcgKgMin: Double {
                         
@@ -341,8 +339,9 @@ class CheckMyDrips: UIViewController {
                         ///Red Alert
                         _ = SCLAlertView().showError("Hold On...", subTitle:"Check the weight before calculating.", closeButtonTitle:"OK")
                         
-                        return }//
+                        return }
                     
+                    // Calculating the closure.
                     var calculationOfMcgKgHr: Double {
                         let mcgKgHr = ((drugDosage! * 1000) * ivFlowRate!) / (fluidInTheIVBag! * weight)
                         return mcgKgHr
