@@ -109,6 +109,9 @@
 		C472EFA92006920C00501217 /* ParklandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472EFA72006920B00501217 /* ParklandData.swift */; };
 		C472EFAA2006920C00501217 /* ParklandFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472EFA82006920C00501217 /* ParklandFormula.swift */; };
 		C47551EC1FFDD8E300400C0C /* AnionGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47551EB1FFDD8E300400C0C /* AnionGap.swift */; };
+		C47B6F8A201654C6004DEDB6 /* Capnogrpahy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B6F89201652DB004DEDB6 /* Capnogrpahy.swift */; };
+		C47B6F8B2016556F004DEDB6 /* CapnographyInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B6F88201652DA004DEDB6 /* CapnographyInformation.swift */; };
+		C47B6F8C2016556F004DEDB6 /* CapnographyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B6F87201652DA004DEDB6 /* CapnographyDetail.swift */; };
 		C47FECE61FFC5DE000E2C273 /* O2TankCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECE51FFC5DDF00E2C273 /* O2TankCalculator.swift */; };
 		C47FECF21FFC5DF000E2C273 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECE71FFC5DEC00E2C273 /* TextFieldEffects.swift */; };
 		C47FECF31FFC5DF000E2C273 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECE81FFC5DEC00E2C273 /* YokoTextField.swift */; };
@@ -308,6 +311,9 @@
 		C472EFA72006920B00501217 /* ParklandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParklandData.swift; sourceTree = "<group>"; };
 		C472EFA82006920C00501217 /* ParklandFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParklandFormula.swift; sourceTree = "<group>"; };
 		C47551EB1FFDD8E300400C0C /* AnionGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnionGap.swift; sourceTree = "<group>"; };
+		C47B6F87201652DA004DEDB6 /* CapnographyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapnographyDetail.swift; sourceTree = "<group>"; };
+		C47B6F88201652DA004DEDB6 /* CapnographyInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapnographyInformation.swift; sourceTree = "<group>"; };
+		C47B6F89201652DB004DEDB6 /* Capnogrpahy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capnogrpahy.swift; sourceTree = "<group>"; };
 		C47FECE51FFC5DDF00E2C273 /* O2TankCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = O2TankCalculator.swift; sourceTree = "<group>"; };
 		C47FECE71FFC5DEC00E2C273 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		C47FECE81FFC5DEC00E2C273 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
@@ -631,6 +637,16 @@
 			path = "Ventilator Optimization";
 			sourceTree = "<group>";
 		};
+		C47B6F8D201658CC004DEDB6 /* Capnography */ = {
+			isa = PBXGroup;
+			children = (
+				C47B6F89201652DB004DEDB6 /* Capnogrpahy.swift */,
+				C47B6F87201652DA004DEDB6 /* CapnographyDetail.swift */,
+				C47B6F88201652DA004DEDB6 /* CapnographyInformation.swift */,
+			);
+			path = Capnography;
+			sourceTree = "<group>";
+		};
 		C4A5566120102BBB0087B014 /* ACLS 2015 Changes */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,6 +848,7 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C47B6F8D201658CC004DEDB6 /* Capnography */,
 				C4A5566120102BBB0087B014 /* ACLS 2015 Changes */,
 				C4B912B3200102B10008B159 /* Anion Gap */,
 				C4A77765200963F1002EEC86 /* App Delegate */,
@@ -1385,8 +1402,10 @@
 				C470BAFD1FFAF4BC0085F0FF /* UrineOutput.swift in Sources */,
 				C4C25F151FF9099600C5CD42 /* CalculatedDataViewController.swift in Sources */,
 				C42F41861FF90E2B003BE489 /* IdealBodyWeight.swift in Sources */,
+				C47B6F8A201654C6004DEDB6 /* Capnogrpahy.swift in Sources */,
 				C4C25EF21FF9099600C5CD42 /* FlatColors.swift in Sources */,
 				C4A77697200822B8002EEC86 /* BicarbonateDeficit.swift in Sources */,
+				C47B6F8C2016556F004DEDB6 /* CapnographyDetail.swift in Sources */,
 				C4C25F111FF9099600C5CD42 /* EKGInformation.swift in Sources */,
 				C470BAB21FF9939E0085F0FF /* FreeWaterDeficit.swift in Sources */,
 				C4C25EFC1FF9099600C5CD42 /* Extensions.swift in Sources */,
@@ -1412,6 +1431,7 @@
 				C4C25EF61FF9099600C5CD42 /* StackElementViewController.swift in Sources */,
 				C4C25F161FF9099600C5CD42 /* PedsViewController.swift in Sources */,
 				C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */,
+				C47B6F8B2016556F004DEDB6 /* CapnographyInformation.swift in Sources */,
 				C4C25EF71FF9099600C5CD42 /* RateCriticalPopUp.swift in Sources */,
 				C47FECFA1FFC5DF000E2C273 /* HoshiTextField.swift in Sources */,
 			);
