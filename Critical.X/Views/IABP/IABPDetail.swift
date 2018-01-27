@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class IABPDetail: UIViewController {
+class IABPDetail: UIViewController, UIScrollViewDelegate {
     
     var mainTitle = String()
     var warning = String()
@@ -41,6 +41,7 @@ class IABPDetail: UIViewController {
     
     @IBOutlet weak var complicationsDetailLabel: UILabel!
     
+    @IBOutlet weak var scrolViewIABP: UIScrollView!
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         
@@ -54,6 +55,13 @@ class IABPDetail: UIViewController {
         criticalSubtitleComplications.text = subTitleComplications
         complicationsDetailLabel.text = complicationsDetail
         
+        self.scrolViewIABP.minimumZoomScale = 1.0
+        self.scrolViewIABP.maximumZoomScale = 6.0
+
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imagePlaceholder
     }
 
     // Here we say that the boolean that we created is equal to the IBOutlet. When the viewAppears the image and button is false to be hidden. 

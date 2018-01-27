@@ -13,6 +13,14 @@ class RSIMain: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var rsiTextField: UITextField!
     
+    //Rounds the edges of the round button. 
+    @IBOutlet weak var calculateButtonRadius : UIView! {
+        didSet {
+            calculateButtonRadius.clipsToBounds = true
+            calculateButtonRadius.layer.cornerRadius = 4
+        }
+    }
+    
 //    var calculatedNumber: String = ""
     
     
