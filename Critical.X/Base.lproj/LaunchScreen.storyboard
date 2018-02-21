@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,15 +38,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="THE BARRINGER GROUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-yU-j7H">
-                                <rect key="frame" x="16" y="608" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="dh4-SV-OzG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <color key="textColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Db-iT-bYU">
                                 <rect key="frame" x="16" y="79" width="343" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -59,6 +50,26 @@
                                     <constraint firstAttribute="height" constant="113" id="9wN-Zo-HUg"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-yC-T7P">
+                                <rect key="frame" x="16" y="99" width="343" height="371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Critical Crest 18" translatesAutoresizingMaskIntoConstraints="NO" id="0yR-gl-FlZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="THE BARRINGER GROUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-yU-j7H">
+                                <rect key="frame" x="16" y="547" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dh4-SV-OzG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -70,8 +81,8 @@
                             <constraint firstItem="vyC-Mu-KAy" firstAttribute="leading" secondItem="37o-yU-j7H" secondAttribute="leading" id="TLV-gx-ro8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Db-iT-bYU" secondAttribute="trailing" constant="16" id="ToK-Vt-YBj"/>
                             <constraint firstItem="TDa-dv-Gb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="Z8f-80-pBQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="37o-yU-j7H" secondAttribute="bottom" constant="38" id="bpB-wJ-yIr"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="top" secondItem="vyC-Mu-KAy" secondAttribute="bottom" constant="3" id="ekf-eJ-WtM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="37o-yU-j7H" secondAttribute="bottom" constant="99" id="bpB-wJ-yIr"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="top" secondItem="vyC-Mu-KAy" secondAttribute="bottom" constant="-58" id="ekf-eJ-WtM"/>
                             <constraint firstItem="OQe-tI-FwJ" firstAttribute="top" secondItem="2Db-iT-bYU" secondAttribute="bottom" constant="2" id="hdG-5T-kJh"/>
                             <constraint firstItem="TDa-dv-Gb1" firstAttribute="centerX" secondItem="OQe-tI-FwJ" secondAttribute="centerX" id="iVy-II-64b"/>
                             <constraint firstItem="2Db-iT-bYU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="kB6-gZ-gQ8"/>
@@ -91,5 +102,6 @@
     </scenes>
     <resources>
         <image name="Critical Brain Logo" width="408" height="272"/>
+        <image name="Critical Crest 18" width="2362" height="2362"/>
     </resources>
 </document>
