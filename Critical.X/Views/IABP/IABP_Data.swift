@@ -9,17 +9,6 @@
 import Foundation
 import UIKit
 
-//
-//  CapnographyInformation.swift
-//  Capnography
-//
-//  Created by Jadie Barringer III on 1/21/18.
-//  Copyright © 2018 Jadie Barringer III. All rights reserved.
-//
-
-import Foundation
-import UIKit
-
 
 enum BalloonPump {
     
@@ -100,20 +89,21 @@ enum BalloonPump {
         case .NormalTiming:
             
             return "Overview:\n\nThe IABP is placed in the proximal descending aorta, just distal to the (L) Subclavian artery. The balloon is automatically inflated during diastole and deflated just prior to, and during systole. Inflation and deflation is triggered by the ECG, (common) arterial pressure waveform or asynchronously.\n\nThe primary goal of the balloon pump is to increase myocardial oxygen supply and decrease myocardial oxygen demand.\n\nSecond, is to improve cardiac output, ejection fraction, an increase coronary perfusion pressure, systemic perfusion, decreasing heart rate, pulmonary capillary wedge pressure and systemic vascular resistance.\n\nFinally, the IABP will ultimately decrease Left Ventricular (LV) afterload and increase LV stroke volume.\n\nIndications to go on pump:\n\n▶︎ Cardiogenic shock, LV failure\n▶︎ Low cardiac output after bypass\n▶︎ Bridge to heart transplant \n▶︎ Severe left main coronary artery stenosis\n▶︎ Refractory to cardiac surgery\n▶︎ PCI for an acute MI\n▶︎ Intractable ventricular arrhythmias\n\nContraindications Include:\n\n▶︎ Significant aortic valve regurgitation\n▶︎ Aortic Disscection\n▶︎ Bleeding disorders\n▶︎ Uncontrolled Sepsis\n▶︎ Severe peripheral artery disease.\n\nWaveform Interpretation\n\nA. Unassisted Systole\nThe unassisted peak should be higher than the assisted systolic peak.\n\nB. Diastolic Augmentation\nThis is the highest peak, which represents balloon inflation. This should occur just after the dicrotic notch (closure of the aortic valve).\n\nC. There should always be a sharp \"V\" on the waveform at the level of the dicrotic notch. The dicrotic notch should not be visible during the assisted beat.\n\nD. Patient Aortic End Diastolic Pressure (PAEDP)\nThis should always be higher than the Balloon Aortic End Diastolic Pressure (BAEDP).\n\nE. Balloon Aortic End Diastolic Pressure (BAEDP)\nThis is the systolic afterload reduction caused by balloon depletion. This should always be lower than the patient aortic and diastolic pressure considering the afterload reduction is effective."
+            
         case .EarlyInflation:
             
             return "Early inflation is inflation of the balloon before the aortic valve closes. The main consequence of early balloon inflation is a reflux of blood into the left ventricle. In return, there will be an increase in SVR and subsequent decrease in cardiac output.\n\nEarly inflation significantl increases causes premature closure of the aortic valve, resulting in approximately 20% - 55% reduction in SV. This decrease in SV is usually not compensated for in subsequent beats. Myocardial relaxation is adversely affected, which further reduces stroke volume. Thus, CO decreases and myocardial contractility is altered, which reduces stroke volume even more."
         case .LateInflation:
             
-            return "Late inflation is when the balloon inflates markedly after closure of the aortic valve.\nLate inflation also reduces diastolic augmentation time and coronary artery perfusion pressure."
+            return "Late inflation occurs when the balloon inflates markedly after closure of the aortic valve.\nLate inflation also reduces diastolic augmentation time and coronary artery perfusion pressure."
         
         case .EarlyDeflation:
             
-            return "When assisted systole and systolic pressure are equal, resulting in a decrease in augmentation time and less reduction of LV stroke volume. Although early deflation may not impair systolic function directly, it may impair myocardial efficiency over time by reducing the balance of oxygen supply and demand.\n\nEarly deflation results in a vacuum effect, and afterload reduction is lost. This occurs primarily because by the time the aortic valve opens, the pressures in the aorta have equalized."
+            return "When assisted systole and systolic pressure are equal, resulting in a decrease in augmentation time and less reduction of LV stroke volume. Although early deflation may not impair systolic function directly, it may impair myocardial efficiency over time by reducing the balance of oxygen supply and demand.\n\nEarly deflation results in a vacuum effect, and afterload reduction is lost. This occurs primarily because by the time the aortic valve opens, the pressures in the aorta have already equalized."
             
         case .LateDeflation:
             
-            return "Late deflation is defined as an elevation of end-diastolic pressure to greater than the patient’s native diastolic pressure.\n\nIn late deflation, the balloon is still inflated during the beginning of ventricular systole – resulting in an increased afterload of the LV."
+            return "Late deflation is defined as an elevation of the end-diastolic pressure which is greater than the patient’s native diastolic pressure.\n\nIn late deflation, the balloon is still inflated during the beginning of ventricular systole – resulting in an increased afterload of the LV."
         
         case .AorticDissection:
             

@@ -83,7 +83,7 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                 controller.subTitleComplications = ""
                 //Uncomment to change the title of the tableViewController
                 //controller.title = capnographyMenu[indexPath.row]
-               
+                
                 // Switching on each row.
                 switch (indexPath.section, indexPath.row) {
                     
@@ -104,20 +104,20 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Unhides the ImageView to display the image.
                     controller.viewHidden = false
-
+                    
                     controller.subTitle = "Critical Points 🥇"
                     controller.subTitleComplications = ""
                     
                     print("Section \(indexPath.section), Row \(indexPath.row)")
                     
                     
-               
-                
-                
+                    
+                    
+                    
                 //MARK: - Early Inflation
                 case (0,1):
                     controller.mainTitle = BalloonPump.EarlyInflation.iabpTitle()
-
+                    
                     //description overview
                     controller.iabpDescription = BalloonPump.EarlyInflation.iabpDescription()
                     
@@ -129,11 +129,11 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Unhides the ImageView to display the image.
                     controller.viewHidden = false
-
+                    
                     controller.subTitle = "Critical Points 🥇"
                     controller.subTitleComplications = ""
-                  
-                   print("Section \(indexPath.section), Row \(indexPath.row)")
+                    
+                    print("Section \(indexPath.section), Row \(indexPath.row)")
                     
                     
                 //MARK: - Late Inflation
@@ -149,15 +149,15 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Unhides the ImageView to display the image.
                     controller.viewHidden = false
-
+                    
                     controller.subTitle = "Critical Points 🥇"
                     controller.subTitleComplications = ""
                     
                     print("Section \(indexPath.section), Row \(indexPath.row)")
                     
                     
-                
-                
+                    
+                    
                 //MARK: - Early Deflation
                 case (0,3):
                     //Sets the title
@@ -171,15 +171,15 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Unhides the ImageView to display the image.
                     controller.viewHidden = false
-
+                    
                     controller.subTitle = "Critical Points 🥇"
                     controller.subTitleComplications = ""
                     
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-                   
-               
-                
-                
+                    
+                    
+                    
+                    
                 //MARK: - Late Deflation
                 case (0,4):
                     //Sets the title
@@ -193,8 +193,8 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Unhides the ImageView to display the image.
                     controller.viewHidden = false
-
-
+                    
+                    
                     //Warning
                     controller.warning = "This is very harmful to the patient."
                     
@@ -206,26 +206,26 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-               
-                
+                    
+                    
                 //MARK: - Aortic Dissection
                 case (1,0):
                     // Title
                     controller.mainTitle = BalloonPump.AorticDissection.iabpTitle()
                     
-                   //Sets description
+                    //Sets description
                     controller.iabpDescription = BalloonPump.AorticDissection.iabpDescription()
                     
                     // Hides the prev subtitle and changes the language to the new title for the complications
                     controller.subTitle = ""
                     controller.subTitleComplications = "Critical Points 🥇"
-                   
+                    
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.AorticDissection.complicationInfo()
-
+                    
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-                
+                    
                 case (1,1):
                     // Subtitle
                     controller.mainTitle = BalloonPump.Augmentation.iabpTitle()
@@ -238,11 +238,11 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     controller.subTitleComplications = "Critical Points 🥇"
                     
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.Augmentation.complicationInfo()
-
+                    
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-                
+                    
                 case (1,2):
                     // Subtitle
                     controller.mainTitle = BalloonPump.BleedingAtSite.iabpTitle()
@@ -257,11 +257,11 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Pulls data from the complication Enum
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.BleedingAtSite.complicationInfo()
-                   
+                    
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-               
+                    
                 case (1,3):
                     // Subtitle
                     controller.mainTitle = BalloonPump.BalloonRupture.iabpTitle()
@@ -277,9 +277,9 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     //Pulls data from the complication Enum
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.BalloonRupture.complicationInfo()
                     
-                   //Print
+                    //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-               
+                    
                 case (1,4):
                     // Subtitle
                     controller.mainTitle = BalloonPump.Dysrhythmias.iabpTitle()
@@ -291,14 +291,14 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     controller.subTitle = ""
                     controller.subTitleComplications = "Critical Points 🥇"
                     
-                   
+                    
                     //Pulls data from the complication Enum
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.Dysrhythmias.complicationInfo()
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-                
-                
+                    
+                    
                 case (1,5):
                     // Subtitle
                     controller.mainTitle = BalloonPump.VascularInjuries.iabpTitle()
@@ -316,9 +316,9 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-               
-                
-                
+                    
+                    
+                    
                 case (1,6):
                     // Subtitle
                     controller.mainTitle = BalloonPump.FailureToPump.iabpTitle()
@@ -330,13 +330,13 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     controller.subTitle = ""
                     controller.subTitleComplications = "Critical Points 🥇"
                     
-                   
+                    
                     //Pulls data from the complication Enum
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.FailureToPump.complicationInfo()
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-               
+                    
                 case (1,7):
                     // Subtitle
                     controller.mainTitle = BalloonPump.LimbIschemia.iabpTitle()
@@ -347,16 +347,16 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     // Hides the prev subtitle and changes the language to the new title for the complications
                     controller.subTitle = ""
                     controller.subTitleComplications = "Critical Points 🥇"
-                   
+                    
                     
                     //Pulls data from the complication Enum
                     controller.complicationsDetail = BalloonPump.BalloonPumpComplication.LimbIschemia.complicationInfo()
                     
                     //Print
                     print("Section \(indexPath.section), Row \(indexPath.row)")
-               
-                
-                
+                    
+                    
+                    
                 case (1,8):
                     // Subtitle
                     controller.mainTitle = BalloonPump.CardiacArrest.iabpTitle()
