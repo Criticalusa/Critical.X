@@ -52,10 +52,10 @@ class IntraAorticBalloonPumpMain: UITableViewController {
         //cell.imageView?.image = UIImage(named: images[indexPath.row])
         
         //Changes the color of the tableView menu Items
-        switch indexPath.row {
-        //Rows 1,3,5 title color is green
-        case 0, 2, 4, 6, 8:
-            cell.textLabel?.textColor = #colorLiteral(red: 0.7378575206, green: 0.2320150733, blue: 0.1414205134, alpha: 1)
+        switch (indexPath.section, indexPath.row) {
+        //Rows 1,3,5 title color is changed
+        case (0,0), (0,2), (0,4):
+            cell.textLabel?.textColor = #colorLiteral(red: 0.7995484471, green: 0.2585769296, blue: 0.2706674039, alpha: 1)
             
         default:
             break
