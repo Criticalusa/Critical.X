@@ -240,6 +240,15 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             let infusion = Dose/yields * 60
             txtInfusionRate.text = String(format:"%.2f", infusion)
         }
+        else if unit == "mUnits/min" {
+            let yields = totalDose/IvBag
+            lblYields.text = String(format:"%.2f", yields)
+            lblUnitTotalDose.text = "mUnits"
+            lblUnitYields.text = "mUnits/mL"
+            
+            let infusion = Dose/yields * 60/1000
+            txtInfusionRate.text = String(format:"%.1f", infusion)
+        }
         else if unit == "units/hr" {
             let yields = totalDose/IvBag
             lblYields.text = String(format:"%.2f", yields)

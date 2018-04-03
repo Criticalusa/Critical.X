@@ -29,7 +29,7 @@ class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var Drip : NSMutableDictionary!
     
     var unit : String!
-    let UnitList = ["mcg/min", "mg/min", "mcg/hr","mg/hr", "g/hr", "units/hr", "units/min", "mcg/kg/min", "mcg/kg/hr", "mg/kg/hr"]
+    let UnitList = ["mcg/min", "mg/min", "mcg/hr","mg/hr", "g/hr", "units/hr", "units/min", "mUnits/min", "mcg/kg/min", "mcg/kg/hr", "mg/kg/hr"]
     var UnitPickerView : UIPickerView!
     
     
