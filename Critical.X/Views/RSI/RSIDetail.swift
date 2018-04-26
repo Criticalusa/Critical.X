@@ -140,6 +140,8 @@ class RSIDetail: UIViewController {
             print("\(key) : \(value)")
         }
         
+    
+        
         /// Closure When calculation has one value to be multiplied
         let doseRange1 = {(initialDose: Double, range1: Double) -> (String) in
             let initialDose = self.weightEntered

@@ -30,7 +30,7 @@ class RSIProcess: UIViewController {
     
     
     public var processDescription:String?
-     public var processDescription1:String?
+    public var processDescription1:String?
     public var processTitle: String?
     
     
