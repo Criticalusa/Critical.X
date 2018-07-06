@@ -8,6 +8,30 @@
 
 import UIKit
 
+//MARK: Rounding Extension: Double
+//If the answer is a double change the decimal places
+extension Double {
+    var oneDecimalPlace: String {
+        return String(format: "%.1f", self)
+    }
+    var twoDecimalPlace: String {
+        return String(format: "%.2f", self)
+    }
+}
+
+//MARK: Rounding Extension INT
+//If the answer is an Int, change to decimal places
+extension Int {
+    var oneDecimalPlace: String {
+        return String(format: "%.1f", self)
+    }
+    var twoDecimalPlace: String {
+        return String(format: "%.2f", self)
+    }
+}
+
+
+
 class RSIDetail: UIViewController {
     
     // Outlets
@@ -142,26 +166,31 @@ class RSIDetail: UIViewController {
         
     
         
-        /// Closure When calculation has one value to be multiplied
+        // MARK: Closure When calculation has one value to be multiplied
         let doseRange1 = {(initialDose: Double, range1: Double) -> (String) in
             let initialDose = self.weightEntered
             
-            return "\(initialDose! * range1)"
+            return "\((initialDose! * range1).oneDecimalPlace)"
         }
         
         let doseRange1mL = {(initialDose: Double, permL: Double) -> (String) in
             let initialDose = self.weightEntered
             
-            return "\(Double(initialDose! / permL))"
+            return "\(Double(initialDose! / permL).oneDecimalPlace)"
         }
-        /// When calculation has two values to be multiplied
+        
+        
+        
+        
+        
+        //MARK: When calculation has two values to be multiplied
         
         let doseRange2 = {(initialDose: Double, FollowingDose: Double, range1: Double, range2: Double) -> String in
             let initialDose = self.weightEntered
             let FollowingDose = self.weightEntered
             //            return "\(Int(initialDose! * range1)) - \(Int(FollowingDose! * range2))"
             
-            return "\(initialDose! * range1) - \(FollowingDose! * range2)"
+            return "\((initialDose! * range1).oneDecimalPlace)-\((FollowingDose! * range2).oneDecimalPlace)"
         }
         
         let doseRange2_Int = {(initialDose: Double, FollowingDose: Double, range1: Double, range2: Double) -> String in
@@ -170,86 +199,98 @@ class RSIDetail: UIViewController {
             return "\(Int(initialDose! * range1))‑\(Int(FollowingDose! * range2))"
             
         }
-        // Closure to determine the mLs to be delivered to a patient.
+        
+        
+        
+        
+        // MARK: Closure to determine the mLs to be delivered to a patient.
         
         let doseRange2_mL = {(initialDose: Double, FollowingDose: Double, range1: Double, range2: Double,permL: Double) -> String in
             let initialDose = self.weightEntered
             let FollowingDose = self.weightEntered
-            return "\(Double((initialDose! * range1) / permL)) ‑ \(Double((FollowingDose! * range2) / permL)) mL's"
+            
+            return "\(Double((initialDose! * range1) / permL).oneDecimalPlace)‑\(Double((FollowingDose! * range2) / permL).oneDecimalPlace) mL's"
             
         }
         
         let doseRange1_mL = {(initialDose: Double, range1: Double,permL: Double) -> String in
             let initialDose = self.weightEntered
             let FollowingDose = self.weightEntered
-            return "\(Double((initialDose! * range1) / permL)) mL's"
+            
+            return "\(Double((initialDose! * range1) / permL).oneDecimalPlace) mL's"
             
         }
         
         // Given a value to round and a factor to round to,
         // round the value to the nearest multiple of that factor.
         func round(_ value: Double, toNearest: Double) -> Double {
-            return (value / toNearest ) * toNearest
+            return ((value / toNearest ) * toNearest)
         }
         
         
-        //Function determines the mL's ony from medications without a range. Single dose
+        //MARK: Function determines the mL's ony from medications without a range. Single dose
         func mL1_DoseCalculation (FinalDose: Double, PermL: Double ) -> String {
             
-            return "\(Double(FinalDose / PermL)) mL's"
+            return "\(Double(FinalDose / PermL).oneDecimalPlace) mL's"
             
         }
-        
         
         
        
         /////////////////////////////////////////////////////////////////////////////////////////////
         
-        //==========Pretreatment dosing
+        
+        
+        
+        //MARK: ==========Pretreatment dosing
         let atropine = doseRange1(weightEntered!, Parameters.object(forKey: "atropine") as! Double)
         
         let lidocaine = doseRange1(weightEntered!, Parameters.object(forKey: "lidocaine") as! Double)
         
-        let fentanyl = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "fentanyl_min") as! Double, Parameters.object(forKey: "fentanyl_max") as! Double)
+        let fentanyl = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "fentanyl_min") as! Double, Parameters.object(forKey: "fentanyl_max") as! Double)
         
         
         let vecDefasiculating = doseRange1(weightEntered!, Parameters.object(forKey: "vecDefasiculating") as! Double)
         
         
-        let rocDefasiculating = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "rocDefasiculating_min") as! Double, Parameters.object(forKey: "rocDefasiculating_max") as! Double)
+        let rocDefasiculating = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "rocDefasiculating_min") as! Double, Parameters.object(forKey: "rocDefasiculating_max") as! Double)
         
         
-        let glycopyrolate = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "glycopyrolate_min") as! Double, Parameters.object(forKey: "glycopyrolate_max") as! Double)
+        let glycopyrolate = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "glycopyrolate_min") as! Double, Parameters.object(forKey: "glycopyrolate_max") as! Double)
         
         
         
         
-        //===========Induction dosages
+        //MARK: ===========Induction dosages
         let etomidate = doseRange1(weightEntered!, Parameters.object(forKey: "etomidate") as! Double)
         
         
         let ketamine = doseRange1(weightEntered!, Parameters.object(forKey: "ketamine") as! Double)
         
         
-        let propofol = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "propofol_min") as! Double, Parameters.object(forKey: "propofol_max") as! Double)
+        let propofol = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "propofol_min") as! Double, Parameters.object(forKey: "propofol_max") as! Double)
         
         
-        let versed = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "versed_min") as! Double, Parameters.object(forKey: "versed_max") as! Double)
+        let versed = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "versed_min") as! Double, Parameters.object(forKey: "versed_max") as! Double)
         
         
         
         
-        //========Neuromuscular blockade agents
+        //MARK: ========Neuromuscular blockade agents
         let cisatricurium = doseRange1(weightEntered!, Parameters.object(forKey: "cisatricurium") as! Double)
         
         
         let vecuronium = doseRange1(weightEntered!, Parameters.object(forKey: "vecuronium") as! Double)
         
         
-        let rocuronium = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "rocuronium_min") as! Double, Parameters.object(forKey: "rocuronium_max") as! Double)
+        let rocuronium = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "rocuronium_min") as! Double, Parameters.object(forKey: "rocuronium_max") as! Double)
         
         
-        let succs = doseRange2_Int(weightEntered!, weightEntered!, Parameters.object(forKey: "succs_min") as! Double, Parameters.object(forKey: "succs_max") as! Double)
+        let succs = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "succs_min") as! Double, Parameters.object(forKey: "succs_max") as! Double)
+        
+        
+        
+        
         
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
@@ -264,11 +305,13 @@ class RSIDetail: UIViewController {
         
        
         //MARK:========= Update the labels with the calculations
-        kgWeight_Label.text = "\(weightEntered!) kg's \(weightEntered! * 2.2) lbs" // Updates the weight label
+        kgWeight_Label.text = "\(weightEntered!) kg's | \((weightEntered! * 2.2).rounded()) lbs" // Updates the weight label
         
         // Pretreatment dosing
+       
         atropine_Label.text = atropine
-        atropineMLs.text =  mL1_DoseCalculation(FinalDose:(Double (atropine))!, PermL: Parameters.object(forKey: "mgPerML_atropine") as! Double)
+
+        atropineMLs.text = mL1_DoseCalculation(FinalDose:(Double (atropine))!, PermL: Parameters.object(forKey: "mgPerML_atropine") as! Double)
         // atropine = 10 mg in 1 Ml = 0.1 mg/ml
        
         
@@ -288,6 +331,7 @@ class RSIDetail: UIViewController {
         
         
         rocuronium_Defasiculation_Label.text = rocDefasiculating
+        
         rocDefascMLs.text = doseRange2_mL (weightEntered!, weightEntered!, Parameters.object(forKey: "rocDefasiculating_min") as! Double, Parameters.object(forKey: "rocDefasiculating_max") as! Double, Parameters.object(forKey: "mgPerML_rocDefasc") as! Double)
         // Roc = 50 mg in 5 Ml = 10 mg/ml
         
@@ -326,7 +370,7 @@ class RSIDetail: UIViewController {
         
         
         
-        // ============ Neuromuscular blocking agents
+        //MARK: ============ Neuromuscular blocking agents
         succinycholine_Label.text = succs
         succsMLs.text = doseRange2_mL (weightEntered!, weightEntered!, Parameters.object(forKey: "succs_min") as! Double, Parameters.object(forKey: "succs_max") as! Double, 20)
         // succs = 200 mg in 10 Ml = 20 mg/ml
@@ -349,7 +393,7 @@ class RSIDetail: UIViewController {
         
         
         
-        // Updates the labels based on the parameters that are changed. 
+        // MARK: Updates the labels based on the parameters that are changed.
         unit_Lidocaine.text = "\(Parameters.object(forKey: "lidocaine") as! Double) mg/kg | \(Parameters.object(forKey: "lidocaine_mgMl") as! Double) mg/mL"
         
         unit_Atropine.text = "\(Parameters.object(forKey: "atropine") as! Double) mg/kg | \(Parameters.object(forKey: "mgPerML_atropine") as! Double) mg/mL"
@@ -394,7 +438,7 @@ class RSIDetail: UIViewController {
        
         
     }
-    
+    // MARK: Dismissed the ViewController
     @IBAction func dismissRSIViewController(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
