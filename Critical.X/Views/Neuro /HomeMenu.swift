@@ -45,7 +45,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let SBID = storyBoardID [indexPath.item]
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Neuro", bundle: nil) // Has to reflect the storyBoard they are on. 
         if let vc = storyboard.instantiateViewController(withIdentifier: SBID) as? UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }

@@ -43,7 +43,7 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let SBID = storyBoardID [indexPath.item]
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Neuro", bundle: nil) // Make sure the SB name is the name of the sending SB.
         if let vc = storyboard.instantiateViewController(withIdentifier: SBID) as? UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }

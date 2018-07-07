@@ -40,23 +40,23 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                     "Rapid Sequence Intubation",
                     "Procedures & Imaging",
                     "Ventilator Management"]
-       
+        
         mainMenuDetail = ["Rate Us, Email, Disclaimer Information",
-                    "Intubation, Difficult Airway",
-                    "Invasive Monitorine, CVP",
-                    "EKG Interpretation & ACLS",
-                    "Clinical Medications",
-                    "Common Critical Care Drips",
-                    "PRBC, 0.9%, ALbumin",
-                    "CMP, Chemistries, LFT's",
-                    "IABP Timing Modes and Complications",
-                    "Neuro Assessments & Stroke",
-                    "Pediatric Calculations",
-                    "Fetal Heart Monitoring",
-                    "Medical Calculators & Medical Spanish",
-                    "Emergency Medications and Dosages",
-                    "CXR, CT and Central Lines",
-                    "ABG Calculator, TV, Ventilator Modes"]
+                          "Intubation, Difficult Airway Algorithms",
+                          "Invasive Monitoring, Central Venus Pressures, A-Lines",
+                          "EKG Interpretations & Current ACLS Recommendations",
+                          "Clinical Medications",
+                          "Common Critical Care Drips",
+                          "PRBC, 0.9%, ALbumin",
+                          "Common Lab Panel Interpretations & Explanations",
+                          "IABP Timing, Modes & Troubleshooting",
+                          "Neurological Assessments & Stroke Scales",
+                          "Peds Resuscitation, Calculations & Equipment",
+                          "Fetal Heart Monitoring Strips",
+                          "Medical Calculators & Medical Spanish",
+                          "Common Emergency Meds & Dosages",
+                          "CXR, CT & Central Line Insertion",
+                          "ABG Calculator, 02 Tank Calc, TV, Modes"]
         
         cellImages = ["CRITICAL1.ekg",
                       "Lungs",
@@ -117,24 +117,13 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let SBID = storyBoardID [indexPath.item]
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
         let vc = storyboard.instantiateViewController(withIdentifier: SBID)
         self.navigationController?.pushViewController(vc, animated: true)
-            //self.present(vc, animated: true, completion: nil)
-            print(storyBoardID [indexPath.item])
-        
-        if SBID == "RSIMain" {
-            self.present(vc, animated: true, completion: nil)
-
-        }
-        
-        
+        //self.present(vc, animated: true, completion: nil)
+        print(storyBoardID [indexPath.item])
+    }
     
-        
-
-
-}
-
 }
 
 
