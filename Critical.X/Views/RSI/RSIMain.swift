@@ -30,8 +30,16 @@ class RSIMain: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        let navigationBarAppearace = UINavigationBar.appearance()
         
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        UINavigationBar.appearance().backgroundColor = UIColor.green
 
+       
+       
+        // change navigation item title color
+        
+        
         // Takes the button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="98b-Ny-3HA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CMq-eR-bBg">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--Infusions-->
         <scene sceneID="cRe-hY-tQE">
             <objects>
-                <tableViewController storyboardIdentifier="DripsList" title="Infusions" id="CMq-eR-bBg" customClass="DripsList" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Infusions" title="Infusions" id="CMq-eR-bBg" customClass="DripsList" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RIB-iR-IYP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,7 +495,6 @@
         <!--Edit Drip-->
         <scene sceneID="94C-S8-Sc3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ucu-fX-nmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="EditDrip" id="dFD-De-0rr" customClass="EditDrip" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JKg-Jw-ZuV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -721,26 +720,9 @@
                         <outlet property="txtTotalDose" destination="hFP-0g-K0y" id="kBl-ID-jF2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucu-fX-nmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7388" y="-1524.384236453202"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6LD-YJ-THd">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="98b-Ny-3HA" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hco-fu-WFH">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CMq-eR-bBg" kind="relationship" relationship="rootViewController" id="vtb-NI-ZOp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bfE-yo-eLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5126" y="-1524"/>
         </scene>
     </scenes>
     <resources>
