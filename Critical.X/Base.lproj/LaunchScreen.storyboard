@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,50 +15,60 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-Mu-KAy">
-                                <rect key="frame" x="16" y="576" width="343" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 ©" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-Mu-KAy">
+                                <rect key="frame" x="16" y="682" width="343" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="td7-tt-np1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-yC-T7P">
-                                <rect key="frame" x="16" y="102" width="343" height="368"/>
+                                <rect key="frame" x="16" y="126" width="343" height="455"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Critical.with.EKG" translatesAutoresizingMaskIntoConstraints="NO" id="0yR-gl-FlZ">
                                         <rect key="frame" x="37" y="23" width="281" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="MEDICAL GUIDE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-Av-HGD">
+                                        <rect key="frame" x="118" y="217" width="107" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="b00-AU-Jod"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ple-Av-HGD" firstAttribute="centerX" secondItem="SMf-yC-T7P" secondAttribute="centerX" id="jTQ-W5-Xmv"/>
+                                    <constraint firstItem="Ple-Av-HGD" firstAttribute="centerY" secondItem="SMf-yC-T7P" secondAttribute="centerY" id="kCF-5Y-puS"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="THE BARRINGER GROUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-yU-j7H">
-                                <rect key="frame" x="16" y="547" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Mie-q2-Kje"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <rect key="frame" x="16" y="658" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="top" secondItem="SMf-yC-T7P" secondAttribute="bottom" constant="77" id="21i-LS-Jf0"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="2dC-LH-Jl9"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="7aS-aU-dlR"/>
-                            <constraint firstItem="vyC-Mu-KAy" firstAttribute="top" secondItem="37o-yU-j7H" secondAttribute="bottom" constant="8" symbolic="YES" id="ECh-Bg-Erv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyC-Mu-KAy" secondAttribute="bottom" constant="62" id="Ljg-Bc-SWC"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="leading" secondItem="SMf-yC-T7P" secondAttribute="leading" id="SIf-gK-6xd"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="GBG-Or-NaH"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="trailing" secondItem="vyC-Mu-KAy" secondAttribute="trailing" id="Ilk-ss-Mf5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyC-Mu-KAy" secondAttribute="bottom" constant="67" id="Ljg-Bc-SWC"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="top" secondItem="SMf-yC-T7P" secondAttribute="bottom" constant="77" id="Prr-8b-ARy"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="trailing" secondItem="SMf-yC-T7P" secondAttribute="trailing" id="WXA-Ih-ilC"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="WXY-ox-Zhk"/>
                             <constraint firstItem="SMf-yC-T7P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="cA0-JA-qH4"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="trailing" secondItem="vyC-Mu-KAy" secondAttribute="trailing" id="doZ-ah-KN0"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="leading" secondItem="vyC-Mu-KAy" secondAttribute="leading" id="hcY-tx-fMY"/>
-                            <constraint firstItem="37o-yU-j7H" firstAttribute="trailing" secondItem="SMf-yC-T7P" secondAttribute="trailing" id="rkQ-BX-gRg"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="leading" secondItem="SMf-yC-T7P" secondAttribute="leading" id="kej-Ri-Aez"/>
+                            <constraint firstItem="37o-yU-j7H" firstAttribute="leading" secondItem="vyC-Mu-KAy" secondAttribute="leading" id="l1B-vD-25C"/>
+                            <constraint firstItem="vyC-Mu-KAy" firstAttribute="top" secondItem="37o-yU-j7H" secondAttribute="bottom" constant="3" id="sYf-5h-5oH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -70,6 +79,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Critical.with.EKG" width="1246" height="721"/>
+        <image name="Critical.with.EKG" width="299" height="173"/>
     </resources>
 </document>

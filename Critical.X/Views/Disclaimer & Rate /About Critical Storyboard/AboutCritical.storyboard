@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rate Critical Pop Up-->
+        <scene sceneID="ZGP-c6-DrF">
+            <objects>
+                <viewController storyboardIdentifier="About Critical" modalPresentationStyle="overCurrentContext" id="7j7-nr-Fyi" customClass="RateCriticalPopUp" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5jv-vG-mpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPg-d7-XRd">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="807"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qgl-sT-6jx">
+                                    <rect key="frame" x="0.0" y="0.0" width="378" height="807"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG1-fO-Vgx">
+                                <rect key="frame" x="46" y="273" width="293" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-Ry-Qha">
+                                        <rect key="frame" x="13" y="225" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="DISCALIMER">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6a2-ri-tkr" kind="presentation" id="Ph0-vt-K8I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-Eo-H0i">
+                                        <rect key="frame" x="13" y="184" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="✦✦  RATE CRITICAL  ✦✦">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-He-lkF">
+                                        <rect key="frame" x="13" y="143" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="EMAIL US">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendEmailFeedback:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="TQh-Sj-uF8"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c8.1" translatesAutoresizingMaskIntoConstraints="NO" id="jsk-mk-Urq">
+                                        <rect key="frame" x="72" y="23" width="146" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xou-fM-Pou">
+                                        <rect key="frame" x="241" y="13" width="37" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CloseButton"/>
+                                        <connections>
+                                            <action selector="dismissPopUpVC:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="o7R-BL-zQa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JHn-vA-nAD"/>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="uG1-fO-Vgx" id="oac-Ry-UHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZG7-Ob-EsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3542" y="-249"/>
+        </scene>
+        <!--Disclaimer -->
+        <scene sceneID="cVD-8h-Idm">
+            <objects>
+                <viewController storyboardIdentifier="AcceptView" title="Disclaimer " useStoryboardIdentifierAsRestorationIdentifier="YES" id="6a2-ri-tkr" customClass="Disclaimer" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tNj-Ly-QLb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PAQ-7y-XT3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="viQ-v9-OWL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bts-Za-Zip">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="JJe-Sa-th4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txW-kZ-f7k">
+                                <rect key="frame" x="8" y="84" width="351" height="1140"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7io-ZL-bSZ">
+                                        <rect key="frame" x="0.0" y="44" width="351" height="1096"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-G4-Kcn">
+                                                <rect key="frame" x="15.666666666666657" y="8" width="320" height="1037"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1037" id="CKD-G0-bG2"/>
+                                                    <constraint firstAttribute="width" constant="320" id="UkP-1w-3cO"/>
+                                                </constraints>
+                                                <string key="text">The following user agreement and disclaimer applies to all The Barringer Group's programs, including but not limited to: Critical – X".
+
+Please be aware that all information as provided as part of Critical – X programs are not meant for definitive diagnostic purposes. They should be rechecked and confirmed against your facilities conventional medical devices, guidelines, and protocols. Critical's program is not a substitute for clinical judgment or standard – of – care medicine. While the authors and producers of critical strive to provide you with useful and accurate tools contained in this product, The Barringer group does not warrant and expressively disclaim that the information provided by this product is up – to – date, complete, or accurate.
+
+You agree to use the product only as an education aid and not to diagnose or treat a condition or as a substitute for any or to override the exercise of professional judgment by a healthcare professional. Given these possibilities of human errors or changes in medical science, you should confirm the information in the product through independent sources. The Barringer Group is not responsible for misdiagnosis of an element or misuse of treatment due to typographical or other errors in the product, user negligence or otherwise.
+
+You agree and acknowledge that you will, at all times, advise patients to seek professional diagnosis and treatment for any medical condition and to discuss information obtained for the product with healthcare providers. This product is, to the extent permitted by law, provided on an "as is" basis without warranties of any kind, express or implied, in the authors and producers of Critical disclaims any liability, loss, or damage caused by it or its content. By continuing to use this product, you indicate your acceptance of these terms. Updated January 1, 2018</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCj-Vn-TDX">
+                                                <rect key="frame" x="10" y="1053" width="331" height="38"/>
+                                                <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="cYU-if-DMJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Accept">
+                                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dismiss:" destination="6a2-ri-tkr" eventType="touchUpInside" id="dC0-23-aS9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qCj-Vn-TDX" firstAttribute="top" secondItem="PrV-G4-Kcn" secondAttribute="bottom" constant="8" symbolic="YES" id="6kT-kS-MV6"/>
+                                            <constraint firstAttribute="trailing" secondItem="PrV-G4-Kcn" secondAttribute="trailing" constant="16" id="ADL-ff-7sn"/>
+                                            <constraint firstItem="qCj-Vn-TDX" firstAttribute="centerX" secondItem="PrV-G4-Kcn" secondAttribute="centerX" id="L0E-Ky-e0X"/>
+                                            <constraint firstItem="PrV-G4-Kcn" firstAttribute="top" secondItem="7io-ZL-bSZ" secondAttribute="top" constant="8" id="Saq-nk-AZT"/>
+                                            <constraint firstItem="qCj-Vn-TDX" firstAttribute="leading" secondItem="7io-ZL-bSZ" secondAttribute="leading" constant="10" id="kDI-hd-2BI"/>
+                                            <constraint firstAttribute="bottom" secondItem="qCj-Vn-TDX" secondAttribute="bottom" constant="5" id="kN0-0Q-ZSX"/>
+                                            <constraint firstItem="qCj-Vn-TDX" firstAttribute="centerX" secondItem="7io-ZL-bSZ" secondAttribute="centerX" id="maT-St-6je"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dN1-p1-9VW">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="44"/>
+                                        <color key="barTintColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="DISCLAIMER AGREEMENT" id="2sU-Sx-xXH"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dN1-p1-9VW" firstAttribute="leading" secondItem="7io-ZL-bSZ" secondAttribute="leading" id="5K9-WL-8dc"/>
+                                    <constraint firstItem="dN1-p1-9VW" firstAttribute="trailing" secondItem="7io-ZL-bSZ" secondAttribute="trailing" id="GPF-vq-rTM"/>
+                                    <constraint firstItem="7io-ZL-bSZ" firstAttribute="top" secondItem="dN1-p1-9VW" secondAttribute="bottom" id="OKa-nU-a8F"/>
+                                    <constraint firstAttribute="trailing" secondItem="7io-ZL-bSZ" secondAttribute="trailing" id="cRM-gE-NSI"/>
+                                    <constraint firstItem="7io-ZL-bSZ" firstAttribute="leading" secondItem="txW-kZ-f7k" secondAttribute="leading" id="iyk-BH-nns"/>
+                                    <constraint firstAttribute="bottom" secondItem="7io-ZL-bSZ" secondAttribute="bottom" id="lyF-FG-guG"/>
+                                    <constraint firstItem="dN1-p1-9VW" firstAttribute="top" secondItem="txW-kZ-f7k" secondAttribute="top" id="n5H-fQ-nv8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="txW-kZ-f7k" secondAttribute="bottom" constant="-8" id="BBk-Ls-Jr8"/>
+                            <constraint firstItem="txW-kZ-f7k" firstAttribute="trailing" secondItem="viQ-v9-OWL" secondAttribute="trailingMargin" id="COs-uV-dKV"/>
+                            <constraint firstItem="txW-kZ-f7k" firstAttribute="leading" secondItem="ci4-aY-884" secondAttribute="leading" constant="8" id="Gam-EP-gPi"/>
+                            <constraint firstItem="txW-kZ-f7k" firstAttribute="top" secondItem="tNj-Ly-QLb" secondAttribute="bottom" constant="40" id="Okt-br-wxp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ci4-aY-884"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1250"/>
+                    <connections>
+                        <outlet property="disclaimerSubView" destination="txW-kZ-f7k" id="BDv-vb-7iv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2z-ht-N0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4016" y="-30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CloseButton" width="107" height="95"/>
+        <image name="c8.1" width="1255" height="1248"/>
+    </resources>
+</document>

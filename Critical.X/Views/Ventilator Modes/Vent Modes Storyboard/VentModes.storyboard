@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yKX-gK-vFt">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ventilator Modes-->
+        <scene sceneID="sUJ-EW-SCw">
+            <objects>
+                <viewController title="Ventilator Modes" id="yKX-gK-vFt" customClass="ViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVD-aL-GZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="XKb-Cx-IVd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zJd-hh-z4c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aR0-3m-1dn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="531"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRp-JU-7Oy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="531"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DfV-oP-tOf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="531"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical X" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gt-vb-OCf">
+                                            <rect key="frame" x="23" y="138.66666666666666" width="72.333333333333329" height="23.666666666666657"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uii-0C-pSZ">
+                                            <rect key="frame" x="315" y="43" width="30" height="30"/>
+                                            <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="cBa-6o-vTw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                            <state key="normal" title="X">
+                                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="dismissVentilatorModeVC:" destination="yKX-gK-vFt" eventType="touchUpInside" id="OwC-Y9-LeW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="uii-0C-pSZ" secondAttribute="trailing" constant="30" id="2Bx-VZ-glf"/>
+                                        <constraint firstItem="7gt-vb-OCf" firstAttribute="leading" secondItem="DfV-oP-tOf" secondAttribute="leading" constant="23" id="430-rz-8GI"/>
+                                        <constraint firstItem="uii-0C-pSZ" firstAttribute="top" secondItem="DfV-oP-tOf" secondAttribute="top" constant="43" id="ptJ-BW-gRe"/>
+                                        <constraint firstItem="uii-0C-pSZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DfV-oP-tOf" secondAttribute="leading" constant="20" symbolic="YES" id="wHy-aC-I1n"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7gt-vb-OCf" secondAttribute="trailing" id="yRN-pL-udx"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ventilator Modes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlz-Oc-pFh">
+                                <rect key="frame" x="16" y="77" width="335" height="59.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" name="Cello"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iRp-JU-7Oy" firstAttribute="top" secondItem="zJd-hh-z4c" secondAttribute="top" id="Ec7-3G-F2C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aR0-3m-1dn" secondAttribute="trailing" constant="-16" id="FXt-3J-pwn"/>
+                            <constraint firstItem="XKb-Cx-IVd" firstAttribute="top" secondItem="aR0-3m-1dn" secondAttribute="bottom" constant="247" id="MFt-If-IdO"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tlz-Oc-pFh" secondAttribute="trailingMargin" id="Q5u-X5-KIF"/>
+                            <constraint firstItem="tlz-Oc-pFh" firstAttribute="top" secondItem="cVD-aL-GZa" secondAttribute="bottom" constant="33" id="Y9l-j0-mKt"/>
+                            <constraint firstItem="iRp-JU-7Oy" firstAttribute="leading" secondItem="zJd-hh-z4c" secondAttribute="leading" id="bMZ-Tj-J45"/>
+                            <constraint firstItem="7gt-vb-OCf" firstAttribute="top" secondItem="tlz-Oc-pFh" secondAttribute="bottom" constant="2.3333333333332007" id="baC-wA-Vbz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tlz-Oc-pFh" secondAttribute="leading" id="hL6-pf-iFv"/>
+                            <constraint firstAttribute="trailing" secondItem="iRp-JU-7Oy" secondAttribute="trailing" id="pXa-kn-uQs"/>
+                            <constraint firstItem="aR0-3m-1dn" firstAttribute="leading" secondItem="zJd-hh-z4c" secondAttribute="leadingMargin" constant="-16" id="ssc-Xx-7VB"/>
+                            <constraint firstItem="XKb-Cx-IVd" firstAttribute="top" secondItem="iRp-JU-7Oy" secondAttribute="bottom" constant="247" id="uaR-U8-8lo"/>
+                            <constraint firstItem="aR0-3m-1dn" firstAttribute="top" secondItem="cVD-aL-GZa" secondAttribute="bottom" constant="-44" id="yt3-Ai-vst"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VGA-gf-QUh"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="uii-0C-pSZ" id="BT0-Cv-hcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upE-Mr-vcF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="-1500"/>
+        </scene>
+        <!--Stack Element View Controller-->
+        <scene sceneID="qgQ-Pf-sh6">
+            <objects>
+                <viewController storyboardIdentifier="StackElement" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a4d-9J-uvA" customClass="StackElementViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Afi-1a-VsQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="SYP-1p-Wng"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="297-DZ-YT8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-Nu-OTO">
+                                <rect key="frame" x="18" y="96" width="339" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vent Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUI-Ls-QMT">
+                                <rect key="frame" x="18" y="52" width="339" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="CNl-fd-dgw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4we-aN-dnd">
+                                <rect key="frame" x="0.0" y="121" width="375" height="691"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-1J-Fv7">
+                                        <rect key="frame" x="19" y="8" width="343" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="Vbv-3K-Kzj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ggR-1J-Fv7" firstAttribute="leading" secondItem="4we-aN-dnd" secondAttribute="leading" constant="19" id="COm-1O-aFp"/>
+                                    <constraint firstAttribute="height" constant="691" id="dKs-m2-UI4"/>
+                                    <constraint firstItem="ggR-1J-Fv7" firstAttribute="top" secondItem="4we-aN-dnd" secondAttribute="topMargin" id="gKN-Em-RGH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ggR-1J-Fv7" secondAttribute="bottom" constant="660" id="kOp-ls-lx8"/>
+                                    <constraint firstAttribute="trailing" secondItem="ggR-1J-Fv7" secondAttribute="trailing" constant="13" id="ppf-cN-f8W"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45098039220000002" green="0.8862745098" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YBi-Nu-OTO" firstAttribute="trailing" secondItem="pUI-Ls-QMT" secondAttribute="trailing" id="3VD-Cx-UmK"/>
+                            <constraint firstItem="YBi-Nu-OTO" firstAttribute="top" secondItem="pUI-Ls-QMT" secondAttribute="bottom" constant="11" id="8vc-qP-0va"/>
+                            <constraint firstItem="4we-aN-dnd" firstAttribute="top" secondItem="YBi-Nu-OTO" secondAttribute="bottom" constant="6" id="GoV-ap-8bn"/>
+                            <constraint firstItem="YBi-Nu-OTO" firstAttribute="leading" secondItem="pUI-Ls-QMT" secondAttribute="leading" id="IQd-aP-Tcy"/>
+                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="leading" secondItem="gRR-9o-ST1" secondAttribute="leading" constant="18" id="OmC-3P-691"/>
+                            <constraint firstItem="4we-aN-dnd" firstAttribute="leading" secondItem="gRR-9o-ST1" secondAttribute="leading" id="X2s-hz-nV2"/>
+                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="top" secondItem="Afi-1a-VsQ" secondAttribute="bottom" constant="8" symbolic="YES" id="akO-J9-9Je"/>
+                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="top" secondItem="gRR-9o-ST1" secondAttribute="top" constant="8" id="bNp-Va-B8g"/>
+                            <constraint firstItem="4we-aN-dnd" firstAttribute="trailing" secondItem="gRR-9o-ST1" secondAttribute="trailing" id="gO6-N1-nd1"/>
+                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="centerX" secondItem="297-DZ-YT8" secondAttribute="centerX" id="tqs-Eq-44Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gRR-9o-ST1"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="pUI-Ls-QMT" id="Vgd-cf-AGX"/>
+                        <outlet property="subTitle" destination="YBi-Nu-OTO" id="TyW-2K-IJt"/>
+                        <outlet property="textDetailLabel" destination="ggR-1J-Fv7" id="QOi-AT-6Oh"/>
+                        <outlet property="ventCardView" destination="297-DZ-YT8" id="OJM-jk-iyf"/>
+                        <outlet property="ventilatorScrollHeight" destination="dKs-m2-UI4" id="y12-Mv-QeD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltS-xt-rGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3102" y="-1500"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Cello">
+            <color red="0.23000000417232513" green="0.30000001192092896" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
