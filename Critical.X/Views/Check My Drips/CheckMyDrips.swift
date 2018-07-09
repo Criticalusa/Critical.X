@@ -138,15 +138,13 @@ class CheckMyDrips: UIViewController {
         
         
         // What happends when we select a picker segment,
-        McPicker.showAsPopover(data:data, fromViewController: self, sourceView: sender, cancelHandler: { () -> Void in
-            
-            print("Canceled Popover")
-            
-        }, doneHandler: { (selections: [Int : String]) -> Void in
-            
-            print("Done with Popover")
-            
-            
+//        McPicker.showAsPopover(data: data, fromViewController: self, sourceView: sender, cancelHandler: { () -> Void in
+//
+//        print("Canceled Popover") }, doneHandler: { (selections: [Int : String]) -> Void in print("Done with Popover")
+//
+        McPicker.show(data: data, doneHandler: { (selections: [Int : String]) -> Void in print("Done with Popover")
+        
+        
             if let name = selections[0] {
                 //self.label.text = name
                 
