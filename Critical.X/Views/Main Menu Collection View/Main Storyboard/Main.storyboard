@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bca-mr-g7w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bca-mr-g7w">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -199,6 +200,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ln8-7H-xQs">
+                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
                                 <connections>
@@ -218,7 +220,7 @@
                                         <rect key="frame" x="126" y="24" width="133" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medical Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0O-GZ-H1Q">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0O-GZ-H1Q">
                                         <rect key="frame" x="8" y="84" width="359" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="20"/>
@@ -248,6 +250,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="wpz-3n-DGL"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="label" destination="O0O-GZ-H1Q" id="Ajc-0T-AsQ"/>
                         <outlet property="menuCollectionView" destination="DXn-zS-yaf" id="dqs-eb-hFh"/>
                     </connections>
                 </viewController>
@@ -258,7 +261,6 @@
         <!--Main Menu-->
         <scene sceneID="12Z-ZJ-bdk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NMf-Mr-g8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Main Menu" automaticallyAdjustsScrollViewInsets="NO" id="Bca-mr-g7w" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jZn-sB-H9w">
@@ -278,14 +280,15 @@
                         <segue destination="j09-5t-y3w" kind="relationship" relationship="rootViewController" id="cAo-rH-5SL"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMf-Mr-g8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2860" y="-800.2463054187192"/>
         </scene>
     </scenes>
     <resources>
         <image name="BG-Clouds" width="640" height="1136"/>
-        <image name="CRITICAL1.ekg" width="396" height="396.239990234375"/>
-        <image name="Critical.with.EKG" width="299" height="173"/>
+        <image name="CRITICAL1.ekg" width="1650" height="1651"/>
+        <image name="Critical.with.EKG" width="1246" height="721"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

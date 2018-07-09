@@ -7,19 +7,131 @@
 //
 
 import UIKit
+import LTMorphingLabel
 
-class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension String {
     
+    // Random Emoji's to be displayed during the afternoon
+
+    static func randomAfternoon(length: Int = 1) -> String {
+        let afternoonEmoji = ["🌞","🌤","😎","🌎"]
+        var randomString: String = ""
+        
+        for _ in 0..<length {
+            let randomValue = arc4random_uniform(UInt32(afternoonEmoji.count))
+            randomString += "\(afternoonEmoji[afternoonEmoji.index(afternoonEmoji.startIndex, offsetBy: Int(randomValue))])"
+        }
+        return randomString
+    }
     
+  
+    
+    // Random Emoji's to be displayed during the Morning
+
+    static func randomMorning(length: Int = 1) -> String {
+        let morningEmoji = ["☀️","🌞","🌤", "😀", "😌"]
+        var randomString: String = ""
+        
+        for _ in 0..<length {
+            let randomValue = arc4random_uniform(UInt32(morningEmoji.count))
+            randomString += "\(morningEmoji[morningEmoji.index(morningEmoji.startIndex, offsetBy: Int(randomValue))])"
+        }
+        return randomString
+    }
+    
+    // Random Emoji's to be displayed during the evening
+    static func randomEvening(length: Int = 1) -> String {
+        let eveningEmoji = ["🌒","🌖","🌙", "🌛", "🌝"]
+        var randomString: String = ""
+        
+        for _ in 0..<length {
+            let randomValue = arc4random_uniform(UInt32(eveningEmoji.count))
+            randomString += "\(eveningEmoji[eveningEmoji.index(eveningEmoji.startIndex, offsetBy: Int(randomValue))])"
+        }
+        return randomString
+    }
+}
+
+
+
+class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
     
     
     @IBOutlet var menuCollectionView: UICollectionView!
+    @IBOutlet var label: LTMorphingLabel!
     
+    
+    // Variable declaration.
     var mainMenu = [String]()
     var mainMenuDetail = [String]()
     var cellImages = [String]()
     var storyBoardID = [String]()
     
+    // Function to get the current time.
+    func getTimefromDate()  {
+        let hours = (Calendar.current.component(.hour, from: Date()))
+        let minutes = (Calendar.current.component(.minute, from: Date()))
+        let seconds = (Calendar.current.component(.second, from: Date()))
+        
+       
+       // Setting a new variable to the function in the extension above.
+        let randomMorning = String.randomMorning()
+        let randomAfternoon = String.randomAfternoon()
+        let randomEvening = String.randomEvening()
+
+        
+
+        switch hours {
+        case 05..<12:
+            label.text = "Good Morning \(randomMorning), Jadie."
+        case 12..<18:
+            label.text = "Good Afternoon \(randomAfternoon), Jadie."
+        case 18..<24:
+            label.text = "Good Evening \(randomEvening), Jadie."
+        default:
+            break
+        }
+        
+        print("Current time is", hours,":", minutes,":", seconds)
+    }
+    
+    
+    func setAnimationLabel(){
+        
+        //label = LTMorphingLabel(frame: CGRect(x: 50, y: 80, width: 100, height: 50))
+        label = LTMorphingLabel(frame: CGRect(x: 8, y: 175, width: 359, height: 29))
+        label.textAlignment = .center
+        label.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 20)
+        label.textColor = UIColor.darkGray
+        label.text = "Hello, Jadie. Welcome to Critical"
+        label.morphingEffect = .anvil
+        view.addSubview(label)
+        //        let style1 = Styles.color("darkGray").font(15)
+        //        label1 = LTMorphingLabel()
+        //        label1.text = "  "
+        //        label1.makeCons { (make) in
+        //            make.left.top.equal(lab).left.bottom.offset(0)
+        //            make.width.height.equal(lab)
+        //        }
+        //        label1.morphingEffect = .anvil
+        //        view.addSubview(lab1)
+    }
+    
+    // Loads the animation once the view appears
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        setAnimationLabel()
+        getTimefromDate()
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        // Clear the animation label once the view dissappears.
+        label.text = ""
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

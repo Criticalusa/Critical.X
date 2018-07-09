@@ -140,7 +140,7 @@ class VentilatorOptimizationMain: UIViewController {
         
         let NewRR = Double ((TargetMV)/500 * 1000)
         
-        let NEwTV = Double ((TargetMV)/12 * 1000)
+        let NEwTV = Double ((TargetMV)/Freq! * 1000)
         
         let actual = "The Minute Volume, with a Tidal Volume of" // Used in the result text to have the color changed in the label
         

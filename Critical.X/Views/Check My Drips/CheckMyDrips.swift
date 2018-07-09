@@ -177,9 +177,7 @@ class CheckMyDrips: UIViewController {
                     print("\(gMin) was calculated for g/Min")
                     self.view.endEditing(true)
                     
-                    
-                    
-                }
+             }
                     
                     // MARK: - mg/hr
                 else if name == "mg/hr" {
