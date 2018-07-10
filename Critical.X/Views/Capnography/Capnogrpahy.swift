@@ -7,8 +7,23 @@
 //
 
 import UIKit
+import AKLabel
 
 class Capnogrpahy: UITableViewController {
+    
+    
+    @IBOutlet weak var capnographySubtitleAnimation: AKLabel!
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let subtititleText = "Capnogram Waveform Analysis"
+        capnographySubtitleAnimation.animate(text: subtititleText, duration: 1, completion: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        capnographySubtitleAnimation.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

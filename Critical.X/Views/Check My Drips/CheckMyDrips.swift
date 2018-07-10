@@ -9,6 +9,7 @@
 import UIKit
 import McPicker
 
+
 class CheckMyDrips: UIViewController {
     
     //MARK: - Outlets
@@ -402,7 +403,7 @@ class CheckMyDrips: UIViewController {
     @IBAction func ChekMyDripView(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
-        print("View Controller was dismissed")
+        print("Check my drips Controller was dismissed")
         
     }
     

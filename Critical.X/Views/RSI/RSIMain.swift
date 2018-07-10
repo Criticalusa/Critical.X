@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import AKLabel
 
 class RSIMain: UIViewController {
    
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var rsiTextField: UITextField!
-    
+    @IBOutlet weak var rsiTitle: AKLabel!
+
     //Rounds the edges of the round button. 
     @IBOutlet weak var calculateButtonRadius : UIView! {
         didSet {
@@ -36,7 +38,6 @@ class RSIMain: UIViewController {
         UINavigationBar.appearance().backgroundColor = UIColor.green
 
        
-       
         // change navigation item title color
         
         
@@ -44,11 +45,36 @@ class RSIMain: UIViewController {
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         
     }
+    
+    // Once the view appears, the animation starts.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        //Function to run the RSI animation title.
+        animateRSI()
+
+    }
+    
+   
+    // Animates the rsiSubtitle once the view is loaded.
+    func animateRSI() -> Void {
+        rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
+        rsiTitle.animate(text: "Rapid Sequence Induction", duration: 1, completion: nil)
+    }
+    
+    
+    
 
     @IBAction func SettingClick(_ sender: Any) {
+        
+        // Presents the settings VC via Storyboard identifier to instantiate the view controller.
         let settingController = self.storyboard?.instantiateViewController(withIdentifier: "RSISetting") as! RSISetting
         self.present(settingController, animated: true, completion: nil)
     }
+    
+    
+    
+    
     
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -77,6 +103,9 @@ class RSIMain: UIViewController {
             
             return  }
     }
+    
+    
+    
     /// Cancels the segue transition if the textBox is empty
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "RSI" {

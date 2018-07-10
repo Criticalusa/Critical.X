@@ -124,6 +124,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         setAnimationLabel()
         getTimefromDate()
         
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -135,7 +136,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+
+
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
             "Hemodynamics",// 2

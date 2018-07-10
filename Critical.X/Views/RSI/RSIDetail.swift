@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AKLabel
 
 //MARK: Rounding Extension: Double
 //If the answer is a double change the decimal places
@@ -42,7 +43,7 @@ class RSIDetail: UIViewController {
     @IBOutlet weak var atropine_Label: UILabel!
     @IBOutlet weak var lidocaine_Label: UILabel!
     @IBOutlet weak var fentanyl_Label: UILabel!
-    @IBOutlet weak var kgWeight_Label: UILabel!
+    @IBOutlet weak var kgWeight_Label: AKLabel!
     @IBOutlet weak var rocuronium_Defasiculation_Label: UILabel!
     @IBOutlet weak var glycopyrolate_Label: UILabel!
     @IBOutlet weak var vecuronium_Defasiculation_Label: UILabel!
@@ -305,7 +306,12 @@ class RSIDetail: UIViewController {
         
        
         //MARK:========= Update the labels with the calculations
-        kgWeight_Label.text = "\(weightEntered!) kg's | \((weightEntered! * 2.2).rounded()) lbs" // Updates the weight label
+       // kgWeight_Label.text = "\(weightEntered!) kg's | \((weightEntered! * 2.2).rounded()) lbs" // Updates the weight label
+        
+        // Animated the weight label once the kg's are calculated based on the first page when the weight is placed.
+        kgWeight_Label.animate(text: "\(weightEntered!) kg's | \((weightEntered! * 2.2).rounded()) lbs", duration: 1, completion: nil)
+
+        
         
         // Pretreatment dosing
        

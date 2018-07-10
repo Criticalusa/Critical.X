@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AKLabel
 
 class EkgMenuTableViewController: UITableViewController {
     
+    @IBOutlet weak var crtiticalEkgTitle: AKLabel!
+    @IBOutlet weak var crtiticalEkgSubTitle: AKLabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +22,12 @@ class EkgMenuTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        crtiticalEkgTitle.animate(text: "Critical EKG's" , duration: 1, completion: nil)
+        crtiticalEkgSubTitle.animate(text: "ACLS and EKG Interpretation" , duration: 1, completion: nil)
+
     }
 
     @IBAction func dismissEkgTableView(_ sender: Any) {

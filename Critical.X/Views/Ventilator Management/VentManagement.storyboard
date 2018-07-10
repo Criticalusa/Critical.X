@@ -13,7 +13,7 @@
         <!--References-->
         <scene sceneID="4pd-cc-zSd">
             <objects>
-                <tableViewController storyboardIdentifier="Ventilator management" title="References" id="40q-2v-2mF" customClass="EkgMenuTableViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Ventilator management" title="References" id="40q-2v-2mF" customClass="VentManagementTVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="74D-Ug-vlt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                     <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capnography and modes of ventilation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW5-5C-aW5">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW5-5C-aW5" customClass="AKLabel" customModule="AKLabel">
                                     <rect key="frame" x="13" y="47" width="211" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
@@ -118,10 +118,13 @@
                         <barButtonItem key="backBarButtonItem" title="Menu" id="2kw-5O-PXw"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ventManagementSubtitle" destination="aW5-5C-aW5" id="lDC-yb-yws"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7E-eP-Rpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="-1470"/>
+            <point key="canvasLocation" x="1210" y="-1484"/>
         </scene>
         <!--Capnography-->
         <scene sceneID="AEc-d4-zuu">
