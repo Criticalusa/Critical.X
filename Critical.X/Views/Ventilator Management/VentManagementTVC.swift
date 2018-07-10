@@ -10,23 +10,23 @@ import UIKit
 import AKLabel
 
 class VentManagementTVC: UITableViewController {
-
     
-/**
-    Animate Label
-
-    - Remark: Animates a UILabel using the AKLabel file.
-    - SeeAlso: https://github.com/akshaysyaduvanshi/AKLabel
-    - Requires: AKLabel.swift file to function. Need to also change the outlet to the AKLabel subclass.
-    - Warning: If the subclass is not changed, or the IBOutlet doesnt reflect the AKLabel as well as importing the label, it will crash.
-**/
+    
+    /**
+     Animate Label
+     
+     - Remark: Animates a UILabel using the AKLabel file.
+     - SeeAlso: https://github.com/akshaysyaduvanshi/AKLabel
+     - Requires: AKLabel.swift file to function. Need to also change the outlet to the AKLabel subclass.
+     - Warning: If the subclass is not changed, or the IBOutlet doesnt reflect the AKLabel as well as importing the label, it will crash.
+     **/
     
     @IBOutlet weak var ventManagementSubtitle: AKLabel!
     
     
     override func viewDidAppear(_ animated: Bool) {
         
-    // Create the title to pass throught the animation closure.
+        // Create the title to pass throught the animation closure.
         let subtititleText = "Modes of Ventilation and Capnography"
         // animation method that corresponds to the subtitle
         ventManagementSubtitle.animate(text: subtititleText, duration: 1, completion: nil)
@@ -39,16 +39,16 @@ class VentManagementTVC: UITableViewController {
     
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-
+    
+    
 }

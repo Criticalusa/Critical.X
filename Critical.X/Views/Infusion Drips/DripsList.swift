@@ -13,7 +13,6 @@ class DripsList: UITableViewController {
     
     
     //Outlet labels for the animation which has the AKLabel subclass.
-    @IBOutlet weak var dripTitle: AKLabel!
     @IBOutlet weak var dripSubTitle: AKLabel!
 
     // Variable to pass data
@@ -30,7 +29,6 @@ class DripsList: UITableViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         // Clears the text when the view dissappears so it doesnt look bad when reloading
-        dripTitle.text = ""
         dripSubTitle.text = ""
     }
     
@@ -53,7 +51,6 @@ class DripsList: UITableViewController {
         
         
         // Animates the title when the screen loads.
-        dripTitle.animate(text: "Critical Drips", duration: 1, completion: nil)
         dripSubTitle.animate(text: "Infusion Rates and Calculations", duration: 1, completion: nil)
 
         

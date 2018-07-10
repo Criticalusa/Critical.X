@@ -11,7 +11,7 @@ import AKLabel
 
 class EkgMenuTableViewController: UITableViewController {
     
-    @IBOutlet weak var crtiticalEkgTitle: AKLabel!
+    
     @IBOutlet weak var crtiticalEkgSubTitle: AKLabel!
 
     override func viewDidLoad() {
@@ -25,9 +25,14 @@ class EkgMenuTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        crtiticalEkgTitle.animate(text: "Critical EKG's" , duration: 1, completion: nil)
-        crtiticalEkgSubTitle.animate(text: "ACLS and EKG Interpretation" , duration: 1, completion: nil)
+        
+        crtiticalEkgSubTitle.animate(text: "ACLS and EKG Interpretations" , duration: 1, completion: nil)
 
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+    
+        crtiticalEkgSubTitle.text = ""
     }
 
     @IBAction func dismissEkgTableView(_ sender: Any) {

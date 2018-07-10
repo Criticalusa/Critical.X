@@ -13,15 +13,20 @@ class ACLSChanges2015: UIViewController {
         // Takes the button and makes it into a circle
         didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
     }
+   
+    
     @IBOutlet weak var blsLabel: UILabel!
     @IBOutlet weak var aclsLabel: UILabel!
     @IBOutlet weak var postCardiacArrestLabel: UILabel!
-    
+    @IBOutlet weak var blsView: UIView!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //adds a line seperation border to the BLS card view seperating the title form the text.
+        blsView.addBorder(side: .top, thickness: 3, color: Colorify.Niagara, topOffset: 40.0)
         
         
         //MARK: CPR KeyPoints

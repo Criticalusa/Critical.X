@@ -34,6 +34,7 @@ class ACLSViewController: UIViewController {
     var aclsView: UIVisualEffectView = UIVisualEffectView()
     
 
+   
     override func viewDidLoad() {
         
         
@@ -75,14 +76,16 @@ class ACLSViewController: UIViewController {
         
        
         
-        // Takes the name of the gif, delcared in the enum and passes it to the string rhythmName so that the function argument can take the string thats passed.
-        ekgImageView.loadGif(name: rhythmName)
+//        // Takes the name of the gif, delcared in the enum and passes it to the string rhythmName so that the function argument can take the string thats passed.
+//        ekgImageView.loadGif(name: rhythmName)
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+        // Takes the name of the gif, delcared in the enum and passes it to the string rhythmName so that the function argument can take the string thats passed.
+        ekgImageView.loadGif(name: rhythmName)
+        /// Takes the scroll height outlet for the view, and adds it to the labels that are in the view. Pads it about  100 pixels at the end.
         scroll_height.constant = ekgDescriptionLabel.frame.origin.y + ekgDescriptionLabel.frame.size.height + medication_Label.frame.size.height + 100
     }
     

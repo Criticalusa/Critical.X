@@ -161,11 +161,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Invasive Monitoring, Central Venus Pressures, A-Lines",// 2
             "EKG Interpretations & Current ACLS Recommendations",// 3
             "Clinical Medications",// 4
-            "Common Critical Care Drips",// 5
+            "Common Drips in Critical Care",// 5
             "PRBC, 0.9%, ALbumin",// 6
             "Common Lab Panel Interpretations & Explanations",// 7
             "IABP Timing, Modes & Troubleshooting",// 8
-            "Neurological Assessments & Stroke Scales",// 9
+            "Neurological Assessments, GCS & Stroke Scales",// 9
             "Peds Resuscitation, Calculations & Equipment",// 10
             "Fetal Heart Monitoring Strips",//  1
             "Medical Calculators & Medical Spanish",// 12
