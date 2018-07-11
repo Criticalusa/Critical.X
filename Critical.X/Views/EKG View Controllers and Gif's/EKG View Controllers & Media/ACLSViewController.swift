@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AKLabel
 
 
 class ACLSViewController: UIViewController {
@@ -15,7 +16,7 @@ class ACLSViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var title_Label: UILabel!
     @IBOutlet weak var aclsViewScreen: UIVisualEffectView!
-    @IBOutlet weak var ekgSubtitle_Label: UILabel!
+    @IBOutlet weak var ekgSubtitle_Label:UILabel!
     @IBOutlet weak var ekgDescriptionLabel: UILabel!
     @IBOutlet weak var medication_Label: UILabel!
     @IBOutlet weak var header_Label: UILabel!

@@ -11,7 +11,6 @@ import AKLabel
 
 class MedCalulationsTableViewController: UITableViewController {
 
-    @IBOutlet weak var titleLabel: AKLabel!
 
     @IBOutlet weak var subTitleLabel: AKLabel!
     
@@ -19,7 +18,7 @@ class MedCalulationsTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         
-        titleLabel.animate(text: "Med Calcs" , duration: 1, completion: nil)
+        
         subTitleLabel.animate(text: "Medical References and Calculators" , duration: 1, completion: nil)
         
     }

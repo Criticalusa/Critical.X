@@ -54,7 +54,7 @@ extension String {
 
 
 
-class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
+    class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
     
     
     @IBOutlet var menuCollectionView: UICollectionView!
@@ -67,20 +67,22 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     var cellImages = [String]()
     var storyBoardID = [String]()
     
-    // Function to get the current time.
+   
+        
+        // Function to get the current time.
     func getTimefromDate()  {
         let hours = (Calendar.current.component(.hour, from: Date()))
         let minutes = (Calendar.current.component(.minute, from: Date()))
         let seconds = (Calendar.current.component(.second, from: Date()))
         
        
-       // Setting a new variable to the function in the extension above.
+        // Setting a new variable to the function in the extension above.
         let randomMorning = String.randomMorning()
         let randomAfternoon = String.randomAfternoon()
         let randomEvening = String.randomEvening()
 
         
-
+        // Switch on the hours that when its when its a certain time frame, we will display the greeting.
         switch hours {
         case 05..<12:
             label.text = "Good Morning \(randomMorning), Jadie."
@@ -124,8 +126,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         setAnimationLabel()
         getTimefromDate()
         
-        
-    }
+  }
     
     override func viewDidDisappear(_ animated: Bool) {
         
@@ -137,7 +138,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        
+       
 
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
@@ -160,7 +162,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Intubation, Difficult Airway Algorithms",// 1
             "Invasive Monitoring, Central Venus Pressures, A-Lines",// 2
             "EKG Interpretations & Current ACLS Recommendations",// 3
-            "Clinical Medications",// 4
+            "Drug Mechanisms, Classes, Dosages, Indications",// 4
             "Common Drips in Critical Care",// 5
             "PRBC, 0.9%, ALbumin",// 6
             "Common Lab Panel Interpretations & Explanations",// 7

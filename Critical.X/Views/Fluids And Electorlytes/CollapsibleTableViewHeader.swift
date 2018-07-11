@@ -24,7 +24,7 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         super.init(reuseIdentifier: reuseIdentifier)
         
         // Content View Changes the Background color of the sections. Leave the 0x and paste the rest of the hexcode after to change the color.
-        contentView.backgroundColor = UIColor(hex: 0xAC281C)
+        contentView.backgroundColor = UIColor(hex: 0xA9A9A9) // Changes the color of the collapsable cell headers
         
         let marginGuide = contentView.layoutMarginsGuide
         

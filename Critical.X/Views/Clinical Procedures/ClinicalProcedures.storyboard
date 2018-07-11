@@ -13,47 +13,63 @@
         <!--CXR-->
         <scene sceneID="oaM-pD-f0v">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nTj-0v-9IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="CXR" id="RlO-Te-iXB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTj-0v-9IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-117" y="-1298"/>
         </scene>
         <!--References-->
         <scene sceneID="r0w-si-xe7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PBa-WK-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController storyboardIdentifier="Procedures &amp; imaging" title="References" id="07l-1o-jsl" customClass="EkgMenuTableViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Procedures &amp; imaging" title="References" id="07l-1o-jsl" customClass="ClinicalProceduresTBV" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZGt-W7-kcn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="XSo-Xw-sd1">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clinical Procedures" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCf-ZD-llD">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinical Procedures" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCf-ZD-llD">
                                     <rect key="frame" x="12" y="6" width="333" height="42"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="40"/>
                                     <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and imaging" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KJ-Wl-dUT">
-                                    <rect key="frame" x="16" y="47" width="173" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KJ-Wl-dUT" customClass="AKLabel" customModule="AKLabel">
+                                    <rect key="frame" x="16" y="47" width="287" height="21"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
                                     <color key="textColor" name="Alizarin"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Procedures" translatesAutoresizingMaskIntoConstraints="NO" id="LIu-fY-KKj">
+                                    <rect key="frame" x="326" y="57" width="36" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="bL0-eX-VtT"/>
+                                        <constraint firstAttribute="width" constant="36" id="nnV-ef-gY2"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="8KJ-Wl-dUT" firstAttribute="leading" secondItem="XSo-Xw-sd1" secondAttribute="leadingMargin" constant="8" id="3N3-DA-ndg"/>
+                                <constraint firstItem="LIu-fY-KKj" firstAttribute="top" secondItem="yCf-ZD-llD" secondAttribute="bottom" constant="9" id="KfJ-mD-Nwe"/>
+                                <constraint firstItem="LIu-fY-KKj" firstAttribute="leading" secondItem="8KJ-Wl-dUT" secondAttribute="trailing" constant="23" id="Kyz-IV-eV3"/>
+                                <constraint firstAttribute="trailing" secondItem="yCf-ZD-llD" secondAttribute="trailing" constant="30" id="VCN-Z3-JZZ"/>
+                                <constraint firstItem="8KJ-Wl-dUT" firstAttribute="top" secondItem="XSo-Xw-sd1" secondAttribute="top" constant="47" id="WhH-3d-ESc"/>
+                                <constraint firstAttribute="bottom" secondItem="LIu-fY-KKj" secondAttribute="bottom" constant="-3" id="Ycy-bG-ahC"/>
+                                <constraint firstAttribute="bottom" secondItem="8KJ-Wl-dUT" secondAttribute="bottom" constant="20" id="ZoX-oZ-CRO"/>
+                                <constraint firstItem="yCf-ZD-llD" firstAttribute="top" secondItem="XSo-Xw-sd1" secondAttribute="top" constant="6" id="led-Oj-KwD"/>
+                                <constraint firstItem="yCf-ZD-llD" firstAttribute="leading" secondItem="XSo-Xw-sd1" secondAttribute="leading" constant="12" id="rBt-Dl-plQ"/>
+                                <constraint firstAttribute="trailing" secondItem="LIu-fY-KKj" secondAttribute="trailing" constant="13" id="wHs-xN-Kkj"/>
+                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection headerTitle="Imaging" id="UhV-ZK-IyM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="mj4-VX-TDF" detailTextLabel="6mz-oc-9ji" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="dLX-LO-Ubu">
-                                        <rect key="frame" x="0.0" y="127.33333333333334" width="375" height="65"/>
+                                        <rect key="frame" x="0.0" y="143.33333333333334" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLX-LO-Ubu" id="4Ca-TE-dJs">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
@@ -84,7 +100,7 @@
                             <tableViewSection headerTitle="Procedures" id="jT4-gf-Rhe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="igf-3i-oOL" detailTextLabel="45c-2N-lM9" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="Oci-k6-2Tq">
-                                        <rect key="frame" x="0.0" y="248.33333333333337" width="375" height="65"/>
+                                        <rect key="frame" x="0.0" y="264.33333333333337" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oci-k6-2Tq" id="VEm-Gq-BaF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
@@ -118,12 +134,17 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Procedures &amp; Imaging" id="fku-8I-tyC"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="proceduresSubtitle" destination="8KJ-Wl-dUT" id="uGd-7y-CO8"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBa-WK-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-617" y="-1050"/>
+            <point key="canvasLocation" x="-618.39999999999998" y="-1050"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Procedures" width="512" height="512"/>
         <namedColor name="Alizarin">
             <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
