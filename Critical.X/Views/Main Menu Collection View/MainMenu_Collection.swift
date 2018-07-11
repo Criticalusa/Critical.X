@@ -9,10 +9,12 @@
 import UIKit
 import LTMorphingLabel
 
+
+
 extension String {
     
     // Random Emoji's to be displayed during the afternoon
-
+    
     static func randomAfternoon(length: Int = 1) -> String {
         let afternoonEmoji = ["🌞","🌤","😎","🌎"]
         var randomString: String = ""
@@ -24,10 +26,10 @@ extension String {
         return randomString
     }
     
-  
+    
     
     // Random Emoji's to be displayed during the Morning
-
+    
     static func randomMorning(length: Int = 1) -> String {
         let morningEmoji = ["☀️","🌞","🌤", "😀", "😌"]
         var randomString: String = ""
@@ -54,7 +56,7 @@ extension String {
 
 
 
-    class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
+class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
     
     
     @IBOutlet var menuCollectionView: UICollectionView!
@@ -66,30 +68,161 @@ extension String {
     var mainMenuDetail = [String]()
     var cellImages = [String]()
     var storyBoardID = [String]()
+    var noName = String()
     
-   
-        
-        // Function to get the current time.
+    
+    // Function to get the current time.
     func getTimefromDate()  {
         let hours = (Calendar.current.component(.hour, from: Date()))
         let minutes = (Calendar.current.component(.minute, from: Date()))
         let seconds = (Calendar.current.component(.second, from: Date()))
+        let day = (Calendar.current.component(.weekday, from: Date()))
         
-       
+        // This is how we get the day of the week.
+        let dateFormatter = DateFormatter()
+        
+        // Create new variable to store the day of the week
+        var dayOfTheWeek = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: Date())]
+        
+        switch dayOfTheWeek {
+        case "Thursday":
+            print("Its Hump Day")
+        default:
+            break
+        }
+        
+        // Print the day of the week
+        print("Today is" + dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: Date())])
+        
+        
         // Setting a new variable to the function in the extension above.
         let randomMorning = String.randomMorning()
         let randomAfternoon = String.randomAfternoon()
         let randomEvening = String.randomEvening()
-
+        
         
         // Switch on the hours that when its when its a certain time frame, we will display the greeting.
         switch hours {
         case 05..<12:
-            label.text = "Good Morning \(randomMorning), Jadie."
+            //label.text = "Good Afternoon \(randomMorning), Jadie."
+            
+            //Create an array of different greetings.
+            var greetings: Array = ["Hi", "Cheers!", "Good Morning", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            
+            //Get the index at each array at RANDOM
+            let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            
+            // Convert the index at random into the string
+            let displayRandomGreeting = greetings[index]
+            
+            
+            //gets the name from the initial login and stores it.""
+            var username = UserDefaults.standard.value(forKey: "name")
+            
+            
+            // Conditional
+            if username == nil {
+                username = noName
+                
+                
+                //label.text = "Good Morning! \(randomMorning)"
+                if let displayRandomGreeting = greetings.randomElement() {
+                  
+                    label.text = "\(displayRandomGreeting) \(randomMorning)"
+                }
+            } else if username != nil {
+                label.text = "Good Morning \(randomMorning), \(username!)!"
+            }
+            
+            print("Today is \(day)")
+            
+        
+        // If the time is between Noon and 6pm
         case 12..<18:
-            label.text = "Good Afternoon \(randomAfternoon), Jadie."
+            //label.text = "Good Afternoon \(randomAfternoon), Jadie."
+            
+            
+            //Create an array of different greetings.
+            let greetings: Array = ["Hi", "Cheers!", "Good Day", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            //Get the index at each array at RANDOM
+            let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            // Convert the index at random into the string
+            let displayRandomGreeting = greetings[index]
+            
+            
+            //gets the name from the initial login and stores it.""
+            var username = UserDefaults.standard.value(forKey: "name")
+            
+            if username == nil {
+                username = noName
+                //label.text = "Good Morning! \(randomAfternoon)"
+                if let displayRandomGreeting = greetings.randomElement() {
+                    label.text = "\(displayRandomGreeting) \(randomMorning)"
+                }
+            } else if username != nil {
+                //label.text = "Good Morning \(randomAfternoon), \(username!)!"
+                label.text = "\(displayRandomGreeting) \(randomAfternoon), \(username!)!"
+                
+            }
+            
+        
+        
+        
+        // If the time is between 6pm and midnight
         case 18..<24:
-            label.text = "Good Evening \(randomEvening), Jadie."
+            //label.text = "Good Evening \(randomEvening), Jadie."
+            
+            //Create an array of different greetings.
+            let greetings: Array = ["Hi", "Cheers!", "Good Evening", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            //Get the index at each array at RANDOM
+            let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            // Convert the index at random into the string
+            let displayRandomGreeting = greetings[index]
+            
+            
+            //gets the name from the initial login and stores it.""
+            var username = UserDefaults.standard.value(forKey: "name")
+            
+            if username == nil {
+                username = noName
+                //label.text = "Good Morning! \(randomAfternoon)"
+                if let displayRandomGreeting = greetings.randomElement() {
+                    label.text = "\(displayRandomGreeting) \(randomEvening)"
+                }
+            } else if username != nil {
+                //label.text = "Good Morning \(randomAfternoon), \(username!)!"
+                label.text = "\(displayRandomGreeting) \(randomEvening), \(username!)!"
+                
+            }
+            
+            
+        //If the time is between midnight and 5am
+        case 24..<05:
+            //label.text = "Good Evening \(randomEvening), Jadie."
+            
+            //Create an array of different greetings.
+            let greetings: Array = ["Hi", "Cheers!", "Good Evening", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            //Get the index at each array at RANDOM
+            let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            // Convert the index at random into the string
+            let displayRandomGreeting = greetings[index]
+            
+            
+            //gets the name from the initial login and stores it.""
+            var username = UserDefaults.standard.value(forKey: "name")
+            
+            if username == nil {
+                username = noName
+                //label.text = "Good Morning! \(randomAfternoon)"
+                if let displayRandomGreeting = greetings.randomElement() {
+                    label.text = "\(displayRandomGreeting) \(randomEvening)"
+                }
+            } else if username != nil {
+                //label.text = "Good Morning \(randomAfternoon), \(username!)!"
+                label.text = "\(displayRandomGreeting) \(randomEvening), \(username!)!"
+                
+            }
+            
         default:
             break
         }
@@ -98,14 +231,21 @@ extension String {
     }
     
     
+    
+    
     func setAnimationLabel(){
+        
+        
+        //gets the name from the initial login and stores it.""
+        let username = UserDefaults.standard.value(forKey: "name")
+      
         
         //label = LTMorphingLabel(frame: CGRect(x: 50, y: 80, width: 100, height: 50))
         label = LTMorphingLabel(frame: CGRect(x: 8, y: 175, width: 359, height: 29))
         label.textAlignment = .center
         label.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 20)
         label.textColor = UIColor.darkGray
-        label.text = "Hello, Jadie. Welcome to Critical"
+        label.text = "Hello, Welcome to Critical"
         label.morphingEffect = .anvil
         view.addSubview(label)
         //        let style1 = Styles.color("darkGray").font(15)
@@ -126,7 +266,7 @@ extension String {
         setAnimationLabel()
         getTimefromDate()
         
-  }
+    }
     
     override func viewDidDisappear(_ animated: Bool) {
         
@@ -137,10 +277,10 @@ extension String {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-       
-
+        
+        
+        
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
             "Hemodynamics",// 2

@@ -21,6 +21,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         UINavigationBar.appearance().tintColor = UIColor.white //your desired color here
 
+        // Create the window for the onboarding screen
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        // Here we say what story board we are coming from.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Creating a variable for the viewController
+        var vc: UIViewController
+        
+        // Conditional to set the name typed in and also to show it for the first time when the app is launched.
+        if(UserDefaults.standard.value(forKey: "name") as? String) == nil {
+            
+            // show the onboarding screen, with the SB ID thats declared in the ViewController
+            vc = storyboard.instantiateViewController(withIdentifier: "obBoardingVC")
+        } else {
+            // show the main menu screen
+            vc = storyboard.instantiateInitialViewController()!
+
+        }
+        
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
     

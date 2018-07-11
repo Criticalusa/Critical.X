@@ -281,15 +281,146 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMf-Mr-g8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2860" y="-800.2463054187192"/>
+            <point key="canvasLocation" x="-2900" y="-800"/>
+        </scene>
+        <!--OnboardingVC-->
+        <scene sceneID="P3e-uN-MXU">
+            <objects>
+                <viewController storyboardIdentifier="obBoardingVC" modalPresentationStyle="overCurrentContext" id="ajZ-KS-Lvg" customClass="OnboardingVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jxc-wo-Kkd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HA-bt-PWk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="807"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Smoke" translatesAutoresizingMaskIntoConstraints="NO" id="LfZ-AT-IFw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="807"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="807" id="1KJ-qE-BNu"/>
+                                            <constraint firstAttribute="width" constant="375" id="DIz-x0-Fg6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LfZ-AT-IFw" firstAttribute="leading" secondItem="7HA-bt-PWk" secondAttribute="leading" id="YCF-51-mEK"/>
+                                    <constraint firstItem="LfZ-AT-IFw" firstAttribute="top" secondItem="7HA-bt-PWk" secondAttribute="top" id="dMC-ro-3fk"/>
+                                </constraints>
+                            </view>
+                            <visualEffectView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lz-6U-SCH">
+                                <rect key="frame" x="-1" y="0.0" width="379" height="807"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CWD-nk-KEv">
+                                    <rect key="frame" x="0.0" y="0.0" width="379" height="807"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-Ve-4es">
+                                <rect key="frame" x="46" y="204" width="293" height="419"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL4-1" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-bg-xEu">
+                                        <rect key="frame" x="121" y="13" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfd-2V-qC4">
+                                        <rect key="frame" x="61" y="185" width="171" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="nickname"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Critical!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBS-fD-7fy" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                        <rect key="frame" x="13" y="77" width="265" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="morphingDuration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="morphingProgress">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="morphingCharacterDelay">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlR-Sk-eSe" customClass="AKLabel" customModule="AKLabel">
+                                        <rect key="frame" x="14" y="113" width="265" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" name="Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0v8-jr-Bro">
+                                        <rect key="frame" x="61" y="312" width="171" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipButtonPressed:" destination="ajZ-KS-Lvg" eventType="touchUpInside" id="vW7-Yj-coN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tP0-9j-HSd">
+                                        <rect key="frame" x="14" y="345" width="265" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="LETS GO ! ">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="letsGoButtonTouched:" destination="ajZ-KS-Lvg" eventType="touchUpInside" id="k5M-Oc-fmf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="top" secondItem="Jxc-wo-Kkd" secondAttribute="top" id="8MX-br-kde"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="top" secondItem="3lz-6U-SCH" secondAttribute="top" id="8VW-2h-fAi"/>
+                            <constraint firstItem="VsS-Y6-I18" firstAttribute="trailing" secondItem="Gc0-Ve-4es" secondAttribute="trailing" constant="36" id="9xk-kb-MW5"/>
+                            <constraint firstItem="Gc0-Ve-4es" firstAttribute="leading" secondItem="VsS-Y6-I18" secondAttribute="leading" constant="46" id="H0M-Zj-ilO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3lz-6U-SCH" secondAttribute="trailing" constant="-19" id="Kzv-oe-QUt"/>
+                            <constraint firstItem="VsS-Y6-I18" firstAttribute="bottom" secondItem="Gc0-Ve-4es" secondAttribute="bottom" constant="155" id="ORP-sT-plO"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="leading" secondItem="Jxc-wo-Kkd" secondAttribute="leading" id="RZU-6G-UxC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7HA-bt-PWk" secondAttribute="bottom" constant="-29" id="ZL7-XO-5KF"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="leading" secondItem="3lz-6U-SCH" secondAttribute="leading" constant="1" id="bKV-So-rEf"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="bottom" secondItem="3lz-6U-SCH" secondAttribute="bottom" id="bsV-QJ-Xh7"/>
+                            <constraint firstAttribute="trailing" secondItem="7HA-bt-PWk" secondAttribute="trailing" id="cEd-OD-hEx"/>
+                            <constraint firstItem="Gc0-Ve-4es" firstAttribute="top" secondItem="VsS-Y6-I18" secondAttribute="top" constant="160" id="uFc-WV-LOn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VsS-Y6-I18"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Vfd-2V-qC4" id="kjV-Ue-f1a"/>
+                        <outlet property="subTitleLabelLabel" destination="hlR-Sk-eSe" id="ZaV-iv-vjZ"/>
+                        <outlet property="welcomeLabel" destination="MBS-fD-7fy" id="qeO-fD-NXq"/>
+                        <segue destination="Bca-mr-g7w" kind="show" identifier="mainViewSegue" id="adz-Q4-Wjk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tep-Bc-VtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3663.1999999999998" y="-800.2463054187192"/>
         </scene>
     </scenes>
     <resources>
         <image name="BG-Smoke" width="611" height="1200"/>
         <image name="CRITICAL1.ekg" width="396" height="396.239990234375"/>
+        <image name="CRITICAL4-1" width="427.67999267578125" height="425"/>
         <image name="Critical.with.EKG" width="299" height="173"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.56000000238418579" green="0.55000001192092896" blue="0.56000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Grenadine">
             <color red="0.875" green="0.24699999392032623" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
