@@ -281,7 +281,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMf-Mr-g8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2900" y="-800"/>
+            <point key="canvasLocation" x="-2985" y="-800"/>
         </scene>
         <!--OnboardingVC-->
         <scene sceneID="P3e-uN-MXU">
@@ -404,11 +404,12 @@
                         <outlet property="subTitleLabelLabel" destination="hlR-Sk-eSe" id="ZaV-iv-vjZ"/>
                         <outlet property="welcomeLabel" destination="MBS-fD-7fy" id="qeO-fD-NXq"/>
                         <segue destination="Bca-mr-g7w" kind="show" identifier="mainViewSegue" id="adz-Q4-Wjk"/>
+                        <segue destination="Bca-mr-g7w" kind="show" identifier="mainViewSegueSkip" id="Qcd-CX-09r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tep-Bc-VtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3663.1999999999998" y="-800.2463054187192"/>
+            <point key="canvasLocation" x="-3745" y="-800"/>
         </scene>
     </scenes>
     <resources>
@@ -426,5 +427,8 @@
             <color red="0.875" green="0.24699999392032623" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="adz-Q4-Wjk"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

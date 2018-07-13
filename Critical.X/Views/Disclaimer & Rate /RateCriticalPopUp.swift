@@ -8,16 +8,22 @@
 
 import UIKit
 import MessageUI
+import StoreKit
 
 
-class RateCriticalPopUp: UIViewController {
 
-    @IBOutlet weak var popUpView: UIView!
+
+class RateCriticalPopUp: UIViewController, MFMailComposeViewControllerDelegate {
     
+    
+    
+    
+    @IBOutlet weak var popUpView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         
         /// Rounds the corners 15 pixels of the UIView named: popUpView
 //        popUpView.clipsToBounds = true
@@ -36,50 +42,47 @@ class RateCriticalPopUp: UIViewController {
         
         dismiss(animated: true, completion: nil)
         
+        /// Rating pops up to rate the app.
+        if #available( iOS 10.3,*){
+            SKStoreReviewController.requestReview()
+        }
     }
     @IBAction func sendEmailFeedback(_ sender: Any) {
         
-        let mailComposeViewController = configuredMailComposeViewController()
-        if MFMailComposeViewController.canSendMail() {
-            self.present(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            self.showSendMailErrorAlert()
-        }
-    }
-    
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
-        
-        mailComposerVC.setToRecipients(["Criticalusa@gmail.com.com"])
-        mailComposerVC.setSubject("Critical -X Feedback for IOS")
-        mailComposerVC.setMessageBody("Hi, Great app.I would love to offer some constructive feedback to improve the functionality.", isHTML: false)
-        
-        return mailComposerVC
-    }
-    
-    func showSendMailErrorAlert() {
-        
-        let sendMailErrorAlert = UIAlertController(title:"Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", preferredStyle: UIAlertControllerStyle.alert)
-        sendMailErrorAlert.addAction(UIAlertAction(title: "Got it", style: UIAlertActionStyle.default, handler: nil))
-        self.present(sendMailErrorAlert,animated: true, completion: nil)
-        
-    
-       
-    }
-    
-    // MARK: MFMailComposeViewControllerDelegate Method
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-    /*
-    // MARK: - Navigation
+        sendEmail()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
+            mail.setToRecipients(["criticalusa@gmail.com"])
+            mail.setSubject("Critical -X Feedback for IOS")
+            mail.setMessageBody("<p>Hi, Great app.I would love to offer some constructive feedback to improve the functionality.</p>", isHTML: true)
+            
+           
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+        }
+      
+        }
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        self.dismiss(animated: true, completion: nil)
+        
+        // After the email view closes out we get a Thank you alert view.
+        SCLAlertView().showTitle("Thank you!",
+                                 subTitle: "Your message was sent to the Critical Team!",
+                                 timeout: nil,
+                                 completeText: "Done",
+                                 style: .success,
+                                 colorStyle: 0xD93829,//Critical Red
+                                 colorTextButton: 0xFFFFFF, // White color
+                                 circleIconImage: UIImage.init(named: "CRITICAL1.ekg"),
+                                 animationStyle: .topToBottom)
+        
+    }
+    
 
 }

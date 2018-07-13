@@ -8,7 +8,20 @@
 
 import UIKit
 
+extension UIApplication {
+    class func isFirstLaunch() -> Bool {
+        if UserDefaults.standard.bool(forKey: "name") {
+            UserDefaults.standard.set(true, forKey: "name")
+            UserDefaults.standard.synchronize()
+            return true
+        }
+        return false
+    }
+}
+
 @UIApplicationMain
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -18,11 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-    
+        UserDefaults.standard.value(forKey: "APP_OPENED_COUNT")
+        
         UINavigationBar.appearance().tintColor = UIColor.white //your desired color here
 
         // Create the window for the onboarding screen
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        
         // Here we say what story board we are coming from.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -30,16 +45,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var vc: UIViewController
         
         // Conditional to set the name typed in and also to show it for the first time when the app is launched.
-        if(UserDefaults.standard.value(forKey: "name") as? String) == nil {
+        if (UserDefaults.standard.value(forKey: "name") as? String) == nil {
             
+            print("Username was entered- appDelegate")
             // show the onboarding screen, with the SB ID thats declared in the ViewController
             vc = storyboard.instantiateViewController(withIdentifier: "obBoardingVC")
         } else {
             // show the main menu screen
             vc = storyboard.instantiateInitialViewController()!
+            print("Username was left blank - appDelegate")
 
+            //vc = storyboard.instantiateViewController(withIdentifier: "obBoardingVC")
+            
         }
-        
         
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

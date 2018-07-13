@@ -9,6 +9,7 @@
 import UIKit
 import LTMorphingLabel
 
+var username = UserDefaults.standard.value(forKey: "name")
 
 
 extension String {
@@ -68,7 +69,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     var mainMenuDetail = [String]()
     var cellImages = [String]()
     var storyBoardID = [String]()
-    var noName = String()
+    var noName = ""
     
     
     // Function to get the current time.
@@ -82,10 +83,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         let dateFormatter = DateFormatter()
         
         // Create new variable to store the day of the week
-        var dayOfTheWeek = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: Date())]
+        let dayOfTheWeek = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: Date())]
         
         switch dayOfTheWeek {
-        case "Thursday":
+        case "Wednesday":
             print("Its Hump Day")
         default:
             break
@@ -100,6 +101,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         let randomAfternoon = String.randomAfternoon()
         let randomEvening = String.randomEvening()
         
+    
         
         // Switch on the hours that when its when its a certain time frame, we will display the greeting.
         switch hours {
@@ -107,14 +109,15 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Afternoon \(randomMorning), Jadie."
             
             //Create an array of different greetings.
-            var greetings: Array = ["Hi", "Cheers!", "Good Morning", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
             
             // Convert the index at random into the string
             let displayRandomGreeting = greetings[index]
-            
+            let formalDisplayRandomGreeting = greetingFormal [index]
             
             //gets the name from the initial login and stores it.""
             var username = UserDefaults.standard.value(forKey: "name")
@@ -123,15 +126,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             // Conditional
             if username == nil {
                 username = noName
+                //label.text = "Good Morning! \(randomAfternoon)"
+                let displayRandomGreeting = greetings.randomElement()
+                label.text = "\(displayRandomGreeting!) \(randomMorning)"
+                print("There was no username Entered section 5-12")
                 
-                
-                //label.text = "Good Morning! \(randomMorning)"
-                if let displayRandomGreeting = greetings.randomElement() {
-                  
-                    label.text = "\(displayRandomGreeting) \(randomMorning)"
-                }
             } else if username != nil {
-                label.text = "Good Morning \(randomMorning), \(username!)!"
+                label.text = "\(formalDisplayRandomGreeting) \(randomMorning), \(username!)!"
+                print("Name was entered section 5-12")
             }
             
             print("Today is \(day)")
@@ -143,12 +145,15 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Cheers!", "Good Day", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            
             // Convert the index at random into the string
             let displayRandomGreeting = greetings[index]
-            
+            let formalDisplayRandomGreeting = greetingFormal [index]
             
             //gets the name from the initial login and stores it.""
             var username = UserDefaults.standard.value(forKey: "name")
@@ -156,13 +161,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             if username == nil {
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
-                if let displayRandomGreeting = greetings.randomElement() {
-                    label.text = "\(displayRandomGreeting) \(randomMorning)"
-                }
+                 let displayRandomGreeting = greetings.randomElement()
+                    label.text = "\(displayRandomGreeting!) \(randomMorning)"
+                print("There was no username Entered 12-18 hr section")
             } else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(displayRandomGreeting) \(randomAfternoon), \(username!)!"
-                
+                label.text = "\(formalDisplayRandomGreeting) \(randomAfternoon), \(username!)!"
+                print("A Name was entered 12-18 hrs section")
+
             }
             
         
@@ -172,13 +178,23 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         case 18..<24:
             //label.text = "Good Evening \(randomEvening), Jadie."
             
+            switch dayOfTheWeek {
+            case "Thursday":
+                print("Its Hump Day")
+            default:
+                break
+            }
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Cheers!", "Good Evening", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            
+            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
             //Get the index at each array at RANDOM
+            
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            
             // Convert the index at random into the string
             let displayRandomGreeting = greetings[index]
-            
+            let formalDisplayRandomGreeting = greetingFormal [index]
             
             //gets the name from the initial login and stores it.""
             var username = UserDefaults.standard.value(forKey: "name")
@@ -187,25 +203,37 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
                 if let displayRandomGreeting = greetings.randomElement() {
-                    label.text = "\(displayRandomGreeting) \(randomEvening)"
+                label.text = "\(displayRandomGreeting) \(randomMorning)"
+                print("There was no username Entered 18-24 hr section")
                 }
-            } else if username != nil {
-                //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(displayRandomGreeting) \(randomEvening), \(username!)!"
-                
             }
-            
+            if username != nil {
+                //label.text = "Good Morning \(randomAfternoon), \(username!)!"
+                let displayRandomGreeting = greetings.randomElement()
+                    label.text = "\(formalDisplayRandomGreeting) \(randomEvening), \(username!)!"
+                    
+                
+                print("A Name was entered 18-24 hrs section")
+                print(username)
+            }
+
             
         //If the time is between midnight and 5am
-        case 24..<05:
+        default:
             //label.text = "Good Evening \(randomEvening), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Cheers!", "Good Evening", "Welcome Back!", "Happy \(dayOfTheWeek)"]
+            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+           
+            
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
+            
+            
             // Convert the index at random into the string
             let displayRandomGreeting = greetings[index]
+            let formalDisplayRandomGreeting = greetingFormal [index]
             
             
             //gets the name from the initial login and stores it.""
@@ -219,12 +247,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 }
             } else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(displayRandomGreeting) \(randomEvening), \(username!)!"
+                label.text = "\(formalDisplayRandomGreeting) \(randomEvening), \(username!)!"
                 
             }
             
-        default:
-            break
+        
         }
         
         print("Current time is", hours,":", minutes,":", seconds)
