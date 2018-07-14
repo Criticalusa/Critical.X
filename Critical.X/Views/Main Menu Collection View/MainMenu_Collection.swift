@@ -11,6 +11,14 @@ import LTMorphingLabel
 
 var username = UserDefaults.standard.value(forKey: "name")
 
+extension Date {
+    func dayOfWeek() -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
+        return dateFormatter.string(from: self).capitalized
+        // or use capitalized(with: locale) if you want
+    }
+}
 
 extension String {
     
@@ -83,18 +91,12 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         let dateFormatter = DateFormatter()
         
         // Create new variable to store the day of the week
-        let dayOfTheWeek = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: Date())]
+        // Gets the day of the week from the extension above
+        let dayOfTheWeek = Date().dayOfWeek()!
         
-        switch dayOfTheWeek {
-        case "Wednesday":
-            print("Its Hump Day")
-        default:
-            break
-        }
-        
+       
         // Print the day of the week
-        print("Today is" + dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: Date())])
-        
+        print ("Today is \(dayOfTheWeek)")
         
         // Setting a new variable to the function in the extension above.
         let randomMorning = String.randomMorning()
@@ -109,8 +111,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Afternoon \(randomMorning), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetings: Array = ["Hi!", "Cheers!", "Good Morning!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -145,8 +147,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetings: Array = ["Hi!", "Cheers!", "Good Afternoon!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -178,12 +180,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         case 18..<24:
             //label.text = "Good Evening \(randomEvening), Jadie."
             
-            switch dayOfTheWeek {
-            case "Thursday":
-                print("Its Hump Day")
-            default:
-                break
-            }
+           
             //Create an array of different greetings.
             
             let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
@@ -275,15 +272,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         label.text = "Hello, Welcome to Critical"
         label.morphingEffect = .anvil
         view.addSubview(label)
-        //        let style1 = Styles.color("darkGray").font(15)
-        //        label1 = LTMorphingLabel()
-        //        label1.text = "  "
-        //        label1.makeCons { (make) in
-        //            make.left.top.equal(lab).left.bottom.offset(0)
-        //            make.width.height.equal(lab)
-        //        }
-        //        label1.morphingEffect = .anvil
-        //        view.addSubview(lab1)
+      
     }
     
     // Loads the animation once the view appears
@@ -299,7 +288,6 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         // Clear the animation label once the view dissappears.
         label.text = ""
-        
     }
     
     override func viewDidLoad() {

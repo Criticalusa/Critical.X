@@ -24,12 +24,14 @@ class EkgMenuTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    //Animates the label once the view appears
     override func viewDidAppear(_ animated: Bool) {
         
         crtiticalEkgSubTitle.animate(text: "ACLS and EKG Interpretations" , duration: 1, completion: nil)
 
     }
     
+    //Clears the subTitle once the view dissappears to reset
     override func viewDidDisappear(_ animated: Bool) {
     
         crtiticalEkgSubTitle.text = ""
