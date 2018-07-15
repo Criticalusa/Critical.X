@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 public extension UIView {
     
     public enum ViewSide {
@@ -160,7 +162,10 @@ public extension UIView {
                                                        height: self.frame.size.height - topOffset - bottomOffset), color: color)
             border.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
             self.addSubview(border)
+            
+            
         }
+        
     }
     
     //////////
@@ -180,5 +185,6 @@ public extension UIView {
         border.backgroundColor = color
         return border
     }
+    
     
 }

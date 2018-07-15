@@ -520,7 +520,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpP-Po-mHP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                                 <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-eC-8CS">
+                                    <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-eC-8CS">
                                         <rect key="frame" x="0.0" y="237" width="375" height="1063"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7yq-Wb-7Wt">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="1063"/>
@@ -580,6 +580,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="OQM-Al-v4i" firstAttribute="trailing" secondItem="IoM-2P-65M" secondAttribute="trailing" constant="4" id="0eg-Kq-CGP"/>
                                                 <constraint firstItem="pTW-ZJ-PBp" firstAttribute="leading" secondItem="WLr-4b-rFd" secondAttribute="leading" id="0kv-Uf-ugz"/>
@@ -608,7 +609,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1063" id="0Xi-gV-Uom"/>
                                         </constraints>
-                                        <blurEffect style="light"/>
+                                        <blurEffect style="extraLight"/>
                                     </visualEffectView>
                                 </subviews>
                                 <constraints>

@@ -249,6 +249,10 @@
 		C4D55DE82014FC78002199DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DE72014FC78002199DA /* CardView.swift */; };
 		C4D55DED201545FB002199DA /* chestTubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D55DEC201545FB002199DA /* chestTubeData.swift */; };
 		C4D709D620FA106900593760 /* StrokeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D709D520FA106900593760 /* StrokeDetail.swift */; };
+		C4D709D820FA5EE100593760 /* Airway.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D709D720FA5EE100593760 /* Airway.storyboard */; };
+		C4D709DC20FA5FD700593760 /* AirwayMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D709DB20FA5FD700593760 /* AirwayMenu.swift */; };
+		C4D709DE20FA667300593760 /* RoundUIView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D709DD20FA667300593760 /* RoundUIView Extension.swift */; };
+		C4D709E020FA6FAE00593760 /* Intubation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D709DF20FA6FAE00593760 /* Intubation.swift */; };
 		C4DF418E1FFD095700AD1229 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF418C1FFD095600AD1229 /* SCLAlertView.swift */; };
 		C4DF418F1FFD095700AD1229 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF418D1FFD095700AD1229 /* SCLExtensions.swift */; };
 		C4EAB61A2091FB1D0073400E /* PharmacologyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4301D2A2091EFC000881193 /* PharmacologyList.swift */; };
@@ -538,6 +542,10 @@
 		C4D55DE72014FC78002199DA /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C4D55DEC201545FB002199DA /* chestTubeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chestTubeData.swift; sourceTree = "<group>"; };
 		C4D709D520FA106900593760 /* StrokeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeDetail.swift; sourceTree = "<group>"; };
+		C4D709D720FA5EE100593760 /* Airway.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Airway.storyboard; sourceTree = "<group>"; };
+		C4D709DB20FA5FD700593760 /* AirwayMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirwayMenu.swift; sourceTree = "<group>"; };
+		C4D709DD20FA667300593760 /* RoundUIView Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundUIView Extension.swift"; sourceTree = "<group>"; };
+		C4D709DF20FA6FAE00593760 /* Intubation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intubation.swift; sourceTree = "<group>"; };
 		C4DF418C1FFD095600AD1229 /* SCLAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		C4DF418D1FFD095700AD1229 /* SCLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		E472C06F94433A8189BAC2BD /* Pods_Critical_XUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Critical_XUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1256,6 +1264,7 @@
 				C4B912AF2000FDA40008B159 /* Custom TextFields */,
 				C4B912B12000FF300008B159 /* PopOver */,
 				C4290B5520F8CE6A0067A828 /* AppStoreReview.swift */,
+				C4D709DD20FA667300593760 /* RoundUIView Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1396,6 +1405,7 @@
 				C436ED7C20027476008ACDC7 /* Ventilator Optimization */,
 				C4B912B4200102BA0008B159 /* WintersFormula */,
 				C44B51F220FA056A00ED5594 /* CriticalPlayground.playground */,
+				C4D709D920FA5EEA00593760 /* Airway */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1521,6 +1531,24 @@
 				C4D55DE72014FC78002199DA /* CardView.swift */,
 			);
 			path = "Card View";
+			sourceTree = "<group>";
+		};
+		C4D709D920FA5EEA00593760 /* Airway */ = {
+			isa = PBXGroup;
+			children = (
+				C4D709DA20FA5EF700593760 /* Airway Storyboard */,
+				C4D709DB20FA5FD700593760 /* AirwayMenu.swift */,
+			);
+			path = Airway;
+			sourceTree = "<group>";
+		};
+		C4D709DA20FA5EF700593760 /* Airway Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C4D709D720FA5EE100593760 /* Airway.storyboard */,
+				C4D709DF20FA6FAE00593760 /* Intubation.swift */,
+			);
+			path = "Airway Storyboard";
 			sourceTree = "<group>";
 		};
 		C4EAB61D20923CB70073400E /* Clinical Pharmacology */ = {
@@ -1797,6 +1825,7 @@
 				C430D2D020EE98B100A99985 /* BicarbDeficit.storyboard in Resources */,
 				C418AC51200BAB07001EBB04 /* bye.wav in Resources */,
 				C4301D2E2091EFF600881193 /* Pharmacology.plist in Resources */,
+				C4D709D820FA5EE100593760 /* Airway.storyboard in Resources */,
 				C418AC5F200BAB07001EBB04 /* excuseMe.wav in Resources */,
 				C415BDCC20EE6654003A2406 /* FreeWaterDeficit.storyboard in Resources */,
 			);
@@ -1993,6 +2022,7 @@
 				C4A7775F20095EA3002EEC86 /* FeNa.swift in Sources */,
 				C42F41831FF90E2B003BE489 /* IdealBWDataView.swift in Sources */,
 				C4408086201875E500D444BC /* IABPVideoPlayer.swift in Sources */,
+				C4D709DE20FA667300593760 /* RoundUIView Extension.swift in Sources */,
 				C4C9AADB20F4353200510823 /* VentManagementTVC.swift in Sources */,
 				C4278C37203F604C003ABFF8 /* StrokeCollectionMenu.swift in Sources */,
 				C492B90F201AE8BE0042CE20 /* RSISetting.swift in Sources */,
@@ -2082,11 +2112,13 @@
 				C4EAB61C2091FB290073400E /* PharmacologyCell.swift in Sources */,
 				C492B90C201AE8BE0042CE20 /* RSIProcess.swift in Sources */,
 				C4D4DF7C20631C7500A384BD /* DripCell.swift in Sources */,
+				C4D709DC20FA5FD700593760 /* AirwayMenu.swift in Sources */,
 				C4D4DF5B2062C83200A384BD /* DetailViewController.swift in Sources */,
 				C4D55DE82014FC78002199DA /* CardView.swift in Sources */,
 				C4278C3B203F605E003ABFF8 /* Stroke.swift in Sources */,
 				C4C25EF61FF9099600C5CD42 /* StackElementViewController.swift in Sources */,
 				C4C25F161FF9099600C5CD42 /* PedsViewController.swift in Sources */,
+				C4D709E020FA6FAE00593760 /* Intubation.swift in Sources */,
 				C41BD05920EF8C920031C9CD /* MenMenuCollectionViewCell.swift in Sources */,
 				C492B910201AE8BE0042CE20 /* RSI_Additional.swift in Sources */,
 				C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */,
