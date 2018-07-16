@@ -20,13 +20,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf1-gJ-WbE">
-                                <rect key="frame" x="16" y="66" width="343" height="60"/>
+                                <rect key="frame" x="16" y="77" width="343" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="klB-Hv-fli"/>
+                                    <constraint firstAttribute="height" constant="49" id="qJu-Ad-XLM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airway Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUf-0H-8Mm" customClass="AKLabel" customModule="AKLabel">
-                                <rect key="frame" x="16" y="142" width="343" height="36"/>
+                                <rect key="frame" x="16" y="126" width="343" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="PXW-f8-LIM"/>
+                                    <constraint firstAttribute="width" constant="343" id="WUZ-6Q-Pdb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="Turquoise"/>
                                 <nil key="highlightedColor"/>
@@ -34,80 +42,96 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bld-wG-ZyV">
                                 <rect key="frame" x="16" y="394" width="343" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Laryngeal Mask Airway" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHE-ff-hpB">
-                                        <rect key="frame" x="8" y="14" width="324" height="20"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" name="Clouds"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREDICTORS OF A DIFFICULT AIRWAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV2-iS-Aht">
-                                        <rect key="frame" x="8" y="63" width="327" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" name="Clouds"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lemon, Moans, Rods, Short" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flm-PL-nFx">
-                                        <rect key="frame" x="8" y="103" width="324" height="14"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" name="Amber"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFc-xf-VuT">
-                                        <rect key="frame" x="10" y="43" width="322" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemon, Moans, Rods, Short" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flm-PL-nFx">
+                                        <rect key="frame" x="8" y="118" width="324" height="14"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="5UJ-oG-ZiW"/>
+                                            <constraint firstAttribute="width" constant="324" id="nxM-X9-ty9"/>
+                                            <constraint firstAttribute="height" constant="14" id="pR4-nn-q7W"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="Amber"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFc-xf-VuT">
+                                        <rect key="frame" x="10" y="43" width="322" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="F7o-Qc-NQn"/>
+                                            <constraint firstAttribute="width" constant="322" id="YMP-4e-wMn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="Amber"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY8-yg-2FA">
+                                        <rect key="frame" x="17" y="8" width="309" height="37"/>
+                                        <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="0.51498339370000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="309" id="Mq2-EM-BCj"/>
+                                            <constraint firstAttribute="height" constant="37" id="bIt-3z-dSx"/>
+                                        </constraints>
+                                        <state key="normal" title="LARYNGEAL MASK AIRWAY">
+                                            <color key="titleColor" name="Clouds"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSL-TU-KcI">
+                                        <rect key="frame" x="17" y="72" width="309" height="37"/>
+                                        <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="0.51498339370000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="309" id="Hw1-fP-C10"/>
+                                            <constraint firstAttribute="height" constant="37" id="wOv-af-ofK"/>
+                                        </constraints>
+                                        <state key="normal" title="PREDICTORS OF A DIFFICULT AIRWAY">
+                                            <color key="titleColor" name="Clouds"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="CHE-ff-hpB" firstAttribute="leading" secondItem="bld-wG-ZyV" secondAttribute="leadingMargin" id="40K-ZI-1hD"/>
-                                    <constraint firstItem="yFc-xf-VuT" firstAttribute="centerX" secondItem="mV2-iS-Aht" secondAttribute="centerX" id="4nQ-da-s3U"/>
-                                    <constraint firstItem="flm-PL-nFx" firstAttribute="top" secondItem="mV2-iS-Aht" secondAttribute="bottom" constant="6" id="MKe-h5-Eix"/>
-                                    <constraint firstItem="mV2-iS-Aht" firstAttribute="top" secondItem="CHE-ff-hpB" secondAttribute="bottom" constant="29" id="VyX-jd-W89"/>
-                                    <constraint firstItem="yFc-xf-VuT" firstAttribute="trailing" secondItem="flm-PL-nFx" secondAttribute="trailing" id="Z25-uw-VPM"/>
-                                    <constraint firstItem="CHE-ff-hpB" firstAttribute="trailing" secondItem="yFc-xf-VuT" secondAttribute="trailing" id="aSg-wX-hXI"/>
-                                    <constraint firstItem="CHE-ff-hpB" firstAttribute="top" secondItem="bld-wG-ZyV" secondAttribute="top" constant="14" id="eM3-Lb-Xcq"/>
-                                    <constraint firstItem="yFc-xf-VuT" firstAttribute="leading" secondItem="bld-wG-ZyV" secondAttribute="leading" constant="10" id="gxc-cm-glf"/>
-                                    <constraint firstItem="CHE-ff-hpB" firstAttribute="leading" secondItem="mV2-iS-Aht" secondAttribute="leading" id="qYu-Un-RSC"/>
-                                    <constraint firstItem="mV2-iS-Aht" firstAttribute="trailing" secondItem="bld-wG-ZyV" secondAttribute="trailingMargin" id="r1e-Wo-tgF"/>
-                                    <constraint firstItem="mV2-iS-Aht" firstAttribute="leading" secondItem="flm-PL-nFx" secondAttribute="leading" id="ref-Qa-aLQ"/>
-                                    <constraint firstItem="yFc-xf-VuT" firstAttribute="top" secondItem="CHE-ff-hpB" secondAttribute="bottom" constant="9" id="uze-HL-Ak9"/>
-                                    <constraint firstItem="flm-PL-nFx" firstAttribute="top" secondItem="yFc-xf-VuT" secondAttribute="bottom" constant="39" id="vZa-f5-OD2"/>
+                                    <constraint firstItem="yFc-xf-VuT" firstAttribute="top" secondItem="bld-wG-ZyV" secondAttribute="topMargin" constant="35" id="0GM-dl-vts"/>
+                                    <constraint firstAttribute="height" constant="150" id="50f-MB-lRB"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="gY8-yg-2FA" secondAttribute="trailing" constant="9" id="AMJ-fc-YpC"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="yFc-xf-VuT" secondAttribute="trailing" constant="3" id="BvJ-41-7uz"/>
+                                    <constraint firstItem="yFc-xf-VuT" firstAttribute="leading" secondItem="bld-wG-ZyV" secondAttribute="leadingMargin" constant="2" id="Lp8-gQ-Y6v"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="flm-PL-nFx" secondAttribute="trailing" constant="3" id="R5W-kE-4Oy"/>
+                                    <constraint firstItem="bSL-TU-KcI" firstAttribute="top" secondItem="gY8-yg-2FA" secondAttribute="bottom" constant="27" id="T8O-uV-jOl"/>
+                                    <constraint firstAttribute="width" constant="343" id="Vet-9P-Wth"/>
+                                    <constraint firstItem="flm-PL-nFx" firstAttribute="leading" secondItem="bld-wG-ZyV" secondAttribute="leadingMargin" id="XlV-IB-jcD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="bSL-TU-KcI" secondAttribute="trailing" constant="9" id="ZTk-KD-u4n"/>
+                                    <constraint firstItem="gY8-yg-2FA" firstAttribute="leading" secondItem="bld-wG-ZyV" secondAttribute="leadingMargin" constant="9" id="eD1-9q-JZZ"/>
+                                    <constraint firstItem="flm-PL-nFx" firstAttribute="top" secondItem="bSL-TU-KcI" secondAttribute="bottom" constant="9" id="fZq-g8-6Ku"/>
+                                    <constraint firstItem="bSL-TU-KcI" firstAttribute="leading" secondItem="bld-wG-ZyV" secondAttribute="leadingMargin" constant="9" id="lbh-3o-gle"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="flm-PL-nFx" secondAttribute="bottom" constant="10" id="mfU-02-rJB"/>
+                                    <constraint firstItem="bSL-TU-KcI" firstAttribute="top" secondItem="yFc-xf-VuT" secondAttribute="bottom" constant="8" id="rvS-JB-KzY"/>
+                                    <constraint firstItem="gY8-yg-2FA" firstAttribute="top" secondItem="bld-wG-ZyV" secondAttribute="topMargin" id="tRS-26-T58"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gq0-Qg-gp2">
                                 <rect key="frame" x="16" y="209" width="343" height="166"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One pass laryngoscopy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxy-jW-jpt">
-                                        <rect key="frame" x="16" y="43" width="309" height="21"/>
+                                        <rect key="frame" x="16" y="51" width="309" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="ytm-aD-r2a"/>
+                                            <constraint firstAttribute="height" constant="21" id="620-sg-tmd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="Amber"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING LT AIRWAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-Fa-HxS">
-                                        <rect key="frame" x="16" y="83" width="309" height="20"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" name="Clouds"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superglottic Airway Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-mh-zcH">
-                                        <rect key="frame" x="16" y="112" width="309" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Superglottic Airway Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-mh-zcH">
+                                        <rect key="frame" x="16" y="125" width="309" height="27"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="4Ks-cq-uIy"/>
+                                            <constraint firstAttribute="height" constant="27" id="RJv-tj-Jzy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="Amber"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-8o-1MS">
-                                        <rect key="frame" x="16" y="13" width="309" height="30"/>
+                                        <rect key="frame" x="16" y="13" width="309" height="37"/>
+                                        <color key="backgroundColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="0.51498339371980673" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="8Sr-Kb-xoh"/>
+                                        </constraints>
                                         <state key="normal" title="INTUBATION">
                                             <color key="titleColor" name="Clouds"/>
                                         </state>
@@ -115,46 +139,53 @@
                                             <action selector="pushToIntubationScreen:" destination="PoR-SO-Szc" eventType="touchUpInside" id="4AD-ua-Kab"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-7E-ji0">
+                                        <rect key="frame" x="16" y="88" width="309" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="0.51498339370000001" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="KING LT AIRWAY">
+                                            <color key="titleColor" name="Clouds"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="Wya-Fa-HxS" firstAttribute="leading" secondItem="cVf-mh-zcH" secondAttribute="leading" id="BP3-fp-RM7"/>
-                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="leading" secondItem="gq0-Qg-gp2" secondAttribute="leading" constant="16" id="GaY-dI-E5u"/>
-                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="leading" secondItem="Gxy-jW-jpt" secondAttribute="leading" id="Gte-23-dBc"/>
-                                    <constraint firstItem="Gxy-jW-jpt" firstAttribute="leading" secondItem="Wya-Fa-HxS" secondAttribute="leading" id="OOG-ck-ATT"/>
-                                    <constraint firstItem="Gxy-jW-jpt" firstAttribute="top" secondItem="Nyv-8o-1MS" secondAttribute="bottom" id="PSL-hd-yom"/>
-                                    <constraint firstItem="cVf-mh-zcH" firstAttribute="top" secondItem="Wya-Fa-HxS" secondAttribute="bottom" constant="9" id="YB6-Eg-4b3"/>
-                                    <constraint firstAttribute="width" constant="343" id="Zup-fC-5vQ"/>
-                                    <constraint firstItem="Wya-Fa-HxS" firstAttribute="trailing" secondItem="cVf-mh-zcH" secondAttribute="trailing" id="feZ-IP-4dZ"/>
-                                    <constraint firstItem="Wya-Fa-HxS" firstAttribute="top" secondItem="Gxy-jW-jpt" secondAttribute="bottom" constant="19" id="kz5-dK-Jc9"/>
-                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="top" secondItem="gq0-Qg-gp2" secondAttribute="top" constant="13" id="n28-G8-Y15"/>
-                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="trailing" secondItem="Gxy-jW-jpt" secondAttribute="trailing" id="qKa-8B-1Lh"/>
-                                    <constraint firstItem="Gxy-jW-jpt" firstAttribute="trailing" secondItem="Wya-Fa-HxS" secondAttribute="trailing" id="vSg-az-MkJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nyv-8o-1MS" secondAttribute="trailing" constant="18" id="yRw-Gk-obt"/>
-                                    <constraint firstAttribute="height" constant="166" id="zPs-UD-uhJ"/>
+                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="top" secondItem="gq0-Qg-gp2" secondAttribute="top" constant="13" id="6mQ-54-krf"/>
+                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="leading" secondItem="Gxy-jW-jpt" secondAttribute="leading" id="JS7-pa-3nq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nyv-8o-1MS" secondAttribute="trailing" constant="18" id="Nfd-Vg-CHM"/>
+                                    <constraint firstAttribute="width" constant="343" id="ZIO-Vf-WQY"/>
+                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="leading" secondItem="gq0-Qg-gp2" secondAttribute="leading" constant="16" id="bha-Pv-vWc"/>
+                                    <constraint firstItem="Gxy-jW-jpt" firstAttribute="top" secondItem="Nyv-8o-1MS" secondAttribute="bottom" constant="1" id="mLI-ig-vMO"/>
+                                    <constraint firstAttribute="bottom" secondItem="cVf-mh-zcH" secondAttribute="bottom" constant="14" id="qbM-aG-cDv"/>
+                                    <constraint firstItem="Nyv-8o-1MS" firstAttribute="trailing" secondItem="Gxy-jW-jpt" secondAttribute="trailing" id="uNo-4f-LWl"/>
+                                    <constraint firstAttribute="height" constant="166" id="xQe-ck-Dnc"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="top" secondItem="CV3-CL-Atg" secondAttribute="top" constant="22" id="AlR-pw-Gf3"/>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="leading" secondItem="LUf-0H-8Mm" secondAttribute="leading" id="DXc-yB-omf"/>
-                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="gq0-Qg-gp2" secondAttribute="trailing" constant="16" id="GNt-fr-eZ8"/>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="leading" secondItem="hds-mZ-DjJ" secondAttribute="leadingMargin" id="NQO-kl-590"/>
-                            <constraint firstItem="LUf-0H-8Mm" firstAttribute="top" secondItem="CV3-CL-Atg" secondAttribute="top" constant="98" id="RYX-64-m8o"/>
-                            <constraint firstItem="bld-wG-ZyV" firstAttribute="top" secondItem="gq0-Qg-gp2" secondAttribute="bottom" constant="19" id="Sfs-g5-6C9"/>
-                            <constraint firstItem="bld-wG-ZyV" firstAttribute="leading" secondItem="gq0-Qg-gp2" secondAttribute="leading" id="eF3-HS-4fw"/>
-                            <constraint firstItem="CV3-CL-Atg" firstAttribute="bottom" secondItem="bld-wG-ZyV" secondAttribute="bottom" constant="234" id="exy-62-Akc"/>
-                            <constraint firstItem="gq0-Qg-gp2" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="kE8-7t-I8T"/>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="trailing" secondItem="LUf-0H-8Mm" secondAttribute="trailing" id="qbE-HJ-xft"/>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="trailing" secondItem="hds-mZ-DjJ" secondAttribute="trailingMargin" id="rvN-2h-hK7"/>
-                            <constraint firstItem="gq0-Qg-gp2" firstAttribute="top" secondItem="LUf-0H-8Mm" secondAttribute="bottom" constant="31" id="sRS-xv-pJu"/>
-                            <constraint firstItem="bld-wG-ZyV" firstAttribute="trailing" secondItem="gq0-Qg-gp2" secondAttribute="trailing" id="whH-ui-HkM"/>
+                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="top" secondItem="CV3-CL-Atg" secondAttribute="top" constant="33" id="0oh-5U-ysz"/>
+                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="bld-wG-ZyV" secondAttribute="trailing" constant="16" id="6lo-cc-qfL"/>
+                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="gq0-Qg-gp2" secondAttribute="trailing" constant="16" id="ITE-dn-nto"/>
+                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="LUf-0H-8Mm" secondAttribute="trailing" constant="16" id="JJ4-xb-GEs"/>
+                            <constraint firstItem="LUf-0H-8Mm" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="R0K-gT-00Y"/>
+                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="Rr3-Cs-LCX"/>
+                            <constraint firstItem="gq0-Qg-gp2" firstAttribute="top" secondItem="LUf-0H-8Mm" secondAttribute="bottom" constant="47" id="XRn-dC-9ag"/>
+                            <constraint firstItem="LUf-0H-8Mm" firstAttribute="top" secondItem="mf1-gJ-WbE" secondAttribute="bottom" id="lqI-t1-Wtl"/>
+                            <constraint firstItem="gq0-Qg-gp2" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="oZ7-5B-Zcq"/>
+                            <constraint firstItem="bld-wG-ZyV" firstAttribute="top" secondItem="gq0-Qg-gp2" secondAttribute="bottom" constant="19" id="sNL-sO-DQe"/>
+                            <constraint firstItem="bld-wG-ZyV" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="sVd-bU-FNS"/>
+                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="mf1-gJ-WbE" secondAttribute="trailing" constant="16" id="tP5-Zl-5Il"/>
+                            <constraint firstItem="CV3-CL-Atg" firstAttribute="bottom" secondItem="bld-wG-ZyV" secondAttribute="bottom" constant="234" id="xSN-pn-yU6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CV3-CL-Atg"/>
                     </view>
                     <connections>
                         <outlet property="subTitleLabel" destination="LUf-0H-8Mm" id="tF9-x7-efm"/>
+                        <outletCollection property="IntubationButtons" destination="Nyv-8o-1MS" collectionClass="NSMutableArray" id="QyQ-nI-3qN"/>
+                        <outletCollection property="IntubationButtons" destination="ZJa-7E-ji0" collectionClass="NSMutableArray" id="pan-gQ-nDp"/>
+                        <outletCollection property="IntubationButtons" destination="gY8-yg-2FA" collectionClass="NSMutableArray" id="Bdk-03-7Dz"/>
+                        <outletCollection property="IntubationButtons" destination="bSL-TU-KcI" collectionClass="NSMutableArray" id="cmg-ch-ctP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Lj-J9-rrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,14 +197,14 @@
             <objects>
                 <viewController storyboardIdentifier="Intubation" title="Airway Main Menu" id="XtT-jV-fdT" customClass="Intubation" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwC-md-Zh4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-hW-y0Z">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMQ-ra-Cif">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2002"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1968"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-Xy-3WU">
                                                 <rect key="frame" x="16" y="53" width="343" height="63"/>
@@ -294,9 +325,12 @@ Look for the airway anatomy.</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-sC-4Zr">
                                                 <rect key="frame" x="21" y="1818" width="338" height="164"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-eb-brU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-eb-brU">
                                                         <rect key="frame" x="8" y="6" width="322" height="144"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="322" id="7LV-U0-hvc"/>
+                                                            <constraint firstAttribute="height" constant="144" id="Ldg-Rz-lJd"/>
+                                                        </constraints>
                                                         <string key="text">Fold blankets. Place the blankets under the neck and upper body until there is a  horizontal alignment between the sternal notch and external auditory meatus. 
 
 Ear to sternal notch as seen below. </string>
@@ -307,24 +341,34 @@ Ear to sternal notch as seen below. </string>
                                                 </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="lxE-eb-brU" firstAttribute="leading" secondItem="nqh-sC-4Zr" secondAttribute="leading" constant="8" id="3lT-IU-xHA"/>
                                                     <constraint firstAttribute="width" constant="338" id="4jZ-ES-huC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lxE-eb-brU" secondAttribute="bottom" constant="14" id="5q1-QN-kxM"/>
+                                                    <constraint firstItem="lxE-eb-brU" firstAttribute="top" secondItem="nqh-sC-4Zr" secondAttribute="top" constant="6" id="aZv-BZ-Slc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lxE-eb-brU" secondAttribute="trailing" constant="8" id="wMN-2U-APf"/>
                                                     <constraint firstAttribute="height" constant="164" id="xJc-7Y-65M"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v98-7q-Szt">
                                                 <rect key="frame" x="16" y="1126" width="351" height="144"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-AU-ELH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-AU-ELH">
                                                         <rect key="frame" x="8" y="15" width="327" height="92"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="92" id="ckx-SY-zap"/>
+                                                            <constraint firstAttribute="width" constant="327" id="ilp-WB-wnk"/>
+                                                        </constraints>
                                                         <string key="text">Once the glottic opening is optimized by the provider, and assistant can maintain pressure at the right location if needed – freeing the operator's right-hand to ultimately placed the endotracheal tube.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Clouds"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sniffing Position - If not in a cervical collar ⏬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-RE-BX8">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sniffing Position - If not in a cervical collar ⏬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-RE-BX8">
                                                         <rect key="frame" x="8" y="120" width="327" height="16"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="m3N-De-L42"/>
+                                                            <constraint firstAttribute="width" constant="327" id="yi3-9i-nij"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                         <color key="textColor" name="Grenadine"/>
                                                         <nil key="highlightedColor"/>
@@ -333,7 +377,14 @@ Ear to sternal notch as seen below. </string>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="351" id="00d-oi-Iua"/>
+                                                    <constraint firstItem="Kqg-AU-ELH" firstAttribute="leading" secondItem="v98-7q-Szt" secondAttribute="leading" constant="8" id="3CG-gP-9nJ"/>
+                                                    <constraint firstItem="1pX-RE-BX8" firstAttribute="leading" secondItem="v98-7q-Szt" secondAttribute="leading" constant="8" id="Eyw-bm-fWz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kqg-AU-ELH" secondAttribute="trailing" constant="16" id="dSj-WD-SLH"/>
+                                                    <constraint firstItem="Kqg-AU-ELH" firstAttribute="top" secondItem="v98-7q-Szt" secondAttribute="top" constant="15" id="jph-Sm-zsX"/>
                                                     <constraint firstAttribute="height" constant="144" id="n9U-u2-mse"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1pX-RE-BX8" secondAttribute="trailing" constant="16" id="qut-kg-aA6"/>
+                                                    <constraint firstItem="1pX-RE-BX8" firstAttribute="top" secondItem="Kqg-AU-ELH" secondAttribute="bottom" constant="13" id="spd-GD-0pO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1pX-RE-BX8" secondAttribute="bottom" constant="8" id="y0E-9s-XHK"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-BP-3Hi">
@@ -394,10 +445,12 @@ Ear to sternal notch as seen below. </string>
                                             <constraint firstItem="DdN-cI-GRg" firstAttribute="top" secondItem="v98-7q-Szt" secondAttribute="bottom" constant="20" id="NYs-Tr-uFY"/>
                                             <constraint firstItem="jCd-KO-gBu" firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailingMargin" id="Ndw-JD-0wS"/>
                                             <constraint firstItem="nqh-sC-4Zr" firstAttribute="top" secondItem="vYK-6i-emv" secondAttribute="bottom" constant="26" id="Nuu-qi-tGk"/>
+                                            <constraint firstAttribute="height" constant="1968" id="Q4x-Xi-e58"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="aMu-rE-wIw" secondAttribute="trailing" constant="8" id="UOJ-JV-ePO"/>
                                             <constraint firstItem="v98-7q-Szt" firstAttribute="top" secondItem="hLm-BP-3Hi" secondAttribute="bottom" constant="16" id="YTO-Ep-cEW"/>
                                             <constraint firstItem="hLm-BP-3Hi" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="26" id="Zdr-Of-zzO"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="nqh-sC-4Zr" secondAttribute="bottom" constant="-22" id="a0q-vZ-F98"/>
+                                            <constraint firstAttribute="width" constant="375" id="aAk-ka-n00"/>
                                             <constraint firstItem="v98-7q-Szt" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="bSl-Am-Sbh"/>
                                             <constraint firstItem="qj2-xW-oaF" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="22" id="dUC-UN-Hsn"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="nqh-sC-4Zr" secondAttribute="trailing" constant="8" id="fvp-vx-eTv"/>
@@ -423,17 +476,269 @@ Ear to sternal notch as seen below. </string>
                                         <rect key="frame" x="19" y="855" width="341" height="212"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="212" id="GdE-rQ-C21"/>
+                                            <constraint firstAttribute="width" constant="341" id="utc-oh-BST"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="212" id="wF8-rC-qbS"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation- neck" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-Gb-n9f">
+                                        <rect key="frame" x="17" y="2000" width="341" height="212"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="212" id="DRq-Qr-UNR"/>
+                                            <constraint firstAttribute="height" constant="212" id="RQc-yd-gYw"/>
+                                            <constraint firstAttribute="width" constant="341" id="UWM-Mo-U2k"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-bP-VP1">
+                                        <rect key="frame" x="19" y="2215" width="339" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EqL-By-lXE"/>
+                                            <constraint firstAttribute="width" constant="339" id="KO9-S5-Ozi"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cIZ-gP-Ss6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" name="Cool Mint"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eL-DV-LOS">
+                                        <rect key="frame" x="19" y="2262" width="338" height="99"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-Ou-5qo">
+                                                <rect key="frame" x="8" y="6" width="322" height="93"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="322" id="9hk-H3-2Ej"/>
+                                                    <constraint firstAttribute="height" constant="93" id="fq0-bK-NON"/>
+                                                </constraints>
+                                                <string key="text">Overextension of the patient's neck is frequently a cause difficulty when intubating. The image below is an example of the  Atlanto- Occipital Extension.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Clouds"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9Yg-Ou-5qo" secondAttribute="bottom" id="1vg-jC-3Il"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Yg-Ou-5qo" secondAttribute="trailing" constant="8" id="Se5-Ei-Kab"/>
+                                            <constraint firstItem="9Yg-Ou-5qo" firstAttribute="leading" secondItem="0eL-DV-LOS" secondAttribute="leading" constant="8" id="VgQ-r7-ELL"/>
+                                            <constraint firstItem="9Yg-Ou-5qo" firstAttribute="top" secondItem="0eL-DV-LOS" secondAttribute="top" constant="6" id="bZc-du-F4K"/>
+                                            <constraint firstAttribute="height" constant="99" id="clD-cC-KF6"/>
+                                            <constraint firstAttribute="width" constant="338" id="sub-UW-8l3"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation _AO flexion" translatesAutoresizingMaskIntoConstraints="NO" id="ZyQ-ac-MYe">
+                                        <rect key="frame" x="17" y="2382" width="341" height="212"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="212" id="Fne-VK-RWg"/>
+                                            <constraint firstAttribute="width" constant="341" id="hzH-uf-2JV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-2V-ppZ">
+                                        <rect key="frame" x="19" y="2597" width="339" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="DA0-s8-poD"/>
+                                            <constraint firstAttribute="width" constant="339" id="fha-yk-mZZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" name="Cool Mint"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10S-Il-bx9">
+                                        <rect key="frame" x="14" y="2647" width="351" height="329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP THREE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrG-vg-kN9">
+                                                <rect key="frame" x="8" y="7" width="327" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="UUD-eG-tpl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Sunflower"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUBE DELIVERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-hy-YoZ">
+                                                <rect key="frame" x="8" y="30" width="327" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Alizarin"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-6A-3tK">
+                                                <rect key="frame" x="8" y="60" width="327" height="261"/>
+                                                <string key="text">Insert the endotracheal tube via the right corner of the mouth (right lateral dental arch) behind the maxilla.
+
+Come up from below the line of sight of the gliding opening and insert the tip of the endotracheal tube above the arytenoid notch.  If the endotracheal tube gets hung up – even after insertion, the tip of the tube can catch on to the tracheal rings. If resistance is felt, turn the endotracheal tube clockwise (right turn) - This lowers the leading edge of the two allowing it to advance more easily.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Clouds"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="top" secondItem="10S-Il-bx9" secondAttribute="top" constant="7" id="3p6-PE-WXD"/>
+                                            <constraint firstItem="bdA-hy-YoZ" firstAttribute="trailing" secondItem="QJ3-6A-3tK" secondAttribute="trailing" id="6Rk-X7-HE4"/>
+                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="trailing" secondItem="bdA-hy-YoZ" secondAttribute="trailing" id="8xt-hc-thW"/>
+                                            <constraint firstItem="QJ3-6A-3tK" firstAttribute="top" secondItem="vrG-vg-kN9" secondAttribute="bottom" constant="24" id="E6s-XS-NdF"/>
+                                            <constraint firstItem="bdA-hy-YoZ" firstAttribute="top" secondItem="10S-Il-bx9" secondAttribute="top" constant="30" id="Kd3-YP-phr"/>
+                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="leading" secondItem="bdA-hy-YoZ" secondAttribute="leading" id="RQM-WR-xfU"/>
+                                            <constraint firstAttribute="height" constant="329" id="UJk-VN-hP0"/>
+                                            <constraint firstItem="QJ3-6A-3tK" firstAttribute="top" secondItem="bdA-hy-YoZ" secondAttribute="bottom" constant="1" id="VeI-9D-EGy"/>
+                                            <constraint firstAttribute="width" constant="351" id="e9E-Fs-ZYP"/>
+                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="leading" secondItem="10S-Il-bx9" secondAttribute="leadingMargin" id="gjk-yM-7yP"/>
+                                            <constraint firstItem="bdA-hy-YoZ" firstAttribute="leading" secondItem="QJ3-6A-3tK" secondAttribute="leading" id="k50-ux-Std"/>
+                                            <constraint firstAttribute="trailing" secondItem="vrG-vg-kN9" secondAttribute="trailing" constant="16" id="thQ-dJ-XC9"/>
+                                            <constraint firstItem="QJ3-6A-3tK" firstAttribute="bottom" secondItem="10S-Il-bx9" secondAttribute="bottomMargin" id="u8Q-rx-Crw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmw-0h-b0W">
+                                        <rect key="frame" x="12" y="3592" width="351" height="393"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP FOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPz-CU-gw9">
+                                                <rect key="frame" x="8" y="7" width="327" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="g7X-Te-BpN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="Sunflower"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST-INTUBATION MANAGEMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-EG-yBL">
+                                                <rect key="frame" x="8" y="30" width="327" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Alizarin"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENH-KN-Xmu">
+                                                <rect key="frame" x="8" y="60" width="327" height="333"/>
+                                                <string key="text">Auscultate the chest for proper tube placement. Start the auscultation in the epigastric region. Then, auscultation the left chest - then the right chest.
+
+Confirm to placement via waveform capnography.
+Use a secondary device to confirm tube placement, e.g., chest x-ray or color metric device.
+
+Maintain sedation, analgesia and if needed, paralyze the patient.
+
+Monitor patient for signs/symptoms of discomfort, e.g., elevated blood pressure, tachycardia, increased ICP ( if monitoring).</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Clouds"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="QPz-CU-gw9" firstAttribute="leading" secondItem="jmw-0h-b0W" secondAttribute="leadingMargin" id="3hP-Uh-hwn"/>
+                                            <constraint firstItem="ENH-KN-Xmu" firstAttribute="top" secondItem="QPz-CU-gw9" secondAttribute="bottom" constant="24" id="4cm-1g-dyT"/>
+                                            <constraint firstAttribute="bottom" secondItem="ENH-KN-Xmu" secondAttribute="bottom" id="7IN-2H-eBU"/>
+                                            <constraint firstItem="GgJ-EG-yBL" firstAttribute="trailing" secondItem="ENH-KN-Xmu" secondAttribute="trailing" id="9Bq-Lv-D1d"/>
+                                            <constraint firstItem="ENH-KN-Xmu" firstAttribute="top" secondItem="GgJ-EG-yBL" secondAttribute="bottom" constant="1" id="CKJ-rm-QZv"/>
+                                            <constraint firstItem="QPz-CU-gw9" firstAttribute="leading" secondItem="GgJ-EG-yBL" secondAttribute="leading" id="U1M-yJ-Jnt"/>
+                                            <constraint firstItem="QPz-CU-gw9" firstAttribute="top" secondItem="jmw-0h-b0W" secondAttribute="top" constant="7" id="aGf-mV-u23"/>
+                                            <constraint firstAttribute="width" constant="351" id="aip-ua-8VM"/>
+                                            <constraint firstAttribute="height" constant="393" id="eee-Y5-p6i"/>
+                                            <constraint firstAttribute="trailing" secondItem="QPz-CU-gw9" secondAttribute="trailing" constant="16" id="fb8-Dg-Amv"/>
+                                            <constraint firstItem="GgJ-EG-yBL" firstAttribute="top" secondItem="jmw-0h-b0W" secondAttribute="top" constant="30" id="jao-Xg-zXd"/>
+                                            <constraint firstItem="QPz-CU-gw9" firstAttribute="trailing" secondItem="GgJ-EG-yBL" secondAttribute="trailing" id="kwi-3M-vf8"/>
+                                            <constraint firstItem="GgJ-EG-yBL" firstAttribute="leading" secondItem="ENH-KN-Xmu" secondAttribute="leading" id="vUn-oo-LXp"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation-rings" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-4f-1n2">
+                                        <rect key="frame" x="16" y="2994" width="341" height="212"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="341" id="ecf-eu-fXA"/>
+                                            <constraint firstAttribute="height" constant="212" id="kLv-PW-4K1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubate-bougie" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-gO-BNE">
+                                        <rect key="frame" x="16" y="3326" width="341" height="212"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="341" id="ALa-Hi-q44"/>
+                                            <constraint firstAttribute="height" constant="212" id="Ru8-lR-XjW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-gk-OJI">
+                                        <rect key="frame" x="19" y="3541" width="339" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="339" id="Gbj-h3-OLU"/>
+                                            <constraint firstAttribute="height" constant="30" id="oLA-Wc-658"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" name="Cool Mint"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-te-ei7">
+                                        <rect key="frame" x="16" y="3211" width="339" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="339" id="dIn-X0-qVh"/>
+                                            <constraint firstAttribute="height" constant="105" id="nT8-tJ-u1G"/>
+                                        </constraints>
+                                        <string key="text">The bougie is used when visualization of the epiglottis is difficult.  If the endotracheal tube gets hung up, turn the tube counterclockwise while holding the bougie. It will close the gap made by the tube tip and make insertion easier.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="Sunflower"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="10S-Il-bx9" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="14" id="2iy-4z-bTT"/>
                                     <constraint firstAttribute="trailing" secondItem="pYP-9w-rIg" secondAttribute="trailing" constant="15" id="3uw-TM-i8e"/>
+                                    <constraint firstItem="vYK-6i-emv" firstAttribute="top" secondItem="jCd-KO-gBu" secondAttribute="bottom" constant="3" id="4NV-ao-5yk"/>
+                                    <constraint firstItem="jCd-KO-gBu" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leadingMargin" constant="18" id="4Ou-J1-viy"/>
+                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="4p4-MT-Y3X"/>
+                                    <constraint firstItem="ZyQ-ac-MYe" firstAttribute="top" secondItem="0eL-DV-LOS" secondAttribute="bottom" constant="21" id="7Dg-I1-bYf"/>
+                                    <constraint firstItem="ziA-gk-OJI" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="7Nl-nT-2Iu"/>
                                     <constraint firstItem="gMQ-ra-Cif" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" id="9Jo-zZ-tRl"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="centerX" secondItem="gMQ-ra-Cif" secondAttribute="centerX" id="9KI-Bm-QYC"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="32" id="Ack-Tk-2xZ"/>
+                                    <constraint firstItem="vYK-6i-emv" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leadingMargin" constant="27" id="BZf-Cb-pdr"/>
+                                    <constraint firstItem="jmw-0h-b0W" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="12" id="Bqw-mr-9Ut"/>
+                                    <constraint firstAttribute="trailing" secondItem="zV0-4f-1n2" secondAttribute="trailing" constant="18" id="C6Z-5q-mea"/>
+                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="top" secondItem="1gb-Gb-n9f" secondAttribute="bottom" constant="3" id="D7t-MW-fTF"/>
+                                    <constraint firstAttribute="trailing" secondItem="BSC-gO-BNE" secondAttribute="trailing" constant="18" id="EMG-Wg-8fr"/>
+                                    <constraint firstItem="pYP-9w-rIg" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" constant="855" id="FjY-Lh-UpF"/>
+                                    <constraint firstAttribute="trailing" secondItem="WqE-bP-VP1" secondAttribute="trailing" constant="17" id="Gvr-lB-cwb"/>
                                     <constraint firstItem="pYP-9w-rIg" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" constant="855" id="JME-Tk-tDi"/>
+                                    <constraint firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailing" id="Jjk-VF-3Dz"/>
+                                    <constraint firstItem="10S-Il-bx9" firstAttribute="top" secondItem="YkS-2V-ppZ" secondAttribute="bottom" constant="20" id="KiD-F1-Uba"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="nqh-sC-4Zr" secondAttribute="bottom" constant="1976" id="NLd-ov-6XO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ziA-gk-OJI" secondAttribute="trailing" constant="17" id="OG0-mA-A4k"/>
                                     <constraint firstItem="pYP-9w-rIg" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="Ogy-Q4-44p"/>
-                                    <constraint firstAttribute="bottom" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="-2" id="WvX-4I-wgg"/>
+                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" id="P2Q-iv-dql"/>
+                                    <constraint firstAttribute="trailing" secondItem="0eL-DV-LOS" secondAttribute="trailing" constant="18" id="P88-c4-qls"/>
+                                    <constraint firstItem="YkS-2V-ppZ" firstAttribute="top" secondItem="ZyQ-ac-MYe" secondAttribute="bottom" constant="3" id="Qdr-Oh-1P9"/>
+                                    <constraint firstItem="jCd-KO-gBu" firstAttribute="trailing" secondItem="uSd-hW-y0Z" secondAttribute="trailingMargin" id="STv-3y-Lcs"/>
+                                    <constraint firstAttribute="trailing" secondItem="YkS-2V-ppZ" secondAttribute="trailing" constant="17" id="TQo-XC-Bjl"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="pYP-9w-rIg" secondAttribute="bottom" constant="933" id="Tc0-Kb-qvS"/>
+                                    <constraint firstItem="nqh-sC-4Zr" firstAttribute="top" secondItem="vYK-6i-emv" secondAttribute="bottom" constant="26" id="VJi-lc-F7H"/>
+                                    <constraint firstItem="jCd-KO-gBu" firstAttribute="top" secondItem="qj2-xW-oaF" secondAttribute="bottom" constant="12" id="VSb-2B-aDK"/>
+                                    <constraint firstAttribute="trailing" secondItem="wH3-te-ei7" secondAttribute="trailing" constant="20" id="Wey-f2-60E"/>
+                                    <constraint firstItem="zV0-4f-1n2" firstAttribute="top" secondItem="10S-Il-bx9" secondAttribute="bottom" constant="18" id="Wlt-Ad-WP8"/>
+                                    <constraint firstAttribute="bottom" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="2032" id="WvX-4I-wgg"/>
+                                    <constraint firstItem="nqh-sC-4Zr" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leadingMargin" constant="13" id="XSP-GU-pgg"/>
+                                    <constraint firstAttribute="trailing" secondItem="pYP-9w-rIg" secondAttribute="trailing" constant="15" id="YL0-oW-6Hi"/>
+                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="leading" secondItem="pYP-9w-rIg" secondAttribute="leading" id="ZWN-xw-aOx"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="vYK-6i-emv" secondAttribute="trailing" constant="17" id="ZcN-0X-Xd6"/>
+                                    <constraint firstItem="BSC-gO-BNE" firstAttribute="top" secondItem="wH3-te-ei7" secondAttribute="bottom" constant="10" id="ZnU-hT-Bmd"/>
+                                    <constraint firstItem="BSC-gO-BNE" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="16" id="aQ7-zj-pCu"/>
+                                    <constraint firstItem="zV0-4f-1n2" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="16" id="czH-Cg-lww"/>
                                     <constraint firstItem="gMQ-ra-Cif" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" id="eLS-1A-R2y"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZyQ-ac-MYe" secondAttribute="trailing" constant="17" id="esu-5s-juA"/>
+                                    <constraint firstItem="YkS-2V-ppZ" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="f5h-Cf-A6Z"/>
+                                    <constraint firstItem="jmw-0h-b0W" firstAttribute="top" secondItem="ziA-gk-OJI" secondAttribute="bottom" constant="21" id="fQB-Nb-Swt"/>
+                                    <constraint firstItem="0eL-DV-LOS" firstAttribute="top" secondItem="WqE-bP-VP1" secondAttribute="bottom" constant="17" id="fUy-Cg-kud"/>
+                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" id="g4L-ac-mvp"/>
+                                    <constraint firstItem="wH3-te-ei7" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="16" id="gDH-if-N0r"/>
+                                    <constraint firstItem="ZyQ-ac-MYe" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="17" id="gKu-WM-ioT"/>
+                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="top" secondItem="1gb-Gb-n9f" secondAttribute="bottom" constant="3" id="geF-FL-feL"/>
                                     <constraint firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailing" id="h1f-qq-zQP"/>
+                                    <constraint firstAttribute="bottom" secondItem="WqE-bP-VP1" secondAttribute="bottom" constant="1755" id="hYd-Gp-xT9"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="17" id="hrF-ZQ-W5h"/>
+                                    <constraint firstItem="ziA-gk-OJI" firstAttribute="top" secondItem="BSC-gO-BNE" secondAttribute="bottom" constant="3" id="jVP-ql-CeG"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="17" id="jbd-oN-vUk"/>
+                                    <constraint firstAttribute="bottom" secondItem="jmw-0h-b0W" secondAttribute="bottom" constant="15" id="mg8-Yy-lWS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="nqh-sC-4Zr" secondAttribute="trailing" constant="8" id="nJ9-wV-wSX"/>
+                                    <constraint firstAttribute="trailing" secondItem="1gb-Gb-n9f" secondAttribute="trailing" constant="17" id="qGi-c4-UoS"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="trailing" secondItem="WqE-bP-VP1" secondAttribute="trailing" id="qy9-dF-28M"/>
+                                    <constraint firstAttribute="trailing" secondItem="10S-Il-bx9" secondAttribute="trailing" constant="10" id="r6S-Fp-2af"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="32" id="rdT-Ss-jjT"/>
+                                    <constraint firstAttribute="trailing" secondItem="jmw-0h-b0W" secondAttribute="trailing" constant="12" id="u9s-CQ-2rP"/>
+                                    <constraint firstItem="pYP-9w-rIg" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="uaW-QH-OwB"/>
+                                    <constraint firstItem="0eL-DV-LOS" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="xBJ-m1-hHx"/>
+                                    <constraint firstItem="wH3-te-ei7" firstAttribute="top" secondItem="zV0-4f-1n2" secondAttribute="bottom" constant="5" id="xfY-eB-QZa"/>
+                                    <constraint firstItem="nqh-sC-4Zr" firstAttribute="top" secondItem="vYK-6i-emv" secondAttribute="bottom" constant="26" id="yav-nw-TEA"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -446,7 +751,7 @@ Ear to sternal notch as seen below. </string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIv-Wv-A8K"/>
                     </view>
-                    <size key="freeformSize" width="375" height="2000"/>
+                    <size key="freeformSize" width="375" height="4000"/>
                     <connections>
                         <outlet property="intubationScrollView" destination="uSd-hW-y0Z" id="cy7-K6-cgm"/>
                         <outlet property="intubationSubtitle" destination="aMu-rE-wIw" id="FHn-NE-2WI"/>
@@ -461,7 +766,11 @@ Ear to sternal notch as seen below. </string>
     <resources>
         <image name="2 hand" width="384" height="256"/>
         <image name="Intubate-Epiglottis" width="432" height="283.20001220703125"/>
+        <image name="Intubate-bougie" width="432" height="322.55999755859375"/>
+        <image name="Intubation _AO flexion" width="298" height="404"/>
+        <image name="Intubation- neck" width="497.70001220703125" height="240.30000305175781"/>
         <image name="Intubation-NeckFlexion" width="600" height="404"/>
+        <image name="Intubation-rings" width="432" height="332.16000366210938"/>
         <namedColor name="Alizarin">
             <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
