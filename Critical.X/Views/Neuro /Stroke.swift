@@ -9,24 +9,6 @@
 import UIKit
 
 
-extension UIScrollView {
-    //it will block the mainThread
-    func recalculateVerticalContentSize_synchronous () {
-        let unionCalculatedTotalRect = recursiveUnionInDepthFor(view: self)
-        self.contentSize = CGRect(x: 0, y: 0, width: self.frame.width, height: unionCalculatedTotalRect.height).size
-        //(0, 0, self.frame.width, unionCalculatedTotalRect.height).size;
-    }
-    
-    private func recursiveUnionInDepthFor (view: UIView) -> CGRect {
-        var totalRect = CGRect.zero
-        //calculate recursevly for every subView
-        for subView in view.subviews {
-            totalRect =  totalRect.union(recursiveUnionInDepthFor(view: subView))
-        }
-        //return the totalCalculated for all in depth subViews.
-        return totalRect.union(view.frame)
-    }
-}
 class Stroke: UIViewController {
 
     @IBOutlet weak var subduralHematomaDescription: UILabel!

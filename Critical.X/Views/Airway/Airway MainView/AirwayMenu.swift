@@ -1,0 +1,130 @@
+//
+//  AirwayMenu.swift
+//  Critical.X
+//
+//  Created by Jadie Barringer III on 7/14/18.
+//  Copyright © 2018 Jadie Barringer III. All rights reserved.
+//
+
+import UIKit
+import AKLabel
+import Stevia
+
+
+class AirwayMenu: UIViewController {
+    
+    
+    
+    @IBOutlet weak var subTitleLabel: AKLabel!
+    @IBOutlet weak var airWayView1: UIView!
+    @IBOutlet weak var airWayView2: UIView!
+    var kingLTButton = UIButton()
+    var lmaButton = UIButton()
+    var predictorsButton = UIButton()
+   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Call extension functions
+        createLMAButton() // calls the extension function
+        createPredictorsButton()
+        createIntubationButton()
+        createKingLTButton()
+        setupLabel()
+        
+        
+//        for button in IntubationButtons {
+//            button.layer.cornerRadius = 4
+//        }
+        // Add Subviews here
+        
+        // Add the autolayout place
+    //theLabel.easy.layout(Top(582),Left(15),Right(15),Height(60))
+              //subTitleLabel.easy.layout(Edges(UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)))
+//        |-42-theLabel
+//
+//        airWayView1.addSubview(theLabel)
+//
+        |-airWayView1
+        
+        airWayView1.top(10).height(145).left(15).right(15)
+        subTitleLabel.top(180).left(15).right(15).width(200).height(60)
+        //subTitleLabel.easy.layout(  Top(182),Left(15),Right(15),Height(60))
+
+airWayView1.centerInContainer()
+    }
+    
+    //Clears the text box before the view appears so that there can be a nice animation.
+    override func viewWillAppear(_ animated: Bool) {
+        subTitleLabel.text = ""
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        subTitleLabel.animate(text: "Airway Management", duration: 1, completion: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        subTitleLabel.text = ""
+    }
+    
+    // MARK: - Navigation
+    
+    // When intubation button is presesed. Push the view controller via code
+    @IBAction func pushToIntubationScreen(_ sender: UIButton) {
+       
+    }
+    
+    
+    
+    // Function or IBACTION for the buttons clicked. Using a switch statement to differentiate betteren the bittons via a tag. Make sure that the function name matches the action selector declared in the button, Here i made buttonActionClicked the same same all about and use a switch statement to access each tag and button.
+    @objc func buttonActionClicked (sender: UIButton) {
+        
+        let buttonTag: UIButton = sender
+        
+        switch buttonTag.tag {
+        case 1: // Intubation
+            print("Button 1 Was clicked")
+            // Name has to reflect the origionting SB.
+            let storyboard = UIStoryboard(name: "Airway", bundle: nil)
+            
+            //SB Identifier
+            let vc = storyboard.instantiateViewController(withIdentifier: "Intubation")
+            
+            // Calls from the UIButton extension to pulsate.
+            buttonTag.pulsate()
+            
+            // Push the ViewController via Navigation
+            self.navigationController?.pushViewController(vc, animated: true)
+        
+        case 2: //King LT
+            print("Button 2 Was clicked")
+            
+            // Name has to reflect the origionting SB.
+            let storyboard = UIStoryboard(name: "Airway", bundle: nil)
+            
+            //SB Identifier
+            let vc = storyboard.instantiateViewController(withIdentifier: "KingLT")
+            
+            // Calls from the UIButton extension to pulsate.
+            buttonTag.pulsate()
+            
+            // Push the ViewController via Navigation
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 3: // LMA
+            print("Button 3 Was clicked")
+        case 4: // Predictors of a difficult airway
+            print("Button 4 Was clicked")
+            
+        default:
+            break
+        }
+    
+}
+
+
+}
+
+
+

@@ -272,6 +272,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         label.text = "Hello, Welcome to Critical"
         label.morphingEffect = .anvil
         view.addSubview(label)
+        
+        /** Create the UILabel */
+        
+   
       
     }
     
