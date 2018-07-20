@@ -9,26 +9,26 @@
 import UIKit
 import AKLabel
 class Intubation: UIViewController {
-
+    
     
     @IBOutlet weak var intubationScrollView: UIScrollView!
     @IBOutlet weak var intubationSubtitle: AKLabel!
     @IBOutlet weak var stepOneLabel: UILabel!
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       intubationScrollView.recalculateVerticalContentSize_synchronous()
+        
+    intubationScrollView.recalculateVerticalContentSize_synchronous()
         
         intubationSubtitle.animate(text: "Intubation", duration: 1, completion: nil)
         // Do any additional setup after loading the view.
-    
-    showAnimate()
+        
+        showAnimate()
     }
     
-  
-  
+    
+    
     //MARK: - Animation
     /**
      Animates the transitions
@@ -50,6 +50,6 @@ class Intubation: UIViewController {
         })
         
     }
-
-
+    
+    
 }

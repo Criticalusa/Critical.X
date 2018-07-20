@@ -9,6 +9,7 @@
 import UIKit
 import AKLabel
 import Stevia
+import EasyPeasy
 
 
 class AirwayMenu: UIViewController {
@@ -18,10 +19,12 @@ class AirwayMenu: UIViewController {
     @IBOutlet weak var subTitleLabel: AKLabel!
     @IBOutlet weak var airWayView1: UIView!
     @IBOutlet weak var airWayView2: UIView!
+    @IBOutlet weak var airwayScroller: UIScrollView!
+    
     var kingLTButton = UIButton()
     var lmaButton = UIButton()
     var predictorsButton = UIButton()
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,32 +35,23 @@ class AirwayMenu: UIViewController {
         createKingLTButton()
         setupLabel()
         
+        airwayScroller.recalculateVerticalContentSize_synchronous()
         
-//        for button in IntubationButtons {
-//            button.layer.cornerRadius = 4
-//        }
-        // Add Subviews here
+        //        for button in IntubationButtons {
+        //            button.layer.cornerRadius = 4
         
-        // Add the autolayout place
-    //theLabel.easy.layout(Top(582),Left(15),Right(15),Height(60))
-              //subTitleLabel.easy.layout(Edges(UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)))
-//        |-42-theLabel
-//
-//        airWayView1.addSubview(theLabel)
-//
-        |-airWayView1
-        
-        airWayView1.top(10).height(145).left(15).right(15)
-        subTitleLabel.top(180).left(15).right(15).width(200).height(60)
+      subTitleLabel.top(180).left(15).right(15).width(200).height(60)
         //subTitleLabel.easy.layout(  Top(182),Left(15),Right(15),Height(60))
-
-airWayView1.centerInContainer()
+        
+        airWayView1.centerInContainer()
+        airWayView2.centerInContainer()
+        
     }
     
     //Clears the text box before the view appears so that there can be a nice animation.
     override func viewWillAppear(_ animated: Bool) {
         subTitleLabel.text = ""
-
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -72,7 +66,7 @@ airWayView1.centerInContainer()
     
     // When intubation button is presesed. Push the view controller via code
     @IBAction func pushToIntubationScreen(_ sender: UIButton) {
-       
+        
     }
     
     
@@ -84,7 +78,7 @@ airWayView1.centerInContainer()
         
         switch buttonTag.tag {
         case 1: // Intubation
-            print("Button 1 Was clicked")
+            print("Intubation Was clicked")
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "Airway", bundle: nil)
             
@@ -96,9 +90,9 @@ airWayView1.centerInContainer()
             
             // Push the ViewController via Navigation
             self.navigationController?.pushViewController(vc, animated: true)
-        
+            
         case 2: //King LT
-            print("Button 2 Was clicked")
+            print("KingLT Was clicked")
             
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "Airway", bundle: nil)
@@ -113,17 +107,38 @@ airWayView1.centerInContainer()
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 3: // LMA
-            print("Button 3 Was clicked")
-        case 4: // Predictors of a difficult airway
-            print("Button 4 Was clicked")
+            print("LMA Was clicked")
+            // Name has to reflect the origionting SB.
+            let storyboard = UIStoryboard(name: "Airway", bundle: nil)
             
+            //SB Identifier
+            let vc = storyboard.instantiateViewController(withIdentifier: "LMA")
+            
+            // Calls from the UIButton extension to pulsate.
+            buttonTag.pulsate()
+            
+            // Push the ViewController via Navigation
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 4: // Predictors of a difficult airway
+            print("Predictors of Airway Was clicked")
+            
+            let storyboard = UIStoryboard(name: "Airway", bundle: nil)
+            
+            //SB Identifier
+            let vc = storyboard.instantiateViewController(withIdentifier: "predictors")
+            
+            // Calls from the UIButton extension to pulsate.
+            buttonTag.pulsate()
+            
+            // Push the ViewController via Navigation
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }
+        
+    }
     
-}
-
-
+    
 }
 
 

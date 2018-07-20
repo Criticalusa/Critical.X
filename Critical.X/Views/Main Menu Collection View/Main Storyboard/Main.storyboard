@@ -166,20 +166,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="115" height="153"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL1.ekg" translatesAutoresizingMaskIntoConstraints="NO" id="dRf-8q-c3S">
-                                                    <rect key="frame" x="5" y="9" width="105" height="74"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICAL1.ekg" translatesAutoresizingMaskIntoConstraints="NO" id="dRf-8q-c3S">
+                                                    <rect key="frame" x="5" y="9" width="105" height="69"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="RFC-yS-6js"/>
+                                                        <constraint firstAttribute="height" constant="69" id="ioJ-KV-xDO"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fluids and Blood Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFH-JV-0aG">
-                                                    <rect key="frame" x="5" y="86" width="105" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fluids and Blood Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFH-JV-0aG">
+                                                    <rect key="frame" x="5" y="81" width="105" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="V8B-J7-Tez"/>
+                                                        <constraint firstAttribute="height" constant="36" id="hn5-xH-RPf"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="13"/>
                                                     <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fluids and Blood Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fm-PN-bAx">
-                                                    <rect key="frame" x="5" y="121" width="105" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fluids and Blood Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fm-PN-bAx">
+                                                    <rect key="frame" x="5" y="116" width="105" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="fvl-qa-iVf"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
                                                     <color key="textColor" red="0.17254901959999999" green="0.30980392159999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -187,6 +195,18 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7fm-PN-bAx" secondAttribute="trailing" constant="5" id="5An-7D-x5G"/>
+                                            <constraint firstItem="7fm-PN-bAx" firstAttribute="top" secondItem="dRf-8q-c3S" secondAttribute="bottom" constant="38" id="K0Y-cL-Y9R"/>
+                                            <constraint firstItem="dRf-8q-c3S" firstAttribute="top" secondItem="PiW-Hu-5OR" secondAttribute="top" constant="9" id="Tbw-2J-BBd"/>
+                                            <constraint firstItem="dRf-8q-c3S" firstAttribute="leading" secondItem="PiW-Hu-5OR" secondAttribute="leading" constant="5" id="ZYW-Wv-jLW"/>
+                                            <constraint firstItem="sFH-JV-0aG" firstAttribute="leading" secondItem="PiW-Hu-5OR" secondAttribute="leading" constant="5" id="fuN-jP-Uk8"/>
+                                            <constraint firstAttribute="trailing" secondItem="sFH-JV-0aG" secondAttribute="trailing" constant="5" id="gnq-vE-NqN"/>
+                                            <constraint firstItem="7fm-PN-bAx" firstAttribute="leading" secondItem="PiW-Hu-5OR" secondAttribute="leading" constant="5" id="jpg-jh-vA9"/>
+                                            <constraint firstAttribute="bottom" secondItem="sFH-JV-0aG" secondAttribute="bottom" constant="36" id="nOD-d2-EqF"/>
+                                            <constraint firstItem="sFH-JV-0aG" firstAttribute="top" secondItem="dRf-8q-c3S" secondAttribute="bottom" constant="3" id="voz-ra-nx2"/>
+                                            <constraint firstAttribute="trailing" secondItem="dRf-8q-c3S" secondAttribute="trailing" constant="5" id="xTo-JB-ygy"/>
+                                        </constraints>
                                         <size key="customSize" width="115" height="153"/>
                                         <connections>
                                             <outlet property="mainMenuDetail_CellLabel" destination="7fm-PN-bAx" id="NjX-dr-1de"/>
@@ -274,20 +294,23 @@
         <scene sceneID="P3e-uN-MXU">
             <objects>
                 <viewController storyboardIdentifier="obBoardingVC" modalPresentationStyle="overCurrentContext" id="ajZ-KS-Lvg" customClass="OnboardingVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jxc-wo-Kkd">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Jxc-wo-Kkd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.45000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7HA-bt-PWk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="597"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HA-bt-PWk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="814"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG-Smoke" translatesAutoresizingMaskIntoConstraints="NO" id="LfZ-AT-IFw">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="565"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="814"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="814" id="IdO-BD-6b5"/>
+                                    <constraint firstAttribute="width" constant="375" id="QOd-VR-z7T"/>
+                                </constraints>
                             </view>
                             <visualEffectView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lz-6U-SCH">
                                 <rect key="frame" x="-1" y="0.0" width="376" height="812"/>
@@ -298,9 +321,8 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-Ve-4es">
-                                <rect key="frame" x="11" y="65" width="293" height="419"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-Ve-4es">
+                                <rect key="frame" x="41" y="75" width="293" height="419"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL4-1" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-bg-xEu">
                                         <rect key="frame" x="121" y="13" width="50" height="50"/>
@@ -363,9 +385,20 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="mw4-Bl-U6X"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7HA-bt-PWk" secondAttribute="bottom" id="01U-bE-PuN"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="top" secondItem="Jxc-wo-Kkd" secondAttribute="top" id="9Dh-Ko-lPM"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="leading" secondItem="VsS-Y6-I18" secondAttribute="leading" id="Rql-nC-i8S"/>
+                            <constraint firstItem="VsS-Y6-I18" firstAttribute="trailing" secondItem="Gc0-Ve-4es" secondAttribute="trailing" constant="41" id="Toq-Ez-Pp7"/>
+                            <constraint firstItem="7HA-bt-PWk" firstAttribute="trailing" secondItem="VsS-Y6-I18" secondAttribute="trailing" id="dS4-2X-iCD"/>
+                            <constraint firstItem="Gc0-Ve-4es" firstAttribute="leading" secondItem="VsS-Y6-I18" secondAttribute="leading" constant="41" id="k1k-f4-Ql6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VsS-Y6-I18"/>
                     </view>
                     <connections>
@@ -378,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tep-Bc-VtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3749.5999999999999" y="-800.98522167487693"/>
+            <point key="canvasLocation" x="-3914" y="-802"/>
         </scene>
     </scenes>
     <resources>

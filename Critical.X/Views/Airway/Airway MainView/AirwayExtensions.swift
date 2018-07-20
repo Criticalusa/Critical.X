@@ -151,13 +151,18 @@ extension AirwayMenu {
         
         
         //adds the button to the subView
-        airWayView1.addSubview(intubationBtn)
+       airWayView1.addSubview(intubationBtn)
         //Centers the button in the middle of the UView, set the top margin, height and width
+    
+        
         intubationBtn.easy.layout(
             Width(310.0),
             Height(40.0),
             CenterX(0.0),
-            Top(13.0).to(airWayView1))
+            Top(13.0).to(airWayView1),
+            Left(10).to(airWayView1),
+            Right(10).to(airWayView1))
+
     }
 }
 
@@ -184,7 +189,9 @@ extension AirwayMenu {
             Width(310.0),
             Height(40.0),
             CenterX(0.0),
-            Top(98.0).to(airWayView1))
+            Top(98.0).to(airWayView1),
+            Left(10).to(airWayView1),
+            Right(10).to(airWayView1))
         
         
     }
@@ -216,8 +223,10 @@ extension AirwayMenu {
             Width(310.0),
             Height(40.0),
             CenterX(0.0),
-            Top(18.0).to(airWayView2)
-        )
+            Top(18.0).to(airWayView2),
+            Left(10).to(airWayView2),
+            Right(10).to(airWayView2))
+        
     }
     
 }
@@ -249,8 +258,10 @@ extension AirwayMenu {
             Width(310.0),
             Height(40.0),
             CenterX(0.0),
-            Top(100.0).to(airWayView2)
-        )
+            Top(100.0).to(airWayView2),
+            Left(10).to(airWayView2),
+            Right(10).to(airWayView2))
+        
     }
 }
 
