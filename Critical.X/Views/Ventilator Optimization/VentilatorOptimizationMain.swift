@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftRichString
 
 class VentilatorOptimizationMain: UIViewController {
     
@@ -29,7 +30,7 @@ class VentilatorOptimizationMain: UIViewController {
     @IBOutlet weak var closeButtonMain: UIButton!
     @IBOutlet weak var calculateButton: UIButton!
     @IBOutlet weak var BGView: UIView!
-
+    @IBOutlet weak var ventScroller: UIScrollView!
  
     // MARK: - View Didload method
     override func viewDidLoad() {
@@ -40,11 +41,7 @@ class VentilatorOptimizationMain: UIViewController {
         calculateButton.clipsToBounds = true
         calculateButton.layer.cornerRadius = 4
         
-        // Round top of the View only
-        BGView.clipsToBounds = true
-        BGView.layer.cornerRadius = 10
-        BGView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        
+    ventScroller.recalculateVerticalContentSize_synchronous()
         
         // Do any additional setup after loading the view.
         ventOptimatzationResultView.isHidden = true
@@ -142,9 +139,38 @@ class VentilatorOptimizationMain: UIViewController {
         
         let NEwTV = Double ((TargetMV)/Freq! * 1000)
         
-        let actual = "The Minute Volume, with a Tidal Volume of" // Used in the result text to have the color changed in the label
+        // Up Down closure to evaluate whether or not a value has changed, then change the string.
+        let upDown: String = {
+            
+            var upDown = String()
+            
+            if (_adjustedMV > 1.0) {
+                upDown = "up"
+            } else if (_adjustedMV < 0) {
+                upDown = "down"
+            }
+            print("The adjusted TV is \(_adjustedMV) and will adjust \(upDown)")
+            return upDown
+        }()
         
-        let consider =  "Consider adjusting the Tidal Volume to" //Used in the result text to have the color changed in the label
+        // Up Down closure to evaluate whether or not a value has changed, then change the string.
+        let upDownConsideration: String = {
+            
+            var upDown = String()
+            let tv = TV
+            let newTV = NEwTV
+            
+            if (newTV > TV!) {
+                upDown = "up"
+            } else if (newTV < TV!) {
+                upDown = "down"
+            }
+            print("The adjusted TV is \(_adjustedMV) and will adjust \(upDown)")
+            return upDown
+        }()
+        let actual = "The calculated Minute Volume (MV), with a Tidal Volume (TV) of" // Used in the result text to have the color changed in the label
+        
+        let consider =  "Consider adjusting the Tidal Volume \(upDownConsideration) to" //Used in the result text to have the color changed in the label
         
         
         // Code to change the color of centain strings
@@ -156,9 +182,9 @@ class VentilatorOptimizationMain: UIViewController {
         
         // Displays the result of the calculations in the Result box through different labels.
         
-        ventResultDescriptionLabel.text = "\(actual)  \(Int (TV!)) and RR of \(Int (Freq!)) is \(Double (MV)) L/min."
+        ventResultDescriptionLabel.text = "\(actual)  \(Int (TV!)) and RR of \(Int (Freq!)) is \n\(Double (MV)) L/min."
         
-        VentResult.text = "To achieve a target PC02 of \(Int (TargetC02!)), adjust the Minute Volume \(adjustedMV) L/min, to a Target Minute Volume of \(TargetMV1) L/min."
+        VentResult.text = "To achieve a target PC02 of \(Int (TargetC02!)), adjust the Minute Volume \(upDown) \(adjustedMV) L/min, to a Target Minute Volume of \(TargetMV1) L/min."
         
         
         considerationsLabel.text = "\(consider) \(Int (NEwTV)) mL's or the Respiratory rate to \(Int(NewRR))/min."

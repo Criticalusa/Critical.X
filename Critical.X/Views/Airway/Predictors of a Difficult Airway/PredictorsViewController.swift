@@ -38,7 +38,7 @@ class PredictorsViewController: UIViewController, UICollectionViewDataSource, UI
             label.textAlignment = .center
             label.numberOfLines = 0
             label.adjustsFontSizeToFitWidth = true
-            label.font = Font.regular.withSize(55)
+            label.font = Font.regular.withSize(45)
             
             return label
         }()
