@@ -121,11 +121,11 @@ class RSIDetail: UIViewController {
         rsiCalculation()
     }
     
-    //    @IBAction func SettingClick(_ sender: Any) {
-    //        let settingController = self.storyboard?.instantiateViewController(withIdentifier: "RSISetting") as! RSISetting
-    //        self.present(settingController, animated: true, completion: nil)
-    //    }
-    //    
+        @IBAction func SettingClick(_ sender: Any) {
+            let settingController = self.storyboard?.instantiateViewController(withIdentifier: "RSISetting") as! RSISetting
+            self.present(settingController, animated: true, completion: nil)
+        }
+        
     func rsiCalculation(){
         
         //MARK: GUARD Guard statement saying that if the weight is not enterend and the calculated button is pushed, Print this statement.

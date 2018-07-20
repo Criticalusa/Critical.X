@@ -183,6 +183,7 @@
 		C47FECF91FFC5DF000E2C273 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECEF1FFC5DEF00E2C273 /* JiroTextField.swift */; };
 		C47FECFA1FFC5DF000E2C273 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECF01FFC5DEF00E2C273 /* HoshiTextField.swift */; };
 		C47FECFB1FFC5DF000E2C273 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FECF11FFC5DEF00E2C273 /* AkiraTextField.swift */; };
+		C48D174821023A18008F4CB6 /* BlinkAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D174721023A18008F4CB6 /* BlinkAnimations.swift */; };
 		C492B90C201AE8BE0042CE20 /* RSIProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492B907201AE8BB0042CE20 /* RSIProcess.swift */; };
 		C492B90D201AE8BE0042CE20 /* RSIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492B908201AE8BB0042CE20 /* RSIDetail.swift */; };
 		C492B90E201AE8BE0042CE20 /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492B909201AE8BC0042CE20 /* RSIMain.swift */; };
@@ -488,6 +489,7 @@
 		C47FECEF1FFC5DEF00E2C273 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
 		C47FECF01FFC5DEF00E2C273 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		C47FECF11FFC5DEF00E2C273 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		C48D174721023A18008F4CB6 /* BlinkAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkAnimations.swift; sourceTree = "<group>"; };
 		C492B907201AE8BB0042CE20 /* RSIProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIProcess.swift; sourceTree = "<group>"; };
 		C492B908201AE8BB0042CE20 /* RSIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIDetail.swift; sourceTree = "<group>"; };
 		C492B909201AE8BC0042CE20 /* RSIMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
@@ -674,6 +676,7 @@
 			children = (
 				C40478EC21015C200035798F /* PredictorsOfADifficultAirway_Cell.swift */,
 				C40478EE21015E5F0035798F /* PredictorsViewController.swift */,
+				C40478F2210189430035798F /* DifficultAirway_ChildVC.swift */,
 			);
 			path = "Predictors of a Difficult Airway";
 			sourceTree = "<group>";
@@ -1167,6 +1170,14 @@
 			path = Capnography;
 			sourceTree = "<group>";
 		};
+		C48D1746210223EF008F4CB6 /* Intubation */ = {
+			isa = PBXGroup;
+			children = (
+				C4D709DF20FA6FAE00593760 /* Intubation.swift */,
+			);
+			path = Intubation;
+			sourceTree = "<group>";
+		};
 		C49DBEEC203E1FDE00247A9E /* Infusion Drips */ = {
 			isa = PBXGroup;
 			children = (
@@ -1303,6 +1314,7 @@
 				C4D709E120FC2D0E00593760 /* UIButton Extension Animation.swift */,
 				C4F8160920FE02FB00D41CFB /* Fonts.swift */,
 				C4F8161020FE54E800D41CFB /* Dynamic Scroller Extension.swift */,
+				C48D174721023A18008F4CB6 /* BlinkAnimations.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1586,12 +1598,11 @@
 			isa = PBXGroup;
 			children = (
 				C4D709DA20FA5EF700593760 /* Airway Storyboard */,
-				C40478EB21015BE40035798F /* Predictors of a Difficult Airway */,
 				C4F8161320FE9F5C00D41CFB /* Airway MainView */,
-				C4D709DF20FA6FAE00593760 /* Intubation.swift */,
+				C48D1746210223EF008F4CB6 /* Intubation */,
 				C4F8161220FE9F4B00D41CFB /* King LT View */,
+				C40478EB21015BE40035798F /* Predictors of a Difficult Airway */,
 				C4D5795B2100D29E00A82D75 /* LMA */,
-				C40478F2210189430035798F /* DifficultAirway_ChildVC.swift */,
 			);
 			path = Airway;
 			sourceTree = "<group>";
@@ -2032,6 +2043,7 @@
 				C42F41871FF90E2B003BE489 /* PopTip.swift in Sources */,
 				C418ABC9200BA00F001EBB04 /* MedicalSpanish.swift in Sources */,
 				C492B90D201AE8BE0042CE20 /* RSIDetail.swift in Sources */,
+				C48D174821023A18008F4CB6 /* BlinkAnimations.swift in Sources */,
 				C4C25EF81FF9099600C5CD42 /* Disclaimer.swift in Sources */,
 				C4278C3F203F6074003ABFF8 /* GCS.swift in Sources */,
 				C4D4DF612062C86200A384BD /* TableCell.swift in Sources */,

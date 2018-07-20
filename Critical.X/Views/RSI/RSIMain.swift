@@ -9,12 +9,14 @@
 import UIKit
 import AKLabel
 
+
+
 class RSIMain: UIViewController {
    
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var rsiTextField: UITextField!
     @IBOutlet weak var rsiTitle: AKLabel!
-
+    @IBOutlet weak var settingsLabel: UILabel!
     //Rounds the edges of the round button. 
     @IBOutlet weak var calculateButtonRadius : UIView! {
         didSet {
@@ -31,6 +33,7 @@ class RSIMain: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
         // Do any additional setup after loading the view.
         let navigationBarAppearace = UINavigationBar.appearance()
         
@@ -60,6 +63,9 @@ class RSIMain: UIViewController {
     func animateRSI() -> Void {
         rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
         rsiTitle.animate(text: "Rapid Sequence Induction", duration: 1, completion: nil)
+        
+        // Settings label blinks when loaded from the extension.
+        settingsLabel.blink(duration: 0.5, stopAfter:3.0)
     }
     
     

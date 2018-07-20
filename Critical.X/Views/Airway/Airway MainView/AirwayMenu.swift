@@ -35,17 +35,18 @@ class AirwayMenu: UIViewController {
         createKingLTButton()
         setupLabel()
         
+        // Reclaulates the size of the scroller to adjust to subViews
         airwayScroller.recalculateVerticalContentSize_synchronous()
         
         //        for button in IntubationButtons {
         //            button.layer.cornerRadius = 4
         
-      subTitleLabel.top(180).left(15).right(15).width(200).height(60)
+        subTitleLabel.top(180).left(15).right(15).width(200).height(60)
         //subTitleLabel.easy.layout(  Top(182),Left(15),Right(15),Height(60))
         
         airWayView1.centerInContainer()
         airWayView2.centerInContainer()
-        
+       
     }
     
     //Clears the text box before the view appears so that there can be a nice animation.
@@ -70,7 +71,7 @@ class AirwayMenu: UIViewController {
     }
     
     
-    
+    //MARK: Navigation
     // Function or IBACTION for the buttons clicked. Using a switch statement to differentiate betteren the bittons via a tag. Make sure that the function name matches the action selector declared in the button, Here i made buttonActionClicked the same same all about and use a switch statement to access each tag and button.
     @objc func buttonActionClicked (sender: UIButton) {
         
