@@ -294,7 +294,7 @@
         <scene sceneID="P3e-uN-MXU">
             <objects>
                 <viewController storyboardIdentifier="obBoardingVC" modalPresentationStyle="overCurrentContext" id="ajZ-KS-Lvg" customClass="OnboardingVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jxc-wo-Kkd">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Jxc-wo-Kkd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -319,10 +319,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="376" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
+                                <color key="backgroundColor" name="Clouds"/>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-Ve-4es">
-                                <rect key="frame" x="41" y="75" width="293" height="419"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-Ve-4es">
+                                <rect key="frame" x="41" y="175" width="293" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL4-1" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-bg-xEu">
                                         <rect key="frame" x="121" y="13" width="50" height="50"/>
@@ -385,9 +387,6 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="293" id="mw4-Bl-U6X"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -395,9 +394,7 @@
                             <constraint firstAttribute="bottom" secondItem="7HA-bt-PWk" secondAttribute="bottom" id="01U-bE-PuN"/>
                             <constraint firstItem="7HA-bt-PWk" firstAttribute="top" secondItem="Jxc-wo-Kkd" secondAttribute="top" id="9Dh-Ko-lPM"/>
                             <constraint firstItem="7HA-bt-PWk" firstAttribute="leading" secondItem="VsS-Y6-I18" secondAttribute="leading" id="Rql-nC-i8S"/>
-                            <constraint firstItem="VsS-Y6-I18" firstAttribute="trailing" secondItem="Gc0-Ve-4es" secondAttribute="trailing" constant="41" id="Toq-Ez-Pp7"/>
                             <constraint firstItem="7HA-bt-PWk" firstAttribute="trailing" secondItem="VsS-Y6-I18" secondAttribute="trailing" id="dS4-2X-iCD"/>
-                            <constraint firstItem="Gc0-Ve-4es" firstAttribute="leading" secondItem="VsS-Y6-I18" secondAttribute="leading" constant="41" id="k1k-f4-Ql6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VsS-Y6-I18"/>
                     </view>

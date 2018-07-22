@@ -11,10 +11,16 @@ import AKLabel
 
 
 
-class RSIMain: UIViewController {
+class RSIMain: UIViewController, UITextFieldDelegate {
    
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var rsiTextField: UITextField!
+    @IBOutlet weak var rsiTextField: UITextField! {
+        
+        didSet {
+            //rsiTextField.placeholder = "KG"
+        }
+    }
+    
     @IBOutlet weak var rsiTitle: AKLabel!
     @IBOutlet weak var settingsLabel: UILabel!
     //Rounds the edges of the round button. 
@@ -33,14 +39,7 @@ class RSIMain: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        // Do any additional setup after loading the view.
-        let navigationBarAppearace = UINavigationBar.appearance()
-        
-        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-        UINavigationBar.appearance().backgroundColor = UIColor.green
 
-       
         // change navigation item title color
         
         
@@ -62,7 +61,7 @@ class RSIMain: UIViewController {
     // Animates the rsiSubtitle once the view is loaded.
     func animateRSI() -> Void {
         rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
-        rsiTitle.animate(text: "Rapid Sequence Induction", duration: 1, completion: nil)
+        rsiTitle.animate(text: "Rapid Sequence Intubation", duration: 1, completion: nil)
         
         // Settings label blinks when loaded from the extension.
         settingsLabel.blink(duration: 0.5, stopAfter:3.0)
@@ -99,7 +98,7 @@ class RSIMain: UIViewController {
     
     @IBAction func calcualteGuard(_ sender: Any) {
         
-        guard let txt = rsiTextField else {
+        guard rsiTextField != nil else {
             
          
             // Yellow Warning Alert // Takes the button and makes it into a circle
