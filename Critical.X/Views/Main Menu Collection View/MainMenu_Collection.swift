@@ -302,7 +302,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
-            "Hemodynamics",// 2
+            "Clinical Calculators",// 2
             "ACLS & EKGs",// 3
             "Clinical Pharmacology", // 4
             "Infusions", // 5
@@ -312,14 +312,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Neuro", // 9
             "Pediatrics", // 10
             "Obstetrics", // 11
-            "Clinical Calculators", // 12
+            "Hemodynamics", // 12
             "Rapid Sequence Intubation", //13
             "Procedures & Imaging", // 14
             "Ventilator Management"] // 16
         
         mainMenuDetail = ["Rate Us, Email, Disclaimer Information",// 0
             "Intubation, Difficult Airway Algorithms",// 1
-            "Invasive Monitoring, Central Venus Pressures, A-Lines",// 2
+            "Medical Calculators & Medical Spanish",// 2
             "EKG Interpretations & Current ACLS Recommendations",// 3
             "Drug Mechanisms, Classes, Dosages, Indications",// 4
             "Common Drips in Critical Care",// 5
@@ -329,7 +329,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Neurological Assessments, GCS & Stroke Scales",// 9
             "Peds Resuscitation, Calculations & Equipment",// 10
             "Fetal Heart Monitoring Strips",//  1
-            "Medical Calculators & Medical Spanish",// 12
+            "Invasive Monitoring, Central Venus Pressures, A-Lines",// 12
             "Common Emergency Meds & Dosages",// 13
             "CXR, CT & Central Line Insertion",// 14
             "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
@@ -337,7 +337,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // Images and associated Indexpaths
         cellImages = ["CRITICAL1.ekg",// 0
             "Lungs",// 1
-            "Hemodynamics",// 2
+            "formula",// 2
             "Heart",// 3
             "Pharmacology",// 4
             "IV Bag",// 5
@@ -347,7 +347,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Brain 44",// 9
             "PedsX",// 10
             "OB",//  11
-            "formula",// 12
+            "Hemodynamics",// 12
             "LaryngscopeGreen",// 13
             "Procedures",// 14
             "Critical-Ventilator-Green-Management-13"]// 15
@@ -355,7 +355,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // StoryBoard ID and associated Indexpaths
         storyBoardID = ["About Critical", // 0
             "Airway management", // 1
-            "Hemodynamics", // 2
+            "Clinical Calculators", // 2
             "EKG", // 3
             "Clinical pharmacology", // 4
             "Infusions",// 5
@@ -365,7 +365,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Neuro", // 9
             "Pediatrics", // 10
             "Obstetrics",//  11
-            "Clinical Calculators", // 12
+            "Hemodynamics", // 12
             "Rapid sequence intubation", // 13
             "Procedures & imaging", // 14
             "Ventilator management"] // 15

@@ -248,7 +248,7 @@ extension AirwayMenu {
         predictorButton.addTarget(self, action: #selector(self.buttonActionClicked), for: .touchUpInside)
         predictorButton.tag = 4 // Creates the tagnumber
         predictorButton.layer.cornerRadius = 4 // Rounds the corner of the button
-        predictorButton.top(50).left(15).size(50)
+        //predictorButton(50).left(15).size(50)
         
         //adds the button to the subView
         airWayView2.addSubview(predictorButton)

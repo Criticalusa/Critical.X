@@ -8,7 +8,7 @@
 
 import UIKit
 import AKLabel
-import Stevia
+
 import EasyPeasy
 
 
@@ -40,11 +40,11 @@ class AirwayMenu: UIViewController {
         //        for button in IntubationButtons {
         //            button.layer.cornerRadius = 4
         
-      subTitleLabel.top(180).left(15).right(15).width(200).height(60)
-        //subTitleLabel.easy.layout(  Top(182),Left(15),Right(15),Height(60))
-        
-        airWayView1.centerInContainer()
-        airWayView2.centerInContainer()
+//      subTitleLabel.top(180).left(15).right(15).width(200).height(60)
+//        //subTitleLabel.easy.layout(  Top(182),Left(15),Right(15),Height(60))
+//        
+//        airWayView1.centerInContainer()
+//        airWayView2.centerInContainer()
         
     }
     

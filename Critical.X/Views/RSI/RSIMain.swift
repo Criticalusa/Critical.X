@@ -12,7 +12,7 @@ import AKLabel
 class RSIMain: UIViewController {
    
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var rsiTextField: UITextField!
+    @IBOutlet weak var rsiTextField: UITextField! 
     @IBOutlet weak var rsiTitle: AKLabel!
 
     //Rounds the edges of the round button. 

@@ -13,9 +13,9 @@ class O2TankCalculator: UIViewController {
     
     @IBOutlet weak var o2DetailView: UIView!
     
-    @IBOutlet weak var psitTxt: KaedeTextField!
+    @IBOutlet weak var psitTxt: UITextField!
     
-    @IBOutlet weak var litersMinTxt: KaedeTextField!
+    @IBOutlet weak var litersMinTxt: UITextField!
     
     @IBOutlet weak var resultsLabel: UILabel!
     
