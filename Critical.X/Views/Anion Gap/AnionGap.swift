@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AKLabel
+
 
 class AnionGap: UIViewController {
 
@@ -17,10 +19,11 @@ class AnionGap: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var resultView: UIView!
-   
     @IBOutlet weak var closeAnionGapButton: UIButton!
-    
     @IBOutlet weak var calculateButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -37,7 +40,6 @@ class AnionGap: UIViewController {
         /// Rounds the corners 15 pixels of the result view
         resultView.clipsToBounds = true
         resultView.layer.cornerRadius = 15
-        
         
     }
 
@@ -68,7 +70,7 @@ class AnionGap: UIViewController {
     }
     
     
-    @IBAction func anionGapCalculateButton(_ sender: Any) {
+    @IBAction func calculateTheAnionGap(_ sender: Any) {
        
         //Assign the variables
         let theSodium = Int(NaTxt.text!)
@@ -99,33 +101,42 @@ class AnionGap: UIViewController {
         resultLabel.text = "\(result)"
         // Sets the description label
         descriptionLabel.text = "The Delta Gap is \(deltaGap)"
-        
+//        descriptionLabel.animate(text: "The Delta Gap is \(deltaGap)", duration: 3, completion: nil)
         
         //Condition statement for the delta gap.
         if deltaGap < -5 {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis exists."
+           descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists."
+//            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists.", duration: 3, completion: nil)
         
         } else if (deltaGap > -6) && (deltaGap < 6) {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis exists exists."
+            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists."
+//            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists." , duration: 3, completion: nil)
+            
             print("Delta should be greater than than -6, but less than 6")
 
         } else if deltaGap > 6 {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis exist."
-            print("Delta should be greater than 6")
+            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist."
+//           descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist.", duration: 3, completion: nil)
+                print("Delta should be greater than 6")
         } else {
-            descriptionLabel.text = " The Delta Gap is \(deltaGap)."
+            descriptionLabel.text = "The Delta Gap is \(deltaGap)."
+//            descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).", duration: 3, completion: nil)
         }
         
         if result > 16 {
             resultLabel.textColor = #colorLiteral(red: 0.7451164126, green: 0.1563159525, blue: 0.07316986471, alpha: 1)
+            
+            print(" The anionGap is \(result)")
         } else {
             
             resultLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            
+            print(" The anionGap is \(result)")
+
         }
         
         self.view.endEditing(true) //This will hide the keyboard
         
-        //Shows the animation on click
         showAnimate()
     }
     

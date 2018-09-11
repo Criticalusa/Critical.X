@@ -66,7 +66,7 @@ class PFRatio: UIViewController {
         
         guard let _ = pa02Value, let _ = fi02Value else {
             
-              _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
+//              _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
             
             // if the text results are missing, hide the result value
             pfResultsView.isHidden = true

@@ -81,8 +81,11 @@ class BicarbonateDeficit: UIViewController, UITextFieldDelegate {
         //Bicarb Deficit calcualtion
         let resultDeficit = (0.4 * weight! * (24 - HC03!))
         
+        //Prints the result
+        print(" The bicarb deficit is \(resultDeficit)")
+
         //Returns the calculation as a string.
-        return "\(resultDeficit)"
+        return "\(resultDeficit.oneDecimalPlace)"
     }
   
     

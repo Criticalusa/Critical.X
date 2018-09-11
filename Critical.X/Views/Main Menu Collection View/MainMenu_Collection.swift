@@ -88,8 +88,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         let day = (Calendar.current.component(.weekday, from: Date()))
         
         // This is how we get the day of the week.
-        let dateFormatter = DateFormatter()
-        
+        _ = DateFormatter()
+        //let dateFormatter = DateFormatter()
+
         // Create new variable to store the day of the week
         // Gets the day of the week from the extension above
         let dayOfTheWeek = Date().dayOfWeek()!
@@ -118,7 +119,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
             
             // Convert the index at random into the string
-            let displayRandomGreeting = greetings[index]
+            //let displayRandomGreeting = greetings[index]
             let formalDisplayRandomGreeting = greetingFormal [index]
             
             //gets the name from the initial login and stores it.""
@@ -154,7 +155,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
             
             // Convert the index at random into the string
-            let displayRandomGreeting = greetings[index]
+            //let displayRandomGreeting = greetings[index]
             let formalDisplayRandomGreeting = greetingFormal [index]
             
             //gets the name from the initial login and stores it.""
@@ -190,7 +191,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
             
             // Convert the index at random into the string
-            let displayRandomGreeting = greetings[index]
+            //let displayRandomGreeting = greetings[index]
             let formalDisplayRandomGreeting = greetingFormal [index]
             
             //gets the name from the initial login and stores it.""
@@ -206,12 +207,12 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             }
             if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                let displayRandomGreeting = greetings.randomElement()
+                //let displayRandomGreeting = greetings.randomElement()
                     label.text = "\(formalDisplayRandomGreeting) \(randomEvening), \(username!)!"
                     
                 
                 print("A Name was entered 18-24 hrs section")
-                print(username)
+                print(username!)
             }
 
             
@@ -229,7 +230,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             
             // Convert the index at random into the string
-            let displayRandomGreeting = greetings[index]
+            //let displayRandomGreeting = greetings[index]
             let formalDisplayRandomGreeting = greetingFormal [index]
             
             
@@ -261,8 +262,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         
         //gets the name from the initial login and stores it.""
-        let username = UserDefaults.standard.value(forKey: "name")
-      
+        _ = UserDefaults.standard.value(forKey: "name")
+        //let username = UserDefaults.standard.value(forKey: "name")
+
         
         //label = LTMorphingLabel(frame: CGRect(x: 50, y: 80, width: 100, height: 50))
         label = LTMorphingLabel(frame: CGRect(x: 8, y: 175, width: 359, height: 29))
