@@ -14,7 +14,7 @@
         <!--Bicarb Deficit-->
         <scene sceneID="RGm-nm-u37">
             <objects>
-                <viewController title="Bicarb Deficit" modalPresentationStyle="overCurrentContext" id="jEl-tG-RD1" customClass="BicarbonateDeficit" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Bicarb Deficit" modalPresentationStyle="overFullScreen" id="jEl-tG-RD1" customClass="BicarbonateDeficit" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dwv-f6-qxu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                                                 <constraint firstAttribute="height" constant="64" id="KGa-Af-ofS"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="36"/>
-                                                            <color key="textColor" name="Clouds"/>
+                                                            <color key="textColor" name="Concentrate"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current HC03" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO6-ij-Abz">
@@ -48,7 +48,7 @@
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifq-x8-NFm">
                                                             <rect key="frame" x="64" y="344" width="193" height="36"/>
-                                                            <color key="backgroundColor" white="0.66666666669999997" alpha="0.31651947460000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="36" id="aZQ-Pb-Ytp"/>
                                                                 <constraint firstAttribute="width" constant="193" id="wi8-Mf-8F3"/>
@@ -162,7 +162,7 @@
                                                                 <constraint firstAttribute="width" constant="82" id="Zbq-Pn-8KW"/>
                                                                 <constraint firstAttribute="height" constant="37" id="gWf-bE-xH0"/>
                                                             </constraints>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                             <userDefinedRuntimeAttributes>
@@ -193,7 +193,7 @@
                                                                         <constraint firstAttribute="width" constant="270" id="p6Z-3I-od9"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="87"/>
-                                                                    <color key="textColor" name="Pomegranate"/>
+                                                                    <color key="textColor" name="Cool Mint"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mEq/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kef-su-bUz">
@@ -216,7 +216,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" name="Silver"/>
+                                                            <color key="backgroundColor" red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="201" id="AsN-4p-hpE"/>
                                                                 <constraint firstItem="Kef-su-bUz" firstAttribute="top" secondItem="8xe-Je-xQb" secondAttribute="bottom" constant="4" id="GYG-WH-ZOG"/>
@@ -233,6 +233,7 @@
                                                             </constraints>
                                                         </view>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="Fox-QL-7VW" firstAttribute="top" secondItem="V2G-4J-Xse" secondAttribute="top" constant="78" id="4a3-lG-P6R"/>
                                                         <constraint firstAttribute="trailing" secondItem="7Ns-or-zvi" secondAttribute="trailing" constant="22" id="6Vm-Q9-s5n"/>
@@ -265,6 +266,8 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="V2G-4J-Xse" firstAttribute="top" secondItem="a4K-jU-lF4" secondAttribute="top" id="030-jD-Jqx"/>
                                                 <constraint firstAttribute="bottom" secondItem="V2G-4J-Xse" secondAttribute="bottom" id="Cyx-3e-e5G"/>
@@ -274,6 +277,7 @@
                                             </constraints>
                                         </scrollView>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="a4K-jU-lF4" secondAttribute="trailing" id="FEH-qD-oxL"/>
                                         <constraint firstItem="a4K-jU-lF4" firstAttribute="leading" secondItem="eB6-Mb-UDq" secondAttribute="leading" id="G0C-1T-Ih0"/>
@@ -281,12 +285,12 @@
                                         <constraint firstAttribute="bottom" secondItem="a4K-jU-lF4" secondAttribute="bottom" id="k3G-8Q-Okj"/>
                                     </constraints>
                                 </view>
-                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="700" id="E1V-TZ-lvE"/>
                                 </constraints>
-                                <blurEffect style="regular"/>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -320,11 +324,11 @@
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Concentrate">
+            <color red="0.58399999141693115" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Cool Mint">
             <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Pomegranate">
-            <color red="0.75300002098083496" green="0.22400000691413879" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Silver">
             <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
