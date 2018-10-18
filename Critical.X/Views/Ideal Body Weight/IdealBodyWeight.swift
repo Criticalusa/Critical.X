@@ -7,18 +7,19 @@
 //
 
 import UIKit
+import TextFieldEffects
 
 var maleCalc: Double = 0
 var femaleCalc: Double = 0
 
 class IdealBodyWeight: UIViewController {
     
-    @IBOutlet weak var desiredTVText: UITextField!
-    @IBOutlet weak var heightText: UITextField!
+    @IBOutlet weak var desiredTVText1: UITextField!
+    @IBOutlet weak var heightText1: TextFieldEffects!
     @IBOutlet weak var closeButton: UIButton!
-    
+    @IBOutlet weak var desiredTVText: TextFieldEffects!
+    @IBOutlet weak var heightText: UITextField!
     @IBOutlet weak var calculateButton: UIButton!
-    
     @IBOutlet weak var idealBodyWeightSegment: CustomSegmentedController?
     
     override func viewDidLoad() {
@@ -31,11 +32,10 @@ class IdealBodyWeight: UIViewController {
         calculateButton.clipsToBounds = true
         calculateButton.layer.cornerRadius = 4
         
-        
-        
         idealBodyWeightSegment?.items = ["M", "F"]
         
-        
+       
+
     }
     
     @IBAction func closeIdealBodyWeightScreen(_ sender: Any) {

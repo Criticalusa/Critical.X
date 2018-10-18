@@ -35,13 +35,19 @@ class ChestXray: UIViewController {
         
         // Sets up the label in code.
         let buttonHeight = CGFloat(55.0)
-        
+        let theCenter:CGPoint = self.view.center
+
         //For the width i divide by 8 because that centers the button inside the iPhone X
-        let buttonFrame = CGRect(x: view.frame.width/8, y: 485, width: 320 - buttonHeight, height: buttonHeight)
+        let buttonFrame = CGRect(x: view.frame.width-300, y: 500, width: 300 - buttonHeight, height: buttonHeight)
         let green = #colorLiteral(red: 0.262835294, green: 0.8022480607, blue: 0.3886030316, alpha: 1)
         
-        
         let switchButton = JPSwitchButton(frame: buttonFrame, offColor: .white, onColor: green, image: nil, title: "Tap for detailed view", description: "", isOn: false)
+        
+        //Center the button in the middle of X axis
+        switchButton.center = view.center
+        
+        // Set the Y position 
+        switchButton.center.y = view.frame.midY + 75
         
         switchButton.onClick =  {
             switchButton.switchState()
