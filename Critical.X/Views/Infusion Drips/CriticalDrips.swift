@@ -145,6 +145,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             self.lbl_Details.frame = CGRect(x: 20, y: self.lbl_Details.frame.origin.y, width: self.view.bounds.width - 36, height: self.lbl_Details.frame.size.height)
             
             self.viewCard1.frame = CGRect(x: 16, y: self.lbl_Details.frame.origin.y + self.lbl_Details.frame.size.height + 20, width: self.viewCard1.frame.size.width, height: self.viewCard1.frame.size.height)
+            
             self.viewCard2.frame = CGRect(x: 16, y: self.viewCard1.frame.origin.y + self.viewCard1.frame.size.height + 25, width: self.viewCard2.frame.size.width, height: self.viewCard2.frame.size.height)
         }, completion: { (finished) in
             self.mainScrollView.contentSize = CGSize(width: 100, height: self.viewCard2.frame.origin.y + self.viewCard2.frame.size.height + 50)

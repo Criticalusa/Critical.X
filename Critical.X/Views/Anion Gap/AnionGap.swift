@@ -11,7 +11,7 @@ import AKLabel
 
 
 class AnionGap: UIViewController {
-
+    
     //Creates the outlets.
     @IBOutlet weak var NaTxt: UITextField!
     @IBOutlet weak var Cltxt: UITextField!
@@ -28,7 +28,7 @@ class AnionGap: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
+        
         // Takes the button and makes it into a circle
         closeAnionGapButton.layer.cornerRadius = closeAnionGapButton.frame.size.width / 2
         resultView.isHidden = true
@@ -42,15 +42,15 @@ class AnionGap: UIViewController {
         resultView.layer.cornerRadius = 15
         
     }
-
-    // Closes the keyboard befor ethe view is dismissed
+    
+    // Closes the keyboard before the view is dismissed
     override func viewWillDisappear(_ animated: Bool) {
         self.view.endEditing(true)
     }
     
     
     func calculateAnionGap(Sodium: Int, Chloride: Int, Bicarb: Int) -> Int {
-   
+        
         return Sodium - (Chloride + Bicarb)
     }
     
@@ -58,20 +58,20 @@ class AnionGap: UIViewController {
         
         let theSodium = Int(NaTxt.text!)
         let theChloride = Int(Cltxt.text!)
-
+        
         guard let _ = theSodium, let _ = theChloride else {
             
             print("delta Gap crashing"); return 0}
         
         let deltaGapResult = (theSodium! - theChloride!) - 36
-
+        
         return deltaGapResult
         
     }
     
     
     @IBAction func calculateTheAnionGap(_ sender: Any) {
-       
+        
         //Assign the variables
         let theSodium = Int(NaTxt.text!)
         let theChloride = Int(Cltxt.text!)
@@ -82,17 +82,17 @@ class AnionGap: UIViewController {
         let Bicarb = theBicarb
         let deltaGap = self.deltaGap()
         
-        //Guard Statement to break out if the text fields arent all filled in.
+        //Guard Statement to break out if the text fields aren't all filled in.
         guard let _ = Sodium, let _ = Chloride, let _ = Bicarb else {
-            print("Text Field is crashing. Values not appripriate.")
+            print("Text Field is crashing. Values not appropriate.")
             
             // Add alertView
             _ = SCLAlertView().showWarning("Hold On...", subTitle: "Check all of the fields before calculating.")
-
+            
             
             return  }
         
-        // Sets the textfields to these variables
+        // Sets the text fields to these variables
         
         
         // Sets the Aniongap function to Result
@@ -101,26 +101,26 @@ class AnionGap: UIViewController {
         resultLabel.text = "\(result)"
         // Sets the description label
         descriptionLabel.text = "The Delta Gap is \(deltaGap)"
-//        descriptionLabel.animate(text: "The Delta Gap is \(deltaGap)", duration: 3, completion: nil)
+        //        descriptionLabel.animate(text: "The Delta Gap is \(deltaGap)", duration: 3, completion: nil)
         
         //Condition statement for the delta gap.
         if deltaGap < -5 {
-           descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists."
-//            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists.", duration: 3, completion: nil)
-        
+            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists."
+            //            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists.", duration: 3, completion: nil)
+            
         } else if (deltaGap > -6) && (deltaGap < 6) {
             descriptionLabel.text = "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists."
-//            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists." , duration: 3, completion: nil)
+            //            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists." , duration: 3, completion: nil)
             
-            print("Delta should be greater than than -6, but less than 6")
-
+            print("Delta should be greater than -6, but less than 6")
+            
         } else if deltaGap > 6 {
             descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist."
-//           descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist.", duration: 3, completion: nil)
-                print("Delta should be greater than 6")
+            //           descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist.", duration: 3, completion: nil)
+            print("Delta should be greater than 6")
         } else {
             descriptionLabel.text = "The Delta Gap is \(deltaGap)."
-//            descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).", duration: 3, completion: nil)
+            //            descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).", duration: 3, completion: nil)
         }
         
         if result > 16 {
@@ -132,7 +132,7 @@ class AnionGap: UIViewController {
             resultLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
             
             print(" The anionGap is \(result)")
-
+            
         }
         
         self.view.endEditing(true) //This will hide the keyboard
@@ -145,7 +145,7 @@ class AnionGap: UIViewController {
     func showAnimate()
     {
         resultView.isHidden = false
-
+        
         self.resultView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.resultView.alpha = 0.0;
         UIView.animate(withDuration: 0.25, animations: {
