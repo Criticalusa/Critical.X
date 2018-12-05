@@ -24,7 +24,7 @@ class Stroke: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.recalculateVerticalContentSize_synchronous()
+       scrollView.recalculateVerticalContentSize_synchronous()
 
    }
     

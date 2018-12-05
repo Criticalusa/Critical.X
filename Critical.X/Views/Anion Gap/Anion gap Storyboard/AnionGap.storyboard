@@ -23,15 +23,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-3F-6By">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-3F-6By">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="vCj-d8-mwd">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vCj-d8-mwd">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="709" id="dre-2v-fSi"/>
+                                    <constraint firstAttribute="width" constant="320" id="gbe-jR-1bg"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-Wy-VHS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
@@ -295,10 +306,14 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="top" secondItem="YR7-QX-slG" secondAttribute="top" id="3BN-lN-w9E"/>
+                            <constraint firstItem="nCe-3F-6By" firstAttribute="top" secondItem="YR7-QX-slG" secondAttribute="top" id="8Um-1t-Iu1"/>
+                            <constraint firstItem="nCe-3F-6By" firstAttribute="trailing" secondItem="fWX-iT-myy" secondAttribute="trailing" id="O9W-jc-RFx"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="bottom" secondItem="fWX-iT-myy" secondAttribute="bottom" id="cAB-Ph-Tzc"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="trailing" secondItem="fWX-iT-myy" secondAttribute="trailing" id="jah-3J-X6B"/>
+                            <constraint firstItem="nCe-3F-6By" firstAttribute="bottom" secondItem="fWX-iT-myy" secondAttribute="bottom" id="m6w-1u-sOl"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="leading" secondItem="fWX-iT-myy" secondAttribute="leading" id="rZw-mF-RnH"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="width" secondItem="YR7-QX-slG" secondAttribute="width" id="u8l-ww-Mh4"/>
+                            <constraint firstItem="nCe-3F-6By" firstAttribute="leading" secondItem="fWX-iT-myy" secondAttribute="leading" id="zlW-Ih-Vc3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fWX-iT-myy"/>
                     </view>

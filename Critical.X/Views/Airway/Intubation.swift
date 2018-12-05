@@ -19,7 +19,7 @@ class Intubation: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    intubationScrollView.recalculateVerticalContentSize_synchronous()
+    //intubationScrollView.recalculateVerticalContentSize_synchronous()
         
         intubationSubtitle.animate(text: "Intubation", duration: 1, completion: nil)
         // Do any additional setup after loading the view.
