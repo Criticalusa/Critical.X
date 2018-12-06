@@ -83,7 +83,12 @@ class OnboardingVC: UIViewController {
         guard let theText = nameTextField.text, theText.isEmpty else {
             // If the textField is filled in then do the following actions.
             self.performSegue(withIdentifier: "mainViewSegue", sender: self)
+            
+            // SEt the name to the userDefaults
             UserDefaults.standard.set(nameTextField.text, forKey: "name")
+            
+            // Print the name entered
+            print("The name \(UserDefaults.standard.set(nameTextField.text, forKey: "name")) was enetered")
 
             return // or throw
         }
@@ -106,9 +111,16 @@ class OnboardingVC: UIViewController {
       //username = nil
         if (nameTextField.text?.isEmpty)! {
             
+            // Set the name to be blank
             nameTextField.text = ""
-            performSegue(withIdentifier: "mainViewSegue", sender: self)
             
+            // Tranisition
+            performSegue(withIdentifier: "mainViewSegue", sender: self)
+            // Set the user default to blank
+            UserDefaults.standard.set(nameTextField.text, forKey: "name")
+            
+            print("Name was left blank in the name field")
+
         }
       
     }

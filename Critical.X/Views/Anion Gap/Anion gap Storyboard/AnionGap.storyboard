@@ -21,20 +21,17 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tableViewShot" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-hn-tA6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-3F-6By">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-3F-6By">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vCj-d8-mwd">
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="vCj-d8-mwd">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="709"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="709" id="dre-2v-fSi"/>
-                                    <constraint firstAttribute="width" constant="320" id="gbe-jR-1bg"/>
-                                </constraints>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,7 +70,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-k1-Njp">
                                                 <rect key="frame" x="50" y="430" width="224" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.52507925720000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Calculate">
@@ -92,7 +89,7 @@
                                             </label>
                                             <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJx-w8-PZA">
                                                 <rect key="frame" x="264" y="35" width="35" height="35"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <state key="normal" title="X">
@@ -133,7 +130,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="HC03" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K15-Nh-cXi" customClass="KaedeTextField" customModule="TextFieldEffects">
                                                 <rect key="frame" x="212" y="342" width="87" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -157,7 +154,7 @@
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Na" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTE-HI-Fwl" customClass="KaedeTextField" customModule="TextFieldEffects">
                                                 <rect key="frame" x="212" y="206" width="87" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -233,7 +230,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CL" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0x-mb-hGh" customClass="KaedeTextField" customModule="TextFieldEffects">
                                                 <rect key="frame" x="212" y="277" width="85" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -257,7 +254,7 @@
                                             </textField>
                                             <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-u5-9xm">
                                                 <rect key="frame" x="8" y="488" width="304" height="193"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVs-bS-uvS">
                                                         <rect key="frame" x="8" y="50" width="288" height="102"/>
@@ -306,14 +303,10 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="top" secondItem="YR7-QX-slG" secondAttribute="top" id="3BN-lN-w9E"/>
-                            <constraint firstItem="nCe-3F-6By" firstAttribute="top" secondItem="YR7-QX-slG" secondAttribute="top" id="8Um-1t-Iu1"/>
-                            <constraint firstItem="nCe-3F-6By" firstAttribute="trailing" secondItem="fWX-iT-myy" secondAttribute="trailing" id="O9W-jc-RFx"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="bottom" secondItem="fWX-iT-myy" secondAttribute="bottom" id="cAB-Ph-Tzc"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="trailing" secondItem="fWX-iT-myy" secondAttribute="trailing" id="jah-3J-X6B"/>
-                            <constraint firstItem="nCe-3F-6By" firstAttribute="bottom" secondItem="fWX-iT-myy" secondAttribute="bottom" id="m6w-1u-sOl"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="leading" secondItem="fWX-iT-myy" secondAttribute="leading" id="rZw-mF-RnH"/>
                             <constraint firstItem="wVd-Wy-VHS" firstAttribute="width" secondItem="YR7-QX-slG" secondAttribute="width" id="u8l-ww-Mh4"/>
-                            <constraint firstItem="nCe-3F-6By" firstAttribute="leading" secondItem="fWX-iT-myy" secondAttribute="leading" id="zlW-Ih-Vc3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fWX-iT-myy"/>
                     </view>

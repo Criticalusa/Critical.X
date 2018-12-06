@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PoR-SO-Szc">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PoR-SO-Szc">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,78 +16,50 @@
             <objects>
                 <viewController title="Airway Main Menu" id="PoR-SO-Szc" customClass="AirwayMenu" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hds-mZ-DjJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf1-gJ-WbE">
-                                <rect key="frame" x="16" y="77" width="343" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="klB-Hv-fli"/>
-                                    <constraint firstAttribute="height" constant="49" id="qJu-Ad-XLM"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critical " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf1-gJ-WbE">
+                                <rect key="frame" x="16" y="53" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airway Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUf-0H-8Mm" customClass="AKLabel" customModule="AKLabel">
-                                <rect key="frame" x="16" y="126" width="343" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="PXW-f8-LIM"/>
-                                    <constraint firstAttribute="width" constant="343" id="WUZ-6Q-Pdb"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airway Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUf-0H-8Mm" customClass="AKLabel" customModule="AKLabel">
+                                <rect key="frame" x="16" y="102" width="288" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="Turquoise"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUB-bc-JPj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUB-bc-JPj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnP-bU-8CN">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnP-bU-8CN">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gq0-Qg-gp2">
-                                                <rect key="frame" x="16" y="209" width="343" height="177"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="16" y="209" width="293" height="177"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <viewLayoutGuide key="safeArea" id="oPY-eu-Rqa"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bld-wG-ZyV">
-                                                <rect key="frame" x="16" y="419" width="343" height="171"/>
+                                                <rect key="frame" x="16" y="419" width="293" height="171"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="375" id="tSP-1W-fWM"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="lnP-bU-8CN" secondAttribute="bottom" id="6fa-lY-maJ"/>
-                                    <constraint firstItem="lnP-bU-8CN" firstAttribute="centerY" secondItem="vUB-bc-JPj" secondAttribute="centerY" id="Rl7-5K-D89"/>
-                                    <constraint firstAttribute="trailing" secondItem="lnP-bU-8CN" secondAttribute="trailing" id="TpE-vI-e5Y"/>
-                                    <constraint firstAttribute="width" constant="375" id="V8H-mw-Dva"/>
-                                    <constraint firstItem="lnP-bU-8CN" firstAttribute="top" secondItem="vUB-bc-JPj" secondAttribute="top" id="b4B-QV-asu"/>
-                                    <constraint firstItem="lnP-bU-8CN" firstAttribute="leading" secondItem="vUB-bc-JPj" secondAttribute="leading" id="y7w-Ae-juK"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="top" secondItem="CV3-CL-Atg" secondAttribute="top" constant="33" id="0oh-5U-ysz"/>
-                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="LUf-0H-8Mm" secondAttribute="trailing" constant="16" id="JJ4-xb-GEs"/>
-                            <constraint firstItem="vUB-bc-JPj" firstAttribute="top" secondItem="hds-mZ-DjJ" secondAttribute="top" id="M78-vb-1pe"/>
-                            <constraint firstItem="LUf-0H-8Mm" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="R0K-gT-00Y"/>
-                            <constraint firstItem="mf1-gJ-WbE" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" constant="16" id="Rr3-Cs-LCX"/>
-                            <constraint firstItem="vUB-bc-JPj" firstAttribute="trailing" secondItem="CV3-CL-Atg" secondAttribute="trailing" id="beU-S4-kZW"/>
-                            <constraint firstItem="LUf-0H-8Mm" firstAttribute="top" secondItem="CV3-CL-Atg" secondAttribute="top" constant="82" id="g8z-QK-62e"/>
-                            <constraint firstAttribute="bottom" secondItem="vUB-bc-JPj" secondAttribute="bottom" id="idI-TO-kfQ"/>
-                            <constraint firstItem="vUB-bc-JPj" firstAttribute="leading" secondItem="CV3-CL-Atg" secondAttribute="leading" id="ktp-ZJ-Uhe"/>
-                            <constraint firstItem="LUf-0H-8Mm" firstAttribute="top" secondItem="mf1-gJ-WbE" secondAttribute="bottom" id="lqI-t1-Wtl"/>
-                            <constraint firstItem="CV3-CL-Atg" firstAttribute="trailing" secondItem="mf1-gJ-WbE" secondAttribute="trailing" constant="16" id="tP5-Zl-5Il"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CV3-CL-Atg"/>
                     </view>
                     <connections>
@@ -99,62 +71,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Lj-J9-rrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26.399999999999999" y="150.73891625615764"/>
+            <point key="canvasLocation" x="-28.125" y="150"/>
         </scene>
         <!--Airway Main Menu-->
         <scene sceneID="sOF-w8-K0x">
             <objects>
                 <viewController storyboardIdentifier="Intubation" title="Airway Main Menu" id="XtT-jV-fdT" customClass="Intubation" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwC-md-Zh4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="4568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-hW-y0Z">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-hW-y0Z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="3568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMQ-ra-Cif">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1968"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMQ-ra-Cif">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="1959"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-Xy-3WU">
-                                                <rect key="frame" x="16" y="9" width="343" height="63"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="343" id="38l-3h-Ndi"/>
-                                                    <constraint firstAttribute="height" constant="63" id="dbz-Yx-T1G"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critical " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-Xy-3WU">
+                                                <rect key="frame" x="16" y="9" width="290" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="textColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intubation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-rE-wIw" customClass="AKLabel" customModule="AKLabel">
-                                                <rect key="frame" x="16" y="80" width="343" height="36"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="343" id="2Jc-ZI-3tC"/>
-                                                    <constraint firstAttribute="height" constant="36" id="31f-dI-UX2"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intubation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-rE-wIw" customClass="AKLabel" customModule="AKLabel">
+                                                <rect key="frame" x="16" y="80" width="290" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" name="Turquoise"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqN-Be-khJ">
-                                                <rect key="frame" x="16" y="147" width="351" height="368"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqN-Be-khJ">
+                                                <rect key="frame" x="16" y="147" width="290" height="368"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K85-f6-G7w">
-                                                        <rect key="frame" x="8" y="7" width="327" height="29"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="tE8-bn-uZH"/>
-                                                        </constraints>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STEP ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K85-f6-G7w">
+                                                        <rect key="frame" x="8" y="7" width="274" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" name="Sunflower"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND THE EPIGLOTTIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVd-Qd-S2f">
-                                                        <rect key="frame" x="8" y="30" width="327" height="29"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FIND THE EPIGLOTTIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVd-Qd-S2f">
+                                                        <rect key="frame" x="8" y="30" width="274" height="18"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Alizarin"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNV-ja-iQ6">
-                                                        <rect key="frame" x="7" y="63" width="329" height="272"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNV-ja-iQ6">
+                                                        <rect key="frame" x="7" y="63" width="275" height="272"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Low force insertion with the laryngoscope and maintain the face parallel to the ceiling.
 
 Distract the tongue and jaw forward and lift the epiglottis edge off the posterior pharynx with the laryngoscope blade.
@@ -168,42 +135,28 @@ Suction also may be used as a tool to find the epiglottis by separating it from 
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="368" id="7UM-XR-5fL"/>
-                                                    <constraint firstItem="JNV-ja-iQ6" firstAttribute="leading" secondItem="iqN-Be-khJ" secondAttribute="leading" constant="7" id="CTk-aK-BKS"/>
-                                                    <constraint firstItem="K85-f6-G7w" firstAttribute="trailing" secondItem="LVd-Qd-S2f" secondAttribute="trailing" id="MZ3-gT-DDW"/>
-                                                    <constraint firstItem="LVd-Qd-S2f" firstAttribute="top" secondItem="iqN-Be-khJ" secondAttribute="top" constant="30" id="Tbk-hb-uZu"/>
-                                                    <constraint firstAttribute="width" constant="351" id="UL9-DM-31K"/>
-                                                    <constraint firstAttribute="trailing" secondItem="JNV-ja-iQ6" secondAttribute="trailing" constant="15" id="V5P-a3-FxS"/>
-                                                    <constraint firstItem="JNV-ja-iQ6" firstAttribute="top" secondItem="K85-f6-G7w" secondAttribute="bottom" constant="27" id="VOQ-Uh-aXb"/>
-                                                    <constraint firstItem="K85-f6-G7w" firstAttribute="leading" secondItem="LVd-Qd-S2f" secondAttribute="leading" id="htW-mt-1LP"/>
-                                                    <constraint firstItem="JNV-ja-iQ6" firstAttribute="top" secondItem="LVd-Qd-S2f" secondAttribute="bottom" constant="4" id="iOY-R2-ZRh"/>
-                                                    <constraint firstItem="K85-f6-G7w" firstAttribute="leading" secondItem="iqN-Be-khJ" secondAttribute="leadingMargin" id="pVJ-gI-fMb"/>
-                                                    <constraint firstAttribute="bottom" secondItem="JNV-ja-iQ6" secondAttribute="bottom" constant="33" id="sTC-xM-jl2"/>
-                                                    <constraint firstItem="K85-f6-G7w" firstAttribute="top" secondItem="iqN-Be-khJ" secondAttribute="top" constant="7" id="wrI-B1-hly"/>
-                                                    <constraint firstItem="LVd-Qd-S2f" firstAttribute="centerX" secondItem="JNV-ja-iQ6" secondAttribute="centerX" id="xxp-5o-12x"/>
-                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlb-ZI-wbL">
-                                                <rect key="frame" x="16" y="541" width="351" height="249"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jlb-ZI-wbL">
+                                                <rect key="frame" x="16" y="541" width="290" height="249"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP TWO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gow-8h-fc1">
-                                                        <rect key="frame" x="8" y="7" width="327" height="29"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="KYO-l3-0dY"/>
-                                                        </constraints>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STEP TWO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gow-8h-fc1">
+                                                        <rect key="frame" x="8" y="7" width="272" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" name="Sunflower"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAXIMIZING LARYNGEAL EXPOSURE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwZ-e2-Hi9">
-                                                        <rect key="frame" x="8" y="30" width="327" height="29"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAXIMIZING LARYNGEAL EXPOSURE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwZ-e2-Hi9">
+                                                        <rect key="frame" x="8" y="30" width="274" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Alizarin"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFU-NR-7jX">
-                                                        <rect key="frame" x="8" y="60" width="327" height="175"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFU-NR-7jX">
+                                                        <rect key="frame" x="8" y="60" width="274" height="175"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Two-handed laryngeal manipulation is having the left-hand position low on the laryngoscope blade handle and the right hand positioned on the cricoid cartilage.
 
 No B.U.R.P ( Back, Upward, Right, Posterior) pressure or cricoid pressure is recommended.
@@ -215,27 +168,13 @@ Look for the airway anatomy.</string>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="gow-8h-fc1" firstAttribute="top" secondItem="Jlb-ZI-wbL" secondAttribute="top" constant="7" id="7Mg-ol-GVB"/>
-                                                    <constraint firstItem="gow-8h-fc1" firstAttribute="trailing" secondItem="BwZ-e2-Hi9" secondAttribute="trailing" id="9gs-zR-C3v"/>
-                                                    <constraint firstItem="SFU-NR-7jX" firstAttribute="top" secondItem="BwZ-e2-Hi9" secondAttribute="bottom" constant="1" id="Am2-1S-AxJ"/>
-                                                    <constraint firstAttribute="height" constant="249" id="Fn9-yY-dTd"/>
-                                                    <constraint firstItem="gow-8h-fc1" firstAttribute="leading" secondItem="BwZ-e2-Hi9" secondAttribute="leading" id="Jse-dJ-PT4"/>
-                                                    <constraint firstItem="gow-8h-fc1" firstAttribute="leading" secondItem="Jlb-ZI-wbL" secondAttribute="leadingMargin" id="LFu-fc-Xva"/>
-                                                    <constraint firstAttribute="bottom" secondItem="SFU-NR-7jX" secondAttribute="bottom" constant="14" id="MDT-Jt-fSX"/>
-                                                    <constraint firstItem="BwZ-e2-Hi9" firstAttribute="trailing" secondItem="SFU-NR-7jX" secondAttribute="trailing" id="NK5-TF-vke"/>
-                                                    <constraint firstItem="BwZ-e2-Hi9" firstAttribute="leading" secondItem="SFU-NR-7jX" secondAttribute="leading" id="S2Q-yJ-tsS"/>
-                                                    <constraint firstAttribute="width" constant="351" id="VtW-fR-SIp"/>
-                                                    <constraint firstItem="BwZ-e2-Hi9" firstAttribute="top" secondItem="Jlb-ZI-wbL" secondAttribute="top" constant="30" id="gRn-N7-aK0"/>
-                                                    <constraint firstAttribute="trailing" secondItem="gow-8h-fc1" secondAttribute="trailing" constant="16" id="jjK-yE-kug"/>
-                                                    <constraint firstItem="SFU-NR-7jX" firstAttribute="top" secondItem="gow-8h-fc1" secondAttribute="bottom" constant="24" id="vgn-Se-u1u"/>
-                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-sC-4Zr">
-                                                <rect key="frame" x="21" y="1774" width="338" height="164"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-sC-4Zr">
+                                                <rect key="frame" x="21" y="1774" width="291" height="178"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-eb-brU">
-                                                        <rect key="frame" x="8" y="6" width="322" height="144"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-eb-brU">
+                                                        <rect key="frame" x="8" y="6" width="275" height="144"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="322" id="7LV-U0-hvc"/>
                                                             <constraint firstAttribute="height" constant="144" id="Ldg-Rz-lJd"/>
@@ -249,31 +188,21 @@ Ear to sternal notch as seen below. </string>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="lxE-eb-brU" firstAttribute="leading" secondItem="nqh-sC-4Zr" secondAttribute="leading" constant="8" id="3lT-IU-xHA"/>
-                                                    <constraint firstAttribute="width" constant="338" id="4jZ-ES-huC"/>
-                                                    <constraint firstAttribute="bottom" secondItem="lxE-eb-brU" secondAttribute="bottom" constant="14" id="5q1-QN-kxM"/>
-                                                    <constraint firstItem="lxE-eb-brU" firstAttribute="top" secondItem="nqh-sC-4Zr" secondAttribute="top" constant="6" id="aZv-BZ-Slc"/>
-                                                    <constraint firstAttribute="trailing" secondItem="lxE-eb-brU" secondAttribute="trailing" constant="8" id="wMN-2U-APf"/>
-                                                    <constraint firstAttribute="height" constant="164" id="xJc-7Y-65M"/>
-                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v98-7q-Szt">
-                                                <rect key="frame" x="16" y="1082" width="351" height="144"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v98-7q-Szt">
+                                                <rect key="frame" x="16" y="1082" width="296" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-AU-ELH">
-                                                        <rect key="frame" x="8" y="15" width="327" height="92"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="92" id="ckx-SY-zap"/>
-                                                            <constraint firstAttribute="width" constant="327" id="ilp-WB-wnk"/>
-                                                        </constraints>
-                                                        <string key="text">Once the glottic opening is optimized by the provider, and assistant can maintain pressure at the right location if needed – freeing the operator's right-hand to ultimately placed the endotracheal tube.</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-AU-ELH">
+                                                        <rect key="frame" x="8" y="8" width="274" height="104"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Once the glottic opening is optimized by the provider, an assistant can maintain pressure at the right location if needed – freeing the operator's right-hand to ultimately placed the endotracheal tube.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" name="Clouds"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sniffing Position - If not in a cervical collar ⏬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-RE-BX8">
-                                                        <rect key="frame" x="8" y="120" width="327" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sniffing Position - If not in a cervical collar ⏬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-RE-BX8">
+                                                        <rect key="frame" x="8" y="120" width="282" height="16"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="m3N-De-L42"/>
                                                             <constraint firstAttribute="width" constant="327" id="yi3-9i-nij"/>
@@ -284,139 +213,60 @@ Ear to sternal notch as seen below. </string>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="351" id="00d-oi-Iua"/>
-                                                    <constraint firstItem="Kqg-AU-ELH" firstAttribute="leading" secondItem="v98-7q-Szt" secondAttribute="leading" constant="8" id="3CG-gP-9nJ"/>
-                                                    <constraint firstItem="1pX-RE-BX8" firstAttribute="leading" secondItem="v98-7q-Szt" secondAttribute="leading" constant="8" id="Eyw-bm-fWz"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Kqg-AU-ELH" secondAttribute="trailing" constant="16" id="dSj-WD-SLH"/>
-                                                    <constraint firstItem="Kqg-AU-ELH" firstAttribute="top" secondItem="v98-7q-Szt" secondAttribute="top" constant="15" id="jph-Sm-zsX"/>
-                                                    <constraint firstAttribute="height" constant="144" id="n9U-u2-mse"/>
-                                                    <constraint firstAttribute="trailing" secondItem="1pX-RE-BX8" secondAttribute="trailing" constant="16" id="qut-kg-aA6"/>
-                                                    <constraint firstItem="1pX-RE-BX8" firstAttribute="top" secondItem="Kqg-AU-ELH" secondAttribute="bottom" constant="13" id="spd-GD-0pO"/>
-                                                    <constraint firstAttribute="bottom" secondItem="1pX-RE-BX8" secondAttribute="bottom" constant="8" id="y0E-9s-XHK"/>
-                                                </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-BP-3Hi">
-                                                <rect key="frame" x="34" y="1036" width="314" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="314" id="PAe-h5-jIQ"/>
-                                                    <constraint firstAttribute="height" constant="30" id="qHv-85-Ro8"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-BP-3Hi">
+                                                <rect key="frame" x="16" y="1036" width="288" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2 hand" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-cI-GRg">
-                                                <rect key="frame" x="16" y="1246" width="351" height="212"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="212" id="41A-Q3-Mv5"/>
-                                                    <constraint firstAttribute="width" constant="351" id="WTW-af-0w9"/>
-                                                </constraints>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2 hand" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-cI-GRg">
+                                                <rect key="frame" x="16" y="1246" width="296" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-xW-oaF">
-                                                <rect key="frame" x="30" y="1461" width="315" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="315" id="O7e-eE-ayR"/>
-                                                    <constraint firstAttribute="height" constant="30" id="zJh-2u-UF7"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj2-xW-oaF">
+                                                <rect key="frame" x="30" y="1461" width="282" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation-NeckFlexion" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-KO-gBu">
-                                                <rect key="frame" x="26" y="1503" width="341" height="212"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="341" id="NQM-GJ-5eV"/>
-                                                    <constraint firstAttribute="height" constant="212" id="WHr-0W-IhJ"/>
-                                                </constraints>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intubation-NeckFlexion" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-KO-gBu">
+                                                <rect key="frame" x="16" y="1503" width="296" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYK-6i-emv">
-                                                <rect key="frame" x="35" y="1718" width="315" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="315" id="Wxa-sm-Gx9"/>
-                                                    <constraint firstAttribute="height" constant="30" id="bkj-xg-HHp"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYK-6i-emv">
+                                                <rect key="frame" x="16" y="1718" width="290" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="aMu-rE-wIw" firstAttribute="top" secondItem="p9F-Xy-3WU" secondAttribute="bottom" constant="8" id="4ms-y3-9Rs"/>
-                                            <constraint firstItem="qj2-xW-oaF" firstAttribute="top" secondItem="DdN-cI-GRg" secondAttribute="bottom" constant="3" id="90s-hH-WVC"/>
-                                            <constraint firstItem="DdN-cI-GRg" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="9b0-zj-uac"/>
-                                            <constraint firstItem="hLm-BP-3Hi" firstAttribute="top" secondItem="Jlb-ZI-wbL" secondAttribute="bottom" constant="246" id="CQO-47-Wma"/>
-                                            <constraint firstItem="aMu-rE-wIw" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="DNl-ju-wvd"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="hLm-BP-3Hi" secondAttribute="trailing" constant="19" id="EfX-7H-ESP"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="p9F-Xy-3WU" secondAttribute="trailing" constant="8" id="GGD-NW-XYa"/>
-                                            <constraint firstItem="jCd-KO-gBu" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="18" id="H2T-HL-l4u"/>
-                                            <constraint firstItem="DdN-cI-GRg" firstAttribute="top" secondItem="v98-7q-Szt" secondAttribute="bottom" constant="20" id="NYs-Tr-uFY"/>
-                                            <constraint firstItem="jCd-KO-gBu" firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailingMargin" id="Ndw-JD-0wS"/>
-                                            <constraint firstItem="nqh-sC-4Zr" firstAttribute="top" secondItem="vYK-6i-emv" secondAttribute="bottom" constant="26" id="Nuu-qi-tGk"/>
-                                            <constraint firstAttribute="height" constant="1968" id="Q4x-Xi-e58"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="aMu-rE-wIw" secondAttribute="trailing" constant="8" id="UOJ-JV-ePO"/>
-                                            <constraint firstItem="v98-7q-Szt" firstAttribute="top" secondItem="hLm-BP-3Hi" secondAttribute="bottom" constant="16" id="YTO-Ep-cEW"/>
-                                            <constraint firstItem="hLm-BP-3Hi" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="26" id="Zdr-Of-zzO"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="nqh-sC-4Zr" secondAttribute="bottom" constant="-22" id="a0q-vZ-F98"/>
-                                            <constraint firstAttribute="width" constant="375" id="aAk-ka-n00"/>
-                                            <constraint firstItem="v98-7q-Szt" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="bSl-Am-Sbh"/>
-                                            <constraint firstItem="qj2-xW-oaF" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="22" id="dUC-UN-Hsn"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="nqh-sC-4Zr" secondAttribute="trailing" constant="8" id="fvp-vx-eTv"/>
-                                            <constraint firstItem="DdN-cI-GRg" firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailingMargin" id="hah-uT-SRc"/>
-                                            <constraint firstItem="nqh-sC-4Zr" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="13" id="hfJ-ou-fOk"/>
-                                            <constraint firstItem="p9F-Xy-3WU" firstAttribute="top" secondItem="gMQ-ra-Cif" secondAttribute="topMargin" constant="1" id="iAU-RG-Jif"/>
-                                            <constraint firstItem="p9F-Xy-3WU" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="keJ-7m-RpK"/>
-                                            <constraint firstItem="v98-7q-Szt" firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailingMargin" id="luo-IX-y7A"/>
-                                            <constraint firstItem="Jlb-ZI-wbL" firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailingMargin" id="m9Q-kN-A1g"/>
-                                            <constraint firstItem="vYK-6i-emv" firstAttribute="top" secondItem="jCd-KO-gBu" secondAttribute="bottom" constant="3" id="nxd-YW-zGC"/>
-                                            <constraint firstItem="iqN-Be-khJ" firstAttribute="top" secondItem="aMu-rE-wIw" secondAttribute="bottom" constant="31" id="nze-dE-mdU"/>
-                                            <constraint firstItem="iqN-Be-khJ" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="pzg-Rg-5dU"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="vYK-6i-emv" secondAttribute="trailing" constant="17" id="t1r-J9-0ur"/>
-                                            <constraint firstItem="Jlb-ZI-wbL" firstAttribute="top" secondItem="iqN-Be-khJ" secondAttribute="bottom" constant="26" id="uw6-xb-qH6"/>
-                                            <constraint firstItem="Jlb-ZI-wbL" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="8" id="vPW-Zs-UdL"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="qj2-xW-oaF" secondAttribute="trailing" constant="22" id="y7I-ND-ARm"/>
-                                            <constraint firstItem="jCd-KO-gBu" firstAttribute="top" secondItem="qj2-xW-oaF" secondAttribute="bottom" constant="12" id="yl2-CM-XYA"/>
-                                            <constraint firstItem="vYK-6i-emv" firstAttribute="leading" secondItem="gMQ-ra-Cif" secondAttribute="leadingMargin" constant="27" id="zYK-ij-XNa"/>
-                                            <constraint firstItem="iqN-Be-khJ" firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailingMargin" id="zvo-kT-sHQ"/>
-                                        </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubate-Epiglottis" translatesAutoresizingMaskIntoConstraints="NO" id="pYP-9w-rIg">
-                                        <rect key="frame" x="19" y="855" width="341" height="212"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="212" id="GdE-rQ-C21"/>
-                                            <constraint firstAttribute="width" constant="341" id="utc-oh-BST"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="212" id="wF8-rC-qbS"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intubate-Epiglottis" translatesAutoresizingMaskIntoConstraints="NO" id="pYP-9w-rIg">
+                                        <rect key="frame" x="19" y="855" width="274" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation- neck" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-Gb-n9f">
-                                        <rect key="frame" x="17" y="2000" width="341" height="212"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="212" id="DRq-Qr-UNR"/>
-                                            <constraint firstAttribute="height" constant="212" id="RQc-yd-gYw"/>
-                                            <constraint firstAttribute="width" constant="341" id="UWM-Mo-U2k"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Intubation- neck" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-Gb-n9f">
+                                        <rect key="frame" x="17" y="2000" width="295" height="207"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-bP-VP1">
-                                        <rect key="frame" x="19" y="2215" width="339" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="EqL-By-lXE"/>
-                                            <constraint firstAttribute="width" constant="339" id="KO9-S5-Ozi"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cIZ-gP-Ss6"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-bP-VP1">
+                                        <rect key="frame" x="19" y="2215" width="293" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                         <color key="textColor" name="Cool Mint"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eL-DV-LOS">
-                                        <rect key="frame" x="19" y="2262" width="338" height="99"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eL-DV-LOS">
+                                        <rect key="frame" x="19" y="2262" width="293" height="99"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-Ou-5qo">
-                                                <rect key="frame" x="8" y="6" width="322" height="93"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="322" id="9hk-H3-2Ej"/>
-                                                    <constraint firstAttribute="height" constant="93" id="fq0-bK-NON"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-Ou-5qo">
+                                                <rect key="frame" x="8" y="6" width="269" height="93"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Overextension of the patient's neck is frequently a cause difficulty when intubating. The image below is an example of the  Atlanto- Occipital Extension.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" name="Clouds"/>
@@ -424,52 +274,39 @@ Ear to sternal notch as seen below. </string>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="9Yg-Ou-5qo" secondAttribute="bottom" id="1vg-jC-3Il"/>
-                                            <constraint firstAttribute="trailing" secondItem="9Yg-Ou-5qo" secondAttribute="trailing" constant="8" id="Se5-Ei-Kab"/>
-                                            <constraint firstItem="9Yg-Ou-5qo" firstAttribute="leading" secondItem="0eL-DV-LOS" secondAttribute="leading" constant="8" id="VgQ-r7-ELL"/>
-                                            <constraint firstItem="9Yg-Ou-5qo" firstAttribute="top" secondItem="0eL-DV-LOS" secondAttribute="top" constant="6" id="bZc-du-F4K"/>
-                                            <constraint firstAttribute="height" constant="99" id="clD-cC-KF6"/>
-                                            <constraint firstAttribute="width" constant="338" id="sub-UW-8l3"/>
-                                        </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation _AO flexion" translatesAutoresizingMaskIntoConstraints="NO" id="ZyQ-ac-MYe">
-                                        <rect key="frame" x="17" y="2382" width="341" height="212"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="212" id="Fne-VK-RWg"/>
-                                            <constraint firstAttribute="width" constant="341" id="hzH-uf-2JV"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intubation _AO flexion" translatesAutoresizingMaskIntoConstraints="NO" id="ZyQ-ac-MYe">
+                                        <rect key="frame" x="17" y="2382" width="289" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-2V-ppZ">
-                                        <rect key="frame" x="19" y="2597" width="339" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="DA0-s8-poD"/>
-                                            <constraint firstAttribute="width" constant="339" id="fha-yk-mZZ"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-2V-ppZ">
+                                        <rect key="frame" x="19" y="2597" width="293" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                         <color key="textColor" name="Cool Mint"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10S-Il-bx9">
-                                        <rect key="frame" x="14" y="2647" width="351" height="329"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="10S-Il-bx9">
+                                        <rect key="frame" x="14" y="2647" width="298" height="330"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP THREE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrG-vg-kN9">
-                                                <rect key="frame" x="8" y="7" width="327" height="29"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="29" id="UUD-eG-tpl"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STEP THREE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrG-vg-kN9">
+                                                <rect key="frame" x="8" y="7" width="273" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="Sunflower"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUBE DELIVERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-hy-YoZ">
-                                                <rect key="frame" x="8" y="30" width="327" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TUBE DELIVERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdA-hy-YoZ">
+                                                <rect key="frame" x="8" y="30" width="273" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" name="Alizarin"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-6A-3tK">
-                                                <rect key="frame" x="8" y="60" width="327" height="261"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-6A-3tK">
+                                                <rect key="frame" x="8" y="50" width="282" height="282"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Insert the endotracheal tube via the right corner of the mouth (right lateral dental arch) behind the maxilla.
 
 Come up from below the line of sight of the gliding opening and insert the tip of the endotracheal tube above the arytenoid notch.  If the endotracheal tube gets hung up – even after insertion, the tip of the tube can catch on to the tracheal rings. If resistance is felt, turn the endotracheal tube clockwise (right turn) - This lowers the leading edge of the two allowing it to advance more easily.</string>
@@ -479,26 +316,12 @@ Come up from below the line of sight of the gliding opening and insert the tip o
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="top" secondItem="10S-Il-bx9" secondAttribute="top" constant="7" id="3p6-PE-WXD"/>
-                                            <constraint firstItem="bdA-hy-YoZ" firstAttribute="trailing" secondItem="QJ3-6A-3tK" secondAttribute="trailing" id="6Rk-X7-HE4"/>
-                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="trailing" secondItem="bdA-hy-YoZ" secondAttribute="trailing" id="8xt-hc-thW"/>
-                                            <constraint firstItem="QJ3-6A-3tK" firstAttribute="top" secondItem="vrG-vg-kN9" secondAttribute="bottom" constant="24" id="E6s-XS-NdF"/>
-                                            <constraint firstItem="bdA-hy-YoZ" firstAttribute="top" secondItem="10S-Il-bx9" secondAttribute="top" constant="30" id="Kd3-YP-phr"/>
-                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="leading" secondItem="bdA-hy-YoZ" secondAttribute="leading" id="RQM-WR-xfU"/>
-                                            <constraint firstAttribute="height" constant="329" id="UJk-VN-hP0"/>
-                                            <constraint firstItem="QJ3-6A-3tK" firstAttribute="top" secondItem="bdA-hy-YoZ" secondAttribute="bottom" constant="1" id="VeI-9D-EGy"/>
-                                            <constraint firstAttribute="width" constant="351" id="e9E-Fs-ZYP"/>
-                                            <constraint firstItem="vrG-vg-kN9" firstAttribute="leading" secondItem="10S-Il-bx9" secondAttribute="leadingMargin" id="gjk-yM-7yP"/>
-                                            <constraint firstItem="bdA-hy-YoZ" firstAttribute="leading" secondItem="QJ3-6A-3tK" secondAttribute="leading" id="k50-ux-Std"/>
-                                            <constraint firstAttribute="trailing" secondItem="vrG-vg-kN9" secondAttribute="trailing" constant="16" id="thQ-dJ-XC9"/>
-                                            <constraint firstItem="QJ3-6A-3tK" firstAttribute="bottom" secondItem="10S-Il-bx9" secondAttribute="bottomMargin" id="u8Q-rx-Crw"/>
-                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmw-0h-b0W">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmw-0h-b0W">
                                         <rect key="frame" x="12" y="3592" width="351" height="393"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP FOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPz-CU-gw9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="STEP FOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPz-CU-gw9">
                                                 <rect key="frame" x="8" y="7" width="327" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="29" id="g7X-Te-BpN"/>
@@ -507,13 +330,13 @@ Come up from below the line of sight of the gliding opening and insert the tip o
                                                 <color key="textColor" name="Sunflower"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST-INTUBATION MANAGEMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-EG-yBL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="POST-INTUBATION MANAGEMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-EG-yBL">
                                                 <rect key="frame" x="8" y="30" width="327" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" name="Alizarin"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENH-KN-Xmu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENH-KN-Xmu">
                                                 <rect key="frame" x="8" y="60" width="327" height="333"/>
                                                 <string key="text">Auscultate the chest for proper tube placement. Start the auscultation in the epigastric region. Then, auscultation the left chest - then the right chest.
 
@@ -530,136 +353,57 @@ Monitor patient for signs/symptoms of discomfort, e.g., elevated blood pressure,
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="QPz-CU-gw9" firstAttribute="leading" secondItem="jmw-0h-b0W" secondAttribute="leadingMargin" id="3hP-Uh-hwn"/>
                                             <constraint firstItem="ENH-KN-Xmu" firstAttribute="top" secondItem="QPz-CU-gw9" secondAttribute="bottom" constant="24" id="4cm-1g-dyT"/>
-                                            <constraint firstAttribute="bottom" secondItem="ENH-KN-Xmu" secondAttribute="bottom" id="7IN-2H-eBU"/>
                                             <constraint firstItem="GgJ-EG-yBL" firstAttribute="trailing" secondItem="ENH-KN-Xmu" secondAttribute="trailing" id="9Bq-Lv-D1d"/>
                                             <constraint firstItem="ENH-KN-Xmu" firstAttribute="top" secondItem="GgJ-EG-yBL" secondAttribute="bottom" constant="1" id="CKJ-rm-QZv"/>
                                             <constraint firstItem="QPz-CU-gw9" firstAttribute="leading" secondItem="GgJ-EG-yBL" secondAttribute="leading" id="U1M-yJ-Jnt"/>
-                                            <constraint firstItem="QPz-CU-gw9" firstAttribute="top" secondItem="jmw-0h-b0W" secondAttribute="top" constant="7" id="aGf-mV-u23"/>
-                                            <constraint firstAttribute="width" constant="351" id="aip-ua-8VM"/>
-                                            <constraint firstAttribute="height" constant="393" id="eee-Y5-p6i"/>
-                                            <constraint firstAttribute="trailing" secondItem="QPz-CU-gw9" secondAttribute="trailing" constant="16" id="fb8-Dg-Amv"/>
-                                            <constraint firstItem="GgJ-EG-yBL" firstAttribute="top" secondItem="jmw-0h-b0W" secondAttribute="top" constant="30" id="jao-Xg-zXd"/>
                                             <constraint firstItem="QPz-CU-gw9" firstAttribute="trailing" secondItem="GgJ-EG-yBL" secondAttribute="trailing" id="kwi-3M-vf8"/>
                                             <constraint firstItem="GgJ-EG-yBL" firstAttribute="leading" secondItem="ENH-KN-Xmu" secondAttribute="leading" id="vUn-oo-LXp"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubation-rings" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-4f-1n2">
-                                        <rect key="frame" x="16" y="2994" width="341" height="212"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="341" id="ecf-eu-fXA"/>
-                                            <constraint firstAttribute="height" constant="212" id="kLv-PW-4K1"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intubation-rings" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-4f-1n2">
+                                        <rect key="frame" x="16" y="2994" width="296" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intubate-bougie" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-gO-BNE">
-                                        <rect key="frame" x="16" y="3326" width="341" height="212"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="341" id="ALa-Hi-q44"/>
-                                            <constraint firstAttribute="height" constant="212" id="Ru8-lR-XjW"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intubate-bougie" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-gO-BNE">
+                                        <rect key="frame" x="16" y="3326" width="296" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-gk-OJI">
-                                        <rect key="frame" x="19" y="3541" width="339" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="339" id="Gbj-h3-OLU"/>
-                                            <constraint firstAttribute="height" constant="30" id="oLA-Wc-658"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courtesy of Richard M. Levitan, M.D. Airway Cam, Technogolgies, Inc. Available from www.airwaycam.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziA-gk-OJI">
+                                        <rect key="frame" x="19" y="3541" width="287" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                         <color key="textColor" name="Cool Mint"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-te-ei7">
-                                        <rect key="frame" x="16" y="3211" width="339" height="105"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="339" id="dIn-X0-qVh"/>
-                                            <constraint firstAttribute="height" constant="105" id="nT8-tJ-u1G"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-te-ei7">
+                                        <rect key="frame" x="16" y="3211" width="290" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <string key="text">The bougie is used when visualization of the epiglottis is difficult.  If the endotracheal tube gets hung up, turn the tube counterclockwise while holding the bougie. It will close the gap made by the tube tip and make insertion easier.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="Sunflower"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="10S-Il-bx9" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="14" id="2iy-4z-bTT"/>
-                                    <constraint firstAttribute="trailing" secondItem="pYP-9w-rIg" secondAttribute="trailing" constant="15" id="3uw-TM-i8e"/>
-                                    <constraint firstItem="vYK-6i-emv" firstAttribute="top" secondItem="jCd-KO-gBu" secondAttribute="bottom" constant="3" id="4NV-ao-5yk"/>
-                                    <constraint firstItem="jCd-KO-gBu" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leadingMargin" constant="18" id="4Ou-J1-viy"/>
-                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="4p4-MT-Y3X"/>
-                                    <constraint firstItem="ZyQ-ac-MYe" firstAttribute="top" secondItem="0eL-DV-LOS" secondAttribute="bottom" constant="21" id="7Dg-I1-bYf"/>
-                                    <constraint firstItem="ziA-gk-OJI" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="7Nl-nT-2Iu"/>
-                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" id="9Jo-zZ-tRl"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="centerX" secondItem="gMQ-ra-Cif" secondAttribute="centerX" id="9KI-Bm-QYC"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="32" id="Ack-Tk-2xZ"/>
-                                    <constraint firstItem="vYK-6i-emv" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leadingMargin" constant="27" id="BZf-Cb-pdr"/>
-                                    <constraint firstItem="jmw-0h-b0W" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="12" id="Bqw-mr-9Ut"/>
-                                    <constraint firstAttribute="trailing" secondItem="zV0-4f-1n2" secondAttribute="trailing" constant="18" id="C6Z-5q-mea"/>
-                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="top" secondItem="1gb-Gb-n9f" secondAttribute="bottom" constant="3" id="D7t-MW-fTF"/>
-                                    <constraint firstAttribute="trailing" secondItem="BSC-gO-BNE" secondAttribute="trailing" constant="18" id="EMG-Wg-8fr"/>
-                                    <constraint firstItem="pYP-9w-rIg" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" constant="855" id="FjY-Lh-UpF"/>
-                                    <constraint firstAttribute="trailing" secondItem="WqE-bP-VP1" secondAttribute="trailing" constant="17" id="Gvr-lB-cwb"/>
-                                    <constraint firstItem="pYP-9w-rIg" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" constant="855" id="JME-Tk-tDi"/>
-                                    <constraint firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailing" id="Jjk-VF-3Dz"/>
-                                    <constraint firstItem="10S-Il-bx9" firstAttribute="top" secondItem="YkS-2V-ppZ" secondAttribute="bottom" constant="20" id="KiD-F1-Uba"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="nqh-sC-4Zr" secondAttribute="bottom" constant="1976" id="NLd-ov-6XO"/>
-                                    <constraint firstAttribute="trailing" secondItem="ziA-gk-OJI" secondAttribute="trailing" constant="17" id="OG0-mA-A4k"/>
-                                    <constraint firstItem="pYP-9w-rIg" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="Ogy-Q4-44p"/>
-                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" id="P2Q-iv-dql"/>
-                                    <constraint firstAttribute="trailing" secondItem="0eL-DV-LOS" secondAttribute="trailing" constant="18" id="P88-c4-qls"/>
-                                    <constraint firstItem="YkS-2V-ppZ" firstAttribute="top" secondItem="ZyQ-ac-MYe" secondAttribute="bottom" constant="3" id="Qdr-Oh-1P9"/>
-                                    <constraint firstItem="jCd-KO-gBu" firstAttribute="trailing" secondItem="uSd-hW-y0Z" secondAttribute="trailingMargin" id="STv-3y-Lcs"/>
-                                    <constraint firstAttribute="trailing" secondItem="YkS-2V-ppZ" secondAttribute="trailing" constant="17" id="TQo-XC-Bjl"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="pYP-9w-rIg" secondAttribute="bottom" constant="933" id="Tc0-Kb-qvS"/>
-                                    <constraint firstItem="nqh-sC-4Zr" firstAttribute="top" secondItem="vYK-6i-emv" secondAttribute="bottom" constant="26" id="VJi-lc-F7H"/>
-                                    <constraint firstItem="jCd-KO-gBu" firstAttribute="top" secondItem="qj2-xW-oaF" secondAttribute="bottom" constant="12" id="VSb-2B-aDK"/>
-                                    <constraint firstAttribute="trailing" secondItem="wH3-te-ei7" secondAttribute="trailing" constant="20" id="Wey-f2-60E"/>
-                                    <constraint firstItem="zV0-4f-1n2" firstAttribute="top" secondItem="10S-Il-bx9" secondAttribute="bottom" constant="18" id="Wlt-Ad-WP8"/>
-                                    <constraint firstAttribute="bottom" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="2032" id="WvX-4I-wgg"/>
-                                    <constraint firstItem="nqh-sC-4Zr" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leadingMargin" constant="13" id="XSP-GU-pgg"/>
-                                    <constraint firstAttribute="trailing" secondItem="pYP-9w-rIg" secondAttribute="trailing" constant="15" id="YL0-oW-6Hi"/>
-                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="leading" secondItem="pYP-9w-rIg" secondAttribute="leading" id="ZWN-xw-aOx"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="vYK-6i-emv" secondAttribute="trailing" constant="17" id="ZcN-0X-Xd6"/>
-                                    <constraint firstItem="BSC-gO-BNE" firstAttribute="top" secondItem="wH3-te-ei7" secondAttribute="bottom" constant="10" id="ZnU-hT-Bmd"/>
-                                    <constraint firstItem="BSC-gO-BNE" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="16" id="aQ7-zj-pCu"/>
-                                    <constraint firstItem="zV0-4f-1n2" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="16" id="czH-Cg-lww"/>
-                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" id="eLS-1A-R2y"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZyQ-ac-MYe" secondAttribute="trailing" constant="17" id="esu-5s-juA"/>
-                                    <constraint firstItem="YkS-2V-ppZ" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="f5h-Cf-A6Z"/>
-                                    <constraint firstItem="jmw-0h-b0W" firstAttribute="top" secondItem="ziA-gk-OJI" secondAttribute="bottom" constant="21" id="fQB-Nb-Swt"/>
-                                    <constraint firstItem="0eL-DV-LOS" firstAttribute="top" secondItem="WqE-bP-VP1" secondAttribute="bottom" constant="17" id="fUy-Cg-kud"/>
-                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" id="g4L-ac-mvp"/>
-                                    <constraint firstItem="wH3-te-ei7" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="16" id="gDH-if-N0r"/>
-                                    <constraint firstItem="ZyQ-ac-MYe" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="17" id="gKu-WM-ioT"/>
-                                    <constraint firstItem="WqE-bP-VP1" firstAttribute="top" secondItem="1gb-Gb-n9f" secondAttribute="bottom" constant="3" id="geF-FL-feL"/>
-                                    <constraint firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailing" id="h1f-qq-zQP"/>
-                                    <constraint firstAttribute="bottom" secondItem="WqE-bP-VP1" secondAttribute="bottom" constant="1755" id="hYd-Gp-xT9"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="17" id="hrF-ZQ-W5h"/>
-                                    <constraint firstItem="ziA-gk-OJI" firstAttribute="top" secondItem="BSC-gO-BNE" secondAttribute="bottom" constant="3" id="jVP-ql-CeG"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="17" id="jbd-oN-vUk"/>
-                                    <constraint firstAttribute="bottom" secondItem="jmw-0h-b0W" secondAttribute="bottom" constant="15" id="mg8-Yy-lWS"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="nqh-sC-4Zr" secondAttribute="trailing" constant="8" id="nJ9-wV-wSX"/>
-                                    <constraint firstAttribute="trailing" secondItem="1gb-Gb-n9f" secondAttribute="trailing" constant="17" id="qGi-c4-UoS"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="trailing" secondItem="WqE-bP-VP1" secondAttribute="trailing" id="qy9-dF-28M"/>
-                                    <constraint firstAttribute="trailing" secondItem="10S-Il-bx9" secondAttribute="trailing" constant="10" id="r6S-Fp-2af"/>
-                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="gMQ-ra-Cif" secondAttribute="bottom" constant="32" id="rdT-Ss-jjT"/>
-                                    <constraint firstAttribute="trailing" secondItem="jmw-0h-b0W" secondAttribute="trailing" constant="12" id="u9s-CQ-2rP"/>
-                                    <constraint firstItem="pYP-9w-rIg" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="uaW-QH-OwB"/>
-                                    <constraint firstItem="0eL-DV-LOS" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" constant="19" id="xBJ-m1-hHx"/>
-                                    <constraint firstItem="wH3-te-ei7" firstAttribute="top" secondItem="zV0-4f-1n2" secondAttribute="bottom" constant="5" id="xfY-eB-QZa"/>
-                                    <constraint firstItem="nqh-sC-4Zr" firstAttribute="top" secondItem="vYK-6i-emv" secondAttribute="bottom" constant="26" id="yav-nw-TEA"/>
+                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="top" secondItem="uSd-hW-y0Z" secondAttribute="top" id="8T2-UB-lGI"/>
+                                    <constraint firstAttribute="width" constant="320" id="9BD-FB-Oma"/>
+                                    <constraint firstAttribute="trailing" secondItem="gMQ-ra-Cif" secondAttribute="trailing" id="MVF-Ht-asf"/>
+                                    <constraint firstItem="gMQ-ra-Cif" firstAttribute="leading" secondItem="uSd-hW-y0Z" secondAttribute="leading" id="fXZ-aO-XEF"/>
+                                    <constraint firstItem="1gb-Gb-n9f" firstAttribute="top" secondItem="gMQ-ra-Cif" secondAttribute="bottom" id="jkB-M1-tU8"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="uSd-hW-y0Z" secondAttribute="trailing" id="8Y6-K3-e5E"/>
-                            <constraint firstAttribute="bottom" secondItem="uSd-hW-y0Z" secondAttribute="bottom" id="96F-vj-fSk"/>
-                            <constraint firstItem="uSd-hW-y0Z" firstAttribute="top" secondItem="zwC-md-Zh4" secondAttribute="top" id="JRj-6b-qDY"/>
-                            <constraint firstItem="uSd-hW-y0Z" firstAttribute="leading" secondItem="zwC-md-Zh4" secondAttribute="leading" id="atj-3w-AKP"/>
+                            <constraint firstItem="uSd-hW-y0Z" firstAttribute="top" secondItem="zwC-md-Zh4" secondAttribute="top" id="EC2-E0-Zwy"/>
+                            <constraint firstItem="xIv-Wv-A8K" firstAttribute="bottom" secondItem="uSd-hW-y0Z" secondAttribute="bottom" constant="1000" id="Qx6-lX-DSc"/>
+                            <constraint firstItem="uSd-hW-y0Z" firstAttribute="trailing" secondItem="xIv-Wv-A8K" secondAttribute="trailing" id="WhQ-nJ-EJF"/>
+                            <constraint firstItem="uSd-hW-y0Z" firstAttribute="leading" secondItem="xIv-Wv-A8K" secondAttribute="leading" id="aev-jk-1va"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIv-Wv-A8K"/>
                     </view>
+                    <size key="freeformSize" width="320" height="4568"/>
                     <connections>
                         <outlet property="intubationScrollView" destination="uSd-hW-y0Z" id="cy7-K6-cgm"/>
                         <outlet property="intubationSubtitle" destination="aMu-rE-wIw" id="FHn-NE-2WI"/>
@@ -668,25 +412,25 @@ Monitor patient for signs/symptoms of discomfort, e.g., elevated blood pressure,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUL-5i-qnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733.60000000000002" y="150.73891625615764"/>
+            <point key="canvasLocation" x="733.125" y="150"/>
         </scene>
         <!--KingLT-->
         <scene sceneID="x12-xC-AsZ">
             <objects>
                 <viewController storyboardIdentifier="KingLT" id="3XQ-YF-cJp" customClass="KingLT" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlb-st-a1K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-4x-t7N">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1019"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bf0-3Q-Qeo">
-                                        <rect key="frame" x="16" y="314" width="343" height="572"/>
+                                        <rect key="frame" x="8" y="314" width="304" height="646"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQg-PH-KlI">
-                                                <rect key="frame" x="15" y="15" width="310" height="548"/>
+                                                <rect key="frame" x="15" y="17" width="271" height="629"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
@@ -800,6 +544,7 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K7O-EZ-M9K"/>
                     </view>
+                    <size key="freeformSize" width="320" height="1568"/>
                     <connections>
                         <outlet property="KingScrollView" destination="Ecw-4x-t7N" id="cpo-p8-UxP"/>
                         <outlet property="kingLTView" destination="Bf0-3Q-Qeo" id="KwT-e6-qJy"/>
@@ -807,25 +552,25 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92w-6k-EI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448.8" y="150.73891625615764"/>
+            <point key="canvasLocation" x="1447.5" y="150"/>
         </scene>
         <!--LMA View Controller-->
         <scene sceneID="bm4-Ix-lZO">
             <objects>
                 <viewController storyboardIdentifier="LMA" title="LMA View Controller" id="j5Q-Vj-1ip" customClass="LMA" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1X7-3d-GO2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="1X7-3d-GO2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Weg-EE-2Kw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Weg-EE-2Kw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmA-7t-Aft">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1050"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1050" id="5AH-yP-1oX"/>
-                                            <constraint firstAttribute="width" constant="375" id="nzx-Fn-zNS"/>
+                                            <constraint firstAttribute="width" constant="320" id="nzx-Fn-zNS"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -834,7 +579,7 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                                     <constraint firstItem="hmA-7t-Aft" firstAttribute="leading" secondItem="Weg-EE-2Kw" secondAttribute="leading" id="Ld9-Vt-HpV"/>
                                     <constraint firstItem="hmA-7t-Aft" firstAttribute="top" secondItem="Weg-EE-2Kw" secondAttribute="top" id="USW-EO-MHe"/>
                                     <constraint firstAttribute="trailing" secondItem="hmA-7t-Aft" secondAttribute="trailing" id="ntC-vV-JJ5"/>
-                                    <constraint firstAttribute="bottom" secondItem="hmA-7t-Aft" secondAttribute="bottom" id="o4G-7z-k8e"/>
+                                    <constraint firstAttribute="bottom" secondItem="hmA-7t-Aft" secondAttribute="bottom" constant="-482" id="o4G-7z-k8e"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -847,6 +592,7 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0De-4p-80e"/>
                     </view>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="LMAScrollView" destination="Weg-EE-2Kw" id="JCA-wr-rAO"/>
                         <outlet property="contentView" destination="hmA-7t-Aft" id="UAc-Ty-FdK"/>
@@ -854,52 +600,52 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0P-MY-8rh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="151"/>
+            <point key="canvasLocation" x="2081" y="-365"/>
         </scene>
         <!--Predictors View Controller-->
         <scene sceneID="9c5-fP-YxG">
             <objects>
                 <viewController storyboardIdentifier="predictors" id="GgO-Hz-I1r" customClass="PredictorsViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CRY-Ee-LxI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="CRY-Ee-LxI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqe-TA-8Fg">
-                                <rect key="frame" x="0.0" y="129" width="375" height="683"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dqe-TA-8Fg">
+                                <rect key="frame" x="0.0" y="129" width="320" height="439"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-LL-5c2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-LL-5c2">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AqP-mD-YHf">
-                                                <rect key="frame" x="10" y="98" width="359" height="548"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AqP-mD-YHf">
+                                                <rect key="frame" x="0.0" y="59" width="320" height="621"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="548" id="YyD-4R-SpK"/>
+                                                    <constraint firstAttribute="height" constant="621" id="YyD-4R-SpK"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T0n-J1-QJ2">
-                                                    <size key="itemSize" width="349" height="85"/>
+                                                    <size key="itemSize" width="215" height="85"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="1p5-ra-I54" customClass="PredictorsOfADifficultAirway_Cell" customModule="Critical_X" customModuleProvider="target">
-                                                        <rect key="frame" x="5" y="0.0" width="349" height="85"/>
+                                                        <rect key="frame" x="52.5" y="0.0" width="215" height="85"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="349" height="85"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="85"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9X-wS-L25">
-                                                                    <rect key="frame" x="12" y="17" width="325" height="30"/>
+                                                                    <rect key="frame" x="12" y="17" width="183" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                     <color key="textColor" name="Cool Mint"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcL-6w-Z2b">
-                                                                    <rect key="frame" x="12" y="49" width="325" height="16"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <rect key="frame" x="12" y="49" width="183" height="16"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <color key="textColor" name="Sunflower"/>
                                                                     <nil key="highlightedColor"/>
@@ -920,10 +666,10 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                                             </collectionView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="AqP-mD-YHf" secondAttribute="trailing" constant="6" id="3Jx-RJ-HNP"/>
+                                            <constraint firstAttribute="trailing" secondItem="AqP-mD-YHf" secondAttribute="trailing" id="3Jx-RJ-HNP"/>
                                             <constraint firstAttribute="width" constant="375" id="8S8-PJ-C7a"/>
                                             <constraint firstItem="AqP-mD-YHf" firstAttribute="bottom" secondItem="bbZ-LL-5c2" secondAttribute="bottomMargin" constant="-124" id="9xF-vP-YAo"/>
-                                            <constraint firstItem="AqP-mD-YHf" firstAttribute="leading" secondItem="bbZ-LL-5c2" secondAttribute="leading" constant="10" id="WC9-aG-nKV"/>
+                                            <constraint firstItem="AqP-mD-YHf" firstAttribute="leading" secondItem="bbZ-LL-5c2" secondAttribute="leading" id="WC9-aG-nKV"/>
                                             <constraint firstAttribute="height" constant="812" id="xmG-TY-90Z"/>
                                         </constraints>
                                     </view>
@@ -949,7 +695,7 @@ Recommended for patients that are over 6 feet. Estimated cuff volume is 70-90 mL
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DwV-6f-rGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877.5999999999999" y="150.73891625615764"/>
+            <point key="canvasLocation" x="2782.5" y="-220.77464788732394"/>
         </scene>
     </scenes>
     <resources>

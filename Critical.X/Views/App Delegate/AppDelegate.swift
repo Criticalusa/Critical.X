@@ -9,7 +9,9 @@
 import UIKit
 
 extension UIApplication {
+    
     class func isFirstLaunch() -> Bool {
+       
         if UserDefaults.standard.bool(forKey: "name") {
             UserDefaults.standard.set(true, forKey: "name")
             UserDefaults.standard.synchronize()

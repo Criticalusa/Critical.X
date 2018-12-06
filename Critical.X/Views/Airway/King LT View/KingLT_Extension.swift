@@ -75,14 +75,14 @@ extension KingLT {
             CenterX(0.0), // Centers the label in the center of the view
             Top(15).to(KingScrollView)) // Sets the value from the top of the view.
         
-        //MARK: SuperGlottic Sublabel
+        //MARK: Supraglottic Sublabel
         /** Create the UILabel */
         
         let kingSubTitle : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
             label.bottom(10)
-            label.text = "Superglottic Airway Device"
+            label.text = "Supraglottic Airway Device"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower
             label.textAlignment = .center

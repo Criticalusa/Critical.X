@@ -20,11 +20,11 @@ extension AirwayMenu {
         //Create the labels
         
         /** Create the UILabel */
-        let superGlotticSubLabel: UILabel = {
+        let supraglotticSubLabel: UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
             label.bottom(10)
-            label.text = "Superglottic Airway Device"
+            label.text = "Supraglottic Airway Device"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower
             label.textAlignment = .center
@@ -35,11 +35,11 @@ extension AirwayMenu {
         }()
         
         //Adds the label to the subview
-        airWayView1.addSubview(superGlotticSubLabel)
+        airWayView1.addSubview(supraglotticSubLabel)
         
         //Now we have to position the label to where we want it after its added to the subview
         //Centers the label in the middle of the UView, set the top margin, height and width
-        superGlotticSubLabel.easy.layout(
+        supraglotticSubLabel.easy.layout(
             Width(310.0), // Sets the width of the label
             Height(40.0), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
