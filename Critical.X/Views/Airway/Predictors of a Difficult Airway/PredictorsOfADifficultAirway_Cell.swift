@@ -8,8 +8,10 @@
 
 import UIKit
 
-class PredictorsOfADifficultAirway_Cell: UICollectionViewCell {
-    
+class PredictorsOfADifficultAirway_Cell: UICollectionViewCell
+
+{
+    // Set the outlets
     @IBOutlet weak var predictorsMain_Menu_CellLabel: UILabel!
     
     @IBOutlet weak var predictors_Detail_CellLabel: UILabel!

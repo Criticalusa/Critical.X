@@ -15,7 +15,7 @@ class KingLT: UIViewController {
     //var kingLTLabel = UILabel()
     var kingLTSubtitle = UILabel()
     @IBOutlet weak var KingScrollView: UIScrollView!
-    @IBOutlet weak var kingLTView: UIView!
+    @IBOutlet weak var textContentView: UIView!
     var UIViewHeader: UIView!
 
     
@@ -31,7 +31,7 @@ class KingLT: UIViewController {
         
         //create the last UIImage under the View
         
-        let placeholderImage : UIImageView = {
+        let kingAnatomyImage : UIImageView = {
             let placeholderImage = UIImageView(image: UIImage(named: "KingAnatomy"))
             placeholderImage.contentMode = .scaleAspectFit
             
@@ -43,17 +43,17 @@ class KingLT: UIViewController {
         }()
         
         //Adds the image to the view
-        KingScrollView.addSubview(placeholderImage)
+        KingScrollView.addSubview(kingAnatomyImage)
         
         /* Now we have to position the label to where we want it after its added to the subview
          Centers the label in the middle of the UView, set the top margin, height and width */
-        placeholderImage.easy.layout(
+        kingAnatomyImage.easy.layout(
             Width(200), // Sets the width of the label
             Height(200), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
-            Top(10).to(kingLTView)) // Sets the value from the top of the view.
+            LastBaseline(-540).to(textContentView)) // Sets the value from the top of the view.
         
-       
+    
         /** Create the UILabel */
         
         let lastLabelKingLT : UILabel = {
@@ -62,7 +62,7 @@ class KingLT: UIViewController {
             label.bottom(10)
             label.text = "Proper placement of the King LT Airway after inssertion."
             label.lineBreakMode = .byWordWrapping
-            label.textColor = Colorify.Clouds
+            label.textColor = #colorLiteral(red: 0.987544477, green: 0.6673021317, blue: 0, alpha: 1)
             label.textAlignment = .center
             label.numberOfLines = 0
             label.font = Font.subheader.withSize(16.0)
@@ -78,7 +78,7 @@ class KingLT: UIViewController {
             Width(310.0), // Sets the width of the label
             Height(40.0), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
-            Top(200.0).to(kingLTView)) // Sets the value from the top of the selectedView.
+            Top(20).to(kingAnatomyImage)) // Sets the value from the top of the selectedView.
         
         
     }

@@ -115,15 +115,42 @@ class PredictorsViewController: UIViewController, UICollectionViewDataSource, UI
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        // ABOUT PAGE --> MODAL
+        // Lemons --> MODAL
         if indexPath.row == 0 {
             let storyboard = UIStoryboard(name: "DifficultAirway", bundle: nil) // Name has to reflect the origionting SB
             let aboutVC = storyboard.instantiateViewController(withIdentifier: "Lemons") // Making sure the identifier matches the SBID
             self.present(aboutVC, animated: true, completion: nil)
             
         }
+        
+        // Rods PAGE --> MODAL
+        if indexPath.row == 1 {
+            let storyboard = UIStoryboard(name: "DifficultAirway", bundle: nil) // Name has to reflect the origionting SB
+            let aboutVC = storyboard.instantiateViewController(withIdentifier: "Rods") // Making sure the identifier matches the SBID
+            self.present(aboutVC, animated: true, completion: nil)
+            
+        }
+        
+        // Moans  --> MODAL
+        if indexPath.row == 2 {
+            let storyboard = UIStoryboard(name: "DifficultAirway", bundle: nil) // Name has to reflect the origionting SB
+            let aboutVC = storyboard.instantiateViewController(withIdentifier: "Moans") // Making sure the identifier matches the SBID
+            self.present(aboutVC, animated: true, completion: nil)
+            
+        }
+        
+        
+        // Short  --> MODAL
+        if indexPath.row == 3 {
+            let storyboard = UIStoryboard(name: "DifficultAirway", bundle: nil) // Name has to reflect the origionting SB
+            let aboutVC = storyboard.instantiateViewController(withIdentifier: "Short") // Making sure the identifier matches the SBID
+            self.present(aboutVC, animated: true, completion: nil)
+            
+        }
     }
-    }
+    
+
+}
 
  
 

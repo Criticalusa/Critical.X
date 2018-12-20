@@ -19,7 +19,12 @@ class DifficultAirway_ChildVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-  
+    @IBAction func dismissLEMONS(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        print("LEMONS View Controller was dismissed")
+        
+    }
     /*
     // MARK: - Navigation
 

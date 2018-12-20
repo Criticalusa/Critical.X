@@ -15,7 +15,8 @@ import SwiftRichString
 
 extension LMA {
     
-    func setUpLabels(){
+    func setUpLabels()
+    {
         
         // MARK: Create the titleLabel
         let titleLabel : UILabel = {
@@ -27,7 +28,7 @@ extension LMA {
             label.textColor = Colorify.Clouds
             label.textAlignment = .center
             label.numberOfLines = 1
-            label.font = Font.regular.withSize(35)
+            label.font = Font.regular.withSize(25)
             label.adjustsFontSizeToFitWidth = true
             
             return label
@@ -41,9 +42,9 @@ extension LMA {
         /* Now we have to position the label to where we want it after its added to the subview. Centers the label in the middle of the UView, set the top margin, height and width */
         titleLabel.easy.layout(
             Width(340), // Sets the width of the label
-            Height(45), //Sets the height of the label
+            Height(50), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
-            Top(20.0).to(contentView),
+            Top(3.0).to(contentView),
             Left(10).to(contentView),
             Right(10).to(contentView)) // Sets the value from the top of the selectedView.
         
@@ -76,7 +77,7 @@ extension LMA {
             Width(310), // Sets the width of the label
             Height(30), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
-            Top(10.0).to(titleLabel),
+            Top(5.0).to(titleLabel),
             Left(10).to(contentView),
             Right(10).to(contentView)) // Sets the value from the top of the selectedView.
         
@@ -105,7 +106,6 @@ extension LMA {
             Top(10).to(subTitleLabel),
             Left(10).to(contentView),
             Right(10).to(contentView)) // Sets the value from the top of the subTitle.
-        
         
         // First crate the language for the paragraphs to go into the label. We are only going to use one label.
         let firstParagraphLbl : UILabel = {
@@ -141,41 +141,41 @@ extension LMA {
         
         //MARK: View to hold Content
         /** Create the view befire adding the label to the subView so that it can be size to fit */
-        let subView1 : UIView = {
+        let blackBGView : UIView = {
             let view = View()
             view.backgroundColor = #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1)
             return view
         }()
         
         //Adds the backgroundView to the subview
-        contentView.addSubview(subView1)
+        contentView.addSubview(blackBGView)
         
         // Adds a nice corner radius to the view
-        subView1.layer.cornerRadius = 4
+        blackBGView.layer.cornerRadius = 4
         
         
         //Now we have to position the VIEW to where we want it after its added to the subview
-        subView1.easy.layout(
+        blackBGView.easy.layout(
             Width(330), // Sets the width of the label
             CenterX(0.0), // Centers the label in the center of the view
             Top(10).to(placeholderImage)) // Sets the value from the top of the view to the bottom of the image.
         
         //Now Adds the label to the subview just crated above
-        subView1.addSubview(firstParagraphLbl)
+        blackBGView.addSubview(firstParagraphLbl)
         
         // MOST IMPORTANT PART FOR SIZING
         // SubView resizes to fit the content inside of it.
-        subView1.sizeToFit()
+        blackBGView.sizeToFit()
         
         
         //Now we have to position the label to where we want it after its added to the subview
         //Centers the label in the middle of the UView, set the top margin, height and width
         firstParagraphLbl.easy.layout(
-            Width(310.0), // Sets the width of the label
+            //Width(310.0), // Sets the width of the label
             
             //WE Dont USE HEIGHT BECAUSE WE SET THE LINES TO ZERO AND ALLOW TO AUTO ADJUST
             CenterX(0.0),// Centers the label in the center of the view
-            Left(15).to(subView1),Right(15).to(subView1),Bottom(15).to(subView1),Top(15.0).to(subView1))
+            Left(15).to(blackBGView),Right(15).to(blackBGView),Bottom(15).to(blackBGView),Top(15.0).to(blackBGView))
         
         
         /// WE finish by adding the last image of the lma to the bottom
@@ -199,10 +199,10 @@ extension LMA {
             Width(250), // Sets the width of the label
             Height(200), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
-            Top(10).to(subView1),
+            Top(10).to(blackBGView),
             Left(10).to(contentView),
             Right(10).to(contentView),
-            Top(10).to(subView1)) // Sets the value from the top of the selectedView.
+            Top(10).to(blackBGView)) // Sets the value from the top of the selectedView.
         
         
         
@@ -228,7 +228,7 @@ extension LMA {
             Width(250), // Sets the width of the label
             Height(200), //Sets the height of the label
             CenterX(0.0), // Centers the label in the center of the view
-            Top(10).to(subView1),
+            Top(10).to(blackBGView),
             Left(10).to(contentView),
             Right(10).to(contentView)) // Sets the value from the top of the subTitle.
         
