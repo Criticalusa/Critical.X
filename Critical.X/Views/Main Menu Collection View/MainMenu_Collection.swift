@@ -322,16 +322,16 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         mainMenuDetail = ["Rate Us, Email, Disclaimer Information",// 0
             "Intubation, Difficult Airway Algorithms",// 1
             "Medical Calculators & Medical Spanish",// 2
-            "EKG Interpretations & Current ACLS Recommendations",// 3
-            "Drug Mechanisms, Classes, Dosages, Indications",// 4
+            "EKG Interpretations & ACLS Guidelines",// 3
+            "Clinical Drug Pharmacodynamics",// 4
             "Common Drips in Critical Care",// 5
             "PRBC, 0.9%, ALbumin",// 6
-            "Common Lab Panel Interpretations & Explanations",// 7
+            "Common Lab Value Interpretations",// 7
             "IABP Timing, Modes & Troubleshooting",// 8
             "Neurological Assessments, GCS & Stroke Scales",// 9
-            "Peds Resuscitation, Calculations & Equipment",// 10
+            "Resuscitation, Calcs & Equipment",// 10
             "Fetal Heart Monitoring Strips",//  1
-            "Invasive Monitoring, Central Venus Pressures, A-Lines",// 12
+            "Invasive Monitoring, CVP, A-Lines",// 12
             "Common Emergency Meds & Dosages",// 13
             "CXR, CT & Central Line Insertion",// 14
             "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
