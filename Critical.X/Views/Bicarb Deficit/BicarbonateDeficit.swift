@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import AKLabel
+
 
 class BicarbonateDeficit: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var resultsView: UIView!
     @IBOutlet weak var weightTxt: UITextField!
-    
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var titleLabel: AKLabel!
     
     @IBOutlet weak var currentBicarbTxt: UITextField!
     
@@ -37,6 +39,9 @@ class BicarbonateDeficit: UIViewController, UITextFieldDelegate {
         resultsView.clipsToBounds = true
         resultsView.layer.cornerRadius = 15
         
+        // Animate the title label
+        titleLabel.animate(text: "Bicarbonate Deficit", duration: 1, completion: nil)
+     
         
         currentBicarbTxt.delegate = self
         weightTxt.delegate = self
@@ -44,6 +49,10 @@ class BicarbonateDeficit: UIViewController, UITextFieldDelegate {
         // Takes the button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+     
     }
     
     // Closes the keyboard befor ethe view is dismissed

@@ -21,7 +21,7 @@ class AnionGap: UIViewController {
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var closeAnionGapButton: UIButton!
     @IBOutlet weak var calculateButton: UIButton!
-    
+    @IBOutlet weak var AGTitleLabel: AKLabel!
     
     
     override func viewDidLoad() {
@@ -41,6 +41,8 @@ class AnionGap: UIViewController {
         resultView.clipsToBounds = true
         resultView.layer.cornerRadius = 15
         
+        AGTitleLabel.animate(text: "Anion Gap", duration: 1, completion: nil)
+        
     }
     
     // Closes the keyboard before the view is dismissed
@@ -49,15 +51,17 @@ class AnionGap: UIViewController {
     }
     
     
-    func calculateAnionGap(Sodium: Int, Chloride: Int, Bicarb: Int) -> Int {
+    func calculateAnionGap(Sodium: Double, Chloride: Double, Bicarb: Double) -> Double {
         
         return Sodium - (Chloride + Bicarb)
     }
     
-    func deltaGap() -> Int {
+    
+    
+    func deltaGap() -> Double {
         
-        let theSodium = Int(NaTxt.text!)
-        let theChloride = Int(Cltxt.text!)
+        let theSodium = Double(NaTxt.text!)
+        let theChloride = Double(Cltxt.text!)
         
         guard let _ = theSodium, let _ = theChloride else {
             
@@ -73,9 +77,9 @@ class AnionGap: UIViewController {
     @IBAction func calculateTheAnionGap(_ sender: Any) {
         
         //Assign the variables
-        let theSodium = Int(NaTxt.text!)
-        let theChloride = Int(Cltxt.text!)
-        let theBicarb = Int(hc03Txt.text!)
+        let theSodium = Double(NaTxt.text!)
+        let theChloride = Double(Cltxt.text!)
+        let theBicarb = Double(hc03Txt.text!)
         
         let Sodium = theSodium
         let Chloride = theChloride
@@ -89,56 +93,77 @@ class AnionGap: UIViewController {
             // Add alertView
             _ = SCLAlertView().showWarning("Hold On...", subTitle: "Check all of the fields before calculating.")
             
+            return
             
-            return  }
+        }
         
         // Sets the text fields to these variables
         
         
         // Sets the Aniongap function to Result
-        let result =  calculateAnionGap(Sodium:Sodium! , Chloride: Chloride!, Bicarb: Bicarb!)
+        let result =  calculateAnionGap(Sodium: (Sodium!) , Chloride: (Chloride!), Bicarb: (Bicarb!))
         // Displays the result in the label
         resultLabel.text = "\(result)"
         // Sets the description label
-        descriptionLabel.text = "The Delta Gap is \(deltaGap)"
+        //descriptionLabel.text = "The Delta Gap is \(deltaGap)"
+
         //        descriptionLabel.animate(text: "The Delta Gap is \(deltaGap)", duration: 3, completion: nil)
         
-        //Condition statement for the delta gap.
-        if deltaGap < -5 {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists."
-            //            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nA mixed high and normal anion gap acidosis likely exists.", duration: 3, completion: nil)
+      
+        // What happens when the Anion Gap is calculated.
+        switch result {
+        case -100...0:
             
-        } else if (deltaGap > -6) && (deltaGap < 6) {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists."
-            //            descriptionLabel.animate (text: "The Delta Gap is \(deltaGap).\nOnly a high anion gap acidosis likely exists exists." , duration: 3, completion: nil)
             
-            print("Delta should be greater than -6, but less than 6")
+                // Here we have to create a string form of the new numbers calculated so i can be converted into an attributed text. Then pass it below.
             
-        } else if deltaGap > 6 {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist."
-            //           descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).\nA mixed high anion gap acidosis and metabolic alkalosis likely exist.", duration: 3, completion: nil)
-            print("Delta should be greater than 6")
-        } else {
-            descriptionLabel.text = "The Delta Gap is \(deltaGap)."
-            //            descriptionLabel.animate(text: "The Delta Gap is \(deltaGap).", duration: 3, completion: nil)
-        }
+                descriptionLabel.text = "Negative Anion Gap at \(result.oneDecimalPlace) . This is most likely a lab error, however, this could also result from multiple myeloma, bromide and iodide toxicities as well."
+            
+            
+            
+        case 0...4:
+    
+              
+               descriptionLabel.text = "Non-Anion Gap Metabolic Acidosis \(result.oneDecimalPlace)"
         
-        if result > 16 {
-            resultLabel.textColor = #colorLiteral(red: 0.7451164126, green: 0.1563159525, blue: 0.07316986471, alpha: 1)
+                
+                print("Non-Anion Gap Metabolic Acidosis \(result.oneDecimalPlace).")
+                
             
-            print(" The anionGap is \(result)")
-        } else {
+        case 4...12:
+            // 6-12 before
+        
+                descriptionLabel.text  =   "Normal Anion Gap - \(result.oneDecimalPlace) "
+                
+                
+                
+                print("Metabolic Acidosis with normal Anion Gap present, check the urine gap")
+                
+                print("Normal Gap \(result.oneDecimalPlace).")
+                
+        
+      
             
-            resultLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
             
-            print(" The anionGap is \(result)")
+        case 12...100:
             
-        }
+            // We are only displaying the delta gap and explanation only in metabolic acidosis.
+    
+                
+                descriptionLabel.text = "High Anion Gap Metabolic Acidosis (HAGMA)\nThe Anion Gap was calculated at \(result.oneDecimalPlace)"
+    
+    
+        default: break
+    }
+    
+    
+
+        
         
         self.view.endEditing(true) //This will hide the keyboard
         
         showAnimate()
-    }
+}
     
     
     //Creates the animates in function.

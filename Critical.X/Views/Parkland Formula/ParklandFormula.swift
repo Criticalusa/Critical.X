@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import AKLabel
+import EasyPeasy
 
 class ParklandFormula: UIViewController {
 
@@ -16,16 +17,20 @@ class ParklandFormula: UIViewController {
     @IBOutlet weak var parklandResultsView: UIView!
     @IBOutlet weak var infusionView: UIView!
     @IBOutlet weak var infusionLabel: UILabel!
+    @IBOutlet weak var parklandTitleLabel: AKLabel!
     
     @IBOutlet weak var weightTxt: UITextField!
     @IBOutlet weak var tbsaTxt: UITextField!
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var button: UIButton!
-    
+    @IBOutlet weak var closeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // Takes the close button and makes it into a circle
+        closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
         parklandResultsView.clipsToBounds = true
         parklandResultsView.layer.cornerRadius = 10
@@ -38,6 +43,11 @@ class ParklandFormula: UIViewController {
         
         button.clipsToBounds = true
         button.layer.cornerRadius = 4
+        
+        // Animate the Leading Title when the view loads.
+        parklandTitleLabel.animate(text: "Parkland Formula", duration: 1, completion: nil)
+        
+        
     }
     
     
@@ -78,6 +88,19 @@ class ParklandFormula: UIViewController {
         let BSA = Double(tbsaTxt.text!)
         let Weight = Double(weightTxt.text!)
         
+        //Throw function if the textFields are not entirely filled out.
+        guard let _ = Weight, let _ = BSA else {
+            print("Values not entered either weight or BSA")
+            
+            let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)
+            _ = SCLAlertView(appearance: appearance).showNotice("Wait!!", subTitle: "Enter both weight and BSA values, then recalculate!")
+            parklandResultsView.isHidden = true
+            
+          return
+            "Values not entered either weight or BSA"
+
+        }
+        
         let parklandFormula = BSA! * Weight! * 4
         
         let firstEight1 = parklandFormula / 2
@@ -105,19 +128,21 @@ class ParklandFormula: UIViewController {
         guard (weight != nil), (burnPercentage != nil) else {
             print("Values not entered")
             
-            //Enter Alert // Takes the button and makes it into a circle
-            let alertController = UIAlertController(title: "Error!", message: "Enter both weight and BSA values, then recalculate.", preferredStyle: .alert)
-            let action3 = UIAlertAction(title: "Ok, got it!", style: .destructive) { (action:UIAlertAction) in
-                print("You've pressed the destructive");
-            }
-            
-        
-            alertController.addAction(action3)
-            self.present(alertController, animated: true, completion: nil)
-            
+//            //Enter Alert // Takes the button and makes it into a circle
+//            let alertController = UIAlertController(title: "Error!", message: "Enter both weight and BSA values, then recalculate.", preferredStyle: .alert)
+//            let action3 = UIAlertAction(title: "Ok, got it!", style: .destructive) { (action:UIAlertAction) in
+//                print("You've pressed the destructive");
+//            }
+//            
+//        
+//            alertController.addAction(action3)
+//            self.present(alertController, animated: true, completion: nil)
+//            
             parklandResultsView.isHidden = true
             
-            return }
+            return
+            
+        }
        
         //Sets the result label to the parkland fuction
         resultsLabel.text = parklandFormulaCalculation(BSA: burnPercentage!, Weight: weight!)

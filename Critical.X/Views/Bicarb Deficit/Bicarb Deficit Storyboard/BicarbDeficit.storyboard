@@ -29,26 +29,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="700"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2G-4J-Xse">
-                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="700"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="694"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bicarbonate Deficit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fox-QL-7VW">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fox-QL-7VW" customClass="AKLabel" customModule="AKLabel">
                                                             <rect key="frame" x="16" y="78" width="287" height="64"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="64" id="KGa-Af-ofS"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="36"/>
-                                                            <color key="textColor" name="Concentrate"/>
+                                                            <color key="textColor" name="Seagull"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current HC03" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO6-ij-Abz">
-                                                            <rect key="frame" x="20" y="247" width="137" height="31"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="26"/>
-                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <rect key="frame" x="20" y="244" width="126.5" height="28"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
+                                                            <color key="textColor" name="Silver"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifq-x8-NFm">
-                                                            <rect key="frame" x="64" y="344" width="193" height="36"/>
-                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <rect key="frame" x="64" y="338" width="193" height="36"/>
+                                                            <color key="backgroundColor" name="Seagull"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="36" id="aZQ-Pb-Ytp"/>
                                                                 <constraint firstAttribute="width" constant="193" id="wi8-Mf-8F3"/>
@@ -61,10 +61,10 @@
                                                                 <action selector="calcualteBicarbDeficit:" destination="jEl-tG-RD1" eventType="touchUpInside" id="t0q-kF-5oq"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-9y-rCd">
-                                                            <rect key="frame" x="16" y="144" width="287" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-9y-rCd">
+                                                            <rect key="frame" x="16" y="134" width="287" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
-                                                            <color key="textColor" name="Alizarin"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLo-fa-tuP">
@@ -83,21 +83,21 @@
                                                                 <action selector="dismissBicarbDeficit:" destination="jEl-tG-RD1" eventType="touchUpInside" id="Gan-2K-GMu"/>
                                                             </connections>
                                                         </button>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="HC03" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-or-zvi">
-                                                            <rect key="frame" x="221" y="243" width="78" height="35"/>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="HC03" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-or-zvi" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                                            <rect key="frame" x="200" y="243" width="99" height="35"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="78" id="Mkr-3m-Jej"/>
+                                                                <constraint firstAttribute="width" constant="99" id="Mkr-3m-Jej"/>
                                                                 <constraint firstAttribute="height" constant="35" id="eNo-Ud-JMs"/>
                                                             </constraints>
-                                                            <color key="textColor" name="Cool Mint"/>
+                                                            <color key="textColor" name="Clouds"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                                    <color key="value" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                                    <color key="value" red="1" green="0.75686274509999996" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
                                                                     <color key="value" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,16 +106,16 @@
                                                                     <real key="value" value="2"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                                                    <color key="value" name="Silver"/>
+                                                                    <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOO-SL-tMe">
-                                                            <rect key="frame" x="20" y="280" width="64" height="15"/>
+                                                            <rect key="frame" x="20" y="274" width="64" height="15"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="22-26">
                                                                     <attributes>
-                                                                        <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="NSColor" red="0.89126098155975342" green="0.3545563817024231" blue="0.39968371391296387" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
@@ -138,17 +138,17 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxn-DC-uWn">
-                                                            <rect key="frame" x="20" y="183" width="118" height="31"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="26"/>
-                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <rect key="frame" x="20" y="183" width="107.5" height="28"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
+                                                            <color key="textColor" name="Silver"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veG-hR-3Bp">
-                                                            <rect key="frame" x="20" y="219" width="79" height="15"/>
+                                                            <rect key="frame" x="20" y="209" width="79" height="15"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Current Weight">
                                                                     <attributes>
-                                                                        <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="NSColor" red="0.89126098155975342" green="0.3545563817024231" blue="0.39968371391296387" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" size="12" name="HelveticaNeue-CondensedBlack"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
@@ -156,21 +156,21 @@
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KG" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-OQ-QaS">
-                                                            <rect key="frame" x="221" y="180" width="82" height="37"/>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KG" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-OQ-QaS" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                                            <rect key="frame" x="200" y="180" width="103" height="37"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="82" id="Zbq-Pn-8KW"/>
+                                                                <constraint firstAttribute="width" constant="103" id="Zbq-Pn-8KW"/>
                                                                 <constraint firstAttribute="height" constant="37" id="gWf-bE-xH0"/>
                                                             </constraints>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" name="Clouds"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                                             <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                                    <color key="value" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                                    <color key="value" red="1" green="0.75686274509999996" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
                                                                     <color key="value" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,12 +179,12 @@
                                                                     <real key="value" value="2"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                                                    <color key="value" name="Silver"/>
+                                                                    <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUv-b9-lWt">
-                                                            <rect key="frame" x="16" y="427" width="287" height="201"/>
+                                                            <rect key="frame" x="16" y="421" width="287" height="201"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xe-Je-xQb">
                                                                     <rect key="frame" x="8" y="51" width="270" height="105"/>
@@ -193,7 +193,7 @@
                                                                         <constraint firstAttribute="width" constant="270" id="p6Z-3I-od9"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="87"/>
-                                                                    <color key="textColor" name="Cool Mint"/>
+                                                                    <color key="textColor" red="0.8912609816" green="0.35455638169999998" blue="0.39968371390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mEq/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kef-su-bUz">
@@ -203,7 +203,7 @@
                                                                         <constraint firstAttribute="height" constant="21" id="fqw-pd-khd"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" name="Silver"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bicarbonat Deficit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-ws-ja5">
@@ -212,11 +212,11 @@
                                                                         <constraint firstAttribute="height" constant="41" id="8wW-MN-Neg"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
-                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="201" id="AsN-4p-hpE"/>
                                                                 <constraint firstItem="Kef-su-bUz" firstAttribute="top" secondItem="8xe-Je-xQb" secondAttribute="bottom" constant="4" id="GYG-WH-ZOG"/>
@@ -238,10 +238,10 @@
                                                         <constraint firstItem="Fox-QL-7VW" firstAttribute="top" secondItem="V2G-4J-Xse" secondAttribute="top" constant="78" id="4a3-lG-P6R"/>
                                                         <constraint firstAttribute="trailing" secondItem="7Ns-or-zvi" secondAttribute="trailing" constant="22" id="6Vm-Q9-s5n"/>
                                                         <constraint firstAttribute="bottom" secondItem="nUv-b9-lWt" secondAttribute="bottom" constant="72" id="6rQ-Bn-Df4"/>
-                                                        <constraint firstItem="veG-hR-3Bp" firstAttribute="top" secondItem="uxn-DC-uWn" secondAttribute="bottom" constant="5" id="90b-BS-bMT"/>
+                                                        <constraint firstItem="veG-hR-3Bp" firstAttribute="top" secondItem="uxn-DC-uWn" secondAttribute="bottom" constant="-2" id="90b-BS-bMT"/>
                                                         <constraint firstItem="Fox-QL-7VW" firstAttribute="trailing" secondItem="r9n-9y-rCd" secondAttribute="trailing" id="9jn-nc-Syp"/>
                                                         <constraint firstItem="nUv-b9-lWt" firstAttribute="leading" secondItem="V2G-4J-Xse" secondAttribute="leading" constant="16" id="AyH-kd-WyK"/>
-                                                        <constraint firstItem="6gP-OQ-QaS" firstAttribute="top" secondItem="r9n-9y-rCd" secondAttribute="bottom" constant="18" id="FM6-nb-S2O"/>
+                                                        <constraint firstItem="6gP-OQ-QaS" firstAttribute="top" secondItem="r9n-9y-rCd" secondAttribute="bottom" constant="28" id="FM6-nb-S2O"/>
                                                         <constraint firstItem="Fox-QL-7VW" firstAttribute="leading" secondItem="r9n-9y-rCd" secondAttribute="leading" id="H9H-6j-kMb"/>
                                                         <constraint firstItem="AOO-SL-tMe" firstAttribute="top" secondItem="zO6-ij-Abz" secondAttribute="bottom" constant="2" id="HaN-lq-tWj"/>
                                                         <constraint firstItem="r9n-9y-rCd" firstAttribute="centerX" secondItem="nUv-b9-lWt" secondAttribute="centerX" id="Jzh-nw-bRP"/>
@@ -250,16 +250,16 @@
                                                         <constraint firstAttribute="trailing" secondItem="nUv-b9-lWt" secondAttribute="trailing" constant="18" id="OYn-rY-frZ"/>
                                                         <constraint firstItem="AOO-SL-tMe" firstAttribute="leading" secondItem="V2G-4J-Xse" secondAttribute="leading" constant="20" id="SIN-VQ-u4U"/>
                                                         <constraint firstItem="nUv-b9-lWt" firstAttribute="top" secondItem="Ifq-x8-NFm" secondAttribute="bottom" constant="47" id="V8J-yd-8hb"/>
-                                                        <constraint firstItem="uxn-DC-uWn" firstAttribute="top" secondItem="r9n-9y-rCd" secondAttribute="bottom" constant="21" id="XNm-fN-sbV"/>
+                                                        <constraint firstItem="uxn-DC-uWn" firstAttribute="top" secondItem="r9n-9y-rCd" secondAttribute="bottom" constant="31" id="XNm-fN-sbV"/>
                                                         <constraint firstItem="uxn-DC-uWn" firstAttribute="leading" secondItem="veG-hR-3Bp" secondAttribute="leading" id="b3b-Px-gk9"/>
-                                                        <constraint firstItem="zO6-ij-Abz" firstAttribute="top" secondItem="veG-hR-3Bp" secondAttribute="bottom" constant="13" id="bS1-JS-IKB"/>
+                                                        <constraint firstItem="zO6-ij-Abz" firstAttribute="top" secondItem="veG-hR-3Bp" secondAttribute="bottom" constant="20" id="bS1-JS-IKB"/>
                                                         <constraint firstItem="uxn-DC-uWn" firstAttribute="leading" secondItem="V2G-4J-Xse" secondAttribute="leading" constant="20" id="h3D-LE-DHV"/>
                                                         <constraint firstItem="Fox-QL-7VW" firstAttribute="top" secondItem="XLo-fa-tuP" secondAttribute="bottom" constant="8" id="hnp-jg-FVE"/>
                                                         <constraint firstAttribute="trailing" secondItem="XLo-fa-tuP" secondAttribute="trailing" constant="17" id="k4W-xA-E51"/>
                                                         <constraint firstItem="veG-hR-3Bp" firstAttribute="leading" secondItem="zO6-ij-Abz" secondAttribute="leading" id="pcx-ME-4xD"/>
                                                         <constraint firstAttribute="width" constant="321" id="qw2-aT-Rsj"/>
                                                         <constraint firstAttribute="trailing" secondItem="6gP-OQ-QaS" secondAttribute="trailing" constant="18" id="r9Q-CL-FOP"/>
-                                                        <constraint firstItem="r9n-9y-rCd" firstAttribute="top" secondItem="Fox-QL-7VW" secondAttribute="bottom" constant="2" id="rOz-0G-NVc"/>
+                                                        <constraint firstItem="r9n-9y-rCd" firstAttribute="top" secondItem="Fox-QL-7VW" secondAttribute="bottom" constant="-8" id="rOz-0G-NVc"/>
                                                         <constraint firstItem="r9n-9y-rCd" firstAttribute="leading" secondItem="nUv-b9-lWt" secondAttribute="leading" id="sFg-Tm-8pg"/>
                                                         <constraint firstItem="Ifq-x8-NFm" firstAttribute="top" secondItem="AOO-SL-tMe" secondAttribute="bottom" constant="49" id="tAg-Lx-MH6"/>
                                                         <constraint firstItem="uxn-DC-uWn" firstAttribute="trailing" secondItem="zO6-ij-Abz" secondAttribute="trailing" constant="-19" id="yOB-c6-GJV"/>
@@ -290,7 +290,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="700" id="E1V-TZ-lvE"/>
                                 </constraints>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,6 +309,7 @@
                         <outlet property="currentBicarbTxt" destination="7Ns-or-zvi" id="gee-xE-bCr"/>
                         <outlet property="resultLabel" destination="8xe-Je-xQb" id="C5e-Qj-n0m"/>
                         <outlet property="resultsView" destination="nUv-b9-lWt" id="8Pq-ni-gbw"/>
+                        <outlet property="titleLabel" destination="Fox-QL-7VW" id="5c4-hF-fzb"/>
                         <outlet property="weightTxt" destination="6gP-OQ-QaS" id="wQd-9F-6cW"/>
                     </connections>
                 </viewController>
@@ -318,17 +319,11 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="Alizarin">
-            <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Concentrate">
-            <color red="0.58399999141693115" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Cool Mint">
-            <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Seagull">
+            <color red="0.46000000834465027" green="0.74000000953674316" blue="0.79000002145767212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Silver">
             <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
