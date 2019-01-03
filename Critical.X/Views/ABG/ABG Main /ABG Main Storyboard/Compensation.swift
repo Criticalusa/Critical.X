@@ -374,7 +374,7 @@ extension ABGViewController {
         
         let bicarbLow = 24 - 0.4 * (40 - pC02)  // This will be lower
         
-        let renalCompensation = bicarbHigh - 5
+        _ = bicarbHigh - 5
         
         //let maxRenalCompensation = renalCompensation...bicarbLow
         

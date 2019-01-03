@@ -113,7 +113,7 @@ extension LMA {
             let label = UILabel()
             
             let firstParagraph: String = {
-                return "The Laryngeal Mask Airway is an alternative airway device that's used during anesthesia to support the airway. It's an appropriate airway choice when bag valve mask ventilation is warranted but endotracheal intubation is not indicated. It's also used a back-up airway device during failed oral tracheal intubation. Assist of an invaluable silicone mask and a rubber connecting to. It is inserted blindly into the oropharynx forming a low pressured seal around the laryngeal inlet – permitting general positive pressure ventilation."
+                return "The Laryngeal Mask Airway is an alternative airway device that's used during anesthesia to support the airway. It's an appropriate airway choice when bag valve mask ventilation is warranted but endotracheal intubation is not indicated. It's also used as a back-up airway device during failed oral tracheal intubation. Consisting of a silicone mask and a rubber connecting tube, it is inserted blindly into the oropharynx forming a low-pressure seal around the laryngeal inlet-permitting general positive pressure ventilation."
             }()
             
             
@@ -122,7 +122,7 @@ extension LMA {
             }()
             
             let finalParagraph  = {
-                return "The disadvantages of using the intubating iLMA vs. In the standard LMA is are the standard LMA does not allow high positive pressure ventilation and does not fully protect against aspiration and nonfasting patients."
+                return "A disadvantage of using the standard LMA vs. the intubating LMA (iLMA) vs. the standard LMA is that the standard LMA does not allow high pressure positive pressure ventilation and does not fully protect against aspiration in non-fasting patients."
             }()
             
             label.bottom(10)
