@@ -11,7 +11,6 @@ import UIKit
 
 
 class PredictorsDifficultAirway: UIViewController {
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
