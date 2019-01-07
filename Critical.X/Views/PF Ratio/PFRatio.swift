@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Lottie
+import EasyPeasy
+
 
 class PFRatio: UIViewController {
     
@@ -20,8 +23,9 @@ class PFRatio: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var pFDescriptionLabel: UILabel!
     @IBOutlet weak var pfResultsView: UIView!
-    @IBOutlet weak var closeMainButton: UIButton!
+    @IBOutlet weak var infoView: LOTAnimationView!
 
+    
     
     // MARK: - View Did Load
     override func viewDidLoad() {
@@ -31,7 +35,6 @@ class PFRatio: UIViewController {
         
         //Hide result View initially
         pfResultsView.isHidden = true
-        
         
         // Takes the button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
@@ -43,6 +46,13 @@ class PFRatio: UIViewController {
         /// Rounds the corners 15 pixels of the Button name
         calculateButton.clipsToBounds = true
         calculateButton.layer.cornerRadius = 4
+        
+        //MARK: - Lottie animations for the info piece
+        infoView.setAnimation(named: "info")
+        // Executes the play
+        infoView.play()
+        // Here we loop the animation and it keeps playing
+        infoView.loopAnimation = false
         
     }
     
@@ -96,8 +106,8 @@ class PFRatio: UIViewController {
         if finalPFRatioResult < 100 {
             
             ardsLabel.text = "ARDS, severe hypoxemia."
-            ardsLabel.textColor = Colorify.Alizarin
-            pfResultLabel.textColor = #colorLiteral(red: 0.9060000181, green: 0.2980000079, blue: 0.2349999994, alpha: 1)
+            ardsLabel.textColor = #colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1)
+            pfResultLabel.textColor = #colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1)
             
             //Print statement
             print("P/F Ratio is < 100 at \(finalPFRatioResult). Patient has severe ARDS. ")
@@ -105,8 +115,8 @@ class PFRatio: UIViewController {
         } else if (finalPFRatioResult >= 100) && (finalPFRatioResult <= 200){
             
             ardsLabel.text = "ARDS, moderate hypoxemia."
-            ardsLabel.textColor = Colorify.Carrot
-            pfResultLabel.textColor = #colorLiteral(red: 0.90200001, green: 0.4939999878, blue: 0.1330000013, alpha: 1)
+            ardsLabel.textColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+            pfResultLabel.textColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
 
             //Print statement
             print("P/F Ratio is 100-200 at \(finalPFRatioResult). Patient has Moderate ARDS. ")
@@ -114,8 +124,8 @@ class PFRatio: UIViewController {
         }else if (finalPFRatioResult >= 200) && (finalPFRatioResult <= 300){
             
             ardsLabel.text = "ARDS, Mild hypoxemia."
-            ardsLabel.textColor = Colorify.Blue
-            pfResultLabel.textColor = #colorLiteral(red: 0.1289999932, green: 0.5879999995, blue: 0.9530000091, alpha: 1)
+            ardsLabel.textColor = #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1)
+            pfResultLabel.textColor = #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1)
 
             //Print statement
             print("P/F Ratio is 200-300 at \(finalPFRatioResult). Patient has Mild ARDS. ")
@@ -123,8 +133,8 @@ class PFRatio: UIViewController {
         }else {
             
             ardsLabel.text = "Lungs are good."
-            ardsLabel.textColor = Colorify.Emerald
-            pfResultLabel.textColor = #colorLiteral(red: 0.1800000072, green: 0.8000000119, blue: 0.4429999888, alpha: 1)
+            ardsLabel.textColor = #colorLiteral(red: 0.6282941699, green: 0.9322618842, blue: 0.7528076172, alpha: 1)
+            pfResultLabel.textColor = #colorLiteral(red: 0.6282941699, green: 0.9322618842, blue: 0.7528076172, alpha: 1)
 
             
             //Print statement
