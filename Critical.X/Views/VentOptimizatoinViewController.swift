@@ -321,8 +321,8 @@ class VentOptimizatoinViewController: UIViewController, UITextFieldDelegate {
             print("Nevermind button tapped")
         }
         
-        // Add iCon at the top
-        let icon: UIImage = #imageLiteral(resourceName: "CriticalABG")
+        // Add iCon at the top of the Alert Icon
+        let icon: UIImage = #imageLiteral(resourceName: "CRITICAL4-1")
         // Color for the buttons and  iCon background
         let color = #colorLiteral(red: 0.8349413276, green: 0.3352985978, blue: 0.3409483433, alpha: 1)
         

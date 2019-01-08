@@ -57,6 +57,14 @@ class O2TankCalculator: UIViewController {
         
     }
     
+    func minutesToHours(minutes : Int) -> (Int , Int) {
+        return (minutes / 60, (minutes % 60))
+    }
+    
+   
+    
+  
+    
     
     @IBAction func calculateO2(_ sender: Any) {
         
@@ -103,7 +111,7 @@ class O2TankCalculator: UIViewController {
                     
                     minutesLabel.text = "Refill the tank"
                     
-                    resultsLabel.text = "Tank is empty"
+                    resultsLabel.text = "Empty Tank"
                     resultsLabel.textColor = UIColor.yellow
                     
                     o2DetailView.isHidden = false
@@ -115,7 +123,7 @@ class O2TankCalculator: UIViewController {
                 }
                 
             case 1?:
-                resultsLabel.text = String(format:"%.1f",E)
+                resultsLabel.text = E.oneDecimalPlace
                 print("Tank E was selected")
                 o2DetailView.isHidden = false
                 minutesLabel.text = "Minutes"
@@ -124,7 +132,7 @@ class O2TankCalculator: UIViewController {
                 showAnimate()
                 
             case 2?:
-                resultsLabel.text = String(format:"%.1f",G)
+                resultsLabel.text = G.oneDecimalPlace
                 print("Tank G was selected")
                 o2DetailView.isHidden = false
                 minutesLabel.text = "Minutes"
@@ -135,7 +143,7 @@ class O2TankCalculator: UIViewController {
                 showAnimate()
                 
             case 3?:
-                resultsLabel.text = String(format:"%.1f",HK)
+                resultsLabel.text = HK.oneDecimalPlace
                 print("Tank HK was selected")
                 o2DetailView.isHidden = false
                 minutesLabel.text = "Minutes"
@@ -145,7 +153,7 @@ class O2TankCalculator: UIViewController {
                 showAnimate()
                 
             case 4?:
-                resultsLabel.text = String(format:"%.1f",M)
+                resultsLabel.text = M.oneDecimalPlace
                 print("Tank M was selected")
                 o2DetailView.isHidden = false
                 minutesLabel.text = "Minutes"
@@ -159,8 +167,8 @@ class O2TankCalculator: UIViewController {
             }
         }
         else if (resultsLabel.text! < "0.0") {
-            minutesLabel.text = "Refill the tank"
-            resultsLabel.text = "Tank is empty"
+            minutesLabel.text = "Refill tank"
+            resultsLabel.text = "Empty Tank"
             o2DetailView.isHidden = false
             showAnimate()
         }

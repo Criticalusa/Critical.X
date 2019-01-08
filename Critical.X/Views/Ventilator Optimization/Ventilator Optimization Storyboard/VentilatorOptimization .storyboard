@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8dn-j5-Sdj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8dn-j5-Sdj">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -357,11 +357,11 @@
             <objects>
                 <viewController title="Ventilator Optimization" modalPresentationStyle="overFullScreen" id="8dn-j5-Sdj" customClass="VentOptimizatoinViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YxB-0l-eNe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTk-Dd-ZdI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJ5-Ls-F8E">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
@@ -369,14 +369,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-7e-Ftp">
-                                                    <rect key="frame" x="252" y="30" width="46" height="46"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-7e-Ftp">
+                                                    <rect key="frame" x="252" y="25" width="46" height="46"/>
                                                     <color key="backgroundColor" red="0.15868747229999999" green="0.2182204425" blue="0.30320093040000001" alpha="0.25" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="46" id="UZb-eO-gIs"/>
                                                         <constraint firstAttribute="height" constant="46" id="qXK-ev-4Sy"/>
                                                     </constraints>
-                                                    <state key="normal" title="X" image="refreshed.png">
+                                                    <state key="normal" image="Refresh-1">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
@@ -701,7 +701,6 @@
                     <tabBarItem key="tabBarItem" title="Ventilator Optimization" image="icons8-Infusion Pumps-30" badgeValue="Vent" id="a0y-J2-u3h">
                         <color key="badgeColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
-                    <size key="freeformSize" width="320" height="800"/>
                     <connections>
                         <outlet property="CurrentC02" destination="1Z5-MR-58j" id="5EC-7v-Zgn"/>
                         <outlet property="Freq" destination="ZJK-JL-6uQ" id="38j-rM-DX9"/>
@@ -727,8 +726,8 @@
     </scenes>
     <resources>
         <image name="LungsGreen" width="512" height="512"/>
+        <image name="Refresh-1" width="24336" height="24336"/>
         <image name="icons8-Infusion Pumps-30" width="30" height="30"/>
-        <image name="refreshed.png" width="300" height="300"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
