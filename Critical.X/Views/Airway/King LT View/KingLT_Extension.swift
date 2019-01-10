@@ -53,7 +53,7 @@ extension KingLT {
         let kingTitle : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "KING LT AIRWAY"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Clouds
@@ -81,7 +81,7 @@ extension KingLT {
         let kingSubTitle : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+           // label.bottom(10)
             label.text = "Supraglottic Airway Device"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower

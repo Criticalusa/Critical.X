@@ -31,7 +31,7 @@ class PredictorsViewController: UIViewController, UICollectionViewDataSource, UI
         let titleLabel : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+           // label.bottom(10)
             label.text = "Predictors".uppercased()
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Clouds

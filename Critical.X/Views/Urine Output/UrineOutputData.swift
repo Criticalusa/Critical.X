@@ -37,7 +37,7 @@ class UrineOutputData: UIViewController {
         resultView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         // Takes the button and makes it into a circle
-        resultButton.layer.cornerRadius = resultButton.frame.size.width / 2
+        //resultButton.layer.cornerRadius = resultButton.frame.size.width / 2
         // Do any additional setup after loading the view.
     }
     
@@ -69,7 +69,7 @@ class UrineOutputData: UIViewController {
             urineOutputResultLabel.text = String(finalResult)
 
             if (result! < 0.49) {
-                oliguriaLabel.text = "Patient is oluguric"
+                oliguriaLabel.text = "Patient is oliguric"
                 oliguriaLabel.textColor = UIColor.yellow
                 print("Patient is oliguric at \(finalResult)")
 
@@ -86,7 +86,7 @@ class UrineOutputData: UIViewController {
             urineOutputResultLabel.text = String(finalResult)
 
             if (result! < 0.49) {
-                oliguriaLabel.text = "Patient is oluguric"
+                oliguriaLabel.text = "Patient is oliguric"
                 oliguriaLabel.textColor = UIColor.yellow
                 print("Patient is oliguric at \(finalResult)")
 
@@ -101,7 +101,7 @@ class UrineOutputData: UIViewController {
                 urineOutputResultLabel.text = String(finalResult)
                 
                 if (result! < 1.0) {
-                        oliguriaLabel.text = "Patient is oluguric"
+                        oliguriaLabel.text = "Patient is oliguric"
                     oliguriaLabel.textColor = UIColor.yellow
                     print("Patient is oliguric at \(finalResult)")
 
@@ -117,7 +117,7 @@ class UrineOutputData: UIViewController {
                 
                 if (result! < 1.0) {
                     
-                        oliguriaLabel.text = "Patient is oluguric"
+                        oliguriaLabel.text = "Patient is oliguric"
                     oliguriaLabel.textColor = UIColor.yellow
                     print("Patient is oliguric at \(finalResult)")
 

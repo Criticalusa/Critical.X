@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Stevia
 
 class IVDripRate: UIViewController {
     
     //MARK: Outlets
     @IBOutlet weak var durationTxt: UITextField!
-    @IBOutlet weak var volumeTxt: UITextField!
+    @IBOutlet weak var volumeTxt: UITextField!{
+        didSet {
+//            volumeTxt-20-|
+//            volumeTxt.top(170)
+        }
+    }
+    @IBOutlet weak var volumeTextLabel: UILabel!
     @IBOutlet weak var dripSetTxt: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var mLresultLabel: UILabel!
@@ -35,12 +42,19 @@ class IVDripRate: UIViewController {
     //Set and outlet option with the CustomSegmentController as the Custom file
     @IBOutlet weak var segment: CustomSegmentedController?
     
+    // This adds our views to the cell's content view as needed
+    // and prepares them for autolayout use.
+    // This has the advantage of being very visual. Indeed, sv calls can be nested
+    // and you see the view hierarchy right away.
+
     
     
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // autolayout
+    
+        timeLabel.text = "min"
         
         //Declares the objects that are embedded into the segment.
         segment?.items = ["min", "hr"]

@@ -23,7 +23,7 @@ extension AirwayMenu {
         let supraglotticSubLabel: UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "Supraglottic Airway Device"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower
@@ -53,7 +53,7 @@ extension AirwayMenu {
         let theLabel: UILabel = {
             let label = UILabel()
             label.frame = CGRect(x: 24, y: 51, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "One pass laryngoscopy"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower
@@ -79,7 +79,7 @@ extension AirwayMenu {
         let lmaLabel: UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 17, y: 50, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "LMA"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower
@@ -105,7 +105,7 @@ extension AirwayMenu {
             let label = UILabel()
             //Uncomment if not using Easy Peasy or Stevia
             //label.frame = CGRect(x: 17, y: 132, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "Lemon, Moans, Rods, Short"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower

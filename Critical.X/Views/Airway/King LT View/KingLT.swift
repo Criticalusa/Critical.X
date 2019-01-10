@@ -59,7 +59,7 @@ class KingLT: UIViewController {
         let lastLabelKingLT : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "Proper placement of the King LT Airway after insertion."
             label.lineBreakMode = .byWordWrapping
             label.textColor = #colorLiteral(red: 0.987544477, green: 0.6673021317, blue: 0, alpha: 1)

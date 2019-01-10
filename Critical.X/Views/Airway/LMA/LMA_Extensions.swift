@@ -22,7 +22,7 @@ extension LMA {
         let titleLabel : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "Laryngeal Mask Airway".uppercased()
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Clouds
@@ -56,7 +56,7 @@ extension LMA {
         let subTitleLabel : UILabel = {
             let label = UILabel()
             //label.frame = CGRect(x: 24, y: 140, width: 310, height: 40)
-            label.bottom(10)
+            //label.bottom(10)
             label.text = "Supraglottic Airway Device"
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Sunflower
@@ -125,7 +125,7 @@ extension LMA {
                 return "A disadvantage of using the standard LMA vs. the intubating LMA (iLMA) vs. the standard LMA is that the standard LMA does not allow high pressure positive pressure ventilation and does not fully protect against aspiration in non-fasting patients."
             }()
             
-            label.bottom(10)
+            //label.bottom(10)
             label.text = firstParagraph + "\n\n\n" + contraIndicationInfo + "\n\n\n" + finalParagraph
             label.lineBreakMode = .byWordWrapping
             label.textColor = Colorify.Clouds
