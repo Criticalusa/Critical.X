@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qkw-S9-0ne">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qkw-S9-0ne">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,35 +16,30 @@
             <objects>
                 <viewController title="FreeWaterDeficitMain" id="Qkw-S9-0ne" customClass="FreeWaterDeficit" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETa-1Y-Yde">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG-soft-cream-blue-red-gradation-blur-33-iphone6-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="kTP-gR-wbt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKD-YF-5XY">
-                                <rect key="frame" x="0.0" y="-7" width="375" height="117"/>
+                                <rect key="frame" x="0.0" y="-7" width="320" height="117"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <color key="backgroundColor" name="Alizarin"/>
                             </view>
-                            <visualEffectView opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w70-vz-6HV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w70-vz-6HV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="IxK-1A-IUb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-Ef-apU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="790"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="be4-JO-xig" customClass="CustomSegmentedController" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="236" y="163" width="124" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <rect key="frame" x="187" y="163" width="103" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectionViewColor">
@@ -65,7 +60,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NaL-eR-iKt" customClass="CustomSegmentedController" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="153" y="207" width="207" height="38"/>
+                                        <rect key="frame" x="153" y="207" width="152" height="38"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
@@ -87,43 +82,43 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhO-sj-0x8">
-                                        <rect key="frame" x="262" y="260" width="98" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <rect key="frame" x="204" y="260" width="101" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free Wate Deficit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZk-hO-k5Z">
-                                        <rect key="frame" x="16" y="45" width="343" height="46"/>
+                                        <rect key="frame" x="16" y="60" width="288" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="34"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIW-Y0-Els">
-                                        <rect key="frame" x="16" y="262" width="117" height="31"/>
+                                        <rect key="frame" x="16" y="262" width="75" height="32"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np1-pd-pZ5">
-                                        <rect key="frame" x="16" y="166" width="39" height="39"/>
+                                        <rect key="frame" x="16" y="166" width="39" height="32"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desired Sodium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-An-olJ">
-                                        <rect key="frame" x="16" y="342" width="194" height="39"/>
+                                        <rect key="frame" x="16" y="347" width="170" height="32"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHk-qt-6T0">
-                                        <rect key="frame" x="75" y="421" width="224" height="36"/>
+                                        <rect key="frame" x="75" y="421" width="169" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.40023022339999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
@@ -136,22 +131,22 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ph-pT-4Vd">
-                                        <rect key="frame" x="330" y="270" width="30" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <rect key="frame" x="285" y="270" width="16" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDY-U2-wIh">
-                                        <rect key="frame" x="16" y="115" width="343" height="18"/>
+                                        <rect key="frame" x="16" y="115" width="288" height="18"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79n-wM-VtG">
-                                        <rect key="frame" x="331" y="50" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="281" y="30" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="X">
@@ -163,37 +158,37 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="va9-D2-xhK">
-                                        <rect key="frame" x="262" y="346" width="98" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <rect key="frame" x="204" y="346" width="101" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Sodium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-WA-ryr">
-                                        <rect key="frame" x="16" y="301" width="168" height="38"/>
+                                        <rect key="frame" x="16" y="306" width="168" height="32"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="Clouds"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tSX-IT-ozt">
-                                        <rect key="frame" x="262" y="305" width="98" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <rect key="frame" x="204" y="305" width="101" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuo-3D-Fzc">
-                                        <rect key="frame" x="22" y="291" width="120" height="26"/>
+                                        <rect key="frame" x="22" y="291" width="65" height="26"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <connections>
                                             <action selector="SodiumReference:" destination="Qkw-S9-0ne" eventType="touchUpInside" id="ZmW-rh-r8f"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkK-MO-wtX">
-                                        <rect key="frame" x="59" y="43" width="253" height="48"/>
+                                        <rect key="frame" x="59" y="43" width="198" height="48"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <userDefinedRuntimeAttributes>
@@ -206,7 +201,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age Range" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mr8-ka-xlA">
-                                        <rect key="frame" x="16" y="206" width="129" height="39"/>
+                                        <rect key="frame" x="16" y="211" width="115" height="32"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -230,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCg-sY-evk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2169" y="-848"/>
+            <point key="canvasLocation" x="-2306.25" y="-857.74647887323943"/>
         </scene>
         <!--FreeWaterDeficitDetail-->
         <scene sceneID="Ol0-ty-JgY">
@@ -241,123 +236,74 @@
                         <viewControllerLayoutGuide type="bottom" id="guB-FE-gJF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Acv-tN-atk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6n-04-rQ5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6n-04-rQ5">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="612"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efy-11-obs" userLabel="FreeWaterChildView">
-                                        <rect key="frame" x="0.0" y="712" width="375" height="100"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Full Result:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH6-Jr-a2R">
-                                                <rect key="frame" x="8" y="8" width="367" height="44"/>
-                                                <color key="backgroundColor" red="0.84705882349999995" green="0.3803921569" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.8 L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhR-lf-QEt">
-                                                <rect key="frame" x="120" y="4" width="107" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="107" id="ccX-nO-7hQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="33"/>
-                                                <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Water Deficit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-EG-Yca">
-                                                <rect key="frame" x="224" y="17" width="101" height="29"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="101" id="XlJ-O7-cGz"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-5B-5IS">
-                                                <rect key="frame" x="334" y="11" width="30" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <state key="normal" title="X">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="closeFreeWaterDetail:" destination="Vp9-H4-B37" eventType="touchUpInside" id="IXU-Iw-jpP"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IV Flow rate of  170 cc/hr for 40 hrs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-fq-Jyc">
-                                                <rect key="frame" x="73" y="51" width="237" height="29"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN0-bp-3tq">
-                                                <rect key="frame" x="84" y="52" width="215" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="TLN-oh-wjw"/>
-                                                </constraints>
-                                                <connections>
-                                                    <action selector="IVFlowReferene:" destination="Vp9-H4-B37" eventType="touchUpInside" id="s7g-cg-yde"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.84705882349999995" green="0.3803921569" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="kxQ-5B-5IS" firstAttribute="leading" secondItem="kWe-EG-Yca" secondAttribute="trailing" constant="9" id="0aV-57-8wB"/>
-                                            <constraint firstAttribute="trailing" secondItem="kxQ-5B-5IS" secondAttribute="trailing" constant="11" id="A2L-ni-k7c"/>
-                                            <constraint firstItem="PQN-fq-Jyc" firstAttribute="leading" secondItem="efy-11-obs" secondAttribute="leading" constant="73" id="Du9-hU-P2d"/>
-                                            <constraint firstItem="kxQ-5B-5IS" firstAttribute="top" secondItem="efy-11-obs" secondAttribute="top" constant="11" id="FCl-DH-1kc"/>
-                                            <constraint firstItem="XhR-lf-QEt" firstAttribute="top" secondItem="efy-11-obs" secondAttribute="top" constant="4" id="LbB-Ak-xcu"/>
-                                            <constraint firstItem="XhR-lf-QEt" firstAttribute="leading" secondItem="efy-11-obs" secondAttribute="leading" constant="120" id="OXZ-0c-2D7"/>
-                                            <constraint firstItem="CH6-Jr-a2R" firstAttribute="leading" secondItem="efy-11-obs" secondAttribute="leadingMargin" id="P5p-mM-Dey"/>
-                                            <constraint firstItem="XhR-lf-QEt" firstAttribute="centerY" secondItem="kxQ-5B-5IS" secondAttribute="centerY" id="Sbb-fC-Dcz"/>
-                                            <constraint firstItem="PQN-fq-Jyc" firstAttribute="top" secondItem="XhR-lf-QEt" secondAttribute="bottom" constant="3" id="VL7-IM-Aeb"/>
-                                            <constraint firstAttribute="bottom" secondItem="PQN-fq-Jyc" secondAttribute="bottom" constant="20" id="WGM-Xq-iye"/>
-                                            <constraint firstItem="rN0-bp-3tq" firstAttribute="leading" secondItem="efy-11-obs" secondAttribute="leading" constant="84" id="bqi-Hd-4ya"/>
-                                            <constraint firstAttribute="bottom" secondItem="kxQ-5B-5IS" secondAttribute="bottom" constant="59" id="eY2-1Q-pP2"/>
-                                            <constraint firstItem="kWe-EG-Yca" firstAttribute="top" secondItem="efy-11-obs" secondAttribute="top" constant="17" id="fRg-XF-VEp"/>
-                                            <constraint firstItem="CH6-Jr-a2R" firstAttribute="top" secondItem="efy-11-obs" secondAttribute="topMargin" id="iE8-n6-aGB"/>
-                                            <constraint firstAttribute="bottom" secondItem="rN0-bp-3tq" secondAttribute="bottom" constant="18" id="jBn-b3-sJb"/>
-                                            <constraint firstItem="PQN-fq-Jyc" firstAttribute="centerX" secondItem="rN0-bp-3tq" secondAttribute="centerX" id="myV-Y7-MPA"/>
-                                            <constraint firstAttribute="trailing" secondItem="CH6-Jr-a2R" secondAttribute="trailing" id="qif-zj-j77"/>
-                                            <constraint firstAttribute="height" constant="100" id="sWz-yX-4Jn"/>
-                                            <constraint firstItem="CH6-Jr-a2R" firstAttribute="centerX" secondItem="PQN-fq-Jyc" secondAttribute="centerX" id="tay-f3-MYj"/>
-                                            <constraint firstItem="PQN-fq-Jyc" firstAttribute="top" secondItem="kWe-EG-Yca" secondAttribute="bottom" constant="5" id="vEX-Mx-sGd"/>
-                                            <constraint firstItem="rN0-bp-3tq" firstAttribute="top" secondItem="CH6-Jr-a2R" secondAttribute="bottom" id="vo2-x8-PyW"/>
-                                        </constraints>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NQ-aP-qoM">
-                                        <rect key="frame" x="0.0" y="182" width="375" height="534"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="449"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <connections>
                                             <action selector="hiddenButton:" destination="Vp9-H4-B37" eventType="touchUpInside" id="BCd-o0-Xhq"/>
                                         </connections>
                                     </button>
+                                    <view autoresizesSubviews="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efy-11-obs" userLabel="FreeWaterChildView">
+                                        <rect key="frame" x="0.0" y="462" width="320" height="132"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H20 Deficit Result:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH6-Jr-a2R">
+                                                <rect key="frame" x="33" y="39" width="133" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13.8 L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhR-lf-QEt">
+                                                <rect key="frame" x="180" y="24" width="131" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="33"/>
+                                                <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IV Flow rate of  170 cc/hr for 40 hrs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-fq-Jyc">
+                                                <rect key="frame" x="33" y="66" width="254" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN0-bp-3tq">
+                                                <rect key="frame" x="284" y="5" width="27" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="CRITICALLogo"/>
+                                                <connections>
+                                                    <action selector="IVFlowReferene:" destination="Vp9-H4-B37" eventType="touchUpInside" id="s7g-cg-yde"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free Water Deficit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-EG-Yca">
+                                                <rect key="frame" x="115" y="4" width="92" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.82023102045059204" green="0.2877475917339325" blue="0.28558176755905151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="efy-11-obs" secondAttribute="bottom" constant="20" id="7wM-Mp-yLy"/>
-                                    <constraint firstItem="efy-11-obs" firstAttribute="top" secondItem="B6n-04-rQ5" secondAttribute="top" constant="712" id="Q2p-Ot-00g"/>
-                                    <constraint firstItem="efy-11-obs" firstAttribute="leading" secondItem="B6n-04-rQ5" secondAttribute="leading" id="bnF-ig-t5o"/>
-                                    <constraint firstAttribute="trailing" secondItem="efy-11-obs" secondAttribute="trailing" id="kki-Sg-8Cd"/>
-                                    <constraint firstItem="efy-11-obs" firstAttribute="centerX" secondItem="B6n-04-rQ5" secondAttribute="centerX" id="w4e-ok-nel"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="B6n-04-rQ5" firstAttribute="top" secondItem="O6q-vl-zLp" secondAttribute="bottom" constant="-44" id="83k-bV-6Cr"/>
-                            <constraint firstAttribute="bottom" secondItem="B6n-04-rQ5" secondAttribute="bottom" constant="-20" id="Tyy-9M-41S"/>
-                            <constraint firstItem="B6n-04-rQ5" firstAttribute="leading" secondItem="ll5-t0-95Z" secondAttribute="leading" id="hhe-CN-xkF"/>
-                            <constraint firstItem="B6n-04-rQ5" firstAttribute="trailing" secondItem="ll5-t0-95Z" secondAttribute="trailing" id="jY4-Ig-JVG"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ll5-t0-95Z"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="812"/>
                     <connections>
-                        <outlet property="closeButton" destination="kxQ-5B-5IS" id="RxS-vL-8lf"/>
                         <outlet property="freeWaterResultLabel" destination="XhR-lf-QEt" id="u02-YV-6kv"/>
                         <outlet property="freeWaterView" destination="efy-11-obs" id="9PM-Rc-GTy"/>
                         <outlet property="iVFlowRateTxt" destination="PQN-fq-Jyc" id="LQn-3N-Cft"/>
@@ -365,13 +311,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1W-pn-76w" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1457" y="-847"/>
+            <point key="canvasLocation" x="-1571.25" y="-858.80281690140851"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BG-soft-cream-blue-red-gradation-blur-33-iphone6-wallpaper" width="750" height="1334"/>
+        <image name="CRITICALLogo" width="427.67999267578125" height="425"/>
         <namedColor name="Alizarin">
             <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Clouds">
+            <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

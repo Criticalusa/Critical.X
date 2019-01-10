@@ -36,12 +36,12 @@ class FreeWaterDeficitDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        // Takes the button and makes it into a circle
-        closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
-        
-        /// Rounds the corners 15 pixels of the UIView name
+        iVFlowRateTxt.clipsToBounds = true
+        iVFlowRateTxt.layer.cornerRadius = 2
+        // here we round the top of the free Water deficit view only
         freeWaterView.clipsToBounds = true
-        freeWaterView.layer.cornerRadius = 15
+        freeWaterView.layer.cornerRadius = 5
+        freeWaterView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         // calls the method below to be executed.
         freeWaterCalculations()
