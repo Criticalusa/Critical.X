@@ -23,7 +23,10 @@ class CheckMyDrips: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var resultView: UIView!
-    
+    @IBOutlet weak var calcDrip: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {calcDrip.layer.cornerRadius = calcDrip.frame.size.width / 2 }
+    }
     @IBOutlet weak var closeButton: UIButton! {
         // Takes the button and makes it into a circle
         didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
