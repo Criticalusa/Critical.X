@@ -306,10 +306,10 @@ class RSIDetail: UIViewController {
         
        
         //MARK:========= Update the labels with the calculations
-       // kgWeight_Label.text = "\(weightEntered!) kg's | \((weightEntered! * 2.2).rounded()) lbs" // Updates the weight label
+       // kgWeight_Label.text = "\(weightEntered!) kgs | \((weightEntered! * 2.2).rounded()) lbs" // Updates the weight label
         
-        // Animated the weight label once the kg's are calculated based on the first page when the weight is placed.
-        kgWeight_Label.animate(text: "\(weightEntered!) kg's | \((weightEntered! * 2.2).rounded()) lbs", duration: 1, completion: nil)
+        // Animated the weight label once the kgs are calculated based on the first page when the weight is placed.
+        kgWeight_Label.animate(text: "\(weightEntered!) kgs | \((weightEntered! * 2.2).rounded()) lbs", duration: 1, completion: nil)
 
         
         

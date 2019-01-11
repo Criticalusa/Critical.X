@@ -77,7 +77,7 @@ class PedsViewController: UIViewController {
         textFieldData.text = "0.0"
         
        
-        _ = SCLAlertView().showError("Error!", subTitle:"Enter a weight greater than zero, and less than 80 kg's to calculate.", closeButtonTitle:"Got it")
+        _ = SCLAlertView().showError("Error!", subTitle:"Enter a weight greater than zero, and less than 80 kgs to calculate.", closeButtonTitle:"Got it")
         //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
         
 

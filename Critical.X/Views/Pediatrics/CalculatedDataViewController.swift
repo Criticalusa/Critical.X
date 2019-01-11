@@ -254,12 +254,12 @@ public class CalculatedDataViewController: UIViewController {
                 print("Newborn displayed because the age is less than 1 month")
                 return "Newborn"
             } else if age == 1 {
-                return "Expected age at \(weight!) kg's is approx. \(Int(age)) month old."
+                return "Expected age at \(weight!) kgs is approx. \(Int(age)) month old."
             }
-            return "Expected age at \(weight!) kg's is approx. \(Int(age)) months old."
+            return "Expected age at \(weight!) kgs is approx. \(Int(age)) months old."
             
         }
-        //return "The approximate age at \(weight!)kg's is \(age) months"
+        //return "The approximate age at \(weight!)kgs is \(age) months"
         
       
         //MARK: Calculate the patient's age from weight 1 – 5
@@ -272,11 +272,11 @@ public class CalculatedDataViewController: UIViewController {
             
             if age == 1 {
                 
-                return "The expected age at \(weight!) kg's is approx. \(Int(age)) yr. old."
+                return "The expected age at \(weight!) kgs is approx. \(Int(age)) yr. old."
                 
             } else {
                 
-                return "The expected age at \(weight!) kg's is approx. \(Int(age)) y/o."
+                return "The expected age at \(weight!) kgs is approx. \(Int(age)) y/o."
             }
             
         }
@@ -290,7 +290,7 @@ public class CalculatedDataViewController: UIViewController {
             /// To calculate age over 5yr = (weight! / 4)
             let age = (weight! / 4)
         
-            return "The age at \(weight!) kg's is approx. \(Int(age)) y/o."
+            return "The age at \(weight!) kgs is approx. \(Int(age)) y/o."
         }
         
     
@@ -298,7 +298,7 @@ public class CalculatedDataViewController: UIViewController {
         
         let calculation = weightEntered    /// The number value entered in the textField
         
-        // Calculates the conversion from Kg's to Lbs
+        // Calculates the conversion from kgs to Lbs
         let pounds = "\(calculation! * 2.2) lbs"
         
         //Drug Calculations done below
@@ -408,13 +408,13 @@ public class CalculatedDataViewController: UIViewController {
             print("Cannot process because weight out of normal parameters")
             
             // Top label changes, capitalizes it and the color as well
-            topDescriptionLabel.text = "Enter a value under 80 kg's".uppercased()
+            topDescriptionLabel.text = "Enter a value under 80 kgs".uppercased()
             age_Label.text = ""
             
             topDescriptionLabel.textColor = FlatColor.BackgroundColor.Red.toUIColor()
             
             // Changes the text and text color and capitalizes the text as well.
-            inYears.text = "< 80 kg's".uppercased()
+            inYears.text = "< 80 kgs".uppercased()
             inYears.textColor = FlatColor.BackgroundColor.Red.toUIColor()
             
             // Changing  the color of the views.
@@ -515,7 +515,7 @@ public class CalculatedDataViewController: UIViewController {
         }
         //MARK: GUARD CODE TO INITIATE IF VALID
         // if its not nil, then execute the following code.
-        topDescriptionLabel.text = "\(calculation!) kg's or \(pounds)";
+        topDescriptionLabel.text = "\(calculation!) kgs or \(pounds)";
         albuterol_label.text = albuterol
         albumin_label.text = albumin
         epiLabel.text = epi
@@ -964,7 +964,7 @@ public class CalculatedDataViewController: UIViewController {
                 
                 
                 
-            //MARK: 12-15 Kg's
+            //MARK: 12-15 kgs
             case 12...14.9: //Small child
                 
                 print("Small Child, Yellow Color, 12-15 kg")
@@ -1131,7 +1131,7 @@ public class CalculatedDataViewController: UIViewController {
                 broslowColorLabel.text = "BLUE"
                 
                 //Calculates the approx. age from weight
-                /// If the weight is between 19 - 20 kg's we'll use the other formula for the case.
+                /// If the weight is between 19 - 20 kgs we'll use the other formula for the case.
                 if (weighValue >= 19.0) && (weighValue <= 20.0) {
                     print (approximateAgeFromWeight_1_5(weight: weighValue))
                     age_Label.text = approximateAgeFromWeight_1_5(weight: weighValue)
@@ -1508,7 +1508,7 @@ public class CalculatedDataViewController: UIViewController {
     
     //MARK: UIAlert
     func sendALERT() {
-        _ = SCLAlertView().showError("Error!", subTitle:"Enter a weight greater than zero, and less than 80 kg's to calculate.", closeButtonTitle:"Got it")
+        _ = SCLAlertView().showError("Error!", subTitle:"Enter a weight greater than zero, and less than 80 kgs to calculate.", closeButtonTitle:"Got it")
         //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
         
     }

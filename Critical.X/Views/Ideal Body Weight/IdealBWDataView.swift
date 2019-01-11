@@ -175,7 +175,7 @@ class IdealBWDataView: UIViewController {
         case 2:
             IBW_Pounds.text =  String(format:"%.1f",poundsFemale) + " lbs"  // Rounds to the 1st decimal place
             
-            idealBodyweightCalc.text = "\(femaleIBWCalculation!) kg's"
+            idealBodyweightCalc.text = "\(femaleIBWCalculation!) kgs"
             
             genderHeading.text = genderLabel + " " + "at \(heightEntered!) in | \(feetString) \(inchesString)"
             

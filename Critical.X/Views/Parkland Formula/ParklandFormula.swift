@@ -79,7 +79,7 @@ class ParklandFormula: UIViewController {
 
         print("parkland formula was calculated")
 
-        return "With a weight of \(Weight) kg's and BSA of \(BSA)%, a total of \(parklandFormula) L  needs to be delivered over 24 hours.\n\nDeliver a total of \(firstEight) L over the first 8 hours.\n\nThe remaining \(overSixteen) L to be delivered over the last 16 hours."
+        return "With a weight of \(Weight) kgs and BSA of \(BSA)%, a total of \(parklandFormula) L  needs to be delivered over 24 hours.\n\nDeliver a total of \(firstEight) L over the first 8 hours.\n\nThe remaining \(overSixteen) L to be delivered over the last 16 hours."
         
     }
     
