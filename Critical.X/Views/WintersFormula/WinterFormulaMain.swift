@@ -13,7 +13,7 @@ class WinterFormulaMain: UIViewController {
     
     @IBOutlet weak var wintersResultLabel: UILabel!
     
-    @IBOutlet weak var wintersTextField: UITextField!
+    @IBOutlet weak var bicardTxtField: UITextField!
     
     @IBOutlet weak var resultsView: UIView!
     
@@ -77,7 +77,7 @@ class WinterFormulaMain: UIViewController {
     // MARK: - Winters Formula funciton
     func wintersFormula(theBicarb: Double ) -> Double {
         
-        let bicarb = Double(wintersTextField.text!)
+        let bicarb = Double(bicardTxtField.text!)
         
         let winters = (1.5 * bicarb!) + 8
         
@@ -97,7 +97,7 @@ class WinterFormulaMain: UIViewController {
         
         // Setting the variables
         let co2entered = Double(currentC02.text!)
-        let bicarb = Double(wintersTextField.text!)
+        let bicarb = Double(bicardTxtField.text!)
         let winters = (1.5 * bicarb!) + 8 // Used to compare the current c02 with the calculated winters formula
        
         //Guard statement to say, if theres nothing in the c02 box, then set it to be blank and the conditional below will make the description textField blank.
@@ -179,9 +179,13 @@ class WinterFormulaMain: UIViewController {
 
     @IBAction func calculateWintersFormula(_ sender: Any) {
         
-        let bicarb = Double(wintersTextField.text!)
-        
-        guard bicarb != nil else { return print("Bicarb not entered") }
+        let bicarb = Double(bicardTxtField.text!)
+        let c02 = Double(currentC02.text!)
+        guard bicarb != nil, c02 != nil else {
+            ///Red Alert
+            _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
+            print("Bicarb or c02 not entered") 
+            return }
        
         //Takes the result. Sends it to the label and displays it as an Int value.
        wintersResultLabel.text = "\(Int(wintersFormula(theBicarb: bicarb!).rounded()) - 2)-\(Int(wintersFormula(theBicarb: bicarb!).rounded()) + 2) "
