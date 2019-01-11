@@ -133,6 +133,50 @@ class WinterFormulaMain: UIViewController {
     }
     // MARK: - Calcualte button Method
     
+
+    // MARK:- Winters Formula
+    func wintersFormula (calculatedBicarb: Double) -> String {
+        
+        //PCO2 = (HCO3 x 1.5) + 8 ± 2.
+        let wintersLow = ((Double(calculatedBicarb) * 1.5 + 8) - 2).rounded()
+        
+        let wintersHigh = ((Double(calculatedBicarb) * 1.5 + 8) + 2).rounded()
+        
+        let wintersRange:ClosedRange<Double> = wintersLow...wintersHigh
+        
+        var winterVerbiage = String()
+        
+        let co2entered = Double(currentC02.text!)
+
+        if wintersRange.contains(co2entered!){
+            // Then we add this string to the analysis when setting the text labels
+            winterVerbiage = "The C02 is compensating nicely at \(co2entered!)"
+        }
+        
+        if (Double(co2entered!)) < wintersLow {
+            
+            winterVerbiage = "The observed C02 tension is ⬇︎ at \(co2entered!) - which lower than the expected C02 compensation - \(wintersLow), suggesting that a concomitant Respiratory Alkalosis is also likely."
+            wintersSmallTitleLabel.text = "Respiratory Alkalosis"
+
+            print("WinterFormula Func: C02 lower than calculated winters")
+            
+        }
+        
+        if (Double(co2entered!)) > wintersHigh {
+            
+            winterVerbiage = "The observed C02 tension is ⬆︎ at \(co2entered!) - which is higher than the expected C02 compensation - \(wintersHigh), suggesting that a relative hypoventilation is increasing the pC02 causing a concomitant Respiratory Acidosis to compensate."
+            wintersSmallTitleLabel.text = "Respiratory Acidosis"
+            print("WinterFormula Func: C02 higher than calculated winters")
+            //"The known PaC02 is higher than expected at \(c02_value!). A superimposed Respiratory Acidosis is also likely."
+            //"The PaC02 is high at \(c02_value!)), which is higher than the expected PaC02 compensation, suggesting that a concomitant Respiratory Acidosis is likely in addition to the primary disorder."
+        }
+        
+        
+        
+        // Add the language to retuen along with the string variables.
+        return "The corrected C02 should be " + " " + "\(wintersLow) - \(wintersHigh) " + "\n" + winterVerbiage
+    }
+
     @IBAction func calculateWintersFormula(_ sender: Any) {
         
         let bicarb = Double(wintersTextField.text!)
@@ -140,14 +184,16 @@ class WinterFormulaMain: UIViewController {
         guard bicarb != nil else { return print("Bicarb not entered") }
        
         //Takes the result. Sends it to the label and displays it as an Int value.
-        wintersResultLabel.text = "\(Int(wintersFormula(theBicarb: bicarb!).rounded()) - 2)-\(Int(wintersFormula(theBicarb: bicarb!).rounded()) + 2) "
+       wintersResultLabel.text = "\(Int(wintersFormula(theBicarb: bicarb!).rounded()) - 2)-\(Int(wintersFormula(theBicarb: bicarb!).rounded()) + 2) "
+        
+        c02description.text = wintersFormula(calculatedBicarb: bicarb!)
         
         //Runs the first animation block
         showAnimate()
         //Runs the Second animation block
         newAnimation()
         
-        checkCo2Parameters()
+        //checkCo2Parameters()
         
         resultsView.isHidden = false
         
@@ -191,7 +237,7 @@ class WinterFormulaMain: UIViewController {
             self.resultsView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             
             
-            self.resultsView.frame = CGRect(x: 8, y: 500-100, width: 359, height: 174)
+            //self.resultsView.frame = CGRect(x: 8, y: 500-100, width: 359, height: 174)
         })
     }
     
