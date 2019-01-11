@@ -58,7 +58,7 @@ public class CalculatedDataViewController: UIViewController {
     @IBOutlet weak var fluidBolus_button: UIButton!
     @IBOutlet weak var rocuronium_Button: UIButton!
     @IBOutlet weak var vecuronium_Button: UIButton!
-    @IBOutlet weak var succinycholine_Button: UIButton!
+    @IBOutlet weak var Succinylcholine_Button: UIButton!
     @IBOutlet weak var nimbex_Button: UIButton!
     
     /// Label References
@@ -83,7 +83,7 @@ public class CalculatedDataViewController: UIViewController {
     @IBOutlet weak var magnesiumSulfate_Label: UILabel!
     @IBOutlet weak var soluMedrol_Label: UILabel!
     @IBOutlet weak var vecuronium_Label: UILabel!
-    @IBOutlet weak var succinycholine_Label: UILabel!
+    @IBOutlet weak var Succinylcholine_Label: UILabel!
     @IBOutlet weak var rocuronium_Label: UILabel!
     @IBOutlet weak var milrinone_Label: UILabel!
     @IBOutlet weak var nitroglycerine_Label: UILabel!
@@ -391,7 +391,7 @@ public class CalculatedDataViewController: UIViewController {
         
         let rocuronium = calculateDoseTwo(DoseMin: 0.6, _DoseMax: 1.2) + "mg"
         
-        let succinycholine = calculateDoseTwo(DoseMin: 1, _DoseMax: 2) + "mg"
+        let Succinylcholine = calculateDoseTwo(DoseMin: 1, _DoseMax: 2) + "mg"
         
         let nimbex = calculateDoseTwo(DoseMin: 0.1, _DoseMax: 0.3) + "mg"
         
@@ -509,7 +509,7 @@ public class CalculatedDataViewController: UIViewController {
             nimbex_Button.isHidden = true
             vecuronium_Button.isHidden = true
             rocuronium_Button.isHidden = true
-            succinycholine_Button.isHidden = true
+            Succinylcholine_Button.isHidden = true
             
             return
         }
@@ -559,7 +559,7 @@ public class CalculatedDataViewController: UIViewController {
         precedex_Label.text = precedex
         vecuronium_Label.text = vecuronium
         rocuronium_Label.text = rocuronium
-        succinycholine_Label.text = succinycholine
+        Succinylcholine_Label.text = Succinylcholine
         nimbex_Label.text = nimbex
         tidalVolume_Label.text = tidalVolume
         
@@ -1889,9 +1889,9 @@ public class CalculatedDataViewController: UIViewController {
             }
         }else if segue.identifier == "Succs" {
             if let MiniDrugVC = segue.destination as? MiniDrugDataViewViewController {
-                MiniDrugVC.buttonName = succinycholine_Button!.currentTitle!
+                MiniDrugVC.buttonName = Succinylcholine_Button!.currentTitle!
                 MiniDrugVC.drugClass = DrugClass.Depolarizing.executeDrugClassDescription()
-                MiniDrugVC.drugInfo =   DrugInformation.Succinycholine.executeDrugInfoDescription()
+                MiniDrugVC.drugInfo =   DrugInformation.Succinylcholine.executeDrugInfoDescription()
                 print("Succs was selected")
                 
             }

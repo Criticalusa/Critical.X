@@ -50,7 +50,7 @@ it, simply add the following line to your Podfile:
 pod "EasyPeasy"
 ```
 
-### Compatibility
+### compatibility 
 For now **EasyPeasy** is only compatible with iOS 8 and above, although we aim
 to make it compatible with OS X.
 The framework has been tested with Xcode 7 and Swift 2.0, however don't hesitate

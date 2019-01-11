@@ -51,7 +51,7 @@ class RSIDetail: UIViewController {
     @IBOutlet weak var versed_Label: UILabel!
     @IBOutlet weak var ketamine_Label: UILabel!
     @IBOutlet weak var propofol_Label: UILabel!
-    @IBOutlet weak var succinycholine_Label: UILabel!
+    @IBOutlet weak var Succinylcholine_Label: UILabel!
     @IBOutlet weak var cisatricurium_Label: UILabel!
     @IBOutlet weak var rocuronium_Label: UILabel!
     @IBOutlet weak var vecuronium_Label: UILabel!
@@ -83,7 +83,7 @@ class RSIDetail: UIViewController {
     @IBOutlet var unit_Ketamine: UILabel!
     @IBOutlet var unit_Versed: UILabel!
     @IBOutlet var unit_Propofol: UILabel!
-    @IBOutlet var unit_Succinycholine: UILabel!
+    @IBOutlet var unit_Succinylcholine: UILabel!
     @IBOutlet var unit_Vecuronium: UILabel!
     @IBOutlet var unit_Rocuronium: UILabel!
     @IBOutlet var unit_Cisatricurium: UILabel!
@@ -377,7 +377,7 @@ class RSIDetail: UIViewController {
         
         
         //MARK: ============ Neuromuscular blocking agents
-        succinycholine_Label.text = succs
+        Succinylcholine_Label.text = succs
         succsMLs.text = doseRange2_mL (weightEntered!, weightEntered!, Parameters.object(forKey: "succs_min") as! Double, Parameters.object(forKey: "succs_max") as! Double, 20)
         // succs = 200 mg in 10 Ml = 20 mg/ml
         
@@ -424,7 +424,7 @@ class RSIDetail: UIViewController {
         unit_Propofol.text = "\(Parameters.object(forKey: "propofol_min") as! Double)-\(Parameters.object(forKey: "propofol_max") as! Double) mcg/kg | \(Parameters.object(forKey: "ml_propofol") as! Double) mcg/mL"
         
         
-        unit_Succinycholine.text = "\(Parameters.object(forKey: "succs_min") as! Double)-\(Parameters.object(forKey: "succs_max") as! Double) mg/kg | \(Parameters.object(forKey: "ml_succs") as! Double) mg/mL"
+        unit_Succinylcholine.text = "\(Parameters.object(forKey: "succs_min") as! Double)-\(Parameters.object(forKey: "succs_max") as! Double) mg/kg | \(Parameters.object(forKey: "ml_succs") as! Double) mg/mL"
         
         
         unit_Vecuronium.text = "\(Parameters.object(forKey: "vecuronium") as! Double) mg/kg | \(Parameters.object(forKey: "ml_vec") as! Double) mg/mL"

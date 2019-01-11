@@ -22,7 +22,7 @@ class CollapsibleTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
-        self.title = "Fluids & Blood Products"
+        self.title = "Fluids, Blood Products"
     }
     
 }

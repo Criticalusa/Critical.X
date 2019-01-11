@@ -276,7 +276,7 @@ class EkgMenuTableViewController: UITableViewController {
             }
         }
         
-        ///Wenkeback
+        ///Wenkebach
         if segue.identifier == "Wenkeback" {
             // We segue to MiniDrugVC and pass the infomation from which button is pressed
             if let New_EKG_DataViewController = segue.destination as? ACLSViewController {
@@ -287,9 +287,9 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "2˚ Type I AV Block"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Wenkeback.rawValue
-                New_EKG_DataViewController.medsToConsider = Medications.Wenkeback.rawValue
-                New_EKG_DataViewController.rhythmName =  EKGRhythm.Wenkeback.rawValue
+                New_EKG_DataViewController.ekgDescription = RhythmDescription.Wenkebach.rawValue
+                New_EKG_DataViewController.medsToConsider = Medications.Wenkebach.rawValue
+                New_EKG_DataViewController.rhythmName =  EKGRhythm.Wenkebach.rawValue
                 
                 print("Wenkeback was selected")
             }

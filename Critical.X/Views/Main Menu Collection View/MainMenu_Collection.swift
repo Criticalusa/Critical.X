@@ -325,7 +325,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "EKG Interpretations & ACLS Guidelines",// 3
             "Clinical Drug Pharmacodynamics",// 4
             "Common Drips in Critical Care",// 5
-            "PRBC, 0.9%, ALbumin",// 6
+            "PRBC, 0.9%, Albumin ",// 6
             "Common Lab Value Interpretations",// 7
             "IABP Timing, Modes & Troubleshooting",// 8
             "Neurological Assessments, GCS & Stroke Scales",// 9

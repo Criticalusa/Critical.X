@@ -142,7 +142,7 @@ enum DrugInformation: String {
     
     case Vecuronium = "0.1 - 0.2 mg/kg/dose IV; lasts 20 - 40 min Initial infusion: 0.1 mg/kg/hr"
     
-    case Succinycholine = "Avoid in renal failure and hyperkalemia.Contraindicated in burns >24hrs and malignant hyperthermia.\n\nInfants ≤6 months: 2 to 3 mg/kg/dose.\n\nInfants >6 months and Children ≤2 years: 1 to 2 mg/kg/dose.\n\nChildren >2 years and Adolescents: 1 mg/kg/dose."
+    case Succinylcholine = "Avoid in renal failure and hyperkalemia.Contraindicated in burns >24hrs and malignant hyperthermia.\n\nInfants ≤6 months: 2 to 3 mg/kg/dose.\n\nInfants >6 months and Children ≤2 years: 1 to 2 mg/kg/dose.\n\nChildren >2 years and Adolescents: 1 mg/kg/dose."
     
     case Nimbex = "Infants and Children <2 years: 0.15 mg/kg over 5 to 10 seconds.\n\nChildren ≥2 years and Adolescents: 0.1 mg/kg over 5 to 10 seconds.\n\nContinuous IV infusion: Infants, Children, and Adolescents: 1 to 4 mcg/kg/minute (0.06 to 0.24 mg/kg/hour)"
  

@@ -36,8 +36,8 @@ class RSISetting: UIViewController {
     @IBOutlet var txt_Versed_max: UITextField!
     @IBOutlet var txt_Propofol_min: UITextField!
     @IBOutlet var txt_Propofol_max: UITextField!
-    @IBOutlet var txt_Succinycholine_min: UITextField!
-    @IBOutlet var txt_Succinycholine_max: UITextField!
+    @IBOutlet var txt_Succinylcholine_min: UITextField!
+    @IBOutlet var txt_Succinylcholine_max: UITextField!
     @IBOutlet var txt_Vecuronium2: UITextField!
     @IBOutlet var txt_Rocuronium_min: UITextField!
     @IBOutlet var txt_Rocuronium_max: UITextField!
@@ -97,8 +97,8 @@ class RSISetting: UIViewController {
         txt_Versed_max.text = "\(Parameters.object(forKey: "versed_max") as! Double)"
         txt_Propofol_min.text = "\(Parameters.object(forKey: "propofol_min") as! Double)"
         txt_Propofol_max.text = "\(Parameters.object(forKey: "propofol_max") as! Double)"
-        txt_Succinycholine_min.text = "\(Parameters.object(forKey: "succs_min") as! Double)"
-        txt_Succinycholine_max.text = "\(Parameters.object(forKey: "succs_max") as! Double)"
+        txt_Succinylcholine_min.text = "\(Parameters.object(forKey: "succs_min") as! Double)"
+        txt_Succinylcholine_max.text = "\(Parameters.object(forKey: "succs_max") as! Double)"
         txt_Vecuronium2.text = "\(Parameters.object(forKey: "vecuronium") as! Double)"
         txt_Rocuronium_min.text = "\(Parameters.object(forKey: "rocuronium_min") as! Double)"
         txt_Rocuronium_max.text = "\(Parameters.object(forKey: "rocuronium_max") as! Double)"
@@ -143,8 +143,8 @@ class RSISetting: UIViewController {
         Parameters.setValue(txt_Versed_max.text?.doubleValue, forKey: "versed_max")
         Parameters.setValue(txt_Propofol_min.text?.doubleValue, forKey: "propofol_min")
         Parameters.setValue(txt_Propofol_max.text?.doubleValue, forKey: "propofol_max")
-        Parameters.setValue(txt_Succinycholine_min.text?.doubleValue, forKey: "succs_min")
-        Parameters.setValue(txt_Succinycholine_max.text?.doubleValue, forKey: "succs_max")
+        Parameters.setValue(txt_Succinylcholine_min.text?.doubleValue, forKey: "succs_min")
+        Parameters.setValue(txt_Succinylcholine_max.text?.doubleValue, forKey: "succs_max")
         Parameters.setValue(txt_Vecuronium2.text?.doubleValue, forKey: "vecuronium")
         Parameters.setValue(txt_Rocuronium_min.text?.doubleValue, forKey: "rocuronium_min")
         Parameters.setValue(txt_Rocuronium_max.text?.doubleValue, forKey: "rocuronium_max")
@@ -226,8 +226,8 @@ class RSISetting: UIViewController {
         txt_Versed_max.text = "0.2"
         txt_Propofol_min.text = "1.0"
         txt_Propofol_max.text = "2.0"
-        txt_Succinycholine_min.text = "1.0"
-        txt_Succinycholine_max.text = "1.5"
+        txt_Succinylcholine_min.text = "1.0"
+        txt_Succinylcholine_max.text = "1.5"
         txt_Vecuronium2.text = "0.1"
         txt_Rocuronium_min.text = "0.6"
         txt_Rocuronium_max.text = "1.2"

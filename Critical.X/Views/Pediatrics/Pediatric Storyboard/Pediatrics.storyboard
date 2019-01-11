@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1Z-sU-zvS">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1Z-sU-zvS">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,14 +12,14 @@
             <objects>
                 <viewController storyboardIdentifier="Pediatrics" id="v1Z-sU-zvS" customClass="PedsViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmD-ok-3rQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSU-UN-Fhz">
-                                <rect key="frame" x="0.0" y="243" width="375" height="569"/>
+                                <rect key="frame" x="0.0" y="65" width="277" height="535"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter pediatric weight to calculate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My3-y8-xp7">
-                                        <rect key="frame" x="30" y="8" width="316" height="41"/>
+                                        <rect key="frame" x="30" y="8" width="218" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="QML-cV-BZ4"/>
                                         </constraints>
@@ -32,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1J-Eu-GIr">
-                                        <rect key="frame" x="105" y="129" width="166" height="36"/>
+                                        <rect key="frame" x="105" y="129" width="68" height="36"/>
                                         <color key="backgroundColor" name="Salmon"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="1Kt-AA-EQh"/>
@@ -47,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight in kg's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocv-rQ-DPV">
-                                        <rect key="frame" x="30" y="100" width="316" height="21"/>
+                                        <rect key="frame" x="30" y="100" width="218" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="zGW-YJ-Hup"/>
                                         </constraints>
@@ -56,7 +52,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Gp-79-T40">
-                                        <rect key="frame" x="-20" y="-103" width="316" height="569"/>
+                                        <rect key="frame" x="-20" y="-137" width="218" height="569"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="569" id="AeO-zZ-5WA"/>
                                         </constraints>
@@ -79,10 +75,10 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatrics" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-1Q-xGB">
-                                <rect key="frame" x="0.0" y="85" width="375" height="156"/>
+                                <rect key="frame" x="0.0" y="61" width="277" height="2"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Tu-9A-ZKV">
-                                <rect key="frame" x="130" y="303" width="115" height="30"/>
+                                <rect key="frame" x="130" y="125" width="17" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fzq-nS-AaT"/>
                                 </constraints>
@@ -91,7 +87,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlS-uc-qUx">
-                                <rect key="frame" x="321" y="39" width="38" height="38"/>
+                                <rect key="frame" x="321" y="15" width="259" height="38"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="ecu-Dh-tkj"/>
@@ -159,9 +155,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rih-eD-RAU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1741"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1775"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Uj-dM-amN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1741"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1775"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -1444,7 +1440,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Heavy" family="Avenir Next Condensed" pointSize="18"/>
-                                                <state key="normal" title="SUCCINYCHOLINE">
+                                                <state key="normal" title="Succinylcholine">
                                                     <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -1810,6 +1806,8 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="3500"/>
                     <connections>
+                        <outlet property="Succinylcholine_Button" destination="fLm-gI-0sd" id="wI3-f8-Ojd"/>
+                        <outlet property="Succinylcholine_Label" destination="Ltf-qH-OHK" id="Xym-kL-QZR"/>
                         <outlet property="additionalVentilatorText_Label" destination="AJi-HE-sRk" id="tcd-dt-nBD"/>
                         <outlet property="adenosineLabel" destination="8EM-Dk-UJ1" id="dS7-wN-nDh"/>
                         <outlet property="adenosine_Button" destination="RHs-xa-Jej" id="jao-XG-nUt"/>
@@ -1905,8 +1903,6 @@
                         <outlet property="soluCortef_Button" destination="t2w-FH-l3r" id="6wy-lS-mlD"/>
                         <outlet property="soluMedrol_Button" destination="wh7-ZF-8z2" id="hRp-33-g1n"/>
                         <outlet property="soluMedrol_Label" destination="GJK-Ig-OCV" id="UaF-KT-bfy"/>
-                        <outlet property="succinycholine_Button" destination="fLm-gI-0sd" id="wI3-f8-Ojd"/>
-                        <outlet property="succinycholine_Label" destination="Ltf-qH-OHK" id="Xym-kL-QZR"/>
                         <outlet property="suctionCathSize_Label" destination="5YV-wB-f4e" id="cRs-kv-FM9"/>
                         <outlet property="tidalVolume_Label" destination="gh7-cc-dWc" id="bPR-uM-29r"/>
                         <outlet property="topDescriptionLabel" destination="0Tk-Af-wUt" id="9MT-3e-vha"/>
@@ -1930,19 +1926,19 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="cdY-KH-d0l" customClass="MiniDrugDataViewViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8A-qk-qFX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iza-Au-bm8">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vvi-nH-xlj">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="812"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUC-SM-47l">
-                                <rect key="frame" x="36" y="114" width="302" height="324"/>
+                                <rect key="frame" x="36" y="90" width="302" height="324"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kog-9C-ZMm">
                                         <rect key="frame" x="267" y="0.0" width="27" height="26"/>
@@ -1967,13 +1963,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xh-Cl-aLz">
-                                        <rect key="frame" x="8" y="76" width="286" height="20.666666666666671"/>
+                                        <rect key="frame" x="8" y="76" width="286" height="20.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="15"/>
                                         <color key="textColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 -12 mg/kg: Max 6mg" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpo-GE-eEo">
-                                        <rect key="frame" x="8" y="106.66666666666666" width="286" height="20.333333333333329"/>
+                                        <rect key="frame" x="8" y="106.5" width="286" height="20.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
