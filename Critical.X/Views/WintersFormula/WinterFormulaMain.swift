@@ -148,7 +148,10 @@ class WinterFormulaMain: UIViewController {
         
         let co2entered = Double(currentC02.text!)
 
-        if wintersRange.contains(co2entered!){
+        // Conditional to protect the c02 when not entered. 
+        if let c02 = co2entered {
+        
+            if wintersRange.contains(co2entered!){
             // Then we add this string to the analysis when setting the text labels
             winterVerbiage = "The C02 is compensating nicely at \(co2entered!)"
         }
@@ -172,25 +175,42 @@ class WinterFormulaMain: UIViewController {
         }
         
         
-        
+        } //  Closed iF let statement
         // Add the language to retuen along with the string variables.
         return "The corrected C02 should be " + " " + "\(wintersLow) - \(wintersHigh) " + "\n" + winterVerbiage
     }
-
+    
     @IBAction func calculateWintersFormula(_ sender: Any) {
         
         let bicarb = Double(bicardTxtField.text!)
         let c02 = Double(currentC02.text!)
-        guard bicarb != nil, c02 != nil else {
-            ///Red Alert
-            _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
-            print("Bicarb or c02 not entered") 
+        
+        // What happens when only the bicarb is entered and c02 is blank
+        guard c02 != nil else {
+            
+            wintersResultLabel.text = "\(Int(wintersFormula(theBicarb: bicarb!).rounded()) - 2)-\(Int(wintersFormula(theBicarb: bicarb!).rounded()) + 2) "
+            
+            //c02description.text = wintersFormula(calculatedBicarb: bicarb!)
+            
+            //Runs the first animation block
+            showAnimate()
+            //Runs the Second animation block
+            newAnimation()
+            
+            wintersSmallTitleLabel.text = "Enter current c02 for more info!"
+            // Unhide the result view
+            resultsView.isHidden = false
+            descriptionViewBlack.isHidden = false
+            print("First block of winters was ran under the guard")
+            
             return }
        
-        //Takes the result. Sends it to the label and displays it as an Int value.
-       wintersResultLabel.text = "\(Int(wintersFormula(theBicarb: bicarb!).rounded()) - 2)-\(Int(wintersFormula(theBicarb: bicarb!).rounded()) + 2) "
+        //MARK: This block of code will only run when the bicarb and c02 is both entered since the c02 is optional
+        print("Second block of winters was ran under the guard")
         
         c02description.text = wintersFormula(calculatedBicarb: bicarb!)
+        
+        wintersResultLabel.text = "\(Int(wintersFormula(theBicarb: bicarb!).rounded()) - 2)-\(Int(wintersFormula(theBicarb: bicarb!).rounded()) + 2) "
         
         //Runs the first animation block
         showAnimate()
@@ -203,8 +223,8 @@ class WinterFormulaMain: UIViewController {
         
         descriptionViewBlack.isHidden = false
         
-        //        calculateBtn.animate(.delay(0.3), .duration(0.1), .depth(.depth5), .background(color: Colorify.Clouds))
-        
+    
+    // Clear the keyboard, when the view is tapped.
         self.view.endEditing(true) //This will hide the keyboard
 
     }
