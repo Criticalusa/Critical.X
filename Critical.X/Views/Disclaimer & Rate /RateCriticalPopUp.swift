@@ -59,7 +59,7 @@ class RateCriticalPopUp: UIViewController, MFMailComposeViewControllerDelegate {
             mail.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
             mail.setToRecipients(["criticalusa@gmail.com"])
             mail.setSubject("Critical -X Feedback for IOS")
-            mail.setMessageBody("<p>Hi, Great app.I would love to offer some constructive feedback to improve the functionality.</p>", isHTML: true)
+            mail.setMessageBody("<p>Hi, Great app. I would love to offer some constructive feedback to improve the functionality.</p>", isHTML: true)
             
            
             present(mail, animated: true)

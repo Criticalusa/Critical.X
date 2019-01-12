@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 enum EKGRhythm: String {
+    
+    // Enum made for the name of the .gif rhythm strips. Spacing of the name is important for the strip to be referenced.
     case SVT = "SVT"
     case Vfib = "VentricularFibrillation"
     case Vtach = "VTach"
@@ -22,7 +24,7 @@ enum EKGRhythm: String {
     case Aflutter = "Aflutter"
     case ThirdDegreeHeartBlock = "3rdDegreeHB"
     case SecondDegreeTypeII = "2ndDegreeTypeII"
-    case Wenkebach = "2ndDegreeTypeI (Wenkebach)"
+    case Wenkebach = "2ndDegreeTypeI ( Wenkeback)"
     case PSVT = "SVT1"
     
 }

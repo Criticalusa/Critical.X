@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,11 +45,11 @@
                                             <action selector="dismissPopUpVC:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="o7R-BL-zQa"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rP6-WO-ina">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rP6-WO-ina">
                                         <rect key="frame" x="12" y="102" width="266" height="156"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-UJ-bHi">
-                                                <rect key="frame" x="0.0" y="0.0" width="266" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="28"/>
                                                 <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="✦✦ SPECIAL THANKS! 👏🏽 ✦✦">
@@ -60,7 +60,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-He-lkF">
-                                                <rect key="frame" x="0.0" y="41" width="266" height="33"/>
+                                                <rect key="frame" x="0.0" y="43" width="266" height="27.5"/>
                                                 <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="EMAIL US">
@@ -71,7 +71,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-Eo-H0i">
-                                                <rect key="frame" x="0.0" y="82" width="266" height="33"/>
+                                                <rect key="frame" x="0.0" y="85.5" width="266" height="28"/>
                                                 <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="✦✦  RATE CRITICAL  ✦✦">
@@ -79,7 +79,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-Ry-Qha">
-                                                <rect key="frame" x="0.0" y="123" width="266" height="33"/>
+                                                <rect key="frame" x="0.0" y="128.5" width="266" height="27.5"/>
                                                 <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="DISCLALIMER">
@@ -100,9 +100,12 @@
                                     <constraint firstItem="xou-fM-Pou" firstAttribute="leading" secondItem="jsk-mk-Urq" secondAttribute="trailing" constant="23" id="PA4-C0-c6H"/>
                                     <constraint firstItem="rP6-WO-ina" firstAttribute="top" secondItem="jsk-mk-Urq" secondAttribute="bottom" constant="6" id="TEU-NX-qHf"/>
                                     <constraint firstItem="jsk-mk-Urq" firstAttribute="centerX" secondItem="rP6-WO-ina" secondAttribute="centerX" id="arI-v8-xMR"/>
+                                    <constraint firstItem="rP6-WO-ina" firstAttribute="top" secondItem="uG1-fO-Vgx" secondAttribute="top" constant="102" id="bvu-ox-K26"/>
                                     <constraint firstItem="rP6-WO-ina" firstAttribute="top" secondItem="xou-fM-Pou" secondAttribute="bottom" constant="56" id="cJb-4A-xe2"/>
                                     <constraint firstAttribute="trailing" secondItem="xou-fM-Pou" secondAttribute="trailing" constant="15" id="enn-Gt-fPN"/>
+                                    <constraint firstAttribute="trailing" secondItem="rP6-WO-ina" secondAttribute="trailing" constant="12" id="eqz-CJ-oWf"/>
                                     <constraint firstItem="jsk-mk-Urq" firstAttribute="leading" secondItem="uG1-fO-Vgx" secondAttribute="leading" constant="72" id="euZ-nM-6AH"/>
+                                    <constraint firstAttribute="bottom" secondItem="rP6-WO-ina" secondAttribute="bottom" constant="22" id="ie7-4h-uhU"/>
                                     <constraint firstItem="jsk-mk-Urq" firstAttribute="top" secondItem="xou-fM-Pou" secondAttribute="top" id="lok-l8-dPx"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -251,42 +254,37 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
             <objects>
                 <viewController storyboardIdentifier="SpecialThanks" modalPresentationStyle="overCurrentContext" id="rrg-li-bio" customClass="SpecialThanks" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2dG-IB-cd4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-sR-l2d">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nlX-Cg-ptm">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-sR-l2d">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="nlX-Cg-ptm">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="650" id="5YC-rI-pG9"/>
-                                    <constraint firstAttribute="width" constant="320" id="oXJ-fp-Pz9"/>
-                                </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g74-cP-uax">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="675"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGs-Xs-PFp" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="655"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhk-QL-uQq" customClass="AKLabel" customModule="AKLabel">
-                                                <rect key="frame" x="8" y="158" width="304" height="18"/>
+                                                <rect key="frame" x="8" y="158" width="302" height="18"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" name="Clouds"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pY-Sb-39o">
-                                                <rect key="frame" x="16" y="501" width="292" height="56"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pY-Sb-39o">
+                                                <rect key="frame" x="16" y="506" width="292" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDk-sY-EAa">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDk-sY-EAa">
                                                         <rect key="frame" x="8" y="8" width="276" height="43"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="43" id="Evy-Ja-fAW"/>
-                                                            <constraint firstAttribute="width" constant="276" id="as0-3K-9By"/>
-                                                        </constraints>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                         <state key="normal" title="Thanks ! "/>
                                                         <connections>
@@ -295,14 +293,6 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="Grenadine"/>
-                                                <constraints>
-                                                    <constraint firstItem="JDk-sY-EAa" firstAttribute="top" secondItem="3pY-Sb-39o" secondAttribute="top" constant="8" id="4ry-rH-bw0"/>
-                                                    <constraint firstAttribute="trailing" secondItem="JDk-sY-EAa" secondAttribute="trailing" constant="8" id="7rW-cU-ED5"/>
-                                                    <constraint firstAttribute="height" constant="56" id="9f6-hr-87X"/>
-                                                    <constraint firstAttribute="bottom" secondItem="JDk-sY-EAa" secondAttribute="bottom" constant="5" id="U0R-2t-4JS"/>
-                                                    <constraint firstItem="JDk-sY-EAa" firstAttribute="leading" secondItem="3pY-Sb-39o" secondAttribute="leading" constant="8" id="gAg-ZO-4Ms"/>
-                                                    <constraint firstAttribute="width" constant="292" id="kaz-8m-jeP"/>
-                                                </constraints>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICAL1.ekg" translatesAutoresizingMaskIntoConstraints="NO" id="xg9-S6-Ixl">
                                                 <rect key="frame" x="10" y="40" width="300" height="97"/>
@@ -316,16 +306,14 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="vhk-QL-uQq" firstAttribute="top" secondItem="xg9-S6-Ixl" secondAttribute="bottom" constant="21" id="1gb-st-NqQ"/>
+                                            <constraint firstItem="vhk-QL-uQq" firstAttribute="width" secondItem="KGs-Xs-PFp" secondAttribute="width" constant="-18" id="2k3-5i-VSB"/>
                                             <constraint firstAttribute="trailing" secondItem="xg9-S6-Ixl" secondAttribute="trailing" constant="10" id="3K0-Wt-coe"/>
                                             <constraint firstItem="vhk-QL-uQq" firstAttribute="leading" secondItem="KGs-Xs-PFp" secondAttribute="leading" constant="8" id="7xf-Ou-4Ca"/>
                                             <constraint firstAttribute="width" constant="320" id="82s-Jl-mtn"/>
-                                            <constraint firstAttribute="bottom" secondItem="3pY-Sb-39o" secondAttribute="bottom" constant="93" id="Goc-bT-8SI"/>
-                                            <constraint firstAttribute="height" constant="650" id="HCg-1H-4gl"/>
+                                            <constraint firstAttribute="height" constant="655" id="HCg-1H-4gl"/>
                                             <constraint firstItem="xg9-S6-Ixl" firstAttribute="leading" secondItem="KGs-Xs-PFp" secondAttribute="leading" constant="10" id="InN-Bu-spP"/>
-                                            <constraint firstAttribute="trailing" secondItem="vhk-QL-uQq" secondAttribute="trailing" constant="8" id="Ut2-Z4-rzZ"/>
-                                            <constraint firstItem="3pY-Sb-39o" firstAttribute="leading" secondItem="KGs-Xs-PFp" secondAttribute="leading" constant="16" id="f1y-eT-gHK"/>
+                                            <constraint firstAttribute="trailing" secondItem="vhk-QL-uQq" secondAttribute="trailing" constant="10" id="Ut2-Z4-rzZ"/>
                                             <constraint firstItem="xg9-S6-Ixl" firstAttribute="top" secondItem="KGs-Xs-PFp" secondAttribute="top" constant="40" id="lmw-Nv-7aZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="3pY-Sb-39o" secondAttribute="trailing" constant="12" id="rBA-ZR-z7R"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -337,8 +325,9 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="HVD-55-n4k"/>
+                                    <constraint firstItem="KGs-Xs-PFp" firstAttribute="width" secondItem="g74-cP-uax" secondAttribute="width" id="Nmi-jt-Q2B"/>
                                     <constraint firstItem="KGs-Xs-PFp" firstAttribute="leading" secondItem="g74-cP-uax" secondAttribute="leading" id="Qmj-xK-OSW"/>
-                                    <constraint firstAttribute="bottom" secondItem="KGs-Xs-PFp" secondAttribute="bottom" id="Tif-b3-q5U"/>
+                                    <constraint firstAttribute="bottom" secondItem="KGs-Xs-PFp" secondAttribute="bottom" constant="20" id="Tif-b3-q5U"/>
                                     <constraint firstAttribute="trailing" secondItem="KGs-Xs-PFp" secondAttribute="trailing" id="cbl-ys-D7L"/>
                                     <constraint firstItem="KGs-Xs-PFp" firstAttribute="top" secondItem="g74-cP-uax" secondAttribute="top" id="gXe-JE-Xct"/>
                                 </constraints>
@@ -346,23 +335,15 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="g74-cP-uax" firstAttribute="bottom" secondItem="28B-ya-UtD" secondAttribute="bottom" id="BS0-06-brf"/>
+                            <constraint firstItem="g74-cP-uax" firstAttribute="bottom" secondItem="28B-ya-UtD" secondAttribute="bottom" constant="107" id="BS0-06-brf"/>
                             <constraint firstItem="g74-cP-uax" firstAttribute="top" secondItem="2dG-IB-cd4" secondAttribute="top" id="GQ6-xu-1Wp"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="height" secondItem="2dG-IB-cd4" secondAttribute="height" id="Ptf-yk-543"/>
                             <constraint firstItem="g74-cP-uax" firstAttribute="leading" secondItem="28B-ya-UtD" secondAttribute="leading" id="QJr-wc-pcY"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="width" secondItem="g74-cP-uax" secondAttribute="width" id="WYf-m1-wTS"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="top" secondItem="2dG-IB-cd4" secondAttribute="top" id="XD9-Wg-gwI"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="leading" secondItem="28B-ya-UtD" secondAttribute="leading" id="XdV-Dh-kd3"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="width" secondItem="2dG-IB-cd4" secondAttribute="width" id="bcH-8u-7vA"/>
                             <constraint firstItem="g74-cP-uax" firstAttribute="trailing" secondItem="28B-ya-UtD" secondAttribute="trailing" id="hUe-uz-tcg"/>
-                            <constraint firstItem="28B-ya-UtD" firstAttribute="top" secondItem="nFc-sR-l2d" secondAttribute="top" constant="20" id="m1w-l3-0aT"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="trailing" secondItem="28B-ya-UtD" secondAttribute="trailing" id="o64-r6-DQm"/>
-                            <constraint firstItem="nFc-sR-l2d" firstAttribute="bottom" secondItem="28B-ya-UtD" secondAttribute="bottom" id="sFt-Zg-gr7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="28B-ya-UtD"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="650"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="criticalImage" destination="xg9-S6-Ixl" id="j3w-g9-Ncx"/>
                         <outlet property="specialThanksScroller" destination="g74-cP-uax" id="M2a-Ph-J4k"/>

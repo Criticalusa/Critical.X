@@ -37,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().tintColor = UIColor.white //your desired color here
 
+     
+        
+        
         // Create the window for the onboarding screen
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
@@ -64,6 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         
+    
         
         return true
     }

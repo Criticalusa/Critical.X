@@ -32,7 +32,7 @@ class SpecialThanks: UIViewController {
         //criticalImage.easy.layout(Top(20))
         //thankYouLabel.easy.layout(Bottom(5).to(criticalImage))
         
-        thankYouLabel.animate(text: "The Barringer Group & Critical Team would like to extend a sincere and special thank you to all of those that gave amazing feedback, suggestions, and ideas that helped contribute to the success of this great application.\n\nSpecial Thanks\n\nLudys Barringer, Esq.\nSteve A. Teitelman, RN\nDane Taylor, FP-C\nDr. Sean Johnson, M.D.\nDr. Joanelle Bailey, M.D.\nDoug Fuller, FP-C\nDr. Richard Levitan, M.D.\nJoseph Schilli, FP-C\nAllen Wolfe, RN", duration: 4, completion: nil)
+        thankYouLabel.animate(text: "The Barringer Group & Critical Team would like to extend a sincere and special thank you to all of those that gave amazing feedback, suggestions, and ideas that helped contribute to the success of this great application.\n\nSpecial Thanks\n\nLudys Barringer, Esq.\nSteve A. Teitelman, RN\nDane Taylor, FP-C\nDr. Sean Johnson, M.D.\nDr. Joanelle Bailey, M.D.\nDoug Fuller, FP-C\nDr. Richard Levitan, M.D.\nJoseph Schilli, FP-C\nAllen Wolfe, RN\nBrian King, FP-C", duration: 4, completion: nil)
        
         // Do any additional setup after loading the view.
     }

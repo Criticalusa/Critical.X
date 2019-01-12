@@ -291,7 +291,7 @@ class EkgMenuTableViewController: UITableViewController {
                 //Descriptions
                 New_EKG_DataViewController.ekgDescription = wenkebach_setAttributedString_ChangeColorsForText(text:RhythmDescription.Wenkebach.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.Wenkebach.rawValue
-                New_EKG_DataViewController.rhythmName =  EKGRhythm.Wenkebach.rawValue
+                New_EKG_DataViewController.rhythmName = EKGRhythm.Wenkebach.rawValue
                 
                 print("Wenkeback was selected")
             }

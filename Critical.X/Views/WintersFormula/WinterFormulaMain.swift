@@ -60,6 +60,13 @@ class WinterFormulaMain: UIViewController {
         // Takes the button and makes it into a circle
         dismissButton.layer.cornerRadius = dismissButton.frame.size.width / 2
         
+        
+        // MARK: Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
