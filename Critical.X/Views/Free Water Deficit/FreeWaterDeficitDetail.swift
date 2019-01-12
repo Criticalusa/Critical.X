@@ -88,7 +88,7 @@ class FreeWaterDeficitDetail: UIViewController {
             // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
             let ChildMale = String(format:"%.1f",resultChildMale!)
             
-            freeWaterResultLabel.text = ChildMale + " L"
+            freeWaterResultLabel.text = ChildMale + " Liters"
             
             let infusionRate = (resultChildMale! / hoursToCorrectSodium) * 1000
             
@@ -103,14 +103,14 @@ class FreeWaterDeficitDetail: UIViewController {
             
             let AdultMale = String(format:"%.1f",resultAdultMale!)
             
-            freeWaterResultLabel.text = AdultMale + " L"
+            freeWaterResultLabel.text = AdultMale + " Liters"
             
             let infusionRate = (resultAdultMale! / hoursToCorrectSodium) * 1000
             
             //let infusionRate = String(format:"%.1f",infusionRate1)
             iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
             
-            print("Adult Male is " + AdultMale + " L")
+            print("Adult Male is " + AdultMale + " Liters")
             print("")
             print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
             
@@ -119,7 +119,7 @@ class FreeWaterDeficitDetail: UIViewController {
             
             let ElderlyMale = String(format:"%.1f",resultElderlyMale!)
             
-            freeWaterResultLabel.text = ElderlyMale + " L"
+            freeWaterResultLabel.text = ElderlyMale + " Liters"
        
             
             let infusionRate = (resultElderlyMale! / hoursToCorrectSodium) * 1000
@@ -128,7 +128,7 @@ class FreeWaterDeficitDetail: UIViewController {
             iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
             
             
-            print("Elderly Make is " + ElderlyMale + " L")
+            print("Elderly Make is " + ElderlyMale + " Liters")
             print("")
             print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
 
@@ -139,21 +139,21 @@ class FreeWaterDeficitDetail: UIViewController {
             // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
             let ChildFemale = String(format:"%.1f",resultChildFemale!)
             
-            freeWaterResultLabel.text = ChildFemale + "L"
+            freeWaterResultLabel.text = ChildFemale + "Liters"
             
             let infusionRate = (resultChildFemale! / hoursToCorrectSodium) * 1000
             
             //let infusionRate = String(format:"%.1f",infusionRate1)
             iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
             
-            print("Child female is " + ChildFemale + " L")
+            print("Child female is " + ChildFemale + " Liters")
             print("")
             print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
 
         case 5: //Mark:Female Adult
             let AdultFemale = String(format:"%.1f",resultAdultFemale!)
             
-            freeWaterResultLabel.text = AdultFemale + " L"
+            freeWaterResultLabel.text = AdultFemale + " Liters"
             
             let infusionRate = (resultAdultFemale! / hoursToCorrectSodium) * 1000
             
@@ -161,14 +161,14 @@ class FreeWaterDeficitDetail: UIViewController {
             iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
             
             
-            print("Adult female is " + AdultFemale + " L")
+            print("Adult female is " + AdultFemale + " Liters")
             print("")
             print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
 
         case 6: //Mark:Female Elderly
             let ElderlyFemale = String(format:"%.1f",resultElderlyFemale!)
             
-            freeWaterResultLabel.text =  ElderlyFemale + " L"
+            freeWaterResultLabel.text =  ElderlyFemale + " Liters"
             
             let infusionRate = (resultElderlyFemale! / hoursToCorrectSodium) * 1000
             
@@ -177,7 +177,7 @@ class FreeWaterDeficitDetail: UIViewController {
             
             print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
             print("")
-            print("Elderly Female is " + ElderlyFemale + " L")
+            print("Elderly Female is " + ElderlyFemale + " Liters")
             
         default:
             break

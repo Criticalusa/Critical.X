@@ -65,7 +65,7 @@ class EkgMenuTableViewController: UITableViewController {
                 
                 //Descriptions
                 New_EKG_DataViewController.medsToConsider = Medications.SVT.rawValue
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.SVT.rawValue
+                New_EKG_DataViewController.ekgDescription = SVT_setAttributedString_ChangeColorsForText(text:RhythmDescription.SVT.rawValue)
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.SVT.rawValue
                 
                 print("SVT was selected")
@@ -83,7 +83,7 @@ class EkgMenuTableViewController: UITableViewController {
                 
                 //Descriptions
                 New_EKG_DataViewController.medsToConsider = Medications.Vfib.rawValue
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Vfib.rawValue
+                New_EKG_DataViewController.ekgDescription = VFib_setAttributedString_ChangeColorsForText(text:RhythmDescription.Vfib.rawValue)
                 New_EKG_DataViewController.rhythmName = EKGRhythm.Vfib.rawValue
                 
                 New_EKG_DataViewController.aclsView.backgroundColor = UIColor.blue
@@ -101,7 +101,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "Wide Complex Tachycardia"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Vtach.rawValue
+                New_EKG_DataViewController.ekgDescription = Vtach_setAttributedString_ChangeColorsForText(text:RhythmDescription.Vtach.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.Vtach.rawValue
                 New_EKG_DataViewController.rhythmName = EKGRhythm.Vtach.rawValue
 
@@ -120,7 +120,7 @@ class EkgMenuTableViewController: UITableViewController {
                 
                 //Descriptions
                 New_EKG_DataViewController.medsToConsider = Medications.SinusTach.rawValue
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.SinusTach.rawValue
+                New_EKG_DataViewController.ekgDescription = sinusTach_setAttributedString_ChangeColorsForText(text:RhythmDescription.SinusTach.rawValue)
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.SinusTach.rawValue
                 
                 print("Sinus Tach was selected")
@@ -137,7 +137,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.header = "Bradycardia"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.SinusBrady.rawValue
+                New_EKG_DataViewController.ekgDescription = sinusBrady_setAttributedString_ChangeColorsForText(text:RhythmDescription.SinusBrady.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.SinusBrady.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.SinusBrady.rawValue
                 
@@ -155,7 +155,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "Polymorphic V-Tach / Shockable ⚡️"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Torsades.rawValue
+                New_EKG_DataViewController.ekgDescription = torsades_setAttributedString_ChangeColorsForText(text:RhythmDescription.Torsades.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.Torsades.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.Torsades.rawValue
                 
@@ -173,7 +173,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "Sinus Rhythm"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.NormalSinus.rawValue
+                New_EKG_DataViewController.ekgDescription = NSR_setAttributedString_ChangeColorsForText(text:RhythmDescription.NormalSinus.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.NormalSinus.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.NormalSinus.rawValue
                 
@@ -192,7 +192,9 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "Atrial Dysrhythmia"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Afib.rawValue
+                //New_EKG_DataViewController.ekgDescription = RhythmDescription.Afib.rawValue
+                New_EKG_DataViewController.ekgDescription = setAttributedString_ChangeColorsForText_AFIB(text: RhythmDescription.Afib.rawValue)
+
                 New_EKG_DataViewController.medsToConsider = Medications.Afib.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.Afib.rawValue
                 
@@ -212,7 +214,7 @@ class EkgMenuTableViewController: UITableViewController {
                 
                 //Descriptions
                 New_EKG_DataViewController.medsToConsider = Medications.Asystole.rawValue
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Asystole.rawValue
+                New_EKG_DataViewController.ekgDescription = asystole_setAttributedString_ChangeColorsForText(text:RhythmDescription.Asystole.rawValue)
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.Asystole.rawValue
                 
                 print("Asystole was selected")
@@ -230,7 +232,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "Atrial Dysrhythmia"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Aflutter.rawValue
+                New_EKG_DataViewController.ekgDescription = aflutter_setAttributedString_ChangeColorsForText(text:RhythmDescription.Aflutter.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.Aflutter.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.Aflutter.rawValue
                 
@@ -249,7 +251,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "Complete AV Dissasociation"
                
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.ThirdDegreeHeartBlock.rawValue
+                New_EKG_DataViewController.ekgDescription = ThirdDegree_setAttributedString_ChangeColorsForText(text:RhythmDescription.ThirdDegreeHeartBlock.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.ThirdDegreeHeartBlock.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.ThirdDegreeHeartBlock.rawValue
                 
@@ -269,7 +271,7 @@ class EkgMenuTableViewController: UITableViewController {
                
                 //Descriptions
                 New_EKG_DataViewController.medsToConsider = Medications.SecondDegreeTypeII.rawValue
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.SecondDegreeTypeII.rawValue
+                New_EKG_DataViewController.ekgDescription = secDegreeTypeII_setAttributedString_ChangeColorsForText(text:RhythmDescription.SecondDegreeTypeII.rawValue)
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.SecondDegreeTypeII.rawValue
                 
                 print("2ndDegreeTypeII was selected")
@@ -287,7 +289,7 @@ class EkgMenuTableViewController: UITableViewController {
                 New_EKG_DataViewController.subTitle = "2˚ Type I AV Block"
                 
                 //Descriptions
-                New_EKG_DataViewController.ekgDescription = RhythmDescription.Wenkebach.rawValue
+                New_EKG_DataViewController.ekgDescription = wenkebach_setAttributedString_ChangeColorsForText(text:RhythmDescription.Wenkebach.rawValue)
                 New_EKG_DataViewController.medsToConsider = Medications.Wenkebach.rawValue
                 New_EKG_DataViewController.rhythmName =  EKGRhythm.Wenkebach.rawValue
                 

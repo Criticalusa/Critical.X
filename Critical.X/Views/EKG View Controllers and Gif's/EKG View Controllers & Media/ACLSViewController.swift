@@ -27,7 +27,7 @@ class ACLSViewController: UIViewController {
     
     //MARK: Global Variables to and declare and use to beable to pass data.
     var ekgTitle = String ()
-    var ekgDescription: String = ""
+    var ekgDescription: NSAttributedString? = nil
     var subTitle:String = ""
     var medsToConsider:String = ""
     var header:String = ""
@@ -67,7 +67,8 @@ class ACLSViewController: UIViewController {
         /// Takes the title of the button and assigns it to the label.
         title_Label.text = ekgTitle
         ekgSubtitle_Label.text = subTitle
-        ekgDescriptionLabel.text = ekgDescription
+        // Set to attribted text to change the colors in the text by the func extension.
+        ekgDescriptionLabel.attributedText = ekgDescription
         medication_Label.text = medsToConsider
         header_Label.text = header
         aclsViewScreen = aclsView
@@ -98,4 +99,5 @@ class ACLSViewController: UIViewController {
     
     
 }
+
 
