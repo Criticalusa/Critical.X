@@ -173,8 +173,8 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     @IBAction func DoseSliderValueChanged(_ sender: Any) {
         let roundedValue = round(DoseSlider.value / step) * step
         DoseSlider.value = roundedValue
-        txtDose.text = "\(roundedValue)"
-        
+        //txtDose.text = "\(roundedValue)" // Caused long values w
+        txtDose.text = String(format:"%.1f", roundedValue)
         Calculate()
     }
     

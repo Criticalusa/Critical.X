@@ -304,9 +304,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
+            "ACLS & EKGs",// 2
             "Clinical Calculators",// 2
-            "ACLS & EKGs",// 3
-            "Clinical Pharmacology", // 4
+            "Clinical Pharmacology", // 3
             "Infusions", // 5
             "Fluids blood products", // 6
             "Lab values", // 7
@@ -319,10 +319,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Procedures & Imaging", // 14
             "Ventilator Management"] // 16
         
-        mainMenuDetail = ["Rate Us, Email, Disclaimer Information",// 0
+        mainMenuDetail = ["Rate Us, Email, Disclaimer  Information",// 0
             "Intubation, Difficult Airway Algorithms",// 1
-            "Medical Calculators & Medical Spanish",// 2
-            "EKG Interpretations & ACLS Guidelines",// 3
+            "EKG Interpretations & ACLS Guidelines",// 2
+            "Medical Calculators & Medical Spanish",// 3
             "Clinical Drug Pharmacodynamics",// 4
             "Common Drips in Critical Care",// 5
             "PRBC, 0.9%, Albumin ",// 6
@@ -339,8 +339,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // Images and associated Indexpaths
         cellImages = ["CRITICAL1.ekg",// 0
             "Lungs",// 1
-            "formula",// 2
-            "Heart",// 3
+            "Heart",// 2
+            "formula",// 3
             "Pharmacology",// 4
             "IV Bag",// 5
             "CBC",// 6
@@ -357,8 +357,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // StoryBoard ID and associated Indexpaths
         storyBoardID = ["About Critical", // 0
             "Airway management", // 1
-            "Clinical Calculators", // 2
-            "EKG", // 3
+            "EKG", // 2
+            "Clinical Calculators", // 3
             "Clinical pharmacology", // 4
             "Infusions",// 5
             "Fluids blood products",// 6
@@ -384,10 +384,13 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenMenuCollectionViewCell
+        
         cell.mainMenu_CellLabel.text = mainMenu[indexPath.item]
         cell.mainMenuDetail_CellLabel.text = mainMenuDetail [indexPath.item]
         cell.mainMenu_CellImage.image = UIImage (named:cellImages[indexPath.item])
+        
         return cell
     }
     
