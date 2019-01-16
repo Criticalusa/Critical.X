@@ -156,6 +156,7 @@ class IdealBWDataView: UIViewController {
         //MARK: - MALE METHODS
         // In the event MALE is selected
         case 1:
+          
             IBW_Pounds.text = String(format:"%.1f",poundsMale) + " lbs" // Rounds to the 1st decimal place
             
             idealBodyweightCalc.text = "\(maleIBWCalculation!) kg's"
@@ -164,7 +165,7 @@ class IdealBWDataView: UIViewController {
             
             tvCalculation.text = "\(IBW_Int_MALE * TV) mL's"
             
-            tidalVolumeTextLabel.text = "Tidal Volume at \(TV) mL's"
+            tidalVolumeTextLabel.text = "Tidal Volume at \(TV) mL's/kg"
             
             
             
@@ -182,7 +183,7 @@ class IdealBWDataView: UIViewController {
             tvCalculation.text = "\(IBW_Int_FEMALE * TV) mL's"
             
             
-            tidalVolumeTextLabel.text = "Tidal Volume at \(TV) mL's"
+            tidalVolumeTextLabel.text = "Tidal Volume at \(TV) mL's/kg"
             
             print("Female calculations were executed uder the switch")
         default:

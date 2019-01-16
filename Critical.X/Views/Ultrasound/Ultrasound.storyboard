@@ -29,7 +29,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lKM-Wu-IhO">
-                                <rect key="frame" x="0.0" y="124" width="320" height="444"/>
+                                <rect key="frame" x="0.0" y="124" width="320" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bd5-x2-pHJ">
@@ -136,15 +136,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94n-cA-wUE" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAST Examination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1e-33-iyU" customClass="AKLabel" customModule="AKLabel">
-                                                <rect key="frame" x="53" y="54" width="214" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E-FAST Examination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1e-33-iyU" customClass="AKLabel" customModule="AKLabel">
+                                                <rect key="frame" x="40" y="54" width="240" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Focused Assessment with Sonography for Trauma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfw-th-nUZ" customClass="AKLabel" customModule="AKLabel">
-                                                <rect key="frame" x="14" y="98" width="297" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extened Focused Assessment with Sonography for Trauma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfw-th-nUZ" customClass="AKLabel" customModule="AKLabel">
+                                                <rect key="frame" x="8" y="98" width="303" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" name="Clouds"/>
@@ -176,45 +176,22 @@
                                                 </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">The FAST exam is a multi-view examination performed on trauma patients in the intra-abdominal space and heart to determine the presence of intraperitoneal free fluid and/or pericardial effusions. 
+                                                        <string key="content">The E-FAST exam is a multi-view examination performed on trauma patients in the intra-abdominal space and heart to determine the presence of free fluid within the peritoneal and pericardial spaces.
 
-Traditionally, four main views make up the exam. 
+Traditionally, six main views make up the exam. 
 
-</string>
+1) RUQ -Morrisons pouch
+2) LUQ - Splenorenal
+3) Cardiac: Subxyphoid - </string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment>
-                                                        <string key="content">1) RUQ -Morrisons pouch
-</string>
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment>
-                                                        <string key="content">2) LUQ - Splenorenal
-</string>
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="3) Cardiac: Subxyphoid - ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.89126098155975342" green="0.3545563817024231" blue="0.39968371391296387" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="Four-Chamber View &amp; Parasternal Long Axis">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.89126098155975342" green="0.3545563817024231" blue="0.39968371391296387" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="13.333" name="ArialMT"/>
                                                             <real key="NSKern" value="0.0"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -222,18 +199,10 @@ Traditionally, four main views make up the exam.
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
+                                                        <string key="content">
+4) Suprapubic- Bladder</string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="4) Suprapubic- Bladder">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.62746313382576679" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -247,8 +216,9 @@ Cg
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="wSm-j1-JjB"/>
                                                 </constraints>
-                                                <state key="normal" title="RUQ -Morrisons pouch">
-                                                    <color key="titleColor" name="Sunflower"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="RUQ- Perihepatic">
+                                                    <color key="titleColor" name="Cool Mint"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="plU-8o-VO6" kind="showDetail" identifier="Morrisons" id="gRF-Fc-x2x"/>
@@ -260,9 +230,13 @@ Cg
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="JU2-pE-OZq"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="LUQ - Splenorenal">
-                                                    <color key="titleColor" name="Sunflower"/>
+                                                    <color key="titleColor" name="Clouds"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="plU-8o-VO6" kind="showDetail" identifier="LUQ" id="B5A-e9-zU3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQL-zb-UNf">
                                                 <rect key="frame" x="35" y="515" width="250" height="52"/>
@@ -270,8 +244,9 @@ Cg
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="ZY4-5w-O4K"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Subxyphoid - Cardiac">
-                                                    <color key="titleColor" name="Sunflower"/>
+                                                    <color key="titleColor" name="Cool Mint"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qv-gr-p4V">
@@ -280,8 +255,33 @@ Cg
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="Stw-fx-Sqx"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Thoracic">
+                                                    <color key="titleColor" name="Clouds"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edW-TO-jdy">
+                                                <rect key="frame" x="37" y="674" width="250" height="52"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="25G-2q-Ure"/>
+                                                    <constraint firstAttribute="width" constant="250" id="Axw-oW-iVL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Suprapubic- Bladder">
-                                                    <color key="titleColor" name="Sunflower"/>
+                                                    <color key="titleColor" name="Cool Mint"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmG-rR-dxq">
+                                                <rect key="frame" x="37" y="754" width="250" height="52"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="RUM-t8-Qry"/>
+                                                    <constraint firstAttribute="width" constant="250" id="iNf-bM-npr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Paracolic gutters">
+                                                    <color key="titleColor" name="Clouds"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -293,13 +293,16 @@ Cg
                                             <constraint firstAttribute="trailing" secondItem="Udn-7S-bdl" secondAttribute="trailing" constant="51" id="8N0-yT-3lz"/>
                                             <constraint firstItem="lGy-9q-jYV" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="AZh-IC-zam"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="C1N-Qy-i1E"/>
+                                            <constraint firstItem="MmG-rR-dxq" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="37" id="Fz5-hy-JpW"/>
                                             <constraint firstItem="lGy-9q-jYV" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="HK2-VN-Ykj"/>
                                             <constraint firstItem="8xV-Xd-WXd" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="14" id="HWM-OV-pJT"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="width" secondItem="lGy-9q-jYV" secondAttribute="width" id="ITk-gE-AtS"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="J6K-3B-n56"/>
                                             <constraint firstItem="4Qv-gr-p4V" firstAttribute="width" secondItem="lGy-9q-jYV" secondAttribute="width" id="JjF-hT-vF2"/>
+                                            <constraint firstAttribute="trailing" secondItem="edW-TO-jdy" secondAttribute="trailing" constant="33" id="Mb6-Be-8Yd"/>
                                             <constraint firstAttribute="bottom" secondItem="Udn-7S-bdl" secondAttribute="bottom" constant="8" id="PQI-Ja-kbl"/>
                                             <constraint firstAttribute="trailing" secondItem="UQL-zb-UNf" secondAttribute="trailing" constant="35" id="QdH-Op-yUX"/>
+                                            <constraint firstAttribute="bottom" secondItem="MmG-rR-dxq" secondAttribute="bottom" constant="-6" id="Qzh-bM-zX3"/>
                                             <constraint firstAttribute="trailing" secondItem="4Qv-gr-p4V" secondAttribute="trailing" constant="35" id="RYu-QG-Dyw"/>
                                             <constraint firstItem="Udn-7S-bdl" firstAttribute="top" secondItem="94n-cA-wUE" secondAttribute="top" constant="756" id="Uwy-ul-XEq"/>
                                             <constraint firstItem="4q0-tU-Qrg" firstAttribute="top" secondItem="lGy-9q-jYV" secondAttribute="bottom" constant="21" id="V1B-zj-Czp"/>
@@ -307,12 +310,16 @@ Cg
                                             <constraint firstItem="Udn-7S-bdl" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="55" id="WUj-yx-Tbq"/>
                                             <constraint firstItem="4q0-tU-Qrg" firstAttribute="width" secondItem="lGy-9q-jYV" secondAttribute="width" id="Ymf-nt-0Ex"/>
                                             <constraint firstItem="4q0-tU-Qrg" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="az1-jC-BFV"/>
+                                            <constraint firstAttribute="trailing" secondItem="MmG-rR-dxq" secondAttribute="trailing" constant="33" id="fj5-Yj-1pO"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="top" secondItem="4q0-tU-Qrg" secondAttribute="bottom" constant="24" id="fzj-cL-OQu"/>
                                             <constraint firstItem="lGy-9q-jYV" firstAttribute="top" secondItem="8xV-Xd-WXd" secondAttribute="bottom" constant="24" id="is3-Jc-u55"/>
                                             <constraint firstAttribute="trailing" secondItem="4q0-tU-Qrg" secondAttribute="trailing" constant="35" id="lAt-3N-eWp"/>
                                             <constraint firstItem="Udn-7S-bdl" firstAttribute="top" secondItem="4Qv-gr-p4V" secondAttribute="bottom" constant="109" id="lpv-37-rV1"/>
                                             <constraint firstAttribute="trailing" secondItem="lGy-9q-jYV" secondAttribute="trailing" constant="35" id="qIO-TV-4Vf"/>
+                                            <constraint firstItem="edW-TO-jdy" firstAttribute="top" secondItem="4Qv-gr-p4V" secondAttribute="bottom" constant="27" id="qpq-eg-Kjy"/>
                                             <constraint firstItem="4q0-tU-Qrg" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="tqd-EW-ZNG"/>
+                                            <constraint firstItem="MmG-rR-dxq" firstAttribute="top" secondItem="edW-TO-jdy" secondAttribute="bottom" constant="28" id="weu-uS-l0g"/>
+                                            <constraint firstItem="edW-TO-jdy" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="37" id="zIL-D9-RRt"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -342,7 +349,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwg-jT-jCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="247"/>
+            <point key="canvasLocation" x="472.5" y="246.12676056338029"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YEa-Ew-oKq">
@@ -423,38 +430,47 @@ Cg
             <objects>
                 <viewController storyboardIdentifier="FastDetail" id="plU-8o-VO6" customClass="FASTDetailVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKa-U3-VfS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTj-b2-FhH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="47X-0g-iP6">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-vU-aGl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8C-wa-jBx" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8C-wa-jBx" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Morrisons Pouch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmG-OP-VgS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morrisons Pouch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmG-OP-VgS">
                                                 <rect key="frame" x="61" y="64" width="198" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="198" id="bAT-0s-F0b"/>
+                                                    <constraint firstAttribute="height" constant="36" id="oNf-cf-btU"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-2K-gJb">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-2K-gJb">
                                                 <rect key="frame" x="7" y="146" width="307" height="160"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="307" id="i37-WJ-LUE"/>
+                                                    <constraint firstAttribute="height" constant="160" id="jBG-kM-fa4"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1x-mQ-ePB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1x-mQ-ePB">
                                                 <rect key="frame" x="12" y="318" width="296" height="218"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="296" id="K0x-6o-Euu"/>
+                                                    <constraint firstAttribute="height" constant="218" id="PaV-Yi-FOn"/>
+                                                </constraints>
                                                 <string key="text">The FAST exam is a multi-view examination performed on trauma patients in the intra-abdominal space and heart to determine the presence of intraperitoneal free fluid and/or pericardial effusions. 
 
 Traditionally, four main views make up the exam. 
@@ -467,9 +483,12 @@ Traditionally, four main views make up the exam.
                                                 <color key="textColor" name="Clouds"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-tb-sc3">
-                                                <rect key="frame" x="252" y="27" width="40" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-tb-sc3">
+                                                <rect key="frame" x="262" y="27" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Oar-WY-gBy"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Yj8-KO-ao2"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="X">
                                                     <color key="titleColor" name="Clouds"/>
@@ -478,18 +497,85 @@ Traditionally, four main views make up the exam.
                                                     <action selector="dismissmyView:" destination="plU-8o-VO6" eventType="touchUpInside" id="Bd3-EP-GDP"/>
                                                 </connections>
                                             </button>
-                                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-wn-Dvo">
-                                                <rect key="frame" x="0.0" y="573" width="320" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-wn-Dvo">
+                                                <rect key="frame" x="0.0" y="663" width="320" height="201"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="201" id="FAf-Jv-SbW"/>
+                                                    <constraint firstAttribute="width" constant="320" id="aGj-hs-bC0"/>
+                                                </constraints>
                                                 <connections>
-                                                    <segue destination="Xn5-cj-JLp" kind="embed" identifier="Morrisons" id="zsJ-7v-c2N"/>
+                                                    <segue destination="Xn5-cj-JLp" kind="embed" identifier="TestContainer" id="zsJ-7v-c2N"/>
                                                 </connections>
                                             </containerView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RUQProbePosition" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-wq-ddg">
+                                                <rect key="frame" x="12" y="556" width="296" height="102"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="102" id="Hb2-LJ-GNw"/>
+                                                    <constraint firstAttribute="width" constant="296" id="qpf-vX-8Sm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ultrasound" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-i7-Je2">
+                                                <rect key="frame" x="19" y="28" width="41" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="Clouds"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abnormal Findings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkt-XQ-mBz">
+                                                <rect key="frame" x="19" y="894.5" width="283" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="NPw-eQ-K9E"/>
+                                                    <constraint firstAttribute="width" constant="283" id="aPj-Kz-sya"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.8912609816" green="0.35455638169999998" blue="0.39968371390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-Qn-7es">
+                                                <rect key="frame" x="19" y="918.5" width="283" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-n9-aB4">
+                                                <rect key="frame" x="14" y="289" width="283" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="283" id="6d2-24-BJl"/>
+                                                    <constraint firstAttribute="height" constant="21" id="KLR-04-6qR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" name="Seagull"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="24R-jO-tED"/>
-                                            <constraint firstAttribute="height" constant="800" id="Dqb-Vi-LZa"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="24R-jO-tED"/>
+                                            <constraint firstItem="wkt-XQ-mBz" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="19" id="2dC-Tl-vvA"/>
+                                            <constraint firstItem="hmG-OP-VgS" firstAttribute="top" secondItem="k8C-wa-jBx" secondAttribute="top" constant="64" id="7vm-cB-uXD"/>
+                                            <constraint firstAttribute="bottom" secondItem="EaG-wq-ddg" secondAttribute="bottom" constant="842" id="Bzp-87-2fZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="wkt-XQ-mBz" secondAttribute="trailing" constant="18" id="CUA-kr-FRA"/>
+                                            <constraint firstAttribute="height" constant="1500" id="Dqb-Vi-LZa"/>
+                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="7" id="FFh-h4-da3"/>
+                                            <constraint firstItem="hmG-OP-VgS" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="61" id="Ghg-XI-IBQ"/>
+                                            <constraint firstItem="TDg-Qn-7es" firstAttribute="top" secondItem="wkt-XQ-mBz" secondAttribute="bottom" constant="3" id="IuX-v0-l84"/>
+                                            <constraint firstAttribute="trailing" secondItem="JWI-wn-Dvo" secondAttribute="trailing" id="LID-os-wW8"/>
+                                            <constraint firstAttribute="trailing" secondItem="hmG-OP-VgS" secondAttribute="trailing" constant="61" id="OId-D3-3pd"/>
+                                            <constraint firstAttribute="bottom" secondItem="JWI-wn-Dvo" secondAttribute="bottom" constant="636" id="OWU-P4-njm"/>
+                                            <constraint firstAttribute="trailing" secondItem="EaG-wq-ddg" secondAttribute="trailing" constant="12" id="Sf6-xp-ber"/>
+                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="TVG-tb-sc3" secondAttribute="bottom" constant="79" id="SyS-0s-3Ps"/>
+                                            <constraint firstAttribute="trailing" secondItem="vfh-2K-gJb" secondAttribute="trailing" constant="6" id="UOK-pb-Vpk"/>
+                                            <constraint firstAttribute="trailing" secondItem="u1x-mQ-ePB" secondAttribute="trailing" constant="12" id="VD4-Lr-m9t"/>
+                                            <constraint firstItem="wkt-XQ-mBz" firstAttribute="top" secondItem="JWI-wn-Dvo" secondAttribute="bottom" constant="30.5" id="WC6-Hl-qcw"/>
+                                            <constraint firstAttribute="trailing" secondItem="TVG-tb-sc3" secondAttribute="trailing" constant="18" id="YW1-j9-WO8"/>
+                                            <constraint firstItem="TVG-tb-sc3" firstAttribute="top" secondItem="k8C-wa-jBx" secondAttribute="top" constant="27" id="eC5-Ah-Rrt"/>
+                                            <constraint firstItem="JWI-wn-Dvo" firstAttribute="top" secondItem="u1x-mQ-ePB" secondAttribute="bottom" constant="127" id="gGc-bL-STZ"/>
+                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="hmG-OP-VgS" secondAttribute="bottom" constant="46" id="gGy-wt-TS0"/>
+                                            <constraint firstItem="TDg-Qn-7es" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="19" id="gMj-Ba-ZzR"/>
+                                            <constraint firstAttribute="trailing" secondItem="TDg-Qn-7es" secondAttribute="trailing" constant="18" id="keS-4T-WOh"/>
+                                            <constraint firstItem="u1x-mQ-ePB" firstAttribute="top" secondItem="vfh-2K-gJb" secondAttribute="bottom" constant="12" id="tAv-nF-D3N"/>
+                                            <constraint firstItem="EaG-wq-ddg" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="12" id="tzn-zp-m4t"/>
+                                            <constraint firstItem="EaG-wq-ddg" firstAttribute="top" secondItem="u1x-mQ-ePB" secondAttribute="bottom" constant="20" id="vcz-ZG-C8c"/>
+                                            <constraint firstItem="JWI-wn-Dvo" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" id="yTt-90-c3d"/>
+                                            <constraint firstItem="u1x-mQ-ePB" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="12" id="yb6-TK-MfE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -498,6 +584,7 @@ Traditionally, four main views make up the exam.
                                     <constraint firstItem="k8C-wa-jBx" firstAttribute="width" secondItem="Ioi-vU-aGl" secondAttribute="width" id="B2F-kY-klD"/>
                                     <constraint firstItem="k8C-wa-jBx" firstAttribute="top" secondItem="Ioi-vU-aGl" secondAttribute="top" id="L3K-cF-fT5"/>
                                     <constraint firstAttribute="bottom" secondItem="k8C-wa-jBx" secondAttribute="bottom" id="Pst-Ej-jOZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="dLx-Nf-VkT"/>
                                     <constraint firstItem="k8C-wa-jBx" firstAttribute="leading" secondItem="Ioi-vU-aGl" secondAttribute="leading" id="gS0-nL-v32"/>
                                 </constraints>
                             </scrollView>
@@ -510,8 +597,9 @@ Traditionally, four main views make up the exam.
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Hb-HU-u7C"/>
                     </view>
-                    <size key="freeformSize" width="320" height="800"/>
+                    <size key="freeformSize" width="320" height="1500"/>
                     <connections>
+                        <outlet property="abnormalFindings" destination="TDg-Qn-7es" id="7Wn-8a-EJm"/>
                         <outlet property="detail_Label" destination="u1x-mQ-ePB" id="E7c-hT-bhC"/>
                         <outlet property="title_Label" destination="hmG-OP-VgS" id="dVl-Df-CPp"/>
                         <outlet property="ultrasoundImageView" destination="vfh-2K-gJb" id="PQy-3K-UVR"/>
@@ -519,34 +607,41 @@ Traditionally, four main views make up the exam.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gQ-Q7-HEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="495"/>
+            <point key="canvasLocation" x="1136.25" y="617.95774647887322"/>
         </scene>
         <!--Container FastVC-->
         <scene sceneID="SP7-RN-vAG">
             <objects>
                 <viewController id="Xn5-cj-JLp" customClass="containerFastVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="011-2e-dAA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-HB-Was">
-                                <rect key="frame" x="0.0" y="0.0" width="587" height="152"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-HB-Was">
+                                <rect key="frame" x="0.0" y="0.0" width="587" height="280"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7P-6o-xi0">
-                                        <rect key="frame" x="0.0" y="0.0" width="587" height="148"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7P-6o-xi0">
+                                        <rect key="frame" x="0.0" y="0.0" width="587" height="295"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-nq-Z9j">
-                                                <rect key="frame" x="8" y="8" width="593" height="148"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-nq-Z9j">
+                                                <rect key="frame" x="8" y="8" width="593" height="287"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYc-oZ-W5Q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="238" height="133"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Subxyphoid" translatesAutoresizingMaskIntoConstraints="NO" id="pYc-oZ-W5Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="238" height="192"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-Fc-XC8">
-                                                        <rect key="frame" x="277" y="8" width="175" height="115"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="267" y="0.0" width="276" height="192"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-2a-fSt">
+                                                        <rect key="frame" x="3" y="208" width="230" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -586,18 +681,21 @@ Traditionally, four main views make up the exam.
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J38-w4-vwL"/>
                     </view>
-                    <size key="freeformSize" width="600" height="152"/>
+                    <size key="freeformSize" width="600" height="260"/>
                     <connections>
                         <outlet property="pathoPhysImage" destination="AkN-Fc-XC8" id="nAJ-TP-Vbq"/>
                         <outlet property="physiologyImage" destination="pYc-oZ-W5Q" id="OSw-gF-T0d"/>
+                        <outlet property="testLabel" destination="Yag-2a-fSt" id="Bfz-Zw-gvB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hzl-Mm-P8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="-314"/>
+            <point key="canvasLocation" x="2141.25" y="-413.02816901408454"/>
         </scene>
     </scenes>
     <resources>
+        <image name="RUQProbePosition" width="892" height="414"/>
+        <image name="Subxyphoid" width="484" height="386"/>
         <image name="ultrasound" width="1200" height="1200"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -605,8 +703,11 @@ Traditionally, four main views make up the exam.
         <namedColor name="Cool Mint">
             <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Sunflower">
-            <color red="0.94499999284744263" green="0.76899999380111694" blue="0.059000000357627869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Seagull">
+            <color red="0.46000000834465027" green="0.74000000953674316" blue="0.79000002145767212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="B5A-e9-zU3"/>
+    </inferredMetricsTieBreakers>
 </document>

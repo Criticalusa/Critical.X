@@ -8,39 +8,44 @@
 
 import UIKit
 
+
+
+
 class containerFastVC: UIViewController {
+   
+    var imgOneString = String ()
+    var imgTwoString: String = ""
+    var descriptionStringOne = String()
+    var descriptionStringTwo = String()
+    
+    
     @IBOutlet weak var physiologyImage: UIImageView!
     @IBOutlet weak var pathoPhysImage: UIImageView!
+    @IBOutlet weak var testLabel: UILabel!
     
-    var physStillImage: String = ""
-    var pathoImage: String = ""
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
-        
+       print("Container Loaded")
+        physiologyImage.image = UIImage(named: imgOneString)
+       // pathoPhysImage.image = UIImage(named: imgTwoString)
+        pathoPhysImage.loadGif(name: imgTwoString)
 
+        /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
+        physiologyImage.clipsToBounds = true
+        physiologyImage.layer.cornerRadius = 4
+        pathoPhysImage.clipsToBounds = true
+        pathoPhysImage.layer.cornerRadius = 4
+        
+        testLabel.text = descriptionStringOne
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        guard let img = physiologyImage else {
-            
-            physiologyImage.image = UIImage(named: physStillImage)
-            print(pathoImage)
-            return  }
-      
-    }
+  
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

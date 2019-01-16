@@ -928,7 +928,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         }
         
         // Add iCon at the top
-        let icon: UIImage = #imageLiteral(resourceName: "CriticalABG")
+        let icon: UIImage = #imageLiteral(resourceName: "Refresh-2")
         // Color for the buttons and  iCon background
         let color = #colorLiteral(red: 0.8349413276, green: 0.3352985978, blue: 0.3409483433, alpha: 1)
         

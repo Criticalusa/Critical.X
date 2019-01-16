@@ -78,6 +78,8 @@ class IdealBodyWeight: UIViewController {
         if let destination = segue.destination as? IdealBWDataView {
             
             //Takes the Double (weightEntered) variable from the detail page, and parses it as the textFireld (Double) becuase the textField is origionally casted as a string.
+            // If any of these Optional values are NIL (or Empty) then Initiate the following code before the return value.
+           
             destination.desiredTV = Double (desiredTVText.text!)
             destination.heightEntered = Double (heightText.text!)
             
@@ -95,7 +97,7 @@ class IdealBodyWeight: UIViewController {
                     //                    guard let _ = desiredTV , let _ = heightEntered  else {
                     //                        print("Error! out of normal parameters for Male selected"); return }
                     //
-                    // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
+                    // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized. Then use this ID block in a swutch statement to reference what you want ! 
                     let id = 1
                     
                     // I set the ID block,  that is an INT  on the receiving view controller so I can access this in a switch statement.

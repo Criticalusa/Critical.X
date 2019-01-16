@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FASTDetailVC: UIViewController {
 
     
@@ -15,11 +16,12 @@ class FASTDetailVC: UIViewController {
     @IBOutlet weak var title_Label: UILabel!
     @IBOutlet weak var ultrasoundImageView: UIImageView!
     @IBOutlet weak var detail_Label: UILabel!
-   
+    @IBOutlet weak var abnormalFindings: UILabel!
+    
     var fast_Title = String ()
     var fast_description = String()
     var ultraSoundName: String = ""
-    
+    var abnormalFindingsonScan: String = ""
    
         @IBAction func dismissmyView(_ sender: Any) {
             
@@ -33,9 +35,10 @@ class FASTDetailVC: UIViewController {
         super.viewDidLoad()
 
       updatePassedData()
-        
-        // Do any additional setup after loading the view.
+       
     }
+    
+  
     
 // Helper function for the passed data
     func updatePassedData() {
@@ -44,6 +47,7 @@ class FASTDetailVC: UIViewController {
         
         title_Label.text = fast_Title
         ultrasoundImageView.loadGif(name: ultraSoundName)
+        abnormalFindings.text = abnormalFindingsonScan
         
         detail_Label.text = fast_description
         
@@ -58,6 +62,7 @@ class FASTDetailVC: UIViewController {
 
     }
     
+    // IMAGES THAT WILL BE PASSED THROUGHT TO THE CONTAINER VIEW
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -67,9 +72,13 @@ class FASTDetailVC: UIViewController {
         
         
         // to containgerview
-        if let container = segue.destination as? containerFastVC, segue.identifier == "Morrisons" {
-            container.physStillImage = "Subxyphoid"
-            container.pathoImage = "yo"
+        if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer" {
+            container.imgOneString = FastViewController.USImageNames.RUQAnatomy.rawValue
+            container.descriptionStringOne = "Parasternal Anatomy"
+            
+            container.imgTwoString = FastViewController.USImageNames.HeartParasternal.rawValue
         }
-    }
+        
+    
+}
 }
