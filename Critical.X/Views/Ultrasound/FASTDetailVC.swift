@@ -17,8 +17,13 @@ class FASTDetailVC: UIViewController {
     @IBOutlet weak var ultrasoundImageView: UIImageView!
     @IBOutlet weak var detail_Label: UILabel!
     @IBOutlet weak var abnormalFindings: UILabel!
+    @IBOutlet weak var probeHertz: UILabel!
+    @IBOutlet weak var initialUSImage: UIImageView!
+    
     
     var fast_Title = String ()
+    var initialImageString = String ()
+    var probeTitle = String ()
     var fast_description = String()
     var ultraSoundName: String = ""
     var abnormalFindingsonScan: String = ""
@@ -46,21 +51,22 @@ class FASTDetailVC: UIViewController {
         // Set the outlets to the passed strings.
         
         title_Label.text = fast_Title
-        ultrasoundImageView.loadGif(name: ultraSoundName)
+        initialUSImage.loadGif(name: ultraSoundName)
         abnormalFindings.text = abnormalFindingsonScan
-        
+        ultrasoundImageView.image = UIImage(named: initialImageString)
+        probeHertz.text = probeTitle
         detail_Label.text = fast_description
         
         
     }
 
-    // Will load the gif once the view appears.
-    override func viewDidAppear(_ animated: Bool) {
-        ultrasoundImageView.loadGif(name: ultraSoundName)
-//        physiologyImage.image = UIImage(named: physImage)!
-//        pathoPhysImage.image = UIImage(named: pathoImage)!
-
-    }
+//    // Will load the gif once the view appears.
+//    override func viewDidAppear(_ animated: Bool) {
+//        ultrasoundImageView.loadGif(name: ultraSoundName)
+////        physiologyImage.image = UIImage(named: physImage)!
+////        pathoPhysImage.image = UIImage(named: pathoImage)!
+//
+//    }
     
     // IMAGES THAT WILL BE PASSED THROUGHT TO THE CONTAINER VIEW
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -71,12 +77,14 @@ class FASTDetailVC: UIViewController {
         
         
         
-        // to containgerview
+        //MARK: - PASS DATA GOES TO CONTAINER VIEW
         if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer" {
-            container.imgOneString = FastViewController.USImageNames.RUQAnatomy.rawValue
-            container.descriptionStringOne = "Parasternal Anatomy"
+            // Fist pitcure
+            container.imgOneString = UltraSoundImages.RUQAnatomy.rawValue
+            container.descriptionStringOne = "Anatomy"
             
-            container.imgTwoString = FastViewController.USImageNames.HeartParasternal.rawValue
+            // Second Picture
+            container.imgTwoString = UltraSoundImages.HeartParasternal.rawValue
         }
         
     

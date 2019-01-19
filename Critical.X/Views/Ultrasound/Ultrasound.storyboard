@@ -147,7 +147,7 @@
                                                 <rect key="frame" x="8" y="98" width="303" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" name="Clouds"/>
+                                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-rx-gIc">
@@ -449,7 +449,7 @@ Traditionally, six main views make up the exam.
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morrisons Pouch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmG-OP-VgS">
-                                                <rect key="frame" x="61" y="64" width="198" height="36"/>
+                                                <rect key="frame" x="61" y="39" width="198" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="198" id="bAT-0s-F0b"/>
                                                     <constraint firstAttribute="height" constant="36" id="oNf-cf-btU"/>
@@ -458,19 +458,15 @@ Traditionally, six main views make up the exam.
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-2K-gJb">
-                                                <rect key="frame" x="7" y="146" width="307" height="160"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RUQProbePosition" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-2K-gJb">
+                                                <rect key="frame" x="7" y="126" width="307" height="160"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="307" id="i37-WJ-LUE"/>
                                                     <constraint firstAttribute="height" constant="160" id="jBG-kM-fa4"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1x-mQ-ePB">
-                                                <rect key="frame" x="12" y="318" width="296" height="218"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="296" id="K0x-6o-Euu"/>
-                                                    <constraint firstAttribute="height" constant="218" id="PaV-Yi-FOn"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="u1x-mQ-ePB">
+                                                <rect key="frame" x="12" y="319" width="296" height="217"/>
                                                 <string key="text">The FAST exam is a multi-view examination performed on trauma patients in the intra-abdominal space and heart to determine the presence of intraperitoneal free fluid and/or pericardial effusions. 
 
 Traditionally, four main views make up the exam. 
@@ -484,7 +480,7 @@ Traditionally, four main views make up the exam.
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-tb-sc3">
-                                                <rect key="frame" x="262" y="27" width="40" height="40"/>
+                                                <rect key="frame" x="262" y="12" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Oar-WY-gBy"/>
                                                     <constraint firstAttribute="width" constant="40" id="Yj8-KO-ao2"/>
@@ -498,26 +494,28 @@ Traditionally, four main views make up the exam.
                                                 </connections>
                                             </button>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-wn-Dvo">
-                                                <rect key="frame" x="0.0" y="663" width="320" height="201"/>
+                                                <rect key="frame" x="0.0" y="704" width="320" height="160"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="201" id="FAf-Jv-SbW"/>
-                                                    <constraint firstAttribute="width" constant="320" id="aGj-hs-bC0"/>
+                                                    <constraint firstAttribute="height" constant="160" id="enG-3O-uNS"/>
+                                                    <constraint firstAttribute="width" constant="320" id="nhp-KR-e0P"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="Xn5-cj-JLp" kind="embed" identifier="TestContainer" id="zsJ-7v-c2N"/>
                                                 </connections>
                                             </containerView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RUQProbePosition" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-wq-ddg">
-                                                <rect key="frame" x="12" y="556" width="296" height="102"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RUQAnatomyFast" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-wq-ddg">
+                                                <rect key="frame" x="12" y="556" width="296" height="130"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="102" id="Hb2-LJ-GNw"/>
-                                                    <constraint firstAttribute="width" constant="296" id="qpf-vX-8Sm"/>
+                                                    <constraint firstAttribute="width" constant="296" id="Pg6-4N-9tX"/>
+                                                    <constraint firstAttribute="height" constant="130" id="qT3-0J-JZT"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ultrasound" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-i7-Je2">
-                                                <rect key="frame" x="19" y="28" width="41" height="39"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" name="Clouds"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ultrasound" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-i7-Je2">
+                                                <rect key="frame" x="123" y="80" width="32" height="30"/>
+                                                <color key="tintColor" name="Concentrate"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="5Wt-OE-WUE"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abnormal Findings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkt-XQ-mBz">
                                                 <rect key="frame" x="19" y="894.5" width="283" height="21"/>
@@ -529,53 +527,62 @@ Traditionally, four main views make up the exam.
                                                 <color key="textColor" red="0.8912609816" green="0.35455638169999998" blue="0.39968371390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-Qn-7es">
-                                                <rect key="frame" x="19" y="918.5" width="283" height="14.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-Qn-7es">
+                                                <rect key="frame" x="19" y="918.5" width="283" height="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-n9-aB4">
-                                                <rect key="frame" x="14" y="289" width="283" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="283" id="6d2-24-BJl"/>
-                                                    <constraint firstAttribute="height" constant="21" id="KLR-04-6qR"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-n9-aB4">
+                                                <rect key="frame" x="14" y="290" width="283" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" name="Seagull"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.5 hTz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-Vi-Jql">
+                                                <rect key="frame" x="163" y="87" width="42" height="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="gAc-Vi-Jql" firstAttribute="top" secondItem="hmG-OP-VgS" secondAttribute="bottom" constant="12" id="1S0-ab-QnM"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="24R-jO-tED"/>
                                             <constraint firstItem="wkt-XQ-mBz" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="19" id="2dC-Tl-vvA"/>
-                                            <constraint firstItem="hmG-OP-VgS" firstAttribute="top" secondItem="k8C-wa-jBx" secondAttribute="top" constant="64" id="7vm-cB-uXD"/>
-                                            <constraint firstAttribute="bottom" secondItem="EaG-wq-ddg" secondAttribute="bottom" constant="842" id="Bzp-87-2fZ"/>
+                                            <constraint firstItem="mfq-n9-aB4" firstAttribute="top" secondItem="vfh-2K-gJb" secondAttribute="bottom" constant="4" id="4Tk-ru-ZVM"/>
+                                            <constraint firstAttribute="trailing" secondItem="u1x-mQ-ePB" secondAttribute="trailing" constant="12" id="5jP-DA-wTI"/>
+                                            <constraint firstItem="hmG-OP-VgS" firstAttribute="top" secondItem="k8C-wa-jBx" secondAttribute="top" constant="39" id="7vm-cB-uXD"/>
                                             <constraint firstAttribute="trailing" secondItem="wkt-XQ-mBz" secondAttribute="trailing" constant="18" id="CUA-kr-FRA"/>
                                             <constraint firstAttribute="height" constant="1500" id="Dqb-Vi-LZa"/>
+                                            <constraint firstItem="EaG-wq-ddg" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="12" id="EO9-LA-PPS"/>
                                             <constraint firstItem="vfh-2K-gJb" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="7" id="FFh-h4-da3"/>
+                                            <constraint firstItem="Rh5-i7-Je2" firstAttribute="centerY" secondItem="gAc-Vi-Jql" secondAttribute="centerY" id="FRJ-k4-91I"/>
                                             <constraint firstItem="hmG-OP-VgS" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="61" id="Ghg-XI-IBQ"/>
+                                            <constraint firstItem="gAc-Vi-Jql" firstAttribute="leading" secondItem="Rh5-i7-Je2" secondAttribute="trailing" constant="8" symbolic="YES" id="Htj-iq-pZu"/>
                                             <constraint firstItem="TDg-Qn-7es" firstAttribute="top" secondItem="wkt-XQ-mBz" secondAttribute="bottom" constant="3" id="IuX-v0-l84"/>
-                                            <constraint firstAttribute="trailing" secondItem="JWI-wn-Dvo" secondAttribute="trailing" id="LID-os-wW8"/>
+                                            <constraint firstItem="mfq-n9-aB4" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="14" id="Kas-mP-DrC"/>
                                             <constraint firstAttribute="trailing" secondItem="hmG-OP-VgS" secondAttribute="trailing" constant="61" id="OId-D3-3pd"/>
-                                            <constraint firstAttribute="bottom" secondItem="JWI-wn-Dvo" secondAttribute="bottom" constant="636" id="OWU-P4-njm"/>
-                                            <constraint firstAttribute="trailing" secondItem="EaG-wq-ddg" secondAttribute="trailing" constant="12" id="Sf6-xp-ber"/>
-                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="TVG-tb-sc3" secondAttribute="bottom" constant="79" id="SyS-0s-3Ps"/>
+                                            <constraint firstItem="u1x-mQ-ePB" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="12" id="PaD-Cz-YX2"/>
+                                            <constraint firstAttribute="trailing" secondItem="EaG-wq-ddg" secondAttribute="trailing" constant="12" id="QGZ-to-1H9"/>
+                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="TVG-tb-sc3" secondAttribute="bottom" constant="74" id="SyS-0s-3Ps"/>
+                                            <constraint firstAttribute="trailing" secondItem="mfq-n9-aB4" secondAttribute="trailing" constant="23" id="Twy-YX-c0a"/>
                                             <constraint firstAttribute="trailing" secondItem="vfh-2K-gJb" secondAttribute="trailing" constant="6" id="UOK-pb-Vpk"/>
-                                            <constraint firstAttribute="trailing" secondItem="u1x-mQ-ePB" secondAttribute="trailing" constant="12" id="VD4-Lr-m9t"/>
-                                            <constraint firstItem="wkt-XQ-mBz" firstAttribute="top" secondItem="JWI-wn-Dvo" secondAttribute="bottom" constant="30.5" id="WC6-Hl-qcw"/>
                                             <constraint firstAttribute="trailing" secondItem="TVG-tb-sc3" secondAttribute="trailing" constant="18" id="YW1-j9-WO8"/>
-                                            <constraint firstItem="TVG-tb-sc3" firstAttribute="top" secondItem="k8C-wa-jBx" secondAttribute="top" constant="27" id="eC5-Ah-Rrt"/>
-                                            <constraint firstItem="JWI-wn-Dvo" firstAttribute="top" secondItem="u1x-mQ-ePB" secondAttribute="bottom" constant="127" id="gGc-bL-STZ"/>
-                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="hmG-OP-VgS" secondAttribute="bottom" constant="46" id="gGy-wt-TS0"/>
+                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="gAc-Vi-Jql" secondAttribute="bottom" constant="22" id="c9Y-Ov-0zQ"/>
+                                            <constraint firstItem="wkt-XQ-mBz" firstAttribute="top" secondItem="JWI-wn-Dvo" secondAttribute="bottom" constant="30.5" id="ciZ-jg-xJd"/>
+                                            <constraint firstItem="JWI-wn-Dvo" firstAttribute="top" secondItem="EaG-wq-ddg" secondAttribute="bottom" constant="18" id="dhd-O9-Vgw"/>
+                                            <constraint firstItem="TVG-tb-sc3" firstAttribute="top" secondItem="k8C-wa-jBx" secondAttribute="top" constant="12" id="eC5-Ah-Rrt"/>
+                                            <constraint firstAttribute="trailing" secondItem="JWI-wn-Dvo" secondAttribute="trailing" id="fU2-Pm-a8C"/>
+                                            <constraint firstItem="vfh-2K-gJb" firstAttribute="top" secondItem="hmG-OP-VgS" secondAttribute="bottom" constant="51" id="gGy-wt-TS0"/>
                                             <constraint firstItem="TDg-Qn-7es" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="19" id="gMj-Ba-ZzR"/>
+                                            <constraint firstItem="Rh5-i7-Je2" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="123" id="giq-ai-c5k"/>
                                             <constraint firstAttribute="trailing" secondItem="TDg-Qn-7es" secondAttribute="trailing" constant="18" id="keS-4T-WOh"/>
-                                            <constraint firstItem="u1x-mQ-ePB" firstAttribute="top" secondItem="vfh-2K-gJb" secondAttribute="bottom" constant="12" id="tAv-nF-D3N"/>
-                                            <constraint firstItem="EaG-wq-ddg" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="12" id="tzn-zp-m4t"/>
-                                            <constraint firstItem="EaG-wq-ddg" firstAttribute="top" secondItem="u1x-mQ-ePB" secondAttribute="bottom" constant="20" id="vcz-ZG-C8c"/>
-                                            <constraint firstItem="JWI-wn-Dvo" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" id="yTt-90-c3d"/>
-                                            <constraint firstItem="u1x-mQ-ePB" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" constant="12" id="yb6-TK-MfE"/>
+                                            <constraint firstItem="Rh5-i7-Je2" firstAttribute="top" secondItem="hmG-OP-VgS" secondAttribute="bottom" constant="5" id="mhW-JK-u0F"/>
+                                            <constraint firstItem="u1x-mQ-ePB" firstAttribute="top" secondItem="mfq-n9-aB4" secondAttribute="bottom" constant="8" id="msm-F5-WZZ"/>
+                                            <constraint firstItem="JWI-wn-Dvo" firstAttribute="leading" secondItem="k8C-wa-jBx" secondAttribute="leading" id="qC8-8c-Afk"/>
+                                            <constraint firstItem="EaG-wq-ddg" firstAttribute="top" secondItem="u1x-mQ-ePB" secondAttribute="bottom" constant="20" id="uJi-Jm-igb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -601,6 +608,8 @@ Traditionally, four main views make up the exam.
                     <connections>
                         <outlet property="abnormalFindings" destination="TDg-Qn-7es" id="7Wn-8a-EJm"/>
                         <outlet property="detail_Label" destination="u1x-mQ-ePB" id="E7c-hT-bhC"/>
+                        <outlet property="initialUSImage" destination="EaG-wq-ddg" id="QUH-M1-U9a"/>
+                        <outlet property="probeHertz" destination="gAc-Vi-Jql" id="zM3-J1-fSd"/>
                         <outlet property="title_Label" destination="hmG-OP-VgS" id="dVl-Df-CPp"/>
                         <outlet property="ultrasoundImageView" destination="vfh-2K-gJb" id="PQy-3K-UVR"/>
                     </connections>
@@ -614,29 +623,29 @@ Traditionally, four main views make up the exam.
             <objects>
                 <viewController id="Xn5-cj-JLp" customClass="containerFastVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="011-2e-dAA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-HB-Was">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-HB-Was">
                                 <rect key="frame" x="0.0" y="0.0" width="587" height="280"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7P-6o-xi0">
-                                        <rect key="frame" x="0.0" y="0.0" width="587" height="295"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7P-6o-xi0">
+                                        <rect key="frame" x="0.0" y="0.0" width="587" height="276"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-nq-Z9j">
-                                                <rect key="frame" x="8" y="8" width="593" height="287"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-nq-Z9j">
+                                                <rect key="frame" x="8" y="8" width="593" height="125"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Subxyphoid" translatesAutoresizingMaskIntoConstraints="NO" id="pYc-oZ-W5Q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="238" height="192"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="121"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-Fc-XC8">
-                                                        <rect key="frame" x="267" y="0.0" width="276" height="192"/>
+                                                        <rect key="frame" x="197" y="0.0" width="149" height="121"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-2a-fSt">
-                                                        <rect key="frame" x="3" y="208" width="230" height="21"/>
+                                                        <rect key="frame" x="17" y="123" width="151" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -645,18 +654,16 @@ Traditionally, four main views make up the exam.
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="GcH-St-UsK"/>
-                                                    <constraint firstAttribute="height" constant="132" id="PMr-8u-abP"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="579" id="Zw5-Li-Urg"/>
                                                     <constraint firstAttribute="width" constant="593" id="cLP-U5-mE2"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="a1z-nq-Z9j" secondAttribute="bottom" constant="8" id="2Qb-Gh-HJC"/>
                                             <constraint firstItem="a1z-nq-Z9j" firstAttribute="top" secondItem="u7P-6o-xi0" secondAttribute="top" constant="8" id="Bnr-ua-EAu"/>
                                             <constraint firstAttribute="trailing" secondItem="a1z-nq-Z9j" secondAttribute="trailing" constant="-14" id="JLU-3g-2ot"/>
-                                            <constraint firstItem="a1z-nq-Z9j" firstAttribute="height" secondItem="u7P-6o-xi0" secondAttribute="height" id="hvu-nD-kcB"/>
+                                            <constraint firstAttribute="bottom" secondItem="a1z-nq-Z9j" secondAttribute="bottom" constant="143" id="h27-Fq-U14"/>
+                                            <constraint firstItem="a1z-nq-Z9j" firstAttribute="height" secondItem="u7P-6o-xi0" secondAttribute="height" constant="-151" id="hvu-nD-kcB"/>
                                             <constraint firstItem="a1z-nq-Z9j" firstAttribute="leading" secondItem="u7P-6o-xi0" secondAttribute="leading" constant="8" id="sjX-5b-BS8"/>
                                         </constraints>
                                     </scrollView>
@@ -666,7 +673,6 @@ Traditionally, four main views make up the exam.
                                     <constraint firstItem="u7P-6o-xi0" firstAttribute="leading" secondItem="T5X-HB-Was" secondAttribute="leading" id="D9c-Bg-hla"/>
                                     <constraint firstAttribute="bottom" secondItem="u7P-6o-xi0" secondAttribute="bottom" constant="4" id="HWO-vZ-gbh"/>
                                     <constraint firstItem="u7P-6o-xi0" firstAttribute="top" secondItem="T5X-HB-Was" secondAttribute="top" id="Mgk-nf-CER"/>
-                                    <constraint firstAttribute="height" constant="152" id="Nen-67-zHo"/>
                                     <constraint firstAttribute="width" constant="587" id="Qtn-Fh-JxR"/>
                                     <constraint firstAttribute="trailing" secondItem="u7P-6o-xi0" secondAttribute="trailing" id="lnz-rE-Mku"/>
                                 </constraints>
@@ -675,13 +681,13 @@ Traditionally, four main views make up the exam.
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="T5X-HB-Was" firstAttribute="leading" secondItem="011-2e-dAA" secondAttribute="leading" id="SSf-a6-Mo2"/>
-                            <constraint firstAttribute="bottom" secondItem="T5X-HB-Was" secondAttribute="bottom" id="c8Y-08-jtN"/>
+                            <constraint firstAttribute="bottom" secondItem="T5X-HB-Was" secondAttribute="bottom" constant="-120" id="kB6-fd-Uml"/>
                             <constraint firstItem="T5X-HB-Was" firstAttribute="top" secondItem="011-2e-dAA" secondAttribute="top" id="pHM-jX-Ok1"/>
                             <constraint firstAttribute="trailing" secondItem="T5X-HB-Was" secondAttribute="trailing" constant="13" id="qak-n9-ZZF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J38-w4-vwL"/>
                     </view>
-                    <size key="freeformSize" width="600" height="260"/>
+                    <size key="freeformSize" width="600" height="160"/>
                     <connections>
                         <outlet property="pathoPhysImage" destination="AkN-Fc-XC8" id="nAJ-TP-Vbq"/>
                         <outlet property="physiologyImage" destination="pYc-oZ-W5Q" id="OSw-gF-T0d"/>
@@ -690,15 +696,19 @@ Traditionally, four main views make up the exam.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hzl-Mm-P8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2141.25" y="-413.02816901408454"/>
+            <point key="canvasLocation" x="1880.625" y="-416.19718309859155"/>
         </scene>
     </scenes>
     <resources>
+        <image name="RUQAnatomyFast" width="280" height="180"/>
         <image name="RUQProbePosition" width="892" height="414"/>
         <image name="Subxyphoid" width="484" height="386"/>
         <image name="ultrasound" width="1200" height="1200"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Concentrate">
+            <color red="0.58399999141693115" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Cool Mint">
             <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -710,4 +720,5 @@ Traditionally, four main views make up the exam.
     <inferredMetricsTieBreakers>
         <segue reference="B5A-e9-zU3"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
 </document>

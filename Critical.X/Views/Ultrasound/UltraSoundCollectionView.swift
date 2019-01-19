@@ -33,8 +33,8 @@ class UltraSoundCollectionView: UIViewController, UICollectionViewDataSource, UI
         USTitleLabel.animate(text: "Ultrasound", duration: 1, completion: nil)
       
        
-        ultrasoundMainMenu = ["FAST Examination", "RUSH Protocol", "Respiratory Distress Protocol"] // 2
-        ultrasoundMenuDetail = ["Focused Assessment with Sonography in Trauma", "Rapid Ultrasound for Shock & Hypotension", "Diagnose cardiopulmonary emergencies"] // 2
+        ultrasoundMainMenu = ["E-FAST Examination", "RUSH Protocol", "Respiratory Distress Protocol"] // 2
+        ultrasoundMenuDetail = ["Extended Focused Assessment with Sonography in Trauma", "Rapid Ultrasound for Shock & Hypotension", "Diagnose cardiopulmonary emergencies"] // 2
         storyBoardID = ["Fast","Rush","Resp"]
         
     }
