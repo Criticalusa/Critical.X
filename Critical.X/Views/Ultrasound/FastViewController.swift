@@ -8,7 +8,12 @@
 
 import UIKit
 import AKLabel
-class FastViewController: UIViewController {
+
+
+var setID = Int()
+
+
+class FAST_MAIN_VC: UIViewController {
 
     @IBOutlet weak var subTitleAnimate: AKLabel!
     @IBOutlet weak var closeButton: UIButton!
@@ -43,19 +48,32 @@ class FastViewController: UIViewController {
         ///RUQ
         if segue.identifier == "Morrisons" {
             // We segue to MiniDrugVC and pass the infomation from which button is pressed
+            
+         
+
+            
             if let morrisonsViewController = segue.destination as? FASTDetailVC {
+                
+                // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
+                setID = 0
+                print("SetID was registered at \(setID) ACTIVATE RUQ")
                 
                 //Headings and Titles
                 morrisonsViewController.fast_Title = "Morrisons Pouch"
+               
                 morrisonsViewController.fast_description = ViewDescription.RUQ_morrisonsTextDescription.rawValue
+               
                 morrisonsViewController.abnormalFindingsonScan = AbnormalFindings.RUQ.rawValue
+               
                 morrisonsViewController.probeTitle = "3.5 Htz"
+                
                 // Image Views
                 // Ultrasound probe position
                 morrisonsViewController.ultraSoundName = UltraSoundImages.SweepThroughRUQ.rawValue
                 
                 // First image
                 morrisonsViewController.initialImageString = UltraSoundImages.RUQProbePosition.rawValue
+                
                 
                 print("Morrisons Pouch was selected")
             }
@@ -65,14 +83,33 @@ class FastViewController: UIViewController {
         // Left Upper Quadrant
         if segue.identifier == "LUQ" {
             // We segue to MiniDrugVC and pass the infomation from which button is pressed
+            
+            // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
+            setID = 1
+            print("SetID was registered at \(setID). ACTIVATE LUQ")
+            
+            
             if let LUQ = segue.destination as? FASTDetailVC {
                 
                 //Headings and Titles
                 LUQ.fast_Title = "Perisplenic View - LUQ"
+                
                 LUQ.fast_description = ViewDescription.leftUpperQuadrant.rawValue
                 
+                //Headings and Titles
+                LUQ.fast_description = ViewDescription.RUQ_morrisonsTextDescription.rawValue
+                
+                LUQ.abnormalFindingsonScan = AbnormalFindings.RUQ.rawValue
+                
+                LUQ.probeTitle = "3.5 Htz"
+                
                 // Image Views
-                LUQ.ultraSoundName = UltraSoundImages.HeartParasternal.rawValue
+                // Ultrasound probe position
+                LUQ.ultraSoundName = UltraSoundImages.SweepThroughRUQ.rawValue
+                
+                // First image
+                LUQ.initialImageString = UltraSoundImages.RUQProbePosition.rawValue
+                
                 
                 print("LUQ Pouch was selected")
             }
