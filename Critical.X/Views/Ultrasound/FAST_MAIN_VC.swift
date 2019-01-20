@@ -93,9 +93,7 @@ class FAST_MAIN_VC: UIViewController {
                 
                 //Headings and Titles
                 LUQ.fast_Title = "Perisplenic View - LUQ"
-                
-                LUQ.fast_description = ViewDescription.leftUpperQuadrant.rawValue
-                
+                                
                 //Headings and Titles
                 LUQ.fast_description = ViewDescription.leftUpperQuadrant.rawValue
                 
@@ -112,11 +110,50 @@ class FAST_MAIN_VC: UIViewController {
                 // Abnormal Findings
                 LUQ.abnormalFindingsonScan = AbnormalFindings.LUQ.rawValue
                 
-                print("LUQ Pouch was selected")
+                print("LUQ View was selected")
             }
         }
+        
+        
+        // Cardiac Views
+        if segue.identifier == "Cardiac" {
+            // We segue to MiniDrugVC and pass the infomation from which button is pressed
+            
+            // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
+            setID = 2
+            print("SetID was registered at \(setID). ACTIVATE LUQ")
+            
+            
+            if let Cardiac = segue.destination as? FASTDetailVC {
+                
+                //Headings and Titles
+                Cardiac.fast_Title = "Cardiac Views"
+                
+                //Headings and Titles
+                Cardiac.fast_description = ViewDescription.CardaicView.rawValue
+                
+                
+                Cardiac.probeTitle = "Cardiac Probe"
+                
+                // Image Views
+                // First image
+                Cardiac.initialImageString = UltraSoundImages.CardiacProbe.rawValue
+                
+                // Ultrasound probe position
+                Cardiac.ultraSoundName = UltraSoundImages.CardiacSubXiphoidViewGif.rawValue
+                
+                // Abnormal Findings
+                Cardiac.abnormalFindingsonScan = AbnormalFindings.Cardiac.rawValue
+                
+                print("Cardiac was selected")
+            }
+        }
+        
+        
+        
+        
 
-    }
-    }
+    } // End Segue
+    }// End Class
 
 

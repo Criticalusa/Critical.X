@@ -12,10 +12,7 @@ import Foundation
 //MARK: - Image Enum
 enum UltraSoundImages: String {
     
-    // Cardiac Views
-    case HeartParasternal = "Heart_Parasternal"
-    case subXyphoid = "Heart_subxyphoid"
-    case subxy = "Subxyphoid"
+  
     
     // RUQ
     case RUQAnatomy = "RUQAnatomyFast"
@@ -35,6 +32,17 @@ enum UltraSoundImages: String {
     case Pathology_LUQ_PosFAST2 = "LUQ_PosFast2"
     case Pathology_LUQ_PosFast1 = "LUQ_PosFast1"
 
+    // Cardiac Views
+    
+    case CardiacSubXiphoidViewGif = "Cardiac-SubxiphoidGIF"
+    case CardiacProbe = "CardiacProbe"
+    case HeartParasternalGif = "Heart_Parasternal"
+    case subXyphoidGif = "Heart_subxyphoid"
+    case SubxyphoidImg = "SubxyphoidImgAnatomy"
+    case PericardialEffusion_GIF = "Cardiac_LG_Effusion_GIF"
+    case SubXiphoidEffusionImage = "SubXiphoid_EffusionImg"
+    case PLAX_EffusionGIF = "PLAX_EffusionGIF_Annotated"
+    
 } // End Enum
 
 
@@ -48,7 +56,7 @@ enum ViewDescription: String {
     //MARK: - RUQ
     case RUQ_morrisonsTextDescription =
     """
-    \rThe RUQ is the most sensitive region for free- fluid accumulation compared to the other regions. When viewing the Right Upper Quadrant, the probe indicator should be pointing cephalad on the patients right mid-axillary side.
+    \rThe RUQ is the most sensitive region for free- fluid accumulation surrounding the liver and the right kidney, and in the hepatorenal recess, called Morrison's pouch. This view is also used to detect free fluid in between the pleural space on the right side. When viewing the Right Upper Quadrant, the probe indicator should be pointing cephalad on the patients right mid-axillary side.
     
     \rThese are the visible areas of focus:
     \r1) Hepatorenal Recess - Morrisons Pouch
@@ -66,9 +74,9 @@ enum ViewDescription: String {
     //MARK: - LUQ
     case leftUpperQuadrant =
     """
-      \rThe LUQ a.k.a the perisplenic, or splenorenal view is used to visualize the presence of free-fluid around the spleen and in the chest around the costophrenic angle. It's technically challenging and less sensitive for free-fluid than the RUQ due to the spleen being smaller to identify compared to the liver, the acoustic window being lessened due obstruction from the stomach and the clinician having to reach across the patient.
+      \rThe LUQ a.k.a the perisplenic, or splenorenal view is used to visualize the presence of free-fluid surrounding the spleen (splenorenal recess a.k.a, Koller's pouch) and in left pleural space around the costophrenic angle. It's technically challenging and less sensitive for free-fluid than the RUQ due to the spleen being smaller to identify compared to the liver, the acoustic window being lessened due obstruction from the stomach and the clinician having to reach across the patient.
     
-    \rThe traditional windows obtained in the LUQ are:
+    \rThe traditional acoustic windows obtained in the LUQ are:
     \r1) Spenorenal Interface
     \r2) Inferior tip of the spleen
     \r3) The diaphragm, above and below
@@ -84,6 +92,23 @@ enum ViewDescription: String {
     """
     
     
+    case CardaicView =
+    """
+    \rThe cardiac view is used to detect free fluid inside the pericardial sac. It can be separated into two separate views 1) Subxiphoid and 2) The parasternal long axis view (PLAX). As it's usually sufficient to evaluate one view to check for the presence of pericardial effusions, it's essential to learn both in the event one view is not easily obtained.
+    
+    \rThe traditional cardiac acoustic windows obtained are:
+    \r1) Subxyphoid
+    \r2) Parasternal Long Axis (PLAX)
+    
+    \rTechnique:
+    \rProbe Indicator: Probe indicator points towards the left side of the patient.
+    \rStart inferiorly to the xiphoid process and place the probe in the transverse axis parallel to the abdominal wall. Plunge the probe slightly under the ribs until the cardiac silhouette comes into view.
+    
+    \rIn a routine scan, the four chambers of the heart, and the pericardial sac should be visible. You should be able to appreciate these eight landmarks. 1) Liver, 2) RA, 3) LA, 4) Mitral Valve, 5) LV, 6) RV, 7) Ventricular septum and 8) Tricuspid valve.
+    
+    \rBelow you can see an overview of the subxiphoid view. Notice the landmarks.
+    """
+    
     
 }//End Enum
 
@@ -92,6 +117,9 @@ enum ViewDescription: String {
 
 //MARK: - Abnormal Enum
 enum AbnormalFindings: String {
+    
+    
+    // Right Upper Quadrant
     case RUQ = """
     Concerning findings in the RUQ should be consistent with solid organ injuries and/or hemoperitoneum.
     
@@ -104,6 +132,8 @@ enum AbnormalFindings: String {
     \rNegative FAST + Stable patient, low MOI -> Observe and consider serial exams to monitor.
     """
     
+    
+    // Left Upper Quadrant
     case LUQ = """
     Concerning findings in the LUQ should be consistent with solid organ injuries and/or hemoperitoneum.
     
@@ -115,5 +145,21 @@ enum AbnormalFindings: String {
     \rPositive FAST & Unstable patient -> OR
     \rNegative FAST + Stable patient, low MOI -> Observe and consider serial exams and monitor.
     """
-}
+
+    case Cardiac = """
+
+    Concerning findings in the cardiac views should be consistent with cardiac asystole, pericardial effusions, and hyperdynamic activity:
+    
+    1) Cardiac Asystole: Cardiac stand still. No activity present.
+    
+    2) Pericardial Effusion: Fluid in the pericardium will appear anechoic (jet black) between the RV and pericardium. As more fluid collects in the pericardium, it will fully surround all four chambers.
+    
+    \rNote: In those patients who are hypotensive with ventricular collapse consider a pericardiocentesis.
+"""
+
+
+    
+    
+    
+} // End of extension
 

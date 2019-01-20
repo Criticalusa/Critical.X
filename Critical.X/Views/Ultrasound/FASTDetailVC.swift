@@ -71,6 +71,8 @@ class FASTDetailVC: UIViewController {
         
     
         //MARK: - PASS DATA  TO CONTAINER VIEWS Images and Labels, The conditionals are containerview, segue.identifier and SETID. We only change this.
+        
+        //RUQ View
         if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer", setID == 0 {
             
             print("Set id is \(setID)")
@@ -91,7 +93,7 @@ class FASTDetailVC: UIViewController {
             container.descriptionStringFour = "Free fluid Paraglottic Gutter"
         }
         
-        //MARK: - WE ONLY CHANGE THE SET IT
+        //MARK: - WE ONLY CHANGE THE SET IT - LUQ View
         if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer", setID == 1 {
             
             print("Set id is \(setID)")
@@ -112,7 +114,41 @@ class FASTDetailVC: UIViewController {
             container.descriptionStringFour = "Free fluid paracolic gutter"
         } // End segue
         
+        //MARK: - Cardiac View
+        if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer", setID == 2 {
+            
+            print("Set id is \(setID)")
+            // Fist pitcure Reguar Image
+            container.imgOneString = UltraSoundImages.SubxyphoidImg.rawValue
+            container.descriptionStringOne = "Cardiac Anatomy"
+            
+            // Second Picture GIF Pathology
+            container.imgTwoString = UltraSoundImages.PericardialEffusion_GIF.rawValue
+            container.descriptionStringTwo = "Large Pericardial Effusion"
+            
+            // Second Picture Image Pathology with color
+            container.imgThreeString = UltraSoundImages.SubXiphoidEffusionImage.rawValue
+            container.descriptionStringThree = "Effusion with RV collapse"
+            
+            // Third Image Pathology GIF
+            container.imgFourString = UltraSoundImages.PLAX_EffusionGIF.rawValue
+            container.descriptionStringFour = "PLAX Pericardial Effusion"
+        } // End segue
         
+        
+        //MARK: - SEnds main Image to the FAST Image Pop View Controller
+        if let sendMain = segue.destination as? FAST_ImagePop, segue.identifier == "MainImg" {
+            // We set the ID as 15 so we can reference it in the FAST Imge pop VC
+            print("Set id is \(setID)")
+            // Fist pitcure Reguar Image
+            setID = 15
+            sendMain.imgOneString_pop = ultraSoundName
+            sendMain.imgTitle = fast_Title
+            
+            print("The USName is \(ultraSoundName) which was triggered")
+            
+        } // End segue
+
     }
 
 
