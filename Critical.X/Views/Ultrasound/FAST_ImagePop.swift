@@ -23,7 +23,6 @@ class FAST_ImagePop: UIViewController {
     @IBOutlet weak var imagePopTitle_Label: UILabel!
     @IBOutlet weak var imagePopImageView: UIImageView!
     
-    @IBOutlet weak var imgViewGif: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +37,7 @@ class FAST_ImagePop: UIViewController {
             print(" \(receivedFromSetID_pop) Rec ID")
 
         case 12:
-            imgViewGif.loadGif(name: imgTwoString_pop)
+            imagePopImageView.loadGif(name: imgTwoString_pop)
             imagePopTitle_Label.text = imgTitle
 
         case 13:
@@ -46,12 +45,12 @@ class FAST_ImagePop: UIViewController {
             imagePopTitle_Label.text = imgTitle
 
         case 14:
-            imgViewGif.loadGif(name: imgFourString_pop)
+            imagePopImageView.loadGif(name: imgFourString_pop)
             imagePopTitle_Label.text = imgTitle
 
             // Coming fromm the Main Views picrure on the detail screen
         case 15:
-            imgViewGif.loadGif(name: imgOneString_pop)
+            imagePopImageView.loadGif(name: imgOneString_pop)
             imagePopTitle_Label.text = imgTitle
         default:
             break

@@ -82,15 +82,15 @@ class FASTDetailVC: UIViewController {
             
             // Second Picture GIF
             container.imgTwoString = "Pathology-RUQ"
-            container.descriptionStringTwo = "Free fluid Morrison's Pouch"
+            container.descriptionStringTwo = "Free fluid Morison's Pouch"
             
             // Second Picture Image
             container.imgThreeString = UltraSoundImages.PathologyRUQ_Image.rawValue
-            container.descriptionStringThree = "Free fluid Morrison's Pouch"
+            container.descriptionStringThree = "Free fluid Morison's Pouch"
             
             // Third Image
             container.imgFourString = "Pathology_RUQ_ParaglottcFreeFluid"
-            container.descriptionStringFour = "Free fluid Paraglottic Gutter"
+            container.descriptionStringFour = "Free fluid paracolic gutter"
         }
         
         //MARK: - WE ONLY CHANGE THE SET IT - LUQ View
@@ -110,7 +110,7 @@ class FASTDetailVC: UIViewController {
             container.descriptionStringThree = "Perisplenic free fluid"
             
             // Third Image Pathology GIF
-            container.imgFourString = "Pathology_RUQ_ParaglottcFreeFluid"
+            container.imgFourString = UltraSoundImages.Pathology_LUQ_PosFAST2.rawValue
             container.descriptionStringFour = "Free fluid paracolic gutter"
         } // End segue
         
@@ -135,8 +135,50 @@ class FASTDetailVC: UIViewController {
             container.descriptionStringFour = "PLAX Pericardial Effusion"
         } // End segue
         
+        //MARK: - Thoracic container viewa
+        if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer", setID == 3 {
+            
+            print("Set id is \(setID)")
+            // Fist pitcure Reguar Image
+            container.imgOneString = UltraSoundImages.ThoracicAnatomy.rawValue
+            container.descriptionStringOne = "Thoracic Anatomy"
+            
+            // Second Picture GIF Pathology
+            container.imgTwoString = UltraSoundImages.NormalLungVPTX.rawValue
+            container.descriptionStringTwo = "Normal vs. PTX Lung"
+            
+            // Second Picture Image Pathology with color
+            container.imgThreeString = UltraSoundImages.MMode.rawValue
+            container.descriptionStringThree = "Seashore sign, M-Mode"
+            
+            // Third Image Pathology GIF
+            container.imgFourString = UltraSoundImages.LungPointSignGif.rawValue
+            container.descriptionStringFour = "Lung Point Sign"
+        } // End segue
         
-        //MARK: - SEnds main Image to the FAST Image Pop View Controller
+        //MARK: - Pelvic container viewa
+        if let container = segue.destination as? containerFastVC, segue.identifier == "TestContainer", setID == 4 {
+            
+            print("Set id is \(setID)")
+            // Fist pitcure Reguar Image
+            container.imgOneString = UltraSoundImages.ThoracicAnatomy.rawValue
+            container.descriptionStringOne = "Thoracic Anatomy"
+            
+            // Second Picture GIF Pathology
+            container.imgTwoString = UltraSoundImages.NormalLungVPTX.rawValue
+            container.descriptionStringTwo = "Normal vs. PTX Lung"
+            
+            // Second Picture Image Pathology with color
+            container.imgThreeString = UltraSoundImages.MMode.rawValue
+            container.descriptionStringThree = "Seashore sign, M-Mode"
+            
+            // Third Image Pathology GIF
+            container.imgFourString = UltraSoundImages.LungPointSignGif.rawValue
+            container.descriptionStringFour = "Lung Point Sign"
+        } // End segue
+        
+        
+        //MARK: - Sends main Image to the FAST Image Pop View Controller no setID
         if let sendMain = segue.destination as? FAST_ImagePop, segue.identifier == "MainImg" {
             // We set the ID as 15 so we can reference it in the FAST Imge pop VC
             print("Set id is \(setID)")

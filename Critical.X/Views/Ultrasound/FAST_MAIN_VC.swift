@@ -46,12 +46,10 @@ class FAST_MAIN_VC: UIViewController {
         // Pass the selected object to the new view controller.
         
         ///RUQ
+        // We are using 2 conditionals , SET ID and segue identifier. So one segue, multiple views.
         if segue.identifier == "Morrisons" {
-            // We segue to MiniDrugVC and pass the infomation from which button is pressed
             
          
-
-            
             if let morrisonsViewController = segue.destination as? FASTDetailVC {
                 
                 // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
@@ -61,7 +59,7 @@ class FAST_MAIN_VC: UIViewController {
                 //Headings and Titles
                 morrisonsViewController.fast_Title = "Morrisons Pouch"
                
-                morrisonsViewController.fast_description = ViewDescription.RUQ_morrisonsTextDescription.rawValue
+                morrisonsViewController.fast_description = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
                
                 morrisonsViewController.abnormalFindingsonScan = AbnormalFindings.RUQ.rawValue
                
@@ -82,7 +80,6 @@ class FAST_MAIN_VC: UIViewController {
         
         // Left Upper Quadrant
         if segue.identifier == "LUQ" {
-            // We segue to MiniDrugVC and pass the infomation from which button is pressed
             
             // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
             setID = 1
@@ -95,7 +92,7 @@ class FAST_MAIN_VC: UIViewController {
                 LUQ.fast_Title = "Perisplenic View - LUQ"
                                 
                 //Headings and Titles
-                LUQ.fast_description = ViewDescription.leftUpperQuadrant.rawValue
+                LUQ.fast_description = UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue
                 
                
                 LUQ.probeTitle = "3.5 Htz"
@@ -117,11 +114,10 @@ class FAST_MAIN_VC: UIViewController {
         
         // Cardiac Views
         if segue.identifier == "Cardiac" {
-            // We segue to MiniDrugVC and pass the infomation from which button is pressed
             
             // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
             setID = 2
-            print("SetID was registered at \(setID). ACTIVATE LUQ")
+            print("SetID was registered at \(setID). ACTIVATE Cardiac")
             
             
             if let Cardiac = segue.destination as? FASTDetailVC {
@@ -130,7 +126,7 @@ class FAST_MAIN_VC: UIViewController {
                 Cardiac.fast_Title = "Cardiac Views"
                 
                 //Headings and Titles
-                Cardiac.fast_description = ViewDescription.CardaicView.rawValue
+                Cardiac.fast_description = UltraSound_AcousticViewDescription.CardaicView.rawValue
                 
                 
                 Cardiac.probeTitle = "Cardiac Probe"
@@ -140,7 +136,7 @@ class FAST_MAIN_VC: UIViewController {
                 Cardiac.initialImageString = UltraSoundImages.CardiacProbe.rawValue
                 
                 // Ultrasound probe position
-                Cardiac.ultraSoundName = UltraSoundImages.CardiacSubXiphoidViewGif.rawValue
+                Cardiac.ultraSoundName = UltraSoundImages.subXyphoidGif.rawValue
                 
                 // Abnormal Findings
                 Cardiac.abnormalFindingsonScan = AbnormalFindings.Cardiac.rawValue
@@ -149,7 +145,73 @@ class FAST_MAIN_VC: UIViewController {
             }
         }
         
+        // Thoracic Views
+        if segue.identifier == "Thoracic" {
+            
+            // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
+            setID = 3
+            print("SetID was registered at \(setID). ACTIVATE Thoracic")
+            
+            
+            if let thoracic = segue.destination as? FASTDetailVC {
+                
+                //Headings and Titles
+                thoracic.fast_Title = "Anterior Thoracic Views"
+                
+                //Headings and Titles
+                thoracic.fast_description = UltraSound_AcousticViewDescription.Thoracic.rawValue
+                
+                
+                thoracic.probeTitle = "Linear "
+                
+                // Image Views
+                // First image
+                thoracic.initialImageString = UltraSoundImages.ThoracicProbe.rawValue
+                
+                // Ultrasound first GIF
+                thoracic.ultraSoundName = UltraSoundImages.ABLinesThoracic
+                    .rawValue
+                
+                // Abnormal Findings
+                thoracic.abnormalFindingsonScan = AbnormalFindings.Thoracic.rawValue
+                
+                print("Thoracic view was selected")
+            }
+        }
         
+        // Pelvic Views
+        if segue.identifier == "Thoracic" {
+            
+            // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
+            setID = 4
+            print("SetID was registered at \(setID). ACTIVATE Thoracic")
+            
+            
+            if let thoracic = segue.destination as? FASTDetailVC {
+                
+                //Headings and Titles
+                thoracic.fast_Title = "Anterior Thoracic Views"
+                
+                //Headings and Titles
+                thoracic.fast_description = UltraSound_AcousticViewDescription.Thoracic.rawValue
+                
+                
+                thoracic.probeTitle = "Linear "
+                
+                // Image Views
+                // First image
+                thoracic.initialImageString = UltraSoundImages.ThoracicProbe.rawValue
+                
+                // Ultrasound first GIF
+                thoracic.ultraSoundName = UltraSoundImages.ABLinesThoracic
+                    .rawValue
+                
+                // Abnormal Findings
+                thoracic.abnormalFindingsonScan = AbnormalFindings.Thoracic.rawValue
+                
+                print("Thoracic view was selected")
+            }
+        }
         
         
 
