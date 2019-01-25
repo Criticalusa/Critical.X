@@ -37,6 +37,8 @@ class FAST_MAIN_VC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
    
+  
+   
     
     //MARK: - Navigation
     
@@ -52,6 +54,8 @@ class FAST_MAIN_VC: UIViewController {
          
             if let morrisonsViewController = segue.destination as? FASTDetailVC {
                 
+              
+            
                 // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
                 setID = 0
                 print("SetID was registered at \(setID) ACTIVATE RUQ")
@@ -59,11 +63,13 @@ class FAST_MAIN_VC: UIViewController {
                 //Headings and Titles
                 morrisonsViewController.fast_Title = "Morrisons Pouch"
                
-                morrisonsViewController.fast_description = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
+                morrisonsViewController.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue)
                
-                morrisonsViewController.abnormalFindingsonScan = AbnormalFindings.RUQ.rawValue
+              
+                morrisonsViewController.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.RUQ.rawValue)
                
                 morrisonsViewController.probeTitle = "3.5 Htz"
+                
                 
                 // Image Views
                 // Ultrasound probe position
@@ -92,7 +98,7 @@ class FAST_MAIN_VC: UIViewController {
                 LUQ.fast_Title = "Perisplenic View - LUQ"
                                 
                 //Headings and Titles
-                LUQ.fast_description = UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue
+                LUQ.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue)
                 
                
                 LUQ.probeTitle = "3.5 Htz"
@@ -105,7 +111,7 @@ class FAST_MAIN_VC: UIViewController {
                 LUQ.ultraSoundName = UltraSoundImages.LUQ_SweepThrough.rawValue
                 
                 // Abnormal Findings
-                LUQ.abnormalFindingsonScan = AbnormalFindings.LUQ.rawValue
+                LUQ.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.LUQ.rawValue)
                 
                 print("LUQ View was selected")
             }
@@ -126,7 +132,7 @@ class FAST_MAIN_VC: UIViewController {
                 Cardiac.fast_Title = "Cardiac Views"
                 
                 //Headings and Titles
-                Cardiac.fast_description = UltraSound_AcousticViewDescription.CardaicView.rawValue
+                Cardiac.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.CardaicView.rawValue)
                 
                 
                 Cardiac.probeTitle = "Cardiac Probe"
@@ -139,7 +145,7 @@ class FAST_MAIN_VC: UIViewController {
                 Cardiac.ultraSoundName = UltraSoundImages.subXyphoidGif.rawValue
                 
                 // Abnormal Findings
-                Cardiac.abnormalFindingsonScan = AbnormalFindings.Cardiac.rawValue
+                Cardiac.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.Cardiac.rawValue)
                 
                 print("Cardiac was selected")
             }
@@ -156,10 +162,10 @@ class FAST_MAIN_VC: UIViewController {
             if let thoracic = segue.destination as? FASTDetailVC {
                 
                 //Headings and Titles
-                thoracic.fast_Title = "Anterior Thoracic Views"
+                thoracic.fast_Title = "Anterior Thoracic View"
                 
                 //Headings and Titles
-                thoracic.fast_description = UltraSound_AcousticViewDescription.Thoracic.rawValue
+                thoracic.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.Thoracic.rawValue)
                 
                 
                 thoracic.probeTitle = "Linear "
@@ -173,49 +179,169 @@ class FAST_MAIN_VC: UIViewController {
                     .rawValue
                 
                 // Abnormal Findings
-                thoracic.abnormalFindingsonScan = AbnormalFindings.Thoracic.rawValue
+                thoracic.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.Thoracic.rawValue)
                 
                 print("Thoracic view was selected")
             }
         }
         
         // Pelvic Views
-        if segue.identifier == "Thoracic" {
+        if segue.identifier == "Pelvic" {
             
             // We use this ID to set and number, then reference the number to see if its set so we can reference it in the containerViewController
             setID = 4
-            print("SetID was registered at \(setID). ACTIVATE Thoracic")
+            print("SetID was registered at \(setID). ACTIVATE Pelvic")
             
             
             if let thoracic = segue.destination as? FASTDetailVC {
                 
                 //Headings and Titles
-                thoracic.fast_Title = "Anterior Thoracic Views"
+                thoracic.fast_Title = "Pelvic Views"
                 
                 //Headings and Titles
-                thoracic.fast_description = UltraSound_AcousticViewDescription.Thoracic.rawValue
+                thoracic.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.Pelvic.rawValue)
                 
                 
                 thoracic.probeTitle = "Linear "
                 
-                // Image Views
                 // First image
-                thoracic.initialImageString = UltraSoundImages.ThoracicProbe.rawValue
+                thoracic.initialImageString = UltraSoundImages.PelvicProbe.rawValue
                 
                 // Ultrasound first GIF
-                thoracic.ultraSoundName = UltraSoundImages.ABLinesThoracic
+                thoracic.ultraSoundName = UltraSoundImages.Pelvic_Normal_Male_FemaleScan
                     .rawValue
                 
                 // Abnormal Findings
-                thoracic.abnormalFindingsonScan = AbnormalFindings.Thoracic.rawValue
+                thoracic.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.Pelvic.rawValue)
                 
-                print("Thoracic view was selected")
+                print("Pelvic view was selected")
             }
         }
-        
-        
 
     } // End Segue
-    }// End Class
+   
+}// End Class
+
+
+
+extension FAST_MAIN_VC {
+    // Changing the detail attribute
+    
+    //MARK: - RUQ
+    
+    
+    
+    // Heres the function/ Takes a string and returns atrributed String.
+    func changeAttribute_RUQ (text: String) -> NSAttributedString {
+        
+        // 1 set the changed text to the function
+        let contextResult = text
+        // 2 Set the attributed text
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: contextResult)
+        // 3 global vairable to set the seleted text to
+        var changedString = String()
+        
+        //4 Delcare the differenct strings we want to single out to be highlighted
+        
+        //4A
+        let HPRR = "Hepatorenal Recess - Morison's Pouch"
+//        let Inferior = "Inferior hepatic edge/inferior pole of kidney"
+//        let diaphragm = "The diaphragm"
+//        let pleural = "Pleural Space"
+//        let Technique = "Technique:"
+//        let belowText = "Below you can see a full sweep of the RUQ. Notice the landmarks."
+//        let probe = "Probe Indicator:"
+//
+//
+//
+//        if text.contains(HPRR){
+//            changedString = HPRR
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: "Hepatorenal Recess - Morison's Pouch")
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+//
+//
+//        if text.contains(Inferior){
+//            changedString = Inferior
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+//
+//
+//        if text.contains(diaphragm){
+//            changedString = diaphragm
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+//
+//
+//
+//        if text.contains(pleural){
+//            changedString = pleural
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: changedString)
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Medium", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+//
+//
+//        if text.contains(Technique){
+//            changedString = Technique
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+//
+//        if text.contains(belowText){
+//            changedString = belowText
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 0.920953393, green: 0.447560966, blue: 0.4741248488, alpha: 1), subString: changedString)
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+//
+//        if text.contains(probe){
+//            changedString = probe
+//            // Set the string to the changed String so its set at the end
+//            // This is the color of the singled out text.
+//            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9843137255, blue: 0.6588235294, alpha: 1), subString: changedString)
+//
+//            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+//            // Change the font of the string
+//            attributedText.apply(font: openSansFont!, subString: changedString)
+//        }
+                attributedText.apply(color: #colorLiteral(red: 1, green: 0.9843137255, blue: 0.6588235294, alpha: 1), subString: "Hepatorenal Recess - Morison's Pouch")
+
+        
+        
+        // Return all the changes that we created as a NSAttributed String
+        return attributedText
+    }
+}
 
 

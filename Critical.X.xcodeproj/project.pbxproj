@@ -218,6 +218,12 @@
 		C4A776E12008E89A002EEC86 /* ChestXray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A776E02008E89A002EEC86 /* ChestXray.swift */; };
 		C4A77721200932E2002EEC86 /* IVDripRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A77720200932E1002EEC86 /* IVDripRate.swift */; };
 		C4A7775F20095EA3002EEC86 /* FeNa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7775E20095EA3002EEC86 /* FeNa.swift */; };
+		C4BA26B721F779F500677ED6 /* Pelvic_NormalMale.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4BA26B521F779F400677ED6 /* Pelvic_NormalMale.gif */; };
+		C4BA26B821F779F500677ED6 /* Pelvic-NormalFemale.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4BA26B621F779F500677ED6 /* Pelvic-NormalFemale.gif */; };
+		C4BA26BA21F89A2C00677ED6 /* FAST_ChangeAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA26B921F89A2C00677ED6 /* FAST_ChangeAttributes.swift */; };
+		C4BA26BC21FB50CD00677ED6 /* Pelvic-NormalMaleAndFemale.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4BA26BB21FB50CC00677ED6 /* Pelvic-NormalMaleAndFemale.gif */; };
+		C4BA26BE21FB596700677ED6 /* Pelvic_PosFast1.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4BA26BD21FB596600677ED6 /* Pelvic_PosFast1.gif */; };
+		C4BA26C021FB60FC00677ED6 /* Pelvic_Pos_Fast_Female.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4BA26BF21FB60FC00677ED6 /* Pelvic_Pos_Fast_Female.gif */; };
 		C4BC94EB1FFFEB9200F06E82 /* WinterFormulaMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */; };
 		C4C25EF21FF9099600C5CD42 /* FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EBF1FF9099500C5CD42 /* FlatColors.swift */; };
 		C4C25EF51FF9099600C5CD42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EC41FF9099500C5CD42 /* ViewController.swift */; };
@@ -644,6 +650,12 @@
 		C4A776E02008E89A002EEC86 /* ChestXray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestXray.swift; sourceTree = "<group>"; };
 		C4A77720200932E1002EEC86 /* IVDripRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVDripRate.swift; sourceTree = "<group>"; };
 		C4A7775E20095EA3002EEC86 /* FeNa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeNa.swift; sourceTree = "<group>"; };
+		C4BA26B521F779F400677ED6 /* Pelvic_NormalMale.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pelvic_NormalMale.gif; sourceTree = "<group>"; };
+		C4BA26B621F779F500677ED6 /* Pelvic-NormalFemale.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Pelvic-NormalFemale.gif"; sourceTree = "<group>"; };
+		C4BA26B921F89A2C00677ED6 /* FAST_ChangeAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAST_ChangeAttributes.swift; sourceTree = "<group>"; };
+		C4BA26BB21FB50CC00677ED6 /* Pelvic-NormalMaleAndFemale.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Pelvic-NormalMaleAndFemale.gif"; sourceTree = "<group>"; };
+		C4BA26BD21FB596600677ED6 /* Pelvic_PosFast1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pelvic_PosFast1.gif; sourceTree = "<group>"; };
+		C4BA26BF21FB60FC00677ED6 /* Pelvic_Pos_Fast_Female.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pelvic_Pos_Fast_Female.gif; sourceTree = "<group>"; };
 		C4BC94EA1FFFEB9200F06E82 /* WinterFormulaMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterFormulaMain.swift; sourceTree = "<group>"; };
 		C4C25EBF1FF9099500C5CD42 /* FlatColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatColors.swift; sourceTree = "<group>"; };
 		C4C25EC41FF9099500C5CD42 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1883,6 +1895,7 @@
 				C488C84621EBB23C00A98124 /* ContainerFastVC.swift */,
 				C42D0C5F21F4F3F500A221CC /* FAST_ImagePop.swift */,
 				C465684421F0C1280010BA20 /* FAST_Info.swift */,
+				C4BA26B921F89A2C00677ED6 /* FAST_ChangeAttributes.swift */,
 				C4F188D121F3D2F4001D1CA0 /* Ultrasound GIF */,
 			);
 			path = Ultrasound;
@@ -1966,21 +1979,26 @@
 		C4F188D121F3D2F4001D1CA0 /* Ultrasound GIF */ = {
 			isa = PBXGroup;
 			children = (
-				C42D0C5721F4CCE700A221CC /* Cardiac-SubxiphoidGIF.gif */,
 				C4F188CB21F34BA4001D1CA0 /* Pathology-RUQ.gif */,
 				C4F188CD21F37327001D1CA0 /* Pathology_RUQ_ParaglottcFreeFluid.gif */,
-				C488C84221EAB3AE00A98124 /* Heart_Parasternal.gif */,
 				C4DFCAB921EF605800D66101 /* SweepThroughRUQ.gif */,
 				C4F188CF21F3D066001D1CA0 /* LUQ_SweepThrough.gif */,
 				C4F188D221F3FED2001D1CA0 /* LUQ_PosFast1.gif */,
 				C42D0C6121F5E77800A221CC /* LUQ_PosFast2.gif */,
 				C42D0C5B21F4DE1800A221CC /* Cardiac_LG_Effusion_GIF.gif */,
+				C42D0C5721F4CCE700A221CC /* Cardiac-SubxiphoidGIF.gif */,
+				C4BA26BF21FB60FC00677ED6 /* Pelvic_Pos_Fast_Female.gif */,
+				C488C84421EAB40700A98124 /* Heart_subxyphoid.gif */,
+				C488C84221EAB3AE00A98124 /* Heart_Parasternal.gif */,
 				C42D0C5D21F4EBC500A221CC /* PLAX_EffusionGIF_Annotated.gif */,
+				C4BA26BD21FB596600677ED6 /* Pelvic_PosFast1.gif */,
 				C42D0C6A21F72EBC00A221CC /* LungPointSign.gif */,
 				C42D0C6621F62BD300A221CC /* A-BLines_Thorax.gif */,
 				C42D0C6821F6A75C00A221CC /* LungSlidingNormalVsPTX.gif */,
 				C42D0C6421F5EDC200A221CC /* Cardiac-SubxiphoidGIF_ANNOTATED.gif */,
-				C488C84421EAB40700A98124 /* Heart_subxyphoid.gif */,
+				C4BA26B521F779F400677ED6 /* Pelvic_NormalMale.gif */,
+				C4BA26B621F779F500677ED6 /* Pelvic-NormalFemale.gif */,
+				C4BA26BB21FB50CC00677ED6 /* Pelvic-NormalMaleAndFemale.gif */,
 			);
 			path = "Ultrasound GIF";
 			sourceTree = "<group>";
@@ -2209,6 +2227,7 @@
 				C415BDDB20EE8EA7003A2406 /* RSI.storyboard in Resources */,
 				C418AC2C200BAB07001EBB04 /* yes.wav in Resources */,
 				C418AC5E200BAB07001EBB04 /* habloPoco.wav in Resources */,
+				C4BA26C021FB60FC00677ED6 /* Pelvic_Pos_Fast_Female.gif in Resources */,
 				C430D2E420EEAE0400A99985 /* CheckMyDrip.storyboard in Resources */,
 				C418AC2E200BAB07001EBB04 /* notSerious.wav in Resources */,
 				C430D2CD20EE97DD00A99985 /* 02TankCalculator.storyboard in Resources */,
@@ -2223,6 +2242,7 @@
 				C418AC66200BAB07001EBB04 /* deepbreath.wav in Resources */,
 				C418AC56200BAB07001EBB04 /* takevital.wav in Resources */,
 				C4C25F001FF9099600C5CD42 /* 2ndDegreeTypeII.v2.gif in Resources */,
+				C4BA26BC21FB50CD00677ED6 /* Pelvic-NormalMaleAndFemale.gif in Resources */,
 				C418AC2F200BAB07001EBB04 /* everyWillBeFine.wav in Resources */,
 				C42D0C6221F5E77800A221CC /* LUQ_PosFast2.gif in Resources */,
 				C418AC65200BAB07001EBB04 /* speakSlowly.wav in Resources */,
@@ -2245,11 +2265,13 @@
 				C418AC3C200BAB07001EBB04 /* takebreath.wav in Resources */,
 				C418AC45200BAB07001EBB04 /* vomit.wav in Resources */,
 				C4C25F0E1FF9099600C5CD42 /* VTach.gif in Resources */,
+				C4BA26B721F779F500677ED6 /* Pelvic_NormalMale.gif in Resources */,
 				79E2EF4F1F9CC18000701ACC /* LaunchScreen.storyboard in Resources */,
 				C418AC22200BAB07001EBB04 /* needwater.wav in Resources */,
 				C418AC62200BAB07001EBB04 /* bePatient.wav in Resources */,
 				C418AC4D200BAB07001EBB04 /* paramedic.wav in Resources */,
 				C4C25F0D1FF9099600C5CD42 /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */,
+				C4BA26B821F779F500677ED6 /* Pelvic-NormalFemale.gif in Resources */,
 				C418AC48200BAB07001EBB04 /* allergies.wav in Resources */,
 				79E2EF4C1F9CC18000701ACC /* Assets.xcassets in Resources */,
 				C4C25F0C1FF9099600C5CD42 /* VentricularFibrillation.gif in Resources */,
@@ -2266,6 +2288,7 @@
 				C42D0C6521F5EDC200A221CC /* Cardiac-SubxiphoidGIF_ANNOTATED.gif in Resources */,
 				C430D2E720EEAF4600A99985 /* LabValue.storyboard in Resources */,
 				C4C25F0B1FF9099600C5CD42 /* 2ndDegreeTypeII.gif in Resources */,
+				C4BA26BE21FB596700677ED6 /* Pelvic_PosFast1.gif in Resources */,
 				C4F188CC21F34BA5001D1CA0 /* Pathology-RUQ.gif in Resources */,
 				C4D062C021EA285D00F2B84E /* Ultrasound.storyboard in Resources */,
 				C418AC38200BAB07001EBB04 /* howDoYouFeel.wav in Resources */,
@@ -2465,6 +2488,7 @@
 				C436DD6A20F8DCCC00F03104 /* SpecialThanks.swift in Sources */,
 				C4F8160720FDFC9600D41CFB /* AirwayExtensions.swift in Sources */,
 				C45DE22220F42D37001F3884 /* MedCalulationsTableViewController.swift in Sources */,
+				C4BA26BA21F89A2C00677ED6 /* FAST_ChangeAttributes.swift in Sources */,
 				C410030221B840B900B3D21F /* AttributedText.swift in Sources */,
 				C41002F521B83C5F00B3D21F /* ResultViewController.swift in Sources */,
 				C470BAFD1FFAF4BC0085F0FF /* UrineOutput.swift in Sources */,
