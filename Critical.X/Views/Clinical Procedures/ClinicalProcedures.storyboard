@@ -122,6 +122,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0sP-Ha-DU1" kind="showDetail" id="zas-it-JbS"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="tsN-84-uL2" detailTextLabel="SUQ-B8-fv0" rowHeight="81" style="IBUITableViewCellStyleSubtitle" id="y8F-Eu-6PA">
                                         <rect key="frame" x="0.0" y="345.5" width="320" height="81"/>
@@ -167,13 +170,21 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBa-WK-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-618.75" y="-1050"/>
+            <point key="canvasLocation" x="-773" y="-1035"/>
+        </scene>
+        <!--CentralLine-->
+        <scene sceneID="VCn-3e-2Vn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CentralLine" id="0sP-Ha-DU1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWH-x5-kfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="-1067"/>
         </scene>
         <!--Ultrasound-->
         <scene sceneID="ZVh-et-HRY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QUm-ZB-lRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Ultrasound" id="2a0-lC-z4I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUm-ZB-lRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-35" y="-914"/>
         </scene>
