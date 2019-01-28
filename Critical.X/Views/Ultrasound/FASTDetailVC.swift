@@ -37,20 +37,12 @@ class FASTDetailVC: UIViewController {
     var abnormalFindingsonScan = NSAttributedString()
     
     // Description of the scan
-    var descriptionString = NSAttributedString()
+    var descriptionString = String()
 
    
-    func setRUQ()
-    {
-        let text = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
-        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
-        attributedText.apply(color: Colorify.Alizarin, subString: "Probe")
-        attributedText.apply(color: Colorify.Alizarin, onRange: NSMakeRange(5, 4))
-        attributedText.apply(color: .purple, subString: "Indicator")
-        attributedText.apply(color: Colorify.Amber, subString: "Cephalad")
-        self.detailDescription.attributedText = attributedText
-    }
+   
     
+  
     
     @IBAction func dismissmyView(_ sender: Any) {
             
@@ -59,12 +51,65 @@ class FASTDetailVC: UIViewController {
             
         }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        switch setID {
+        case 0:
+            setRUQ()
+            print("setRUQ attribute switch statement func was set. setID received was \(setID)")
+        case 1:
+            setLUQ()
+            print("setLUQ attribute switch statement func was set. setID received was \(setID)")
+        case 2:
+            setCardiac()
+            print("setCardiac attribute switch statement func was set. setID received was \(setID)")
+            
+        case 3:
+            setThoracic()
+            print("setThoracic attribute switch statement func was set. setID received was \(setID)")
+            
+        case 4:
+            setPelvic()
+            print("setPelvic attribute switch statement func was set. setID received was \(setID)")
+            
+            
+        default:
+            detailDescription.text = descriptionString
+        }
+        
+    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
 
-      updatePassedData()
-
+        title_Label.text = fast_Title
+        
+        initialUSImage.loadGif(name: ultraSoundName)
+        
+        abnormalFindings.attributedText = abnormalFindingsonScan
+        
+         detailDescription.text = descriptionString
+        
+        ultrasoundImageView.image = UIImage(named: initialImageString)
+        
+        probeHertz.text = probeTitle
+        
+        // Im setting the description with the corresponding setID here because if they dont load right away in the ViewDidload then there will be a delay in loading the description.
+        switch setID {
+        case 0:
+            descriptionString = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
+        case 1:
+            descriptionString = UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue
+        case 2:
+            descriptionString = UltraSound_AcousticViewDescription.CardaicView.rawValue
+        case 3:
+            descriptionString = UltraSound_AcousticViewDescription.Thoracic.rawValue
+        case 4:
+            descriptionString = UltraSound_AcousticViewDescription.Pelvic.rawValue
+            
+        
+        default:
+            break
+        }
     }
     
   
@@ -74,22 +119,13 @@ class FASTDetailVC: UIViewController {
     
         // Set the outlets to the passed strings.
         
-        title_Label.text = fast_Title
         
-        initialUSImage.loadGif(name: ultraSoundName)
-        
-        abnormalFindings.attributedText = abnormalFindingsonScan
-        
-        detailDescription.attributedText = descriptionString
-
-        ultrasoundImageView.image = UIImage(named: initialImageString)
-        
-        probeHertz.text = probeTitle
         
         
     }
+    
 
-
+ 
     // IMAGES THAT WILL BE PASSED THROUGHT TO THE CONTAINER VIEW
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -240,6 +276,508 @@ class FASTDetailVC: UIViewController {
         } // End segue
 
     }
+    func setRUQ()
+    {
+        let text = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
+        
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
+        
+        attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: "most sensitive region")
+        
+        attributedText.apply(font: UIFont(name: "HelveticaNeue-Bold", size: 15)!, subString: "most sensitive region")
+
+        attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: "Probe Indicator")
+        
+        attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: "Hepatorenal Recess")
+        
+        attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: "Inferior hepatic edge/inferior pole of kidney")
+        
+        attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: "The diaphragm")
+        
+        attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "Technique")
+
+        attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: "Pleural Space")
+        
+        attributedText.apply(color: #colorLiteral(red: 0.920953393, green: 0.447560966, blue: 0.4741248488, alpha: 1), subString: "Morisons Pouch")
+        
+        attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: "lower edge and tip of the liver")
+        
+        attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: "Below you can see a full sweep of the RUQ. Notice the landmarks.")
+        self.detailDescription.attributedText = attributedText
+    }
+
+    func setLUQ() {
+    
+        let text = UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue
+        
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
+        
+        var changedString = String()
+        
+        // What text to change
+        let probe = "Probe Indicator"
+        let technique = "Technique"
+        let koeller = "Koller's pouch"
+        let sri = "Spenorenal Interface"
+        let inferior = "Inferior tip of the spleen"
+        let diaphragm = "The diaphragm, above and below"
+        let itslenn = "Inferior tip of the spleen"
+        let pole = "Inferior Pole of the Left Kidney"
+        let sweep = "Below you can see a full sweep of the LUQ. Notice the landmarks."
+        let hyperechoicline = "hyperechoic line"
+        let subfrenic = "subphrenic space"
+        let anechoic = "anechoic (jet black)"
+        if text.contains(probe){
+            changedString = probe
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+
+        if text.contains(technique){
+            changedString = technique
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(koeller){
+            changedString = koeller
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(sri){
+            changedString = sri
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(inferior){
+            changedString = inferior
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(diaphragm){
+            changedString = diaphragm
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(itslenn){
+            changedString = itslenn
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(pole){
+            changedString = pole
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(sweep){
+            changedString = sweep
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(hyperechoicline){
+            changedString = hyperechoicline
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(subfrenic){
+            changedString = subfrenic
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(anechoic){
+            changedString = anechoic
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        self.detailDescription.attributedText = attributedText
+
+    }
+
+    
+    func setCardiac() {
+    
+    
+        let text = UltraSound_AcousticViewDescription.CardaicView.rawValue
+        
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
+        
+        var changedString = String()
+        
+        // What text to change
+        let probe = "Probe Indicator"
+        let technique = "Technique"
+        let subxy = "Subxyphoid"
+        let plax = "Parasternal Long Axis (PLAX)"
+        let psax = "Parasternal Short Axis (PSAX)"
+       let below = "Below you can see an overview of the subxiphoid view. Notice the landmarks."
+        
+        
+        if text.contains(probe){
+            changedString = probe
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(technique){
+            changedString = technique
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+    
+        if text.contains(subxy){
+            changedString = subxy
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(plax){
+            changedString = plax
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.920953393, green: 0.447560966, blue: 0.4741248488, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(psax){
+            changedString = psax
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(below){
+            changedString = below
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        self.detailDescription.attributedText = attributedText
+
+    }
+ 
+    func setThoracic() {
+        
+        
+        let text = UltraSound_AcousticViewDescription.Thoracic.rawValue
+        
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
+        
+        var changedString = String()
+        
+        // What text to change
+        let probe = "Probe Indicator"
+        let technique = "Technique"
+        let anterior = "Anterior Chest"
+        let lateral = "Lateral Chest Wall"
+        let costrophrenic = "Costophrenic Angle"
+        let alines = "A-line lines"
+        let lungsliding = "lung sliding"
+        let batWing = "\"bat wing\" sign"
+        
+        if text.contains(probe){
+            changedString = probe
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+    
+    
+        if text.contains(technique){
+            changedString = technique
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color:#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1) , subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(anterior){
+            changedString = anterior
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(lateral){
+            changedString = lateral
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(costrophrenic){
+            changedString = costrophrenic
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(costrophrenic){
+            changedString = costrophrenic
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(alines){
+            changedString = alines
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(lungsliding){
+            changedString = lungsliding
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(batWing){
+            changedString = batWing
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        
+        self.detailDescription.attributedText = attributedText
+
+}
+
+    func setPelvic() {
+        
+        let text = UltraSound_AcousticViewDescription.Pelvic.rawValue
+        
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
+        
+        var changedString = String()
+        
+        // What text to change
+        let probe = "Probe Indicator"
+        let technique = "Technique"
+        let long = "Longitudinal (Cephalad)"
+        let transverse = "Transverse"
+        let pouch = "pouch of douglas"
+        let rectovesical = "rectovesical pouch"
+        let culdesac = "pelvic Cul de Sac"
+        
+        if text.contains(probe){
+            changedString = probe
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(technique){
+            changedString = technique
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(long){
+            changedString = long
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9215686275, blue: 0.6745098039, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(transverse){
+            changedString = transverse
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9215686275, blue: 0.6745098039, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(pouch){
+            changedString = pouch
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9215686275, blue: 0.6745098039, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(rectovesical){
+            changedString = rectovesical
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9215686275, blue: 0.6745098039, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(culdesac){
+            changedString = culdesac
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9215686275, blue: 0.6745098039, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+      
+        
+        self.detailDescription.attributedText = attributedText
+        
+        
+    }
+
 
 
 } //end of the class

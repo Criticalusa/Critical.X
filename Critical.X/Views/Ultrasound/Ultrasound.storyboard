@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H6a-LK-6dL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H6a-LK-6dL">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -129,7 +129,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvL-Jn-hFg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
@@ -144,11 +144,11 @@
                                                 <color key="textColor" name="Cool Mint"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extened Focused Assessment with Sonography for Trauma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfw-th-nUZ" customClass="AKLabel" customModule="AKLabel">
-                                                <rect key="frame" x="8" y="98" width="303" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extened - Focused Assessment with Sonography for Trauma" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfw-th-nUZ" customClass="AKLabel" customModule="AKLabel">
+                                                <rect key="frame" x="18" y="93" width="285" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="Midnight"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-rx-gIc">
@@ -170,54 +170,67 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xV-Xd-WXd">
-                                                <rect key="frame" x="14" y="119" width="297" height="242"/>
+                                                <rect key="frame" x="22" y="119" width="277" height="242"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="297" id="0Xf-Ab-bkr"/>
+                                                    <constraint firstAttribute="width" constant="277" id="0Xf-Ab-bkr"/>
                                                     <constraint firstAttribute="height" constant="242" id="xfd-Va-ay9"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">The E-FAST exam is a multi-view examination performed on trauma patients in the intra-abdominal space and heart to determine the presence of free fluid within the peritoneal and pericardial spaces.
 
-Traditionally, five acoustic windows make up the exam. </string>
+</string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Traditionally, five acoustic windows make up the exam. ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-CondensedBlack"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
                                                         <string key="content" base64-UTF8="YES">
-Cgo
+Cg
 </string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <string key="content">1- RUQ -Morrisons pouch
+                                                        <string key="content" base64-UTF8="YES">
+Cg
 </string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.99904876947402954" green="0.98759812116622925" blue="0.47492319345474243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment>
-                                                        <string key="content">2- Anterior Thoracic View
-</string>
+                                                    <fragment content="1-">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
+                                                            <color key="NSColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="3- LUQ - Splenorenal">
+                                                    <fragment content=" ">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="RUQ -Morrisons pouch">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -226,15 +239,48 @@ Cgo
 Cg
 </string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="2- Anterior Thoracic View">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+3- </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="LUQ - Splenorenal">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="4- Subxyphoid four chamber view">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.89126098155975342" green="0.3545563817024231" blue="0.39968371391296387" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
+                                                            <color key="NSColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -243,15 +289,22 @@ Cg
 Cg
 </string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
+                                                            <color key="NSColor" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="5- Pelvic">
+                                                    <fragment content="5- ">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="13" name="HelveticaNeue-Medium"/>
+                                                            <color key="NSColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Pelvic">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -259,21 +312,26 @@ Cg
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGy-9q-jYV">
-                                                <rect key="frame" x="35" y="366" width="250" height="52"/>
+                                                <rect key="frame" x="60" y="366" width="200" height="52"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="wSm-j1-JjB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="RUQ- Perihepatic">
-                                                    <color key="titleColor" red="0.62746313379999996" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" name="Silver"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="plU-8o-VO6" kind="showDetail" identifier="Morrisons" id="gRF-Fc-x2x"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q0-tU-Qrg">
-                                                <rect key="frame" x="35" y="439" width="250" height="52"/>
+                                                <rect key="frame" x="60" y="439" width="200" height="52"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="JU2-pE-OZq"/>
@@ -282,12 +340,17 @@ Cg
                                                 <state key="normal" title="Anterior Thoracic">
                                                     <color key="titleColor" name="Cool Mint"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="plU-8o-VO6" kind="showDetail" identifier="Thoracic" id="6yj-uW-z1S"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQL-zb-UNf">
-                                                <rect key="frame" x="35" y="515" width="250" height="52"/>
+                                                <rect key="frame" x="60" y="515" width="200" height="52"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="ZY4-5w-O4K"/>
@@ -296,12 +359,17 @@ Cg
                                                 <state key="normal" title="LUQ - Splenorenal">
                                                     <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="plU-8o-VO6" kind="showDetail" identifier="LUQ" id="c0L-HH-nh3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qv-gr-p4V">
-                                                <rect key="frame" x="35" y="595" width="250" height="52"/>
+                                                <rect key="frame" x="60" y="595" width="200" height="52"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="Stw-fx-Sqx"/>
@@ -310,21 +378,31 @@ Cg
                                                 <state key="normal" title="Cardiac Views">
                                                     <color key="titleColor" red="0.8912609816" green="0.35455638169999998" blue="0.39968371390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="plU-8o-VO6" kind="showDetail" identifier="Cardiac" id="2IJ-Cy-Ay7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edW-TO-jdy">
-                                                <rect key="frame" x="37" y="674" width="250" height="52"/>
+                                                <rect key="frame" x="62" y="674" width="200" height="52"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="25G-2q-Ure"/>
-                                                    <constraint firstAttribute="width" constant="250" id="Axw-oW-iVL"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Axw-oW-iVL"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Pelvic">
                                                     <color key="titleColor" red="1" green="0.92199999094009399" blue="0.67612078840747203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="plU-8o-VO6" kind="showDetail" identifier="Pelvic" id="N0d-HU-05r"/>
                                                 </connections>
@@ -333,21 +411,21 @@ Cg
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="4Qv-gr-p4V" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="19J-f5-BOC"/>
-                                            <constraint firstAttribute="trailing" secondItem="8xV-Xd-WXd" secondAttribute="trailing" constant="9" id="1E1-0G-oTS"/>
-                                            <constraint firstItem="4Qv-gr-p4V" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="2Jp-A0-mw6"/>
+                                            <constraint firstAttribute="trailing" secondItem="8xV-Xd-WXd" secondAttribute="trailing" constant="21" id="1E1-0G-oTS"/>
+                                            <constraint firstItem="4Qv-gr-p4V" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="60" id="2Jp-A0-mw6"/>
                                             <constraint firstAttribute="trailing" secondItem="Udn-7S-bdl" secondAttribute="trailing" constant="51" id="8N0-yT-3lz"/>
                                             <constraint firstItem="lGy-9q-jYV" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="AZh-IC-zam"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="C1N-Qy-i1E"/>
                                             <constraint firstAttribute="bottom" secondItem="edW-TO-jdy" secondAttribute="bottom" constant="124" id="GXI-HN-EHl"/>
-                                            <constraint firstItem="lGy-9q-jYV" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="HK2-VN-Ykj"/>
-                                            <constraint firstItem="8xV-Xd-WXd" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="14" id="HWM-OV-pJT"/>
+                                            <constraint firstItem="lGy-9q-jYV" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="60" id="HK2-VN-Ykj"/>
+                                            <constraint firstItem="8xV-Xd-WXd" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="22" id="HWM-OV-pJT"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="width" secondItem="lGy-9q-jYV" secondAttribute="width" id="ITk-gE-AtS"/>
-                                            <constraint firstItem="UQL-zb-UNf" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="J6K-3B-n56"/>
+                                            <constraint firstItem="UQL-zb-UNf" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="60" id="J6K-3B-n56"/>
                                             <constraint firstItem="4Qv-gr-p4V" firstAttribute="width" secondItem="lGy-9q-jYV" secondAttribute="width" id="JjF-hT-vF2"/>
-                                            <constraint firstAttribute="trailing" secondItem="edW-TO-jdy" secondAttribute="trailing" constant="33" id="Mb6-Be-8Yd"/>
+                                            <constraint firstAttribute="trailing" secondItem="edW-TO-jdy" secondAttribute="trailing" constant="58" id="Mb6-Be-8Yd"/>
                                             <constraint firstAttribute="bottom" secondItem="Udn-7S-bdl" secondAttribute="bottom" constant="58" id="PQI-Ja-kbl"/>
-                                            <constraint firstAttribute="trailing" secondItem="UQL-zb-UNf" secondAttribute="trailing" constant="35" id="QdH-Op-yUX"/>
-                                            <constraint firstAttribute="trailing" secondItem="4Qv-gr-p4V" secondAttribute="trailing" constant="35" id="RYu-QG-Dyw"/>
+                                            <constraint firstAttribute="trailing" secondItem="UQL-zb-UNf" secondAttribute="trailing" constant="60" id="QdH-Op-yUX"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Qv-gr-p4V" secondAttribute="trailing" constant="60" id="RYu-QG-Dyw"/>
                                             <constraint firstItem="Udn-7S-bdl" firstAttribute="top" secondItem="94n-cA-wUE" secondAttribute="top" constant="756" id="Uwy-ul-XEq"/>
                                             <constraint firstItem="4q0-tU-Qrg" firstAttribute="top" secondItem="lGy-9q-jYV" secondAttribute="bottom" constant="21" id="V1B-zj-Czp"/>
                                             <constraint firstItem="4Qv-gr-p4V" firstAttribute="top" secondItem="UQL-zb-UNf" secondAttribute="bottom" constant="28" id="WFG-TB-P5w"/>
@@ -356,12 +434,12 @@ Cg
                                             <constraint firstItem="4q0-tU-Qrg" firstAttribute="centerX" secondItem="94n-cA-wUE" secondAttribute="centerX" id="az1-jC-BFV"/>
                                             <constraint firstItem="UQL-zb-UNf" firstAttribute="top" secondItem="4q0-tU-Qrg" secondAttribute="bottom" constant="24" id="fzj-cL-OQu"/>
                                             <constraint firstItem="lGy-9q-jYV" firstAttribute="top" secondItem="8xV-Xd-WXd" secondAttribute="bottom" constant="5" id="is3-Jc-u55"/>
-                                            <constraint firstAttribute="trailing" secondItem="4q0-tU-Qrg" secondAttribute="trailing" constant="35" id="lAt-3N-eWp"/>
+                                            <constraint firstAttribute="trailing" secondItem="4q0-tU-Qrg" secondAttribute="trailing" constant="60" id="lAt-3N-eWp"/>
                                             <constraint firstItem="Udn-7S-bdl" firstAttribute="top" secondItem="4Qv-gr-p4V" secondAttribute="bottom" constant="109" id="lpv-37-rV1"/>
-                                            <constraint firstAttribute="trailing" secondItem="lGy-9q-jYV" secondAttribute="trailing" constant="35" id="qIO-TV-4Vf"/>
+                                            <constraint firstAttribute="trailing" secondItem="lGy-9q-jYV" secondAttribute="trailing" constant="60" id="qIO-TV-4Vf"/>
                                             <constraint firstItem="edW-TO-jdy" firstAttribute="top" secondItem="4Qv-gr-p4V" secondAttribute="bottom" constant="27" id="qpq-eg-Kjy"/>
-                                            <constraint firstItem="4q0-tU-Qrg" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="35" id="tqd-EW-ZNG"/>
-                                            <constraint firstItem="edW-TO-jdy" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="37" id="zIL-D9-RRt"/>
+                                            <constraint firstItem="4q0-tU-Qrg" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="60" id="tqd-EW-ZNG"/>
+                                            <constraint firstItem="edW-TO-jdy" firstAttribute="leading" secondItem="94n-cA-wUE" secondAttribute="leading" constant="62" id="zIL-D9-RRt"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -391,7 +469,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwg-jT-jCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="473" y="273"/>
+            <point key="canvasLocation" x="472.5" y="272.53521126760563"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YEa-Ew-oKq">
@@ -936,16 +1014,19 @@ Cg
         </scene>
     </scenes>
     <resources>
-        <image name="CRITICALLogo" width="427.67999267578125" height="425"/>
-        <image name="RUQAnatomyFast" width="280" height="180"/>
-        <image name="RUQProbePosition" width="892" height="414"/>
-        <image name="SubxyphoidImgAnatomy" width="484" height="386"/>
-        <image name="ultrasound" width="1200" height="1200"/>
+        <image name="CRITICALLogo" width="1782" height="1771"/>
+        <image name="RUQAnatomyFast" width="93.333335876464844" height="60"/>
+        <image name="RUQProbePosition" width="446" height="207"/>
+        <image name="SubxyphoidImgAnatomy" width="161.33332824707031" height="128.66667175292969"/>
+        <image name="ultrasound" width="1600" height="1600"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Cool Mint">
             <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Midnight">
+            <color red="0.15000000596046448" green="0.18999999761581421" blue="0.23999999463558197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Silver">
             <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

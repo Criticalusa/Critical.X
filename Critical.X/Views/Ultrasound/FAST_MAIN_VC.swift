@@ -63,13 +63,12 @@ class FAST_MAIN_VC: UIViewController {
                 //Headings and Titles
                 morrisonsViewController.fast_Title = "Morrisons Pouch"
                
-                morrisonsViewController.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue)
+                morrisonsViewController.descriptionString = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
                
               
                 morrisonsViewController.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.RUQ.rawValue)
                
                 morrisonsViewController.probeTitle = "3.5 Htz"
-                
                 
                 // Image Views
                 // Ultrasound probe position
@@ -98,7 +97,7 @@ class FAST_MAIN_VC: UIViewController {
                 LUQ.fast_Title = "Perisplenic View - LUQ"
                                 
                 //Headings and Titles
-                LUQ.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue)
+                LUQ.descriptionString = UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue
                 
                
                 LUQ.probeTitle = "3.5 Htz"
@@ -132,7 +131,7 @@ class FAST_MAIN_VC: UIViewController {
                 Cardiac.fast_Title = "Cardiac Views"
                 
                 //Headings and Titles
-                Cardiac.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.CardaicView.rawValue)
+                Cardiac.descriptionString = UltraSound_AcousticViewDescription.CardaicView.rawValue
                 
                 
                 Cardiac.probeTitle = "Cardiac Probe"
@@ -165,7 +164,7 @@ class FAST_MAIN_VC: UIViewController {
                 thoracic.fast_Title = "Anterior Thoracic View"
                 
                 //Headings and Titles
-                thoracic.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.Thoracic.rawValue)
+                thoracic.descriptionString = UltraSound_AcousticViewDescription.Thoracic.rawValue
                 
                 
                 thoracic.probeTitle = "Linear "
@@ -199,7 +198,7 @@ class FAST_MAIN_VC: UIViewController {
                 thoracic.fast_Title = "Pelvic Views"
                 
                 //Headings and Titles
-                thoracic.descriptionString = changeAttribute_RUQ(text: UltraSound_AcousticViewDescription.Pelvic.rawValue)
+                thoracic.descriptionString = UltraSound_AcousticViewDescription.Pelvic.rawValue
                 
                 
                 thoracic.probeTitle = "Linear "

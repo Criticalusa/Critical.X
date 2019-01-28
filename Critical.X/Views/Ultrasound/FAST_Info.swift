@@ -76,7 +76,8 @@ enum UltraSound_AcousticViewDescription: String {
     //MARK: - RUQ
     case RUQ_morrisonsTextDescription =
     """
-    \rThe RUQ is the most sensitive region for free- fluid accumulation surrounding the liver and the right kidney, and in the hepatorenal recess, called Morison's pouch. This view is also used to detect free fluid in between the pleural space on the right side. When viewing the Right Upper Quadrant, the probe indicator should be pointing cephalad on the patients right mid-axillary side.
+    \rThe RUQ is the most sensitive region for free- fluid accumulation surrounding the liver and the right kidney, and in the hepatorenal recess, called Morison's pouch. This view is also used to detect free fluid in between the pleural space on the right side.
+    \rWhen viewing the Right Upper Quadrant, the probe indicator should be pointing cephalad on the patients right mid-axillary side.
     
     \rThese are the visible areas of focus:
     \r1. Hepatorenal Recess - Morison's Pouch
@@ -96,7 +97,8 @@ enum UltraSound_AcousticViewDescription: String {
     //MARK: - LUQ
     case leftUpperQuadrant =
     """
-    \rThe LUQ a.k.a the perisplenic, or splenorenal view is used to visualize the presence of free-fluid surrounding the spleen (splenorenal recess a.k.a, Koller's pouch) and in left pleural space around the costophrenic angle. It's technically challenging and less sensitive for free-fluid than the RUQ due to the spleen being smaller to identify compared to the liver, the acoustic window being lessened due obstruction from the stomach and the clinician having to reach across the patient.
+    \rThe LUQ a.k.a the perisplenic, or splenorenal view is used to visualize the presence of free-fluid surrounding the spleen (splenorenal recess a.k.a, Koller's pouch) and in left pleural space around the costophrenic angle.
+    \rIt's technically challenging and less sensitive for free-fluid than the RUQ due to the spleen being smaller to identify compared to the liver, the acoustic window being lessened due to obstruction from the stomach and the clinician having to reach across the patient.
     
     \rThe traditional acoustic windows obtained in the LUQ are:
     \r1. Spenorenal Interface
@@ -108,7 +110,8 @@ enum UltraSound_AcousticViewDescription: String {
     \rProbe Indicator: More cephalad (points cranially) and posterior.
     \rStart midaxillary around the 8th ICS sweeping anterior to posterior until the splenorenal interface is identified. If there's difficulty visualizing the acoustic window, it maybe because the transducer is not posterior or superior enough. Once the spleen/kidney is located fan the probe in all directions to evaulate the area.
     
-    \rIn a normal scan, the spleen and left kidney are tightly juxtaposed seperated by a hyperechoic line. The ecogenic line just cephalad to the spleen is the diaphargm. If there's free fluid accumilation, it's more likely to be found in the subphrenic space (between the spleen and diaphragm). Pleural effusions will appear as an anechoic (jet black) stripe or triangle just superior to the diaphragm.
+    \rIn a normal scan, the spleen and left kidney are tightly juxtaposed seperated by a hyperechoic line. The ecogenic line just cephalad to the spleen is the diaphargm.
+    \rIf there's free fluid accumilation, it's more likely to be found in the subphrenic space (between the spleen and diaphragm). Pleural effusions will appear as an anechoic (jet black) stripe or triangle just superior to the diaphragm.
     
     \rBelow you can see a full sweep of the LUQ. Notice the landmarks.
     """
@@ -116,7 +119,7 @@ enum UltraSound_AcousticViewDescription: String {
     
     case CardaicView =
     """
-    \rThe cardiac view is used to detect circumstancial free fluid around the pericardial sac, free fluid betewen the RV and liver, and to identify cardiac tamponade. It can be separated into two separate views 1) Subxiphoid and 2) The parasternal long axis view (PLAX). As it's usually sufficient to evaluate one view to check for the presence of pericardial effusions, it's essential to learn all in the event one view is not easily obtained.
+    \rThe cardiac view is used to detect circumstancial free fluid around the pericardial sac, free fluid betewen the RV and liver, and to identify cardiac tamponade. It can be separated into two separate views 1. Subxiphoid and 2. The parasternal long axis view (PLAX). As it's usually sufficient to evaluate one view to check for the presence of pericardial effusions, it's essential to learn all in the event one view is not easily obtained.
     
     \rThe traditional cardiac acoustic windows obtained are:
     \r1. Subxyphoid
@@ -127,7 +130,7 @@ enum UltraSound_AcousticViewDescription: String {
     \rProbe Indicator: Probe indicator points towards the left side of the patient.
     \rStart inferiorly to the xiphoid process and place the probe in the transverse axis parallel to the abdominal wall. Firmly plunge the probe slightly under the ribs until the cardiac silhouette comes into view.
     
-    \rIn a routine scan, the four chambers of the heart, and the pericardial sac should be visible. The pericardiu, is hyperechoic. You should be able to appreciate these eight landmarks. 1) Liver, 2) RA, 3) LA, 4) Mitral Valve, 5) LV, 6) RV, 7) Ventricular septum and 8) Tricuspid valve.
+    \rIn a routine scan, the four chambers of the heart, and the pericardial sac should be visible. The pericardiu, is hyperechoic. You should be able to appreciate these eight landmarks. 1. Liver, 2. Right Atrium, 3. Left Atrium, 4. Mitral Valve, 5. Left Ventricle, 6. Right Ventricle, 7. Ventricular septum and 8) Tricuspid valve.
     
     \rBelow you can see an overview of the subxiphoid view. Notice the landmarks.
     """
@@ -160,7 +163,8 @@ enum UltraSound_AcousticViewDescription: String {
     
     \rBegin with the probe midline in the abdomen and approx. 2cm above the symphysis pubis. Indicator cephalad. Scan the pelvic region until the bladder comes into view. Its easily identifiable due to the anechoic urine in the bladder. Sweep the entire bladder and look everywhere as free fluid can collect anywhere in the pelvis.
     
-    \rRotate the probe 90 degrees transverse and sweep left to right. In males, free fluid usually will collect in the rectovesical pouch (between the bladder and prostate). In females, in the pelvic Cul de Sac (posterior to the uterus in females). Sometimes, seminal fluid can be mistaken for free fluid in males. In females ovarian cysts, fibroids and physiological fluid such as menstration and infection can be mistaken as well.
+    \rRotate the probe 90 degrees transverse and sweep left to right. In males, free fluid usually will collect in the rectovesical pouch (between the bladder and prostate). In females, in the pelvic Cul de Sac (posterior to the uterus in females).
+    \rSometimes, seminal fluid can be mistaken for free fluid in males. In females ovarian cysts, fibroids and physiological fluid such as menstration and infection can be mistaken as well.
     
     """
     

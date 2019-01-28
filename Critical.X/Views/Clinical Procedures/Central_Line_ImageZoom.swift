@@ -41,6 +41,18 @@ class Central_Line_ImageZoom: UIViewController {
             zoomedImage.image = UIImage(named: "IJ_PLacementAnatomy")
             zoomImageTitle.text = "Anatomical Landmarks"
 
+        case "plaxTenting":
+            zoomedImage.loadGif(name: "CentralLine_LongAxisTenting")
+            zoomImageTitle.text = "Long axis venous tenting"
+
+        case "shortAxisTenting":
+            zoomedImage.loadGif(name: "CentralLine_NeedleTenting")
+            zoomImageTitle.text = "Short axis venous tenting"
+
+        case "cxrPlacement":
+            zoomedImage.image = UIImage(named: "CentralLinePlacement_Image")
+            zoomImageTitle.text = "Anatomical CVC Landmarks"
+
         
         default:
             break
