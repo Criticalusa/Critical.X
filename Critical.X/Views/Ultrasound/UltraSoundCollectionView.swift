@@ -67,6 +67,8 @@ class UltraSoundCollectionView: UIViewController, UICollectionViewDataSource, UI
         return cell
     }
 
+    
+    // Navigation sets the stroyboard ID to the indexPath and presents the View controller. 
  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
