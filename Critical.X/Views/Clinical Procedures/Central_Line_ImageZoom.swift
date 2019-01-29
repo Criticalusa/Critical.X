@@ -7,13 +7,13 @@
 
 import UIKit
 
-class Central_Line_ImageZoom: UIViewController {
+class Central_Line_ImageZoom: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var zoomedImage: UIImageView!
    
     @IBOutlet weak var zoomImageTitle: UILabel!
     
-    
+    @IBOutlet weak var imageScroll: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +65,8 @@ class Central_Line_ImageZoom: UIViewController {
         print("ZoomedImage Controller was dismissed")
     }
     
-   
-
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return zoomedImage
+    }
+ 
 }
