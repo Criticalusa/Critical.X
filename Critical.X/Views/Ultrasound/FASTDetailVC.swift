@@ -276,6 +276,9 @@ class FASTDetailVC: UIViewController {
         } // End segue
 
     }
+    
+    
+    // Setting string attributes
     func setRUQ()
     {
         let text = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
