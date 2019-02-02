@@ -38,35 +38,35 @@ class VentMode_detailVC: UIViewController {
         
         
         switch assignVentID {
-        case 1:
+        case 1: // ASSIST CONTROL
             changeString_AssistControl()
             print("The assigned id received is \(assignVentID)")
-        case 2:
+        case 2: // APRV
             changeString_APRV()
             print("The assigned id received is \(assignVentID)")
-        case 3:
+        case 3: // BiLevel
             changeString_Bilevel()
             print("The assigned id received is \(assignVentID)")
-        case 4:
+        case 4: // CPAP
             changeString_CPAP()
             print("The assigned id received is \(assignVentID)")
-        case 5:
+        case 5: // IMV
             changeString_IMV()
             print("The assigned id received is \(assignVentID)")
-        case 6:
-            changeString_AssistControl()
+        case 6: // Inverse Ratio
+            changeString_IRV()
             print("The assigned id received is \(assignVentID)")
-        case 7:
-            changeString_AssistControl()
+        case 7: // Pressure Control
+            changeString_PCV()
             print("The assigned id received is \(assignVentID)")
-        case 8:
-            changeString_AssistControl()
+        case 8: // PRVC
+            changeString_PRVC()
             print("The assigned id received is \(assignVentID)")
-        case 9:
-            changeString_AssistControl()
+        case 9: 
+            changeString_PressureSupportVentilation()
             print("The assigned id received is \(assignVentID)")
         case 10:
-            changeString_AssistControl()
+            changeString_SIMV()
             print("The assigned id received is \(assignVentID)")
 
         default:
