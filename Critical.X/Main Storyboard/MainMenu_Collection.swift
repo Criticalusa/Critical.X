@@ -304,13 +304,13 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
-            "ACLS & EKGs",// 2
+            "Cardiac",// 2
             "Clinical Calculators",// 2
             "Clinical Pharmacology", // 3
             "Infusions", // 5
-            "Fluids blood products", // 6
-            "Lab values", // 7
-            "Balloon pump", // 8
+            "Fluids / Blood products", // 6
+            "Lab Values", // 7
+            "Balloon Pump", // 8
             "Neuro", // 9
             "Pediatrics", // 10
             "Obstetrics", // 11
@@ -328,11 +328,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "PRBC, 0.9%, Albumin ",// 6
             "Common Lab Value Interpretations",// 7
             "IABP Timing, Modes & Troubleshooting",// 8
-            "Neurological Assessments, GCS & Stroke Scales",// 9
+            "Neuro Assessments & Stroke Scales",// 9
             "Resuscitation, Calcs & Equipment",// 10
             "Fetal Heart Monitoring Strips",//  1
-            "Invasive Monitoring, CVP, A-Lines",// 12
-            "Common Emergency Meds & Dosages",// 13
+            "Hemodynamic Parameters / Monitoring",// 12
+            "RSI Meds & Dosages",// 13
             "CXR, CT & Central Line Insertion",// 14
             "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
         
@@ -367,7 +367,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Neuro", // 9
             "Pediatrics", // 10
             "Obstetrics",//  11
-            "Hemodynamics", // 12
+            "Hemo", // 12
             "Rapid sequence intubation", // 13
             "Procedures & imaging", // 14
             "Ventilator management"] // 15
@@ -422,6 +422,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         else if indexPath.row == 13 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Rapid sequence intubation") // Making sure the identifier matches the SBID
+            self.present(rsiVC, animated: true, completion: nil)
+            
+        }
+            
+            // Hemodynamics VC PAGE --> MODAL
+        else if indexPath.row == 12 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let rsiVC = storyboard.instantiateViewController(withIdentifier: "Hemo") // Making sure the identifier matches the SBID
             self.present(rsiVC, animated: true, completion: nil)
             
         }

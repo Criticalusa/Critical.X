@@ -62,7 +62,7 @@ class Capnogrpahy: UITableViewController {
         switch indexPath.row {
         //Rows 1,3,5 title color is green
         case 0, 2, 4:
-            cell.textLabel?.textColor = #colorLiteral(red: 0.2222073078, green: 0.6842822433, blue: 0.3299767971, alpha: 1)
+            cell.textLabel?.textColor = #colorLiteral(red: 0, green: 0.5603182912, blue: 0, alpha: 1)
             
         default:
             break

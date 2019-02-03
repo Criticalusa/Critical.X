@@ -277,6 +277,10 @@
 		C4C9AAE120F44F8800510823 /* ClinicalProceduresTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9AAE020F44F8800510823 /* ClinicalProceduresTBV.swift */; };
 		C4CF01C32202A03B006432BB /* VentDescriptionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF01C22202A03B006432BB /* VentDescriptionEnum.swift */; };
 		C4CF01C52203D1D3006432BB /* VentAttributeChanages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF01C42203D1D3006432BB /* VentAttributeChanages.swift */; };
+		C4CF01C8220639F3006432BB /* Hemodynamics_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF01C7220639F3006432BB /* Hemodynamics_CollectionView.swift */; };
+		C4CF01CA22063A1A006432BB /* Hemodynamics_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF01C922063A1A006432BB /* Hemodynamics_Cell.swift */; };
+		C4CF01CC22063A30006432BB /* Hemodynamics_DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF01CB22063A30006432BB /* Hemodynamics_DetailView.swift */; };
+		C4CF01CE22063A48006432BB /* Hemodynamics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CF01CD22063A48006432BB /* Hemodynamics.storyboard */; };
 		C4D062BD21E9EC7800F2B84E /* EKGAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D062BC21E9EC7800F2B84E /* EKGAttributedText.swift */; };
 		C4D062C021EA285D00F2B84E /* Ultrasound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D062BF21EA285D00F2B84E /* Ultrasound.storyboard */; };
 		C4D062C221EA29E900F2B84E /* UltraSoundCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D062C121EA29E900F2B84E /* UltraSoundCollectionView.swift */; };
@@ -726,6 +730,10 @@
 		C4C9AAE020F44F8800510823 /* ClinicalProceduresTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalProceduresTBV.swift; sourceTree = "<group>"; };
 		C4CF01C22202A03B006432BB /* VentDescriptionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentDescriptionEnum.swift; sourceTree = "<group>"; };
 		C4CF01C42203D1D3006432BB /* VentAttributeChanages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentAttributeChanages.swift; sourceTree = "<group>"; };
+		C4CF01C7220639F3006432BB /* Hemodynamics_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hemodynamics_CollectionView.swift; sourceTree = "<group>"; };
+		C4CF01C922063A1A006432BB /* Hemodynamics_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hemodynamics_Cell.swift; sourceTree = "<group>"; };
+		C4CF01CB22063A30006432BB /* Hemodynamics_DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hemodynamics_DetailView.swift; sourceTree = "<group>"; };
+		C4CF01CD22063A48006432BB /* Hemodynamics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hemodynamics.storyboard; sourceTree = "<group>"; };
 		C4D062BC21E9EC7800F2B84E /* EKGAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKGAttributedText.swift; sourceTree = "<group>"; };
 		C4D062BF21EA285D00F2B84E /* Ultrasound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ultrasound.storyboard; sourceTree = "<group>"; };
 		C4D062C121EA29E900F2B84E /* UltraSoundCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraSoundCollectionView.swift; sourceTree = "<group>"; };
@@ -828,6 +836,7 @@
 		79E2EF431F9CC18000701ACC /* Critical.X */ = {
 			isa = PBXGroup;
 			children = (
+				C4CF01C6220639CF006432BB /* Hemodynamics */,
 				C41BD05B20F032640031C9CD /* Main Storyboard */,
 				C4C25EBE1FF9099500C5CD42 /* Views */,
 				C4B912AD2000FD5B0008B159 /* Models */,
@@ -1932,6 +1941,17 @@
 			path = Pediatrics;
 			sourceTree = "<group>";
 		};
+		C4CF01C6220639CF006432BB /* Hemodynamics */ = {
+			isa = PBXGroup;
+			children = (
+				C4CF01C7220639F3006432BB /* Hemodynamics_CollectionView.swift */,
+				C4CF01C922063A1A006432BB /* Hemodynamics_Cell.swift */,
+				C4CF01CB22063A30006432BB /* Hemodynamics_DetailView.swift */,
+				C4CF01CD22063A48006432BB /* Hemodynamics.storyboard */,
+			);
+			path = Hemodynamics;
+			sourceTree = "<group>";
+		};
 		C4D062BE21EA283500F2B84E /* Ultrasound */ = {
 			isa = PBXGroup;
 			children = (
@@ -2215,6 +2235,7 @@
 				C418AC30200BAB07001EBB04 /* whatshappening.wav in Resources */,
 				C418AC20200BAB07001EBB04 /* wanttogotohospital.wav in Resources */,
 				C418AC55200BAB07001EBB04 /* putIV.wav in Resources */,
+				C4CF01CE22063A48006432BB /* Hemodynamics.storyboard in Resources */,
 				C4C25F041FF9099600C5CD42 /* SVT.gif in Resources */,
 				C418AC49200BAB07001EBB04 /* samepaininotheroccassion.wav in Resources */,
 				C415BDC920EE656A003A2406 /* VentilatorOptimization .storyboard in Resources */,
@@ -2516,6 +2537,7 @@
 				C4C25EFB1FF9099600C5CD42 /* ExampleData.swift in Sources */,
 				C4D062C221EA29E900F2B84E /* UltraSoundCollectionView.swift in Sources */,
 				C42F41871FF90E2B003BE489 /* PopTip.swift in Sources */,
+				C4CF01CA22063A1A006432BB /* Hemodynamics_Cell.swift in Sources */,
 				C41002F421B83C5C00B3D21F /* Analysis.swift in Sources */,
 				C418ABC9200BA00F001EBB04 /* MedicalSpanish.swift in Sources */,
 				C4BA26C421FB6B9300677ED6 /* CentralLine_ViewController.swift in Sources */,
@@ -2530,6 +2552,7 @@
 				C4278C43203F6083003ABFF8 /* RaceStrokeEval.swift in Sources */,
 				C4C25EFA1FF9099600C5CD42 /* CollapsibleTableViewCell.swift in Sources */,
 				C431C89A21E3A59300896204 /* DIYScrollView.swift in Sources */,
+				C4CF01CC22063A30006432BB /* Hemodynamics_DetailView.swift in Sources */,
 				C42F41851FF90E2B003BE489 /* PopTip+Transitions.swift in Sources */,
 				C431C89821E0EE1A00896204 /* PFRatioPopUp.swift in Sources */,
 				C4F8160F20FE407600D41CFB /* KingLT.swift in Sources */,
@@ -2542,6 +2565,7 @@
 				C4D709E220FC2D0E00593760 /* UIButton Extension Animation.swift in Sources */,
 				C4290B5620F8CE6A0067A828 /* AppStoreReview.swift in Sources */,
 				C4C25F141FF9099600C5CD42 /* Swift+Gif.swift in Sources */,
+				C4CF01C8220639F3006432BB /* Hemodynamics_CollectionView.swift in Sources */,
 				C47551EC1FFDD8E300400C0C /* result.swift in Sources */,
 				C40478ED21015C200035798F /* PredictorsOfADifficultAirway_Cell.swift in Sources */,
 				C4D062C621EA731600F2B84E /* FAST_MAIN_VC.swift in Sources */,
