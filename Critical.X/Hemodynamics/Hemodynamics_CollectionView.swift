@@ -9,6 +9,9 @@
 import UIKit
 import AKLabel
 
+var hemodynamicCallID = Int() // Global Variabel to be passed an acccessed
+
+
 class Hemodynamics_CollectionView:  UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var hemodynamicsTitleLabel: AKLabel!
@@ -29,41 +32,43 @@ class Hemodynamics_CollectionView:  UIViewController, UICollectionViewDelegate, 
         hemodynamicsTitleLabel.animate(text: "Hemodynamics", duration: 1, completion: nil)
         
         
-        hemodynamicTitles =  ["Arterial Oxygen Saturation (SaO2)",
-                              "Mixed Venous Saturation (SvO2)",
-                              "Central Venous Oxygen Saturation (ScvO2)",
-                              "Central Venous Pressure (CVP)",
-                              "Right Ventricular Pressure (RVP)",
-                              "Pulmonary Artery Pressure (PAP)",
-                              "Pulmonary Artery Wedge Pressure (PAOP)",
-                              "Mean Pulmonary Artery Pressure (MPAP)",
-                              "Left Atrial Pressure (LAP)",
-                              "Cardiac Output (CO)",
-                              "Cardiac Index (CI)",
-                              "Stroke Volume (SV)",
-                              "Stroke Volume Index (SVI)",
-                              "Stroke Volume Variation (SVV)",
-                              "Systemic Vascular Resistance (SVR)",
-                              "Systemic Vascular Resistance Index (SVRI)",
-                              "Pulmonary Vascular Resistance (PVR)"]
+        hemodynamicTitles =  ["Arterial Oxygen Saturation (SaO2)", //0
+            "Mixed Venous Saturation (SvO2)", //1
+            "Central Venous Pressure (CVP)", //2
+            "Right Ventricular Pressure (RVP)", //3
+            "Pulmonary Artery Pressure (PAP)", //4
+            "Pulmonary Artery Wedge Pressure (PAOP)", //5
+            
+            "Cardiac Output (CO)",//6
+            "Cardiac Index (CI)",//7
+            "Stroke Volume (SV)", //8
+            "Stroke Volume Variation (SVV)",  //9
+            "Systemic Vascular Resistance (SVR)",  //10
+            "Systemic Vascular Resistance Index (SVRI)",  //11
+            
+            "Cardiogenic Shock",
+            "Hypovolemic Shock",
+            "Septic Shock- Hyperdynamic",
+            "Septic Shock- Hypodynamic"]
         
-        hemodynamicValues = ["95 - 100%",
-                             "60 - 80%",
-                             "70%",
-                             "2-6 mmHg",
-                             "Systolic: 15-30 mmHg, Diastolic: 2-8 mmHg",
-                             "Systolic: 15-30 mmHg, Diastolic: 8-15 mmHg",
-                             "8-12 mmHg",
-                             "9-18 mmHg",
-                             "4-12 mmHg",
-                             "CO = HR * SV/1000: 4.0-8.0 L/min",
-                             "2.5-4.0 L/min/m2",
-                             "CO/HR x 1000: 60-100 mL's/beat",
-                             "CI/HR x 1000: 33-47 mL/m2/beat",
-                             "10-15%",
-                             "800-1200 dynes-sec/cm –5" ,
-                             "1970-2390 dynes-sec/cm –5/m",
-                             "<250 dynes-sec/cm–5"]
+        hemodynamicValues = ["95 - 100%", // 0
+            "60 - 80%", // 1
+            "2-6 mmHg", // 2
+            "Systolic: 15-30 mmHg, Diastolic: 2-8 mmHg", // 3
+            "Systolic: 15-30 mmHg, Diastolic: 8-15 mmHg",// 4
+            "8-12 mmHg", //5
+            
+            "CO = HR * SV/1000: 4.0-8.0 L/min",//6
+            "2.5-4.0 L/min/m2",//7
+            "CO/HR x 1000: 60-100 mL's/beat",//8
+            "10-15%", //9
+            "800-1200 dynes-sec/cm –5" , //10
+            "1700-2400 dynes-sec/cm –5/m", //11
+        
+            "CVP:⬆︎  PAOP:⬆︎ CO/CI:⬇︎ SVR:⬇︎",
+            "CVP:⬇︎  PAOP:⬇︎ CO/CI:⬇︎ SVR:⬇︎",
+            "CVP:⬆︎⬇︎ PAOP:⬆︎ CO/CI:⬆︎ SVR:⬇︎",
+            "CVP:⬆︎⬇︎ PAOP:⬇︎ CO/CI:⬇︎ SVR:⬇︎"]
         
         
     }
@@ -104,7 +109,21 @@ extension Hemodynamics_CollectionView {
         // Configure the cell from the oulets in the cell Class.
         cell.hemoTitle.text = hemodynamicTitles[indexPath.item]
         cell.hemoSubTitle.text = hemodynamicValues [indexPath.item]
-      
+        
+        // We are changing the color of the Detail Subtitle only here.
+        switch indexPath.row {
+       
+        case 14:
+            cell.hemoSubTitle.textColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+        case 15:
+            cell.hemoSubTitle.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
+        case 16:
+            cell.hemoSubTitle.textColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+        case 17:
+            cell.hemoSubTitle.textColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        default:
+            cell.hemoSubTitle.textColor = #colorLiteral(red: 0.920953393, green: 0.447560966, blue: 0.4741248488, alpha: 1)
+        }
         return cell
     }
     
@@ -119,79 +138,243 @@ extension Hemodynamics_CollectionView {
         
         
         let storyboard = UIStoryboard(name: "Hemodynamics", bundle: nil) // Has to reflect the storyBoard they are on.
+        
         if let vc = storyboard.instantiateViewController(withIdentifier: "A") as? Hemodynamics_DetailView {
             
             // Set these first to the strings to pass
-          
+            
+            //Set the title label with index path
             vc.titleString_hemodynamics = hemodynamicTitles [indexPath.item]
+            
+            //Set detail according to index path array
             vc.subTitle_hemodynamics = hemodynamicValues [indexPath.item]
             
             
             switch indexPath.item {
                 
-            // AC
+            // Arterial Oxygentaion
             case 0:
-                assignVentID = 1
-                vc.descriptionString_hemodynamics = "An SaO2 (arterial oxygen saturation, as determined by an arterial blood gas test) value below 60% causes hypoxemia (which can also be caused by anemia). Peripheral oxygen saturation (SpO2) is an estimation of the oxygen saturation level usually measured with a pulse oximeter device."
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 1
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.ArterialOxygenSaturation.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
                 print("Assigned id to send is \(assignVentID)")
                 
-            // APRV
+            // Mixed Venous
             case 1:
-                assignVentID = 2
-                vc.descriptionString_hemodynamics = VentilatorModes.APRV.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 2
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.MixedVenousSaturation.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-            // BiLevel
+            // CVP
             case 2:
-                assignVentID = 3
-                vc.descriptionString_hemodynamics = VentilatorModes.Bipap.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 3
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.CentralVenousPressure.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-            //CPAP
+            //RVP
             case 3:
-                assignVentID = 4
-                vc.descriptionString_hemodynamics = VentilatorModes.CPAP.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 4
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.RightVentricularPressure.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-            //IMV
+            //PA Pressure
             case 4:
                 
-                assignVentID = 5
-                vc.descriptionString_hemodynamics = VentilatorModes.IMV.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 5
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.PulmonaryArteryPressure.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-            //IRV
+            //WEdge Pressure
             case 5:
-                assignVentID = 6
-                vc.descriptionString_hemodynamics = VentilatorModes.IRV.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 6
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.PulmonaryArteryWedgePressure.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
                 
-            //PCV
+            
             case 6:
-                assignVentID = 7
-                vc.descriptionString_hemodynamics = VentilatorModes.PCV.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 7
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.CardiacOutput.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-                //PRVC
-                
+           
             case 7:
-                assignVentID = 8
-                vc.descriptionString_hemodynamics = VentilatorModes.PRVC.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 8
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.CardiacIndex.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-                //PSV
-                
+          
             case 8:
-                assignVentID = 9
-                vc.descriptionString_hemodynamics = VentilatorModes.PSV.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 9
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.StrokeVolume.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
-            //SIMV
+           
             case 9:
-                assignVentID = 10
-                vc.descriptionString_hemodynamics = VentilatorModes.SIMV.rawValue
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 10
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.StrokeVolumeVariation.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+
+                // Print Statement
                 print("Assigned id to send is \(assignVentID)")
+                
+           
+            case 10:
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 11
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.SystemicVascularResistance.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+                
+                // Print Statement
+                print("Assigned id to send is \(assignVentID)")
+              
+            
+            case 11:
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 12
+                
+                // What text to send to the global string to set to the label
+                vc.descriptionString_hemodynamics = ParameterDetails.SystemicVascularResistanceIndex.rawValue
+                
+                // Present the View Controller
+                self.present(vc, animated: true, completion: nil)
+                
+                // Print Statement
+                print("Assigned id to send is \(assignVentID)")
+                
+            
+            case 12:
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 13
+                
+                
+                // Print Statement
+                print("Assigned id to send is \(assignVentID)")
+                
+                
+            
+            case 13:
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 14
+                
+             
+                // Print Statement
+                print("Assigned id to send is \(assignVentID)")
+             
+            
+            case 14:
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 10
+                
+              
+                
+                // Print Statement
+                print("Assigned id to send is \(assignVentID)")
+                
+            
+            case 15:
+                
+                // Int to pass to reference and switch on in the detail
+                hemodynamicCallID = 10
+                
+               
+                
+                // Print Statement
+                print("Assigned id to send is \(assignVentID)")
+                
             default:
                 break
             }
@@ -201,7 +384,6 @@ extension Hemodynamics_CollectionView {
             //            vc.imageString = fetalImageNames[indexPath.item]
             //
             // Then present the view controller
-            self.present(vc, animated: true, completion: nil)
             
             
         }

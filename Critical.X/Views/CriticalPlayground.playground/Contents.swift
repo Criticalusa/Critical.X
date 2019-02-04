@@ -25,7 +25,7 @@ container.backgroundColor = UIColor.white
 container.layer.borderColor = UIColor.darkGray.cgColor
 container.layer.borderWidth = 1.0
 
-PlaygroundPage.curren.liveView = container
+//PlaygroundPage.current.liveView = container
 
 let blueBox = UIView(frame: CGRect.zero)
 blueBox.backgroundColor = UIColor(red: 0.0/255.0, green: 105.0/255.0, blue: 167.0/255.0, alpha: 1.0)

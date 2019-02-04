@@ -242,10 +242,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 //label.text = "Good Morning! \(randomAfternoon)"
                 if let displayRandomGreeting = greetings.randomElement() {
                     label.text = "\(displayRandomGreeting) \(randomEvening)"
+
                 }
             } else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(formalDisplayRandomGreeting) \(randomEvening), \(username!)!"
+                label.text = "\(formalDisplayRandomGreeting) \(randomEvening) \(username!)"
                 
             }
             
@@ -281,12 +282,32 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
       
     }
     
+    func animateNavBar()  {
+        let fadeTextAnimation = CATransition()
+        fadeTextAnimation.duration = 0.3
+        fadeTextAnimation.type = kCATransitionMoveIn
+        
+        //        kCATransitionFade
+        //        kCATransitionMoveIn
+        //        kCATransitionPush
+        //        kCATransitionReveal
+        //
+        navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
+        navigationItem.title = "The Barringer Group ©"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+       animateNavBar()
+    }
+    
     // Loads the animation once the view appears
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
         setAnimationLabel()
         getTimefromDate()
+        
+        
         
     }
     
@@ -299,8 +320,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+//        self.navigationItem.title = "Critical - The Barringer Group ©"
+//        let navBarAppearance = UINavigationBar.appearance()
+//        navBarAppearance.tintColor = .white
+//        navBarAppearance.titleTextAttributes = [
+//            NSAttributedString.Key.foregroundColor: UIColor.white,
+//            NSAttributedString.Key.font: UIFont(name: "Marker Felt", size: 18)!]
+
+    
         
         mainMenu = ["About Critical", // 0
             "Airway Management", // 1
@@ -375,6 +402,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // Do any additional setup after loading the view.
     }
     
+
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -414,7 +443,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             // PEDIATRICS PAGE --> MODAL
         else if indexPath.row == 10 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
-            let rsiVC = storyboard.instantiateViewController(withIdentifier: "Pediatrics") // Making sure the identifier matches the SBID
+            let rsiVC = storyboard.instantiateViewController(withIdentifier: "Critical Peds") // Making sure the identifier matches the SBID
             self.present(rsiVC, animated: true, completion: nil)
             
         }

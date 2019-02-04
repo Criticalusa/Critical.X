@@ -1,17 +1,16 @@
 //
-//  UIView+Borders.swift
+//  UIView & Borders.swift
+//  CriticalPediatrics
 //
-//  Created by Aaron Ng on 11/15/15.
-//  Copyright © 2015 Aaron Ng. All rights reserved.
+//  Created by Jadie Barringer III on 7/5/18.
+//  Copyright © 2018 Jadie Barringer III. All rights reserved.
 //
 
 import UIKit
 
-
-
 public extension UIView {
     
-    enum ViewSide {
+    public enum ViewSide {
         case top
         case right
         case bottom
@@ -60,24 +59,24 @@ public extension UIView {
         switch side {
         case .top:
             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                                              y: 0 + topOffset,
-                                                              width: self.frame.size.width - leftOffset - rightOffset,
-                                                              height: thickness), color: color)
+                                                                            y: 0 + topOffset,
+                                                                            width: self.frame.size.width - leftOffset - rightOffset,
+                                                                            height: thickness), color: color)
             border.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
             return border
             
         case .right:
             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: self.frame.size.width-thickness-rightOffset,
-                                                              y: 0 + topOffset, width: thickness,
-                                                              height: self.frame.size.height - topOffset - bottomOffset), color: color)
+                                                                            y: 0 + topOffset, width: thickness,
+                                                                            height: self.frame.size.height - topOffset - bottomOffset), color: color)
             border.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
             return border
             
         case .bottom:
             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                                              y: self.frame.size.height-thickness-bottomOffset,
-                                                              width: self.frame.size.width - leftOffset - rightOffset,
-                                                              height: thickness), color: color)
+                                                                            y: self.frame.size.height-thickness-bottomOffset,
+                                                                            width: self.frame.size.width - leftOffset - rightOffset,
+                                                                            height: thickness), color: color)
             border.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
             return border
             
@@ -100,9 +99,9 @@ public extension UIView {
             // Subtract left offset from width to negate shifting from leftOffset.
             // Subtract rightoffset from width to set end X and Width.
             let border: CALayer = _getOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                             y: 0 + topOffset,
-                                             width: self.frame.size.width - leftOffset - rightOffset,
-                                             height: thickness), color: color)
+                                                                   y: 0 + topOffset,
+                                                                   width: self.frame.size.width - leftOffset - rightOffset,
+                                                                   height: thickness), color: color)
             self.layer.addSublayer(border)
         case .right:
             // Subtract the rightOffset from our width + thickness to get our final x position.
@@ -110,22 +109,22 @@ public extension UIView {
             // Subtract topOffset from our height, so our border doesn't extend past teh view.
             // Subtract bottomOffset from the height to get our end.
             let border: CALayer = _getOneSidedBorder(frame: CGRect(x: self.frame.size.width-thickness-rightOffset,
-                                             y: 0 + topOffset, width: thickness,
-                                             height: self.frame.size.height - topOffset - bottomOffset), color: color)
+                                                                   y: 0 + topOffset, width: thickness,
+                                                                   height: self.frame.size.height - topOffset - bottomOffset), color: color)
             self.layer.addSublayer(border)
         case .bottom:
             // Subtract the bottomOffset from the height and the thickness to get our final y position.
             // Add a left offset to our x to get our x position.
             // Minus our rightOffset and negate the leftOffset from the width to get our endpoint for the border.
             let border: CALayer = _getOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                             y: self.frame.size.height-thickness-bottomOffset,
-                                             width: self.frame.size.width - leftOffset - rightOffset, height: thickness), color: color)
+                                                                   y: self.frame.size.height-thickness-bottomOffset,
+                                                                   width: self.frame.size.width - leftOffset - rightOffset, height: thickness), color: color)
             self.layer.addSublayer(border)
         case .left:
             let border: CALayer = _getOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                             y: 0 + topOffset,
-                                             width: thickness,
-                                             height: self.frame.size.height - topOffset - bottomOffset), color: color)
+                                                                   y: 0 + topOffset,
+                                                                   width: thickness,
+                                                                   height: self.frame.size.height - topOffset - bottomOffset), color: color)
             self.layer.addSublayer(border)
         }
     }
@@ -135,37 +134,34 @@ public extension UIView {
         switch side {
         case .top:
             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                                       y: 0 + topOffset,
-                                                       width: self.frame.size.width - leftOffset - rightOffset,
-                                                       height: thickness), color: color)
+                                                                            y: 0 + topOffset,
+                                                                            width: self.frame.size.width - leftOffset - rightOffset,
+                                                                            height: thickness), color: color)
             border.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
             self.addSubview(border)
             
         case .right:
             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: self.frame.size.width-thickness-rightOffset,
-                                                       y: 0 + topOffset, width: thickness,
-                                                       height: self.frame.size.height - topOffset - bottomOffset), color: color)
+                                                                            y: 0 + topOffset, width: thickness,
+                                                                            height: self.frame.size.height - topOffset - bottomOffset), color: color)
             border.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
             self.addSubview(border)
             
         case .bottom:
-             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                                        y: self.frame.size.height-thickness-bottomOffset,
-                                                        width: self.frame.size.width - leftOffset - rightOffset,
-                                                        height: thickness), color: color)
+            let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
+                                                                            y: self.frame.size.height-thickness-bottomOffset,
+                                                                            width: self.frame.size.width - leftOffset - rightOffset,
+                                                                            height: thickness), color: color)
             border.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
             self.addSubview(border)
         case .left:
             let border: UIView = _getViewBackedOneSidedBorder(frame: CGRect(x: 0 + leftOffset,
-                                                       y: 0 + topOffset,
-                                                       width: thickness,
-                                                       height: self.frame.size.height - topOffset - bottomOffset), color: color)
+                                                                            y: 0 + topOffset,
+                                                                            width: thickness,
+                                                                            height: self.frame.size.height - topOffset - bottomOffset), color: color)
             border.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
             self.addSubview(border)
-            
-            
         }
-        
     }
     
     //////////
@@ -185,6 +181,5 @@ public extension UIView {
         border.backgroundColor = color
         return border
     }
-    
     
 }

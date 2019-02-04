@@ -81,7 +81,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Hemo" storyboardName="Hemodynamics" id="Rvk-zy-v3X" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozo-VY-p6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1839" y="-412"/>
+            <point key="canvasLocation" x="-1712" y="-425"/>
         </scene>
         <!--VentManagement-->
         <scene sceneID="vK0-As-njn">
@@ -99,13 +99,13 @@
             </objects>
             <point key="canvasLocation" x="-1742" y="-859"/>
         </scene>
-        <!--Pediatrics-->
-        <scene sceneID="mDf-hf-slZ">
+        <!--Critical Pediatrics New-->
+        <scene sceneID="wQM-tQ-hgJ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Pediatrics" storyboardName="Pediatrics" id="Z0B-EG-omB" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9rP-ju-Rwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Critical Peds" storyboardName="Critical Pediatrics New" id="vcj-kd-7Cj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxz-Th-a3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1764" y="-960"/>
+            <point key="canvasLocation" x="-1766" y="-951"/>
         </scene>
         <!--Airway-->
         <scene sceneID="ng4-Fi-MAa">
@@ -149,13 +149,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG-Smoke" translatesAutoresizingMaskIntoConstraints="NO" id="IVe-CQ-evG">
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CriticalScattered" translatesAutoresizingMaskIntoConstraints="NO" id="IVe-CQ-evG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Clouds"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Critical.with.EKG" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-8h-Pza">
-                                <rect key="frame" x="91" y="74" width="136" height="61"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uU-ea-Hh9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Ff0-mJ-c2Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" name="Clouds"/>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICALLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-8h-Pza">
+                                <rect key="frame" x="140" y="72" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0O-GZ-H1Q">
                                 <rect key="frame" x="16" y="152" width="288" height="23"/>
@@ -164,17 +181,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fis-u5-eYd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="wiP-Xb-wyN">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <vibrancyEffect>
-                                    <blurEffect style="dark"/>
-                                </vibrancyEffect>
-                            </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DXn-zS-yaf">
                                 <rect key="frame" x="0.0" y="207" width="320" height="361"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,10 +238,10 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mcm-EA-SND"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome to Critical" id="Y26-QY-iRD">
+                    <navigationItem key="navigationItem" id="Y26-QY-iRD">
                         <barButtonItem key="backBarButtonItem" title="Back" id="wpz-3n-DGL"/>
                     </navigationItem>
                     <connections>
@@ -245,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3e-1s-GqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2338" y="-806"/>
+            <point key="canvasLocation" x="-2338.125" y="-807.04225352112678"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="12Z-ZJ-bdk">
@@ -391,7 +397,8 @@
         <image name="BG-Smoke" width="611" height="1200"/>
         <image name="CRITICAL1.ekg" width="1650" height="1651"/>
         <image name="CRITICAL4-1" width="1782" height="1771"/>
-        <image name="Critical.with.EKG" width="1246" height="721"/>
+        <image name="CRITICALLogo" width="1782" height="1771"/>
+        <image name="CriticalScattered" width="900" height="1800"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
