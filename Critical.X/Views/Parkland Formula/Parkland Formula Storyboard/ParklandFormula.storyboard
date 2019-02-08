@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qen-h7-OmU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qen-h7-OmU">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5J-Sd-1tx">
+                            <visualEffectView opaque="NO" alpha="0.97999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5J-Sd-1tx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="727"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ims-ba-SGv">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="727"/>
@@ -105,7 +105,7 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-fY-8cE">
-                                                <rect key="frame" x="20" y="493" width="284" height="82"/>
+                                                <rect key="frame" x="18" y="493" width="284" height="82"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Body Surface Area" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFx-2L-m3g">
                                                         <rect key="frame" x="8" y="29" width="268" height="17"/>
@@ -145,7 +145,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="Salmon"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="27"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
                                                         <color key="value" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="0.55466862920000004" colorSpace="calibratedRGB"/>
@@ -230,7 +230,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="MjB-fr-6Ot"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="40"/>
-                                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <color key="textColor" name="Bone"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KG" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-Sf-l2y" customClass="KaedeTextField" customModule="TextFieldEffects">
@@ -242,7 +242,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="Clouds"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="27"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
                                                         <color key="value" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="0.55466862920000004" colorSpace="calibratedRGB"/>
@@ -258,7 +258,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="319" id="3A2-4d-hhV"/>
                                             <constraint firstAttribute="trailing" secondItem="YP3-Sf-l2y" secondAttribute="trailing" constant="21" id="5ur-RO-ZAB"/>
                                             <constraint firstItem="ZyA-EH-AgP" firstAttribute="top" secondItem="7tt-Jk-HKU" secondAttribute="bottom" constant="10" id="78Z-46-ncq"/>
                                             <constraint firstItem="4Gd-V1-XYt" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="17" id="7OX-OI-lpt"/>
@@ -271,7 +270,7 @@
                                             <constraint firstItem="rYB-MD-zli" firstAttribute="top" secondItem="Me9-5x-suF" secondAttribute="bottom" constant="29" id="FOX-La-r97"/>
                                             <constraint firstItem="7tt-Jk-HKU" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="18" id="LXy-oh-csF"/>
                                             <constraint firstItem="Owv-7T-rma" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="11" id="LoS-h5-xbI"/>
-                                            <constraint firstItem="xsE-fY-8cE" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="20" id="QOX-Zs-ebb"/>
+                                            <constraint firstItem="xsE-fY-8cE" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="18" id="QOX-Zs-ebb"/>
                                             <constraint firstItem="Owv-7T-rma" firstAttribute="top" secondItem="lpM-ul-pSR" secondAttribute="top" constant="91" id="Tvl-MV-EU9"/>
                                             <constraint firstItem="GlI-Ch-SQX" firstAttribute="top" secondItem="lpM-ul-pSR" secondAttribute="top" constant="45" id="We8-rU-cYT"/>
                                             <constraint firstItem="7tt-Jk-HKU" firstAttribute="top" secondItem="GlI-Ch-SQX" secondAttribute="bottom" constant="60" id="XjW-FL-h4k"/>
@@ -281,7 +280,7 @@
                                             <constraint firstItem="xsE-fY-8cE" firstAttribute="top" secondItem="4Gd-V1-XYt" secondAttribute="bottom" constant="13" id="alS-k6-Pt9"/>
                                             <constraint firstItem="YP3-Sf-l2y" firstAttribute="top" secondItem="7tt-Jk-HKU" secondAttribute="bottom" constant="5" id="dGb-1j-DhH"/>
                                             <constraint firstAttribute="trailing" secondItem="rYB-MD-zli" secondAttribute="trailing" constant="55" id="eV4-Qd-P01"/>
-                                            <constraint firstAttribute="trailing" secondItem="xsE-fY-8cE" secondAttribute="trailing" constant="16" id="ejf-DA-y6L"/>
+                                            <constraint firstAttribute="trailing" secondItem="xsE-fY-8cE" secondAttribute="trailing" constant="18" id="ejf-DA-y6L"/>
                                             <constraint firstAttribute="trailing" secondItem="Me9-5x-suF" secondAttribute="trailing" constant="27" id="fNT-x7-jyt"/>
                                             <constraint firstAttribute="trailing" secondItem="GlI-Ch-SQX" secondAttribute="trailing" constant="15" id="gxg-Zu-PiU"/>
                                             <constraint firstItem="On8-xU-bjF" firstAttribute="leading" secondItem="pDH-hA-YJD" secondAttribute="trailing" constant="50" id="h0S-Gr-PQ3"/>
@@ -345,21 +344,16 @@
                 <viewController modalPresentationStyle="overCurrentContext" id="dMc-NW-bdq" customClass="ParklandData" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wla-oI-g5l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue flare abstract blur iPhone X Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="YSt-B5-Iag">
+                            <visualEffectView opaque="NO" alpha="0.97999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-fu-7E6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <visualEffectView autoresizesSubviews="NO" opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-hd-R1I">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xbn-ck-HPe">
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="zXl-0Y-ERG">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <color key="backgroundColor" name="Pomegranate"/>
-                                <blurEffect style="extraLight"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="II8-qP-Luy">
                                 <rect key="frame" x="49" y="161" width="223" height="72.5"/>
@@ -371,7 +365,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule of 9's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfC-j3-4gL">
-                                        <rect key="frame" x="0.0" y="-1" width="221" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="24"/>
                                         <color key="backgroundColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="aEY-jg-Omi"/>
@@ -384,10 +378,10 @@
                                 <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="25V-Rd-1L4" secondAttribute="trailing" constant="12" id="2t3-cC-x09"/>
-                                    <constraint firstItem="FfC-j3-4gL" firstAttribute="top" secondItem="II8-qP-Luy" secondAttribute="top" constant="-1" id="4In-Ka-wx0"/>
+                                    <constraint firstItem="FfC-j3-4gL" firstAttribute="top" secondItem="II8-qP-Luy" secondAttribute="top" id="4In-Ka-wx0"/>
                                     <constraint firstItem="25V-Rd-1L4" firstAttribute="leading" secondItem="II8-qP-Luy" secondAttribute="leading" constant="10" id="9hF-QH-Ykh"/>
-                                    <constraint firstAttribute="trailing" secondItem="FfC-j3-4gL" secondAttribute="trailing" constant="2" id="BON-mr-the"/>
-                                    <constraint firstItem="25V-Rd-1L4" firstAttribute="top" secondItem="FfC-j3-4gL" secondAttribute="bottom" constant="14" id="qye-wZ-efP"/>
+                                    <constraint firstAttribute="trailing" secondItem="FfC-j3-4gL" secondAttribute="trailing" id="BON-mr-the"/>
+                                    <constraint firstItem="25V-Rd-1L4" firstAttribute="top" secondItem="FfC-j3-4gL" secondAttribute="bottom" constant="13" id="qye-wZ-efP"/>
                                     <constraint firstAttribute="bottom" secondItem="25V-Rd-1L4" secondAttribute="bottom" constant="20" id="wWQ-Kz-NbV"/>
                                     <constraint firstItem="FfC-j3-4gL" firstAttribute="leading" secondItem="II8-qP-Luy" secondAttribute="leading" id="xIz-cA-Wdx"/>
                                 </constraints>
@@ -406,7 +400,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="II8-qP-Luy" firstAttribute="top" secondItem="KFK-Qt-a3u" secondAttribute="bottom" constant="94" id="25i-rY-kKW"/>
                             <constraint firstItem="KFK-Qt-a3u" firstAttribute="top" secondItem="aIX-lO-H3O" secondAttribute="top" constant="7" id="H7r-HF-gAF"/>
@@ -424,13 +418,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBy-LU-AzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1508" y="11"/>
+            <point key="canvasLocation" x="-1509.375" y="10.56338028169014"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Blue flare abstract blur iPhone X Wallpaper" width="1125" height="2437"/>
         <namedColor name="Alizarin">
             <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Bone">
+            <color red="0.92941176470588238" green="0.88235294117647056" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -440,9 +436,6 @@
         </namedColor>
         <namedColor name="Midnight">
             <color red="0.15000000596046448" green="0.18999999761581421" blue="0.23999999463558197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Pomegranate">
-            <color red="0.75300002098083496" green="0.22400000691413879" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Salmon">
             <color red="0.9100000262260437" green="0.55000001192092896" blue="0.56999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

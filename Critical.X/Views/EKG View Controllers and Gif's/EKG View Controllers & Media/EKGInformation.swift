@@ -60,7 +60,19 @@ enum RhythmDescription: String {
     
     case Torsades = "Rate: ~ 200-250\n\nRhythm: Irregular\n\nP-Wave: None\n\nP-R Interval: None \n\nQRS: Wide\n\nTorsades de Pointes (TdP) a.k.a polymorphic ventricular tachycardia is a form of ventricular tachycardia in which the QRS complexes varies in amplitude, axis, and duration.\n\nThe QRS complexes “twist” around the isoelectric line hence the name (twisting of the points). The onset of torsades may be attributed to a prolonged QT which may be associated to hypokalemia, hypomagnesemia, drugs/medications, MI, prolonged QT syndrome, or precipitated by an R on T phenomenon."
     
-    case NormalSinus = "Rate: 60 - 100\n\nRhythm: Regular\n\nP-Wave: Visible, precedes every QRS\n\nP-R Interval: Normal\n\nQRS: Normal\n\nA Normal Sinus Rhythm is the default heart rhythm that represents the normal beating of the heart with a ventricular rate between 60-100/min. Normal heart rates can vary from person to person. Pacemaking impulses arise from the sino-atrial (SA) node and are transmitted to the ventricles via the AV-node and His-Purkinje system, which result in a regular narrow-complex heart rhythm- called a Normal Sinus Rhythm.\n\nSinus rhythm is different from heart rate. The rate is referenced to how many times it beats- rhythm is the pattern of electrical activity. When there's irregularity in the rate, it is termed \"sinus arrhythmia\". A normal heart rate varies during the day - increasing with exertion and returning to baseline following cessation of activity. "
+    case NormalSinus = """
+    \rRate: 60 - 100
+    \rRhythm: Regular
+    \rP-Wave: Visible, precedes every QRS
+    \rP-R Interval: Normal
+    \rQRS: Normal
+    \rA Normal Sinus Rhythm is the default heart rhythm that represents the normal beating of the heart with a ventricular rate between 60-100/min.
+    \rNormal heart rates can vary from person to person. Pacemaking impulses arise from the sino-atrial (SA) node and are transmitted to the ventricles via the AV-node and His-Purkinje system  - which result in a regular narrow-complex heart rhythm- called a Normal Sinus Rhythm.
+    \rAll of the complexes are evenly spaced with a ventricular rate between 60-100 bpm.
+    \rSinus rhythm is different from heart rate. The rate is referenced to how many times it beats- rhythm is the pattern of electrical activity.
+    \rWhen there's irregularity in the rate, it is termed "sinus arrhythmia".
+    \rA normal heart rate varies during the day - increasing with exertion and returning to baseline following cessation of activity.
+    """
     
     
     case ThirdDegreeHeartBlock = "Rate: 40\n\nRhythm: Regular\n\nP-Wave: 2:1 or 3:1\n\nP-R Interval: Variable\n\nQRS: Prolonged\n\nDuring a complete heart block, there is complete A/V disassociation. The atria and ventricles contract independently of each other. None of the supraventricular impulses conduct to the ventricles.\n\nThe ventricular rate is often around 40 bpm, and atrial rates can exceed 100 bpm. The AV node takes over as the primary pacemaker (this is where the bradycardia comes from - slow AV intrinsic rate), and the rhythm is maintained by usually a junctional or ventricular escape rhythm. Patients with complete heart block are high risk for sudden cardiac death."

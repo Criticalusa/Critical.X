@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftRichString
+//import SwiftRichString
 
 class VentilatorOptimizationMain: UIViewController {
     

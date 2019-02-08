@@ -53,10 +53,23 @@ class IntraAorticBalloonPumpMain: UITableViewController {
         
         //Changes the color of the tableView menu Items
         switch (indexPath.section, indexPath.row) {
+        
         //Rows 1,3,5 title color is changed
-        case (0,0), (0,2), (0,4):
-            cell.textLabel?.textColor = #colorLiteral(red: 0.7995484471, green: 0.2585769296, blue: 0.2706674039, alpha: 1)
+        case (0,0):
+            cell.textLabel?.textColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
             
+        case (0,1),(0,4), (1,8):
+            cell.textLabel?.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+        
+        case (0,2):
+            cell.textLabel?.textColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        
+        default:
+            cell.textLabel?.textColor = #colorLiteral(red: 0.3058823529, green: 0.3058823529, blue: 0.3058823529, alpha: 1)
+        }
+        
+        switch (indexPath.section, indexPath.row) {
+      
         default:
             break
         }
@@ -72,8 +85,11 @@ class IntraAorticBalloonPumpMain: UITableViewController {
     
     //What happens when the cell is clicked ?
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
         if segue.identifier == "showDetail" {
+            
             if let indexPath = self.tableView.indexPathForSelectedRow {
+               
                 let controller = segue.destination as! IABPDetail
                 
                 //Overall hides the button when the segues is loaded. Since hide it globally here, I only have to code where i want the button visible.

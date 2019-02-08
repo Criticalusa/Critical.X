@@ -9,7 +9,7 @@
 import Foundation
 import EasyPeasy
 import UIKit
-import SwiftRichString
+//import SwiftRichString
 
 
 

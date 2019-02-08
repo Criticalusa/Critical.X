@@ -10,7 +10,7 @@ import UIKit
 import AKLabel // animations
 import SCLAlertView //alerts
 import Lottie //animation
-import SwiftyAttributes // Sets textAttribute colors
+//import SwiftyAttributes // Sets textAttribute colors
 
 
 //// Or we can just call that if we are using multiple significant figures.

@@ -8,7 +8,7 @@
 
 import UIKit
 import AKLabel
-import SwiftyAttributes
+//import SwiftyAttributes
 
 class AnionGap: UIViewController {
     

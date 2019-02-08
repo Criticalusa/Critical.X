@@ -67,7 +67,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     
     func interfaceConfig() -> Void {
         let Dripslist = (UserDefaults.standard.object(forKey:"drip_list") as! NSArray) as! [Any]
-        Drip = Dripslist[index] as! NSDictionary
+        Drip = (Dripslist[index] as! NSDictionary)
         
         lbl_Title.text = Drip.object(forKey: "maintitle") as? String
         lbl_SubTitle.text = Drip.object(forKey: "BrandName") as? String

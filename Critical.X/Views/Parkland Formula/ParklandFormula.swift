@@ -28,6 +28,12 @@ class ParklandFormula: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /// Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
         
         // Takes the close button and makes it into a circle
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
@@ -50,6 +56,13 @@ class ParklandFormula: UIViewController {
         
     }
     
+ 
+    // Do any additional setup after loading the view.
+
+/// Keyboard Dismissed after you touch the screen
+func doneButtonAction() {
+    self.view.endEditing(true)
+}
     
    
     /**
@@ -81,6 +94,12 @@ class ParklandFormula: UIViewController {
 
         return "With a weight of \(Weight) kgs and BSA of \(BSA)%, a total of \(parklandFormula) L  needs to be delivered over 24 hours.\n\nDeliver a total of \(firstEight) L over the first 8 hours.\n\nThe remaining \(overSixteen) L to be delivered over the last 16 hours."
         
+    }
+    
+    // Dismisses the keyboard when the user taps on the outside of any textField
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true) //This will hide the keyboard
     }
     
     func infusionRateCalculation(timeEight: Double, _ timeSixteen: Double) -> String {
@@ -204,11 +223,7 @@ class ParklandFormula: UIViewController {
         print("View Controller was dismissed")
         
     }
-    // Dismisses the keyboard when the user taps on the outside of any textField
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true) //This will hide the keyboard
-    }
+  
     
     
     //Ends the class

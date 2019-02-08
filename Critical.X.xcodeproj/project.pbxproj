@@ -292,6 +292,9 @@
 		C4C25F171FF9099600C5CD42 /* PediatricCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */; };
 		C4C25F181FF9099600C5CD42 /* MiniPopUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */; };
 		C4C25F191FF9099600C5CD42 /* MiniDrugDataViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */; };
+		C4C958782209C5A6003B8ADA /* ClinicalCalculator_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C958772209C5A6003B8ADA /* ClinicalCalculator_CollectionView.swift */; };
+		C4C9587A2209C733003B8ADA /* ClinicalCalc_CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C958792209C733003B8ADA /* ClinicalCalc_CollectionCell.swift */; };
+		C4C9587C2209DBE3003B8ADA /* ComingSoonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9587B2209DBE3003B8ADA /* ComingSoonVC.swift */; };
 		C4C9AADB20F4353200510823 /* VentManagementTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9AADA20F4353200510823 /* VentManagementTVC.swift */; };
 		C4C9AADF20F4478100510823 /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9AADE20F4478100510823 /* UIView+Borders.swift */; };
 		C4C9AAE120F44F8800510823 /* ClinicalProceduresTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9AAE020F44F8800510823 /* ClinicalProceduresTBV.swift */; };
@@ -751,6 +754,9 @@
 		C4C25EEB1FF9099600C5CD42 /* PediatricCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PediatricCalculations.swift; sourceTree = "<group>"; };
 		C4C25EEC1FF9099600C5CD42 /* MiniPopUpData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiniPopUpData.swift; path = ../MiniPopUpData.swift; sourceTree = "<group>"; };
 		C4C25EED1FF9099600C5CD42 /* MiniDrugDataViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniDrugDataViewViewController.swift; sourceTree = "<group>"; };
+		C4C958772209C5A6003B8ADA /* ClinicalCalculator_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalCalculator_CollectionView.swift; sourceTree = "<group>"; };
+		C4C958792209C733003B8ADA /* ClinicalCalc_CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalCalc_CollectionCell.swift; sourceTree = "<group>"; };
+		C4C9587B2209DBE3003B8ADA /* ComingSoonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVC.swift; sourceTree = "<group>"; };
 		C4C9AADA20F4353200510823 /* VentManagementTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentManagementTVC.swift; sourceTree = "<group>"; };
 		C4C9AADE20F4478100510823 /* UIView+Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
 		C4C9AAE020F44F8800510823 /* ClinicalProceduresTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalProceduresTBV.swift; sourceTree = "<group>"; };
@@ -1549,13 +1555,16 @@
 			path = "Lab Value Storyboard";
 			sourceTree = "<group>";
 		};
-		C430D2E820EEAF9B00A99985 /* Reference Calculators Storyboard */ = {
+		C430D2E820EEAF9B00A99985 /* Clinical Calculators */ = {
 			isa = PBXGroup;
 			children = (
 				C430D2E920EEAFCC00A99985 /* ReferencesMenu.storyboard */,
 				C45DE22120F42D37001F3884 /* MedCalulationsTableViewController.swift */,
+				C4C9587B2209DBE3003B8ADA /* ComingSoonVC.swift */,
+				C4C958772209C5A6003B8ADA /* ClinicalCalculator_CollectionView.swift */,
+				C4C958792209C733003B8ADA /* ClinicalCalc_CollectionCell.swift */,
 			);
-			path = "Reference Calculators Storyboard";
+			path = "Clinical Calculators";
 			sourceTree = "<group>";
 		};
 		C436ED412001B3B5008ACDC7 /* PF Ratio */ = {
@@ -1875,7 +1884,7 @@
 				C4B912AE2000FD950008B159 /* Parkland Formula */,
 				C4C25EE81FF9099600C5CD42 /* Pediatrics */,
 				C436ED412001B3B5008ACDC7 /* PF Ratio */,
-				C430D2E820EEAF9B00A99985 /* Reference Calculators Storyboard */,
+				C430D2E820EEAF9B00A99985 /* Clinical Calculators */,
 				C4C25EB91FF9099500C5CD42 /* RSI */,
 				C4A77768200964AC002EEC86 /* Urine Output */,
 				C4D062BE21EA283500F2B84E /* Ultrasound */,
@@ -2532,7 +2541,6 @@
 				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftRichString/SwiftRichString.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyAttributes/SwiftyAttributes.framework",
 				"${BUILT_PRODUCTS_DIR}/TTSegmentedControl/TTSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
@@ -2548,7 +2556,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRichString.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyAttributes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
@@ -2620,6 +2627,7 @@
 				C4C9AADB20F4353200510823 /* VentManagementTVC.swift in Sources */,
 				C4278C37203F604C003ABFF8 /* StrokeCollectionMenu.swift in Sources */,
 				C492B90F201AE8BE0042CE20 /* RSISetting.swift in Sources */,
+				C4C9587A2209C733003B8ADA /* ClinicalCalc_CollectionCell.swift in Sources */,
 				C4DF418F1FFD095700AD1229 /* SCLExtensions.swift in Sources */,
 				C4278C35203F6045003ABFF8 /* NeuroCollectionViewCell.swift in Sources */,
 				C4D4DF7E20631C7500A384BD /* DripsList.swift in Sources */,
@@ -2651,6 +2659,7 @@
 				C4F8160F20FE407600D41CFB /* KingLT.swift in Sources */,
 				C48DC5242208D7B100BC222A /* 0-3KG.swift in Sources */,
 				C45AC31B1FFF219C000CF2CF /* Gradient.swift in Sources */,
+				C4C9587C2209DBE3003B8ADA /* ComingSoonVC.swift in Sources */,
 				C48DC5152208CED100BC222A /* Pediatric_DetailVC.swift in Sources */,
 				C41002FA21B83C7400B3D21F /* AnionGapAndDELTAGap.swift in Sources */,
 				C4D55DED201545FB002199DA /* chestTubeData.swift in Sources */,
@@ -2761,6 +2770,7 @@
 				C4C25EF61FF9099600C5CD42 /* StackElementViewController.swift in Sources */,
 				C4122A6B21EE498500243040 /* EFImageViewZoom.swift in Sources */,
 				C4C25F161FF9099600C5CD42 /* PedsViewController.swift in Sources */,
+				C4C958782209C5A6003B8ADA /* ClinicalCalculator_CollectionView.swift in Sources */,
 				C48DC51E2208D7B100BC222A /* 10-12KG.swift in Sources */,
 				C4D062BD21E9EC7800F2B84E /* EKGAttributedText.swift in Sources */,
 				C4D709E020FA6FAE00593760 /* Intubation.swift in Sources */,
@@ -2939,8 +2949,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JXLE4994XZ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Critical.X/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheBarringerGroup.Critical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2948,6 +2959,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -2960,14 +2972,16 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JXLE4994XZ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Critical.X/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheBarringerGroup.Critical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};

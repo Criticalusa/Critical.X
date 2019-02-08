@@ -15,13 +15,15 @@ var hemodynamicCallID = Int() // Global Variabel to be passed an acccessed
 class Hemodynamics_CollectionView:  UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var hemodynamicsTitleLabel: AKLabel!
-    
+    @IBOutlet weak var hemodynamicsImage: UIImageView!
+
     // Main Title
     var hemodynamicTitles = [String]()
     // Subtitles
     var hemodynamicValues = [String]()
     // Explanation of the modes
     var ventExplanationDetail = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,8 @@ class Hemodynamics_CollectionView:  UIViewController, UICollectionViewDelegate, 
         
         // Animate the ultrasound title.
         hemodynamicsTitleLabel.animate(text: "Hemodynamics", duration: 1, completion: nil)
-        
+        // Takes the button and makes it into a circle
+        hemodynamicsImage.layer.cornerRadius = hemodynamicsImage.frame.size.width / 2
         
         hemodynamicTitles =  ["Arterial Oxygen Saturation (SaO2)", //0
             "Mixed Venous Saturation (SvO2)", //1

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SwiftyAttributes
+//import SwiftyAttributes
 extension ABGViewController {
     
     func changeThe_PH_TextAttributes(text: String, subStrings: String) -> NSAttributedString {
