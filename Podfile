@@ -10,12 +10,11 @@ target 'Critical.X' do
   # Pods for Critical.X
 pod 'TextFieldEffects'
 pod 'AKLabel'
-pod 'SwiftRichString'
+
 pod 'McPicker'
 pod 'LTMorphingLabel'
 pod 'DatePickerDialog'
 pod 'SCLAlertView'
-pod 'SwifterSwift'
 pod 'lottie-ios'
 pod 'EasyPeasy'
 pod 'SteviaLayout'
