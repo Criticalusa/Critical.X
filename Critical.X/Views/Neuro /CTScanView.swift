@@ -23,7 +23,7 @@ class CTScanView: UIViewController, UITextFieldDelegate, HorizontalDialDelegate 
     func horizontalDialDidValueChanged(_ horizontalDial: HorizontalDial) {
         
         
-        var degrees = horizontalDial.value.rounded()
+        _ = horizontalDial.value.rounded()
         //let radians = degreesToRadians(degrees)
         degreesValueLabel?.text = "CT Slice \(horizontalDial.value.rounded())"
         
