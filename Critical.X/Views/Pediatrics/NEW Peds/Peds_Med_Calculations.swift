@@ -759,6 +759,35 @@ extension Pediatric_DetailVC {
         
         
         
+        //MARK Maintenance Fluids
+        
+        let maintenanceFluids = calculateMaintenance_Fluids(weight: weightEntered!)
+        
+        let mLperDay = maintenanceFluids / 24
+        
+        maintenanceFluid.text = String.localizedStringWithFormat("%.1f", maintenanceFluids)
+        
+        maintenanceFluidMLDaily.text = String.localizedStringWithFormat("%.1f", mLperDay)
+        
+        // Here we display the different fluid parameters depending on weight entered.
+        switch weightEntered! {
+        
+        case 3.5...10:
+            
+            maintenanceFluidDetail.text = "Daily fluids: 100 mL/kg"
+        
+        case 10.1...20:
+           
+            maintenanceFluidDetail.text = "Daily fluids: 1000 mL + 50mL q Kg > 10"
+        
+        case 20...:
+           
+            maintenanceFluidDetail.text = "Daily fluids: 1500 mL + 20mL/Kg q Kg > 20"
+        
+        default:
+           
+            maintenanceFluidDetail.text = "Maintenance Fluids"
+        }
         
         //MARK: - Zofran 0.15 mg/kg | 2mg/mL
         
@@ -784,9 +813,12 @@ extension Pediatric_DetailVC {
         albumin5_ML.text   = AlbuminML
         
         
+        // Benadryl Dose
         
-        
+    
         
     } // End the function
+    
+    
     
 } // End the extension

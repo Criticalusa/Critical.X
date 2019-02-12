@@ -126,7 +126,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var versed_DetailDoseLabel          : UILabel!
     
     @IBOutlet weak var versedIM_DetailDoseLabel        : UILabel!
-
+    
     @IBOutlet weak var propofol_DetailDoseLabel        : UILabel!
     
     @IBOutlet weak var fentanyl_DetailDoseLabel        : UILabel!
@@ -134,7 +134,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var ativan_DetailDoseLabel          : UILabel!
     
     @IBOutlet weak var magSulfate_DetailDoseLabel      : UILabel!
-   
+    
     
     
     //MARK: - CARDIAC RESUSCITATION OUTLETS
@@ -195,7 +195,7 @@ class Pediatric_DetailVC: UIViewController {
     
     // Detail mg/mL outlets
     @IBOutlet weak var amiodarone_DetailDoseLabel        : UILabel!
-
+    
     @IBOutlet weak var adenosine_Initial_DetailDoseLabel : UILabel!
     
     @IBOutlet weak var adenosine_Repeat_DetailDoseLabel  : UILabel!
@@ -269,7 +269,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var cardioversion_lbl  : UILabel!
     
     
-  
+    
     
     // Medication profile dosages
     //MARK Albuterol
@@ -279,7 +279,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var albuterol_MLs             : UILabel!
     
     @IBOutlet weak var albuterol_DetailDoseLabel : UILabel!
-
+    
     
     
     
@@ -290,7 +290,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var duoNeb_MLs             : UILabel!
     
     @IBOutlet weak var duoNeb_DetailDoseLabel : UILabel!
-
+    
     
     //MARK Decardon
     
@@ -299,7 +299,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var decardron_ML             : UILabel!
     
     @IBOutlet weak var decadron_DetailDoseLabel : UILabel!
-
+    
     
     //MARK Morphine
     
@@ -308,7 +308,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var morphine_mL     : UILabel!
     
     @IBOutlet weak var morphine_Detail : UILabel!
-
+    
     
     //MARK Mannitol
     
@@ -317,7 +317,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var mannitol_Ml     : UILabel!
     
     @IBOutlet weak var mannitol_Detail : UILabel!
-
+    
     
     //MARK Zofran
     
@@ -326,7 +326,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var ondansetron_ML              : UILabel!
     
     @IBOutlet weak var ondansetron_DetailDoseLabel : UILabel!
-
+    
     
     //MARK Benadryl
     
@@ -335,7 +335,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var benadryl_ML              : UILabel!
     
     @IBOutlet weak var benadryl_DetailDoseLabel : UILabel!
-
+    
     
     //MARK Fluid Bolus
     
@@ -344,7 +344,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var fluidBolus_ML              : UILabel!
     
     @IBOutlet weak var fluidBolus_DetailDoseLabel : UILabel!
-
+    
     
     //MARK Valium Diazepam
     
@@ -373,7 +373,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var NAfluidBolus_Dose           : UILabel!
     
     @IBOutlet weak var NAfluidBolus_ML             : UILabel!
-  
+    
     //MARK Albumin Bolus
     
     @IBOutlet weak var albumin5_DetailDoseDose : UILabel!
@@ -389,7 +389,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var labetalol_Label         : UILabel!
     
     @IBOutlet weak var cardene_Label           : UILabel!
-   
+    
     
     @IBOutlet weak var hydrocortisone_label    : UILabel!
     
@@ -399,8 +399,12 @@ class Pediatric_DetailVC: UIViewController {
     
     @IBOutlet weak var nitroglycerine_Label    : UILabel!
     
-    @IBOutlet weak var nipride_Label           : UILabel!
+    @IBOutlet weak var maintenanceFluid        : UILabel!
     
+    @IBOutlet weak var maintenanceFluidMLDaily : UILabel!
+
+    @IBOutlet weak var maintenanceFluidDetail  : UILabel!
+
     @IBOutlet weak var levophed_Label          : UILabel!
     
     @IBOutlet weak var precedex_Label          : UILabel!
@@ -408,7 +412,7 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var lasix_Label             : UILabel!
     
     @IBOutlet weak var narcan_Label            : UILabel!
-  
+    
     
     
     
@@ -445,6 +449,88 @@ class Pediatric_DetailVC: UIViewController {
         disMissBtn.layer.cornerRadius = disMissBtn.frame.size.width / 2
         
     }
+    
+    //MARK Calculate Maintenance Fluid Daily intake
+    func calculateMaintenance_Fluids (weight: Double ) -> Double {
+        
+        /*
+         For infants 3.5 to 10 kg the daily fluid requirement is 100 mL/kg.
+         For children 11-20 kg the daily fluid requirement is 1000 mL + 50 mL/kg for every kg over 10.
+         For children > 20 kg the daily fluid requirement is 1500 mL + 20 mL/kg for every kg over 20, up to a maximum of 2400 mL daily.
+         */
+        
+        var dailyFluidRequirement = Double()
+        
+        guard let ptweight = weightEntered else {
+            
+            print("Weight was not entered for daily fluid")
+            
+            return 0 }
+        
+        if ptweight >= 3.5 && ptweight <= 10.0 {
+            
+            dailyFluidRequirement = ptweight * 100
+            print("Daily fluid requirement is  is \(dailyFluidRequirement)")
+
+        }
+            
+         else if ptweight >= 11 && ptweight <= 20.0 {
+            
+            // We are calculating the remaining leftover for any weight over 10
+            let leftOver = ptweight.truncatingRemainder(dividingBy: 10)
+            
+            let extraFluid = leftOver * 50
+            
+            print("leftover is \(leftOver)")
+            
+            print("Extra Fluid to be delivered is \(extraFluid) mL's")
+            
+            // Setting the daily requirement For children 11-20 kg the daily fluid requirement is 1000 mL + 50 mL/kg for every kg over 10.
+            
+            dailyFluidRequirement = extraFluid + 1000
+            
+        }
+        
+        //For children > 20 kg the daily fluid requirement is 1500 mL + 20 mL/kg for every kg over 20, up to a maximum of 2400 mL daily.
+        
+        else if ptweight > 20.1 {
+            
+            // We are calculating the leftover from over 10
+            let leftOver20 = ptweight - 20
+            
+            // Will be 20 mL / kg for every kg over 20.
+            let extraFluid20 = leftOver20 * 20
+            
+            print("Pt is over 20 kg, leftover is \(leftOver20) kg")
+            
+            print("Pt is \(ptweight) KG. Extra Fluid to be delivered is \(extraFluid20) mL's")
+            
+            dailyFluidRequirement = extraFluid20 + 1500
+            
+    
+
+            if dailyFluidRequirement >= 2400.0 {
+                // SEt the max to 2400
+                dailyFluidRequirement = 2400.00
+
+                print("Daily fluid requirement is  is \(dailyFluidRequirement)")
+
+            }
+            else {
+
+                // else do the calculation.
+                dailyFluidRequirement = extraFluid20 + 1500
+                print("Daily fluid requirement is  is \(dailyFluidRequirement)")
+
+            }
+            
+        }
+        
+        
+        return dailyFluidRequirement
+    }
+    
+    
     
     
     //MARK: Calculates 1 Dose
@@ -508,6 +594,8 @@ class Pediatric_DetailVC: UIViewController {
         
     }
     
+    
+    
     //MARK: Calculates 2 Dose Range and returns as a String
     func calculateDoseTwoML (DoseMin: Double, finalConcentrationPer_ML: Double, _DoseMax: Double) -> String {
         
@@ -532,6 +620,7 @@ class Pediatric_DetailVC: UIViewController {
         // Since the final result is a string, here we add the final.
         return finalDose1 + dash + finalDose2
     }
+    
     
     
     
@@ -583,6 +672,7 @@ class Pediatric_DetailVC: UIViewController {
         calculation()
         
         calculateAllPediatricFactors()
+        
         
     }
     
@@ -710,6 +800,8 @@ class Pediatric_DetailVC: UIViewController {
         }
     }
     
+    
+    
     //MARK: Calculates Age from the Weight entered
     func approximateAgeFromWeight (weight: Double)-> String {
         
@@ -727,7 +819,7 @@ class Pediatric_DetailVC: UIViewController {
             
             return "Newborn"
         }
-        
+            
         else if age == 1 {
             
             return "Approx. \(Int(age)) month old."
