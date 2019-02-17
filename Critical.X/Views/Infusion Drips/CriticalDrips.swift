@@ -283,6 +283,25 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             let infusion = Dose * weight/(totalDose/IvBag*1000)*60
             txtInfusionRate.text = String(format:"%.2f", infusion)
         }
+            
+        else if unit == "ng/kg/min" {
+            //1 ng=0.001 mcg or 1000 ng=1 mcg
+            
+            var yields = totalDose/IvBag * 1000000
+            lblUnitYields.text = "ng/mL"
+            if yields < 1 {
+                yields = totalDose/IvBag*1000
+                lblUnitYields.text = "ng/mL"
+            }
+            lblYields.text = String(format:"%.1f", yields)
+            
+            //let infusion = Dose * weight/(totalDose/IvBag/1000)*60
+            let infusion = Dose * weight * 60 / (totalDose/IvBag * 1000000)
+
+            txtInfusionRate.text = String(format:"%.1f", infusion)
+        }
+            
+            
         else if unit == "mcg/kg/hr" {
             var yields = totalDose/IvBag
             lblUnitYields.text = "mg/mL"
@@ -295,6 +314,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             let infusion = Dose * weight/(totalDose/IvBag*1000)
             txtInfusionRate.text = String(format:"%.1f", infusion)
         }
+            
         else if unit == "mg/kg/hr" {
             var yields = totalDose/IvBag
             lblUnitYields.text = "mg/mL"

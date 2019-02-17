@@ -319,15 +319,31 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var mannitol_Detail : UILabel!
     
     
-    //MARK Zofran
+    //MARK Fentanyl Intranasal
     
-    @IBOutlet weak var ondansetron_Dose            : UILabel!
+    @IBOutlet weak var fentanyl_Intranasal_Dose            : UILabel!
     
-    @IBOutlet weak var ondansetron_ML              : UILabel!
+    @IBOutlet weak var fentanyl_Intranasal_ML              : UILabel!
     
-    @IBOutlet weak var ondansetron_DetailDoseLabel : UILabel!
+    @IBOutlet weak var fentanyl_Intranasal_DetailDoseLabel : UILabel!
     
     
+    //MARK: - Ketamine RSI Dose
+    @IBOutlet weak var ketamineRSI_DetailDoseLabel: UILabel!
+    
+    @IBOutlet weak var ketamineRSI_Dose: UILabel!
+    
+    @IBOutlet weak var ketamineRSI_ML: UILabel!
+
+    
+    //MARK: - Ketamine Intranasal
+    
+    @IBOutlet weak var ketmine_Intranasal_Dose : UILabel!
+    
+    @IBOutlet weak var ketamine_Intranasal_ML : UILabel!
+
+    @IBOutlet weak var ketamine_Intranasal_DetailDoseLabel: UILabel!
+
     //MARK Benadryl
     
     @IBOutlet weak var benadryl_Dose            : UILabel!
@@ -335,6 +351,34 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var benadryl_ML              : UILabel!
     
     @IBOutlet weak var benadryl_DetailDoseLabel : UILabel!
+    
+    //MARK: - Solu-Medrol
+    
+    @IBOutlet weak var epiIM_Dose            : UILabel!
+    
+    @IBOutlet weak var epiIM_ML              : UILabel!
+    
+    @IBOutlet weak var epiIM_DetailDoseLabel : UILabel!
+    
+    //MARK: - Epinephrine IM
+    
+    @IBOutlet weak var solumedrol_Dose            : UILabel!
+    
+    @IBOutlet weak var solumedrol_ML              : UILabel!
+    
+    @IBOutlet weak var solumedrol_DetailDoseLabel : UILabel!
+
+    
+    
+    //MARK Zofran
+    
+    @IBOutlet weak var zofran_Dose            : UILabel!
+    
+    @IBOutlet weak var zofran_ML              : UILabel!
+    
+    @IBOutlet weak var zofran_DetailDoseLabel : UILabel!
+    
+    
     
     
     //MARK Fluid Bolus

@@ -155,6 +155,7 @@ class RSIDetail: UIViewController {
            
            
             UserDefaults.standard.set(Parameters, forKey: "parameters")
+            
             UserDefaults.standard.synchronize()
         }
         
@@ -169,12 +170,14 @@ class RSIDetail: UIViewController {
         
         // MARK: Closure When calculation has one value to be multiplied
         let doseRange1 = {(initialDose: Double, range1: Double) -> (String) in
+            
             let initialDose = self.weightEntered
             
             return "\((initialDose! * range1).oneDecimalPlace)"
         }
         
         let doseRange1mL = {(initialDose: Double, permL: Double) -> (String) in
+            
             let initialDose = self.weightEntered
             
             return "\(Double(initialDose! / permL).oneDecimalPlace)"
@@ -187,7 +190,9 @@ class RSIDetail: UIViewController {
         //MARK: When calculation has two values to be multiplied
         
         let doseRange2 = {(initialDose: Double, FollowingDose: Double, range1: Double, range2: Double) -> String in
+            
             let initialDose = self.weightEntered
+            
             let FollowingDose = self.weightEntered
             //            return "\(Int(initialDose! * range1)) - \(Int(FollowingDose! * range2))"
             
@@ -195,8 +200,11 @@ class RSIDetail: UIViewController {
         }
         
         let doseRange2_Int = {(initialDose: Double, FollowingDose: Double, range1: Double, range2: Double) -> String in
+            
             let initialDose = self.weightEntered
+            
             let FollowingDose = self.weightEntered
+            
             return "\(Int(initialDose! * range1))‑\(Int(FollowingDose! * range2))"
             
         }
@@ -207,7 +215,9 @@ class RSIDetail: UIViewController {
         // MARK: Closure to determine the mLs to be delivered to a patient.
         
         let doseRange2_mL = {(initialDose: Double, FollowingDose: Double, range1: Double, range2: Double,permL: Double) -> String in
+            
             let initialDose = self.weightEntered
+            
             let FollowingDose = self.weightEntered
             
             return "\(Double((initialDose! * range1) / permL).oneDecimalPlace)‑\(Double((FollowingDose! * range2) / permL).oneDecimalPlace) mL's"
@@ -215,7 +225,9 @@ class RSIDetail: UIViewController {
         }
         
         let doseRange1_mL = {(initialDose: Double, range1: Double,permL: Double) -> String in
+            
             let initialDose = self.weightEntered
+            
             let FollowingDose = self.weightEntered
             
             return "\(Double((initialDose! * range1) / permL).oneDecimalPlace) mL's"

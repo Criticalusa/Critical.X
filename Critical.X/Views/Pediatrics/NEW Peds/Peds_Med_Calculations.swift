@@ -29,9 +29,9 @@ extension Pediatric_DetailVC {
         // What happens when etomidate is not nil.
         
         // Sets the detail label with the dose and mL amount
-        adenosine_Initial_DetailDoseLabel.text = "0.1 mg/kg  | 3 mg/mL"
+        adenosine_Initial_DetailDoseLabel.text = "0.1 mg/kg  | 3 mg/mL | IV, IO"
         
-        adenosine_Repeat_DetailDoseLabel.text = "0.2 mg/kg  | 3 mg/mL"
+        adenosine_Repeat_DetailDoseLabel.text = "0.2 mg/kg  | 3 mg/mL | IV, IO"
         
         // Calculates the mL's to be given from the calculated dose
         let adenosineInitialMls = convertMLfromCalculatedDose(patientDosePerKG: 0.1, doseIn_Mg_G: 3, mL: 1)
@@ -73,7 +73,7 @@ extension Pediatric_DetailVC {
         // What happens when etomidate is not nil.
         
         // Sets the detail label with the dose and mL amount
-        amiodarone_DetailDoseLabel.text = "5 mg/kg  | 50 mg/mL"
+        amiodarone_DetailDoseLabel.text = "5 mg/kg  | 50 mg/mL | IV, IO"
         
         // Calculates the mL's to be given from the calculated dose
         let amio_mLs = convertMLfromCalculatedDose(patientDosePerKG: 5, doseIn_Mg_G: 50, mL: 1)
@@ -105,7 +105,7 @@ extension Pediatric_DetailVC {
         atropine_ML.text = "\(atropineSulfate_mLs.oneDecimalPlace)"
         
         // Sets the detail label with the dose and mL amount
-        atropine_DetailDoseLabel.text = "0.02 mg/kg  | 0.1 mg/mL"
+        atropine_DetailDoseLabel.text = "0.02 mg/kg  | 0.1 mg/mL | IV, IO"
         
         print("Atropine dose is \(atropineSulfate!.oneDecimalPlace)")
         
@@ -117,7 +117,7 @@ extension Pediatric_DetailVC {
         let ativanML = calculateDoseTwoML(DoseMin: 0.05, finalConcentrationPer_ML: 2, _DoseMax: 0.1)
         
         //setting the text labels
-        ativan_DetailDoseLabel.text = "0.05 - 0.1 mg/kg | 2mg/mL"
+        ativan_DetailDoseLabel.text = "0.05 - 0.1 mg/kg | 2mg/mL | IV, IM, IO"
         
         ativan_Dose.text =  ativan
         
@@ -208,7 +208,7 @@ extension Pediatric_DetailVC {
         let caGluconatemL = convertMLfromCalculatedDose(patientDosePerKG: 60, doseIn_Mg_G: 100, mL: 1)
         
         // Set the detail text label
-        caGluconate_DetailDoseLabel.text = "60 mg/kg | 100 mg/mL"
+        caGluconate_DetailDoseLabel.text = "60 mg/kg | 100 mg/mL | IV, IO"
         
         // Set Dose and Ml's labels
         caGluconate_ML.text = "\(caGluconatemL.oneDecimalPlace)"
@@ -314,7 +314,7 @@ extension Pediatric_DetailVC {
         // What happens when etomidate is not nil.
         
         // Sets the detail label with the dose and mL amount
-        etomidate_DetailDoseLabel.text = "0.3 mg/kg  | 2 mg/mL"
+        etomidate_DetailDoseLabel.text = "0.3 mg/kg  | 2 mg/mL | IV, IO"
         
         // Calculates the mL's to be given from the calculated dose
         let etomidateMLs = convertMLfromCalculatedDose(patientDosePerKG: 0.3, doseIn_Mg_G: 2, mL: 1)
@@ -340,7 +340,7 @@ extension Pediatric_DetailVC {
         // What happens when epi is not nil.
         
         // Sets the detail label with the dose and mL amount
-        epinephrine_DetailDoseLabel.text = "0.01 mg/kg  | 0.1 mg/mL"
+        epinephrine_DetailDoseLabel.text = "0.01 mg/kg  | 0.1 mg/mL | IV, IO"
         
         // Calculates the mL's to be given from the calculated dose
         let epiMLs = convertMLfromCalculatedDose(patientDosePerKG: 0.01, doseIn_Mg_G: 0.1, mL: 1)
@@ -359,44 +359,128 @@ extension Pediatric_DetailVC {
         
         
         
-        //MARK: FENTANYL
+        //MARK: FENTANYL IV
         // 100/ 2Ml = 50 mcg/mL
-        let fentanyl: Double? = calculateDoseOne(Dose: 1)
+        let fentanyl = calculateDoseOne(Dose: 1)
         
         let fentanylML = convertMLfromCalculatedDose(patientDosePerKG: 1, doseIn_Mg_G: 50, mL: 1)
         
-        guard let _ = fentanyl else { return}
         
         // Here we set the textLabels
-        fentanyl_DetailDoseLabel.text = "1 mcg/kg | 50 mcg/mL"
+        fentanyl_DetailDoseLabel.text = "1 mcg/kg | 50 mcg/mL | IV, IM, IO"
         
-        fentanyl_Dose.text = "\(fentanyl!)"
+        fentanyl_Dose.text = "\(fentanyl.oneDecimalPlace)"
         
         fentanyl_ML.text   = "\(fentanylML.oneDecimalPlace)"
         
         
         
         
-        //MARK: - KETAMINE
+        //MARK: FENTANYL Intranasal
+        // 1.5 mcg/kg = 50 mcg/mL
+        let fentanyl_Intranasal = calculateDoseOne(Dose: 1.5)
         
+        let fentanylML_Intranasal = convertMLfromCalculatedDose(patientDosePerKG: 1.5, doseIn_Mg_G: 50, mL: 1)
+        
+        
+        // Here we set the textLabels
+        fentanyl_Intranasal_DetailDoseLabel.text = "1.5 mcg/kg | 50 mcg/mL | Intranasal"
+        
+        fentanyl_Intranasal_Dose.text            = "\(fentanyl_Intranasal.oneDecimalPlace)"
+        
+        fentanyl_Intranasal_ML.text              = "\(fentanylML_Intranasal.oneDecimalPlace)"
+        
+
+        
+        //MARK: - Ketamine RSI Dose
         //Guard function from the closure.
-        let ketamine =  calculateDoseTwo(DoseMin: 1, _DoseMax: 2)
+        let ketamineRSI =  calculateDoseOne(Dose: 1.5)
         
         // Sets the detail label with the dose and mL amount
-        ketamine_DetailDoseLabel.text = "1-2 mg/kg | 10 mg/mL"
+        ketamineRSI_DetailDoseLabel.text = "1.5 mg/kg | 100 mg/mL | IV, IO"
         
         // Calculates the mL's to be given from the calculated dose
-        let ketamineML =  calculateDoseTwoML(DoseMin: 1, finalConcentrationPer_ML: 10, _DoseMax: 2)
+        let ketamine_RSI_ML = convertMLfromCalculatedDose(patientDosePerKG: 1.5, doseIn_Mg_G: 100, mL: 1)
+        
+        // Sets both the dose and ML amount
+        ketamineRSI_Dose.text =  "\(ketamineRSI)"
+        print("Ketamine Dose is \(ketamineRSI)")
+
+        ketamineRSI_ML.text = "\(ketamine_RSI_ML.twoDecimalPlace)" //String.localizedStringWithFormat("%.1f", succsMLs2)
+        print("Ketamine mL dose is \(ketamine_RSI_ML) mL's")
+
+        
+        // In the event that the weight is less than 10kg, then its not indciated.
+        switch weightEntered! {
+        case 0...9.9:
+            ketamineRSI_DetailDoseLabel.text = "Not indicated at this age"
+            
+            ketamineRSI_Dose.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+            ketamineRSI_Dose.text =  "N/A"
+            
+            ketamineRSI_ML.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+            ketamineRSI_ML.text = "N/A"
+        default:
+            break
+        }
+        
+        
+        
+        //MARK: - KETAMINE Procedural Sedation
+        
+        //Guard function from the closure.
+        let ketamine =  calculateDoseOne(Dose: 0.5)
+        
+        // Sets the detail label with the dose and mL amount
+        ketamine_DetailDoseLabel.text = "0.5 mg/kg | 100 mg/mL | IV, IO"
+        
+        // Calculates the mL's to be given from the calculated dose
+        let ketamineML = convertMLfromCalculatedDose(patientDosePerKG: 0.5, doseIn_Mg_G: 100, mL: 1)
         print("Ketamine mL dose is \(ketamineML) mL's")
         
         // Sets both the dose and ML amount
-        ketamine_Dose.text = ketamine
+        ketamine_Dose.text =  "\(ketamine)"
         
-        ketamine_ML.text = ketamineML //String.localizedStringWithFormat("%.1f", succsMLs2)
+        ketamine_ML.text = "\(ketamineML.twoDecimalPlace)" //String.localizedStringWithFormat("%.1f", succsMLs2)
         
         print("Ketamine Dose is \(ketamine)")
         
+        // In the event that the weight is less than 10kg, then its not indciated.
+        switch weightEntered! {
+        case 0...9.9:
+            ketamine_DetailDoseLabel.text = "Not indicated at this age"
+
+            ketamine_Dose.text =  "N/A"
+            
+            ketamine_Dose.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+            ketamine_ML.text = "N/A"
+            
+            ketamine_ML.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+
+        default:
+            break
+        }
         
+        
+        //MARK: KETAMINE Intranasal
+        
+        // 1.5 mcg/kg = 50 mcg/mL
+        let ketamine_Intranasal = calculateDoseOne(Dose: 1)
+        print("Ketamine Intranasal Dose is \(ketamine_Intranasal)")
+
+        let ketamine_Intranasal_Mls = convertMLfromCalculatedDose(patientDosePerKG: 1, doseIn_Mg_G: 100, mL: 1)
+        print("Ketamine mL Intranasal dose is \(ketamine_Intranasal_Mls) mL's")
+
+        
+        // Here we set the textLabels
+        ketamine_Intranasal_DetailDoseLabel.text = "1 mg/kg | 100 mg/mL | Intranasal"
+        
+        ketmine_Intranasal_Dose.text            = "\(ketamine_Intranasal)"
+        
+        ketamine_Intranasal_ML.text              = "\(ketamine_Intranasal_Mls.oneDecimalPlace)"
         
         
         
@@ -410,7 +494,7 @@ extension Pediatric_DetailVC {
         // What happens when epi is not nil.
         
         // Sets the detail label with the dose and mL amount
-        lidocaine_DetailDoseLabel.text = "1 mg/kg | 20 mg/mL"
+        lidocaine_DetailDoseLabel.text = "1 mg/kg | 20 mg/mL | IV, IO"
         
         // Calculates the mL's to be given from the calculated dose
         let lidocaineMLs = convertMLfromCalculatedDose(patientDosePerKG: 1, doseIn_Mg_G: 20, mL: 1)
@@ -688,7 +772,7 @@ extension Pediatric_DetailVC {
         //MARK: - DECADRON 0.6 mg/kg | 10 mg/mL
         
         // Populate the concentration label.
-        decadron_DetailDoseLabel.text = "0.6 mg/kg | 10 mg/mL"
+        decadron_DetailDoseLabel.text = "0.6 mg/kg | 10 mg/mL | IV, IM, IO"
         
         let decadron = calculateDoseOne(Dose: 0.6)
         print("decadron " + "\(decadron)")
@@ -726,7 +810,7 @@ extension Pediatric_DetailVC {
         //MARK: - GLUCAGON 0.1 mg/Kg | 1mg/mL
         
         // Populate the concentration label.
-        glucagon_DetailDose.text = "0.1 mg/kg | 1 mg/mL"
+        glucagon_DetailDose.text = "0.1 mg/kg | 1 mg/mL | IV, IO"
 
         let glucagon = calculateDoseOne(Dose: 0.1)
         print("glucagon Dose " + "\(glucagon)")
@@ -789,16 +873,14 @@ extension Pediatric_DetailVC {
             maintenanceFluidDetail.text = "Maintenance Fluids"
         }
         
-        //MARK: - Zofran 0.15 mg/kg | 2mg/mL
-        
-        
+       
         
         
         //MARK: - ALbumin
         //1. The Johns Hopkins Harriet Lane Harriet Lane Handbook, 17th Edition, Mosby Co. 2005
         
         // Populate the concentration label.
-        albumin5_DetailDoseDose.text = "0.5 -1 gm/kg | 10-20 mL/kg"
+        albumin5_DetailDoseDose.text = "0.5 -1 gm/kg | 10-20 mL/kg  | IV, IO"
         
         let Albumin = calculateDoseTwo(DoseMin: 0.5, _DoseMax: 1)
         print("Albumin " + Albumin)
@@ -813,9 +895,75 @@ extension Pediatric_DetailVC {
         albumin5_ML.text   = AlbuminML
         
         
-        // Benadryl Dose
+        //MARK Benadryl Dose
         
-    
+        // Populate the concentration label.
+        benadryl_DetailDoseLabel.text = "1 mg/kg | 50 mg/mL | IV,IO,IM"
+        
+        let benadryl = calculateDoseOne(Dose: 1)
+        print("benadryl Dose " + "\(benadryl)")
+        
+        let benadrylML = convertMLfromCalculatedDose(patientDosePerKG: 1, doseIn_Mg_G: 50, mL: 1)
+        print("benadryl ML " + "\(benadrylML)")
+        // Set the dose text
+        benadryl_Dose.text = String.localizedStringWithFormat("%.1f", benadryl)
+        
+        // Set the mL's
+        benadryl_ML.text   = "\(benadrylML.oneDecimalPlace)"
+        
+        
+        //MARK: - Epinephrine IM
+        // Populate the concentration label.
+        epiIM_DetailDoseLabel.text = "0.01 mg/kg IM | 1 mg/mL | IV, IM, IO"
+        
+        let epiIM = calculateDoseOne(Dose: 0.01)
+        print("epiIM Dose " + "\(epiIM)")
+        
+        let epi_IM_ML = convertMLfromCalculatedDose(patientDosePerKG: 0.01, doseIn_Mg_G: 1, mL: 1)
+        print("epiIM ML " + "\(epi_IM_ML)")
+        // Set the dose text
+        epiIM_Dose.text = String.localizedStringWithFormat("%.1f", epiIM)
+        
+        // Set the mL's
+        epiIM_ML.text   = "\(epi_IM_ML.oneDecimalPlace)"
+        
+        
+        //MARK: - Solu-medrol
+        // Populate the concentration label.
+        solumedrol_DetailDoseLabel.text = "2 mg/kg IM | 125 mg/ 2mL | IV, IM, IO"
+        
+        let solumedrol = calculateDoseOne(Dose: 2)
+        print("solumedrol Dose " + "\(solumedrol)")
+        
+        let solumedrol_MLs = convertMLfromCalculatedDose(patientDosePerKG: 2, doseIn_Mg_G: 125, mL: 2)
+        print("solumedrol ML " + "\(solumedrol_MLs)")
+        // Set the dose text
+        solumedrol_Dose.text = String.localizedStringWithFormat("%.1f", solumedrol)
+        
+        // Set the mL's
+        solumedrol_ML.text   = "\(solumedrol_MLs.oneDecimalPlace)"
+        
+        
+        
+        //MARK: - Zofran 0.15 mg/kg | 2mg/mL
+        
+        // Populate the concentration label.
+        zofran_DetailDoseLabel.text = "0.15 mg/kg IM | 2 mg/mL | IV, IM, IO"
+        
+        let zofran = calculateDoseOne(Dose: 0.15)
+        print("zofran Dose " + "\(zofran)")
+        
+        let zofran_MLs = convertMLfromCalculatedDose(patientDosePerKG: 0.15, doseIn_Mg_G: 2, mL: 1)
+        print("zofran ML " + "\(zofran_MLs)")
+        // Set the dose text
+        zofran_Dose .text = String.localizedStringWithFormat("%.1f", zofran)
+        
+        // Set the mL's
+        zofran_ML.text   = "\(zofran_MLs.oneDecimalPlace)"
+        
+        
+        
+        
         
     } // End the function
     

@@ -82,42 +82,76 @@ class RSISetting: UIViewController {
         
         Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
         //NSMutableDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
+        
         txt_Lidocaine.text = "\(Parameters.object(forKey: "lidocaine") as! Double)"        
+        
         txt_Atropine.text = "\(Parameters.object(forKey: "atropine") as! Double)"
+        
         txt_Fentanyl_min.text = "\(Parameters.object(forKey: "fentanyl_min") as! Double)"
+        
         txt_Fentanyl_max.text = "\(Parameters.object(forKey: "fentanyl_max") as! Double)"
+        
         txt_Vecuronium.text = "\(Parameters.object(forKey: "vecDefasiculating") as! Double)"
+        
         txt_Glycopyrolate_min.text = "\(Parameters.object(forKey: "glycopyrolate_min") as! Double)"
+        
         txt_Glycopyrolate_max.text = "\(Parameters.object(forKey: "glycopyrolate_max") as! Double)"
+        
         txt_Rocuronium0_min.text = "\(Parameters.object(forKey: "rocDefasiculating_min") as! Double)"
+        
         txt_Rocuronium0_max.text = "\(Parameters.object(forKey: "rocDefasiculating_max") as! Double)"
+        
         txt_Etomidate.text = "\(Parameters.object(forKey: "etomidate") as! Double)"
+        
         txt_Ketamine.text = "\(Parameters.object(forKey: "ketamine") as! Double)"
+        
         txt_Versed_min.text = "\(Parameters.object(forKey: "versed_min") as! Double)"
+        
         txt_Versed_max.text = "\(Parameters.object(forKey: "versed_max") as! Double)"
+        
         txt_Propofol_min.text = "\(Parameters.object(forKey: "propofol_min") as! Double)"
+        
         txt_Propofol_max.text = "\(Parameters.object(forKey: "propofol_max") as! Double)"
+        
         txt_Succinylcholine_min.text = "\(Parameters.object(forKey: "succs_min") as! Double)"
+        
         txt_Succinylcholine_max.text = "\(Parameters.object(forKey: "succs_max") as! Double)"
+        
         txt_Vecuronium2.text = "\(Parameters.object(forKey: "vecuronium") as! Double)"
+        
         txt_Rocuronium_min.text = "\(Parameters.object(forKey: "rocuronium_min") as! Double)"
+        
         txt_Rocuronium_max.text = "\(Parameters.object(forKey: "rocuronium_max") as! Double)"
+        
         txt_Cisatricurium.text = "\(Parameters.object(forKey: "cisatricurium") as! Double)"
         
         //Set the mg/ML Text
         mgML_Lidocaine.text = "\(Parameters.object(forKey: "lidocaine_mgMl") as! Double)"
+        
         mgML_atropine.text = "\(Parameters.object(forKey: "mgPerML_atropine") as! Double)"
+        
         mgML_fentanyl.text = "\(Parameters.object(forKey: "mgPerML_fentanyl") as! Double)"
+        
         mgML_vecDefasc.text = "\(Parameters.object(forKey: "mgPerML_vecDefasc") as! Double)"
+        
         mgML_rocDefasc.text = "\(Parameters.object(forKey: "mgPerML_rocDefasc") as! Double)"
+        
         mgML_glycopyrolate.text = "\(Parameters.object(forKey: "hello") as! Double)"
+        
         mgML_etomidate.text = "\(Parameters.object(forKey: "ml_etomidate") as! Double)"
+        
         mgML_ketamine.text = "\(Parameters.object(forKey: "ml_ketamine") as! Double)"
+        
         mgML_versed.text = "\(Parameters.object(forKey: "ml_versed") as! Double)"
+        
         mgML_propofol.text = "\(Parameters.object(forKey: "ml_propofol") as! Double)"
+        
         mgML_succs.text = "\(Parameters.object(forKey: "ml_succs") as! Double)"
+        
         mgML_cis.text = "\(Parameters.object(forKey: "ml_cis") as! Double)"
+        
         mgML_roc.text = "\(Parameters.object(forKey: "ml_roc") as! Double)"
+        
         mgML_vec.text = "\(Parameters.object(forKey: "ml_vec") as! Double)"
 
         
@@ -129,41 +163,75 @@ class RSISetting: UIViewController {
     @IBAction func UpdateClick(_ sender: Any) {
         
         Parameters.setValue(txt_Lidocaine.text?.doubleValue, forKey: "lidocaine")
+        
         Parameters.setValue(txt_Atropine.text?.doubleValue, forKey: "atropine")
+        
         Parameters.setValue(txt_Fentanyl_min.text?.doubleValue, forKey: "fentanyl_min")
+        
         Parameters.setValue(txt_Fentanyl_max.text?.doubleValue, forKey: "fentanyl_max")
+        
         Parameters.setValue(txt_Vecuronium.text?.doubleValue, forKey: "vecDefasiculating")
+        
         Parameters.setValue(txt_Glycopyrolate_min.text?.doubleValue, forKey: "glycopyrolate_min")
+        
         Parameters.setValue(txt_Glycopyrolate_max.text?.doubleValue, forKey: "glycopyrolate_max")
+        
         Parameters.setValue(txt_Rocuronium0_min.text?.doubleValue, forKey: "rocDefasiculating_min")
+        
         Parameters.setValue(txt_Rocuronium0_max.text?.doubleValue, forKey: "rocDefasiculating_max")
+        
         Parameters.setValue(txt_Etomidate.text?.doubleValue, forKey: "etomidate")
+        
         Parameters.setValue(txt_Ketamine.text?.doubleValue, forKey: "ketamine")
+        
         Parameters.setValue(txt_Versed_min.text?.doubleValue, forKey: "versed_min")
+        
         Parameters.setValue(txt_Versed_max.text?.doubleValue, forKey: "versed_max")
+        
         Parameters.setValue(txt_Propofol_min.text?.doubleValue, forKey: "propofol_min")
+        
         Parameters.setValue(txt_Propofol_max.text?.doubleValue, forKey: "propofol_max")
+        
         Parameters.setValue(txt_Succinylcholine_min.text?.doubleValue, forKey: "succs_min")
+        
         Parameters.setValue(txt_Succinylcholine_max.text?.doubleValue, forKey: "succs_max")
+        
         Parameters.setValue(txt_Vecuronium2.text?.doubleValue, forKey: "vecuronium")
+        
         Parameters.setValue(txt_Rocuronium_min.text?.doubleValue, forKey: "rocuronium_min")
+        
         Parameters.setValue(txt_Rocuronium_max.text?.doubleValue, forKey: "rocuronium_max")
+        
         Parameters.setValue(txt_Cisatricurium.text?.doubleValue, forKey: "cisatricurium")
         
         //updates the mgMl Concentration update
+        
         Parameters.setValue(mgML_Lidocaine.text?.doubleValue, forKey: "lidocaine_mgMl")
+        
         Parameters.setValue(mgML_atropine.text?.doubleValue, forKey: "mgPerML_atropine")
+        
         Parameters.setValue(mgML_fentanyl.text?.doubleValue, forKey: "mgPerML_fentanyl")
+        
         Parameters.setValue(mgML_vecDefasc.text?.doubleValue, forKey: "mgPerML_vecDefasc")
+        
         Parameters.setValue(mgML_rocDefasc.text?.doubleValue, forKey: "mgPerML_rocDefasc")
+        
         Parameters.setValue(mgML_glycopyrolate.text?.doubleValue, forKey: "hello")
+        
         Parameters.setValue(mgML_etomidate.text?.doubleValue, forKey: "ml_etomidate")
+        
         Parameters.setValue(mgML_ketamine.text?.doubleValue, forKey: "ml_ketamine")
+        
         Parameters.setValue(mgML_versed.text?.doubleValue, forKey: "ml_versed")
+        
         Parameters.setValue(mgML_succs.text?.doubleValue, forKey: "ml_succs")
+        
         Parameters.setValue(mgML_vec.text?.doubleValue, forKey: "ml_vec")
+        
         Parameters.setValue(mgML_roc.text?.doubleValue, forKey: "ml_roc")
+        
         Parameters.setValue(mgML_cis.text?.doubleValue, forKey: "ml_cis")
+        
         Parameters.setValue(mgML_propofol.text?.doubleValue, forKey: "ml_propofol")
 
         
@@ -188,7 +256,40 @@ class RSISetting: UIViewController {
     @IBAction func resetDosageparameters(_ sender: Any) {
         Parameters = UserDefaults.standard.object(forKey:"parameters") as! NSDictionary as! NSMutableDictionary
         
-        Parameters =  ["atropine": 0.02, "lidocaine": 1, "fentanyl_min": 1, "fentanyl_max": 2, "vecDefasiculating": 0.01, "rocDefasiculating_min": 0.06, "rocDefasiculating_max": 0.12, "glycopyrolate_min": 0.1, "glycopyrolate_max": 0.2, "etomidate": 0.3, "ketamine": 1.5, "propofol_min": 1, "propofol_max": 2, "versed_min": 0.1, "versed_max": 0.2, "cisatricurium": 0.2, "vecuronium": 0.1, "rocuronium_min": 0.6, "rocuronium_max": 1.2, "succs_min": 1, "succs_max": 1.5, "lidocaine_mgMl": 20,"mgPerML_atropine": 0.1, "mgPerML_fentanyl": 50.0, "mgPerML_vecDefasc": 1.0, "mgPerML_rocDefasc": 10.0, "hello": 0.2, "ml_etomidate" : 2.0,"ml_ketamine" : 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc" : 5.0, "ml_cis" : 10.0]
+        Parameters =  ["atropine": 0.02,
+                       "lidocaine": 1,
+                       "fentanyl_min": 1, "fentanyl_max": 2,
+                       "vecDefasiculating": 0.01,
+                       "rocDefasiculating_min": 0.06,
+                       "rocDefasiculating_max": 0.12,
+                       "glycopyrolate_min": 0.1,
+                       "glycopyrolate_max": 0.2,
+                       "etomidate": 0.3,
+                       "ketamine": 1.5,
+                       "propofol_min": 1,
+                       "propofol_max": 2,
+                       "versed_min": 0.1,
+                       "versed_max": 0.2,
+                       "cisatricurium": 0.2,
+                       "vecuronium": 0.1,
+                       "rocuronium_min": 0.6,
+                       "rocuronium_max": 1.2,
+                       "succs_min": 1,
+                       "succs_max": 1.5,
+                       "lidocaine_mgMl": 20,
+                       "mgPerML_atropine": 0.1,
+                       "mgPerML_fentanyl": 50.0,
+                       "mgPerML_vecDefasc": 1.0,
+                       "mgPerML_rocDefasc": 10.0,
+                       "hello": 0.2,
+                       "ml_etomidate" : 2.0,
+                       "ml_ketamine" : 100.0,
+                       "ml_versed" : 5.0,
+                       "ml_propofol" : 10.0,
+                       "ml_succs" : 10.0,
+                       "ml_vec" : 1.0,
+                       "ml_roc" : 5.0,
+                       "ml_cis" : 10.0]
                        
                        
                        
