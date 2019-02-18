@@ -17,6 +17,12 @@ class UrineOutputData: UIViewController {
 
     @IBOutlet weak var averageUO: UILabel!
     
+    @IBAction func dismissDetailSmallView(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        print("View Controller was dismissed")
+        
+    }
     
     
     var result: Double?

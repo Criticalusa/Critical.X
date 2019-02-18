@@ -42,40 +42,21 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         // Configure the cell from the oulets in the cell Class.
         cell.titleLabel.text = medCalcTitle[indexPath.item]
+        
         cell.subTitle.text = medCalcSubtitle [indexPath.item]
         
-//        // We are changing the color of the Detail Subtitle only here.
-        switch indexPath.row {
-        case 0:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.9294117647, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
-        case 1, 5, 11, 15:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-        case 2:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
-        case 3:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
-        case 4:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-       
-        case 6, 7, 13:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
-
-        case 10:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        // We are changing the color of the Detail Subtitle only here.
+//        switch indexPath.row {
+//
+//        case 0,2,4,6,8,10,12,14,16,18:
+//
+//            cell.titleLabel.textColor = #colorLiteral(red: 0.9294117647, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
+//
+//        default:
+//
+//            cell.subTitle.textColor = #colorLiteral(red: 0.920953393, green: 0.447560966, blue: 0.4741248488, alpha: 1)
+//        }
         
-        case 12:
-            cell.titleLabel.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
-       
-        case 14:
-            cell.subTitle.textColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-       
-        case 16:
-            cell.subTitle.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
-        case 17:
-            cell.subTitle.textColor = #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1)
-        default:
-            cell.subTitle.textColor = #colorLiteral(red: 0.920953393, green: 0.447560966, blue: 0.4741248488, alpha: 1)
-        }
         return cell
     }
 
@@ -136,7 +117,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "Ideal Body Weight",//5 - F
                         "Oxygen Cylinder Calculator", //6 - G
                         "Ventilator Optimization",//7 - H
-                        "Mean Arterial Pressure & Cerebral Perfusion Pressure",//8 - I // Need to creat VC
+                        "MAP and CPP Calculator",//8 - I // Need to creat VC
                         "Urine Output",//9 - J
                         "IV Rate Calculator",//10 - K
                         "Check My drip",//11 - L
@@ -145,7 +126,8 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "tPA Dose Calculator",//14 - O Need to creat VC
                         "Winters Formula",//15 - P
                         "Medical Spanish",//16 - Q
-                        "Pregnancy Calculator", "LOX Calculator"] //17 - R
+                        "Pregnancy Calculator",//17 R
+                        "LOX Calculator"] //18 - LOX
         
         medCalcSubtitle = ["Pa02/Fi02 Ratio",//0
                            "Calculates the Anion Gap",//1
@@ -155,7 +137,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Devine formula",//5
                            "Calculate flow times remaining",//6
                            "Optimize Ventilator Settings",//7
-                           "MAP and CPP Calculator",//8
+                           "Mean Arterial Pressure & Cerebral Perfusion Pressure",//8
                            "Calculates U/O in mL/kg/hr",//9
                            "Calculates the IV flow rate",//10
                            "Pre-Renal",//11
@@ -164,9 +146,10 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Initial bolus and drip ",//14
                            "Expected C02 Compensation",//15
                            "Medical Spanish and Audio",//16
-                           "Calculate expected due date", "Calculate the time remaining with liquid qxygen"]//17
+                           "Calculate expected due date", // 17
+                           "Calculate the time remaining with liquid qxygen"]//18
         
-        StoryboardID = ["A",
+        StoryboardID = ["A", // 0
                         "B",
                         "C",
                         "D",

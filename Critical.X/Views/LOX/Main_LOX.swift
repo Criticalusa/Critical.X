@@ -23,8 +23,17 @@ class Main_LOX: UIViewController {
     @IBOutlet weak var resultView: UIView!
 
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        /// Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        // Do any additional setup after loading the view.
+        
 
         
         // Hide the resultView initiall
@@ -75,9 +84,9 @@ class Main_LOX: UIViewController {
             
             finalTime = "\(timeLeftOver.hours) hrs and \(timeLeftOver.leftMinites) minutes remaining"
             
-            thereAReLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+            thereAReLabel.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
             
-            resultView.backgroundColor = #colorLiteral(red: 0.2300000042, green: 0.3000000119, blue: 0.3700000048, alpha: 1)
+            resultView.backgroundColor = #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)
         }
             
             
@@ -184,11 +193,17 @@ class Main_LOX: UIViewController {
         
         print("LOX was NOT empty")
 
+        
+        
      
       
     }
     
-    
+
+/// Keyboard Dismissed after you touch the screen
+func doneButtonAction() {
+    self.view.endEditing(true)
+}
     
     
     //MARK: - Animation
