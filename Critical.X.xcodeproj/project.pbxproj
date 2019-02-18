@@ -32,6 +32,8 @@
 		C41002FF21B83C8400B3D21F /* ClinicalReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410028521B8106A00B3D21F /* ClinicalReferences.swift */; };
 		C410030021B83C8700B3D21F /* Clinical Reference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C410028621B8106A00B3D21F /* Clinical Reference.storyboard */; };
 		C410030221B840B900B3D21F /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410030121B840B900B3D21F /* AttributedText.swift */; };
+		C4112D63221B35320019E1AB /* Shock Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4112D62221B35320019E1AB /* Shock Index.swift */; };
+		C4112D65221B35450019E1AB /* ShockIndex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4112D64221B35450019E1AB /* ShockIndex.storyboard */; };
 		C4122A6B21EE498500243040 /* EFImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4122A6A21EE498400243040 /* EFImageViewZoom.swift */; };
 		C414417221CE17EA0034D419 /* PredictorsDifficultAirway.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414417121CE17EA0034D419 /* PredictorsDifficultAirway.swift */; };
 		C415BDB920ECF757003A2406 /* PFRatio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C415BDB820ECF757003A2406 /* PFRatio.storyboard */; };
@@ -504,6 +506,8 @@
 		C41002EE21B8106C00B3D21F /* stars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stars.json; sourceTree = "<group>"; };
 		C41002F221B8385300B3D21F /* ABGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABGViewController.swift; sourceTree = "<group>"; };
 		C410030121B840B900B3D21F /* AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
+		C4112D62221B35320019E1AB /* Shock Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shock Index.swift"; sourceTree = "<group>"; };
+		C4112D64221B35450019E1AB /* ShockIndex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShockIndex.storyboard; sourceTree = "<group>"; };
 		C4122A6A21EE498400243040 /* EFImageViewZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFImageViewZoom.swift; sourceTree = "<group>"; };
 		C414417121CE17EA0034D419 /* PredictorsDifficultAirway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PredictorsDifficultAirway.swift; path = "Critical.X/Views/Airway/Predictors of a Difficult Airway/PredictorsDifficultAirway.swift"; sourceTree = SOURCE_ROOT; };
 		C415BDB820ECF757003A2406 /* PFRatio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PFRatio.storyboard; sourceTree = "<group>"; };
@@ -1126,6 +1130,23 @@
 				C41002EC21B8106C00B3D21F /* SF-Pro-Text-SemiboldItalic.otf */,
 			);
 			path = "San Fransisco Fonts";
+			sourceTree = "<group>";
+		};
+		C4112D60221B35000019E1AB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C4112D61221B35060019E1AB /* Shock Index */ = {
+			isa = PBXGroup;
+			children = (
+				C4112D62221B35320019E1AB /* Shock Index.swift */,
+				C4112D64221B35450019E1AB /* ShockIndex.storyboard */,
+			);
+			name = "Shock Index";
+			path = "Clinical Calculators/Shock Index";
 			sourceTree = "<group>";
 		};
 		C415BDBC20ECFA5C003A2406 /* PF Ratio Storyboard */ = {
@@ -1859,6 +1880,8 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C4112D60221B35000019E1AB /* New Group */,
+				C4112D61221B35060019E1AB /* Shock Index */,
 				C47AA24221FF18E200544095 /* OB View */,
 				C410027621B8102900B3D21F /* ABG */,
 				C4D709D920FA5EEA00593760 /* Airway */,
@@ -2403,6 +2426,7 @@
 				C41BD05E20F049F10031C9CD /* Neuro.storyboard in Resources */,
 				C4ED1373221ACC510041360F /* LOX.storyboard in Resources */,
 				C42D0C6B21F72EBD00A221CC /* LungPointSign.gif in Resources */,
+				C4112D65221B35450019E1AB /* ShockIndex.storyboard in Resources */,
 				C418AC4E200BAB07001EBB04 /* Whats your name.wav in Resources */,
 				C418AC47200BAB07001EBB04 /* asthma.wav in Resources */,
 				C415BDD220EE67A6003A2406 /* ParklandFormula.storyboard in Resources */,
@@ -2644,6 +2668,7 @@
 				C4D4DF7E20631C7500A384BD /* DripsList.swift in Sources */,
 				C47AA2502200825400544095 /* Central_Line_ImageZoom.swift in Sources */,
 				C47AA24A21FF2B8F00544095 /* OBDetailView.swift in Sources */,
+				C4112D63221B35320019E1AB /* Shock Index.swift in Sources */,
 				C4C25EFB1FF9099600C5CD42 /* ExampleData.swift in Sources */,
 				C4D062C221EA29E900F2B84E /* UltraSoundCollectionView.swift in Sources */,
 				C42F41871FF90E2B003BE489 /* PopTip.swift in Sources */,

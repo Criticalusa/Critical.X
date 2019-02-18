@@ -127,7 +127,8 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "Winters Formula",//15 - P
                         "Medical Spanish",//16 - Q
                         "Pregnancy Calculator",//17 R
-                        "LOX Calculator"] //18 - LOX
+                        "LOX Calculator", //18 - LOX
+                        "Shock Index"] // 19 - SI
         
         medCalcSubtitle = ["Pa02/Fi02 Ratio",//0
                            "Calculates the Anion Gap",//1
@@ -135,10 +136,10 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Calculates the deficit of bicarbonate",//3
                            "Fluid replacement calculator post burns",//4
                            "Devine formula",//5
-                           "Calculate flow times remaining",//6
+                           "Calculates the flow times remaining",//6
                            "Optimize Ventilator Settings",//7
                            "Mean Arterial Pressure & Cerebral Perfusion Pressure",//8
-                           "Calculates U/O in mL/kg/hr",//9
+                           "Calculates the U/O in mL/kg/hr",//9
                            "Calculates the IV flow rate",//10
                            "Pre-Renal",//11
                             "Calculates the fractional excretion of Na",//12
@@ -146,8 +147,9 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Initial bolus and drip ",//14
                            "Expected C02 Compensation",//15
                            "Medical Spanish and Audio",//16
-                           "Calculate expected due date", // 17
-                           "Calculate the time remaining with liquid qxygen"]//18
+                           "Calculates the expected due date", // 17
+                           "Calculates the time remaining with liquid qxygen", // 18
+                           "Calculates the shock index of a patient" ]//19
         
         StoryboardID = ["A", // 0
                         "B",
@@ -167,7 +169,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "P", 
                         "Q", 
                         "", 
-                        "LOX"]
+                        "LOX", "SI"]
         
         
     }

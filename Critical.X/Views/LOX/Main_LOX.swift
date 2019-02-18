@@ -166,8 +166,26 @@ class Main_LOX: UIViewController {
         guard let _ = tankWeightEntered, let _ = lpmEntered else {
             // We set the textField parameters to double so the func can accept the parameteres.
             
-            // Yellow Warning Alert // Takes the button and makes it into a circle
-            _ = SCLAlertView().showWarning("Hold On...", subTitle: "Check all of the fields before calculating.")
+            // Displays alert with Critical Logo
+            let appearance = SCLAlertView.SCLAppearance(
+                kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                showCloseButton: true,
+                dynamicAnimatorActive: true,
+                buttonsLayout: .horizontal
+            )
+            
+            let alert = SCLAlertView(appearance: appearance)
+            
+            let icon: UIImage = #imageLiteral(resourceName: "CRITICALLogo")
+            // Color for the buttons and  iCon background
+            let color = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+            // Language to show the alert
+            _ = alert.showCustom("Hold On...", subTitle: "Check all of the fields before calculating.", color: color, icon: icon)
+            
+            
             
             print("texfields are EMPTY")
     
