@@ -47,24 +47,24 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
 //        // We are changing the color of the Detail Subtitle only here.
         switch indexPath.row {
         case 0:
-            cell.subTitle.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.9294117647, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
         case 1, 5, 11, 15:
-            cell.subTitle.textColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         case 2:
-            cell.subTitle.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
         case 3:
-            cell.subTitle.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
         case 4:
-            cell.subTitle.textColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
        
         case 6, 7, 13:
-            cell.subTitle.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
 
         case 10:
-            cell.subTitle.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         
         case 12:
-            cell.subTitle.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+            cell.titleLabel.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
        
         case 14:
             cell.subTitle.textColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
@@ -84,13 +84,17 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
          print(StoryboardID [indexPath.item])
+        
         // Set the Storyboard ID to each indexPath.
         let SBID = StoryboardID [indexPath.item]
         
       // We only push Index 17 and for the rest we use MODAL transition
         switch indexPath.item {
         case 17:
+            
+            // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "ReferencesMenu", bundle: nil)
+            
             let vc = storyboard.instantiateViewController(withIdentifier: "R")
             
             // Push the ViewController via Navigation
@@ -100,8 +104,11 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         // Display the rest as Modal Tranisition.
         default:
+            
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "ReferencesMenu", bundle: nil)
+            
+            // Set the segue to the storyboard ID
             let vc = storyboard.instantiateViewController(withIdentifier: SBID)
             
             // Push the ViewController via Navigation
@@ -138,7 +145,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "tPA Dose Calculator",//14 - O Need to creat VC
                         "Winters Formula",//15 - P
                         "Medical Spanish",//16 - Q
-                        "Pregnancy Calculator",] //17 - R
+                        "Pregnancy Calculator", "LOX Calculator"] //17 - R
         
         medCalcSubtitle = ["Pa02/Fi02 Ratio",//0
                            "Calculates the Anion Gap",//1
@@ -157,9 +164,27 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Initial bolus and drip ",//14
                            "Expected C02 Compensation",//15
                            "Medical Spanish and Audio",//16
-                           "Calculate expected due date"]//17
+                           "Calculate expected due date", "Calculate the time remaining with liquid qxygen"]//17
         
-        StoryboardID = ["A","B","C","D","E","F","G","H","CS","J","K","L","M","N","CS","P", "Q", ""]
+        StoryboardID = ["A",
+                        "B",
+                        "C",
+                        "D",
+                        "E",
+                        "F",
+                        "G",
+                        "H",
+                        "CS",
+                        "J",
+                        "K",
+                        "L",
+                        "M",
+                        "N",
+                        "CS",
+                        "P", 
+                        "Q", 
+                        "", 
+                        "LOX"]
         
         
     }

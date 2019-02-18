@@ -342,6 +342,8 @@
 		C4EAB61A2091FB1D0073400E /* PharmacologyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4301D2A2091EFC000881193 /* PharmacologyList.swift */; };
 		C4EAB61B2091FB260073400E /* CriticalPharmacology.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4301D2B2091EFD000881193 /* CriticalPharmacology.swift */; };
 		C4EAB61C2091FB290073400E /* PharmacologyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4301D2C2091EFDA00881193 /* PharmacologyCell.swift */; };
+		C4ED1373221ACC510041360F /* LOX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4ED1372221ACC510041360F /* LOX.storyboard */; };
+		C4ED1375221ACC740041360F /* Main_LOX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED1374221ACC740041360F /* Main_LOX.swift */; };
 		C4F188CC21F34BA5001D1CA0 /* Pathology-RUQ.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4F188CB21F34BA4001D1CA0 /* Pathology-RUQ.gif */; };
 		C4F188CE21F37327001D1CA0 /* Pathology_RUQ_ParaglottcFreeFluid.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4F188CD21F37327001D1CA0 /* Pathology_RUQ_ParaglottcFreeFluid.gif */; };
 		C4F188D021F3D067001D1CA0 /* LUQ_SweepThrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4F188CF21F3D066001D1CA0 /* LUQ_SweepThrough.gif */; };
@@ -816,6 +818,8 @@
 		C4DFCA7C21FBC4FD0010D8D7 /* CentralLine_LongAxisTenting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CentralLine_LongAxisTenting.gif; sourceTree = "<group>"; };
 		C4DFCA7D21FBC5040010D8D7 /* CentralLine_NeedleTenting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CentralLine_NeedleTenting.gif; sourceTree = "<group>"; };
 		C4DFCAB921EF605800D66101 /* SweepThroughRUQ.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SweepThroughRUQ.gif; sourceTree = "<group>"; };
+		C4ED1372221ACC510041360F /* LOX.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LOX.storyboard; sourceTree = "<group>"; };
+		C4ED1374221ACC740041360F /* Main_LOX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_LOX.swift; sourceTree = "<group>"; };
 		C4F188CB21F34BA4001D1CA0 /* Pathology-RUQ.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Pathology-RUQ.gif"; sourceTree = "<group>"; };
 		C4F188CD21F37327001D1CA0 /* Pathology_RUQ_ParaglottcFreeFluid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pathology_RUQ_ParaglottcFreeFluid.gif; sourceTree = "<group>"; };
 		C4F188CF21F3D066001D1CA0 /* LUQ_SweepThrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LUQ_SweepThrough.gif; sourceTree = "<group>"; };
@@ -1855,6 +1859,7 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C4ED1371221ACC3E0041360F /* LOX */,
 				C47AA24221FF18E200544095 /* OB View */,
 				C410027621B8102900B3D21F /* ABG */,
 				C4D709D920FA5EEA00593760 /* Airway */,
@@ -2152,6 +2157,15 @@
 			path = "Clinical Pharmacology";
 			sourceTree = "<group>";
 		};
+		C4ED1371221ACC3E0041360F /* LOX */ = {
+			isa = PBXGroup;
+			children = (
+				C4ED1372221ACC510041360F /* LOX.storyboard */,
+				C4ED1374221ACC740041360F /* Main_LOX.swift */,
+			);
+			path = LOX;
+			sourceTree = "<group>";
+		};
 		C4F188D121F3D2F4001D1CA0 /* Ultrasound GIF */ = {
 			isa = PBXGroup;
 			children = (
@@ -2387,6 +2401,7 @@
 				C430D2E120EEAD3D00A99985 /* Capnography.storyboard in Resources */,
 				C4DFCA7F21FBC5050010D8D7 /* CentralLine_NeedleTenting.gif in Resources */,
 				C41BD05E20F049F10031C9CD /* Neuro.storyboard in Resources */,
+				C4ED1373221ACC510041360F /* LOX.storyboard in Resources */,
 				C42D0C6B21F72EBD00A221CC /* LungPointSign.gif in Resources */,
 				C418AC4E200BAB07001EBB04 /* Whats your name.wav in Resources */,
 				C418AC47200BAB07001EBB04 /* asthma.wav in Resources */,
@@ -2748,6 +2763,7 @@
 				C4D5795A2100D27C00A82D75 /* LMA_Extensions.swift in Sources */,
 				C46A9DDB220096F0004FE7C1 /* VentMode_detailVC.swift in Sources */,
 				C41002FF21B83C8400B3D21F /* ClinicalReferences.swift in Sources */,
+				C4ED1375221ACC740041360F /* Main_LOX.swift in Sources */,
 				C4C25EF51FF9099600C5CD42 /* ViewController.swift in Sources */,
 				C48DC5232208D7B100BC222A /* 30-37KG.swift in Sources */,
 				C4C9AAE120F44F8800510823 /* ClinicalProceduresTBV.swift in Sources */,
