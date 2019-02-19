@@ -65,6 +65,8 @@ class RSISetting: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         print("Dictionary Values")
         
+        UserDefaults.standard.synchronize()
+
         for (key,value) in Parameters {
             
             print("\(key) : \(value)")
@@ -74,11 +76,14 @@ class RSISetting: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
         closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
+       
         ScrollView.contentSize = CGSize(width: 100, height: 1150)
+       
         ScrollView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
-        
+
         
         Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
         //NSMutableDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
