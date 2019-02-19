@@ -43,11 +43,13 @@ extension CollapsibleTableViewController {
     // Cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CollapsibleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
+            
             CollapsibleTableViewCell(style: .default, reuseIdentifier: "cell")
         
         let item: Item = sections[indexPath.section].items[indexPath.row]
         
         cell.nameLabel.text = item.name
+        
         cell.detailLabel.text = item.detail
         
         return cell
@@ -87,10 +89,12 @@ extension CollapsibleTableViewController {
 extension CollapsibleTableViewController: CollapsibleTableViewHeaderDelegate {
     
     func toggleSection(_ header: CollapsibleTableViewHeader, section: Int) {
+        
         let collapsed = !sections[section].collapsed
         
         // Toggle collapse
         sections[section].collapsed = collapsed
+        
         header.setCollapsed(collapsed)
         
         tableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)

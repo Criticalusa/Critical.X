@@ -122,7 +122,8 @@ class GCS: UIViewController {
         
         if confusedButton.isSelected == true {
             confusedButton.isSelected = false
-        }else {
+        }
+        else {
             confusedButton.isSelected = true
             oriented_Verbal.isSelected = false
             inappropriateWordsButton.isSelected = false

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKr-zp-IFJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKr-zp-IFJ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -653,7 +653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crp-W4-Oa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059" y="-40"/>
+            <point key="canvasLocation" x="1001" y="-120"/>
         </scene>
         <!--02TankCalculator-->
         <scene sceneID="PxJ-Wm-PLw">
@@ -682,7 +682,7 @@
         <!--Clinical Calculator Collection View-->
         <scene sceneID="Uqf-bZ-98X">
             <objects>
-                <viewController storyboardIdentifier="Clinical Calculators" id="OKr-zp-IFJ" customClass="ClinicalCalculator_CollectionView" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Clinical Calculators" modalPresentationStyle="overCurrentContext" id="OKr-zp-IFJ" customClass="ClinicalCalculator_CollectionView" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7b-QG-62l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -742,7 +742,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" name="Peach Orange"/>
+                                                    <color key="textColor" name="Pale Yellow"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -776,7 +776,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Clouds"/>
                         <constraints>
                             <constraint firstItem="lfz-80-s7A" firstAttribute="bottom" secondItem="T4d-74-hfT" secondAttribute="bottom" id="Aht-TY-Etl"/>
                             <constraint firstItem="lfz-80-s7A" firstAttribute="leading" secondItem="T4d-74-hfT" secondAttribute="leading" id="Ri1-nj-gd1"/>
@@ -819,8 +819,8 @@
         <namedColor name="NeutralGray">
             <color red="0.55699998140335083" green="0.5690000057220459" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Peach Orange">
-            <color red="0.97647058823529409" green="0.82352941176470584" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Pale Yellow">
+            <color red="0.98431372549019602" green="1" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

@@ -57,7 +57,39 @@ class StrokeDetail: UIViewController {
         
     }
 
-
+    // Call the function in the viewDidAppear
+    override func viewDidAppear(_ animated: Bool) {
+        setScrollViewContentSize()
+    }
+    
+    
+    // Heres the dynamic scrollFunction
+    func setScrollViewContentSize() {
+        
+        var height: CGFloat
+        let lastView = self.strokeScrollView.subviews[0].subviews.last!
+        
+        print(lastView.debugDescription) // should be what you expect
+        
+        // The label thats being dynamic
+        let lastViewYPos = strokeDescription.convert(lastView.frame.origin, to: nil).y  // this is absolute positioning, not relative
+        
+        // Add all the labels here.
+        let lastViewHeight = strokeDescription.frame.size.height
+        
+        // sanity check on these
+        print(lastViewYPos)
+        print(lastViewHeight)
+        
+        // Final height of the scrollView
+        
+        height = lastViewYPos + lastViewHeight
+        
+        print("setting scroll height: \(height)")
+        
+        // Setting the scollview to the final height.
+        strokeScrollView.contentSize.height = height
+    }
  
     
     enum CVADescription: String {

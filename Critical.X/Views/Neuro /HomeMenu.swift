@@ -20,9 +20,11 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mainMenu = ["Cranial Nerves","Stroke Scores","Herniation","Increased ICP","Neuro Exam","Stroke pathology", "Normal CT brain"]
-        cellImages = ["CranialNerves1","GCS1","Herniation","Brain 44","brainMap","Brain-1", "CT1" ]
-        storyBoardID = ["A","StrokeCollection","C","D","E","F", "G"]
+        mainMenu = ["Cranial Nerves","Stroke Scores","Herniation","Increased ICP","Neuro Exam","Stroke pathology", "Normal CT brain", "GCS"]
+        
+        cellImages = ["CranialNerves1","GCS1","Herniation","Brain 44","brainMap","Brain-1", "CT1", "Brain 44" ]
+        
+        storyBoardID = ["A","StrokeCollection","C","D","E","F", "G", "gcsB"]
         
         // Do any additional setup after loading the view.
     }

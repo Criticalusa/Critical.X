@@ -141,8 +141,8 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Mean Arterial Pressure & Cerebral Perfusion Pressure",//8
                            "Calculates the U/O in mL/kg/hr",//9
                            "Calculates the IV flow rate",//10
-                           "Pre-Renal",//11
-                            "Calculates the fractional excretion of Na",//12
+                           "Confirm IV flow rates",//11
+                           "Calculates the fractional excretion of Na",//12
                            "Free Water Deficit Calc",//13
                            "Initial bolus and drip ",//14
                            "Expected C02 Compensation",//15
@@ -169,7 +169,8 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "P", 
                         "Q", 
                         "", 
-                        "LOX", "SI"]
+                        "LOX",
+                        "SI"]
         
         
     }

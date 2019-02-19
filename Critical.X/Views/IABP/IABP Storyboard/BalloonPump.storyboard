@@ -4,17 +4,11 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Cheltenham_Book.ttf">
-            <string>CheltenhamBook</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Balloon Pump-->
         <scene sceneID="gLD-Dl-cOz">
@@ -61,7 +55,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HsW-sw-4pK">
                                             <rect key="frame" x="16" y="0.0" width="343" height="64.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="18"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -228,7 +222,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHb-JV-rRb">
-                                <rect key="frame" x="8" y="232.33333333333337" width="359" height="258"/>
+                                <rect key="frame" x="8" y="232.33333333333337" width="359" height="257"/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intra-Aortic Balloon Pump Counterpulsation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-UD-iPh">
                                 <rect key="frame" x="8" y="102" width="359" height="19.666666666666671"/>
@@ -243,9 +237,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic overview on IABP. Video covers physiology, timing and complications. There are many visual aids. Click and enjoy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6g-mX-uL3">
-                                <rect key="frame" x="16" y="506.33333333333331" width="343" height="52.666666666666686"/>
-                                <fontDescription key="fontDescription" name="CheltenhamBook" family="Cheltenham" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="505.33333333333331" width="343" height="53.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" name="Critical Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -282,6 +276,9 @@
         <image name="Critical--IABP-6" width="419" height="420"/>
         <image name="EarlyDeflation1" width="1401" height="401"/>
         <image name="playIcon" width="500" height="350"/>
+        <namedColor name="Critical Black">
+            <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Critical Red">
             <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

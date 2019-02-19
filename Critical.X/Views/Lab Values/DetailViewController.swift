@@ -15,7 +15,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var DetailTitleLabel: UILabel!
     @IBOutlet var DetailDescriptionLabel: UILabel!
     @IBOutlet var DetailSummaryLabel: UILabel!
-    
+    @IBOutlet weak var labScoller: UIScrollView!
     @IBOutlet var tableView: UITableView!
     
     public var data = [AnyHashable: Any]()
@@ -54,6 +54,43 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         
         // Do any additional setup after loading the view.
     }
+    // Call the function in the viewDidAppear
+    override func viewDidAppear(_ animated: Bool) {
+        setScrollViewContentSize()
+    }
+    
+    
+    // Heres the dynamic scrollFunction
+    func setScrollViewContentSize() {
+        
+        var height: CGFloat
+        let lastView = self.labScoller.subviews[0].subviews.last!
+        
+        print(lastView.debugDescription) // should be what you expect
+        
+        // The label thats being dynamic
+        let lastViewYPos = DetailSummaryLabel.convert(lastView.frame.origin, to: nil).y  // this is absolute positioning, not relative
+        
+        // Add all the labels here.
+        let lastViewHeight = DetailSummaryLabel.frame.size.height
+        
+        // sanity check on these
+        print(lastViewYPos)
+        print(lastViewHeight)
+        
+        // Final height of the scrollView with a buffer
+        var buffer: CGFloat
+
+        buffer = 25
+
+        height = lastViewYPos + lastViewHeight + buffer
+        
+        print("lab setting scroll height: \(height)")
+        
+        // Setting the scollview to the final height.
+        labScoller.contentSize.height = height
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datalist.count

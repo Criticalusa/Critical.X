@@ -235,7 +235,7 @@ enum BalloonPump {
                 \r• Reconfirm proper balloon volume
                 \r• Confirm the absence of blood in the line
                 \r• Check for kinking in the tubing
-                \r• Auscultated the patient's chest the check for balloon inflation/deflation.
+                \r• Auscultate the patient's chest to check for balloon inflation/deflation.
                 """
                 
             case .BleedingAtSite:
@@ -244,8 +244,8 @@ enum BalloonPump {
                 \rBleeding at the insertion site is common and is likely due to anticoagulation therapy or thrombocytopenia. Patients on the pump are typically anticoagulated to avoid any thrombus formation at the tip of the catheter or within the folds of the balloon.
                 \rDuring inflation, the catheter can destroy the platelets resulting in thrombocytopenia. Thus, labs such as CBC's and coags should be ordered before and during therapy to monitor the Hgb and Plt count.
                 \rNote that the insertion site dressing should be transparent. If you notice any oozing, bruising or formation of hematomas, or swelling around the area, it may be an indication of bleeding.
-                \rRetroperitoneal bleeding signs and symptoms include  hypotension, back, flank or abdominal pain. If there is bleeding at the insertion site, apply direct pressure to the site and administration of blood products if necessary.
-                \rFinally, check the insertion site every hour for bleeding or hematomas. Also, a CBC and coags should be monitored for anemia and thrombocytopenia.
+                \rRetroperitoneal bleeding signs and symptoms including  hypotension, back, flank or abdominal pain. If there is bleeding at the insertion site, apply direct pressure to the site and prepare to administer blood products if necessary.
+                \rFinally, check the insertion site hourly for bleeding or hematomas. Also, a CBC and coags should be monitored for anemia and thrombocytopenia.
                 """
                 
             case .BalloonRupture:
@@ -266,8 +266,8 @@ enum BalloonPump {
             case .Dysrhythmias:
                 
                 return """
-                Patients who are experiencing dysrhythmias, leave the pump in the EKG trigger mode. The "pressure" trigger mode is not recommended.
-                \rSuggested dysrhythmias may include:
+                In patients who are experiencing dysrhythmias, leave the pump in the EKG trigger mode. The "pressure" trigger mode is not recommended.
+                \rPossible dysrhythmias may include:
                 \r• Atrial fibrillation
                 \r• Supraventricular tachycardia
                 \r• Cardiac arrest
@@ -277,7 +277,7 @@ enum BalloonPump {
             case .VascularInjuries:
                 
                 return """
-                The incidence for a patient to have a vascular injury is approximately less than 2%. Usually, this is cause at these different sites which include: brachial, axillary, subclavian, femoral, iliac, or aortic arch.
+                The incidence for a patient to have a vascular injury is approximately less than 2%. Usually, this occurs at several sites including: brachial, axillary, subclavian, femoral, iliac, or aortic arch.
                 \rReasons may include:
                 \r•  Embolisms from clots, helium, air or plaque.\n• Cerebral obstruction (strokes), mesenteric obstructions resulting in mesenteric ischemia.
                 \r• Renal instructions (renal failure), subclavian artery obstructions resulting from upper extremity ischemia.
@@ -291,7 +291,7 @@ enum BalloonPump {
                 \r•Cardiac arrest\n• Loss of EKG, pacing, or arterial trigger
                 \r• Leaks or kinks in the pump, catheter or tubing.
                 \r• The pump may be unplugged\n• Loss of battery or helium.
-                \r• Mechanical or power failure.\n\nTroubleshooting:\n\nCheck all the leads, connections, triggers and signals. Do not allow the balloon to be motionless for more than 30 minutes.
+                \r• Mechanical or power failure.\n\nTroubleshooting:\n\nCheck all the leads, connections, triggers and signals. Do not allow the balloon to be motionless for more than 30 minutes. Manual deflation and inflation q 5-10 mins to help decrease clot formation.
                 \r• If the pump doesn't restart, you may have to deflate the balloon manually with a 60 mL syringe to ensure that there are no leaks present.
                 """
                 
@@ -299,8 +299,8 @@ enum BalloonPump {
                 
                 return """
                 \rThe incidence for a patient to have a limb ischemia is approximately 2%.
-                \rReasons may include:\n\n• Clots\n• Arterial vasospasm's
-                \r• Hematomas\n• Periphery of vascular disease (PVD)
+                \rReasons include:\n\n• Clots\n• Arterial vasospasms
+                \r• Hematomas\n• Peripheral Vascular Disease (PVD)
                 \r• Hypotension\n\nTreatment:
                 \r• Palpate peripheral pulses and check for capillary refill.
                 \r• If peripheral pulses are not present, attempt to confirm with the Doppler.
@@ -314,7 +314,7 @@ enum BalloonPump {
                 return """
                 If the patient goes into cardiac arrest during cycle, switch to "pressure triggering" once the pump alarms - due to not being able to trigger from the EKG.
                 
-                \rRemember, select "ASSIST" after changing the trigger mode. Reduce the pressure threshold if the balloon fails to pump from the pressure trigger by decreasing the arrows in the auxiliary box under the trigger options.
+                \rRemember, if the pump is on Autopilot (Arrow) or “Auto” (Getinge/Maquet), switch to operator mode (Arrow) or semi-auto mode (Getinge/Maquet) to decrease the arrows. Reduce the pressure threshold if the balloon fails to pump from the pressure trigger by decreasing the arrows in the auxiliary box under the trigger options.
                 \rDuring CPR, an arterial pressure tracing is generated therefore the pressure trigger may be used. If the console does not recognize the arterial pressure tracing, the compressions may not be adequate. The balloon pump does not need to be disconnected during defibrillation.
                 \rIf CPR cannot generate a consistent and reliable trigger, switch to the internal mode, which will maintain movement of IABP, therefore reducing the risk of any thrombus formation.
                 """

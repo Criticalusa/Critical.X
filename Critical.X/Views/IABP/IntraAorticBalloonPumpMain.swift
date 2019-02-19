@@ -17,7 +17,7 @@ class IntraAorticBalloonPumpMain: UITableViewController {
     
     let section = ["Timing", "Complications"]
     //Create an array to populate the tableView
-    let iabpMenuItems = [["Normal Timing", "Early Inflation", "Late Inflation", "Early Deflation", "Late Deflation"], ["Aortic Dissection / Perforation", "Augmentation", "Bleeding at the insertion site", "Balloon rupture / Leak","Dysrhythmias","Vascular Injury","Failure to pump","Limb ischemia","Cardiac Arrest"]]
+    let iabpMenuItems = [["Normal Timing", "Early Inflation", "Late Inflation", "Early Deflation", "Late Deflation"], ["Aortic Dissection / Perforation", "Ineffective Augmentation", "Bleeding at the insertion site", "Balloon rupture / Leak","Dysrhythmias","Vascular Injury","Failure to pump","Limb ischemia","Cardiac Arrest"]]
     // let images = ["normal","LAP","apnea","hypo","elevated","hyper"]
     
     //MARK: UITableViewDataSource

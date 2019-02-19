@@ -61,7 +61,7 @@ class FAST_MAIN_VC: UIViewController {
                 print("SetID was registered at \(setID) ACTIVATE RUQ")
                 
                 //Headings and Titles
-                morrisonsViewController.fast_Title = "Morrisons Pouch"
+                morrisonsViewController.fast_Title = "Morison's Pouch"
                
                 morrisonsViewController.descriptionString = UltraSound_AcousticViewDescription.RUQ_morrisonsTextDescription.rawValue
                
@@ -78,7 +78,7 @@ class FAST_MAIN_VC: UIViewController {
                 morrisonsViewController.initialImageString = UltraSoundImages.RUQProbePosition.rawValue
                 
                 
-                print("Morrisons Pouch was selected")
+                print("Morison's Pouch was selected")
             }
         }
         
