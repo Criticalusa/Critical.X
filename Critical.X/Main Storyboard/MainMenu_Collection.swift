@@ -411,7 +411,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "CRITICAL_PedsLogo1_Circle",// 10
             "OB",//  11
             "Hemodynamics",// 12
-            "LaryngscopeGreen",// 13
+            "CRITICAL_RSI_Logo_Circle",// 13
             "Procedures",// 14
             "CRITICAL_VentLogo_Circle"]// 15
         
