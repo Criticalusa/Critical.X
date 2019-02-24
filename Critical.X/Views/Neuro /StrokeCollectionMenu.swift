@@ -18,7 +18,7 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        strokeMenu = ["Glascow Coma Score","RACE Stroke Scale","Cincinnatti Stroke Scale","NIH Stroke Scale"]
+        strokeMenu = ["Glascow Coma Score","RACE Stroke Scale","Cincinnati Stroke Scale","NIH Stroke Scale"]
         storyBoardID = ["gcsB","Race","Cinci", "NIH"]    }
 
     override func didReceiveMemoryWarning() {

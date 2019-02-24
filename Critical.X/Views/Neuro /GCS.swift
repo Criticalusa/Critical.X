@@ -8,8 +8,21 @@
 
 import UIKit
 
-class GCS: UIViewController {
+class GCS: UIViewController, UIScrollViewDelegate {
 
+    
+    // Declare an outlets
+    @IBOutlet weak var floatingScoreLabel: UILabel!
+    
+    // Set the view to be a circle . Make syre the frame is even like 50x50
+    @IBOutlet weak var scoreView: UIView! {
+        didSet {
+            // Takes the view and makes it into a circle
+            scoreView.layer.cornerRadius = scoreView.frame.size.width / 2
+        }
+    }
+    
+    
     @IBOutlet weak var gcsResultLabel: UILabel!
     
     //Eye outlets
@@ -34,7 +47,7 @@ class GCS: UIViewController {
     @IBOutlet weak var flexion_Button: UIButton!
     @IBOutlet weak var extension_Button: UIButton!
     @IBOutlet weak var noResponse_Motor_Button: UIButton!
-
+    @IBOutlet weak var gcsScrollView: UIScrollView!
     
     @IBOutlet weak var eyeOpeningView: CardView!
     
@@ -42,11 +55,24 @@ class GCS: UIViewController {
     var count: Int = 0 {
         didSet {
             gcsResultLabel.text = " \(count)"
+            
+            floatingScoreLabel.text = "\(count)"
+
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Set the scrollView to the delegate
+        gcsScrollView.delegate = self
+        
+        // Hide the view onstart
+        self.scoreView.isHidden = true
+        
+
+        //Count starts at zero and builds when buttons pressed
         count = 0
     }
 
@@ -54,6 +80,46 @@ class GCS: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // ScrolView Delegate to hide and unihide the floating view
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    
+    // Set a variable to the contentOffset position Y
+    let scrollPosition = self.gcsScrollView.contentOffset.y
+    
+    //Conditional when the scrollView starts to scroll past a certain Y value
+    if (scrollPosition >= 25) {
+    
+    // animate the view In
+    UIView.animate(withDuration: 1, animations: {
+    
+    //write a code to unhide
+    self.scoreView.isHidden = false
+    
+    print("Position:  \(self.gcsScrollView.contentOffset.x) , \(self.gcsScrollView.contentOffset.y) ")
+    
+    print("Floating view is visible")
+    
+    }, completion: nil) // End animation block
+    
+    } // End if statement
+    
+    else {
+    
+    //Slide it up incrementally, etc.
+    UIView.animate(withDuration: 1, animations: {
+    //
+    self.scoreView.isHidden = true
+    
+    print("Floating view is HIDDEN")
+    
+    }, completion: nil) // End animation block
+    } // End else  statement
+    }
+    
+    
+    
     
     @IBAction func spontaneous_Eye(_ sender: Any) {
         if spontaneousButton.isSelected == true {

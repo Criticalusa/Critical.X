@@ -8,6 +8,7 @@
 
 import UIKit
 import LTMorphingLabel
+import EasyPeasy
 
 var username = UserDefaults.standard.value(forKey: "name")
 
@@ -68,23 +69,34 @@ extension String {
 class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
     
     
+    
     @IBOutlet var menuCollectionView: UICollectionView!
+    
     @IBOutlet var label: LTMorphingLabel!
     
+    @IBOutlet weak var criticalLogo: UIImageView!
     
-    // Variable declaration.
+    // Variable declaration
     var mainMenu = [String]()
+    
     var mainMenuDetail = [String]()
+    
     var cellImages = [String]()
+    
     var storyBoardID = [String]()
+    
     var noName = ""
     
     
     // Function to get the current time.
     func getTimefromDate()  {
+        
         let hours = (Calendar.current.component(.hour, from: Date()))
+        
         let minutes = (Calendar.current.component(.minute, from: Date()))
+        
         let seconds = (Calendar.current.component(.second, from: Date()))
+        
         let day = (Calendar.current.component(.weekday, from: Date()))
         
         // This is how we get the day of the week.
@@ -100,8 +112,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         print ("Today is \(dayOfTheWeek)")
         
         // Setting a new variable to the function in the extension above.
+        
         let randomMorning = String.randomMorning()
+        
         let randomAfternoon = String.randomAfternoon()
+        
         let randomEvening = String.randomEvening()
         
     
@@ -113,6 +128,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             //Create an array of different greetings.
             let greetings: Array = ["Hi!", "Cheers!", "Good Morning!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            
             let greetingFormal: Array = ["Hi", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
@@ -268,12 +284,28 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
 
         
         //label = LTMorphingLabel(frame: CGRect(x: 50, y: 80, width: 100, height: 50))
-        label = LTMorphingLabel(frame: CGRect(x: 8, y: 175, width: 359, height: 29))
+//        label = LTMorphingLabel(frame: CGRect(x: 8, y: 175, width: 359, height: 29))
+        
+        // We position the label here with the y value  = the sun of the navigation bar plus the image with the spaces in beteween.
+        let topBar = self.navigationController?.navigationBar.frame.height
+        
+        let criticalLogoHeight = self.criticalLogo.frame.height
+        
+        let distancfromTop = topBar ?? 44 + 25 + criticalLogoHeight
+        
+        label = LTMorphingLabel(frame: CGRect(x: 8, y:self.view.frame.minY + 145, width: self.view.frame.width, height: 29))
+        
         label.textAlignment = .center
+        
         label.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 20)
+        
         label.textColor = UIColor.darkGray
+        
         label.text = "Hello, Welcome to Critical"
+        
         label.morphingEffect = .anvil
+        
+      
         view.addSubview(label)
         
         /** Create the UILabel */
@@ -320,6 +352,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+        
 //        self.navigationItem.title = "Critical - The Barringer Group ©"
 //        let navBarAppearance = UINavigationBar.appearance()
 //        navBarAppearance.tintColor = .white
@@ -354,17 +388,17 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Common Drips in Critical Care",// 5
             "PRBC, 0.9%, Albumin ",// 6
             "Common Lab Value Interpretations",// 7
-            "IABP Timing, Modes & Troubleshooting",// 8
-            "Neuro Assessments & Stroke Scales",// 9
+            "Timing, Modes & Troubleshooting",// 8
+            "Assessments & Stroke Scales",// 9
             "Resuscitation, Calcs & Equipment",// 10
             "Fetal Heart Monitoring Strips",//  1
             "Hemodynamic Parameters / Monitoring",// 12
-            "RSI Meds & Dosages",// 13
-            "CXR, CT & Central Line Insertion",// 14
+            "Medication & Dosages",// 13
+            "CXR, Ultrasound & CVC Insertion",// 14
             "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
         
         // Images and associated Indexpaths
-        cellImages = ["CRITICAL1.ekg",// 0
+        cellImages = ["CRITICALLogo_Circle",// 0
             "Lungs",// 1
             "Heart",// 2
             "formula",// 3
@@ -372,14 +406,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "IV Bag",// 5
             "CBC",// 6
             "GrayTop",// 7
-            "Critical--IABP-6",// 8
+            "CRITICAL_IABPLogo_Circle",// 8
             "Brain 44",// 9
-            "PedsX",// 10
+            "CRITICAL_PedsLogo1_Circle",// 10
             "OB",//  11
             "Hemodynamics",// 12
             "LaryngscopeGreen",// 13
             "Procedures",// 14
-            "Critical-Ventilator-Green-Management-13"]// 15
+            "CRITICAL_VentLogo_Circle"]// 15
         
         // StoryBoard ID and associated Indexpaths
         storyBoardID = ["About Critical", // 0

@@ -15,9 +15,13 @@ class Main_LOX: UIViewController {
 
     
     @IBOutlet weak var timeResultLabel: UILabel!
+    
     @IBOutlet weak var titleLabelLOX: AKLabel!
+    
     @IBOutlet weak var txt_tankWeight: UITextField!
+    
     @IBOutlet weak var txt_lpm: UITextField!
+    
     @IBOutlet weak var thereAReLabel: UILabel!
     
     @IBOutlet weak var resultView: UIView!
@@ -29,8 +33,11 @@ class Main_LOX: UIViewController {
 
         /// Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
         tap.cancelsTouchesInView = false
+        
         self.view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
         
@@ -41,15 +48,14 @@ class Main_LOX: UIViewController {
         
         // ANimate the title coming in
         titleLabelLOX.animate(text: "LOX Calculator", duration: 1, completion: nil)
+        
+        
         // Do any additional setup after loading the view.
     }
     
     
     func loxCalculation(tankWeight weight02: Double, literPerMin liters:Double) -> String {
      
-       
-        
-        
         // First we have to calculate the gas remaining in the tank. Thats weight x 860 / 2.5
         let gasRemaining = (weight02 * 860) / 2.5
         
@@ -57,7 +63,8 @@ class Main_LOX: UIViewController {
         var timeRemaining = gasRemaining / liters
         
         if (timeRemaining.isNaN) {
-        print("Time reamining is Not a number")
+        
+            print("Time reamining is Not a number")
         }
         
 //        var hoursRemaining: Int {
