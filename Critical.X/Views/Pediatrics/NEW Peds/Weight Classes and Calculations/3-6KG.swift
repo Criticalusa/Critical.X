@@ -28,11 +28,37 @@ extension Pediatric_DetailVC {
         
         //MARK: - Vital Signs
         systolic.text = CriticalPediatrics.PediatricData.Term.SystolicBP.execute()
-        diastolic.text = CriticalPediatrics.PediatricData.Term.DiastolicBP.execute()
         respRate_lbl.text = CriticalPediatrics.PediatricData.Term.RespRate.execute()
         heartRate.text = CriticalPediatrics.PediatricData.Term.Pulse.execute()
         hypotensiveLabel.text = CriticalPediatrics.PediatricData.Term.Hypotensive.execute()
 
+        
+        // MARK: EQUIPMENT
+        blade_lbl.text = CriticalPediatrics.PediatricData.Term.Laryngescope.execute()
+        ettCuff_lbl.text = CriticalPediatrics.PediatricData.Term.ETTSizeCuffed.execute()
+        suctionCath_lbl.text = CriticalPediatrics.PediatricData.Term.SuctionCathSize.execute()
+        oPa_lbl.text = CriticalPediatrics.PediatricData.Term.OralAirway.execute()
+        iGel_lbl.text = CriticalPediatrics.PediatricData.Term.iGel.execute()
+        kingLT_lbl.text = CriticalPediatrics.PediatricData.Term.kingLT.execute()
+        ezIO_lbl.text = CriticalPediatrics.PediatricData.Term.EZ_IO.execute()
+        ngSize_lbl.text = CriticalPediatrics.PediatricData.Term.NGTubeSize.execute()
+
+        
+        //Calculate the TV tanges.
+        let neonateTV_Low = weightEntered! * 4
+        let neonateTV_high = weightEntered! * 6
+        let neonateTV_Ranges: String = "\(neonateTV_Low)-\(neonateTV_high)"
+        
+        ventDescriptionLabel.text = "Neonates, consider a volume of \(neonateTV_Ranges) mL's. Avoid Peak Inspiratory Pressures > 40 mmHg. Pressure = PEEP + Peak Inspiratory Pressure (PIP)"
+        
+        //MARK: Vent
+        peep_lbl.text = CriticalPediatrics.PediatricData.Term.PEEP.execute()
+        ventMode_lbl.text = CriticalPediatrics.PediatricData.Term.Mode.execute()
+        ventRate_lbl.text = CriticalPediatrics.PediatricData.Term.RespiratoryVentRate.execute()
+        ventTV_lbl.text = CriticalPediatrics.PediatricData.Term.TidalVolume.execute()
+        iTime_lbl.text = CriticalPediatrics.PediatricData.Term.Itime.execute()
+        pip_lbl.text = CriticalPediatrics.PediatricData.Term.PIP.execute()
+        
         
         let pounds: Double? = (weightEntered)! * 2.2
         
@@ -44,6 +70,7 @@ extension Pediatric_DetailVC {
         
         // MARK: Congerts Kg's to grams
         weightCalcLabel.text = " \(Int (w * 1000)) grams |  " + String.localizedStringWithFormat("%.1f", lbs) + " lbs"
+        
         
         // MARK: Shows approx age from weight calculated
         age_Label.text = approximateAgeFromWeight(weight: age)

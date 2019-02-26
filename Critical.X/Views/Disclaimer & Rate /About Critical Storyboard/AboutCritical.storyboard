@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,86 +27,115 @@
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" translatesAutoresizingMaskIntoConstraints="NO" id="uG1-fO-Vgx">
-                                <rect key="frame" x="15" y="148" width="290" height="280"/>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG1-fO-Vgx">
+                                <rect key="frame" x="15" y="98" width="290" height="368"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICAL1.ekg" translatesAutoresizingMaskIntoConstraints="NO" id="jsk-mk-Urq">
-                                        <rect key="frame" x="72" y="13" width="146" height="83"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICALLogo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="jsk-mk-Urq">
+                                        <rect key="frame" x="72" y="13" width="146" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.85098039215686272" green="0.2196078431372549" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xou-fM-Pou">
-                                        <rect key="frame" x="241" y="13" width="34" height="33"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="5Nz-yl-3hw"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xou-fM-Pou">
+                                        <rect key="frame" x="229" y="13" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="CloseButton"/>
                                         <connections>
                                             <action selector="dismissPopUpVC:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="o7R-BL-zQa"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rP6-WO-ina">
-                                        <rect key="frame" x="12" y="102" width="266" height="156"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-UJ-bHi">
-                                                <rect key="frame" x="0.0" y="0.0" width="266" height="28"/>
-                                                <color key="backgroundColor" name="Critical Red"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="✦✦ SPECIAL THANKS! 👏🏽 ✦✦">
-                                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="rrg-li-bio" kind="showDetail" id="2du-Wv-R9h"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-He-lkF">
-                                                <rect key="frame" x="0.0" y="43" width="266" height="27.5"/>
-                                                <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="EMAIL US">
-                                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="sendEmailFeedback:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="TQh-Sj-uF8"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-Eo-H0i">
-                                                <rect key="frame" x="0.0" y="85.5" width="266" height="28"/>
-                                                <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="✦✦  RATE CRITICAL  ✦✦">
-                                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-Ry-Qha">
-                                                <rect key="frame" x="0.0" y="128.5" width="266" height="27.5"/>
-                                                <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="DISCLAIMER">
-                                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="6a2-ri-tkr" kind="presentation" id="Ph0-vt-K8I"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-UJ-bHi">
+                                        <rect key="frame" x="12" y="261" width="266" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Critical Red"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="✦✦ SPECIAL THANKS! 👏🏽 ✦✦">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="rrg-li-bio" kind="showDetail" id="2du-Wv-R9h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-He-lkF">
+                                        <rect key="frame" x="12" y="158" width="266" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="EMAIL US">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendEmailFeedback:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="TQh-Sj-uF8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-Eo-H0i">
+                                        <rect key="frame" x="12" y="109" width="266" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="✦✦  RATE CRITICAL  ✦✦">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rateCritical:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="o2L-ad-Xwi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-Ry-Qha">
+                                        <rect key="frame" x="12" y="209" width="266" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="DISCLAIMER">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6a2-ri-tkr" kind="presentation" id="Ph0-vt-K8I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQr-eU-bQL">
+                                        <rect key="frame" x="12" y="313" width="266" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Critical Red"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="✦✦">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="ZapfDingbatsITC"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" Join the ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue-CondensedBlack"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="DREAM">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue-CondensedBlack"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" Forum  ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue-CondensedBlack"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="✦✦">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="ZapfDingbatsITC"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5T1-Er-az6" kind="showDetail" id="EWz-iG-wD2"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="rP6-WO-ina" firstAttribute="leading" secondItem="uG1-fO-Vgx" secondAttribute="leading" constant="12" id="ABX-ju-IBg"/>
-                                    <constraint firstItem="jsk-mk-Urq" firstAttribute="centerX" secondItem="uG1-fO-Vgx" secondAttribute="centerX" id="GLk-8m-wNe"/>
-                                    <constraint firstItem="jsk-mk-Urq" firstAttribute="top" secondItem="uG1-fO-Vgx" secondAttribute="top" constant="13" id="GOK-iX-0X2"/>
-                                    <constraint firstItem="xou-fM-Pou" firstAttribute="leading" secondItem="jsk-mk-Urq" secondAttribute="trailing" constant="23" id="PA4-C0-c6H"/>
-                                    <constraint firstItem="rP6-WO-ina" firstAttribute="top" secondItem="jsk-mk-Urq" secondAttribute="bottom" constant="6" id="TEU-NX-qHf"/>
-                                    <constraint firstItem="jsk-mk-Urq" firstAttribute="centerX" secondItem="rP6-WO-ina" secondAttribute="centerX" id="arI-v8-xMR"/>
-                                    <constraint firstItem="rP6-WO-ina" firstAttribute="top" secondItem="uG1-fO-Vgx" secondAttribute="top" constant="102" id="bvu-ox-K26"/>
-                                    <constraint firstItem="rP6-WO-ina" firstAttribute="top" secondItem="xou-fM-Pou" secondAttribute="bottom" constant="56" id="cJb-4A-xe2"/>
-                                    <constraint firstAttribute="trailing" secondItem="xou-fM-Pou" secondAttribute="trailing" constant="15" id="enn-Gt-fPN"/>
-                                    <constraint firstAttribute="trailing" secondItem="rP6-WO-ina" secondAttribute="trailing" constant="12" id="eqz-CJ-oWf"/>
-                                    <constraint firstItem="jsk-mk-Urq" firstAttribute="leading" secondItem="uG1-fO-Vgx" secondAttribute="leading" constant="72" id="euZ-nM-6AH"/>
-                                    <constraint firstAttribute="bottom" secondItem="rP6-WO-ina" secondAttribute="bottom" constant="22" id="ie7-4h-uhU"/>
-                                    <constraint firstItem="jsk-mk-Urq" firstAttribute="top" secondItem="xou-fM-Pou" secondAttribute="top" id="lok-l8-dPx"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                         <real key="value" value="4"/>
@@ -115,12 +144,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="uG1-fO-Vgx" firstAttribute="centerX" secondItem="5jv-vG-mpO" secondAttribute="centerX" id="0JJ-LU-hhs"/>
-                            <constraint firstItem="uG1-fO-Vgx" firstAttribute="top" secondItem="JHn-vA-nAD" secondAttribute="top" constant="128" id="LD0-jc-32S"/>
-                            <constraint firstItem="JHn-vA-nAD" firstAttribute="bottom" secondItem="uG1-fO-Vgx" secondAttribute="bottom" constant="140" id="o4m-My-w3d"/>
-                            <constraint firstItem="uG1-fO-Vgx" firstAttribute="leading" secondItem="JHn-vA-nAD" secondAttribute="leading" constant="15" id="sxE-Se-8kT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JHn-vA-nAD"/>
                     </view>
                     <connections>
@@ -129,7 +152,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZG7-Ob-EsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2574" y="-344"/>
+            <point key="canvasLocation" x="2131.875" y="-244.01408450704227"/>
+        </scene>
+        <!--Dream TeamW Eb View-->
+        <scene sceneID="iZe-P6-PCz">
+            <objects>
+                <viewController id="5T1-Er-az6" customClass="DreamTeamWEbView" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOS-Df-ggD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWP-Mj-lMb">
+                                <rect key="frame" x="0.0" y="97" width="320" height="471"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTU-Iq-Z7m">
+                                <rect key="frame" x="0.0" y="53" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" name="Critical Red"/>
+                                <items>
+                                    <navigationItem title="Welcome to the Dream Team" id="M4J-5B-qTW">
+                                        <barButtonItem key="rightBarButtonItem" title="X" id="suc-MI-b6Y">
+                                            <color key="tintColor" name="Clouds"/>
+                                            <connections>
+                                                <action selector="dismissDream:" destination="5T1-Er-az6" id="zxr-Cf-DOC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" name="Critical Red"/>
+                        <viewLayoutGuide key="safeArea" id="X7J-1G-dCC"/>
+                    </view>
+                    <connections>
+                        <outlet property="dreamWEbView" destination="eWP-Mj-lMb" id="Wpq-I0-2k2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1e3-dL-tel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889.375" y="-267.25352112676057"/>
         </scene>
         <!--Disclaimer -->
         <scene sceneID="cVD-8h-Idm">
@@ -357,6 +424,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
     </scenes>
     <resources>
         <image name="CRITICAL1.ekg" width="1650" height="1651"/>
+        <image name="CRITICALLogo_Circle" width="1782" height="1771"/>
         <image name="CloseButton" width="107" height="95"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

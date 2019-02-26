@@ -293,7 +293,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         let distancfromTop = topBar ?? 44 + 25 + criticalLogoHeight
         
-        label = LTMorphingLabel(frame: CGRect(x: 8, y:self.view.frame.minY + 145, width: self.view.frame.width, height: 29))
+        label = LTMorphingLabel(frame: CGRect(x: 8, y:self.view.frame.minY + 142, width: self.view.frame.width, height: 29))
         
         label.textAlignment = .center
         
@@ -376,7 +376,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Pediatrics", // 10
             "Obstetrics", // 11
             "Hemodynamics", // 12
-            "Rapid Sequence Intubation", //13
+            "RSI", //13
             "Procedures & Imaging", // 14
             "Ventilator Management"] // 16
         
@@ -391,23 +391,25 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Timing, Modes & Troubleshooting",// 8
             "Assessments & Stroke Scales",// 9
             "Resuscitation, Calcs & Equipment",// 10
-            "Fetal Heart Monitoring Strips",//  1
+            "Fetal Heart Monitoring Strips",//  11
             "Hemodynamic Parameters / Monitoring",// 12
             "Medication & Dosages",// 13
             "CXR, Ultrasound & CVC Insertion",// 14
             "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
         
         // Images and associated Indexpaths
+        //  "formula",// 3
+        // "Pharmacology",// 4
         cellImages = ["CRITICALLogo_Circle",// 0
             "Lungs",// 1
             "Heart",// 2
-            "formula",// 3
-            "Pharmacology",// 4
+            "CRITICAL_DrugCalcs_Logo_Circle",// 3
+            "CRITICAL_Meds_Logo_Circle",// 4
             "IV Bag",// 5
             "CBC",// 6
             "GrayTop",// 7
             "CRITICAL_IABPLogo_Circle",// 8
-            "Brain 44",// 9
+            "CRITICAL_Neuro_Logo_Circle",// 9
             "CRITICAL_PedsLogo1_Circle",// 10
             "OB",//  11
             "Hemodynamics",// 12

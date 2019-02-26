@@ -18,8 +18,6 @@ extension Pediatric_DetailVC {
     func case_03 () -> Void {
         
         
-       
-        
         let pounds: Double? = (weightEntered)! * 2.2
         // We arent doing any border colors for premature ones.
         
@@ -42,21 +40,28 @@ extension Pediatric_DetailVC {
         // Shows approx age from weight calculated
         age_Label.text = approximateAgeFromWeight(weight: age)
         
+        //Calculate the TV tanges. 
+        let neonateTV_Low = weightEntered! * 4
+        let neonateTV_high = weightEntered! * 6
+        let neonateTV_Ranges: String = "\(neonateTV_Low)-\(neonateTV_high)"
+
+        ventDescriptionLabel.text = "Neonates, consider a volume of \(neonateTV_Ranges) mL's. Avoid Peak Inspiratory Pressures > 40 mmHg. Pressure = PEEP + Peak Inspiratory Pressure (PIP)"
+        
         // MARK: Defib calculation and dosages. Stay the same.
         defibrillation_Lbl.text =  defib(Weight: weightEntered!, EnergyOne: 2, EnergyTwo: 4)
         cardioversion_lbl.text =  defib(Weight: weightEntered!, EnergyOne: 0.5, EnergyTwo: 1)
         
         
         // MARK: EQUIPMENT
-        ngTube_lbl.text = CriticalPediatrics.PediatricData.Premature.NGTubeSize.execute()
-        chestTube_lbl.text = CriticalPediatrics.PediatricData.Premature.ChestTubeSize.execute()
-        opa_lbl.text = CriticalPediatrics.PediatricData.Premature.OralAirway.execute()
-        foleyCath_lbl.text = CriticalPediatrics.PediatricData.Premature.FoleyCathSize.execute()
-        laryngescope_lbl.text = CriticalPediatrics.PediatricData.Premature.Laryngescope.execute()
-        ett_cuffed_lbl.text = CriticalPediatrics.PediatricData.Premature.ETTSizeCuffed.execute()
-        ett_Uncuffed_lbl.text = CriticalPediatrics.PediatricData.Premature.ETTSizeUnCuffed.execute()
-        centralLine_lbl.text = CriticalPediatrics.PediatricData.Premature.CentralLine.execute()
-        
+        blade_lbl.text = CriticalPediatrics.PediatricData.Premature.Laryngescope.execute()
+        ettCuff_lbl.text = CriticalPediatrics.PediatricData.Premature.ETTSizeCuffed.execute()
+        suctionCath_lbl.text = CriticalPediatrics.PediatricData.Premature.SuctionCathSize.execute()
+        oPa_lbl.text = CriticalPediatrics.PediatricData.Premature.OralAirway.execute()
+        iGel_lbl.text = CriticalPediatrics.PediatricData.Premature.iGel.execute()
+        kingLT_lbl.text = CriticalPediatrics.PediatricData.Premature.kingLT.execute()
+        ezIO_lbl.text = CriticalPediatrics.PediatricData.Premature.EZ_IO.execute()
+        ngSize_lbl.text = CriticalPediatrics.PediatricData.Premature.NGTubeSize.execute()
+
         
         //MARK: Vent
         peep_lbl.text = CriticalPediatrics.PediatricData.Premature.PEEP.execute()

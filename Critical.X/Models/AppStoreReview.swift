@@ -29,7 +29,7 @@ struct StoreReviewHelper {
         
         // This checks when the app is opened 10 times or the 50th time, it will prompt the rating. 
         switch appOpenCount {
-        case 10,50:
+        case 10,20,50:
             StoreReviewHelper().requestReview()
         case _ where appOpenCount%100 == 0 :
             StoreReviewHelper().requestReview()

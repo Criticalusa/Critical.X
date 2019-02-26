@@ -230,23 +230,21 @@ class Pediatric_DetailVC: UIViewController {
     
     // MARK: - Equipment labels
     
-    @IBOutlet weak var ngTube_lbl       : UILabel!
+    @IBOutlet weak var blade_lbl: UILabel!
     
-    @IBOutlet weak var chestTube_lbl    : UILabel!
+    @IBOutlet weak var ettCuff_lbl: UILabel!
+
+    @IBOutlet weak var suctionCath_lbl: UILabel!
     
-    @IBOutlet weak var opa_lbl          : UILabel!
+    @IBOutlet weak var oPa_lbl: UILabel!
     
-    @IBOutlet weak var foleyCath_lbl    : UILabel!
+    @IBOutlet weak var iGel_lbl: UILabel!
     
-    @IBOutlet weak var laryngescope_lbl : UILabel!
+    @IBOutlet weak var kingLT_lbl: UILabel!
     
-    @IBOutlet weak var ett_cuffed_lbl   : UILabel!
+    @IBOutlet weak var ezIO_lbl: UILabel!
     
-    @IBOutlet weak var ett_Uncuffed_lbl : UILabel!
-    
-    @IBOutlet weak var centralLine_lbl  : UILabel!
-    
-    
+    @IBOutlet weak var ngSize_lbl: UILabel!
     
     // MARK: Ventilator Outlets
     
@@ -262,6 +260,7 @@ class Pediatric_DetailVC: UIViewController {
     
     @IBOutlet weak var pip_lbl            : UILabel!
     
+    @IBOutlet weak var ventDescriptionLabel: UILabel!
     
     
     @IBOutlet weak var defibrillation_Lbl : UILabel!
@@ -866,11 +865,11 @@ class Pediatric_DetailVC: UIViewController {
             
         else if age == 1 {
             
-            return "Approx. \(Int(age)) month old."
+            return "Approx. \(Int(age) + 1) month old."
         }
         
         
-        return "Approx. \(Int(age)) months old."
+        return "Approx. \(Int(age) + 1) months old."
         
     }
     //return "The approximate age at \(weight!)kg's is \(age) months"
@@ -887,11 +886,11 @@ class Pediatric_DetailVC: UIViewController {
         
         if age == 1 {
             
-            return "The expected age at \(weight!) kg's is approx. \(Int(age)) yr. old."
+            return "The expected age at \(weight!) kg's is approx. \(Int(age) + 1) yr. old."
             
         } else {
             
-            return "Approx. \(Int(age)) y/o."
+            return "Approx. \(Int(age) + 1) y/o."
         }
         
     }
@@ -905,7 +904,7 @@ class Pediatric_DetailVC: UIViewController {
         /// To calculate age over 5yr = (weight! / 4)
         let age = (weight! / 4)
         
-        return "Approx. \(Int(age)) y/o."
+        return "Approx. \(Int(age) + 1) y/o."
     }
     
     

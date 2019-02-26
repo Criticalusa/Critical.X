@@ -38,14 +38,21 @@ class RateCriticalPopUp: UIViewController, MFMailComposeViewControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func dismissPopUpVC(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
+    @IBAction func rateCritical (_ sender: Any) {
         
         /// Rating pops up to rate the app.
         if #available( iOS 10.3,*){
             SKStoreReviewController.requestReview()
         }
+    }
+    
+    
+    
+    @IBAction func dismissPopUpVC(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        
+       
     }
     @IBAction func sendEmailFeedback(_ sender: Any) {
         
