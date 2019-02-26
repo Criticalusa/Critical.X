@@ -165,7 +165,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "L",
                         "M",
                         "N",
-                        "CS",
+                        "tpa",
                         "P", 
                         "Q", 
                         "", 
