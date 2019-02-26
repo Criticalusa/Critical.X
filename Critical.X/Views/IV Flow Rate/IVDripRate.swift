@@ -71,21 +71,55 @@ class IVDripRate: UIViewController {
         //Unhides the resultView on calculation
         resultView.isHidden = false
         
-        
+        // Hides the keyboard
+        self.view.endEditing(true)
+
         //Animates the view
         showAnimate()
         
         //Vaiables for the switch statement to place inside of the function
-        let vol = Double(volumeTxt.text!)
-        let duration = Double(durationTxt.text!)
-        let drip =  Double(dripSetTxt.text!)
+        guard let vol = Double(volumeTxt.text!) else {
+            print("Volume is empty")
+            
+            let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)
+            _ = SCLAlertView(appearance: appearance).showNotice("Wait!!", subTitle: "Enter both volume and duration values, then recalculate!")
+            resultView.isHidden = true
+            
+            return
+            
+        }
         
+        
+        
+        guard let duration = Double(durationTxt.text!) else {
+            let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)
+            _ = SCLAlertView(appearance: appearance).showNotice("Wait!!", subTitle: "Enter both volume and duration values, then recalculate!")
+            resultView.isHidden = true
+            
+            return
+            
+        }
+        
+        
+        guard let drip =  Double(dripSetTxt.text!) else {
+            let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)
+            _ = SCLAlertView(appearance: appearance).showNotice("Wait!!", subTitle: "Enter all values, then recalculate!")
+            resultView.isHidden = true
+            return
+            
+        }
+        
+       
         
         // Calculates the mL/hour and populates the result label.
-        let mLresult = (mLperHours(duration: duration!, volume: vol!))
+        let mLresult = (mLperHours(duration: duration, volume: vol))
+        
         let shortMLResult = String(format:"%.1f",mLresult) // Rounds to the 1st decimal place
+        
         mLresultLabel.text = shortMLResult
-        print("mL per hour is \(mLperHours(duration: duration!, volume: vol!))")
+        
+        print("mL per hour is \(mLperHours(duration: duration, volume: vol))")
+        
         print(shortMLResult)
         
         
@@ -94,7 +128,8 @@ class IVDripRate: UIViewController {
             print("0 selected, minutes calculated")
             
             //Sets the results to resultsMinutes
-            let resultMinutes = IVDripRateCalculationMin(Volume: vol!, Time: duration! , DripSet: drip!)
+            let resultMinutes = IVDripRateCalculationMin(Volume: vol, Time: duration , DripSet: drip)
+            
             //Sets the calculation to the results Label
             resultLabel.text = "\(Int(resultMinutes))"
             
@@ -103,7 +138,8 @@ class IVDripRate: UIViewController {
             
             
             //Sets the results to resultsHours
-            let resultsHours = IVDripRateCalculationHours(Volume: vol!, Time: duration!, DripSet: drip!)
+            let resultsHours = IVDripRateCalculationHours(Volume: vol, Time: duration, DripSet: drip)
+            
             //Sets the calculation to the results Label
             resultLabel.text = "\(Int(resultsHours))"
             
@@ -118,11 +154,13 @@ class IVDripRate: UIViewController {
         switch segment?.selectedIndex {
         case 0?:
             print("0 changed to mLs")
+            
             //Change the time label to ml's when segment 1 is selected
             timeLabel.text = "min"
             
         case 1?:
             print("1 changed to Hr")
+           
             //Change the time label to hr's when segment 2 is selected
             timeLabel.text = "hr"
         default:
@@ -144,6 +182,9 @@ class IVDripRate: UIViewController {
      */
     func showAnimate()
     {
+        // Unhide the view
+        resultView.isHidden = false
+        
         // Animation for the Results UIView
         self.resultView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.resultView.alpha = 0.0;

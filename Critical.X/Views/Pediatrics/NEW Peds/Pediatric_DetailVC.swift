@@ -491,6 +491,14 @@ class Pediatric_DetailVC: UIViewController {
         disMissBtn.layer.cornerRadius = disMissBtn.frame.size.width / 2
         disMissBtn.layer.cornerRadius = disMissBtn.frame.size.width / 2
         
+        //Helper fuctions
+        weightLabelforMeds.text = "Calculated at \n\(String(describing: weightEntered!)) kg's"
+        
+        calculation()
+        
+        calculateAllPediatricFactors()
+        
+        
     }
     
     //MARK Calculate Maintenance Fluid Daily intake
@@ -709,12 +717,12 @@ class Pediatric_DetailVC: UIViewController {
         
         super.viewWillAppear(true)
         
-        //Helper fuctions
-        weightLabelforMeds.text = "Calculated at \n\(String(describing: weightEntered!)) kg's"
+            //Helper fuctions
+            weightLabelforMeds.text = "Calculated at \n\(String(describing: weightEntered!)) kg's"
         
-        calculation()
+            calculation()
         
-        calculateAllPediatricFactors()
+            calculateAllPediatricFactors()
         
         
     }

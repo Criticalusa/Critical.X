@@ -60,6 +60,8 @@ class IdealBWDataView: UIViewController {
         // self.showAnimate()
     }
     
+    
+    //MARK: Ideal Body weight Calculations 
     func idwCalculations () {
         
         
@@ -67,18 +69,18 @@ class IdealBWDataView: UIViewController {
         //        var idealBwCalc: Double { return 50 + 2.3 * (heightEntered! - 60 ) }
         
         
-//        //MARK: Guard function during the calculations.
+////        //MARK: Guard function during the calculations.
 //        guard let myCalculations = heightEntered, let tv = desiredTV else {
 //
 //
-//            print("Cannot calculate Ideal body weight because weight out of normal parameters")
-//            self.idealBodyweightCalc.isHidden = true
-//            genderHeading.text = "Fill in both parameters"
-//            tvCalculation.isHidden = true
-//            IBW_Pounds.isHidden = true
-//            ettDepth.isHidden = true
-//            genderHeading.isHidden = true
-//            return }
+////            print("Cannot calculate Ideal body weight because weight out of normal parameters")
+////            self.idealBodyweightCalc.isHidden = true
+////            genderHeading.text = "Fill in both parameters"
+////            tvCalculation.isHidden = true
+////            IBW_Pounds.isHidden = true
+////            ettDepth.isHidden = true
+////            genderHeading.isHidden = true
+////            return }
         
         
         let TV = (Int(desiredTV!))

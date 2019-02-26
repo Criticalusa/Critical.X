@@ -22,6 +22,10 @@ class IdealBodyWeight: UIViewController {
     @IBOutlet weak var calculateButton: UIButton!
     @IBOutlet weak var idealBodyWeightSegment: CustomSegmentedController?
     
+    @IBOutlet weak var lbl_idealDescription: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,19 +38,72 @@ class IdealBodyWeight: UIViewController {
         
         idealBodyWeightSegment?.items = ["M", "F"]
         
-       
-
+        
+        
     }
+    
+    @IBAction func targetTV_Changed(_ sender: Any) {
+        print((sender as AnyObject).text!)
+        
+        guard let _ = desiredTVText.text.nilIfEmpty else {
+            
+            lbl_idealDescription.text = "Ideal is between 4-8 mL/kg"
+            
+            return  }
+        
+        let TV = Int((sender as AnyObject).text!)
+        
+        if TV! > 10 {
+            
+            print("Ideal is too high")
+            
+            lbl_idealDescription.text = "Too high, enter between 4-8 mL/kg"
+            lbl_idealDescription.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            
+        }
+        
+        if TV! < 4 {
+            
+            print("Ideal is too low")
+            
+            lbl_idealDescription.text = "Too low, enter between 4-8 mL/kg"
+            
+            lbl_idealDescription.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+        }
+        
+        if TV! >= 4 && TV! <= 10 {
+            
+            print("Ideal is between 4-8 mL/kg")
+            
+            lbl_idealDescription.text = "Too low, enter between 4-8 mL/kg"
+            
+            lbl_idealDescription.textColor = #colorLiteral(red: 0.9294117647, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
+            
+        }
+    }
+    
+   
+    
+    
+    
+    
     
     @IBAction func closeIdealBodyWeightScreen(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
     }
+    
+    //MARK: Popup button
     @IBAction func popBtn(_ sender: Any) {
         
+        
         let popTip = PopTip()
+        
         popTip.bubbleColor = UIColor.darkGray
+        
         popTip.textColor = UIColor.white
+        
         popTip.actionAnimation = .float(0.5) // This will float for 0.5 instead of the default value
         
         // Identified where in the view to make the popUp show
@@ -69,21 +126,31 @@ class IdealBodyWeight: UIViewController {
         
     }
     
+    
+    
+    
+    
     //MARK: Prepare for the SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //        calculatedNumber = rsiTextField.text!
+        // guard to see if the text if filled in.
+        guard let _ = desiredTVText.text.nilIfEmpty else {
+            lbl_idealDescription.text = "Enter a desiredTV to proceed."
+            
+            return  }
         
-        ///// Checks the segue destination, grabs the number value from the textfield and passes the data.
+        
+        //MARK: Checks the segue destination, grabs the number value from the textfield and passes the data.
         if let destination = segue.destination as? IdealBWDataView {
             
             //Takes the Double (weightEntered) variable from the detail page, and parses it as the textFireld (Double) becuase the textField is origionally casted as a string.
             // If any of these Optional values are NIL (or Empty) then Initiate the following code before the return value.
-           
+            
             destination.desiredTV = Double (desiredTVText.text!)
             destination.heightEntered = Double (heightText.text!)
             
         }
+        
         
         if segue.identifier == "ibwShow" {
             // We segue to ACLSVC and pass the infomation from which row is pressed
@@ -93,11 +160,8 @@ class IdealBodyWeight: UIViewController {
                 case 0?:
                     
                     
-                    //                    ///Guard statement if no values in the textField.
-                    //                    guard let _ = desiredTV , let _ = heightEntered  else {
-                    //                        print("Error! out of normal parameters for Male selected"); return }
-                    //
-                    // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized. Then use this ID block in a swutch statement to reference what you want ! 
+                    
+                    // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized. Then use this ID block in a swutch statement to reference what you want !
                     let id = 1
                     
                     // I set the ID block,  that is an INT  on the receiving view controller so I can access this in a switch statement.
@@ -113,21 +177,20 @@ class IdealBodyWeight: UIViewController {
                     IBW.desiredTV = Double (desiredTVText.text!)
                     //
                     
-                                        // maleIBWCalculation is set to zero on the receiving view controller, here I tell it if the segment is equal to zero from these calculations.
+                    // maleIBWCalculation is set to zero on the receiving view controller, here I tell it if the segment is equal to zero from these calculations.
                     IBW.maleIBWCalculation =  (50 + 2.3 * (Double (heightText.text!)! - 60))
                     
                     
-                                        //Set the female calculations to zero, or it will crash showing nil.
+                    //Set the female calculations to zero, or it will crash showing nil.
                     IBW.femaleIBWCalculation = 0
                     IBW .femalelbs = 0
                     
                     
-                                // I declared a global gender label on the receiving view controller and send it with the text.
+                    // I declared a global gender label on the receiving view controller and send it with the text.
                     IBW.genderLabel = "Male"
                     //
                     
-                    
-                    
+                
                     print("OK OK OK First Segment Selected")
                     print("")//create space on the console
                 case 1?:
@@ -140,11 +203,17 @@ class IdealBodyWeight: UIViewController {
                     
                     let poundsFemale = (femaleIBWCalculation * 2.2)
                     
+                    
                     IBW.desiredTV = Double (desiredTVText.text!)
+                    
                     IBW.femaleIBWCalculation =  (45.5 + 2.3 * (Double (heightText.text!)! - 60))
+                    
                     IBW.maleIBWCalculation = 0
+                    
                     IBW.genderLabel = "Female"
+                    
                     IBW .femalelbs = poundsFemale
+                    
                     IBW.malelbs = 0
                     
                     print("OK OK OK Second Segment Selected")
@@ -159,21 +228,27 @@ class IdealBodyWeight: UIViewController {
         }
     }
     
-    // Dismisses the keyboard when the user taps on the outside of any textField
+    //MARK: Dismisses the keyboard when the user taps on the outside of any textField
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true) //This will hide the keyboard
     }
     
     
-    /// Cancels the segue transition if the textBox is empty
+    //MARK: Cancels the segue transition if the textBox is empty
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "ibwShow" {
-            if (desiredTVText.text?.isEmpty)! && (heightText.text?.isEmpty)! || (desiredTVText.text == "0.0") && (heightText.text == "0.0") {
+            if (desiredTVText.text?.isEmpty)! && (heightText.text?.isEmpty)!
+                
+                || (desiredTVText.text?.isEmpty)!
+                
+                || (heightText.text?.isEmpty)!
+            {
+                
                 print(" Ideal body weight segue cancelled")
                 
                 //Displays alert
                 _ = SCLAlertView().showWarning("Error!", subTitle: "Make sure all of the text fields have values before calculating.")
-               
+                
                 return false
             }
         }

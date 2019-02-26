@@ -19,7 +19,11 @@ class PredictorsViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        predictorsMainMenu = ["Lemons".uppercased(), "Rods".uppercased(), "Moans".uppercased(), "Short".uppercased()]
+        predictorsMainMenu = ["Lemon".uppercased(),
+                              "Rods".uppercased(),
+                              "Moans".uppercased(),
+                              "Short".uppercased()]
+        
         predictorsMainMenuDetail = ["Difficult Direct Laryngoscopy",
                        "Difficulty with Bag-Valve Mask Ventilations",
                        "Difficulty with a Supraglottic Airway Device",
