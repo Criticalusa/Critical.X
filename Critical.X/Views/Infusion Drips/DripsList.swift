@@ -58,13 +58,18 @@ class DripsList: UITableViewController {
         if ((UserDefaults.standard.object(forKey:"drip_list")) != nil) {
             Dripslist = (UserDefaults.standard.object(forKey:"drip_list") as! NSArray) as! [Any]
         }
+        
         else {
             let path: String? = Bundle.main.path(forResource: "Calculator", ofType: "plist")
+            
             Dripslist = NSArray(contentsOfFile: path!) as! [Any]
             
+            
             UserDefaults.standard.set(Dripslist, forKey: "drip_list")
+            
             UserDefaults.standard.synchronize()
         }
+       
         self.tableView.reloadData()
     }
     
@@ -72,8 +77,11 @@ class DripsList: UITableViewController {
         let path: String! = Bundle.main.path(forResource: "Calculator", ofType: "plist")
         Dripslist = NSArray(contentsOfFile: path) as! [Any]
         
+        
         UserDefaults.standard.set(Dripslist, forKey: "drip_list")
+        
         UserDefaults.standard.synchronize()
+        
         self.tableView.reloadData()
     }
     

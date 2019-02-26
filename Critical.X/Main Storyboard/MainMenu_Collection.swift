@@ -147,11 +147,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
                 let displayRandomGreeting = greetings.randomElement()
-                label.text = "\(displayRandomGreeting!) \(randomMorning)"
+                label.text = "\(randomMorning) \(displayRandomGreeting!)"
                 print("There was no username Entered section 5-12")
                 
             } else if username != nil {
-                label.text = "\(formalDisplayRandomGreeting) \(randomMorning), \(username!)!"
+                label.text = "\(randomMorning) \(formalDisplayRandomGreeting), \(username!)!"
                 print("Name was entered section 5-12")
             }
             
@@ -181,11 +181,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
                  let displayRandomGreeting = greetings.randomElement()
-                    label.text = "\(displayRandomGreeting!) \(randomMorning)"
+                    label.text = "\(randomMorning) \(displayRandomGreeting!) "
                 print("There was no username Entered 12-18 hr section")
             } else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(formalDisplayRandomGreeting) \(randomAfternoon), \(username!)!"
+                label.text = "\(randomAfternoon) \(formalDisplayRandomGreeting), \(username!)!"
                 print("A Name was entered 12-18 hrs section")
 
             }
@@ -201,7 +201,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //Create an array of different greetings.
             
             let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            
             let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            
             //Get the index at each array at RANDOM
             
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -217,14 +219,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
                 if let displayRandomGreeting = greetings.randomElement() {
-                label.text = "\(displayRandomGreeting) \(randomMorning)"
+                label.text = "\(randomMorning) \(displayRandomGreeting)"
                 print("There was no username Entered 18-24 hr section")
                 }
             }
             if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
                 //let displayRandomGreeting = greetings.randomElement()
-                    label.text = "\(formalDisplayRandomGreeting) \(randomEvening), \(username!)!"
+                    label.text = "\(randomEvening) \(formalDisplayRandomGreeting), \(username!)!"
                     
                 
                 print("A Name was entered 18-24 hrs section")
@@ -238,6 +240,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             //Create an array of different greetings.
             let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            
             let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
            
             
@@ -257,12 +260,12 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
                 if let displayRandomGreeting = greetings.randomElement() {
-                    label.text = "\(displayRandomGreeting) \(randomEvening)"
+                    label.text = "\(randomEvening) \(displayRandomGreeting)"
 
                 }
             } else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(formalDisplayRandomGreeting) \(randomEvening) \(username!)"
+                label.text = "\(randomEvening) \(formalDisplayRandomGreeting), \(username!)"
                 
             }
             
@@ -376,7 +379,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Pediatrics", // 10
             "Obstetrics", // 11
             "Hemodynamics", // 12
-            "RSI", //13
+            "RSII", //13
             "Procedures & Imaging", // 14
             "Ventilator Management"] // 16
         
@@ -393,7 +396,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Resuscitation, Calcs & Equipment",// 10
             "Fetal Heart Monitoring Strips",//  11
             "Hemodynamic Parameters / Monitoring",// 12
-            "Medication & Dosages",// 13
+            "Rapid Sequence Induction & Intubation",// 13
             "CXR, Ultrasound & CVC Insertion",// 14
             "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
         
