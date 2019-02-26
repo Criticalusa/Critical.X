@@ -45,45 +45,61 @@ class IdealBodyWeight: UIViewController {
     @IBAction func targetTV_Changed(_ sender: Any) {
         print((sender as AnyObject).text!)
         
-        guard let _ = desiredTVText.text.nilIfEmpty else {
-            
-            lbl_idealDescription.text = "Ideal is between 4-8 mL/kg"
-            
-            return  }
+        
         
         let TV = Int((sender as AnyObject).text!)
         
-        if TV! > 10 {
+        // We are saying, if any of the text are deleted and left empty, there will be no crash, display what the label says - if not move onto the conditionals. This will crash without this guard.
+        guard let _ = desiredTVText.text.nilIfEmpty, let _ =
             
-            print("Ideal is too high")
-            
-            lbl_idealDescription.text = "Too high, enter between 4-8 mL/kg"
-            lbl_idealDescription.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-            
-        }
+            heightText.text.nilIfEmpty  else {
+                
+                lbl_idealDescription.text = "Enter between 4-8 mL/kg"
+                
+                print("Desired 2 and height empty ?")
+                
+                return }
         
-        if TV! < 4 {
+        if TV! < 3 || (desiredTVText.text!.isEmpty)  {
             
             print("Ideal is too low")
             
             lbl_idealDescription.text = "Too low, enter between 4-8 mL/kg"
             
-            lbl_idealDescription.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            lbl_idealDescription.textColor = #colorLiteral(red: 0.7411764706, green: 0.2784313725, blue: 0.2352941176, alpha: 1)
+            
             
         }
-        
-        if TV! >= 4 && TV! <= 10 {
+            
+        else if TV! >= 10 {
+            
+            print("Ideal is too high")
+            
+            lbl_idealDescription.text = "Too high, enter between 4-8 mL/kg"
+            
+            lbl_idealDescription.textColor = #colorLiteral(red: 0.7411764706, green: 0.2784313725, blue: 0.2352941176, alpha: 1)
+            
+        }
+            
+            
+            
+        else if TV! >= 4 && TV! <= 8 && ((sender as AnyObject).text!.count) > 0 {
             
             print("Ideal is between 4-8 mL/kg")
             
-            lbl_idealDescription.text = "Too low, enter between 4-8 mL/kg"
+            lbl_idealDescription.text = "Normal target TV parameters"
             
-            lbl_idealDescription.textColor = #colorLiteral(red: 0.9294117647, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
+            lbl_idealDescription.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
             
+        }
+            
+        else if TV == nil || (desiredTVText.text!.count < 0) {
+            
+            lbl_idealDescription.text = "Target TV between 4-8 mL/kg"
         }
     }
     
-   
+    
     
     
     
@@ -190,7 +206,7 @@ class IdealBodyWeight: UIViewController {
                     IBW.genderLabel = "Male"
                     //
                     
-                
+                    
                     print("OK OK OK First Segment Selected")
                     print("")//create space on the console
                 case 1?:

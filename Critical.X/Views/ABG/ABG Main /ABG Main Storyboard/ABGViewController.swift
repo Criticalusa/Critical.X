@@ -788,12 +788,19 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         
         /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
         theoryButton.clipsToBounds = true
+        
         theoryButton.layer.cornerRadius = 4
+        
         AnalyzeButton.clipsToBounds = true
+        
         AnalyzeButton.layer.cornerRadius = 4
+        
         theoryButton.clipsToBounds = true
+        
         theoryButton.layer.cornerRadius = 4
+        
         deltaBUTTON.clipsToBounds = true
+        
         deltaBUTTON.layer.cornerRadius = 4
         //primaryDisorderLbl.isHidden = true
         compensationlbl.isHidden = true
