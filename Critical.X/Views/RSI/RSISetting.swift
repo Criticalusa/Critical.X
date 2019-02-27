@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class RSISetting: UIViewController {
     
@@ -84,7 +85,7 @@ class RSISetting: UIViewController {
         ScrollView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
 
-        
+        // We are saving the dictionary to the defaults.
         Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
         //NSMutableDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
         
@@ -246,7 +247,30 @@ class RSISetting: UIViewController {
         
         UserDefaults.standard.set(Parameters, forKey: "parameters")
         UserDefaults.standard.synchronize()
-        dismiss(animated: true, completion: nil)
+        
+        
+        dismiss(animated: true, completion: {
+            
+            // Show alert after page was closed
+            let appearance = SCLAlertView.SCLAppearance(
+               // Styles  kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                // Display closed button
+                showCloseButton: true,
+                dynamicAnimatorActive: true,
+                buttonsLayout: .horizontal
+            )
+            
+            let alert = SCLAlertView(appearance: appearance)
+            
+            let icon: UIImage = #imageLiteral(resourceName: "CRITICAL_RSI_Logo_Circle")
+            // Color for the buttons and  iCon background
+            let color = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+            // Language to show the alert
+            _ = alert.showCustom("Thanks", subTitle: "Your doses have been updated.", color: color, icon: icon)
+        })
     }
     
     @IBAction func dismissRSIViewController(_ sender: Any) {        
@@ -294,10 +318,12 @@ class RSISetting: UIViewController {
                        "ml_succs" : 10.0,
                        "ml_vec" : 1.0,
                        "ml_roc" : 5.0,
-                       "ml_cis" : 10.0]
-                       
-                       
-                       
+                       "ml_cis" : 10.0,
+                       "ketamineLow" : 1.0,
+                       "ketamineHigh" : 2.0]
+        
+        
+        
         
         // Concentration updates mg/mL
         mgML_Lidocaine.text = "20.0"
@@ -316,7 +342,7 @@ class RSISetting: UIViewController {
         mgML_vec.text = "1.0"
         
         
-        
+        // Drug doses to be reset to
         txt_Lidocaine.text = "1.0"
         txt_Atropine.text? = "0.02"
         txt_Fentanyl_min.text? = "1.0"
@@ -339,7 +365,12 @@ class RSISetting: UIViewController {
         txt_Rocuronium_max.text = "1.2"
         txt_Cisatricurium.text = "0.2"
         
+        UserDefaults.standard.synchronize()
         
+        for (key,value) in Parameters {
+            
+            print("\(key) : \(value)")
+        }
         
         
         print("Parameters set to default values")

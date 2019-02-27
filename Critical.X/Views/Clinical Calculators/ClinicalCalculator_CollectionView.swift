@@ -115,9 +115,9 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "Bicarbonate Deficit",//3 - D
                         "Parkland Formula",//4 - E
                         "Ideal Body Weight",//5 - F
-                        "Oxygen Cylinder Calculator", //6 - G
+                        "02 Cylinder Calculator", //6 - G
                         "Ventilator Optimization",//7 - H
-                        "MAP and CPP Calculator",//8 - I // Need to creat VC
+                        "MAP | CPP",//8 - I // Need to creat VC
                         "Urine Output",//9 - J
                         "IV Rate Calculator",//10 - K
                         "Check My drip",//11 - L
@@ -159,7 +159,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "F",
                         "G",
                         "H",
-                        "CS",
+                        "MAP",
                         "J",
                         "K",
                         "L",

@@ -14,6 +14,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     @IBOutlet var menuCollectionView: UICollectionView!
     
     var mainMenu = [String]()
+    var subTitle = [String]()
     var cellImages = [String]()
     var storyBoardID = [String]()
     
@@ -21,6 +22,9 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         super.viewDidLoad()
 
         mainMenu = ["Cranial Nerves","Stroke Scores","Herniation","Increased ICP","Neuro Exam","Stroke pathology", "Normal CT brain", "GCS"]
+        
+        subTitle =  ["Cranial Nerves","Assessment & Calculators","Overview of herniation process","Sign of increased intracranical pressure","Complete neurological exam","Different stroke pathologies", "CT scan of the brain", "Glascow Coma Scale"]
+        
         
         cellImages = ["CranialNerves1","GCS1","Herniation","Brain 44","brainMap","Brain-1", "CT1", "Brain 44" ]
         
@@ -39,7 +43,12 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NeuroCollectionViewCell
+        
+        // Populate the cell labels
         cell.neuroCellLabel.text = mainMenu[indexPath.item]
+        
+        cell.neuroSubtitleLabel.text = subTitle[indexPath.item]
+
         cell.neuroCellImage.image = UIImage (named:cellImages[indexPath.item])
         return cell
     }

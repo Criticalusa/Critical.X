@@ -404,20 +404,20 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         //  "formula",// 3
         // "Pharmacology",// 4
         cellImages = ["CRITICALLogo_Circle",// 0
-            "Lungs",// 1
-            "Heart",// 2
+            "CRITICAL_Airway_Logo_Circle",// 1
+            "CRITICAL_Cardiac_Logo_Circle",// 2
             "CRITICAL_DrugCalcs_Logo_Circle",// 3
-            "CRITICAL_Meds_Logo_Circle",// 4
-            "IV Bag",// 5
-            "CBC",// 6
-            "GrayTop",// 7
+            "CRITICAL_Meds_1Logo_Circle",// 4
+            "CRITICAL_Drips2_Logo_Circle",// 5
+            "CRITICAL_CBC_Logo_Circle",// 6
+            "CRITICAL_LabValues_Logo_Circle",// 7
             "CRITICAL_IABPLogo_Circle",// 8
-            "CRITICAL_Neuro_Logo_Circle",// 9
+            "CRITICAL_Neuro_Logo1_Circle",// 9
             "CRITICAL_PedsLogo1_Circle",// 10
             "OB",//  11
-            "Hemodynamics",// 12
+            "CRITICAL_Hemodynamcis_Logo_Circle",// 12
             "CRITICAL_RSI_Logo_Circle",// 13
-            "Procedures",// 14
+            "CRITICAL_SpecialProcedures_Logo_Circle",// 14
             "CRITICAL_VentLogo_Circle"]// 15
         
         // StoryBoard ID and associated Indexpaths

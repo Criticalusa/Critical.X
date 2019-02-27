@@ -36,12 +36,16 @@ class FreeWaterDeficitDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        iVFlowRateTxt.clipsToBounds = true
-        iVFlowRateTxt.layer.cornerRadius = 2
+//        iVFlowRateTxt.clipsToBounds = true
+//        
+//        iVFlowRateTxt.layer.cornerRadius = 2
+        
         // here we round the top of the free Water deficit view only
         freeWaterView.clipsToBounds = true
+        
         freeWaterView.layer.cornerRadius = 5
-        freeWaterView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        // Only curves the top of the view
+        //freeWaterView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         // calls the method below to be executed.
         freeWaterCalculations()
@@ -52,13 +56,13 @@ class FreeWaterDeficitDetail: UIViewController {
         //Guard statemtent for the Optional values only.// When  weight parameter is only met
         guard let _ = weight, let _ = currentNa, let _ = desiredNa  else {
             _ = SCLAlertView().showWarning("Hold On...", subTitle: "Check all of the fields before calculating.")
-
+            
             freeWaterResultLabel.text = "Error!"
             iVFlowRateTxt.text = "Please all the values, then calculate"
-           
+            
             print("One of the textFrield parameters missing")
             print("")
-           
+            
             
             return } // All enacting code runs afer here.
         
@@ -80,110 +84,188 @@ class FreeWaterDeficitDetail: UIViewController {
         
         //Switching on idBlock on the sending VC. That way we can
         switch idBlock { // Takes the ID block number in the IF statement from the sending VC and we can reference it here.
-        
-           
+            
+            
         //Male Calculations
         case 1: //Mark:Male Child
             
-            // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
-            let ChildMale = String(format:"%.1f",resultChildMale!)
             
-            freeWaterResultLabel.text = ChildMale + " Liters"
-            
-            let infusionRate = (resultChildMale! / hoursToCorrectSodium) * 1000
-            
-            //let infusionRate = String(format:"%.1f",infusionRate1)
-            iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
-            
-            print("Child Male is " + ChildMale + " L")
-            print("")
-            print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
-            
+            // If the calculation turns out to be "Not a Number (NaN) then it will be zero, else we calculate
+            if resultChildMale!.isNaN {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                
+                freeWaterResultLabel.text = "Euvolemic"
+                
+                iVFlowRateTxt.text = ""
+                
+            } else {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                let ChildMale = String(format:"%.1f",resultChildMale!)
+                
+                freeWaterResultLabel.text = ChildMale + " Liters"
+                
+                let infusionRate = (resultChildMale! / hoursToCorrectSodium) * 1000
+                
+                //let infusionRate = String(format:"%.1f",infusionRate1)
+                iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                
+                print("Child Male is " + ChildMale + " L")
+                print("")
+                print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+            }
         case 2: //Mark:Male Adult
             
-            let AdultMale = String(format:"%.1f",resultAdultMale!)
-            
-            freeWaterResultLabel.text = AdultMale + " Liters"
-            
-            let infusionRate = (resultAdultMale! / hoursToCorrectSodium) * 1000
-            
-            //let infusionRate = String(format:"%.1f",infusionRate1)
-            iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
-            
-            print("Adult Male is " + AdultMale + " Liters")
-            print("")
-            print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
-            
+            // If the calculation turns out to be "Not a Number (NaN) then it will be zero, else we calculate
+            if resultAdultMale!.isNaN {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                
+                freeWaterResultLabel.text = "Euvolemic"
+                
+                iVFlowRateTxt.text = ""
+                
+            } else {
+                
+                
+                let AdultMale = String(format:"%.1f",resultAdultMale!)
+                
+                freeWaterResultLabel.text = AdultMale + " Liters"
+                
+                let infusionRate = (resultAdultMale! / hoursToCorrectSodium) * 1000
+                
+                //let infusionRate = String(format:"%.1f",infusionRate1)
+                iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
+                
+                print("Adult Male is " + AdultMale + " Liters")
+                print("")
+                print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+            }
             
         case 3: //Mark:Male Elderly
             
-            let ElderlyMale = String(format:"%.1f",resultElderlyMale!)
             
-            freeWaterResultLabel.text = ElderlyMale + " Liters"
-       
+            // If the calculation turns out to be "Not a Number (NaN) then it will be zero, else we calculate
+            if resultElderlyMale!.isNaN {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                
+                freeWaterResultLabel.text = "Euvolemic"
+                
+                iVFlowRateTxt.text = ""
+                
+            } else {
+                
+                
+                let ElderlyMale = String(format:"%.1f",resultElderlyMale!)
+                
+                
+                
+                freeWaterResultLabel.text = ElderlyMale + " Liters"
+                
+                
+                let infusionRate = (resultElderlyMale! / hoursToCorrectSodium) * 1000
+                
+                
+                
+                //let infusionRate = String(format:"%.1f",infusionRate1)
+                iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
+                
+                
+                print("Elderly Make is " + ElderlyMale + " Liters")
+                print("")
+                print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+            }
             
-            let infusionRate = (resultElderlyMale! / hoursToCorrectSodium) * 1000
-            
-            //let infusionRate = String(format:"%.1f",infusionRate1)
-            iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
-            
-            
-            print("Elderly Make is " + ElderlyMale + " Liters")
-            print("")
-            print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
-
-        
         //Female Calculations
         case 4: //Mark:Female Child
             
-            // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
-            let ChildFemale = String(format:"%.1f",resultChildFemale!)
             
-            freeWaterResultLabel.text = ChildFemale + "Liters"
+            // If the calculation turns out to be "Not a Number (NaN) then it will be zero, else we calculate
+            if resultChildFemale!.isNaN {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                
+                freeWaterResultLabel.text = "Euvolemic"
+                
+                iVFlowRateTxt.text = ""
+                
+            } else {
+                
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                let ChildFemale = String(format:"%.1f",resultChildFemale!)
+                
+                freeWaterResultLabel.text = ChildFemale + "Liters"
+                
+                let infusionRate = (resultChildFemale! / hoursToCorrectSodium) * 1000
+                
+                //let infusionRate = String(format:"%.1f",infusionRate1)
+                iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
+                
+                print("Child female is " + ChildFemale + " Liters")
+                print("")
+                print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+            }
             
-            let infusionRate = (resultChildFemale! / hoursToCorrectSodium) * 1000
             
-            //let infusionRate = String(format:"%.1f",infusionRate1)
-            iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
-            
-            print("Child female is " + ChildFemale + " Liters")
-            print("")
-            print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
-
         case 5: //Mark:Female Adult
-            let AdultFemale = String(format:"%.1f",resultAdultFemale!)
-            
-            freeWaterResultLabel.text = AdultFemale + " Liters"
-            
-            let infusionRate = (resultAdultFemale! / hoursToCorrectSodium) * 1000
-            
-            //let infusionRate = String(format:"%.1f",infusionRate1)
-            iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
             
             
-            print("Adult female is " + AdultFemale + " Liters")
-            print("")
-            print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
-
+            // If the calculation turns out to be "Not a Number (NaN) then it will be zero, else we calculate
+            if resultAdultFemale!.isNaN {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                
+                freeWaterResultLabel.text = "Euvolemic"
+                
+                iVFlowRateTxt.text = ""
+                
+            } else {
+                
+                let AdultFemale = String(format:"%.1f",resultAdultFemale!)
+                
+                freeWaterResultLabel.text = AdultFemale + " Liters"
+                
+                let infusionRate = (resultAdultFemale! / hoursToCorrectSodium) * 1000
+                
+                //let infusionRate = String(format:"%.1f",infusionRate1)
+                iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
+                
+                
+                print("Adult female is " + AdultFemale + " Liters")
+                print("")
+                print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+                
+            }
+            
+            
+            
         case 6: //Mark:Female Elderly
-            let ElderlyFemale = String(format:"%.1f",resultElderlyFemale!)
             
-            freeWaterResultLabel.text =  ElderlyFemale + " Liters"
             
-            let infusionRate = (resultElderlyFemale! / hoursToCorrectSodium) * 1000
-            
-            //let infusionRate = String(format:"%.1f",infusionRate1)
-            iVFlowRateTxt.text = "IV flow rate of \(Int(infusionRate)) cc/hr for \(hoursToCorrectSodium) hrs."
-            
-            print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
-            print("")
-            print("Elderly Female is " + ElderlyFemale + " Liters")
-            
+            // If the calculation turns out to be "Not a Number (NaN) then it will be zero, else we calculate
+            if resultElderlyFemale!.isNaN {
+                // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
+                
+                freeWaterResultLabel.text = "Euvolemic"
+                
+                iVFlowRateTxt.text = ""
+                
+            } else {
+                
+                let ElderlyFemale = String(format:"%.1f",resultElderlyFemale!)
+                
+                freeWaterResultLabel.text =  ElderlyFemale + " Liters"
+                
+                let infusionRate = (resultElderlyFemale! / hoursToCorrectSodium) * 1000
+                
+                //let infusionRate = String(format:"%.1f",infusionRate1)
+                iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
+                
+                print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+                print("")
+                print("Elderly Female is " + ElderlyFemale + " Liters")
+            }
         default:
             break
         }
         
-       
+        
     }
     
     
@@ -216,15 +298,22 @@ class FreeWaterDeficitDetail: UIViewController {
     }
     
     @IBAction func closeFreeWaterDetail(_ sender: Any) {
+        self.view.endEditing(true)
         
         dismiss(animated: true, completion: nil)
         print("View Controller was dismissed")
     }
+    
+    
     @IBAction func hiddenButton(_ sender: Any) {
+        self.view.endEditing(true)
         
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: {
+            self.view.endEditing(true)
+            
+        })
         print("View Controller was dismissed")
-
+        
     }
     
 }

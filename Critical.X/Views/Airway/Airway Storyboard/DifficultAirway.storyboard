@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -43,7 +44,7 @@
                                                         <viewLayoutGuide key="safeArea" id="V3f-kd-rwe"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="X">
-                                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="dismissLEMONS:" destination="kES-gn-yCS" eventType="touchUpInside" id="0QO-2Y-9BA"/>
@@ -64,12 +65,12 @@
                                                             <constraint firstAttribute="height" constant="20" id="o94-vj-tGL"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" red="1" green="0.99215686270000003" blue="0.59607843140000005" alpha="0.78943395319999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="Critical Red"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FL-x3-Wgw">
                                                         <rect key="frame" x="7" y="188" width="301" height="151"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YCq-fB-xrG">
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YCq-fB-xrG" customClass="UIViewX">
                                                             <rect key="frame" x="0.0" y="0.0" width="301" height="151"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -79,7 +80,7 @@
                                                                         <constraint firstAttribute="height" constant="21" id="63A-eV-wex"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
-                                                                    <color key="textColor" name="Clouds"/>
+                                                                    <color key="textColor" name="Cool Mint"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyL-ve-bOe">
@@ -103,6 +104,11 @@
                                                                 <constraint firstItem="NlD-IO-DwU" firstAttribute="trailing" secondItem="cyL-ve-bOe" secondAttribute="trailing" id="Ual-EG-rbh"/>
                                                                 <constraint firstItem="NlD-IO-DwU" firstAttribute="leading" secondItem="YCq-fB-xrG" secondAttribute="leadingMargin" id="tzt-N1-8XE"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="151" id="Xsj-Ll-pbu"/>
@@ -122,7 +128,7 @@
                                                                         <constraint firstAttribute="width" constant="289" id="mMH-ZI-h8H"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
-                                                                    <color key="textColor" name="Midnight"/>
+                                                                    <color key="textColor" name="Critical Red"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVr-4D-VEX">
@@ -139,6 +145,7 @@ The second "3" in 3-3-2 would be three finger-breadths of the patient's fingers 
 
 Finally, the "2" represents using two finger-breadths of the patient's fingers or facsimile thereof extending from the top of the laryngeal structure to the mandible. This aids in identifying the possible location of the larynx ( anterior/high or "deep" ). This may aid in planning for difficulty. The use of a bougie, different style of blade, or shaping of a malleable stylet may be optimal to ensure first-time pass attempts. All of the factors should be looked at in totality, and the more " red flags" or difficulties identified may steer your clinical decision making away from RSI to medication-assisted "awake looks." nasotracheal intubation or avoiding the use of paralytics altogether.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" name="Silver"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -157,7 +164,7 @@ Finally, the "2" represents using two finger-breadths of the patient's fingers o
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="758" id="dnP-qV-pVD"/>
                                                         </constraints>
-                                                        <blurEffect style="light"/>
+                                                        <blurEffect style="dark"/>
                                                     </visualEffectView>
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xia-hj-gok">
                                                         <rect key="frame" x="8" y="1144" width="300" height="474"/>
@@ -381,7 +388,7 @@ Finally, the "2" represents using two finger-breadths of the patient's fingers o
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBSTRUCTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZE-Sh-HYo">
                                                                     <rect key="frame" x="101" y="12" width="102" height="21"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
-                                                                    <color key="textColor" name="Clouds"/>
+                                                                    <color key="textColor" name="Cool Mint"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blg-X8-lpV">
@@ -422,7 +429,7 @@ Finally, the "2" represents using two finger-breadths of the patient's fingers o
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NECK MOBILITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JG-wW-uAz">
                                                                     <rect key="frame" x="8" y="17" width="289" height="21"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
-                                                                    <color key="textColor" name="Midnight"/>
+                                                                    <color key="textColor" name="Pale Yellow"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocA-jw-Hqa">
@@ -437,6 +444,7 @@ How much space is available to maneuver and work? What are the conditions presen
 
 Whats the skill of the operator performing the intubation- as well as is his/her team in executing control of the airway via bag-valve ventilation. Is there a backup operator to perform in the event of repeated failed airway attempts? One would be more likely to be more aggressive with a well trained and experienced partner as well as a skilled BLS team if available, vs. working with a student or lesser trained or skilled practitioner whos airway skills, and techniques are not what would normally be desirable under the conditions at hand.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -451,7 +459,7 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                                                 <constraint firstItem="1JG-wW-uAz" firstAttribute="leading" secondItem="ocA-jw-Hqa" secondAttribute="leading" id="wc3-J5-qFY"/>
                                                             </constraints>
                                                         </view>
-                                                        <blurEffect style="light"/>
+                                                        <blurEffect style="dark"/>
                                                     </visualEffectView>
                                                 </subviews>
                                                 <constraints>
@@ -545,7 +553,7 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="29"/>
                                             <state key="normal" title="X">
-                                                <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             </state>
                                             <connections>
                                                 <action selector="closeRODS:" destination="2S3-qk-Fxw" eventType="touchUpInside" id="Urm-IL-IB9"/>
@@ -569,7 +577,7 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                                 <constraint firstAttribute="height" constant="18" id="yjs-l6-Xne"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="1" green="0.99215686270000003" blue="0.59607843140000005" alpha="0.78943395319999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" name="Critical Red"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqk-DK-pu2">
@@ -914,7 +922,7 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficult with BVM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-AP-RKp">
                                         <rect key="frame" x="0.0" y="56" width="123" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="1" green="0.99215686270000003" blue="0.59607843140000005" alpha="0.78943395319999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="Critical Red"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1148,9 +1156,9 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgW-FC-VrT">
                                             <rect key="frame" x="263" y="23" width="47" height="44"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                             <state key="normal" title="X">
-                                                <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             </state>
                                             <connections>
                                                 <action selector="closeMOANS:" destination="OZE-L7-r7t" eventType="touchUpInside" id="UlC-Mm-ZRl"/>
@@ -1162,7 +1170,7 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                                 <constraint firstAttribute="height" constant="21" id="l7p-qe-dsY"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="1" green="0.99215686270000003" blue="0.59607843140000005" alpha="0.78943395319999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" name="Critical Red"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hi3-CN-Eoh">
@@ -1549,7 +1557,7 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                                 <constraint firstAttribute="height" constant="18" id="sca-r7-URL"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="1" green="0.99215686270000003" blue="0.59607843140000005" alpha="0.78943395319999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" name="Critical Red"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqn-Wa-FLd">
@@ -1558,9 +1566,9 @@ Whats the skill of the operator performing the intubation- as well as is his/her
                                                 <constraint firstAttribute="height" constant="44" id="9N9-bN-dhz"/>
                                                 <constraint firstAttribute="width" constant="34" id="gI7-kx-1AY"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                             <state key="normal" title="X">
-                                                <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             </state>
                                             <connections>
                                                 <action selector="closeSHORT:" destination="3Sr-d2-c8U" eventType="touchUpInside" id="MRw-DU-cdV"/>
@@ -1840,14 +1848,20 @@ Whats the skill of the operator performing the intubation- as well as is his/her
         <image name="Mallampatti-Grade 2" width="208" height="331"/>
         <image name="Mappampatti-Grade4" width="211" height="289"/>
         <image name="mallampatti-Grade3" width="203" height="331"/>
-        <namedColor name="Clouds">
-            <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Cool Mint">
             <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Critical Red">
+            <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Midnight">
             <color red="0.15000000596046448" green="0.18999999761581421" blue="0.23999999463558197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pale Yellow">
+            <color red="0.98431372549019602" green="1" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver">
+            <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

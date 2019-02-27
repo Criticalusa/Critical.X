@@ -13,12 +13,19 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet var strokeCollectionView: UICollectionView!
 
     var strokeMenu = [String]()
+    
+    var strokeSubtitleMenu = [String]()
+
     var storyBoardID = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        strokeMenu = ["Glascow Coma Score","RACE Stroke Scale","Cincinnati Stroke Scale","NIH Stroke Scale", "Arterial Ischemia Stroke"]
+        strokeMenu = ["GCS","RACE Stroke Scale","Cincinnati Stroke","NIH", "Ischemia Stroke"]
+        
+        strokeSubtitleMenu = ["Glascow Coma Score","RACE Stroke Calculator","Cincinnati Stroke Calculator","National Institutes of Health Stroke Scale", "Ischemic Stroke Pathology & S/S"]
+        
+        
         storyBoardID = ["gcsB","Race","Cinci", "NIH", "Ischemic"]    }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +43,12 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! StrokeCollectionCell
+        
+        // Populate the labels
         cell.strokeCellLabel.text = strokeMenu[indexPath.item]
+        
+        cell.strokSubTitle.text = strokeSubtitleMenu[indexPath.item]
+        
         return cell
     }
    

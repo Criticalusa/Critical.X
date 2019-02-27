@@ -47,15 +47,23 @@ class IABPDetail: UIViewController, UIScrollViewDelegate {
         
         super.viewDidLoad()
 
-        headingLabel.text = mainTitle 
+        
+        headingLabel.text = mainTitle
+        
         warningLabel.text = warning
+        
         descriptionLabel.text = iabpDescription
+        
         imagePlaceholder.image = iabpImage
+        
         criticalSubTitle.text = subTitle
+        
         criticalSubtitleComplications.text = subTitleComplications
+        
         complicationsDetailLabel.text = complicationsDetail
         
         self.scrolViewIABP.minimumZoomScale = 1.0
+        
         self.scrolViewIABP.maximumZoomScale = 6.0
 
     }

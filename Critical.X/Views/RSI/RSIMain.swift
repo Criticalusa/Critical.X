@@ -36,7 +36,8 @@ class RSIMain: UIViewController {
         
         UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         UINavigationBar.appearance().backgroundColor = UIColor.green
-
+        
+        rsiTextField.textColor = #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1)
        
         // change navigation item title color
         

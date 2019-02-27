@@ -22,37 +22,45 @@
                                 <rect key="frame" x="0.0" y="120" width="320" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MDi-kF-HMP">
-                                    <size key="itemSize" width="252" height="72"/>
+                                    <size key="itemSize" width="259" height="68"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="30" minY="10" maxX="30" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2Nu-NE-B5R" customClass="NeuroCollectionViewCell" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="34" y="10" width="252" height="72"/>
+                                        <rect key="frame" x="30.5" y="10" width="259" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="252" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="259" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brain-1" translatesAutoresizingMaskIntoConstraints="NO" id="5S2-Kd-gUG">
-                                                    <rect key="frame" x="11" y="13" width="45" height="45"/>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brain-1" translatesAutoresizingMaskIntoConstraints="NO" id="5S2-Kd-gUG">
+                                                    <rect key="frame" x="9" y="11" width="47" height="47"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-oO-4iE">
-                                                    <rect key="frame" x="56" y="24" width="174" height="24"/>
+                                                    <rect key="frame" x="60" y="8" width="174" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" name="Bone"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview of herniation process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HXp-O1-vhh">
+                                                    <rect key="frame" x="60" y="34" width="174" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                    <color key="textColor" name="Silver"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                        <size key="customSize" width="252" height="72"/>
+                                        <size key="customSize" width="259" height="68"/>
                                         <connections>
                                             <outlet property="neuroCellImage" destination="5S2-Kd-gUG" id="6Ah-J3-WiT"/>
                                             <outlet property="neuroCellLabel" destination="ekp-oO-4iE" id="Uir-sQ-wA9"/>
+                                            <outlet property="neuroSubtitleLabel" destination="HXp-O1-vhh" id="g7v-eF-uvb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -116,15 +124,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvg-wK-UbK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="778"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-wL-kH4">
-                                        <rect key="frame" x="261" y="402" width="51" height="31"/>
-                                        <color key="onTintColor" name="Cool Mint"/>
-                                        <connections>
-                                            <action selector="changeSwitch:" destination="cTq-hc-baF" eventType="valueChanged" id="dNZ-Im-hLZ"/>
-                                        </connections>
-                                    </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-SL-zlL">
-                                        <rect key="frame" x="8" y="65" width="304" height="49"/>
+                                        <rect key="frame" x="8" y="30" width="304" height="49"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Cranial ">
                                                 <attributes>
@@ -143,7 +144,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-xj-YsO">
-                                        <rect key="frame" x="5" y="120" width="307" height="287"/>
+                                        <rect key="frame" x="5" y="85" width="307" height="287"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CranialNerveCartoon" translatesAutoresizingMaskIntoConstraints="NO" id="eRF-lU-Wgj">
                                                 <rect key="frame" x="0.0" y="10" width="307" height="267"/>
@@ -160,15 +161,15 @@
                                         </constraints>
                                     </scrollView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFP-Mx-YCE">
-                                        <rect key="frame" x="10" y="426" width="302" height="352"/>
+                                        <rect key="frame" x="10" y="371" width="302" height="352"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-9N-6ul" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
                                                 <rect key="frame" x="2" y="39" width="300" height="281"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgO-A4-rUJ">
                                                         <rect key="frame" x="8" y="0.0" width="289" height="16"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="●">
                                                                 <attributes>
@@ -217,7 +218,7 @@
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gah-Ri-Wfw">
                                                         <rect key="frame" x="7" y="24" width="291" height="232"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="I:    ">
@@ -558,20 +559,26 @@ XII: </string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4kF-SL-zlL" firstAttribute="trailing" secondItem="IyL-xj-YsO" secondAttribute="trailing" id="11R-Rq-aeq"/>
-                                    <constraint firstItem="wsg-wL-kH4" firstAttribute="top" secondItem="qvg-wK-UbK" secondAttribute="top" constant="402" id="2mP-LE-ab8"/>
-                                    <constraint firstItem="VFP-Mx-YCE" firstAttribute="top" secondItem="IyL-xj-YsO" secondAttribute="bottom" constant="19" id="3UQ-Hi-45e"/>
-                                    <constraint firstAttribute="trailing" secondItem="wsg-wL-kH4" secondAttribute="trailing" constant="10" id="HFd-Nv-Gwm"/>
+                                    <constraint firstItem="VFP-Mx-YCE" firstAttribute="top" secondItem="IyL-xj-YsO" secondAttribute="bottom" constant="-1" id="3UQ-Hi-45e"/>
                                     <constraint firstItem="4kF-SL-zlL" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leadingMargin" id="Qkc-eT-dRK"/>
                                     <constraint firstItem="VFP-Mx-YCE" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leading" constant="10" id="Wjf-yH-Qmh"/>
                                     <constraint firstItem="IyL-xj-YsO" firstAttribute="top" secondItem="4kF-SL-zlL" secondAttribute="bottom" constant="6" id="ccF-iV-mxP"/>
-                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="top" secondItem="qvg-wK-UbK" secondAttribute="top" constant="65" id="i5M-a3-GwF"/>
+                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="top" secondItem="qvg-wK-UbK" secondAttribute="top" constant="30" id="i5M-a3-GwF"/>
                                     <constraint firstItem="4kF-SL-zlL" firstAttribute="trailing" secondItem="qvg-wK-UbK" secondAttribute="trailingMargin" id="ikI-yF-XSn"/>
-                                    <constraint firstAttribute="bottom" secondItem="VFP-Mx-YCE" secondAttribute="bottom" id="nnt-aa-pgf"/>
+                                    <constraint firstAttribute="bottom" secondItem="VFP-Mx-YCE" secondAttribute="bottom" constant="55" id="nnt-aa-pgf"/>
                                     <constraint firstItem="IyL-xj-YsO" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leading" constant="5" id="pLP-zV-VZu"/>
                                     <constraint firstItem="IyL-xj-YsO" firstAttribute="trailing" secondItem="VFP-Mx-YCE" secondAttribute="trailing" id="sDb-rC-8yB"/>
                                     <constraint firstItem="4kF-SL-zlL" firstAttribute="centerX" secondItem="qvg-wK-UbK" secondAttribute="centerX" id="sQS-BW-kZm"/>
                                 </constraints>
                             </scrollView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-wL-kH4">
+                                <rect key="frame" x="254" y="333" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" name="Cool Mint"/>
+                                <connections>
+                                    <action selector="changeSwitch:" destination="cTq-hc-baF" eventType="valueChanged" id="dNZ-Im-hLZ"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1302,10 +1309,17 @@ Motor - Flaccid. </string>
                                             <rect key="frame" x="0.0" y="0.0" width="275" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cincinatti Stroke Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-P0-KMl">
-                                                    <rect key="frame" x="0.0" y="15.5" width="275" height="27.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-P0-KMl">
+                                                    <rect key="frame" x="0.0" y="5" width="275" height="28"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
-                                                    <color key="textColor" name="Clouds"/>
+                                                    <color key="textColor" name="Bone"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Institutes of Health Stroke Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb5-j8-j6M">
+                                                    <rect key="frame" x="0.0" y="30" width="275" height="27.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                    <color key="textColor" name="Silver"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1313,10 +1327,11 @@ Motor - Flaccid. </string>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="pFV-P0-KMl" firstAttribute="leading" secondItem="TTC-mF-aYB" secondAttribute="leading" id="F65-xd-UNL"/>
-                                            <constraint firstAttribute="bottom" secondItem="pFV-P0-KMl" secondAttribute="bottom" constant="20" id="GcE-EZ-TmG"/>
+                                            <constraint firstAttribute="bottom" secondItem="pFV-P0-KMl" secondAttribute="bottom" constant="30" id="GcE-EZ-TmG"/>
                                             <constraint firstAttribute="trailing" secondItem="pFV-P0-KMl" secondAttribute="trailing" id="bv6-EO-Cu3"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="strokSubTitle" destination="nb5-j8-j6M" id="po0-a7-dK1"/>
                                             <outlet property="strokeCellLabel" destination="pFV-P0-KMl" id="XSH-g0-2kF"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1327,27 +1342,14 @@ Motor - Flaccid. </string>
                                     <outlet property="prefetchDataSource" destination="UiX-fd-hr7" id="6rS-Ka-ARP"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-S9-wtJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STROKE ALERT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-S9-wtJ">
                                 <rect key="frame" x="16" y="40" width="288" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="bfD-Ga-irf"/>
                                     <constraint firstAttribute="width" constant="288" id="xga-u4-RSR"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="CRITICAL ">
-                                        <attributes>
-                                            <font key="NSFont" size="32" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="STROKE">
-                                        <attributes>
-                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="32" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" name="Critical Red"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICAL_Neuro_Logo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="4RP-Ur-QYI">
@@ -1398,25 +1400,11 @@ Motor - Flaccid. </string>
                             <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm3-8p-92d">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ischemic Stroke Pathology" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm3-8p-92d">
                                     <rect key="frame" x="8" y="15" width="304" height="27"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <attributedString key="attributedText">
-                                        <fragment content="Arterial">
-                                            <attributes>
-                                                <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="24" name="HelveticaNeue-CondensedBlack"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" Ischemic Stroke ">
-                                            <attributes>
-                                                <color key="NSColor" name="Dark Liver"/>
-                                                <font key="NSFont" size="24" name="HelveticaNeue-CondensedBlack"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_Neuro_Logo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="JJr-Yd-SVf">
@@ -1479,11 +1467,11 @@ Motor - Flaccid. </string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="cJ1-iG-OZ0">
-                                        <rect key="frame" x="0.0" y="303" width="320" height="87"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="cJ1-iG-OZ0">
+                                        <rect key="frame" x="0.0" y="303" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cJ1-iG-OZ0" id="6oP-3i-rCJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Right Anterior Cerebral Artery  (ACA)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-Ly-e6b">
@@ -1504,15 +1492,15 @@ Motor - Flaccid. </string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="jYn-10-XtQ">
-                                        <rect key="frame" x="0.0" y="390" width="320" height="133"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="jYn-10-XtQ">
+                                        <rect key="frame" x="0.0" y="398" width="320" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jYn-10-XtQ" id="MCB-ht-Bgz">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="156.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Left Anterior Cerebral Artery (ACA)  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utW-d3-jWg">
-                                                    <rect key="frame" x="31" y="11" width="258" height="21"/>
+                                                    <rect key="frame" x="31" y="12" width="258" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" name="Cool Mint"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
@@ -6155,9 +6143,6 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <namedColor name="Carrot">
             <color red="0.90200001001358032" green="0.49399998784065247" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Clouds">
-            <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Concentrate">
             <color red="0.58399999141693115" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -6172,9 +6157,6 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         </namedColor>
         <namedColor name="Dark Gray">
             <color red="0.40000000596046448" green="0.42699998617172241" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Dark Liver">
-            <color red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dark Liver">
             <color red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6196,6 +6178,9 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         </namedColor>
         <namedColor name="Seagull">
             <color red="0.46000000834465027" green="0.74000000953674316" blue="0.79000002145767212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver">
+            <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Viola">
             <color red="0.79000002145767212" green="0.50999999046325684" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -127,14 +127,16 @@ class RSIDetail: UIViewController {
     //        let settingController = self.storyboard?.instantiateViewController(withIdentifier: "RSISetting") as! RSISetting
     //        self.present(settingController, animated: true, completion: nil)
     //    }
-    //    
+    //
     func rsiCalculation(){
         
         //MARK: GUARD Guard statement saying that if the weight is not enterend and the calculated button is pushed, Print this statement.
         guard let myWeight = weightEntered else { // Code executed if the textField is left empty
             
             print ("No weight has been entered") //Print statement on the console
+            
             kgWeight_Label.text = "Please enter a weight value" // Changes the textLabel's language
+            
             kgWeight_Label.textColor = UIColor.orange // Changes the textColor of the label
             
             presentedView.backgroundColor = UIColor.black // Changes the background color of the view
@@ -143,12 +145,11 @@ class RSIDetail: UIViewController {
         
         
         //===================  Initialize and Get Parameters   =======================================
-        let Parameters : NSDictionary!
+        var Parameters : NSMutableDictionary!
         
         if ((UserDefaults.standard.object(forKey:"parameters")) != nil) {
             
             Parameters = UserDefaults.standard.object(forKey:"parameters") as! NSMutableDictionary
-            
             //NSDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
             
             //UserDefaults.standard.object(forKey:"parameters") as! NSMutableDictionary

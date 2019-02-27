@@ -12,6 +12,7 @@ class StrokeCollectionCell: UICollectionViewCell {
 
      @IBOutlet weak var strokeCellLabel: UILabel!
     
+    @IBOutlet weak var strokSubTitle: UILabel!
     
     override func layoutSubviews() {
         super.layoutSubviews()

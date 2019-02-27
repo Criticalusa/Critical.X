@@ -26,7 +26,7 @@ extension AirwayMenu {
             //label.bottom(10)
             label.text = "Supraglottic Airway Device"
             label.lineBreakMode = .byWordWrapping
-            label.textColor = Colorify.Sunflower
+            label.textColor = Colorify.NeutralGray
             label.textAlignment = .center
             label.numberOfLines = 1
             label.font = UIFont(name: "HelveticaNeue", size: 12.0)
@@ -56,7 +56,7 @@ extension AirwayMenu {
             //label.bottom(10)
             label.text = "One pass laryngoscopy"
             label.lineBreakMode = .byWordWrapping
-            label.textColor = Colorify.Sunflower
+            label.textColor = Colorify.NeutralGray
             label.textAlignment = .center
             label.numberOfLines = 1
             label.font = UIFont(name: "HelveticaNeue", size: 12.0)
@@ -82,7 +82,7 @@ extension AirwayMenu {
             //label.bottom(10)
             label.text = "LMA"
             label.lineBreakMode = .byWordWrapping
-            label.textColor = Colorify.Sunflower
+            label.textColor = Colorify.NeutralGray
             label.textAlignment = .center
             label.numberOfLines = 1
             label.font = UIFont(name: "HelveticaNeue", size: 12.0)
@@ -108,7 +108,7 @@ extension AirwayMenu {
             //label.bottom(10)
             label.text = "Lemon, Moans, Rods, Short"
             label.lineBreakMode = .byWordWrapping
-            label.textColor = Colorify.Sunflower
+            label.textColor = Colorify.NeutralGray
             label.textAlignment = .center
             label.numberOfLines = 1
             label.font = UIFont(name: "HelveticaNeue", size: 12.0)
@@ -139,10 +139,10 @@ extension AirwayMenu {
     func createIntubationButton() {
         let intubationBtn = UIButton ()
         // intubationBtn.frame = CGRect(x: 24, y: 13, width: 310, height: 40)
-        intubationBtn.backgroundColor = #colorLiteral(red: 0.2040559649, green: 0.7372421622, blue: 0.6007294059, alpha: 0.5149833937)
+        intubationBtn.backgroundColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
         intubationBtn.setTitle("INTUBATION", for: UIControl.State.normal)
-        intubationBtn.titleLabel!.font = Font.regular.withSize(15)
-        intubationBtn.setTitleColor(UIColor.white, for: .normal)
+        intubationBtn.titleLabel!.font = Font.medium.withSize(15)
+        intubationBtn.setTitleColor(UIColor.gray, for: .normal)
         
         // Creates the selector that used to create the IBAction function.
         intubationBtn.addTarget(self, action: #selector(self.buttonActionClicked), for: .touchUpInside)
@@ -171,10 +171,10 @@ extension AirwayMenu {
     func createKingLTButton() {
         let kingLTBtn = UIButton ()
         // kingLTBtn.frame = CGRect(x: 18, y: 98, width: 310, height: 40)
-        kingLTBtn.backgroundColor = #colorLiteral(red: 0.2040559649, green: 0.7372421622, blue: 0.6007294059, alpha: 0.5149833937)
+        kingLTBtn.backgroundColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
         kingLTBtn.setTitle("KING LT AIRWAY", for: UIControl.State.normal)
-        kingLTBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 15.0)!
-        kingLTBtn.setTitleColor(UIColor.white, for: .normal)
+        kingLTBtn.titleLabel!.font = Font.medium.withSize(15)
+        kingLTBtn.setTitleColor(UIColor.gray, for: .normal)
         
         // Creates the selector that used to create the IBAction function.
         kingLTBtn.addTarget(self, action: #selector(self.buttonActionClicked), for: .touchUpInside)
@@ -204,10 +204,10 @@ extension AirwayMenu {
     func createLMAButton() {
         let LMABtn = UIButton ()
         //LMABtn.frame = CGRect(x: 17, y: 18, width: 310, height: 40)
-        LMABtn.backgroundColor = #colorLiteral(red: 0.2040559649, green: 0.7372421622, blue: 0.6007294059, alpha: 0.5149833937)
+        LMABtn.backgroundColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
         LMABtn.setTitle("LARYNGEAL MASK AIRWAY", for: UIControl.State.normal)
-        LMABtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 15.0)!
-        LMABtn.setTitleColor(UIColor.white, for: .normal)
+        LMABtn.titleLabel!.font = Font.medium.withSize(15)
+        LMABtn.setTitleColor(UIColor.gray, for: .normal)
         
         // Creates the selector that used to create the IBAction function.
         LMABtn.addTarget(self, action: #selector(self.buttonActionClicked), for: .touchUpInside)
@@ -239,10 +239,10 @@ extension AirwayMenu {
     func createPredictorsButton() {
         let predictorButton = UIButton ()
         //predictorButton.frame = CGRect(x: 17, y: 100, width: 310, height: 40)
-        predictorButton.backgroundColor = #colorLiteral(red: 0.2040559649, green: 0.7372421622, blue: 0.6007294059, alpha: 0.5149833937)
+        predictorButton.backgroundColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
         predictorButton.setTitle("PREDICTORS OF A DIFFICULT AIRWAY", for: UIControl.State.normal)
-        predictorButton.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 15.0)!
-        predictorButton.setTitleColor(UIColor.white, for: .normal)
+        predictorButton.titleLabel!.font = Font.medium.withSize(15)
+        predictorButton.setTitleColor(UIColor.gray, for: .normal)
         
         // Creates the selector that used to create the IBAction function.
         predictorButton.addTarget(self, action: #selector(self.buttonActionClicked), for: .touchUpInside)
