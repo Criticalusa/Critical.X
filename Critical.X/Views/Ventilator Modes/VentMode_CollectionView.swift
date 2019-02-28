@@ -36,9 +36,9 @@ class VentMode_CollectionView: UIViewController, UICollectionViewDelegate, UICol
         VentTitleLabel.animate(text: "Ventilation Modes", duration: 1, completion: nil)
         
         
-        ventsubData =  ["AC", "APRV", "BiLevel NIPPV",  "CPAP/PS","IMV", "IRV","PCV", "PRVC", "PSV", "SIMV"]
+        ventsubData =  ["AC", "APRV", "BiPAP",  "CPAP/PS","IMV", "IRV","PCV", "PRVC", "PSV", "SIMV"]
         
-        ventData = ["Assist Control", "Airway Pressure Release Ventilation", "BiLevel Non-Invasive Positive Pressure Ventilation", "Continous Positive Airway Pressure ","Intermittent Mandatory Ventilation ", "Inverse Ratio Ventilation","Pressure Control Ventilation", "Pressure Regulated Volume Control", "Pressure Support Ventilation", "Synchronized Intermittent Mandatory Ventilation"]
+        ventData = ["Assist Control", "Airway Pressure Release Ventilation", " Bilevel Positive Airway Pressure", "Continous Positive Airway Pressure ","Intermittent Mandatory Ventilation ", "Inverse Ratio Ventilation","Pressure Control Ventilation", "Pressure Regulated Volume Control", "Pressure Support Ventilation", "Synchronized Intermittent Mandatory Ventilation"]
         
     }
     

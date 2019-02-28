@@ -398,7 +398,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Hemodynamic Parameters / Monitoring",// 12
             "Rapid Sequence Induction & Intubation",// 13
             "CXR, Ultrasound & CVC Insertion",// 14
-            "ABG Calculator, 02 Tank Calc, TV, Modes"]// 15
+            "Ventilator Modes, ETC02 Waveform Capnography"]// 15
         
         // Images and associated Indexpaths
         //  "formula",// 3
