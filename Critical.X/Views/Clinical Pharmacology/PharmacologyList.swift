@@ -13,6 +13,7 @@ class PharmacologyList: UITableViewController {
     
     //public var data = [AnyHashable: Any]()
     private var datalist = [Any]()
+   
     var filteredLists = [Any]()
 //    public var data = [AnyHashable: Any]()
 
@@ -21,15 +22,26 @@ class PharmacologyList: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         searchController.searchResultsUpdater = self
+        
         searchController.obscuresBackgroundDuringPresentation = false
+        
         searchController.searchBar.placeholder = "Search medications"
+        
         searchController.searchBar.barTintColor = .white
-            //UIColor(hue:0.554, saturation:0.336, brightness:0.502, alpha:1.00)
+        
+        //UIColor(hue:0.554, saturation:0.336, brightness:0.502, alpha:1.00)
+        
         searchController.searchBar.tintColor = .white
-            //UIColor(hue:0.554, saturation:0.336, brightness:0.502, alpha:1.000)
+        
+        //UIColor(hue:0.554, saturation:0.336, brightness:0.502, alpha:1.000)
+        
         navigationItem.searchController = searchController
+        
         definesPresentationContext = true
+        
+        
         
         //The following makes text and buttons in the searchbar white:
         searchController.searchBar.barStyle = .black
@@ -65,6 +77,7 @@ class PharmacologyList: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if isFiltering() {
+       
             return filteredLists.count
         }
         
@@ -77,30 +90,53 @@ class PharmacologyList: UITableViewController {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PharmacologyCell
         
+        
         var data = NSDictionary()
+        
         if isFiltering() {
+        
             data = filteredLists[indexPath.row] as! NSDictionary
+        
         } else {
+        
             data = datalist[indexPath.row] as! NSDictionary
+        
         }
 
         
+        
         cell.lblTitle.text = data.object(forKey: "MainTitle") as? String
+        
         cell.lblPropofol.text = data.object(forKey: "BrandName") as? String
+        
         cell.lbl_DoseAmount.text = data.object(forKey: "Dose") as? String
+        
         return cell
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let object = segue.destination
+        
         if (object is CriticalPharmacology) {
+        
             let view = object as? CriticalPharmacology
+        
             let row: Int? = self.tableView.indexPathForSelectedRow?.row
-//            view?.index = row!
+//
+            view?.index = row!
+        
             if isFiltering() {
+        
                 view?.info = filteredLists[row!] as! [AnyHashable : Any]
+        
             } else {
+        
                 view?.info = datalist[row!] as! [AnyHashable : Any]
+        
             }
+        
         }
     }
     

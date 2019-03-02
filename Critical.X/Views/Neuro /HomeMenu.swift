@@ -14,8 +14,11 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     @IBOutlet var menuCollectionView: UICollectionView!
     
     var mainMenu = [String]()
+    
     var subTitle = [String]()
+    
     var cellImages = [String]()
+    
     var storyBoardID = [String]()
     
     override func viewDidLoad() {
@@ -50,6 +53,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         cell.neuroSubtitleLabel.text = subTitle[indexPath.item]
 
         cell.neuroCellImage.image = UIImage (named:cellImages[indexPath.item])
+        
         return cell
     }
     
@@ -63,16 +67,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         print([indexPath.item])
     }
     
-//////  ===== UICollectionViewDelegateFlowLayout   Change Cell size  =========================
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let screen_width = self.view.frame.size.width
-//        return CGSize(width: (screen_width - 90.0)/2.0, height: 1.25 * (screen_width - 90.0)/2.0)
-//    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
 

@@ -13,18 +13,28 @@ import UIKit
 
 class IABPDetail: UIViewController, UIScrollViewDelegate {
     
+    
     var mainTitle = String()
+    
     var warning = String()
+    
     var iabpDescription = String()
+    
     var subTitle = String()
+    
     var subTitleComplications = String()
+    
     var complicationsDetail = String ()
+    
     var iabpImage: UIImage?
+    
     var iabpSwitch = UISwitch ()
+    
     var buttonHidden = false
+    
     var viewHidden = false
     
-   
+   // Outlets 
     @IBOutlet weak var headingLabel: UILabel!
     
     @IBOutlet weak var imagePlaceholder: UIImageView!

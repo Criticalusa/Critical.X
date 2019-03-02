@@ -126,6 +126,7 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                     controller.viewHidden = false
                     
                     controller.subTitle = "Critical Points 🥇"
+                    
                     controller.subTitleComplications = ""
                     
                     print("Section \(indexPath.section), Row \(indexPath.row)")

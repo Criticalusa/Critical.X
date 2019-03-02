@@ -28,10 +28,7 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
         
         storyBoardID = ["gcsB","Race","Cinci", "NIH", "Ischemic"]    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+   
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,6 +38,7 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! StrokeCollectionCell
         
