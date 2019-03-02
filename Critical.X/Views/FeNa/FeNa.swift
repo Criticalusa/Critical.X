@@ -11,10 +11,15 @@ import UIKit
 class FeNa: UIViewController {
     
     //mk//MARK: - Outlets
+    
     @IBOutlet weak var SerumNaTxt: UITextField!
+    
     @IBOutlet weak var SerumCrTxt: UITextField!
+    
     @IBOutlet weak var UrineCrTxt: UITextField!
+    
     @IBOutlet weak var UrineNaTxt: UITextField!
+    
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             // Takes the button and makes it Doubleo a circle
@@ -27,8 +32,8 @@ class FeNa: UIViewController {
     
     @IBOutlet weak var feNaView : UIView! {
         didSet {
-            feNaView.clipsToBounds = true
-            feNaView.layer.cornerRadius = 10
+//            feNaView.clipsToBounds = true
+//            feNaView.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var calcualteButton : UIView! {
@@ -71,9 +76,13 @@ class FeNa: UIViewController {
         showAnimate()
         
         //Variables
+        
         let SerumCr = Double(SerumCrTxt.text!)
+        
         let SerumNa = Double(SerumNaTxt.text!)
+        
         let UrineCr = Double(UrineCrTxt.text!)
+        
         let UrineNa = Double(UrineNaTxt.text!)
         
         //Unhides the view for animation
@@ -95,6 +104,7 @@ class FeNa: UIViewController {
             return }
         
         let finalCalculation1 = fenaCalculation(SerumNa: SerumNa!, SerumCr: SerumCr!, UrineNa: UrineNa!, UrineCr: UrineCr!)
+        
         let finalCalculation = String(format:"%.1f",finalCalculation1) // Rounds to the 1st decimal place
         
         resultsLabel.text = "\(finalCalculation) %"

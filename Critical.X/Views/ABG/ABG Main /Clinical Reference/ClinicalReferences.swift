@@ -226,7 +226,7 @@ class ClinicalReferences: UIViewController, MFMailComposeViewControllerDelegate 
         controller.dismiss(animated: true, completion: nil)
         
         //2 Show the alert that the message was sent
-        // After the email view closes out we get a Thank you alert view.
+        // RED ALERT After the email view closes out we get a Thank you alert view.
         SCLAlertView().showTitle("Thank you!",
                                  subTitle: "Your message was sent to the Critical Team!",
                                  timeout: nil,

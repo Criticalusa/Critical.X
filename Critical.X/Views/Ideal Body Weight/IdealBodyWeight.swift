@@ -58,9 +58,12 @@ class IdealBodyWeight: UIViewController {
                 
                 print("Desired 2 and height empty ?")
                 
+                //disable button
+                calculateButton.isEnabled = false
+                
                 return }
         
-        if TV! < 3 || (desiredTVText.text!.isEmpty)  {
+        if TV! <= 3 || (desiredTVText.text!.isEmpty)  {
             
             print("Ideal is too low")
             
@@ -68,10 +71,13 @@ class IdealBodyWeight: UIViewController {
             
             lbl_idealDescription.textColor = #colorLiteral(red: 0.7411764706, green: 0.2784313725, blue: 0.2352941176, alpha: 1)
             
+            //disable button
+            calculateButton.isEnabled = false
+           
             
         }
             
-        else if TV! >= 10 {
+        else if TV! >= 11 {
             
             print("Ideal is too high")
             
@@ -79,11 +85,25 @@ class IdealBodyWeight: UIViewController {
             
             lbl_idealDescription.textColor = #colorLiteral(red: 0.7411764706, green: 0.2784313725, blue: 0.2352941176, alpha: 1)
             
+            SCLAlertView().showTitle("Hold Up!",
+                                     subTitle: "Enter a target tidal volume in ml/kg.\nRecommended 4-8 mL/kg!",
+                                     timeout: nil,
+                                     completeText: "Ok, Thanks!",
+                                     style: .success,
+                                     colorStyle: 0xD93829,//Critical Red
+                colorTextButton: 0xFFFFFF, // White color
+                circleIconImage: UIImage.init(named: "CriticalABG"),
+                animationStyle: .topToBottom)
+            
+            
+            //disable button
+            calculateButton.isEnabled = false
+            
         }
             
             
             
-        else if TV! >= 4 && TV! <= 8 && ((sender as AnyObject).text!.count) > 0 {
+        else if TV! >= 4 && TV! <= 10 && ((sender as AnyObject).text!.count) > 0 {
             
             print("Ideal is between 4-8 mL/kg")
             
@@ -91,11 +111,17 @@ class IdealBodyWeight: UIViewController {
             
             lbl_idealDescription.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
             
+            //disable button
+            calculateButton.isEnabled = true
+            
         }
             
         else if TV == nil || (desiredTVText.text!.count < 0) {
             
             lbl_idealDescription.text = "Target TV between 4-8 mL/kg"
+            
+            //disable button
+            calculateButton.isEnabled = false
         }
     }
     

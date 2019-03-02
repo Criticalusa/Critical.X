@@ -158,12 +158,12 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
         }
         else if AnalyzeButton.isEnabled ==  true {
-            AnalyzeButton.backgroundColor = #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)
+            AnalyzeButton.backgroundColor = #colorLiteral(red: 0.1289999932, green: 0.5879999995, blue: 0.9530000091, alpha: 1)
             AnalyzeButton.setTitle("Tap to Analyze", for: .normal)
             
         } else {
             AnalyzeButton.isEnabled =  true
-            AnalyzeButton.backgroundColor = #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)
+            AnalyzeButton.backgroundColor = #colorLiteral(red: 0.1289999932, green: 0.5879999995, blue: 0.9530000091, alpha: 1)
             AnalyzeButton.setTitle("Tap to Analyze", for: .normal)
         }
     }
@@ -458,7 +458,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 HC03Image.image = #imageLiteral(resourceName: "Aarow.up")
                 bicarbSideLabel.text = "⬆︎ HC03"
                 bicarbTextField.textColor = #colorLiteral(red: 0.9998139739, green: 0.9853300452, blue: 0.6592490673, alpha: 1)
-                bicarbTextField.textColor = #colorLiteral(red: 0.3300000131, green: 0.5500000119, blue: 0.8700000048, alpha: 1)
+                bicarbTextField.textColor = #colorLiteral(red: 0.1289999932, green: 0.5879999995, blue: 0.9530000091, alpha: 1)
                 print("The bicarb is greater than 26.00")
                 
                 
@@ -1036,7 +1036,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         // Resets the button title back to normal
         AnalyzeButton.setTitle("Tap to Analyze", for: .normal)
         
-        AnalyzeButton.backgroundColor = #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)
+        AnalyzeButton.backgroundColor = #colorLiteral(red: 0.1289999932, green: 0.5879999995, blue: 0.9530000091, alpha: 1)
         
         
         // Animate the title label

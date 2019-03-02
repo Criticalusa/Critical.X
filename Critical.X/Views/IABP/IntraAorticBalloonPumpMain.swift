@@ -62,7 +62,7 @@ class IntraAorticBalloonPumpMain: UITableViewController {
             cell.textLabel?.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
         
         case (0,2):
-            cell.textLabel?.textColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+            cell.textLabel?.textColor = #colorLiteral(red: 0.3058823529, green: 0.3058823529, blue: 0.3058823529, alpha: 1)
         
         default:
             cell.textLabel?.textColor = #colorLiteral(red: 0.3058823529, green: 0.3058823529, blue: 0.3058823529, alpha: 1)
@@ -93,9 +93,13 @@ class IntraAorticBalloonPumpMain: UITableViewController {
                 let controller = segue.destination as! IABPDetail
                 
                 //Overall hides the button when the segues is loaded. Since hide it globally here, I only have to code where i want the button visible.
+                
                 controller.buttonHidden = true
+                
                 controller.viewHidden = true
+                
                 controller.subTitle = "Critical Points 🥇"
+                
                 controller.subTitleComplications = ""
                 //Uncomment to change the title of the tableViewController
                 //controller.title = capnographyMenu[indexPath.row]

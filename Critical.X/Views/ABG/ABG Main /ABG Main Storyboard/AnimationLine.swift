@@ -109,7 +109,7 @@ extension ABGViewController {
             // When it gets to the end, we want it to animate back to the top
             UIView.animate(withDuration: 0.8, animations: {
                 self.lineView.center.y = self.phSideLabel.frame.origin.y
-                self.lineView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                self.lineView.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
             })
         })
     }

@@ -13,11 +13,17 @@ import EasyPeasy
 var username = UserDefaults.standard.value(forKey: "name")
 
 extension Date {
+   
     func dayOfWeek() -> String? {
+   
         let dateFormatter = DateFormatter()
+   
         dateFormatter.dateFormat = "EEEE"
+   
         return dateFormatter.string(from: self).capitalized
+   
         // or use capitalized(with: locale) if you want
+   
     }
 }
 
@@ -26,13 +32,21 @@ extension String {
     // Random Emoji's to be displayed during the afternoon
     
     static func randomAfternoon(length: Int = 1) -> String {
+        
         let afternoonEmoji = ["🌞","🌤","😎","🌎"]
+        
         var randomString: String = ""
         
+        
+        
         for _ in 0..<length {
+        
             let randomValue = arc4random_uniform(UInt32(afternoonEmoji.count))
+        
             randomString += "\(afternoonEmoji[afternoonEmoji.index(afternoonEmoji.startIndex, offsetBy: Int(randomValue))])"
+        
         }
+        
         return randomString
     }
     
@@ -41,25 +55,40 @@ extension String {
     // Random Emoji's to be displayed during the Morning
     
     static func randomMorning(length: Int = 1) -> String {
+       
         let morningEmoji = ["☀️","🌞","🌤", "😀", "😌"]
+       
         var randomString: String = ""
+       
         
+       
         for _ in 0..<length {
+       
             let randomValue = arc4random_uniform(UInt32(morningEmoji.count))
+       
             randomString += "\(morningEmoji[morningEmoji.index(morningEmoji.startIndex, offsetBy: Int(randomValue))])"
         }
+       
         return randomString
     }
     
     // Random Emoji's to be displayed during the evening
     static func randomEvening(length: Int = 1) -> String {
+        
         let eveningEmoji = ["🌒","🌖","🌙", "🌛", "🌝"]
+        
         var randomString: String = ""
         
+        
+        
         for _ in 0..<length {
+        
             let randomValue = arc4random_uniform(UInt32(eveningEmoji.count))
+        
             randomString += "\(eveningEmoji[eveningEmoji.index(eveningEmoji.startIndex, offsetBy: Int(randomValue))])"
+        
         }
+        
         return randomString
     }
 }
@@ -144,14 +173,21 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             // Conditional
             if username == nil {
+                
                 username = noName
+                
                 //label.text = "Good Morning! \(randomAfternoon)"
+                
                 let displayRandomGreeting = greetings.randomElement()
+                
                 label.text = "\(randomMorning) \(displayRandomGreeting!)"
+                
                 print("There was no username Entered section 5-12")
                 
             } else if username != nil {
+                
                 label.text = "\(randomMorning) \(formalDisplayRandomGreeting), \(username!)!"
+                
                 print("Name was entered section 5-12")
             }
             
@@ -180,12 +216,18 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             if username == nil {
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
-                 let displayRandomGreeting = greetings.randomElement()
-                    label.text = "\(randomMorning) \(displayRandomGreeting!) "
+                
+                let displayRandomGreeting = greetings.randomElement()
+                
+                label.text = "\(randomMorning) \(displayRandomGreeting!) "
+                
                 print("There was no username Entered 12-18 hr section")
-            } else if username != nil {
+            }
+            else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
+               
                 label.text = "\(randomAfternoon) \(formalDisplayRandomGreeting), \(username!)!"
+               
                 print("A Name was entered 12-18 hrs section")
 
             }

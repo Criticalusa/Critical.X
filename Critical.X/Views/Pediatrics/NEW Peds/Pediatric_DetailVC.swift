@@ -816,34 +816,34 @@ class Pediatric_DetailVC: UIViewController {
         case (3..<6)?:
             case_ThreeToSix()
             
-        case (6..<8)?:
+        case (6...8)?:
             case_SixToEight()
             
-        case (8..<9)?: //Infant
+        case (8...9)?: //Infant
             case_EightToNine()
             
-        case (10..<12)?: //Toddler
+        case (10...12)?: //Toddler
             case_TenToTwelve()
             
-        case (12..<15)?: //Small child
+        case (12...15)?: //Small child
             case_TwelveToFifteen()
             
-        case (15..<18)?: //Child
+        case (15...18)?: //Child
             case_FifteenToEighteen()
             
-        case (19..<23)?: //Child
+        case (19...23)?: //Child
             case_NinteenToTwentyThree()
             
-        case (24..<29)?: //Large child
+        case (24...29)?: //Large child
             case_TwentyFourToTwentyNine()
             
-        case (30..<37)?: // Adult
+        case (30...37)?: // Adult
             case_ThirtyToThirtySeven()
             
-        case (38..<50)?: // Large Adult 40
+        case (38...50)?: // Large Adult 40
             case_FourtyToFifty()
             
-        case (50..<80)?: // Large Adult 50
+        case (50...80)?: // Large Adult 50
             case_FiftyToEighty()
             
         default:
