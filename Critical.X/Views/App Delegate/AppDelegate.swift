@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Instabug
 
 extension UIApplication {
     
@@ -37,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().tintColor = UIColor.white //your desired color here
 
-     
+        //Debugging Instabug Pod
+     Instabug.start(withToken: "aefac1c11ad4a518cfb69c6b9c8d70c4", invocationEvents: [.shake, .screenshot])
         
         
         // Create the window for the onboarding screen

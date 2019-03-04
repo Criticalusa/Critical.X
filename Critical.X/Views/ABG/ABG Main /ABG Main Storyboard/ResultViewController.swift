@@ -15,11 +15,17 @@ class ResultViewController: UIViewController {
     public var titleLabel = String()
     public var interpretationInfo = String()
     
+    
     @IBOutlet weak var disturbanceTitle: UILabel!
+    
     @IBOutlet weak var interpretationLabel: UILabel!
+    
     @IBOutlet weak var differentialsLabel: UILabel!
+    
     @IBOutlet weak var criticalPearl: UILabel!
+    
     @IBOutlet weak var expanationScollView: UIScrollView!
+    
     @IBOutlet weak var loadingdots: LOTAnimationView!
     
     @IBOutlet weak var closedButton: UIButton! {
@@ -74,11 +80,13 @@ class ResultViewController: UIViewController {
             
             // Setting the attriubte to the string
             let attributedText_A = NSMutableAttributedString.getAttributedString(fromString: abgInterpretation)
+            
             // Delcare the font to be used and set it to the text
             let customFont  = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             //1  Change the color of a word in the string
             attributedText_A.apply(color: #colorLiteral(red: 1, green: 0.7570000291, blue: 0.0270000007, alpha: 1), subString: "Blood Gas Analysis:")
+            
             attributedText_A.apply(font: customFont!, subString: "Blood Gas Analysis:")
             
             

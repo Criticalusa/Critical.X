@@ -27,7 +27,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critical EKG's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-VP-vPh" customClass="AKLabel" customModule="AKLabel">
                                     <rect key="frame" x="13" y="6" width="265" height="42"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="40"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                     <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -934,7 +934,7 @@
                                     <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-L3-Byr" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorum Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-tq-2a8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorum Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-tq-2a8" customClass="AKLabel" customModule="AKLabel">
                                                 <rect key="frame" x="20" y="74" width="286" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="286" id="HXd-uF-EwH"/>
@@ -980,7 +980,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNx-QU-ATk" customClass="UIViewX">
                                                 <rect key="frame" x="20" y="120" width="286" height="128"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to know" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlC-g2-3SU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to know" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlC-g2-3SU" customClass="AKLabel" customModule="AKLabel">
                                                         <rect key="frame" x="0.0" y="18" width="286" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="286" id="OOi-el-UNp"/>
@@ -1020,11 +1020,34 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE4-g4-aIa" customClass="UIButtonX">
+                                                <rect key="frame" x="102" y="315" width="115" height="39"/>
+                                                <color key="backgroundColor" name="Critical Red"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="115" id="0g2-Ww-nfI"/>
+                                                    <constraint firstAttribute="height" constant="39" id="cGl-W9-1EB"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="b5b-N2-DU5" eventType="touchUpInside" id="fI1-9I-cmA"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="k7d-nN-kE9" secondAttribute="trailing" constant="5" id="1r5-ot-plb"/>
                                             <constraint firstItem="k7d-nN-kE9" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="285" id="51U-2r-iky"/>
+                                            <constraint firstItem="OE4-g4-aIa" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="102" id="7en-A5-ws0"/>
                                             <constraint firstItem="CJb-44-gB2" firstAttribute="top" secondItem="yTR-xl-Hjc" secondAttribute="bottom" constant="14" id="AfZ-Zk-kSi"/>
                                             <constraint firstItem="wx5-tq-2a8" firstAttribute="top" secondItem="k7d-nN-kE9" secondAttribute="bottom" constant="1" id="IMk-F2-Lf2"/>
                                             <constraint firstAttribute="height" constant="800" id="NaE-YC-dJ3"/>
@@ -1035,8 +1058,10 @@
                                             <constraint firstItem="CJb-44-gB2" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="20" id="aHB-oL-A7e"/>
                                             <constraint firstItem="CJb-44-gB2" firstAttribute="top" secondItem="FNx-QU-ATk" secondAttribute="bottom" constant="14" id="bRZ-da-a6g"/>
                                             <constraint firstItem="wx5-tq-2a8" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="20" id="fIC-f3-Sic"/>
+                                            <constraint firstItem="OE4-g4-aIa" firstAttribute="top" secondItem="CJb-44-gB2" secondAttribute="bottom" constant="36.5" id="h2v-Au-1cb"/>
                                             <constraint firstItem="FNx-QU-ATk" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="20" id="kuq-8J-LSp"/>
                                             <constraint firstItem="k7d-nN-kE9" firstAttribute="top" secondItem="Mv7-L3-Byr" secondAttribute="top" constant="25" id="mvs-U6-NB2"/>
+                                            <constraint firstAttribute="trailing" secondItem="OE4-g4-aIa" secondAttribute="trailing" constant="103" id="p3I-ka-sa6"/>
                                             <constraint firstItem="yTR-xl-Hjc" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="43" id="qr1-Pt-dqV"/>
                                             <constraint firstAttribute="trailing" secondItem="yTR-xl-Hjc" secondAttribute="trailing" constant="37" id="rNa-JZ-kJS"/>
                                             <constraint firstAttribute="trailing" secondItem="FNx-QU-ATk" secondAttribute="trailing" constant="14" id="xdj-o0-fal"/>
@@ -1062,17 +1087,19 @@
                     </view>
                     <size key="freeformSize" width="320" height="800"/>
                     <connections>
+                        <outlet property="editButton" destination="OE4-g4-aIa" id="gRG-cP-JFB"/>
                         <outlet property="explanationLabel" destination="CJb-44-gB2" id="pK4-Dz-vDc"/>
                         <outlet property="heightConstraint" destination="NaE-YC-dJ3" id="X9p-BG-3ec"/>
                         <outlet property="overView" destination="FNx-QU-ATk" id="Pc3-s3-2bW"/>
                         <outlet property="titleView" destination="wx5-tq-2a8" id="zFb-IN-pKo"/>
                         <outlet property="vadDetailScroller" destination="WTL-WX-btv" id="xdE-HW-9kJ"/>
                         <outlet property="vadImage" destination="yTR-xl-Hjc" id="KoB-WL-O7H"/>
+                        <outlet property="whatToKnow_lbl" destination="DlC-g2-3SU" id="Wkd-c8-Fn8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYF-x0-Hmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356.25" y="902.11267605633805"/>
+            <point key="canvasLocation" x="396" y="1027"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="54R-1e-rHS">
@@ -1168,7 +1195,7 @@
                                     <outlet property="delegate" destination="w1C-DA-Lz3" id="kQi-97-fIV"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VADS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PF-yk-P9r">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VADS 101" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PF-yk-P9r">
                                 <rect key="frame" x="18" y="46" width="286" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="42"/>

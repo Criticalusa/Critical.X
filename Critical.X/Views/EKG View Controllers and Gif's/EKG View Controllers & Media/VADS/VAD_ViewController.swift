@@ -14,17 +14,17 @@ import AKLabel
 
 
 class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
-
+    
+    
     @IBOutlet weak var VADTitle: AKLabel!
     @IBOutlet weak var vadCollectionView: UICollectionView!
     
     // Variable declaration.
     var vad_MainMenu = [String]()
-   
+    
     var vad_MenuDetail = [String]()
     
-   
+    
     
     
     @IBAction func dismissUSVC(_ sender: Any) {
@@ -35,18 +35,18 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         VADTitle.animate(text: "Ventricular Assist Devices", duration: 1, completion: nil)
         
-        vad_MainMenu = ["Overview", "Total Artificial Heart","Heart Mate II","Heartware"]
+        vad_MainMenu = ["Basic Overview", "TAH","Heart Mate II","HVAD", "Impella"]
         
-        vad_MenuDetail = ["Mechanical overview","Total artificial heart","Heart Mate II","Heartware"]
+        vad_MenuDetail = ["Mechanical overview","Syncardia-BiVAD Total Artificial Heart","2nd Generation Axial-flow pump","Medtronic 3rd Generation Centrifugal flow", "Abiomed - Micro-axial flow pump"]
         
-
+        
     }
     
-
+    
     // MARK: UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -83,10 +83,10 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         print("Cell \(indexPath.row) tapped")
         
         self.performSegue(withIdentifier: SegueIdentifier.showVad.rawValue, sender: self)
-
+        
     }
     
-   
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == SegueIdentifier.showVad.rawValue
         {
@@ -99,7 +99,7 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
             //SEt variable for all of the titles in the array to pass
             let selectedTitleData = vad_MainMenu[(indexPath?.row)!]
             
-            /////////
+            //MARK: - OVerview
             if indexPath?.row == 0 {
                 // Set Varibles detailView as the destination to access the variables
                 let detailView = segue.destination as! vad_DetailVC
@@ -111,32 +111,49 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 //The string title in the detail View
                 detailView.vadChildTitle = selectedTitleData
                 
+                // Unhide the View
                 detailView.overViewHidden = false
                 
-                detailView.imageString = "HeartMateII"
-                                
-                detailView.vadChildDescription = changeAttribute_totalArtifical(text: VAD_Explanaton.Overview.display())
+                // We hide the button here
+                detailView.hideButton = true
+                
+                //Set attributed text
+                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
+                
                 
             }
+            
+            //MARK: - Total Artifical Heart
+            
             if indexPath?.row == 1 {
-            
-            // Set Varibles detailView as the destination to access the variables
-            let detailView = segue.destination as! vad_DetailVC
-            
-        
-               // Hide the view
-                detailView.overViewHidden = true
-
-            //The string title in the detail View
-           detailView.vadChildTitle = selectedTitleData
-            
-            detailView.imageString = "TotalArtificialHeart"
-            
-            let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 
-                detailView.vadChildDescription = changeAttribute_totalArtifical(text: text)
+                // Set Varibles detailView as the destination to access the variables
+                let detailView = segue.destination as! vad_DetailVC
+                
+                
+                // Hide the view
+                detailView.overViewHidden = true
+                
+                // We unhide the button here
+                detailView.hideButton = false
+                
+                //The string title in the detail View
+                detailView.vadChildTitle = selectedTitleData
+                
+                //Name the buttob
+                detailView.troubleshootingString = "TAH Troubleshooting"
 
+                detailView.imageString = "TotalArtificialHeart"
+                
+                // Creat the tag to reference for the button to go to webiste.
+               buttonTag = 1
+                
+                //Set attributed text
+                detailView.vadChildDescription = changeAttribute_totalArtifical(text: VAD_Explanaton.TotalArtificialHeart.display())
+                
             }
+            
+            //MARK: - Heart Mate II
             
             if indexPath?.row == 2 {
                 // Set Varibles detailView as the destination to access the variables
@@ -148,17 +165,28 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 //The string title in the detail View
                 detailView.vadChildTitle = selectedTitleData
                 
+                // We unhide the button here
+                detailView.hideButton = false
+                
+                //Name of the button
+                detailView.troubleshootingString = "HM II Troubleshooting"
+
                 // Hide the view
                 detailView.overViewHidden = true
+                
+                // Creat the tag to reference for the button to go to webiste.
+                buttonTag = 2
                 
                 detailView.imageString = "HeartMateII"
                 
                 let artificalText =  VAD_Explanaton.HeartMateII.display()
                 
+                 //Set attributed text
                 detailView.vadChildDescription = changeAttribute_totalArtifical(text: artificalText)
                 
             }
             
+            //MARK: - HVAD
             
             if indexPath?.row == 3 {
                 // Set Varibles detailView as the destination to access the variables
@@ -170,6 +198,14 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 //The string title in the detail View
                 detailView.vadChildTitle = selectedTitleData
                 
+                // We unhide the button here
+                detailView.hideButton = false
+                
+                detailView.troubleshootingString = "HVAD Troubleshooting"
+                
+                // Creat the tag to reference for the button to go to webiste.
+                buttonTag = 3
+                
                 // Hide the view
                 detailView.overViewHidden = true
                 
@@ -178,10 +214,41 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 // Set the text from the Enum
                 let text = VAD_Explanaton.HVAD.display()
                 
+                 //Set attributed text
                 detailView.vadChildDescription = changeAttribute_totalArtifical(text: text)
-
+                
             }
             
+            if indexPath?.row == 4 {
+                // Set Varibles detailView as the destination to access the variables
+                let detailView = segue.destination as! vad_DetailVC
+                
+                //SEt variable for all of the titles in the array to pass
+                let selectedTitleData = vad_MainMenu[(indexPath?.row)!]
+                
+                //The string title in the detail View
+                detailView.vadChildTitle = selectedTitleData
+                
+                // We unhide the button here
+                detailView.hideButton = false
+                
+                detailView.troubleshootingString = "Impella Troubleshooting"
+                
+                // Creat the tag to reference for the button to go to webiste.
+                buttonTag = 4
+                
+                // Hide the view
+                detailView.overViewHidden = true
+                
+                detailView.imageString = "Impella"
+                
+                // Set the text from the Enum
+                let text = VAD_Explanaton.Impella.display()
+                
+                //Set attributed text
+                detailView.vadChildDescription = changeAttribute_totalArtifical(text: text)
+                
+            }
             
         }
     }
@@ -200,8 +267,8 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         //4A
         
-        let thisIs = "THIS IS #3"
-        let a = "nostrud exercitation"
+        let thisIs = "Overview:"
+        let a = "HELLLLLLOOOOO"
         let what = "What to know:"
         
         
@@ -242,8 +309,242 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Return all the changes that we created as a NSAttributed String
         return attributedText
     }
-
-
-
-
+    
+    
+    func changeAttribute_OverView (text: String) -> NSAttributedString {
+        
+        // Where do we want to get the text info from ( source )
+        let text = VAD_Explanaton.Overview.display()
+        
+        var changedString = String()
+        
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: text)
+        
+        
+        // Delcare the font to be used and set it to the text
+        var customFont  = UIFont(name: "HelveticaNeue-Medium", size: 14.0)
+        
+        // Change the colors of the individual words within the text
+        
+        let A = "Ventricular Assist Device (VAD)"
+        let B = "Things to Know:"
+        let C = "What to know:"
+        let D = "VAD Components:"
+        let E = "Batteries:"
+        let F = "Controller (Think as the computer):"
+        let G = "Driveline:"
+        let H = "Since blood pressures are challenging to obtain, treat the mean arterial pressure."
+        let I = "Use a doppler to obtain the MAP. The first sound heart while taking a BP with the doppler will be the MAP."
+        let J = "EKG's are typically not affected by the VAD."
+        let K = "02 saturations may be difficult to obtain due to flow."
+        let L = "AED's do not affect VAD performance."
+        let driveline = "Driveline"
+        let N = "Inflow cannula:"
+        let O = "Outflow graft:"
+        let P = "The pump:"
+        let Q = "Critical Pearls for VAD's:"
+        
+        
+        
+        
+        
+        if text.contains(A){
+            changedString = A
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(B){
+            changedString = B
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(C){
+            changedString = C
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(D){
+            changedString = D
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(E){
+            changedString = E
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(F){
+            changedString = F
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(G){
+            changedString = G
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(H){
+            changedString = H
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(I){
+            changedString = I
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(J){
+            changedString = J
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(K){
+            changedString = K
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(L){
+            changedString = L
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 1, green: 0.9219999909, blue: 0.6761207884, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(N){
+            changedString = N
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        if text.contains(O){
+            changedString = O
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(P){
+            changedString = P
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(Q){
+            changedString = Q
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(driveline){
+            changedString = driveline
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        // Return all the changes that we created as a NSAttributed String
+        return attributedText
+    }
+    
+    
+    
 }

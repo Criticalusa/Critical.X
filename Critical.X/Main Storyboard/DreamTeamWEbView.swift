@@ -10,12 +10,12 @@ import UIKit
 import WebKit
 
 class DreamTeamWEbView: UIViewController {
-@IBOutlet weak var dreamWEbView: WKWebView!
+
+    @IBOutlet weak var dreamWEbView: WKWebView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let url = URL(string: "https://www.dream-critical.com")
         

@@ -18,6 +18,7 @@ pod 'SCLAlertView'
 pod 'lottie-ios'
 pod 'EasyPeasy'
 pod 'SteviaLayout'
+pod 'Instabug'
 
 
 pod ‘TTSegmentedControl’
