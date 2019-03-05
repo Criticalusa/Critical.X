@@ -945,14 +945,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7d-nN-kE9">
-                                                <rect key="frame" x="285" y="25" width="30" height="48"/>
+                                                <rect key="frame" x="265" y="25" width="45" height="45"/>
+                                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="MZc-Cd-J9J"/>
-                                                    <constraint firstAttribute="width" constant="30" id="U2X-aD-jID"/>
+                                                    <constraint firstAttribute="height" constant="45" id="MZc-Cd-J9J"/>
+                                                    <constraint firstAttribute="width" constant="45" id="U2X-aD-jID"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="X">
-                                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dismissVadDetail:" destination="b5b-N2-DU5" eventType="touchUpInside" id="kVM-pY-Ixn"/>
@@ -1045,11 +1046,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="k7d-nN-kE9" secondAttribute="trailing" constant="5" id="1r5-ot-plb"/>
-                                            <constraint firstItem="k7d-nN-kE9" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="285" id="51U-2r-iky"/>
+                                            <constraint firstAttribute="trailing" secondItem="k7d-nN-kE9" secondAttribute="trailing" constant="10" id="1r5-ot-plb"/>
                                             <constraint firstItem="OE4-g4-aIa" firstAttribute="leading" secondItem="Mv7-L3-Byr" secondAttribute="leading" constant="102" id="7en-A5-ws0"/>
                                             <constraint firstItem="CJb-44-gB2" firstAttribute="top" secondItem="yTR-xl-Hjc" secondAttribute="bottom" constant="14" id="AfZ-Zk-kSi"/>
-                                            <constraint firstItem="wx5-tq-2a8" firstAttribute="top" secondItem="k7d-nN-kE9" secondAttribute="bottom" constant="1" id="IMk-F2-Lf2"/>
+                                            <constraint firstItem="wx5-tq-2a8" firstAttribute="top" secondItem="k7d-nN-kE9" secondAttribute="bottom" constant="4" id="IMk-F2-Lf2"/>
                                             <constraint firstAttribute="height" constant="800" id="NaE-YC-dJ3"/>
                                             <constraint firstItem="yTR-xl-Hjc" firstAttribute="top" secondItem="wx5-tq-2a8" secondAttribute="bottom" constant="8" id="QbZ-vb-e7M"/>
                                             <constraint firstItem="FNx-QU-ATk" firstAttribute="top" secondItem="wx5-tq-2a8" secondAttribute="bottom" constant="8" id="RFn-87-rgH"/>
@@ -1087,6 +1087,7 @@
                     </view>
                     <size key="freeformSize" width="320" height="800"/>
                     <connections>
+                        <outlet property="closeButton" destination="k7d-nN-kE9" id="hcw-v5-Xu9"/>
                         <outlet property="editButton" destination="OE4-g4-aIa" id="gRG-cP-JFB"/>
                         <outlet property="explanationLabel" destination="CJb-44-gB2" id="pK4-Dz-vDc"/>
                         <outlet property="heightConstraint" destination="NaE-YC-dJ3" id="X9p-BG-3ec"/>
@@ -1099,7 +1100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYF-x0-Hmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="1027"/>
+            <point key="canvasLocation" x="395.625" y="1025.7042253521126"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="54R-1e-rHS">

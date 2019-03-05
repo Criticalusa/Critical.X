@@ -30,6 +30,10 @@ class vad_DetailVC: UIViewController {
     
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var closeButton: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
     
     var mainTitleLabel = String ()
     
@@ -86,8 +90,9 @@ class vad_DetailVC: UIViewController {
         
     }
     
-    
+    //MARK: - Controls the scrollView height dynamcially.
     override func viewDidAppear(_ animated: Bool) {
+        
         heightConstraint.constant = explanationLabel.frame.origin.y + explanationLabel.frame.size.height + editButton.frame.size.height + 100
         
         print("\(explanationLabel.frame.size.height) Height constraint Value")

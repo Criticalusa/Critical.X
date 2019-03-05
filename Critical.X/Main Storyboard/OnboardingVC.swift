@@ -12,13 +12,15 @@ import AKLabel
 var usernameEntered = String ()
 
 
-class OnboardingVC: UIViewController {
+class OnboardingVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var subTitleLabelLabel: AKLabel!
     
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    @IBOutlet weak var baseConstriant: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,12 +29,71 @@ class OnboardingVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
-        // Do any additional setup after loading the view.
+
+        nameTextField.delegate = self
+        
+        
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+//    @objc func keyboardWillShow(notification: NSNotification) {
+//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//            UIView.animate(withDuration: 0.1, animations: { () -> Void in
+//                self.view.frame.origin.y -= keyboardSize.height
+//                self.view.layoutIfNeeded()
+//            })
+//        }
+//    }
+//
+//    @objc func keyboardWillHide(notification: NSNotification) {
+//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//            UIView.animate(withDuration: 0.1, animations: { () -> Void in
+//                self.view.frame.origin.y += keyboardSize.height
+//                self.view.layoutIfNeeded()
+//            })
+//        }
+//    }
+//
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        
+    }
+
     
     /// Keyboard Dismissed after you touch the screen
     func doneButtonAction() {
         self.view.endEditing(true)
+    }
+    
+    func hideKeyboard()  {
+        nameTextField.resignFirstResponder()
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateViewMoving(up: true, moveValue: 100)
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateViewMoving(up: false, moveValue: 100)
+    }
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        
+        let movementDuration:TimeInterval = 0.3
+        
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        
+        UIView.beginAnimations( "animateView", context: nil)
+        
+        UIView.setAnimationBeginsFromCurrentState(true)
+        
+        UIView.setAnimationDuration(movementDuration )
+        
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        
+        UIView.commitAnimations()
     }
     
     /**

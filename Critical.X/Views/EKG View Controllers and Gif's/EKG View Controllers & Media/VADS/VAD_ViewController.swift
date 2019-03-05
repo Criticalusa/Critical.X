@@ -41,7 +41,7 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         vad_MainMenu = ["Basic Overview", "TAH","Heart Mate II","HVAD", "Impella"]
         
-        vad_MenuDetail = ["Mechanical overview","Syncardia-BiVAD Total Artificial Heart","2nd Generation Axial-flow pump","Medtronic 3rd Generation Centrifugal flow", "Abiomed - Micro-axial flow pump"]
+        vad_MenuDetail = ["Mechanical overview","Syncardia: BiVAD-Total Artificial Heart","2nd Generation Axial-flow pump","Medtronic 3rd Generation Centrifugal flow", "Abiomed - Micro-axial flow pump"]
         
         
     }
