@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPg-d7-XRd">
+                            <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPg-d7-XRd">
                                 <rect key="frame" x="0.0" y="0.0" width="323" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qgl-sT-6jx">
@@ -28,7 +29,7 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG1-fO-Vgx">
-                                <rect key="frame" x="15" y="98" width="290" height="368"/>
+                                <rect key="frame" x="15" y="63" width="290" height="425"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICALLogo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="jsk-mk-Urq">
@@ -71,7 +72,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-Eo-H0i">
                                         <rect key="frame" x="12" y="109" width="266" height="38"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="✦✦  RATE CRITICAL  ✦✦">
                                             <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -83,7 +84,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-Ry-Qha">
                                         <rect key="frame" x="12" y="209" width="266" height="38"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.73909145590000003" green="0.29864704609999998" blue="0.29017850760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="DISCLAIMER">
                                             <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,7 +96,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQr-eU-bQL">
                                         <rect key="frame" x="12" y="313" width="266" height="39"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="Critical Red"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="✦✦">
@@ -112,7 +113,7 @@
                                                 </fragment>
                                                 <fragment content="DREAM">
                                                     <attributes>
-                                                        <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="NSColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="17" name="HelveticaNeue-CondensedBlack"/>
                                                     </attributes>
                                                 </fragment>
@@ -131,7 +132,19 @@
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <segue destination="5T1-Er-az6" kind="showDetail" id="EWz-iG-wD2"/>
+                                            <action selector="criticalDreamTeamButtonClicked:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="25T-cE-XaE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3j-XX-iRE">
+                                        <rect key="frame" x="12" y="369" width="266" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="BelizeHole"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="19"/>
+                                        <state key="normal" title="Show me whats new! ">
+                                            <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickedWhatsNew:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="l67-c5-fAn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -148,55 +161,12 @@
                     </view>
                     <connections>
                         <outlet property="popUpView" destination="uG1-fO-Vgx" id="oac-Ry-UHS"/>
+                        <outlet property="whatsNew" destination="L3j-XX-iRE" id="DU2-wA-3rL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZG7-Ob-EsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2131.875" y="-244.01408450704227"/>
-        </scene>
-        <!--Dream TeamW Eb View-->
-        <scene sceneID="iZe-P6-PCz">
-            <objects>
-                <viewController id="5T1-Er-az6" customClass="DreamTeamWEbView" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EOS-Df-ggD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWP-Mj-lMb">
-                                <rect key="frame" x="0.0" y="97" width="320" height="471"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTU-Iq-Z7m">
-                                <rect key="frame" x="0.0" y="53" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" name="Critical Red"/>
-                                <items>
-                                    <navigationItem title="Welcome to the Dream Team" id="M4J-5B-qTW">
-                                        <barButtonItem key="rightBarButtonItem" title="X" id="suc-MI-b6Y">
-                                            <color key="tintColor" name="Clouds"/>
-                                            <connections>
-                                                <action selector="dismissDream:" destination="5T1-Er-az6" id="zxr-Cf-DOC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" name="Critical Red"/>
-                        <viewLayoutGuide key="safeArea" id="X7J-1G-dCC"/>
-                    </view>
-                    <connections>
-                        <outlet property="dreamWEbView" destination="eWP-Mj-lMb" id="Wpq-I0-2k2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1e3-dL-tel" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2889.375" y="-267.25352112676057"/>
+            <point key="canvasLocation" x="2912" y="-226"/>
         </scene>
         <!--Disclaimer -->
         <scene sceneID="cVD-8h-Idm">
@@ -360,7 +330,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                                                 </subviews>
                                                 <color key="backgroundColor" name="Grenadine"/>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICAL1.ekg" translatesAutoresizingMaskIntoConstraints="NO" id="xg9-S6-Ixl">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICALLogo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="xg9-S6-Ixl">
                                                 <rect key="frame" x="10" y="40" width="300" height="97"/>
                                                 <color key="tintColor" red="0.85098039219999999" green="0.21960784310000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -412,6 +382,7 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="criticalImage" destination="xg9-S6-Ixl" id="j3w-g9-Ncx"/>
+                        <outlet property="scrollHeight" destination="InN-Bu-spP" id="RYd-9t-vZO"/>
                         <outlet property="specialThanksScroller" destination="g74-cP-uax" id="M2a-Ph-J4k"/>
                         <outlet property="thankYouLabel" destination="vhk-QL-uQq" id="dAq-01-nto"/>
                         <outlet property="thanksView" destination="KGs-Xs-PFp" id="0Sf-Qu-Br8"/>
@@ -419,13 +390,15 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBT-PE-axz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4370.625" y="-183.80281690140845"/>
+            <point key="canvasLocation" x="4318" y="-226"/>
         </scene>
     </scenes>
     <resources>
-        <image name="CRITICAL1.ekg" width="1650" height="1651"/>
         <image name="CRITICALLogo_Circle" width="1782" height="1771"/>
         <image name="CloseButton" width="107" height="95"/>
+        <namedColor name="BelizeHole">
+            <color red="0.16099999845027924" green="0.50199997425079346" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -343,9 +343,76 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let O = "Outflow graft:"
         let P = "The pump:"
         let Q = "Critical Pearls for VAD's:"
+        let parameters = "Pump Parameters: Flow, Power, and PI (Pulsatility Index)."
+        let flow = "Flow"
+        let power = "Power"
+        let PI = "Pulsatility Index (PI)"
+        let call = " Call your nearest VAD or Cardiac Transplant center ASAP to assist with troubleshooting."
+        
+        
+        if text.contains(call){
+            changedString = call
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+       
+      
+        
+        if text.contains(PI){
+            changedString = PI
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        if text.contains(power){
+            changedString = power
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
         
         
         
+        
+        if text.contains(flow){
+            changedString = flow
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        
+        if text.contains(parameters){
+            changedString = parameters
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
         
         
         if text.contains(A){

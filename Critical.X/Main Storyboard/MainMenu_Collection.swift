@@ -9,6 +9,7 @@
 import UIKit
 import LTMorphingLabel
 import EasyPeasy
+import AlertOnboarding
 
 var username = UserDefaults.standard.value(forKey: "name")
 
@@ -95,10 +96,12 @@ extension String {
 
 
 
-class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate {
+class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate  {
     
     
     
+    
+    //MARK: - Outlets
     @IBOutlet var menuCollectionView: UICollectionView!
     
     @IBOutlet var label: LTMorphingLabel!
@@ -382,9 +385,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         super.viewWillAppear(true)
         
         setAnimationLabel()
+        
         getTimefromDate()
-        
-        
         
     }
     
@@ -392,8 +394,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         // Clear the animation label once the view dissappears.
         label.text = ""
+    
     }
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -405,7 +409,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
 //        navBarAppearance.titleTextAttributes = [
 //            NSAttributedString.Key.foregroundColor: UIColor.white,
 //            NSAttributedString.Key.font: UIFont(name: "Marker Felt", size: 18)!]
-
+       
+        
+        
+        
     
         
         mainMenu = ["About Critical", // 0

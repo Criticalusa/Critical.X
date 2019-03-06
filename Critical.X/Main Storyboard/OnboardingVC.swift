@@ -8,11 +8,36 @@
 
 import UIKit
 import AKLabel
+import AlertOnboarding
 
 var usernameEntered = String ()
 
 
-class OnboardingVC: UIViewController, UITextFieldDelegate {
+class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelegate {
+    
+   
+   @IBOutlet weak var newButton: UIButton!
+    
+    //MARK: - AlertView Text
+    var alertView: AlertOnboarding!
+    
+    //First, declare datas
+    let arrayOfImage = ["CRITICALLogo_Circle", "dripUpdate", "RSIDose", "RSISettings", "Ultrasound"]
+    let arrayOfTitle = ["Welcome to Critical!", "CUSTOMIZE DRIP DOSAGES", "RSI", "RSI Settings", "Ultrasound"]
+    let arrayOfDescription =
+        ["We hope you'll love the new update and features. We've added many customizable features to ensure the best clinical experience! Swipe to check out what's new!",
+         
+         "We've now made it possible that you can customize your own range dosages! Swipe left on the dose to update the range!",
+         
+         "Now have the ability customize and to see the concentration of the medication and mL's to be administered during RSI! ",
+         
+         "By going to the RSI settings, It's now possible to fully customize the RSI doses to match your local protocols",
+         
+         "Are you new to using the ultrasound machine? No problem! We've got you covered with a comprehensive overview of the different landmarks and views!"]
+    
+    
+    
+    
 
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -20,9 +45,20 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     
-    @IBOutlet weak var baseConstriant: NSLayoutConstraint!
+    
+    override func viewWillAppear(_ animated: Bool) {
+    
+
+    }
+    @IBAction func showOnboarding(_ sender: Any) {
+        showOnboaridingAlert()
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        showOnboaridingAlert()
+        
         
         /// Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
@@ -33,29 +69,79 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
         nameTextField.delegate = self
         
         
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-//
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        alertView = AlertOnboarding(arrayOfImage: arrayOfImage, arrayOfTitle: arrayOfTitle, arrayOfDescription: arrayOfDescription)
+        
+        alertView.delegate = self
+        
+        //animate the button
+        showAnimateButton()
+        print("Onbaording opening of the first time")
+
     }
     
-//    @objc func keyboardWillShow(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            UIView.animate(withDuration: 0.1, animations: { () -> Void in
-//                self.view.frame.origin.y -= keyboardSize.height
-//                self.view.layoutIfNeeded()
-//            })
-//        }
-//    }
-//
-//    @objc func keyboardWillHide(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            UIView.animate(withDuration: 0.1, animations: { () -> Void in
-//                self.view.frame.origin.y += keyboardSize.height
-//                self.view.layoutIfNeeded()
-//            })
-//        }
-//    }
-//
+
+   
+    
+    func showOnboaridingAlert() {
+        
+        print("Onboarding custom alert activated")
+        //Simply call AlertOnboarding...
+        let alertView = AlertOnboarding(arrayOfImage: arrayOfImage, arrayOfTitle: arrayOfTitle, arrayOfDescription: arrayOfDescription)
+        
+        
+        //Modify background color of AlertOnboarding
+        alertView.colorForAlertViewBackground = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            //UIColor(red: 173/255, green: 206/255, blue: 183/255, alpha: 1.0)
+        
+        //Modify colors of AlertOnboarding's button
+        alertView.colorButtonText = UIColor.white
+        alertView.colorButtonBottomBackground = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+        
+        //Modify colors of labels
+        alertView.colorTitleLabel = #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1)
+        alertView.colorDescriptionLabel = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        
+        //Modify colors of page indicator dots
+        alertView.colorPageIndicator = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        alertView.colorCurrentPageIndicator = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+        
+        //Modify size of alertview (Purcentage of screen height and width) // Can be 0.5 as well.
+        alertView.percentageRatioHeight = 0.7
+        alertView.percentageRatioWidth = 0.9
+        
+        //Modify labels
+        alertView.titleSkipButton = "Skip"
+        alertView.titleGotItButton = "Got it!"
+        
+        
+        alertView.show()
+    }
+    
+    
+    //MARK: - Animation
+    /**
+     Animates the transitions
+     - Transitions:
+     - UIView Animate with duration: Time it takes to animate
+     - Transoform : Current Bicarb Value
+     
+     Change the duration to adjust the time you want the animation to happen. Also, replace the view or label to your choice.
+     */
+    func showAnimateButton()
+    {
+        // Animation for the Results UIView
+        self.newButton.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        self.newButton.alpha = 0.0;
+        UIView.animate(withDuration: 2.0, animations: {
+            self.newButton.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+            self.newButton.alpha = 1.0
+            self.newButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        })
+        
+      
+        
+        
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
@@ -201,6 +287,20 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
 //    }
    
 
-
+    //--------------------------------------------------------
+    // MARK: DELEGATE METHODS --------------------------------
+    //--------------------------------------------------------
+    func alertOnboardingSkipped(_ currentStep: Int, maxStep: Int) {
+        print("Onboarding skipped the \(currentStep) step and the max step he saw was the number \(maxStep)")
+    }
+    
+    func alertOnboardingCompleted() {
+        print("Onboarding completed!")
+    }
+    
+    func alertOnboardingNext(_ nextStep: Int) {
+        print("Next step triggered! \(nextStep)")
+    }
+    
 
 }// End of the class

@@ -11,165 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ventilator Modes-->
-        <scene sceneID="sUJ-EW-SCw">
-            <objects>
-                <viewController title="Ventilator Modes" modalPresentationStyle="overCurrentContext" id="yKX-gK-vFt" customClass="ViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cVD-aL-GZa"/>
-                        <viewControllerLayoutGuide type="bottom" id="XKb-Cx-IVd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zJd-hh-z4c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="987-FO-IGk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="8I5-uQ-s5D">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                            <visualEffectView opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRp-JU-7Oy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="321"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DfV-oP-tOf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="321"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Critical X" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gt-vb-OCf">
-                                            <rect key="frame" x="23" y="174" width="72.5" height="24"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
-                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uii-0C-pSZ">
-                                            <rect key="frame" x="270" y="33" width="30" height="30"/>
-                                            <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="cBa-6o-vTw"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                            <state key="normal" title="X">
-                                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="dismissVentilatorModeVC:" destination="yKX-gK-vFt" eventType="touchUpInside" id="OwC-Y9-LeW"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="uii-0C-pSZ" secondAttribute="trailing" constant="20" id="2Bx-VZ-glf"/>
-                                        <constraint firstItem="7gt-vb-OCf" firstAttribute="leading" secondItem="DfV-oP-tOf" secondAttribute="leading" constant="23" id="430-rz-8GI"/>
-                                        <constraint firstItem="uii-0C-pSZ" firstAttribute="top" secondItem="DfV-oP-tOf" secondAttribute="top" constant="33" id="ptJ-BW-gRe"/>
-                                        <constraint firstItem="uii-0C-pSZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DfV-oP-tOf" secondAttribute="leading" constant="20" symbolic="YES" id="wHy-aC-I1n"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7gt-vb-OCf" secondAttribute="trailing" id="yRN-pL-udx"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="extraLight"/>
-                            </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ventilator Modes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlz-Oc-pFh">
-                                <rect key="frame" x="16" y="53" width="203.5" height="118.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="50"/>
-                                <color key="textColor" name="Cello"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="iRp-JU-7Oy" firstAttribute="top" secondItem="zJd-hh-z4c" secondAttribute="top" id="Ec7-3G-F2C"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tlz-Oc-pFh" secondAttribute="trailingMargin" id="Q5u-X5-KIF"/>
-                            <constraint firstItem="tlz-Oc-pFh" firstAttribute="top" secondItem="cVD-aL-GZa" secondAttribute="bottom" constant="33" id="Y9l-j0-mKt"/>
-                            <constraint firstItem="iRp-JU-7Oy" firstAttribute="leading" secondItem="zJd-hh-z4c" secondAttribute="leading" id="bMZ-Tj-J45"/>
-                            <constraint firstItem="7gt-vb-OCf" firstAttribute="top" secondItem="tlz-Oc-pFh" secondAttribute="bottom" constant="2.3333333333332007" id="baC-wA-Vbz"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="tlz-Oc-pFh" secondAttribute="leading" id="hL6-pf-iFv"/>
-                            <constraint firstAttribute="trailing" secondItem="iRp-JU-7Oy" secondAttribute="trailing" id="pXa-kn-uQs"/>
-                            <constraint firstItem="XKb-Cx-IVd" firstAttribute="top" secondItem="iRp-JU-7Oy" secondAttribute="bottom" constant="247" id="uaR-U8-8lo"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="VGA-gf-QUh"/>
-                    </view>
-                    <connections>
-                        <outlet property="closeButton" destination="uii-0C-pSZ" id="BT0-Cv-hcl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="upE-Mr-vcF" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1590" y="-1500"/>
-        </scene>
-        <!--Stack Element View Controller-->
-        <scene sceneID="qgQ-Pf-sh6">
-            <objects>
-                <viewController storyboardIdentifier="StackElement" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a4d-9J-uvA" customClass="StackElementViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Afi-1a-VsQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="SYP-1p-Wng"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="297-DZ-YT8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-Nu-OTO">
-                                <rect key="frame" x="18" y="72" width="284" height="19"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.82023102049999996" green="0.28774759170000003" blue="0.28558176759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vent Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUI-Ls-QMT">
-                                <rect key="frame" x="18" y="28" width="284" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="CNl-fd-dgw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
-                                <color key="textColor" red="0.87843137250000003" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4we-aN-dnd">
-                                <rect key="frame" x="0.0" y="97" width="320" height="691"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-1J-Fv7">
-                                        <rect key="frame" x="10" y="8" width="302" height="18"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                        <color key="textColor" name="Clouds"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ggR-1J-Fv7" firstAttribute="leading" secondItem="4we-aN-dnd" secondAttribute="leading" constant="10" id="COm-1O-aFp"/>
-                                    <constraint firstItem="ggR-1J-Fv7" firstAttribute="width" secondItem="4we-aN-dnd" secondAttribute="width" constant="-18" id="IwT-e5-Kuz"/>
-                                    <constraint firstAttribute="height" constant="691" id="dKs-m2-UI4"/>
-                                    <constraint firstItem="ggR-1J-Fv7" firstAttribute="top" secondItem="4we-aN-dnd" secondAttribute="topMargin" id="gKN-Em-RGH"/>
-                                    <constraint firstAttribute="bottom" secondItem="ggR-1J-Fv7" secondAttribute="bottom" priority="750" constant="665" id="kOp-ls-lx8"/>
-                                    <constraint firstAttribute="trailing" secondItem="ggR-1J-Fv7" secondAttribute="trailing" constant="8" id="ppf-cN-f8W"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="YBi-Nu-OTO" firstAttribute="trailing" secondItem="pUI-Ls-QMT" secondAttribute="trailing" id="3VD-Cx-UmK"/>
-                            <constraint firstItem="YBi-Nu-OTO" firstAttribute="top" secondItem="pUI-Ls-QMT" secondAttribute="bottom" constant="11" id="8vc-qP-0va"/>
-                            <constraint firstItem="4we-aN-dnd" firstAttribute="top" secondItem="YBi-Nu-OTO" secondAttribute="bottom" constant="6" id="GoV-ap-8bn"/>
-                            <constraint firstItem="YBi-Nu-OTO" firstAttribute="leading" secondItem="pUI-Ls-QMT" secondAttribute="leading" id="IQd-aP-Tcy"/>
-                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="leading" secondItem="gRR-9o-ST1" secondAttribute="leading" constant="18" id="OmC-3P-691"/>
-                            <constraint firstItem="4we-aN-dnd" firstAttribute="leading" secondItem="gRR-9o-ST1" secondAttribute="leading" id="X2s-hz-nV2"/>
-                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="top" secondItem="Afi-1a-VsQ" secondAttribute="bottom" constant="8" symbolic="YES" id="akO-J9-9Je"/>
-                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="top" secondItem="gRR-9o-ST1" secondAttribute="top" constant="8" id="bNp-Va-B8g"/>
-                            <constraint firstItem="4we-aN-dnd" firstAttribute="trailing" secondItem="gRR-9o-ST1" secondAttribute="trailing" id="gO6-N1-nd1"/>
-                            <constraint firstItem="pUI-Ls-QMT" firstAttribute="centerX" secondItem="297-DZ-YT8" secondAttribute="centerX" id="tqs-Eq-44Y"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gRR-9o-ST1"/>
-                    </view>
-                    <connections>
-                        <outlet property="headerLabel" destination="pUI-Ls-QMT" id="Vgd-cf-AGX"/>
-                        <outlet property="subTitle" destination="YBi-Nu-OTO" id="TyW-2K-IJt"/>
-                        <outlet property="textDetailLabel" destination="ggR-1J-Fv7" id="QOi-AT-6Oh"/>
-                        <outlet property="ventCardView" destination="297-DZ-YT8" id="OJM-jk-iyf"/>
-                        <outlet property="ventilatorScrollHeight" destination="dKs-m2-UI4" id="y12-Mv-QeD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ltS-xt-rGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2237" y="-1500"/>
-        </scene>
         <!--Vent Mode Collection View-->
         <scene sceneID="a8z-bK-w77">
             <objects>
@@ -205,25 +46,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4pP-0f-MTr">
-                                    <size key="itemSize" width="287" height="84"/>
+                                    <size key="itemSize" width="302" height="84"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="O4R-Ez-vmO" customClass="VentModeCell" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="16.5" y="0.0" width="287" height="84"/>
+                                        <rect key="frame" x="9" y="0.0" width="302" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="302" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIMV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUN-kU-OvR">
-                                                    <rect key="frame" x="-1" y="45" width="287" height="29"/>
+                                                    <rect key="frame" x="-1.2730215890382199" y="44.343533088302777" width="301.80770340623803" height="29.462180570608936"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                                    <color key="textColor" name="Cool Mint"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" name="Clouds"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -232,10 +73,10 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BiLevel NIPPV" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-Pk-4cr">
-                                                    <rect key="frame" x="0.0" y="10" width="286" height="42"/>
+                                                    <rect key="frame" x="0.0" y="10" width="301" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
-                                                    <color key="textColor" name="Clouds"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_VentLogo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="4Rq-jy-Jhx">
@@ -244,7 +85,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="Shamrock Green"/>
                                         <connections>
                                             <outlet property="ventTitle" destination="5m7-Pk-4cr" id="8zT-Wx-704"/>
                                             <outlet property="ventdetailTitle" destination="FUN-kU-OvR" id="TjW-O6-4mb"/>
@@ -272,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iS-Q0-nme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3170.625" y="-1500"/>
+            <point key="canvasLocation" x="3106.875" y="-1500"/>
         </scene>
         <!--Vent Mode detailVC-->
         <scene sceneID="lqf-XT-cif">
@@ -307,7 +148,7 @@
                                                 <color key="textColor" name="Critical Red"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ventilator Modes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-m9-qX3">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ventilator Modes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-m9-qX3">
                                                 <rect key="frame" x="16" y="58" width="288" height="51"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="51" id="1fW-jr-KDZ"/>
@@ -357,6 +198,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ctU-ap-0zy" firstAttribute="width" secondItem="32K-EG-JUV" secondAttribute="width" id="NTu-mR-Tf9"/>
                                     <constraint firstAttribute="trailing" secondItem="ctU-ap-0zy" secondAttribute="trailing" id="SwV-wp-8AE"/>
@@ -378,6 +220,7 @@
                     <connections>
                         <outlet property="contentView" destination="ctU-ap-0zy" id="6XB-V1-Mgu"/>
                         <outlet property="descriptionLabel" destination="tqW-0P-qhU" id="iy9-di-J6I"/>
+                        <outlet property="scrollHeight" destination="2Ah-bd-u8e" id="eYj-XR-blY"/>
                         <outlet property="subTitleLabel" destination="SHE-8N-ybI" id="FiE-Hs-cEK"/>
                         <outlet property="titleLabel" destination="xGB-m9-qX3" id="nyR-xM-HKf"/>
                         <outlet property="ventDetailScrollView" destination="32K-EG-JUV" id="561-ck-bfO"/>
@@ -390,17 +233,14 @@
     </scenes>
     <resources>
         <image name="CRITICAL_VentLogo_Circle" width="1782" height="1771"/>
-        <namedColor name="Cello">
-            <color red="0.23000000417232513" green="0.30000001192092896" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Cool Mint">
-            <color red="0.62699997425079346" green="0.93300002813339233" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Critical Red">
             <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Shamrock Green">
+            <color red="0.3411764705882353" green="0.65490196078431373" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

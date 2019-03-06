@@ -19,6 +19,7 @@ pod 'lottie-ios'
 pod 'EasyPeasy'
 pod 'SteviaLayout'
 pod 'Instabug'
+pod 'AlertOnboarding'
 
 
 pod ‘TTSegmentedControl’

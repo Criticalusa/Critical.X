@@ -26,7 +26,21 @@ class VentMode_detailVC: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var ventDetailScrollView: UIScrollView!
    
+    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
     
+    //VIEWDID APPEAR!!!!!!!!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+        scrollHeight.constant = descriptionLabel.frame.origin.y + descriptionLabel.frame.size.height +  80
+        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+        //        scrollHeight2.constant = rsiProcessTitle.frame.origin.y + rsiProcessDescription.frame.size.height + 80
+        
+        print("\(descriptionLabel.frame.size.height) Height constraint Value")
+        
+    }
     
     override func viewDidLoad() {
     
@@ -85,9 +99,9 @@ class VentMode_detailVC: UIViewController {
    
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        setScrollViewContentSize()
-    }
+//    //override func viewDidAppear(_ animated: Bool) {
+//        setScrollViewContentSize()
+//    }
     
     
     func setScrollViewContentSize() {

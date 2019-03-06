@@ -9,6 +9,7 @@
 import UIKit
 import Instabug
 
+
 extension UIApplication {
     
     class func isFirstLaunch() -> Bool {
@@ -65,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //vc = storyboard.instantiateViewController(withIdentifier: "obBoardingVC")
             
         }
+        
         
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

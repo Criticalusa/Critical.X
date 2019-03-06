@@ -10,13 +10,29 @@ import UIKit
 import AKLabel
 import EasyPeasy
 
-class SpecialThanks: UIViewController {
+class SpecialThanks: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var thanksView: UIView!
     @IBOutlet weak var thankYouLabel: AKLabel!
     @IBOutlet weak var specialThanksScroller: UIScrollView!
     @IBOutlet weak var criticalImage: UIImageView!
+    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
     
+
+    
+    //VIEW DID APPEAR!!!!!!!!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+//        scrollHeight.constant = specialThanksScroller.frame.origin.y + specialThanksScroller.frame.size.height +  80
+//        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+        //        scrollHeight2.constant = rsiProcessTitle.frame.origin.y + rsiProcessDescription.frame.size.height + 80
+        
+        print("\(specialThanksScroller.frame.size.height) Height constraint Value")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

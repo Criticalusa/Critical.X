@@ -89,7 +89,7 @@ class RSISetting: UIViewController {
         Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
         //NSMutableDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
         
-        txt_Lidocaine.text = "\(Parameters.object(forKey: "lidocaine") as! Double)"        
+        txt_Lidocaine.text = "\(Parameters.object(forKey: "lidocaine") as! Double)"
         
         txt_Atropine.text = "\(Parameters.object(forKey: "atropine") as! Double)"
         
@@ -283,6 +283,7 @@ class RSISetting: UIViewController {
     }
     
     @IBAction func resetDosageparameters(_ sender: Any) {
+       
         Parameters = UserDefaults.standard.object(forKey:"parameters") as! NSDictionary as! NSMutableDictionary
         
         Parameters =  ["atropine": 0.02,

@@ -144,6 +144,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AKLabel/AKLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlertOnboarding/AlertOnboarding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework"
   install_framework "${PODS_ROOT}/Instabug/Instabug.framework"
@@ -160,6 +161,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AKLabel/AKLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AlertOnboarding/AlertOnboarding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework"
   install_framework "${PODS_ROOT}/Instabug/Instabug.framework"
