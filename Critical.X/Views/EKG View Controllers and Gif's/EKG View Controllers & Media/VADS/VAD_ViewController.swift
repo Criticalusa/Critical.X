@@ -326,7 +326,7 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // Change the colors of the individual words within the text
         
-        let A = "Ventricular Assist Device (VAD)"
+        let A = " A Ventricular Assist Device (VAD)"
         let B = "Things to Know:"
         let C = "What to know:"
         let D = "VAD Components:"
@@ -344,10 +344,40 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let P = "The pump:"
         let Q = "Critical Pearls for VAD's:"
         let parameters = "Pump Parameters: Flow, Power, and PI (Pulsatility Index)."
-        let flow = "Flow"
-        let power = "Power"
-        let PI = "Pulsatility Index (PI)"
+        let flow = "Flow:"
+        let power = "Power:"
+        let PI = "Pulsatility Index (PI):"
         let call = " Call your nearest VAD or Cardiac Transplant center ASAP to assist with troubleshooting."
+        let centufugal = "Centrifugal flow:"
+        let axial = "Axial flow:"
+        
+        
+        
+        if text.contains(centufugal){
+            changedString = centufugal
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        
+        if text.contains(axial){
+            changedString = axial
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
         
         
         if text.contains(call){

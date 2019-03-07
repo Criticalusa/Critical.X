@@ -454,7 +454,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // "Pharmacology",// 4
         cellImages = ["CRITICALLogo_Circle",// 0
             "CRITICAL_Airway_Logo_Circle",// 1
-            "CRITICAL_Cardiac_Logo_Circle",// 2
+            "CRITICAL_VAD_Logo_Circle",// 2
             "CRITICAL_DrugCalcs_Logo_Circle",// 3
             "CRITICAL_Meds_1Logo_Circle",// 4
             "CRITICAL_Drips2_Logo_Circle",// 5

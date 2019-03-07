@@ -84,9 +84,32 @@ class RSISetting: UIViewController {
        
         ScrollView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
-
+        
+        // Seeing if the data is initially saved, then refer to defaults, If not set them
+        if ((UserDefaults.standard.object(forKey:"parameters")) != nil) {
+            
+          Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
+            //NSDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
+            
+            //UserDefaults.standard.object(forKey:"parameters") as! NSMutableDictionary
+            
+            //UserDefaults.standard.object(forKey:"parameters") as! NSMutableDictionary
+            
+        }
+        else {
+            
+            // MARK: Set user default parameters
+            Parameters =  ["atropine": 0.02,"lidocaine": 1,"fentanyl_min": 1,"fentanyl_max": 2,"vecDefasiculating": 0.01,"rocDefasiculating_min": 0.06,"rocDefasiculating_max": 0.12,"glycopyrolate_min": 0.1,"glycopyrolate_max": 0.2, "etomidate": 0.3,"ketamine": 1.5,"propofol_min": 1,"propofol_max": 2, "versed_min": 0.1,"versed_max": 0.2,"cisatricurium": 0.2,"vecuronium": 0.1,"rocuronium_min": 0.6,"rocuronium_max": 1.2,"succs_min": 1,"succs_max": 1.5,"lidocaine_mgMl": 20,"mgPerML_atropine": 0.1,"mgPerML_fentanyl": 50.0,"mgPerML_vecDefasc": 1.0,"mgPerML_rocDefasc": 10.0,"hello": 0.2,"ml_etomidate" : 2.0,"ml_ketamine": 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc": 10.0, "ml_cis" : 10.0]
+            
+            
+            
+            UserDefaults.standard.set(Parameters, forKey: "parameters")
+            
+            UserDefaults.standard.synchronize()
+        }
+        
         // We are saving the dictionary to the defaults.
-        Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
+//        Parameters = NSMutableDictionary.init(dictionary: (UserDefaults.standard.object(forKey:"parameters") as? NSDictionary)!)
         //NSMutableDictionary.init(dictionary: UserDefaults.standard.object(forKey:"parameters") as! NSDictionary)
         
         txt_Lidocaine.text = "\(Parameters.object(forKey: "lidocaine") as! Double)"
