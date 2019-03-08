@@ -115,8 +115,9 @@ extension ABGViewController {
         PrimaryDView.isHidden = false
         
         
-        // We change the label back to the origional color when the values are entered in.
-        main_DisorderTitle_Label.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
+        //MARK: We change the label back to the origional color when the values are entered in.
+        main_DisorderTitle_Label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        main_DisorderTitle_Label.font = UIFont(name: "Roboto-Black", size: 15)
         
         
         // Calculated Gas
@@ -239,8 +240,11 @@ extension ABGViewController {
         if hc03Normal.contains(abg.HC03 ?? Double(hc03Calculation(c02: c02_value!, pH: pH_value!))!) {
             //I first get calculated value of HC03 and check  if textfield text count greater than 0 if replace calculated value with textField value
             var hc03 = Double(hc03Calculation(c02: c02_value!, pH: pH_value!))!
+            
             let hc03Text = bicarbTextField.text?.trimmingCharacters(in: .whitespaces)
+            
             if hc03Text!.count > 0 {
+            
                 hc03 = Double(hc03Text!)!
             }
             
@@ -1025,6 +1029,7 @@ extension ABGViewController {
             if hc03Text!.count > 0 {
                 hc03 = Double(hc03Text!)!
             }
+            
             
             
             //1

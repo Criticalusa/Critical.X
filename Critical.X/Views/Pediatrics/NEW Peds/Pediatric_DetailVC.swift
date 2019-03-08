@@ -19,6 +19,9 @@ class Pediatric_DetailVC: UIViewController {
     
     // Outlets and Actions
     
+    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
+    
+
     @IBOutlet weak var criticalImageView        : UIImageView!
     
     @IBOutlet weak var bicarbTitleLabel         : UILabel!
@@ -467,7 +470,20 @@ class Pediatric_DetailVC: UIViewController {
     @IBOutlet weak var epinephrineDrip_Label  : UILabel!
     @IBOutlet weak var lidocaineDrip_Label    : UILabel!
     
-    
+   
+
+    //VIEWDID APPEAR!!!!!!!!
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(true)
+//        
+//        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+//        scrollHeight.constant = vitalsView.frame.origin.y + equipmentUIView.frame.origin.y + sedationParalytics.frame.origin.y + cardiacResuscitation.frame.origin.y + medicationsOther.frame.origin.y +  80
+//        
+//      
+//        
+//        print("\(medicationsOther.frame.size.height) Height constraint Value")
+//        
+//    }
     
     
     // MARK: - Load the VIEW

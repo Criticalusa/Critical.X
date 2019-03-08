@@ -163,7 +163,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Negative Anion Gap")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Negative Anion Gap")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Negative Anion Gap")
 
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -206,7 +206,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Negative Anion Gap")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Negative Anion Gap")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Negative Anion Gap")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -254,7 +254,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Non-Anion Gap Metabolic Acidosis")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Non-Anion Gap Metabolic Acidosis")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Non-Anion Gap Metabolic Acidosis")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -355,7 +355,7 @@ extension ABGViewController {
                 
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Normal Anion Gap")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "Normal Anion Gap")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "Normal Anion Gap")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -395,7 +395,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Normal Anion Gap")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "Normal Anion Gap")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "Normal Anion Gap")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -444,7 +444,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -485,7 +485,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
 
                     // Animate the disorder
                     //disorderLabel.animate(text: "High Anion Gap Metabolic Acidosis", duration: 1, completion: nil)
@@ -612,7 +612,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Negative Anion Gap.")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Negative Anion Gap.")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Negative Anion Gap.")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -710,7 +710,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Non-Anion Gap Metabolic Acidosis.")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Non-Anion Gap Metabolic Acidosis.")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Non-Anion Gap Metabolic Acidosis.")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -759,7 +759,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Non-Anion Gap Metabolic Acidosis.")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Non-Anion Gap Metabolic Acidosis.")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Non-Anion Gap Metabolic Acidosis.")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -813,7 +813,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Normal Anion Gap")
-                    attributedText.apply(color: #colorLiteral(red: 0.7409999967, green: 0.7649999857, blue: 0.7799999714, alpha: 1), subString: "Normal Anion Gap")
+                    attributedText.apply(color: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), subString: "Normal Anion Gap")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -853,7 +853,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "Normal Anion Gap")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "Normal Anion Gap")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "Normal Anion Gap")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -902,7 +902,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText
@@ -949,7 +949,7 @@ extension ABGViewController {
                     
                     // 4 Underlines and highlights the string
                     attributedText.underLine(subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
-                    attributedText.apply(color: #colorLiteral(red: 0.4600000083, green: 0.7400000095, blue: 0.7900000215, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
+                    attributedText.apply(color: #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), subString: "High Anion Gap Metabolic Acidosis (HAGMA)")
                     
                     //4 set the textLabel
                     anionGapLabel.attributedText = attributedText

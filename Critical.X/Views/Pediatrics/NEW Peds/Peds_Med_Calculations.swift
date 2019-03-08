@@ -410,9 +410,9 @@ extension Pediatric_DetailVC {
         print("Ketamine mL dose is \(ketamine_RSI_ML) mL's")
 
         
-        // In the event that the weight is less than 10kg, then its not indciated.
+        // In the event that the weight is less than 3kg, then its not indciated.
         switch weightEntered! {
-        case 0...9.9:
+        case 0...2.9:
             ketamineRSI_DetailDoseLabel.text = "Not indicated at this age"
             
             ketamineRSI_Dose.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
@@ -449,7 +449,7 @@ extension Pediatric_DetailVC {
         
         // In the event that the weight is less than 10kg, then its not indciated.
         switch weightEntered! {
-        case 0...9.9:
+        case 0...2.9:
             ketamine_DetailDoseLabel.text = "Not indicated at this age"
 
             ketamine_Dose.text =  "N/A"

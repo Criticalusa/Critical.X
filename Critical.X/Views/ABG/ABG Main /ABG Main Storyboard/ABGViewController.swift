@@ -554,7 +554,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             animateChloride()
         }
         
-        lineView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        lineView.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
         
         
         
@@ -610,7 +610,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Very low: Double Check"
                 
-                AlbuminSideLabel.textColor = #colorLiteral(red: 0.9998139739, green: 0.9853300452, blue: 0.6592490673, alpha: 1)
+                AlbuminSideLabel.textColor = #colorLiteral(red: 0.4495905638, green: 0.3577245474, blue: 0.8001251817, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -627,7 +627,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Hypoalbuminemia"
                 
-                AlbuminSideLabel.textColor = #colorLiteral(red: 0.9998139739, green: 0.9853300452, blue: 0.6592490673, alpha: 1)
+                AlbuminSideLabel.textColor = #colorLiteral(red: 0.3522524834, green: 0.2723381221, blue: 0.6589055657, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -662,7 +662,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Very high: Double Check"
                 
-                AlbuminSideLabel.textColor  = #colorLiteral(red: 0.9998139739, green: 0.9853300452, blue: 0.6592490673, alpha: 1)
+                AlbuminSideLabel.textColor  = #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -679,7 +679,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Hyperalbuminemia"
                 
-                AlbuminSideLabel.textColor  = #colorLiteral(red: 0.9998139739, green: 0.9853300452, blue: 0.6592490673, alpha: 1)
+                AlbuminSideLabel.textColor  = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -697,7 +697,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Normal Serum Albumin"
                 
-                AlbuminSideLabel.textColor  =    #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+                AlbuminSideLabel.textColor  = #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -824,12 +824,12 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         ExpectedC02Label.text = nil
         
         phSideLabel.text = "Enter pH to proceed"
-        phSideLabel.textColor  =    #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        phSideLabel.textColor  =    #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         PHImage.image = nil
         
         
         c02SideLabel.text = "Enter PaC02 to proceed"
-        c02SideLabel.textColor  =    #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        c02SideLabel.textColor  =    #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         C02Image.image = nil
         
         
@@ -995,7 +995,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         
         pHTextField.text = empty
         phSideLabel.text = "Enter pH to proceed"
-        phSideLabel.textColor  =  #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        phSideLabel.textColor  =  #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         
         
         bicarbTextField.text = empty
@@ -1015,7 +1015,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         compensationlbl.isHidden = true
         
         c02SideLabel.text = "Enter PaC02 to proceed"
-        c02SideLabel.textColor  =    #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        c02SideLabel.textColor  =    #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         
         //Side labels
         bicarbSideLabel.text = "mEq/L"
@@ -1072,7 +1072,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             phSideLabel.text  = "pH is WNL"
             
-            phSideLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            phSideLabel.textColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
             
             print("pH is normal arrow")
         }
@@ -1084,7 +1084,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             phSideLabel.text  = "pH is WNL"
             
-            phSideLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            phSideLabel.textColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
             
             print("pH is normal arrow")
         }
@@ -1096,7 +1096,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             phSideLabel.text  = "pH is WNL"
             
-            phSideLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            phSideLabel.textColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
             
             print("pH is normal arrow")
         }
@@ -1176,7 +1176,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             phSideLabel.text  = "pH is WNL"
             
-            phSideLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            phSideLabel.textColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
         }
         
         if abgRanges.pH_Low_NormalRange.contains(gasRanges.pH)
@@ -1185,7 +1185,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             phSideLabel.text  = "pH is low-normal"
             
-            phSideLabel.textColor = #colorLiteral(red: 1, green: 0.9921568627, blue: 0.5960784314, alpha: 0.7894339532)
+            phSideLabel.textColor = #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1)
         }
         
         if abgRanges.compensated_alkalosis_Metabolic_Ph.contains(gasRanges.pH)
@@ -1194,7 +1194,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             phSideLabel.text  = "pH is high-normal"
             
-            phSideLabel.textColor = #colorLiteral(red: 1, green: 0.9921568627, blue: 0.5960784314, alpha: 0.7894339532)
+            phSideLabel.textColor = #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1)
         }
         
         if abgRanges.normalco2.contains(gasRanges.c02)
@@ -1203,7 +1203,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             c02SideLabel.text  = "Normal PaC02"
             
-            c02SideLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            c02SideLabel.textColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
             //HexColor(hexString: "A0EEC0") // coolmint
         }
         
@@ -1224,7 +1224,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             bicarbSideLabel.text = "Normal Bicarbonate"
             
-            bicarbSideLabel.textColor = #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
+            bicarbSideLabel.textColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
             //HexColor(hexString: "A0EEC0") // coolmint
             
         }
@@ -1237,7 +1237,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             phSideLabel.text  = "pH \(gasRanges.pH) (Acidemia < 7.35)"
             
             
-            phSideLabel.textColor = #colorLiteral(red: 1, green: 0.9843137255, blue: 0.6588235294, alpha: 1)
+            phSideLabel.textColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
         }
         
         if gasRanges.c02 < 35.0
@@ -1276,7 +1276,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             PHImage.image = #imageLiteral(resourceName: "Aarow.up")
             
-            phSideLabel.textColor  =    #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            phSideLabel.textColor  =    #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             
             phSideLabel.text  = "pH \(gasRanges.pH) (Alkalemia > 7.45)"
         }
@@ -1287,7 +1287,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             C02Image.image = #imageLiteral(resourceName: "Aarow.up")
             
             //c02SideLabel.text  = "Hypercapnic"
-            c02SideLabel.textColor  =  #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            c02SideLabel.textColor  =  #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             
             print("The c02  is greater than 45")
             
@@ -1308,7 +1308,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             
             bicarbSideLabel.text = "⬆︎ HC03"
             
-            bicarbSideLabel.textColor  =  #colorLiteral(red: 1, green: 0.9921568627, blue: 0.5960784314, alpha: 1)
+            bicarbSideLabel.textColor  =  #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1)
             
             HC03Image.image = #imageLiteral(resourceName: "Aarow.up")
             

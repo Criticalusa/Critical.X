@@ -20,7 +20,7 @@ extension ABGViewController {
         let attributedText = NSMutableAttributedString.getAttributedString(fromString: changedText)
         
         // Change the color of a word in the string
-        attributedText.apply(color: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), subString: subStrings)
+        attributedText.apply(color: #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), subString: subStrings)
         
         let customFont = UIFont(name: "HelveticaNeue-Medium", size: 14.0)
         
@@ -91,7 +91,7 @@ extension ResultViewController {
         
         
         //8 Change color
-        attributedText.apply(color:#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "The priority is to treat any underlying hypoxemia.")
+        attributedText.apply(color:#colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "The priority is to treat any underlying hypoxemia.")
         // Change font
         attributedText.apply(font: customFont!, subString: "The priority is to treat any underlying hypoxemia.")
         
@@ -188,7 +188,7 @@ extension ResultViewController  {
         }
         
         //G
-        attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "(depletion) of chloride ions")
+        attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "(depletion) of chloride ions")
         attributedText.underLine(subString:  "(depletion) of chloride ions")
         // Change font
         attributedText.apply(font: customFont!, subString: "(depletion) of chloride ions")
@@ -242,7 +242,7 @@ extension ResultViewController  {
         
         //O
         //Change color
-        attributedText.apply(color:#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "The priority is to treat any underlying hypoxemia.")
+        attributedText.apply(color:#colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "The priority is to treat any underlying hypoxemia.")
         // Change font
         attributedText.apply(font: customFont!, subString: "The priority is to treat any underlying hypoxemia.")
         
@@ -276,7 +276,7 @@ extension ResultViewController {
         attributedText.apply(font: customFont!, subString: "Respiratory acidosis boils down to one pathway - Minute Ventilation - RR x TV")
         
         //2 Change color
-        attributedText.apply(color: #colorLiteral(red: 1, green: 0.9843137255, blue: 0.6588235294, alpha: 1), subString: "The PaC02 generally will return to normal after restoring adequate alveolar ventilation.")
+        attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "The PaC02 generally will return to normal after restoring adequate alveolar ventilation.")
         // Change font
         attributedText.apply(font: customFont!, subString: "The PaC02 generally will return to normal after restoring adequate alveolar ventilation.")
         
@@ -493,7 +493,7 @@ extension ResultViewController {
     attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "KETOACIDOSIS:")
     
     //11
-    attributedText.apply(color: #colorLiteral(red: 0.987544477, green: 0.6673021317, blue: 0, alpha: 1), subString: "GOLD MARK")
+    attributedText.apply(color: #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1), subString: "GOLD MARK")
     attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GOLD MARK")
     
     
@@ -513,7 +513,7 @@ extension ResultViewController {
     attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METABOLIC ALKALOSIS")
     
     // 2
-    attributedText.apply(color: #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1), subString: "GROE")
+    attributedText.apply(color: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), subString: "GROE")
     attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GROE")
     
     
@@ -556,7 +556,7 @@ extension ResultViewController {
         attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
         
         //3
-        attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+        attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
         attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
         
         
@@ -595,7 +595,7 @@ extension ResultViewController {
         attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "KETOACIDOSIS:")
         
         //11
-        attributedText.apply(color: #colorLiteral(red: 0.987544477, green: 0.6673021317, blue: 0, alpha: 1), subString: "GOLD MARK")
+        attributedText.apply(color: #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1), subString: "GOLD MARK")
         attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GOLD MARK")
         
         differentialsLabel.attributedText = attributedText
@@ -766,7 +766,7 @@ extension ResultViewController {
         attributedText.apply(font:customFont!, subString: "Hypercatabolic disorders such as:")
         
         //3
-        attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+        attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
         attributedText.apply(font: customFont!, subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
         
         attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Consider the following in Respiratory Acidosis:")
@@ -796,7 +796,7 @@ extension ResultViewController {
         attributedText.apply(font: customFont!, subString: "Respiratory acidosis boils down to one pathway - Minute Ventilation - RR x TV")
         
         //2 Change color
-        attributedText.apply(color: #colorLiteral(red: 1, green: 0.9843137255, blue: 0.6588235294, alpha: 1), subString: "The PaC02 generally will return to normal after restoring adequate alveolar ventilation.")
+        attributedText.apply(color:#colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "The PaC02 generally will return to normal after restoring adequate alveolar ventilation.")
         // Change font
         attributedText.apply(font: customFont!, subString: "The PaC02 generally will return to normal after restoring adequate alveolar ventilation.")
         

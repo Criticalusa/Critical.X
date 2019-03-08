@@ -111,16 +111,7 @@ class IVDripRate: UIViewController {
         
        
         
-        // Calculates the mL/hour and populates the result label.
-        let mLresult = (mLperHours(duration: duration, volume: vol))
         
-        let shortMLResult = String(format:"%.1f",mLresult) // Rounds to the 1st decimal place
-        
-        mLresultLabel.text = shortMLResult
-        
-        print("mL per hour is \(mLperHours(duration: duration, volume: vol))")
-        
-        print(shortMLResult)
         
         
         switch segment?.selectedIndex {
@@ -133,6 +124,20 @@ class IVDripRate: UIViewController {
             //Sets the calculation to the results Label
             resultLabel.text = "\(Int(resultMinutes))"
             
+            
+            // Calculates the mL/hour and populates the result label.
+            let mLresult = (mLperHours(duration: duration, volume: vol))
+            
+            let modifiedMLResult = mLresult * 60
+            
+            mLresultLabel.text = "\(Int(modifiedMLResult))"
+            
+            print("mL per hour is \(mLperHours(duration: duration, volume: vol))")
+            
+            print(modifiedMLResult)
+            
+            
+            
         case 1?:
             print("1 selected, Hours calculated")
             
@@ -142,6 +147,18 @@ class IVDripRate: UIViewController {
             
             //Sets the calculation to the results Label
             resultLabel.text = "\(Int(resultsHours))"
+            
+            
+            // Calculates the mL/hour and populates the result label.
+            let mLresult = (mLperHours(duration: duration, volume: vol))
+            
+            let shortMLResult = String(format:"%.1f",mLresult) // Rounds to the 1st decimal place
+            
+            mLresultLabel.text = shortMLResult
+            
+            print("mL per hour is \(mLperHours(duration: duration, volume: vol))")
+            
+            print(shortMLResult)
             
         default: //Break out
             break
@@ -225,8 +242,8 @@ class IVDripRate: UIViewController {
      */
     func IVDripRateCalculationMin(Volume: Double, Time: Double, DripSet: Double) -> Double {
         
-        
         let dropsPerMinute = Volume * DripSet / Time
+        
         return dropsPerMinute
         
     }

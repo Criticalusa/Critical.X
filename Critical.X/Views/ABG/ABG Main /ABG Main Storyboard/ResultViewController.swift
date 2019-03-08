@@ -60,7 +60,7 @@ class ResultViewController: UIViewController {
         let attributedText = NSMutableAttributedString.getAttributedString(fromString: abgInterpretation)
         
         //1  Change the color of a word in the string
-        attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: "Blood Gas Analysis:")
+        attributedText.apply(color: #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), subString: "Blood Gas Analysis:")
         attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Blood Gas Analysis:")
         
         // Takes the interpretation strings from the input values and displays it
@@ -85,7 +85,7 @@ class ResultViewController: UIViewController {
             let customFont  = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             //1  Change the color of a word in the string
-            attributedText_A.apply(color: #colorLiteral(red: 1, green: 0.7570000291, blue: 0.0270000007, alpha: 1), subString: "Blood Gas Analysis:")
+            attributedText_A.apply(color: #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1), subString: "Blood Gas Analysis:")
             
             attributedText_A.apply(font: customFont!, subString: "Blood Gas Analysis:")
             
@@ -446,7 +446,7 @@ class ResultViewController: UIViewController {
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             
             // Set the text label to the attrubuted text that we changed.
@@ -473,7 +473,7 @@ class ResultViewController: UIViewController {
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             
             // Set the text label to the attrubuted text that we changed.
@@ -499,7 +499,7 @@ class ResultViewController: UIViewController {
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             
             differentialsLabel.attributedText = attributedText
