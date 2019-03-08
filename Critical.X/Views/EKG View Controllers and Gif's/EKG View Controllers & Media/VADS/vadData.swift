@@ -46,10 +46,10 @@ enum VAD_Explanaton: String {
     \r● The pump is located at the apex of the left ventricle and houses the impeller which is a frictionless rotor which is magnetically levitated.
     \r● Houses the impeller.
     \r● Rotates at speeds of >3000 rpm & can generate up to 10 liters per minute of blood flow.
-    \rCritical Pearls for VAD's:
+    \rCritical Pearls for VADs:
     \r● VADs are preload dependent and afterload sensitive. When in doubt, consider a fluid bolus.
     \r● Consider vasoactive agents if
-    \r● CPR is controversial as it can dislodge the cannula. Only consider if there's absolute pump failure and the MAP is zero - check connections first.
+    \r● CPR is controversial as it can dislodge the cannula. Only consider if there's absolute pump failure and the MAP are zero - check connections first.
     \r● Cardioversion is safe.
     \r● 02 saturations may be difficult to obtain.
     \r● Keep the batteries close and dry.

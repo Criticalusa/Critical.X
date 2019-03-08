@@ -62,6 +62,8 @@ class MenMenuCollectionViewCell: UICollectionViewCell {
 //        self.layer.borderColor = UIColor.gray.cgColor
 //        self.backgroundColor = UIColor.white
 //        self.layer.masksToBounds = true
+        
+        
     }
     
 }

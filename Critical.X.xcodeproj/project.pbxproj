@@ -197,6 +197,7 @@
 		C45DE22220F42D37001F3884 /* MedCalulationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45DE22120F42D37001F3884 /* MedCalulationsTableViewController.swift */; };
 		C4610F4F22270E8600A91297 /* MAPCPP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4610F4E22270E8500A91297 /* MAPCPP.storyboard */; };
 		C4610F52222710B700A91297 /* MAP_CPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4610F51222710B700A91297 /* MAP_CPP.swift */; };
+		C462A5042232E4240065133A /* PedsWeight_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462A5032232E4240065133A /* PedsWeight_CollectionViewCell.swift */; };
 		C465684521F0C1290010BA20 /* FAST_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C465684421F0C1280010BA20 /* FAST_Info.swift */; };
 		C46A9DD7220096A9004FE7C1 /* VentModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A9DD6220096A9004FE7C1 /* VentModeCell.swift */; };
 		C46A9DD9220096D4004FE7C1 /* VentMode_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A9DD8220096D4004FE7C1 /* VentMode_CollectionView.swift */; };
@@ -686,6 +687,7 @@
 		C45DE22120F42D37001F3884 /* MedCalulationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCalulationsTableViewController.swift; sourceTree = "<group>"; };
 		C4610F4E22270E8500A91297 /* MAPCPP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MAPCPP.storyboard; sourceTree = "<group>"; };
 		C4610F51222710B700A91297 /* MAP_CPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAP_CPP.swift; sourceTree = "<group>"; };
+		C462A5032232E4240065133A /* PedsWeight_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedsWeight_CollectionViewCell.swift; sourceTree = "<group>"; };
 		C465684421F0C1280010BA20 /* FAST_Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAST_Info.swift; sourceTree = "<group>"; };
 		C46A9DD6220096A9004FE7C1 /* VentModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentModeCell.swift; sourceTree = "<group>"; };
 		C46A9DD8220096D4004FE7C1 /* VentMode_CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentMode_CollectionView.swift; sourceTree = "<group>"; };
@@ -2088,6 +2090,7 @@
 				C48DC5162208D6C900BC222A /* Peds_Med_Calculations.swift */,
 				C4CF01DE2208BE94006432BB /* PlaceholderFile.swift */,
 				C4CF01DF2208BE94006432BB /* Weight Classes and Calculations */,
+				C462A5032232E4240065133A /* PedsWeight_CollectionViewCell.swift */,
 			);
 			path = "NEW Peds";
 			sourceTree = "<group>";
@@ -2617,15 +2620,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Critical.X/Pods-Critical.X-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AKLabel/AKLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/AlertOnboarding/AlertOnboarding.framework",
 				"${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
-				"${PODS_ROOT}/Instabug/Instabug.framework",
-				"${PODS_ROOT}/Instabug/Instabug.framework.dSYM",
-				"${PODS_ROOT}/Instabug/InstabugCore.framework",
-				"${PODS_ROOT}/Instabug/InstabugCore.framework.dSYM",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/McPicker/McPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/OnboardKit/OnboardKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
 				"${BUILT_PRODUCTS_DIR}/TTSegmentedControl/TTSegmentedControl.framework",
@@ -2635,15 +2634,11 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertOnboarding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DatePickerDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Instabug.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstabugCore.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/InstabugCore.framework.dSYM",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/McPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnboardKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSegmentedControl.framework",
@@ -2804,6 +2799,7 @@
 				C42F41861FF90E2B003BE489 /* IdealBodyWeight.swift in Sources */,
 				C41F210A201D12E000A5313A /* OBResultView.swift in Sources */,
 				C47B6F8A201654C6004DEDB6 /* Capnogrpahy.swift in Sources */,
+				C462A5042232E4240065133A /* PedsWeight_CollectionViewCell.swift in Sources */,
 				C4610F52222710B700A91297 /* MAP_CPP.swift in Sources */,
 				C4C25EF21FF9099600C5CD42 /* FlatColors.swift in Sources */,
 				C4A77697200822B8002EEC86 /* BicarbonateDeficit.swift in Sources */,
@@ -3050,14 +3046,14 @@
 				DEVELOPMENT_TEAM = JXLE4994XZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Critical.X/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheBarringerGroup.Critical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
@@ -3073,13 +3069,13 @@
 				DEVELOPMENT_TEAM = JXLE4994XZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Critical.X/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheBarringerGroup.Critical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;

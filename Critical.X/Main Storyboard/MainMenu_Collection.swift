@@ -9,7 +9,6 @@
 import UIKit
 import LTMorphingLabel
 import EasyPeasy
-import AlertOnboarding
 
 var username = UserDefaults.standard.value(forKey: "name")
 
@@ -95,10 +94,8 @@ extension String {
 }
 
 
-
+//MARK: - Begin Class
 class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate  {
-    
-    
     
     
     //MARK: - Outlets
@@ -204,6 +201,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             //Create an array of different greetings.
             let greetings: Array = ["Hi!", "Cheers!", "Good Afternoon!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            
             let greetingFormal: Array = ["Hi", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
@@ -363,8 +361,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func animateNavBar()  {
+       
         let fadeTextAnimation = CATransition()
+       
         fadeTextAnimation.duration = 0.3
+       
         fadeTextAnimation.type = kCATransitionMoveIn
         
         //        kCATransitionFade
@@ -411,80 +412,139 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
 //            NSAttributedString.Key.font: UIFont(name: "Marker Felt", size: 18)!]
        
         
-        
-        
-    
-        
-        mainMenu = ["About Critical", // 0
+        mainMenu =
+            ["About Critical", // 0
+            
             "Airway Management", // 1
+            
             "Cardiac",// 2
+            
             "Clinical Calculators",// 2
+            
             "Clinical Pharmacology", // 3
+            
             "Infusions", // 5
+            
             "Fluids / Blood products", // 6
+            
             "Lab Values", // 7
+            
             "Balloon Pump", // 8
+            
             "Neuro", // 9
+            
             "Pediatrics", // 10
+            
             "Obstetrics", // 11
+            
             "Hemodynamics", // 12
+            
             "RSII", //13
+            
             "Procedures & Imaging", // 14
+            
             "Ventilator Management"] // 16
         
-        mainMenuDetail = ["Rate Us, Email, Disclaimer  Information",// 0
+        mainMenuDetail =
+            ["Rate Us, Email, Disclaimer  Information",// 0
+            
             "Intubation, Difficult Airway Algorithms",// 1
+            
             "EKG Interpretations & ACLS Guidelines",// 2
+            
             "Medical Calculators & Medical Spanish",// 3
+            
             "Clinical Drug Pharmacodynamics",// 4
+            
             "Common Drips in Critical Care",// 5
+            
             "PRBC, 0.9%, Albumin ",// 6
+            
             "Common Lab Value Interpretations",// 7
+            
             "Timing, Modes & Troubleshooting",// 8
+            
             "Assessments & Stroke Scales",// 9
+            
             "Resuscitation, Calcs & Equipment",// 10
+            
             "Fetal Heart Monitoring Strips",//  11
+            
             "Hemodynamic Parameters / Monitoring",// 12
+            
             "Rapid Sequence Induction & Intubation",// 13
+            
             "CXR, Ultrasound & CVC Insertion",// 14
+            
             "Ventilator Modes, ETC02 Waveform Capnography"]// 15
         
         // Images and associated Indexpaths
         //  "formula",// 3
         // "Pharmacology",// 4
-        cellImages = ["CRITICALLogo_Circle",// 0
+        cellImages =
+            ["CRITICALLogo_Circle",// 0
+            
             "CRITICAL_Airway_Logo_Circle",// 1
+            
             "CRITICAL_VAD_Logo_Circle",// 2
+            
             "CRITICAL_DrugCalcs_Logo_Circle",// 3
+            
             "CRITICAL_Meds_1Logo_Circle",// 4
+            
             "CRITICAL_Drips2_Logo_Circle",// 5
+            
             "CRITICAL_CBC_Logo_Circle",// 6
+            
             "CRITICAL_LabValues_Logo_Circle",// 7
+            
             "CRITICAL_IABPLogo_Circle",// 8
+            
             "CRITICAL_Neuro_Logo1_Circle",// 9
+            
             "CRITICAL_PedsLogo1_Circle",// 10
+            
             "OB",//  11
+            
             "CRITICAL_Hemodynamcis_Logo_Circle",// 12
+            
             "CRITICAL_RSI_Logo_Circle",// 13
+            
             "CRITICAL_SpecialProcedures_Logo_Circle",// 14
+            
             "CRITICAL_VentLogo_Circle"]// 15
         
         // StoryBoard ID and associated Indexpaths
         storyBoardID = ["About Critical", // 0
+            
             "Airway management", // 1
+            
             "EKG", // 2
+            
             "Clinical Calculators", // 3
+            
             "Clinical pharmacology", // 4
+            
             "Infusions",// 5
+            
             "Fluids blood products",// 6
+            
             "Lab values", // 7
+            
             "Balloon pump",// 8
+            
             "Neuro", // 9
+            
             "Pediatrics", // 10
+            
             "Obstetrics",//  11
+            
             "Hemo", // 12
+            
             "Rapid sequence intubation", // 13
+            
             "Procedures & imaging", // 14
+            
             "Ventilator management"] // 15
         
         // Do any additional setup after loading the view.

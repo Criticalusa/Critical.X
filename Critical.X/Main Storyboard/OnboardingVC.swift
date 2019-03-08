@@ -8,37 +8,16 @@
 
 import UIKit
 import AKLabel
-import AlertOnboarding
+import OnboardKit
 
 var usernameEntered = String ()
 
 
-class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelegate {
+class OnboardingVC: UIViewController, UITextFieldDelegate {
     
    
    @IBOutlet weak var newButton: UIButton!
     
-    //MARK: - AlertView Text
-    var alertView: AlertOnboarding!
-    
-    //First, declare datas
-    let arrayOfImage = ["CRITICALLogo_Circle", "dripUpdate", "RSIDose", "RSISettings", "Ultrasound"]
-    let arrayOfTitle = ["Welcome to Critical!", "CUSTOMIZE DRIP DOSAGES", "RSI", "RSI Settings", "Ultrasound"]
-    let arrayOfDescription =
-        ["We hope you'll love the new update and features. We've added many customizable features to ensure the best clinical experience! Swipe to check out what's new!",
-         
-         "We've now made it possible that you can customize your own range dosages! Swipe left on the dose to update the range!",
-         
-         "Now have the ability customize and to see the concentration of the medication and mL's to be administered during RSI! ",
-         
-         "By going to the RSI settings, It's now possible to fully customize the RSI doses to match your local protocols",
-         
-         "Are you new to using the ultrasound machine? No problem! We've got you covered with a comprehensive overview of the different landmarks and views!"]
-    
-    
-    
-    
-
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var subTitleLabelLabel: AKLabel!
@@ -48,16 +27,51 @@ class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelega
     
     override func viewWillAppear(_ animated: Bool) {
     
-
     }
+    
+    lazy var onboardingPages: [OnboardPage] = {
+        let pageOne = OnboardPage(title: "Welcome to Critical",
+                                  imageName: "onboardingLogoCircle",
+                                  description: "We hope you'll love the new update and features. We've added many customizable features to ensure the best clinical experience! Swipe to check out what's new!")
+        
+        let pageTwo = OnboardPage(title: "Customize Drip Doses",
+                                  imageName: "updateDosages",
+                                  description: "Now have the ability customize and to see the concentration of the medication and mL's to be administered. Simply just swipe left!")
+        
+        let pageThree = OnboardPage(title: "New Settings in RSI",
+                                    imageName: "settingsDemo",
+                                    description: "By going to the RSI settings, It's now possible to fully customize the RSI doses to match your local protocols")
+        
+        let pageFour = OnboardPage(title: "New Ultrasound",
+                                   imageName: "onboardUltrasound",
+                                   description:  "Are you new to using the ultrasound machine? No problem! We've got you covered with a comprehensive overview of the different landmarks and views!")
+                                  
+        let pageFive = OnboardPage(title: "Ventricular Assist Devices",
+                                   imageName: "vadsDemo",
+                                   description:  "Not up-to-date on Vads? Check out the new information and guidlines on VADs in the cardiac section!")
+        
+        
+        
+        let pageSix = OnboardPage(title: "All Ready",
+                                   imageName: "Onboarding5",
+                                   description: "You are all set up and ready to use Critical. Let's begin by adding your name.",
+                                   advanceButtonTitle: "Done")
+        
+        return [pageOne, pageTwo, pageThree, pageFour, pageFive, pageSix]
+    }()
+    
+    
+    
     @IBAction func showOnboarding(_ sender: Any) {
-        showOnboaridingAlert()
-
+        let onboardingVC = OnboardViewController(pageItems: onboardingPages)
+        onboardingVC.modalPresentationStyle = .formSheet
+        onboardingVC.presentFrom(self, animated: true)
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showOnboaridingAlert()
         
         
         /// Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
@@ -69,9 +83,7 @@ class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelega
         nameTextField.delegate = self
         
         
-        alertView = AlertOnboarding(arrayOfImage: arrayOfImage, arrayOfTitle: arrayOfTitle, arrayOfDescription: arrayOfDescription)
-        
-        alertView.delegate = self
+       
         
         //animate the button
         showAnimateButton()
@@ -82,41 +94,7 @@ class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelega
 
    
     
-    func showOnboaridingAlert() {
-        
-        print("Onboarding custom alert activated")
-        //Simply call AlertOnboarding...
-        let alertView = AlertOnboarding(arrayOfImage: arrayOfImage, arrayOfTitle: arrayOfTitle, arrayOfDescription: arrayOfDescription)
-        
-        
-        //Modify background color of AlertOnboarding
-        alertView.colorForAlertViewBackground = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            //UIColor(red: 173/255, green: 206/255, blue: 183/255, alpha: 1.0)
-        
-        //Modify colors of AlertOnboarding's button
-        alertView.colorButtonText = UIColor.white
-        alertView.colorButtonBottomBackground = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
-        
-        //Modify colors of labels
-        alertView.colorTitleLabel = #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1)
-        alertView.colorDescriptionLabel = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        
-        //Modify colors of page indicator dots
-        alertView.colorPageIndicator = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        alertView.colorCurrentPageIndicator = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
-        
-        //Modify size of alertview (Purcentage of screen height and width) // Can be 0.5 as well.
-        alertView.percentageRatioHeight = 0.7
-        alertView.percentageRatioWidth = 0.9
-        
-        //Modify labels
-        alertView.titleSkipButton = "Skip"
-        alertView.titleGotItButton = "Got it!"
-        
-        
-        alertView.show()
-    }
-    
+   
     
     //MARK: - Animation
     /**
@@ -194,6 +172,7 @@ class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelega
     override func viewDidAppear(_ animated: Bool) {
     
         let subtititleText = "Let's personalize your experience. Enter your name to get started ! "
+        
         subTitleLabelLabel.animate(text: subtititleText, duration: 2, completion: nil)
      
         //animates the welcome label
@@ -270,36 +249,6 @@ class OnboardingVC: UIViewController, UITextFieldDelegate, AlertOnboardingDelega
 
         }
       
-    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//
-//        if segue.identifier == "mainViewSegue" {
-//            // We segue to ACLSVC and pass the infomation from which row is pressed
-//            if let mainMenuController = segue.destination as? MainMenu_Collection {
-//
-//                // This is where we reference the object on the rec VC and set it to what we need to.
-//                mainMenuController.usernameReceived = (nameTextField.text!)
-//                print("user was selected")
-//            }
-//    }
-   
-
-    //--------------------------------------------------------
-    // MARK: DELEGATE METHODS --------------------------------
-    //--------------------------------------------------------
-    func alertOnboardingSkipped(_ currentStep: Int, maxStep: Int) {
-        print("Onboarding skipped the \(currentStep) step and the max step he saw was the number \(maxStep)")
-    }
-    
-    func alertOnboardingCompleted() {
-        print("Onboarding completed!")
-    }
-    
-    func alertOnboardingNext(_ nextStep: Int) {
-        print("Next step triggered! \(nextStep)")
     }
     
 

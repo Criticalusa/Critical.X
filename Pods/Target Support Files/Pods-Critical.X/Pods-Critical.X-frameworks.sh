@@ -144,15 +144,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AKLabel/AKLabel.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AlertOnboarding/AlertOnboarding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework"
-  install_framework "${PODS_ROOT}/Instabug/Instabug.framework"
-  install_dsym "${PODS_ROOT}/Instabug/Instabug.framework.dSYM"
-  install_framework "${PODS_ROOT}/Instabug/InstabugCore.framework"
-  install_dsym "${PODS_ROOT}/Instabug/InstabugCore.framework.dSYM"
   install_framework "${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/McPicker/McPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/OnboardKit/OnboardKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TTSegmentedControl/TTSegmentedControl.framework"
@@ -161,15 +157,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AKLabel/AKLabel.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AlertOnboarding/AlertOnboarding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework"
-  install_framework "${PODS_ROOT}/Instabug/Instabug.framework"
-  install_dsym "${PODS_ROOT}/Instabug/Instabug.framework.dSYM"
-  install_framework "${PODS_ROOT}/Instabug/InstabugCore.framework"
-  install_dsym "${PODS_ROOT}/Instabug/InstabugCore.framework.dSYM"
   install_framework "${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/McPicker/McPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/OnboardKit/OnboardKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TTSegmentedControl/TTSegmentedControl.framework"

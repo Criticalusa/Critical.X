@@ -832,16 +832,16 @@ class Pediatric_DetailVC: UIViewController {
         case (3..<6)?:
             case_ThreeToSix()
             
-        case (6...8)?:
+        case (6...7.9)?:
             case_SixToEight()
             
         case (8...9)?: //Infant
             case_EightToNine()
             
-        case (10...12)?: //Toddler
+        case (10..<12)?: //Toddler
             case_TenToTwelve()
             
-        case (12...15)?: //Small child
+        case (12..<15)?: //Small child
             case_TwelveToFifteen()
             
         case (15...18)?: //Child
@@ -859,8 +859,19 @@ class Pediatric_DetailVC: UIViewController {
         case (38...50)?: // Large Adult 40
             case_FourtyToFifty()
             
-        case (50...80)?: // Large Adult 50
+        case (50...)?: // Large Adult 50
             case_FiftyToEighty()
+            
+            // We change the broslow color is the weight is 75 or greater. 
+            if weightEntered! >= 75.0 {
+                // MARK: Adds a border line color.
+                vitalsView.addBorder(side: .left, thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), leftOffset: 0.1)
+                ventImageView.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1) , leftOffset: 0.1)
+                equipmentUIView.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), leftOffset: 0.1)
+                sedationParalytics.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), leftOffset: 0.1)
+                cardiacResuscitation.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), leftOffset: 0.1)
+                medicationsOther.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), leftOffset: 0.1)
+            }
             
         default:
             break

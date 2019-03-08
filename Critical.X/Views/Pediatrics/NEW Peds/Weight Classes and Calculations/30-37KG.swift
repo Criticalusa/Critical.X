@@ -14,12 +14,12 @@ extension Pediatric_DetailVC {
     func case_ThirtyToThirtySeven() -> Void {
         
         // MARK: Adds a border line color.
-        vitalsView.addBorder(side: .left, thickness: 5.0, color:FlatColor.BackgroundColor.Green.toUIColor(), leftOffset: 0.1)
-        ventImageView.addBorder(side:.left,thickness: 5.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
-        equipmentUIView.addBorder(side:.left,thickness: 5.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
-        sedationParalytics.addBorder(side:.left,thickness: 5.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
-        cardiacResuscitation.addBorder(side:.left,thickness: 5.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
-        medicationsOther.addBorder(side:.left,thickness: 5.0, color:FlatColor.BackgroundColor.Green.toUIColor(), leftOffset: 0.1)
+        vitalsView.addBorder(side: .left, thickness: 8.0, color:FlatColor.BackgroundColor.Green.toUIColor(), leftOffset: 0.1)
+        ventImageView.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
+        equipmentUIView.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
+        sedationParalytics.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
+        cardiacResuscitation.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Green .toUIColor(), leftOffset: 0.1)
+        medicationsOther.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Green.toUIColor(), leftOffset: 0.1)
 
         
         // Calculates the conversion from Kg's to Lbs

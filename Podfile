@@ -18,9 +18,7 @@ pod 'SCLAlertView'
 pod 'lottie-ios'
 pod 'EasyPeasy'
 pod 'SteviaLayout'
-pod 'Instabug'
-pod 'AlertOnboarding'
-
+pod 'OnboardKit'
 
 pod ‘TTSegmentedControl’
   target 'Critical.XTests' do

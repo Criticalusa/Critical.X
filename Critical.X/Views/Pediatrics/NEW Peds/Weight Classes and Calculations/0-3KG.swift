@@ -28,6 +28,13 @@ extension Pediatric_DetailVC {
         heartRate.text = CriticalPediatrics.PediatricData.Premature.Pulse.execute()
         hypotensiveLabel.text = CriticalPediatrics.PediatricData.Premature.Hypotensive.execute()
         
+        vitalsView.addBorder(side: .left, thickness: 8.0, color:FlatColor.BackgroundColor.Gray.toUIColor(), leftOffset: 0.1)
+        ventImageView.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Gray.toUIColor(), leftOffset: 0.1)
+        equipmentUIView.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Gray.toUIColor(), leftOffset: 0.1)
+        sedationParalytics.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Gray.toUIColor(), leftOffset: 0.1)
+        cardiacResuscitation.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Gray.toUIColor(), leftOffset: 0.1)
+        medicationsOther.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Gray.toUIColor(), leftOffset: 0.1)
+        
         // MARK: Guard function to calculate the weight/ age from the entered weight value.
         guard let w = weightEntered,
             let lbs = pounds,
