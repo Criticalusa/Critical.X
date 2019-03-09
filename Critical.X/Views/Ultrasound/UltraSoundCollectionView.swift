@@ -8,6 +8,7 @@
 
 import UIKit
 import AKLabel
+import SCLAlertView
 
 private let reuseIdentifier = "Cell"
 
@@ -72,17 +73,27 @@ class UltraSoundCollectionView: UIViewController, UICollectionViewDataSource, UI
  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print(storyBoardID [indexPath.item])
+        print(storyBoardID [indexPath.item] + " was pressed and accessed")
 
-        
-            // Set the Storyboard ID to each indexPath.
-            let SBID = storyBoardID [indexPath.item]
-            
+        // Only secue for FAST
+        switch indexPath.item {
+        case 0:
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "Ultrasound", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: SBID)
+            let vc = storyboard.instantiateViewController(withIdentifier: "Fast")
+            self.present(vc, animated: true, completion: nil)
+
+            // Show alert for the other RUSH and Resp views
+        default:
+            // Language to show the alert
+          _ = SCLAlertView().showError("Not quite yet...", subTitle:"We are currently working on the content for this section. It should be available in the next update.", closeButtonTitle:"Thanks")
+            
+        }
+            // Set the Storyboard ID to each indexPath.
+            //let SBID = storyBoardID [indexPath.item]
+            
         
-        self.present(vc, animated: true, completion: nil)
+        
 
             // Push the ViewController via Navigation
 //            self.navigationController?.pushViewController(vc, animated: true)
