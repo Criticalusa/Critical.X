@@ -33,12 +33,12 @@ extension Pediatric_DetailVC {
         
         
         // MARK: Adds a border line color.
-        vitalsView.addBorder(side: .left, thickness: 8.0, color:FlatColor.BackgroundColor.Orange.toUIColor(), leftOffset: 0.1)
-        ventImageView.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Orange.toUIColor(), leftOffset: 0.1)
-        equipmentUIView.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Orange.toUIColor(), leftOffset: 0.1)
-        sedationParalytics.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Orange.toUIColor(), leftOffset: 0.1)
-        cardiacResuscitation.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Orange.toUIColor(), leftOffset: 0.1)
-        medicationsOther.addBorder(side:.left,thickness: 8.0, color:FlatColor.BackgroundColor.Orange.toUIColor(), leftOffset: 0.1)
+        vitalsView.addBorder(side: .left, thickness: 8.0, color:#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), leftOffset: 0.1)
+        ventImageView.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), leftOffset: 0.1)
+        equipmentUIView.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), leftOffset: 0.1)
+        sedationParalytics.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), leftOffset: 0.1)
+        cardiacResuscitation.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), leftOffset: 0.1)
+        medicationsOther.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), leftOffset: 0.1)
         
         //MARK: - Vital Signs
         systolic.text = CriticalPediatrics.PediatricData.LargeChild.BloodPressure.execute()

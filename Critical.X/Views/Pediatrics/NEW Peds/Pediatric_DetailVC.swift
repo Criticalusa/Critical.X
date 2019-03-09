@@ -12,7 +12,7 @@ import UIKit
 
 
 
-class Pediatric_DetailVC: UIViewController {
+class Pediatric_DetailVC: UIViewController, UIScrollViewDelegate {
     
     //Public Variables to be passed
     public var weightEntered: Double?
@@ -21,7 +21,17 @@ class Pediatric_DetailVC: UIViewController {
     
     @IBOutlet weak var scrollHeight: NSLayoutConstraint!
     
-
+    @IBOutlet weak var popOVerView: UIView!{
+        didSet {
+    // Takes the view and makes it into a circle
+    popOVerView.layer.cornerRadius = popOVerView.frame.size.width / 2
+    }
+    }
+    
+    @IBOutlet weak var pedscrollView: UIScrollView!
+    
+    @IBOutlet weak var popOVerWeightLabel: UILabel!
+    
     @IBOutlet weak var criticalImageView        : UIImageView!
     
     @IBOutlet weak var bicarbTitleLabel         : UILabel!
@@ -490,6 +500,15 @@ class Pediatric_DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        popOVerWeightLabel.text = "\(weightEntered!)"
+        
+        // ScrollDelegate
+        pedscrollView.delegate = self
+        
+        
+        // Hide the view initially
+        popOVerView.isHidden = true
+        
         // Rounds the corners of the View
         vitalsView.clipsToBounds           = true
         vitalsView.layer.cornerRadius      = 15
@@ -515,6 +534,41 @@ class Pediatric_DetailVC: UIViewController {
         calculateAllPediatricFactors()
         
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        // Set a variable to the contentOffset position Y
+        let scrollPosition = self.pedscrollView.contentOffset.y
+        
+        //Conditional when the scrollView starts to scroll past a certain Y value
+        if (scrollPosition >= 25) {
+            
+            // animate the view In
+            UIView.animate(withDuration: 0.5, animations: {
+                
+                //write a code to unhide
+                self.popOVerView.isHidden = false
+                
+                print("Position:  \(self.pedscrollView.contentOffset.x) , \(self.pedscrollView.contentOffset.y) ")
+                
+                print("Floating view is visible")
+                
+            }, completion: nil) // End animation block
+            
+        } // End if statement
+            
+        else {
+            
+            //Slide it up incrementally, etc.
+            UIView.animate(withDuration: 0.5, animations: {
+                //
+                self.popOVerView.isHidden = true
+                
+                print("Floating view is HIDDEN")
+                
+            }, completion: nil) // End animation block
+        } // End else  statement
     }
     
     //MARK Calculate Maintenance Fluid Daily intake
@@ -828,42 +882,97 @@ class Pediatric_DetailVC: UIViewController {
         // If the weight is between 0 and 3 KG, then run specific function.
         case (0..<3)?:
             case_03()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (3..<6)?:
             case_ThreeToSix()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (6...7.9)?:
             case_SixToEight()
+           // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (8...9)?: //Infant
             case_EightToNine()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (10..<12)?: //Toddler
             case_TenToTwelve()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (12..<15)?: //Small child
             case_TwelveToFifteen()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 1, green: 0.7570000291, blue: 0.0270000007, alpha: 1)
             
-        case (15...18)?: //Child
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            
+        case (15..<19)?: //Child
             case_FifteenToEighteen()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.1215686277, green: 0.1294117719, blue: 0.1411764771, alpha: 1)
+            
             
         case (19...23)?: //Child
             case_NinteenToTwentyThree()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
+            
             
         case (24...29)?: //Large child
             case_TwentyFourToTwentyNine()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (30...37)?: // Adult
             case_ThirtyToThirtySeven()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = FlatColor.BackgroundColor.Green .toUIColor()
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (38...50)?: // Large Adult 40
             case_FourtyToFifty()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = FlatColor.BackgroundColor.Green .toUIColor()
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
         case (50...)?: // Large Adult 50
             case_FiftyToEighty()
+            // Change the weight Popover color when scrolling and weightLabel
+            popOVerView.backgroundColor = FlatColor.BackgroundColor.Green .toUIColor()
+            
+            popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
             
             // We change the broslow color is the weight is 75 or greater. 
             if weightEntered! >= 75.0 {
+                // Change the weight Popover color when scrolling and weightLabel
+                popOVerView.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+                
+                popOVerWeightLabel.textColor = #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1)
+                
                 // MARK: Adds a border line color.
                 vitalsView.addBorder(side: .left, thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), leftOffset: 0.1)
                 ventImageView.addBorder(side:.left,thickness: 8.0, color:#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1) , leftOffset: 0.1)

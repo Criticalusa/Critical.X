@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r0k-ig-mvH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r0k-ig-mvH">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -6242,6 +6241,27 @@
                                     <action selector="dismissButton:" destination="r0k-ig-mvH" eventType="touchUpInside" id="pYA-Q8-s2Z"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZM-tu-l5B" customClass="UIViewX">
+                                <rect key="frame" x="15" y="95" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvI-Ny-cl7">
+                                        <rect key="frame" x="0.0" y="10" width="50" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBd-Pi-NCM">
+                                        <rect key="frame" x="0.0" y="35" width="50" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="9"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -6381,8 +6401,11 @@
                         <outlet property="morphine_mL" destination="4It-1e-y5f" id="xfT-h3-GTM"/>
                         <outlet property="ngSize_lbl" destination="CM6-S2-9nr" id="AIr-9i-axN"/>
                         <outlet property="oPa_lbl" destination="ZIx-8n-Z1Y" id="eej-3Q-Cyt"/>
+                        <outlet property="pedscrollView" destination="WVa-CJ-ssL" id="G4u-b5-XMy"/>
                         <outlet property="peep_lbl" destination="TCG-nH-eTF" id="EXf-XH-UPU"/>
                         <outlet property="pip_lbl" destination="ctf-8R-jyZ" id="nDb-rT-BZd"/>
+                        <outlet property="popOVerView" destination="BZM-tu-l5B" id="1pV-YT-4OE"/>
+                        <outlet property="popOVerWeightLabel" destination="LvI-Ny-cl7" id="QKd-YF-5iR"/>
                         <outlet property="propofol_DetailDoseLabel" destination="IGo-2a-ej9" id="9D2-Gl-5LY"/>
                         <outlet property="propofol_Dose" destination="HD8-ms-INI" id="Elr-Zm-eZp"/>
                         <outlet property="propofol_ML" destination="ITp-D0-DRB" id="yzW-d6-Qcv"/>
