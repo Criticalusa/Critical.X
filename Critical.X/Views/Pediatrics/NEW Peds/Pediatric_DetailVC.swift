@@ -920,7 +920,7 @@ class Pediatric_DetailVC: UIViewController, UIScrollViewDelegate {
             // Change the weight Popover color when scrolling and weightLabel
             popOVerView.backgroundColor = #colorLiteral(red: 1, green: 0.7570000291, blue: 0.0270000007, alpha: 1)
             
-            popOVerWeightLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            popOVerWeightLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             
         case (15..<19)?: //Child
             case_FifteenToEighteen()

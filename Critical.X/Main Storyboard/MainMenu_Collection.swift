@@ -450,7 +450,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "Intubation, Difficult Airway Algorithms",// 1
             
-            "EKG Interpretations & ACLS Guidelines",// 2
+            "VADs, EKG & 12 Leads, ACLS",// 2
             
             "Medical Calculators & Medical Spanish",// 3
             

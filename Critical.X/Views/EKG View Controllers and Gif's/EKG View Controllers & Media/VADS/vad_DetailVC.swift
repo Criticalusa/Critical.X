@@ -12,7 +12,7 @@ import AKLabel
 // Global Int variable to assign to the tag so we can reference.
 var buttonTag = Int()
 
-class vad_DetailVC: UIViewController {
+class vad_DetailVC: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var whatToKnow_lbl: AKLabel!
     
@@ -90,6 +90,10 @@ class vad_DetailVC: UIViewController {
         
     }
     
+    // Zoom Image
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return vadImage
+    }
     //MARK: - Controls the scrollView height dynamcially.
     override func viewDidAppear(_ animated: Bool) {
         
