@@ -162,11 +162,16 @@ class CheckMyDrips: UIViewController {
                     let gMin = String(format:"%.3f",gMin1)
                     
                     if Double(gMin) == 0.000 {
+                       
                         self.label.text = "ERROR"
+                       
                         self.theResultDetailLabel.text = "Please try a new calculation"
+                       
                         print("Result is zero")
                     }
+                    
                     self.label.text = "\(gMin)"
+                    
                     self.theResultDetailLabel.text = "g/min"
                     
                     //Animate the Result View
@@ -177,6 +182,7 @@ class CheckMyDrips: UIViewController {
                     
                     
                     print("\(gMin) was calculated for g/Min")
+                    
                     self.view.endEditing(true)
                     
              }
@@ -186,14 +192,18 @@ class CheckMyDrips: UIViewController {
                     
                     // Sets the label to the shortened value
                     self.label.text = "\(mgPerHr_shortened)"
+                    
                     self.theResultDetailLabel.text = "mg/hr"
                     
                     //Print function
                     print("\(mgPerHr_shortened) mg/hr selected")
                     //Animate the Result View
+                   
                     self.showAnimate()
+                   
                     //Unhides the view
                     self.resultView.isHidden = false
+                    
                     self.view.endEditing(true)
                     
                 }
@@ -278,11 +288,17 @@ class CheckMyDrips: UIViewController {
                 else if name == "mcg/kg/min" {
                     //MARK: Guard function during the calculations.
                     // If any of these Optional values are NIL (or Empty) then Initiate the following code before the return value.
+                    
                     guard let weight = weight else {
+                    
                         print("Weight not entered")
+                    
                         // Impliment additional code/conditions like alerts or hiding views etc.
+                    
                         //Hiding result view
+                    
                         self.resultView.isHidden = true
+                    
                         self.theResultDetailLabel.text = "Enter the weight"
                         // Show the alert
                         ///Red Alert
@@ -303,6 +319,7 @@ class CheckMyDrips: UIViewController {
                     
                     // Sets the label to the shortened result.
                     self.label.text = "\(shortResultofMcgKgMin)"
+                    
                     self.theResultDetailLabel.text = "mcg/kg/min"
                     
                     //Animate the Result View
@@ -333,6 +350,7 @@ class CheckMyDrips: UIViewController {
                         // Impliment additional code/conditions like alerts or hiding views etc.
                         //Hiding result view
                         self.resultView.isHidden = true
+                        
                         self.theResultDetailLabel.text = "Enter the weight"
                         // Show the alert
                       
@@ -343,7 +361,9 @@ class CheckMyDrips: UIViewController {
                     
                     // Calculating the closure.
                     var calculationOfMcgKgHr: Double {
+                        
                         let mcgKgHr = ((drugDosage! * 1000) * ivFlowRate!) / (fluidInTheIVBag! * weight)
+                        
                         return mcgKgHr
                     }
                     
@@ -353,6 +373,7 @@ class CheckMyDrips: UIViewController {
                     
                     // Sets the label to the shortened result.
                     self.label.text = "\(shortResultofMcgKgHr)"
+                    
                     self.theResultDetailLabel.text = "mcg/kg/hr"
                     
                     //Animate the Result View
@@ -377,15 +398,8 @@ class CheckMyDrips: UIViewController {
     
     
     
-    //MARK: - Animation
-    /**
-     Animates the transitions
-     - Transitions:
-     - UIView Animate with duration: Time it takes to animate
-     - Transoform : ResultView
-     
-     Change the duration to adjust the time you want the animation to happen. Also, replace the view or label to your choice.
-     */
+    
+    
     func showAnimate()
     {
         // Animation for the Results UIView

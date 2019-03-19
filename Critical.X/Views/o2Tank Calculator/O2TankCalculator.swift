@@ -26,6 +26,7 @@ class O2TankCalculator: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBOutlet weak var closebutton02: UIButton!
+   
     @IBOutlet weak var calculateButton: UIButton!
    
     
@@ -33,8 +34,7 @@ class O2TankCalculator: UIViewController {
         super.viewDidLoad()
         
         /// Rounds the corners 15 pixels of the UIView name
-        o2DetailView.clipsToBounds = true
-        o2DetailView.layer.cornerRadius = 15
+       
         
         //Hides the view initally
         o2DetailView.isHidden = true
@@ -48,10 +48,12 @@ class O2TankCalculator: UIViewController {
         
         
         //Add items to the segmented Control // Takes the button and makes it into a circle
-        segmento2?.items = ["D", "E", "G", "H/K", "M"]
+        segmento2?.items = ["D", "E", "G", "H/K", "M", "EC 135 1"]
         
     }
     
+    
+   
     
     @IBAction func segment02(_ sender: Any) {
         
@@ -100,10 +102,15 @@ class O2TankCalculator: UIViewController {
             switch segmento2?.selectedIndex {
             case 0?:
                 resultsLabel.text = String(format:"%.1f",D) // Rounds to the 1st decimal place
+                
                 print("Tank D was selected")
+                
                 o2DetailView.isHidden = false
+                
                 minutesLabel.text = "Minutes"
+                
                 descriptionLabel.text = "A \"D\" cylinder with \(psi!) PSI at \(liters!) L/min"
+                
                 showAnimate()
                
                 if (resultsLabel.text! < "0.0") {
@@ -112,11 +119,13 @@ class O2TankCalculator: UIViewController {
                     minutesLabel.text = "Refill the tank"
                     
                     resultsLabel.text = "Empty Tank"
+                    
                     resultsLabel.textColor = UIColor.yellow
                     
                     o2DetailView.isHidden = false
                     
                     descriptionLabel.text = "Looks like the tank is"
+                    
                     descriptionLabel.textColor = UIColor.gray
 
                     showAnimate()
@@ -124,17 +133,25 @@ class O2TankCalculator: UIViewController {
                 
             case 1?:
                 resultsLabel.text = E.oneDecimalPlace
+               
                 print("Tank E was selected")
+               
                 o2DetailView.isHidden = false
+               
                 minutesLabel.text = "Minutes"
+               
                 descriptionLabel.text = "An \"E\" cylinder at \(psi!) PSI at \(liters!) L/min"
 
                 showAnimate()
                 
             case 2?:
+                
                 resultsLabel.text = G.oneDecimalPlace
+                
                 print("Tank G was selected")
+                
                 o2DetailView.isHidden = false
+                
                 minutesLabel.text = "Minutes"
                 
                 descriptionLabel.text = "A \"G\" cylinder at \(psi!) PSI on \(liters!) L/min"
@@ -143,9 +160,13 @@ class O2TankCalculator: UIViewController {
                 showAnimate()
                 
             case 3?:
+                
                 resultsLabel.text = HK.oneDecimalPlace
+                
                 print("Tank HK was selected")
+                
                 o2DetailView.isHidden = false
+                
                 minutesLabel.text = "Minutes"
 
                 descriptionLabel.text = "An \"H/K\" cylinder at \(psi!) PSI on \(liters!) L/min"
@@ -153,9 +174,13 @@ class O2TankCalculator: UIViewController {
                 showAnimate()
                 
             case 4?:
+                
                 resultsLabel.text = M.oneDecimalPlace
+                
                 print("Tank M was selected")
+                
                 o2DetailView.isHidden = false
+                
                 minutesLabel.text = "Minutes"
 
                 descriptionLabel.text = "An \"M\" cylinder with \(psi!) PSI at \(liters!) L/min"
@@ -167,9 +192,13 @@ class O2TankCalculator: UIViewController {
             }
         }
         else if (resultsLabel.text! < "0.0") {
+           
             minutesLabel.text = "Refill tank"
+           
             resultsLabel.text = "Empty Tank"
+           
             o2DetailView.isHidden = false
+           
             showAnimate()
         }
         

@@ -29,16 +29,17 @@ func overViewAttribute(text: String) -> NSAttributedString
     // Global string variable
     var changedString = String()
     
-    let rate = "Augmented Limb Leads (Unipolar):"
-    let rhythm = "Limb Leads (Bipolar):"
-    let pWave = "Precordial Leads (V1-V6):"
-    let pRInterval = "Morphology assessment"
-    let qrs = "P-wave:"
+    let augmented = "Augmented Limb Leads (Unipolar):"
+    let limb = "Limb Leads (Bipolar):"
+    let precordial = "Precordial Leads (V1-V6):"
+    let morphology = "Morphology assessment"
+    let qrs = "QRS complex:"
+    let pwave = "P-wave:"
     
     
     // Change the text here
-    if text.contains(rate) {
-        changedString = rate
+    if text.contains(augmented) {
+        changedString = augmented
         // Set the string to the changed String so its set at the end
         
         // This is the color of the singled out text.
@@ -51,8 +52,24 @@ func overViewAttribute(text: String) -> NSAttributedString
         
     }
     
-    if text.contains(rhythm) {
-        changedString = rhythm
+    // Change the text here
+    if text.contains(pwave) {
+        changedString = pwave
+        // Set the string to the changed String so its set at the end
+        
+        // This is the color of the singled out text.
+        attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
+        //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        
+        // Change the font of the string
+        attributedText.apply(font: customFont!, subString: changedString)
+        
+    }
+    
+    
+    if text.contains(precordial) {
+        changedString = precordial
         // Set the string to the changed String so its set at the end
         
         // This is the color of the singled out text.
@@ -65,8 +82,8 @@ func overViewAttribute(text: String) -> NSAttributedString
         
     }
     
-    if text.contains(pWave) {
-        changedString = pWave
+    if text.contains(limb) {
+        changedString = limb
         // Set the string to the changed String so its set at the end
         
         // This is the color of the singled out text.
@@ -80,8 +97,8 @@ func overViewAttribute(text: String) -> NSAttributedString
         
     }
     
-    if text.contains(pRInterval) {
-        changedString = pRInterval
+    if text.contains(morphology) {
+        changedString = morphology
         // Set the string to the changed String so its set at the end
         
         // This is the color of the singled out text.

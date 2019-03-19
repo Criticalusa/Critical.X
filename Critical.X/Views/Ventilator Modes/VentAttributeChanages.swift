@@ -413,13 +413,52 @@ extension VentMode_detailVC {
         // What text to change
         let whatToKnow = "What to know:"
         let bottomLine = "Bottom Line:"
-        let One = "The patient must be able to generate a  breath to use this mode."
+        let One = "The patient must be able to generate a breath to use this mode."
         let two = "Placing an apenic patient on CPAP will cause the patient to code"
         let three = "This minimum pressure helps to keep disease airways and alveoli from collapsing"
         let four = "Noninvasive ventilation does not provide enough support for very sick patients."
         let five = "3. P-Low:"
         let six = "2. T-High:"
         let seven = "4. T-Low:"
+        let increaseing = "Increasing the CPAP level can improve alveolar stability, and improve oxygenation. Adding pressure support (PS) to CPAP can improve ventilation (CO2 removal)."
+        let remember = "The patient must be able to generate a  breath to use this mode."
+        let remember2 = "Remember, the patient must beable to spontaneusly breath on their own."
+        
+        if text.contains(increaseing){
+            changedString = increaseing
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), subString: changedString)
+            attributedText.underLine(subString: changedString)
+
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(remember){
+            changedString = remember
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), subString: changedString)
+            attributedText.underLine(subString: changedString)
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
+        if text.contains(remember){
+            changedString = remember
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), subString: changedString)
+            attributedText.underLine(subString: changedString)
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
         
         
         if text.contains(seven){
