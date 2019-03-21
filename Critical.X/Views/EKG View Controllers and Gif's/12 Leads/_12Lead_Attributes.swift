@@ -45,9 +45,9 @@ func overViewAttribute(text: String) -> NSAttributedString
         // Set the string to the changed String so its set at the end
         
         // This is the color of the singled out text.
-        attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+        attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -62,7 +62,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -77,7 +77,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -93,7 +93,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -108,7 +108,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -122,7 +122,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -137,7 +137,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -153,7 +153,7 @@ func overViewAttribute(text: String) -> NSAttributedString
         // This is the color of the singled out text.
         attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
         //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
         
         // Change the font of the string
         attributedText.apply(font: customFont!, subString: changedString)
@@ -198,9 +198,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -215,7 +215,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -230,7 +230,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -246,7 +246,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -261,7 +261,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -275,7 +275,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -290,7 +290,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -306,7 +306,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -356,9 +356,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.1330000013, green: 0.2269999981, blue: 0.3689999878, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -372,9 +372,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.1330000013, green: 0.2269999981, blue: 0.3689999878, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -389,7 +389,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -404,7 +404,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -419,7 +419,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -436,7 +436,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -452,7 +452,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -466,7 +466,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -480,7 +480,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -496,7 +496,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -511,7 +511,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.1215686277, green: 0.1294117719, blue: 0.1411764771, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -525,7 +525,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -540,7 +540,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -556,7 +556,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -585,13 +585,13 @@ extension _12Lead_Collection_VC {
         // Global string variable
         var changedString = String()
         
-        let A = ""
-        let B = ""
-        let C = ""
-        let D = ""
-        let E = ""
-        let F = ""
-        let G = ""
+        let A = "WHAT TO KNOW"
+        let B = "INFARCTION PATTERNS"
+        let C = "Anterior = V2-5"
+        let D = "Anteroseptal = V1-4"
+        let E = "Anterolateral = V3-6, Lead I + aVL"
+        let F = "Extensive anterior / anterolateral = V1-6, Lead I + aVL"
+        let G = "The tracing above shows an Anterolateral infarction. Notice the ST elevations in leads V2-V5"
         let H = ""
         
         // Change the text here
@@ -600,9 +600,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -615,9 +615,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -632,7 +632,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -648,7 +648,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -663,7 +663,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -677,7 +677,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -692,7 +692,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -708,7 +708,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -752,9 +752,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -769,7 +769,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -784,7 +784,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -800,7 +800,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -815,7 +815,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -829,7 +829,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -844,7 +844,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -860,7 +860,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -904,9 +904,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -921,7 +921,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -936,7 +936,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -952,7 +952,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -967,7 +967,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -981,7 +981,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -996,7 +996,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1012,7 +1012,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1056,9 +1056,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1073,7 +1073,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1088,7 +1088,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1104,7 +1104,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1119,7 +1119,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1133,7 +1133,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1148,7 +1148,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1164,7 +1164,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1208,9 +1208,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1225,7 +1225,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1240,7 +1240,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1256,7 +1256,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1271,7 +1271,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1285,7 +1285,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1300,7 +1300,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1316,7 +1316,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1360,9 +1360,9 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1686089337, green: 0.1686392725, blue: 0.1686022878, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1377,7 +1377,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1392,7 +1392,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1408,7 +1408,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1423,7 +1423,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1437,7 +1437,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1452,7 +1452,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)
@@ -1468,7 +1468,7 @@ extension _12Lead_Collection_VC {
             // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             // Change the font of the string
             attributedText.apply(font: customFont!, subString: changedString)

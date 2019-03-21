@@ -104,7 +104,21 @@ import UIKit
         
         case AnteriorWall =
         """
-        ddgtg
+        WHAT TO KNOW
+        \rThe anterior wall of the heart is supplied by the left anterior descending artery (LAD), which is a branch of the LCA - Left Coronary Artery.
+        \rLesions of the LAD have detrimental prognostic outcomes and are associated with serious left ventricular damage, mostly due to the larger infarction area.
+        \rINFARCTION PATTERNS
+        \rGenerally, infarctions that are more than 40% of the LV will result in cardiogenic shock.
+        \rAnterior infarctions patterns can expand to the septal and lateral portions of the wall.
+        \rMainly there will be ST segment elevation prominent Q wave formation in the precordial leads
+        (V1-6) and/or the high lateral leads (I and aVL).
+        \rReciprocal ST depression in the inferior leads (mainly III and aVF).
+        • Anterior = V2-5
+        • Anteroseptal = V1-4
+        • Anterolateral = V3-6, Lead I + aVL
+        • Extensive anterior / anterolateral = V1-6, Lead I + aVL
+        
+        \rThe tracing above shows an Anterolateral infarction. Notice the ST elevations in leads V2-V5
         """
         case InferiorWall =
         """

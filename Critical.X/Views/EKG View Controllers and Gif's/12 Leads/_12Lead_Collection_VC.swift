@@ -88,6 +88,8 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
     enum EKGImageNames: String {
         case EkGBasics
         case AxisDeviation
+        case AnteriorWall = "12Lead_AnteriorWall_Image"
+        case AnteriorWallMIEKG
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -116,11 +118,16 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
             //SEt variable for all of the titles in the array to pass
             let selectedTitleData = ekgTitles[(indexPath?.row)!]
             
+            
+            
+            
             //MARK: - OVerview
             if indexPath?.row == 0 {
                 // Set Varibles detailView as the destination to access the variables
                 let ekgDetailView = segue.destination as! _12Lead_DetailViewController
                 
+                // Allow the 12 lead image to be hidden by setting to true
+                ekgDetailView.display12LeadImage = true
             
                 //The string title in the detail View
                 ekgDetailView.titleString = selectedTitleData
@@ -131,6 +138,8 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 // Set the string name of the image to be passed.
                 ekgDetailView.imageString = EKGImageNames.EkGBasics.rawValue
                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 1
                 
                 //Set attributed text
 //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
@@ -142,20 +151,23 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 // Set Varibles detailView as the destination to access the variables
                 let ekgDetailView = segue.destination as! _12Lead_DetailViewController
                 
-                
+                // Allow the 12 lead image to be hidden by setting to true
+                ekgDetailView.display12LeadImage = true
+
                 //The string title in the detail View
                 ekgDetailView.titleString = selectedTitleData
                 
                 // set the function and pass enum attribte
                 ekgDetailView.DescriptionString_1 = miRegions_Attribute(text: EKGDescription.MIRegions.rawValue)
                 
-                // Set the string name of the image to be passed.
+                // Set the string name of the MAIN image to be passed.
                 ekgDetailView.imageString = EKGImageNames.AxisDeviation.rawValue
                 
-                print("\(indexPath) index path was selected")
-                //Set attributed text
-                //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 1
                 
+                print("\(indexPath) index path was selected")
+               
                 }
         
             //MARK: - Axis
@@ -163,25 +175,89 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 // Set Varibles detailView as the destination to access the variables
                 let ekgDetailView = segue.destination as! _12Lead_DetailViewController
                 
+                // Allow the 12 lead image to be hidden by setting to true
+                ekgDetailView.display12LeadImage = true
+
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_1 = leadAxis_Attribute(text: EKGDescription.LeadAxis.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.AxisDeviation.rawValue
+                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 1
+                
+                print("\(indexPath) index path was selected")
+                
+        
+            }
+            
+            //MARK: - Anterior Wall
+            if indexPath?.row == 3 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+            
                 
                 //The string title in the detail View
                 ekgDetailView.titleString = selectedTitleData
                 
-                // set the function and pass enum attribte
-                ekgDetailView.DescriptionString_1 = leadAxis_Attribute(text: EKGDescription.LeadAxis.rawValue)
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_2 = anteriorWall_Attribute(text: EKGDescription.AnteriorWall.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.AnteriorWallMIEKG.rawValue
+                
                 
                 // Set the string name of the image to be passed.
-                ekgDetailView.imageString = EKGImageNames.AxisDeviation.rawValue
+                ekgDetailView.imageString_12Lead = EKGImageNames.AnteriorWall.rawValue
                 
+                // Allow the 12 lead image to be visible by setting to false
+                ekgDetailView.display12LeadImage = false
                 
-                //Set attributed text
-                //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 2
+                
+                print("\(indexPath) index path was selected")
                 
             }
             
-            
-            
+            //MARK: - Inferior Wall
+            if indexPath?.row == 4 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_2 = inferiorWall_Attribute(text: EKGDescription.InferiorWall.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.AnteriorWallMIEKG.rawValue
+                
+                
+                // Set the string name of the image to be passed.
+                ekgDetailView.imageString_12Lead = EKGImageNames.AnteriorWall.rawValue
+                
+                // Allow the 12 lead image to be visible by setting to false
+                ekgDetailView.display12LeadImage = false
+                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 2
+                
+                print("\(indexPath) index path was selected")
+                
+            }
         
+            
+            
+            
+            
+            
         } // If segue.iD
     
     } // PRepare for segue
