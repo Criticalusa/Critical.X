@@ -62,7 +62,7 @@ enum VentilatorModes: String {
     //CPAP/PS
     case CPAP =
     """
-    What to know: Continuous Positive Airway Pressure, CPAP, allows for a constant pressure to be maintained above atmospheric pressure throughout the respiratory cycle. The patient must be able to generate a  breath to use this mode.
+    What to know: Continuous Positive Airway Pressure, CPAP, allows for a constant pressure to be maintained above atmospheric pressure throughout the respiratory cycle. The patient must be able to generate a breath to use this mode.
     \rTo start, set the ventilator respiratory rate is adjusted to zero so that no control breaths are delivered during the cycle.
     \rA CPAP of 5 cmH20 is traditionally started to maintain pressure above atmospheric pressure. CPAP can be provided alone or in combination with pressure support ventilation.
     \rDuring spontaneous ventilations, the patient receives a constant CPAP above atmospheric pressure augmented with a preset pressure support ventilation during each spontaneous breath. Increasing the CPAP level can improve alveolar stability, and improve oxygenation. Adding pressure support (PS) to CPAP can improve ventilation (CO2 removal).
@@ -98,7 +98,7 @@ enum VentilatorModes: String {
     \rFor example, if the Ppeak is 42 and the PEEP is 10, the difference is 32. 75% of 32 is a pressure of 24. Therefore, the initial delta is 24 cmH20.
     \r2. Delta + PEEP = Ppk.
     \r3. Delta = Ppk - PEEP
-    \rIncrease the delta until the desired exhaled tidal volume (Vte) is obtained.  Adjust based on the ABG results. As compliance changes, so will the tidal volume. Be mindful that Ppk = Pplt in PCV mode.
+    \rIncrease the delta until the desired exhaled tidal volume (Vte) is obtained. Adjust based on the ABG results. As compliance changes, so will the tidal volume. Be mindful that Ppk = Pplt in PCV mode.
     \rBottom Line:🎖 Pressure is the control variable, rather than the volume. Inspiration ends when the inspiratory time ends.. A preset pressure is set and is delivered constantly throughout inspiration. Breaths are delivered at a preset rate. As compliance and resistance changes, tidal volumes change (Compliance = volume/pressure).
 
     """
@@ -139,7 +139,7 @@ enum VentilatorModes: String {
     \rThere's an assist window that the ventilator sets to look for spontaneous breathing. If no breath is detected, then a mandatory breath will be given.
     \rCaveat: This is all good if the patient is healthy and strong, however, most intubated patients in the ICU are not. It’s easier for these patients to breath faster, rather than take deep adequate breaths.
     \rTherefore, the quality of breaths that are taken over the set rate are usually inadequate and lead to a higher work of breathing. Adding pressure support can normalize spontaneous tidal volumes, and decrease tachypnea.
-    \rBottom Line:🎖 SIMV will act exactly the same as A/C in paralyzed/heavily sedated patients. If the ventilator settings are set a TV  550 and a RR  12, the patient is guaranteed 12 breaths per/min at 550 mL's.
+    \rBottom Line:🎖 SIMV will act exactly the same as A/C in paralyzed/heavily sedated patients. If the ventilator settings are set a TV 550 and a RR 12, the patient is guaranteed 12 breaths per/min at 550 mL's.
     \rFor any additional breaths over the set rate, the patient will receive the set level of pressure support, and tidal volume will be based on patient effort, airway resistance, and lung compliance.
     
     """
