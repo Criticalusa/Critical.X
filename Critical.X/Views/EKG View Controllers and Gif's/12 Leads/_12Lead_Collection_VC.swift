@@ -78,17 +78,20 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
 
- 
+    //MARK: - Segue ID
     enum SegueID: String {
         case Lead12Segue
         
     }
     
+    //MARK: - EKG Name ENUM
     enum EKGImageNames: String {
         case EkGBasics
+        case AxisDeviation
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+       
         print("Cell \(indexPath.row) tapped")
         
         self.performSegue(withIdentifier: SegueID.Lead12Segue.rawValue, sender: self)
@@ -132,11 +135,56 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 //Set attributed text
 //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
                 
+            }
+            
+            //MARK: - Regions
+            if indexPath?.row == 1 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribte
+                ekgDetailView.DescriptionString_1 = miRegions_Attribute(text: EKGDescription.MIRegions.rawValue)
+                
+                // Set the string name of the image to be passed.
+                ekgDetailView.imageString = EKGImageNames.AxisDeviation.rawValue
+                
+                print("\(indexPath) index path was selected")
+                //Set attributed text
+                //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
+                
+                }
+        
+            //MARK: - Axis
+            if indexPath?.row == 2 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribte
+                ekgDetailView.DescriptionString_1 = leadAxis_Attribute(text: EKGDescription.LeadAxis.rawValue)
+                
+                // Set the string name of the image to be passed.
+                ekgDetailView.imageString = EKGImageNames.AxisDeviation.rawValue
+                
+                
+                //Set attributed text
+                //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
                 
             }
-        }
+            
+            
+            
+        
+        } // If segue.iD
     
-    }
+    } // PRepare for segue
     
     
     

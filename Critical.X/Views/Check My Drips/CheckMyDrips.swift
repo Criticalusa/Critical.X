@@ -9,6 +9,7 @@
 import UIKit
 import McPicker
 
+var drugDosage: Double?
 
 class CheckMyDrips: UIViewController {
     
@@ -20,13 +21,12 @@ class CheckMyDrips: UIViewController {
     @IBOutlet weak var dosage: UITextField!
     @IBOutlet weak var ivBagCc: UITextField!
     
+    @IBOutlet weak var doseSegment: UISegmentedControl!
+    
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var resultView: UIView!
-    @IBOutlet weak var calcDrip: UIButton! {
-        // Takes the button and makes it into a circle
-        didSet {calcDrip.layer.cornerRadius = calcDrip.frame.size.width / 2 }
-    }
+    @IBOutlet weak var calcDrip: UIButton! 
     @IBOutlet weak var closeButton: UIButton! {
         // Takes the button and makes it into a circle
         didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
@@ -38,11 +38,11 @@ class CheckMyDrips: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Set the title of the button
+        calcDrip.setTitle("Click to select units", for: .normal)
+        
         resultView.isHidden = true
     }
-    
-    
-    
     
   
     //MARK: - Picker Variable titles.
@@ -50,15 +50,41 @@ class CheckMyDrips: UIViewController {
         ["g/min", "g/hr", "mg/min", "mg/hr", "mcg/min", "mcg/hr", "mcg/kg/min","mcg/kg/hr"]
     ]
     
+    @IBAction func changeDose(_ sender: Any) {
+        
+        switch doseSegment.selectedSegmentIndex {
+         case 0:
+            dosage.placeholder = "mg"
+
+        case 1:
+            // If Grams are
+            let text = Double (dosage.text!) ?? 0
+            
+            let conversion  = text * 1000
+            
+            drugDosage = conversion
+            
+            dosage.placeholder = "grams"
+            
+            print("Dose is now \(drugDosage)")
+        
+        default:
+            break
+        }
+    }
     
     
     
     // Selecting the picker button
     @IBAction func popOverPicker(_ sender: UIButton) {
         //Properties
-        let drugDosage = Double(dosage.text!)
+        
+        drugDosage = Double (dosage.text!) as! Double
+        
         let fluidInTheIVBag = Double(ivBagCc.text!)
+        
         let ivFlowRate = Double(flowRate.text!)
+        
         let weight = Double(weightTxt.text!)
         
         guard let dse = drugDosage, let bg = fluidInTheIVBag, let f = ivFlowRate else {
@@ -167,6 +193,9 @@ class CheckMyDrips: UIViewController {
                        
                         self.theResultDetailLabel.text = "Please try a new calculation"
                        
+                        self.calcDrip.setTitle("g/min", for: .normal)
+
+                        
                         print("Result is zero")
                     }
                     
@@ -180,7 +209,7 @@ class CheckMyDrips: UIViewController {
                     //Unhides the view
                     self.resultView.isHidden = false
                     
-                    
+
                     print("\(gMin) was calculated for g/Min")
                     
                     self.view.endEditing(true)
@@ -199,6 +228,8 @@ class CheckMyDrips: UIViewController {
                     print("\(mgPerHr_shortened) mg/hr selected")
                     //Animate the Result View
                    
+                    self.self.calcDrip.setTitle("mg/hr", for: .normal)
+
                     self.showAnimate()
                    
                     //Unhides the view
@@ -226,6 +257,9 @@ class CheckMyDrips: UIViewController {
                     //Animate the Result View
                     self.showAnimate()
                     
+                    self.self.calcDrip.setTitle("mg/min", for: .normal)
+
+                    
                     //Unhides the view
                     self.resultView.isHidden = false
                     
@@ -250,6 +284,8 @@ class CheckMyDrips: UIViewController {
                     self.label.text = "\(mcgMin_short)"
                     self.theResultDetailLabel.text = "mcg/min"
                     
+                    self.self.calcDrip.setTitle("mcg/min", for: .normal)
+
                     //Animate the Result View
                     self.showAnimate()
                     //Unhides the view
@@ -276,6 +312,8 @@ class CheckMyDrips: UIViewController {
                     //Unhides the view
                     self.resultView.isHidden = false
                     
+                    self.self.calcDrip.setTitle("mcg/hr", for: .normal)
+
                     // Dismisses the keybord
                     self.view.endEditing(true)
                     
@@ -298,7 +336,10 @@ class CheckMyDrips: UIViewController {
                         //Hiding result view
                     
                         self.resultView.isHidden = true
-                    
+                        
+                        self.calcDrip.setTitle("mcg/kg/min", for: .normal)
+
+                        
                         self.theResultDetailLabel.text = "Enter the weight"
                         // Show the alert
                         ///Red Alert
@@ -376,6 +417,8 @@ class CheckMyDrips: UIViewController {
                     
                     self.theResultDetailLabel.text = "mcg/kg/hr"
                     
+                    self.self.calcDrip.setTitle("mcg/kg/hr", for: .normal)
+
                     //Animate the Result View
                     self.showAnimate()
                     

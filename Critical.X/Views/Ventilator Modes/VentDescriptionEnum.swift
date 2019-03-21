@@ -73,10 +73,11 @@ enum VentilatorModes: String {
     
     
     case IRV = """
-    What to know: Inverse Ratio Ventilation is a subset of pressure control ventilation in which the inspiratory time is extended. IRV's primary indication is in patients with ARDS with refractory hypoxemia or hypercapnia.
-    \rA normal I:E ratio is 1:3. However, in IRV, the ratios: 1:1, 2:1, or 3:1 may be used. This lowers peak airway pressures, but increases mean airway pressures.
-    \rThe result may improve oxygenation but at the expense of compromising venous return and cardiac output - thus is not clear that this mode of ventilation leads to improved survival.
+    What to know: Inverse Ratio Ventilation is a subset of pressure control ventilation in which the inspiratory time is longer than the expiratory time. IRV's primary indication is in patients with ARDS with refractory hypoxemia or hypercapnia.
+    \rA normal I:E ratio is 1:3. However, in IRV, the ratios: 1:1, 2:1, or 3:1 may be used. This increases mean airway pressure, peak airway pressure, and plateau pressure.
+    \rThe result may improve oxygenation but at the expense of compromising venous return and cardiac output. It also may lead to very high plateau pressures - thus is not clear that this mode of ventilation leads to improved survival.
     \rBottom Line:🎖 IRV is very effective in those with decreased Functional Residual Capacity (FRC), which is the amount of air present in the lungs at the END OF EXPIRATION. Inverse Ratio Ventilation does not allow for a spontaneous breathing patient and requires that the patient is heavily sedated and paralyzed.
+
     """
     
     
@@ -85,60 +86,62 @@ enum VentilatorModes: String {
     // PCV
     case PCV = """
     What to know: Pressure Control Ventilation is a pressure – limiting, time – cycled mode in which a constant pressure is maintained throughout the preset inspiratory time (I – time).
-    \rSimply put, the pressure is the endpoint rather than volume. Therefore, the expiratory phase of a breath ends once a preset pressure is reached, regardless of the volume that's delivered.
-    \rAs gas flows through the ventilator circuit and into the patient's lungs, the airway pressure rises, resulting in increased alveolar volume. The result is that delivered airway pressure = intrapulmonary pressure; ending the inspiratory phase.
+    \rSimply put, the pressure is the endpoint rather than volume. The delivered tidal volume will be based on the pressure level, and the lung compliance and airway resistance of the patient.
+    \rWhen a pressure controlled breath is delivered, airway pressure and intrapulmonary pressure equalize, creating a tidal volume. This inspiratory pressure is maintained by the ventilator until the end of the inspiratory time, then exhalation occurs.
     \rClinicians often change the ventilation mode from volume controlled (CMV, A/C, or SIMV) to pressure control ventilation if adequate ventilation or oxygenation goals are not achieved. Or, if excessive peak airway pressures are required to optimize gas exchange.
     \rPatients with Acute Lung Injury (ALI) or Acute Respiratory Distress Syndrome (ARDS) often require pressure control ventilation. This is primarily due to the difficulties in optimizing ventilation/perfusion goals with conventional volume control modes.
-    \rSuggested Settings: Consider switching to pressure control when the PIP approximates 40 cmH20 on 10 PEEP.
+    \rSuggested Settings: Consider switching to pressure control when the PIP approximates 30 cmH20 on 10 PEEP.
     \r• Obtain a baseline ABG.
     \r• In PC maintain the same tidal volume, respiratory rate, FiO2, I: E ratio and PEEP settings as previously set in volume.
     \r• Setting the pressure: There are a few ways to get to the set delta (pressure).
     \r1. The delta (pressure) is obtained taking 75% of the difference between the Ppeak and PEEP, while the patient is on volume control.
     \rFor example, if the Ppeak is 42 and the PEEP is 10, the difference is 32. 75% of 32 is a pressure of 24. Therefore, the initial delta is 24 cmH20.
-    \r2. Delta + PEEP should be equal to the Pplat - 2.
-    \r3. Delta = Pplat - PEEP
-    \rIncrease the delta until the desired exhaled tidal volume (Vte) is obtained.  Adjust based on the ABG results. As compliance changes, so will the tidal volume.
-    \rBottom Line:🎖 Pressure is the endpoint rather than the volume. Inspiration ends when the set pressure is met. A preset pressure is set and is delivered constantly throughout inspiration. Breaths are delivered at a preset rate. As compliance changes, tidal volumes change (Compliance = volume/pressure).
-    
+    \r2. Delta + PEEP = Ppk.
+    \r3. Delta = Ppk - PEEP
+    \rIncrease the delta until the desired exhaled tidal volume (Vte) is obtained.  Adjust based on the ABG results. As compliance changes, so will the tidal volume. Be mindful that Ppk = Pplt in PCV mode.
+    \rBottom Line:🎖 Pressure is the control variable, rather than the volume. Inspiration ends when the inspiratory time ends.. A preset pressure is set and is delivered constantly throughout inspiration. Breaths are delivered at a preset rate. As compliance and resistance changes, tidal volumes change (Compliance = volume/pressure).
+
     """
     
     
     
     // PRVC
     case PRVC = """
-    What to know: Pressure Regulated Volume Control is a dual-controlled ventilation mode in which the ventilator tries to achieve the set volume by increasing the pressure flow. It combines the advantages of PCV and AC.
-    \rThe breaths can either be controlled or assisted by the ventilator. Constant pressure is applied during inspiration regardless whether the breath is assisted or controlled which results in improved oxygenation due to the decelerating inspiratory flow pattern.
-    \r
-    \rBottom Line:🎖 PRVC prevents hyopventilation, limits volutrauma/barotrauma, guarantees a tidal volume by increasing the pressure during inspiration and maintains that pressure in the face of decreased pulmonary compliance or resistance.
-    \rThe first breath is volume controlled. After that, the ventilator estimates the pressure/volume relationship for each breath and adjusts the level of pressure control.
-    \rThe subsequent breaths will be PC at the Pplat. If the PIP reaches the set upper limit - 5 cmH20, then the breath will terminate.
-    \rAlthough there's a constant pressure administered during the breath, the pressure adjusts for each breath as compliance increases or decreases.
-    \rDisadvantages are that this mode is less suitable with those who have asthma. The tidal volumes are variable and patient effort is intermittent. Finally, the pressure delivered is solely based on the last tidal volume delivered.
+    What to know: Pressure Regulated Volume Control is a dual-controlled ventilation mode in which the ventilator tries to achieve the set volume by managing delta (driving) pressure (and thus flow). It combines the advantages of PCV and AC.
+    \rThe breaths can either be controlled or assisted by the ventilator. Constant pressure is applied during inspiration regardless whether the breath is assisted or controlled which results in improved oxygenation due to the decelerating inspiratory flow pattern. Some newer ventilators offer a PRVC/SIMV mode, which allows pressure support to be added during spontaneous efforts.
+     \rDisadvantages are that this mode is less suitable with those who have high airway resistance (asthma) or severly low lung compliance (ARDS). The tidal volumes are variable and patient effort is intermittent. PRVC can promote asynchrony in patients that have a high inspiratory flow demand – the patient wants more, and the machine will deliver less. Finally, the pressure delivered is solely based on the last tidal volume delivered.
+    \rBottom Line:🎖 PRVC can prevent hypoventilation, limit volutrauma/barotrauma, and guarantee a more consistent tidal volume by managing the pressure during inspiration, in the face of increased/decreased pulmonary compliance or resistance.
+    \rOn some ventilators, the first breath is volume controlled, and the machine performs an inspiratory hold to determine plateau pressure. Other ventilators will begin with a preset pressure control level. After that, the ventilator estimates the pressure/volume relationship for each breath and adjusts the level of pressure control to maintain exhaled tidal volumes.
+    \rThe subsequent breaths will be PC, and thus the Pplat. PRVC modes have a built-in pressure limit (pop-off, or release) – depending on the ventilator, the pressure limit is 5 or 10 cmH2O below the peak airway pressure alarm setting. This is a safety mechanism within the mode, that attempts to blunt high airway pressure and tidal volumes, thus limiting volutrauma/barotrauma.
+    \rAlthough there's a constant pressure administered during the breath, the pressure adjusts for each breath as compliance and resistance increases or decreases.
+    
     """
     
     
     
     // PSV
     case PSV = """
-    \rWhat to know: Pressure Support Ventilation can be used alone or added to SIMV. This mode of ventilation was designed to deliver ventilatory support by augmenting the tidal volume of a patient while maintaining gas exchange, decreasing the work of breathing and increasing overall comfort. It does not provide full ventilatory support (unless pressures are at high levels - see below) and allows the patient to control their respiratory rate, and partially the inspiratory time and tidal volume, thus, allowing the patient to breathe in somewhat of a physiological way.
-    \rThe patient needs to be spontaneously breathing on their own in this mode. A negative pressure effort triggers each breath. This mode is standard in weaning the patient off the ventilator by augmenting pressure and decreasing the work of breathing.
-    \rWhen the patient triggers a breath, the ventilator delivers a preset inspiratory pressure around 5-20 cmH20, typically. PEEP is applied during exhalation, which overall decreases the patients work of breathing
-    
+    What to know: Pressure Support Ventilation can be used alone or added to SIMV. This mode of ventilation is designed to deliver ventilatory support by augmenting the tidal volume and decreasing the work of breathing of a patient while maintaining gas exchange, thus increasing overall comfort.
+    \rIt does not provide full ventilatory support (unless pressures are at high levels - see below) and allows the patient to control their respiratory rate, and partially the inspiratory time and tidal volume, thus, allowing the patient to breathe in somewhat of a physiological way.
+    \rThe patient needs to be spontaneously breathing on their own in this mode. A negative pressure effort or flow sensitivity triggers each breath. This mode is standard in weaning the patient off the ventilator by augmenting pressure and decreasing the work of breathing.
+    \rWhen the patient triggers a breath, the ventilator delivers a preset inspiratory pressure around 5-20 cmH20, typically. The achieved tidal volume will be based on patient effort, lung compliance, and airway resistance. PEEP is applied during exhalation, which overall decreases the patients work of breathing.
     \rBottom Line:🎖 A preset inspiratory pressure is set which assists the patient's ventilatory effort. Every breath is assisted, and the pressure support is terminated at the end of inspiration. Only a back-up RR rate is set in the event of apnea.
     \rThe patient determines the TV, inspiratory time and respiratory rate. Neither the tidal volume or minute volume is guaranteed. If there's a need to change the TV or MV, the pressure needs to be adjusted. Low-pressure support levels (5-10) usually are sufficient for a patient to overcome any resistance. When pressures are higher (10-40 cmH20) it can function solely as a ventilation mode.
+
     """
     
     
     
     // SIMV
     case SIMV = """
-    What to know: Synchronized Intermittent Mandatory Ventilation (SIMV) combines breaths and supported breaths. The mandatory breaths can either can be volume or pressure controlled, but most common they are volume controlled breaths.
+    What to know: Synchronized Intermittent Mandatory Ventilation (SIMV) combines breaths and supported breaths. The mandatory breaths can either can be volume or pressure controlled, or PRVC.
     \rIn this mode, the patient is allowed to breathe spontaneously. The ventilator will deliver a mandatory breath in synch with the patients breathing effort.
-    \rThere's usually an assist window that the ventilator sets to look for spontaneous breathing. If no breath is detected, then a mandatory breath will be given.
-    \rCaveat: This is all good if the patient is healthy and strong, however, most intubated patients in the ICU are not. Its easier for these patients to breath faster, rather than take deep adequate breaths.
-    \rTherefore, the quality of breaths that are taken over the set rate are usually inadequate and lead to a higher work of breathing.
-    \rBottom Line:🎖 SIMV will act exactly the same as A/C in paralyzed patients. If the ventilator settings are set a TV  550 and a RR  12, the patient is guaranteed 12 breaths per/min at 550 mL's.
-    \rFor any additional breaths over the set rate, the patient will only get whatever volumes they pull and the ventilator will deliver a pressure supported breath for each assisted breath above the pre-set rate.
+    \rThere's an assist window that the ventilator sets to look for spontaneous breathing. If no breath is detected, then a mandatory breath will be given.
+    \rCaveat: This is all good if the patient is healthy and strong, however, most intubated patients in the ICU are not. It’s easier for these patients to breath faster, rather than take deep adequate breaths.
+    \rTherefore, the quality of breaths that are taken over the set rate are usually inadequate and lead to a higher work of breathing. Adding pressure support can normalize spontaneous tidal volumes, and decrease tachypnea.
+    \rBottom Line:🎖 SIMV will act exactly the same as A/C in paralyzed/heavily sedated patients. If the ventilator settings are set a TV  550 and a RR  12, the patient is guaranteed 12 breaths per/min at 550 mL's.
+    \rFor any additional breaths over the set rate, the patient will receive the set level of pressure support, and tidal volume will be based on patient effort, airway resistance, and lung compliance.
+    
     """
     
 }
