@@ -27,22 +27,22 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
         EKGTitleLabel.animate(text: "12 Lead EKG Morphology, Assessments & Criteria", duration: 1, completion: nil)
 
         ekgTitles = ["Lead Overview", //0
-                    "Lead Axis", // 1
-                     "Anterior Wall",// 2
-                     "Inferior Wall",// 3
-                     "Lateral Wall",// 4
-                     "Brugada's Syndrome",// 5
-                     "Wellen's Syndrome",// 6
-                     "Sgarbossa's Criteria"] //7
+            "Lead Axis", // 1
+            "Anterior & Septal",// 2
+            "Inferior Wall",// 3
+            "Lateral Wall",// 4
+            "Brugada's",// 5
+            "Wellen's",// 6
+            "Sgarbossa's"] //7
         
         ekgSubtitles = ["Lead assessment and morphology",
                         "Learn the axis of the heart",
-                        "Overview of an Anterior Wall Infarction",
-                        "Overview of an Inferior Wall Infarction",
+                        "Overview of the Anterior and Septal Wall",
+                        "Overview of an Inferior Wall  Infarction",
                         "Overview of a Lateral Wall Infarction",
-                        "Diagnosing Criteria",
-                        "Diagnosing Criteria",
-                        "Diagnosing Criteria",]
+                        "Syndrome",
+                        "Syndrome",
+                        "Criteria",]
     }
 
   
@@ -90,6 +90,11 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
         case AnteriorWallMIEKG
         case BrugadaSyndrome
         case wellensEKG
+        case InferiorWallHeart
+        case InferiorWallMInew
+        case LateralWallEkg
+        case LateralWallHeart
+        case sgarbossas
     }
     
     
@@ -217,11 +222,11 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 ekgDetailView.DescriptionString_2 = inferiorWall_Attribute(text: EKGDescription.InferiorWall.rawValue)
                 
                 // Set the string name of the MAIN image to be passed.
-                ekgDetailView.imageString = EKGImageNames.AnteriorWallMIEKG.rawValue
+                ekgDetailView.imageString = EKGImageNames.InferiorWallMInew.rawValue
                 
                 
                 // Set the string name of the image to be passed.
-                ekgDetailView.imageString_12Lead = EKGImageNames.AnteriorWall.rawValue
+                ekgDetailView.imageString_12Lead = EKGImageNames.InferiorWallHeart.rawValue
                 
                 // Allow the 12 lead image to be visible by setting to false
                 ekgDetailView.display12LeadImage = false
@@ -244,14 +249,14 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 ekgDetailView.titleString = selectedTitleData
                 
                 // set the function and pass enum attribute
-                ekgDetailView.DescriptionString_2 = inferiorWall_Attribute(text: EKGDescription.InferiorWall.rawValue)
+                ekgDetailView.DescriptionString_2 = lateralWall_Attribute(text: EKGDescription.LateralWall.rawValue)
                 
                 // Set the string name of the MAIN image to be passed.
-                ekgDetailView.imageString = EKGImageNames.AnteriorWallMIEKG.rawValue
+                ekgDetailView.imageString = EKGImageNames.LateralWallEkg.rawValue
                 
                 
                 // Set the string name of the image to be passed.
-                ekgDetailView.imageString_12Lead = EKGImageNames.AnteriorWall.rawValue
+                ekgDetailView.imageString_12Lead = EKGImageNames.LateralWallHeart.rawValue
                 
                 // Allow the 12 lead image to be visible by setting to false
                 ekgDetailView.display12LeadImage = false
@@ -304,6 +309,33 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
                 
                 // Set the string name of the MAIN image to be passed.
                 ekgDetailView.imageString = EKGImageNames.wellensEKG.rawValue
+                
+                // Allow the 12 lead image to be visible by setting to false
+                ekgDetailView.display12LeadImage = true
+                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 1
+                
+                print("\(indexPath) index path was selected")
+                
+            }
+            
+            
+            
+            //MARK: - Sgarbossas
+            if indexPath?.row == 7 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_1 = sgarbossas_Attribute(text: EKGDescription.SgarbossasCriteria.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.sgarbossas.rawValue
                 
                 // Allow the 12 lead image to be visible by setting to false
                 ekgDetailView.display12LeadImage = true

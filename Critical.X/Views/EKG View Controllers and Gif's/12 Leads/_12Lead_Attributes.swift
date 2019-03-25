@@ -592,7 +592,7 @@ extension _12Lead_Collection_VC {
         let E = "Anterolateral = V3-6, Lead I + aVL"
         let F = "Extensive anterior / anterolateral = V1-6, Lead I + aVL"
         let G = "The tracing above shows an Anterolateral infarction. Notice the ST elevations in leads V2-V5"
-        let H = ""
+        let H = "Progressive loss of R wave progression."
         
         // Change the text here
         if text.contains(A) {
@@ -661,7 +661,7 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -737,14 +737,9 @@ extension _12Lead_Collection_VC {
         // Global string variable
         var changedString = String()
         
-        let A = ""
-        let B = ""
-        let C = ""
-        let D = ""
-        let E = ""
-        let F = ""
-        let G = ""
-        let H = ""
+        let A = "WHAT TO KNOW"
+        let G = "RCA or LCx"
+       
         
         // Change the text here
         if text.contains(A) {
@@ -775,98 +770,6 @@ extension _12Lead_Collection_VC {
             attributedText.apply(font: customFont!, subString: changedString)
             
         }
-        
-        // Change the text here
-        if text.contains(H) {
-            changedString = H
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
-        // Change the text here
-        if text.contains(F) {
-            changedString = F
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
-        if text.contains(C) {
-            changedString = C
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        if text.contains(B) {
-            changedString = B
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-            
-        }
-        
-        if text.contains(D) {
-            changedString = D
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-            
-        }
-        
-        
-        if text.contains(E) {
-            changedString = E
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
         
         
         return attributedText
@@ -889,14 +792,10 @@ extension _12Lead_Collection_VC {
         // Global string variable
         var changedString = String()
         
-        let A = ""
-        let B = ""
-        let C = ""
-        let D = ""
-        let E = ""
-        let F = ""
-        let G = ""
-        let H = ""
+        let A = "WHAT TO KNOW"
+        let B = "INFARCTION PATTERNS"
+        let C = "(LAD) or the left circumflex artery (LCx)"
+        
         
         // Change the text here
         if text.contains(A) {
@@ -912,60 +811,13 @@ extension _12Lead_Collection_VC {
             attributedText.apply(font: customFont!, subString: changedString)
             
         }
-        
-        // Change the text here
-        if text.contains(G) {
-            changedString = G
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        // Change the text here
-        if text.contains(H) {
-            changedString = H
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
-        // Change the text here
-        if text.contains(F) {
-            changedString = F
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
+    
         if text.contains(C) {
             changedString = C
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -989,36 +841,7 @@ extension _12Lead_Collection_VC {
             
         }
         
-        if text.contains(D) {
-            changedString = D
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-            
-        }
-        
-        
-        if text.contains(E) {
-            changedString = E
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
+    
         
         
         return attributedText
@@ -1046,10 +869,7 @@ extension _12Lead_Collection_VC {
         let C = "Type III:"
         let D = "WHAT TO KNOW"
         let E = "BOTTOM LINE"
-        let F = ""
-        let G = ""
-        let H = ""
-        
+      
         // Change the text here
         if text.contains(A) {
             changedString = A
@@ -1150,13 +970,7 @@ extension _12Lead_Collection_VC {
         var changedString = String()
         
         let A = "WHAT TO KNOW"
-        let B = ""
-        let C = ""
-        let D = ""
-        let E = ""
-        let F = ""
-        let G = ""
-        let H = ""
+
         
         // Change the text here
         if text.contains(A) {
@@ -1164,21 +978,6 @@ extension _12Lead_Collection_VC {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        // Change the text here
-        if text.contains(G) {
-            changedString = G
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
             attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1187,98 +986,7 @@ extension _12Lead_Collection_VC {
             attributedText.apply(font: customFont!, subString: changedString)
             
         }
-        
-        // Change the text here
-        if text.contains(H) {
-            changedString = H
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
-        // Change the text here
-        if text.contains(F) {
-            changedString = F
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
-        if text.contains(C) {
-            changedString = C
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        if text.contains(B) {
-            changedString = B
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-            
-        }
-        
-        if text.contains(D) {
-            changedString = D
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-            
-        }
-        
-        
-        if text.contains(E) {
-            changedString = E
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
+      
         
         
         return attributedText
@@ -1301,14 +1009,12 @@ extension _12Lead_Collection_VC {
         // Global string variable
         var changedString = String()
         
-        let A = ""
-        let B = ""
-        let C = ""
-        let D = ""
-        let E = ""
-        let F = ""
-        let G = ""
-        let H = ""
+        let A = "WHAT TO KNOW"
+        let B = "CRITERIA"
+        let C = "ST elevation > 1 mm and in the same direction (concordant) with the QRS complex:  5 points"
+        let D = "ST depression > 1 mm in leads V1, V2, or V3:  3 points"
+        let E = "ST elevation > 5 mm and in the opposite direction (discordant) with the QRS.: 2 points"
+      
         
         // Change the text here
         if text.contains(A) {
@@ -1325,59 +1031,14 @@ extension _12Lead_Collection_VC {
             
         }
         
-        // Change the text here
-        if text.contains(G) {
-            changedString = G
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        // Change the text here
-        if text.contains(H) {
-            changedString = H
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
-        
-        // Change the text here
-        if text.contains(F) {
-            changedString = F
-            // Set the string to the changed String so its set at the end
-            
-            // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
-            //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
-            let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-            
-            // Change the font of the string
-            attributedText.apply(font: customFont!, subString: changedString)
-            
-        }
-        
+       
         
         if text.contains(C) {
             changedString = C
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
