@@ -43,7 +43,7 @@ class RSIMain: UIViewController {
         
         
         // Takes the button and makes it into a circle
-        closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
+       // closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         
     }
     

@@ -27,17 +27,15 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
         EKGTitleLabel.animate(text: "12 Lead EKG Morphology, Assessments & Criteria", duration: 1, completion: nil)
 
         ekgTitles = ["Lead Overview", //0
-                     "MI Regions",//1
-                     "Lead Axis", // 2
-                     "Anterior Wall",// 3
-                     "Inferior Wall",// 4
-                     "Lateral Wall",// 5
-                     "Brugada Syndrome",// 6
-                     "Wellen's Syndrome",// 7
-                     "Sgarbossa Criteria"] //8
+                    "Lead Axis", // 1
+                     "Anterior Wall",// 2
+                     "Inferior Wall",// 3
+                     "Lateral Wall",// 4
+                     "Brugada's Syndrome",// 5
+                     "Wellen's Syndrome",// 6
+                     "Sgarbossa's Criteria"] //7
         
         ekgSubtitles = ["Lead assessment and morphology",
-                        "Blood Supply and Infarction Regions",
                         "Learn the axis of the heart",
                         "Overview of an Anterior Wall Infarction",
                         "Overview of an Inferior Wall Infarction",
@@ -90,7 +88,12 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
         case AxisDeviation
         case AnteriorWall = "12Lead_AnteriorWall_Image"
         case AnteriorWallMIEKG
+        case BrugadaSyndrome
+        case wellensEKG
     }
+    
+    
+    
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
        
@@ -145,33 +148,10 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
 //                detailView.vadChildDescription = changeAttribute_OverView(text: VAD_Explanaton.Overview.display())
                 
             }
-            
-            //MARK: - Regions
-            if indexPath?.row == 1 {
-                // Set Varibles detailView as the destination to access the variables
-                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
-                
-                // Allow the 12 lead image to be hidden by setting to true
-                ekgDetailView.display12LeadImage = true
-
-                //The string title in the detail View
-                ekgDetailView.titleString = selectedTitleData
-                
-                // set the function and pass enum attribte
-                ekgDetailView.DescriptionString_1 = miRegions_Attribute(text: EKGDescription.MIRegions.rawValue)
-                
-                // Set the string name of the MAIN image to be passed.
-                ekgDetailView.imageString = EKGImageNames.AxisDeviation.rawValue
-                
-                // Set the ID so that we can switch on it for scrolling.
-                ekgDetailView.identifier = 1
-                
-                print("\(indexPath) index path was selected")
-               
-                }
+           
         
             //MARK: - Axis
-            if indexPath?.row == 2 {
+            if indexPath?.row == 1 {
                 // Set Varibles detailView as the destination to access the variables
                 let ekgDetailView = segue.destination as! _12Lead_DetailViewController
                 
@@ -196,7 +176,7 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
             }
             
             //MARK: - Anterior Wall
-            if indexPath?.row == 3 {
+            if indexPath?.row == 2 {
                 // Set Varibles detailView as the destination to access the variables
                 let ekgDetailView = segue.destination as! _12Lead_DetailViewController
             
@@ -225,7 +205,7 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
             }
             
             //MARK: - Inferior Wall
-            if indexPath?.row == 4 {
+            if indexPath?.row == 3 {
                 // Set Varibles detailView as the destination to access the variables
                 let ekgDetailView = segue.destination as! _12Lead_DetailViewController
                 
@@ -254,7 +234,86 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
             }
         
             
+            //MARK: - lateral Wall
+            if indexPath?.row == 4 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_2 = inferiorWall_Attribute(text: EKGDescription.InferiorWall.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.AnteriorWallMIEKG.rawValue
+                
+                
+                // Set the string name of the image to be passed.
+                ekgDetailView.imageString_12Lead = EKGImageNames.AnteriorWall.rawValue
+                
+                // Allow the 12 lead image to be visible by setting to false
+                ekgDetailView.display12LeadImage = false
+                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 2
+                
+                print("\(indexPath) index path was selected")
+                
+            }
             
+            
+            
+            //MARK: - Brugadas
+            if indexPath?.row == 5 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_1 = brugada_Attribute(text: EKGDescription.BrugadaSyndrome.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.BrugadaSyndrome.rawValue
+                
+                // Allow the 12 lead image to be visible by setting to false
+                ekgDetailView.display12LeadImage = true
+                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 1
+                
+                print("\(indexPath) index path was selected")
+                
+            }
+            
+            //MARK: - Wellens
+            if indexPath?.row == 6 {
+                // Set Varibles detailView as the destination to access the variables
+                let ekgDetailView = segue.destination as! _12Lead_DetailViewController
+                
+                
+                //The string title in the detail View
+                ekgDetailView.titleString = selectedTitleData
+                
+                // set the function and pass enum attribute
+                ekgDetailView.DescriptionString_1 = wellens_Attribute(text: EKGDescription.WellensCriteria.rawValue)
+                
+                // Set the string name of the MAIN image to be passed.
+                ekgDetailView.imageString = EKGImageNames.wellensEKG.rawValue
+                
+                // Allow the 12 lead image to be visible by setting to false
+                ekgDetailView.display12LeadImage = true
+                
+                // Set the ID so that we can switch on it for scrolling.
+                ekgDetailView.identifier = 1
+                
+                print("\(indexPath) index path was selected")
+                
+            }
             
             
             

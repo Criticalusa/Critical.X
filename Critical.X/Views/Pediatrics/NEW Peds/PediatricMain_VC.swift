@@ -29,7 +29,7 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
     
     
     // Declare some random colors to use
-    let randomColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1) ,#colorLiteral(red: 0.3300000131, green: 0.5500000119, blue: 0.8700000048, alpha: 1) ,#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1) ,#colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1) , #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1) , #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1) ]
+    let randomColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1) ,#colorLiteral(red: 0.3300000131, green: 0.5500000119, blue: 0.8700000048, alpha: 1) ,#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1) ,#colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1) , #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1) , #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1) ]
 
     // variable arrays for the collectionView 
     var pediatricWeight = [String]()
@@ -41,7 +41,7 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
         // Animate the title label
         titleAnimate()
         
-        // Randomly change the color of the lable
+        // Randomly change the color of the lable referencing the extension
         let pickAColor = UIColor.random(from: randomColors)
         
         // Set the title label to the changed color

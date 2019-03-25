@@ -56,7 +56,7 @@ import UIKit
         
         case LeadAxis =
         """
-        Overview:  The cardiac axis generally can be frustrating to learn. Simply put, the electrical axis is the direction in which the electrical activity flows through the heart.
+        Overview: The cardiac axis generally can be frustrating to learn. Simply put, the electrical axis is the direction in which the electrical activity flows through the heart.
         \rAlthough there are several different ways of determining the cardiac axis, we will illustrate the normal axis by comparing the impulse direction of depolarization to the clock position.
         \rWhen looking at the heart from the front, the general direction of the depolarization should go from roughly the 11 o'clock position (where the SA impulse arises) to the 5 o'clock position.
         \rRemember that the heart is rotated in the chest which places the apex at the 5 o'clock position, which is directed towards lead II, lead I is directed towards the 3 o'clock position, and lead III is directed towards the 7 o'clock position.
@@ -117,12 +117,13 @@ import UIKit
         • Anteroseptal = V1-4
         • Anterolateral = V3-6, Lead I + aVL
         • Extensive anterior / anterolateral = V1-6, Lead I + aVL
+        • Progressive loss of R wave progression.
         
         \rThe tracing above shows an Anterolateral infarction. Notice the ST elevations in leads V2-V5
         """
         case InferiorWall =
         """
-        ddffgger
+        Inferior Wall MI's are common. The right coronary artery usually supplies this part of the heart. In approximately 20% of all of these cases, the circumflex artery eraps around and supplies the inferior wall.
         """
         case LateralWall =
         """
@@ -130,11 +131,21 @@ import UIKit
         """
         case BrugadaSyndrome =
         """
-        dfgegr
+        WHAT TO KNOW
+        \rBrugada's Syndrome is a rare autosomal dominant genetic disorder by which a sodium channelopathy occurs. Since there's a direct mutation in the sodium channels, the outcome is usually syncope,  VT / VF arrest, and sudden cardiac death during sleep.
+        \rBOTTOM LINE
+        \rThere are 3 distinct ST segment changes in the precordial leads, V1-V3 that should be noted in individuals with suspected Brugada's Syndrome.
+        \rType I: Lead V1 has a “coved” ST segment elevation of at least 2 millimeters, followed by a negative T wave.
+        \rType II: There is a “saddleback” appearance of the ST segment in lead V1 with ST segment elevation of at least 2 millimeters; this can be present in normal individuals as well.
+        \rType III: Features of type I (coved) or type II (saddleback) with less than 2 millimeters of ST segment elevation.
         """
         case WellensCriteria =
         """
-        dfgegfsfssdr
+        WHAT TO KNOW
+        \rWellen's syndrome is characterized by acute biphasic T waves that are seen in leads V1-V3 or deep symmetric inverted T-waves in V1-V6, I, and aVL without the presence of ST-segment elevation inversions after complaints of angina.
+        \rThis is indicative of severe proximal left anterior descending stenosis.
+        \rApproximately 10% of patients with ACS will have Wellen's, and out of that 10%, 75% will develop a massive anterior wall MI.
+        \rPatients have reported having severe angina 24-48 hours prior to the EKG findings.
         """
         case SgarbossasCriteria =
         """
