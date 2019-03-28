@@ -487,7 +487,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -501,7 +501,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -517,7 +517,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -547,7 +547,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.2300000042, green: 0.3000000119, blue: 0.3700000048, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -562,7 +562,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.2419321835, green: 0.4332072735, blue: 0.5136573911, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -577,7 +577,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -592,7 +592,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -607,7 +607,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -670,7 +670,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.8879843354, green: 0.5014117956, blue: 0, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -684,7 +684,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.8879843354, green: 0.5014117956, blue: 0, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -700,7 +700,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -713,7 +713,7 @@ extension ABGViewController {
             changedString = respAlkalosisSubAcute
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -727,7 +727,7 @@ extension ABGViewController {
             changedString = superimposedMetabolicAcidosis
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -741,7 +741,7 @@ extension ABGViewController {
             changedString = compensatingnicely
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -754,7 +754,7 @@ extension ABGViewController {
             changedString = currentC02Value
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -766,7 +766,7 @@ extension ABGViewController {
             changedString = correctC02
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -778,7 +778,7 @@ extension ABGViewController {
             changedString = expectedHC03Language
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
@@ -790,7 +790,7 @@ extension ABGViewController {
             changedString = checkUrineChloride
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1202,7 +1202,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1218,7 +1218,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1233,7 +1233,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1249,7 +1249,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1265,7 +1265,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1280,7 +1280,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1296,7 +1296,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1312,7 +1312,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1328,7 +1328,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1343,7 +1343,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1359,7 +1359,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1373,7 +1373,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1389,7 +1389,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1405,7 +1405,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
@@ -1421,7 +1421,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             
             // declare the font of the singled out text
@@ -1437,7 +1437,7 @@ extension ABGViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: changedString)
             attributedText.underLine(subString: changedString)
             
             // declare the font of the singled out text

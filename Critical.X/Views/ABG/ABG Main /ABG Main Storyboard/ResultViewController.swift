@@ -85,7 +85,7 @@ class ResultViewController: UIViewController {
             let customFont  = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             
             //1  Change the color of a word in the string
-            attributedText_A.apply(color: #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1), subString: "Blood Gas Analysis:")
+            attributedText_A.apply(color: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), subString: "Blood Gas Analysis:")
             
             attributedText_A.apply(font: customFont!, subString: "Blood Gas Analysis:")
             
@@ -97,37 +97,37 @@ class ResultViewController: UIViewController {
             let attributedText = NSMutableAttributedString.getAttributedString(fromString: normal)
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "POSITIVE ANION GAP:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "POSITIVE ANION GAP:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "POSITIVE ANION GAP:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "GLYCOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "GLYCOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GLYCOL:")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "OXOPROLINE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "OXOPROLINE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "OXOPROLINE:")
             //5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "LACTIC ACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "LACTIC ACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "LACTIC ACIDOSIS:")
             //6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "D-LACTATE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "D-LACTATE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "D-LACTATE")
             //7
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METHANOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METHANOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METHANOL:")
             //8
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "ASPIRIN:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "ASPIRIN:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "ASPIRIN:")
             //9
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "RENAL FAILURE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "RENAL FAILURE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "RENAL FAILURE:")
             //10
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "KETOACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "KETOACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "KETOACIDOSIS:")
             
             //11
@@ -150,37 +150,37 @@ class ResultViewController: UIViewController {
             let attributedText = NSMutableAttributedString.getAttributedString(fromString: metabolicAcidosis)
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "POSITIVE ANION GAP:")
+            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString: "POSITIVE ANION GAP:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "POSITIVE ANION GAP:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "GLYCOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "GLYCOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GLYCOL:")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "OXOPROLINE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "OXOPROLINE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "OXOPROLINE:")
             //5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "LACTIC ACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "LACTIC ACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "LACTIC ACIDOSIS:")
             //6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "D-LACTATE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "D-LACTATE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "D-LACTATE")
             //7
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METHANOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METHANOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METHANOL:")
             //8
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "ASPIRIN:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "ASPIRIN:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "ASPIRIN:")
             //9
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "RENAL FAILURE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "RENAL FAILURE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "RENAL FAILURE:")
             //10
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "KETOACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "KETOACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "KETOACIDOSIS:")
             
             //11
@@ -205,37 +205,37 @@ class ResultViewController: UIViewController {
             let attributedText = NSMutableAttributedString.getAttributedString(fromString: metabolicAcidosis)
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "POSITIVE ANION GAP:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "POSITIVE ANION GAP:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "POSITIVE ANION GAP:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "GLYCOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "GLYCOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GLYCOL:")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "OXOPROLINE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "OXOPROLINE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "OXOPROLINE:")
             //5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "LACTIC ACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "LACTIC ACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "LACTIC ACIDOSIS:")
             //6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "D-LACTATE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "D-LACTATE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "D-LACTATE")
             //7
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METHANOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METHANOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METHANOL:")
             //8
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "ASPIRIN:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "ASPIRIN:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "ASPIRIN:")
             //9
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "RENAL FAILURE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "RENAL FAILURE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "RENAL FAILURE:")
             //10
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "KETOACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "KETOACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "KETOACIDOSIS:")
             
             //11
@@ -261,37 +261,37 @@ class ResultViewController: UIViewController {
             let attributedText = NSMutableAttributedString.getAttributedString(fromString: metabolicAcidosis)
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "POSITIVE ANION GAP:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "POSITIVE ANION GAP:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "POSITIVE ANION GAP:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "NORMAL ANION GAP METABOLIC ACIDOSIS")
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "GLYCOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "GLYCOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GLYCOL:")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "OXOPROLINE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "OXOPROLINE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "OXOPROLINE:")
             //5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "LACTIC ACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "LACTIC ACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "LACTIC ACIDOSIS:")
             //6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "D-LACTATE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "D-LACTATE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "D-LACTATE")
             //7
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METHANOL:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METHANOL:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METHANOL:")
             //8
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "ASPIRIN:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "ASPIRIN:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "ASPIRIN:")
             //9
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "RENAL FAILURE:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "RENAL FAILURE:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "RENAL FAILURE:")
             //10
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "KETOACIDOSIS:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "KETOACIDOSIS:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "KETOACIDOSIS:")
             
             //11
@@ -318,28 +318,28 @@ class ResultViewController: UIViewController {
             
             // What to change inside of the explanation ??
             // 1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METABOLIC ALKALOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METABOLIC ALKALOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METABOLIC ALKALOSIS")
             
             // 2
-            attributedText.apply(color: #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1), subString: "GROE")
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: "GROE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GROE")
             
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "G- GIT excess acid loss")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "G- GIT excess acid loss")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "G- GIT excess acid loss")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "R- RENAL EXCESS ACID LOSS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "R- RENAL EXCESS ACID LOSS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "R- RENAL EXCESS ACID LOSS")
             
             // 5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "O- OVERDOSE OF BASE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "O- OVERDOSE OF BASE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "O- OVERDOSE OF BASE")
             
             // 6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "E- ENDOCRINE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "E- ENDOCRINE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "E- ENDOCRINE")
             
             // Set the label to the changed attributed string
@@ -356,28 +356,28 @@ class ResultViewController: UIViewController {
             let attributedText = NSMutableAttributedString.getAttributedString(fromString: metabolicAlk)
             
             // 1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METABOLIC ALKALOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METABOLIC ALKALOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METABOLIC ALKALOSIS")
             
             // 2
-            attributedText.apply(color: #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1), subString: "GROE")
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: "GROE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GROE")
             
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "G- GIT excess acid loss")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "G- GIT excess acid loss")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "G- GIT excess acid loss")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "R- RENAL EXCESS ACID LOSS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "R- RENAL EXCESS ACID LOSS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "R- RENAL EXCESS ACID LOSS")
             
             // 5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "O- OVERDOSE OF BASE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "O- OVERDOSE OF BASE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "O- OVERDOSE OF BASE")
             
             // 6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "E- ENDOCRINE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "E- ENDOCRINE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "E- ENDOCRINE")
             
             // Set the attributes label
@@ -396,28 +396,28 @@ class ResultViewController: UIViewController {
             let attributedText = NSMutableAttributedString.getAttributedString(fromString: metabolicAlk)
             
             // 1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "METABOLIC ALKALOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "METABOLIC ALKALOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "METABOLIC ALKALOSIS")
             
             // 2
-            attributedText.apply(color: #colorLiteral(red: 0.9250000119, green: 0.9409999847, blue: 0.9449999928, alpha: 1), subString: "GROE")
+            attributedText.apply(color: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), subString: "GROE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "GROE")
             
             
             // 3
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "G- GIT excess acid loss")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "G- GIT excess acid loss")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "G- GIT excess acid loss")
             
             // 4
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "R- RENAL EXCESS ACID LOSS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "R- RENAL EXCESS ACID LOSS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "R- RENAL EXCESS ACID LOSS")
             
             // 5
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "O- OVERDOSE OF BASE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "O- OVERDOSE OF BASE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "O- OVERDOSE OF BASE")
             
             // 6
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "E- ENDOCRINE")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "E- ENDOCRINE")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "E- ENDOCRINE")
             
             
@@ -438,15 +438,15 @@ class ResultViewController: UIViewController {
             
             // Change the colors of the individual words within the text
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Respiratory ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Respiratory ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Respiratory ACIDOSIS")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Hypercatabolic disorders such as:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Hypercatabolic disorders such as:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+            attributedText.apply(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             
             // Set the text label to the attrubuted text that we changed.
@@ -465,15 +465,15 @@ class ResultViewController: UIViewController {
             
             // Change the colors of the individual words within the text
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Respiratory ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Respiratory ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Respiratory ACIDOSIS")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Hypercatabolic disorders such as:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Hypercatabolic disorders such as:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+            attributedText.apply(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             
             // Set the text label to the attrubuted text that we changed.
@@ -491,15 +491,15 @@ class ResultViewController: UIViewController {
             
             // Change the colors of the individual words within the text
             //1
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Respiratory ACIDOSIS")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Respiratory ACIDOSIS")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Respiratory ACIDOSIS")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: "Hypercatabolic disorders such as:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Hypercatabolic disorders such as:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Hypercatabolic disorders such as:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0.2939999998, blue: 0.5529999733, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
+            attributedText.apply(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 15), subString: "Any decreased alveolar ventilatory state with or without any compensatory increase in HC03.")
             
             differentialsLabel.attributedText = attributedText
@@ -517,11 +517,11 @@ class ResultViewController: UIViewController {
             // Change the colors of the individual words within the text
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: "Respiratory factors:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Respiratory factors:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString: "Respiratory factors:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: "Stimulation of the Central Nervous System due to:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Stimulation of the Central Nervous System due to:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString: "Stimulation of the Central Nervous System due to:")
             
             
@@ -541,15 +541,15 @@ class ResultViewController: UIViewController {
             // Change the colors of the individual words within the text
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: "Respiratory factors:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Respiratory factors:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString: "Respiratory factors:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: "Stimulation of the Central Nervous System due to:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Stimulation of the Central Nervous System due to:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString: "Stimulation of the Central Nervous System due to:")
             
             //3
-            attributedText.apply(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), subString:  "Minute Ventilation - RR x TV")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString:  "Minute Ventilation - RR x TV")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString:  "Minute Ventilation - RR x TV")
             differentialsLabel.attributedText = attributedText
             // Change the attributes of the clinical perls to  bold and dark
@@ -566,11 +566,11 @@ class ResultViewController: UIViewController {
             // Change the colors of the individual words within the text
             
             //1
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: "Respiratory factors:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Respiratory factors:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString: "Respiratory factors:")
             
             //2
-            attributedText.apply(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: "Stimulation of the Central Nervous System due to:")
+            attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Stimulation of the Central Nervous System due to:")
             attributedText.apply(font: UIFont.boldSystemFont(ofSize: 13), subString: "Stimulation of the Central Nervous System due to:")
             
             

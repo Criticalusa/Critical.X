@@ -71,7 +71,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
       // We only push Index 17 and for the rest we use MODAL transition
         switch indexPath.item {
-        case 17:
+        case 15:
             
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "ReferencesMenu", bundle: nil)
@@ -80,7 +80,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             // Push the ViewController via Navigation
             self.navigationController?.pushViewController(vc, animated: true)
-       
+
            
         
         // Display the rest as Modal Tranisition.
@@ -98,7 +98,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             // If you want to pop up then call the self.presentViewController function.
             self.present(vc, animated: true, completion: nil)
 
-        }// End the swi
+        }// End the switch
         
         
     }
@@ -148,23 +148,23 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                            "Calculates the shock index of a patient" ]//17
         
         StoryboardID = ["A", // 0
-                        "B",
-                        "D",
-                        "E",
+                        "B", //1
+                        "D", //2
+                        "E", //3
                         "F", //4
-                        "G",
-                        "MP",
-                        "J",
-                        "K",
-                        "L", //10
-                        "M",
-                        "N",
-                        "tpa",
-                        "P", 
-                        "Q", //15
-                        "", 
-                        "LOX",
-                        "SI"]
+                        "G", //5
+                        "MP", //6
+                        "J", //7
+                        "K", //8
+                        "L", //9
+                        "M", //10
+                        "N",//11
+                        "tpa",//12
+                        "P", //13
+                        "Q", //14
+                        "R",//15
+                        "LOX",//16
+                        "SI"]//17
         
         
     }

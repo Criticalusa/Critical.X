@@ -64,11 +64,17 @@ class ClinicalReferences: UIViewController, MFMailComposeViewControllerDelegate 
         // 1 If alpha is 0 then make it 1 else make it zero
         let setNewAlpha = CGFloat (emailButton.alpha == 0 ? 1 : 0)
         
+        
         emailButton.alpha = setNewAlpha
+        
         ratingButton.alpha = setNewAlpha
+        
         infoBUtton.alpha = setNewAlpha
+        
         infoLabel.alpha = setNewAlpha
+        
         rateLabel.alpha = setNewAlpha
+        
         emailLable.alpha = setNewAlpha
         
         // 2
@@ -79,12 +85,14 @@ class ClinicalReferences: UIViewController, MFMailComposeViewControllerDelegate 
     func animateLeftAndRightLines()  {
         
         self.lineViewRight.alpha = 1
+        
         self.lineViewLeft.alpha = 1
         
         UIView.animate(withDuration: 0.2, delay: 0.3, animations: {
             //1 show the view
             //Sets the lottie animation to play
             self.startsView.setAnimation(named: "stars")
+            
             // Executes the play
             self.startsView.play()
             
@@ -106,12 +114,14 @@ class ClinicalReferences: UIViewController, MFMailComposeViewControllerDelegate 
             UIView.animate(withDuration: 0.5, animations: {
                 //1 The backend of the view goes off screen
                 self.lineViewLeft.frame.origin.x -= 350
+                
                 //2 The backend of the view goes off screen
                 self.lineViewRight.center.x += 350
                 
                 //5- fade the lines
                 self.lineViewRight.alpha = 0
                 self.lineViewLeft.alpha = 0
+                
                 print("Completion animation of left Right line animation exectute")
                 
             }, completion: {(true) in
@@ -137,6 +147,7 @@ class ClinicalReferences: UIViewController, MFMailComposeViewControllerDelegate 
                 
                 //3 - Lets rotate the button in radians, using the func below .
                 self.toggleMenuButton.transform = CGAffineTransform(rotationAngle: radians(degrees:180))
+                
                 // 4 - Animate the lines to go Left and Right
                 self.animateLeftAndRightLines()
                 
@@ -144,8 +155,10 @@ class ClinicalReferences: UIViewController, MFMailComposeViewControllerDelegate 
                 
                 // Competion code
                 UIView.animate(withDuration: 0.5, animations: {
+                    
                     //1 - toggle button animated
                     self.toggleButton()
+                    
                     //2 animate left and right
                     self.animateLeftAndRightLines()
                     

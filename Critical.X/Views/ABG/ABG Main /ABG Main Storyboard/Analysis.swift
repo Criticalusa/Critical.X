@@ -116,7 +116,7 @@ extension ABGViewController {
         
         
         //MARK: We change the label back to the origional color when the values are entered in.
-        main_DisorderTitle_Label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        main_DisorderTitle_Label.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         main_DisorderTitle_Label.font = UIFont(name: "Roboto-Black", size: 15)
         
         
@@ -1284,7 +1284,7 @@ extension ABGViewController {
                 print("AG not calculated")
                 deltaBUTTON.setTitle("Mixed Disturbance", for: .normal)
                 deltaBUTTON.isHidden = false
-                deltaBUTTON.backgroundColor = #colorLiteral(red: 0.753000021, green: 0.2240000069, blue: 0.1689999998, alpha: 1)
+                deltaBUTTON.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
             }
                 // Now if they are filled in then run the AG function
             else
