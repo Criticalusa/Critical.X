@@ -24,6 +24,7 @@ class LabCollectionViewController: UICollectionViewController {
         navigationItem.title = "Lab Values"
         //sets the data and delegate sources
         let path: String? = Bundle.main.path(forResource: "LabValueX", ofType: "plist")
+        
         dataList = NSArray(contentsOfFile: path ?? "") as! [Any]? ?? [Any]()
         
         // Do any additional setup after loading the view.
@@ -61,7 +62,7 @@ class LabCollectionViewController: UICollectionViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            let detailViewController = segue.destination as? DetailViewController
+            let detailViewController = segue.destination as? LabDetailViewController
             let myIndexPath: IndexPath? = collectionView?.indexPathsForSelectedItems?[0]
             detailViewController?.data = dataList[(myIndexPath?.row)!] as! [AnyHashable : Any]
         }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uEI-eq-Z6k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uEI-eq-Z6k">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -119,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nV-EK-uDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3170.625" y="-1500"/>
+            <point key="canvasLocation" x="3075" y="-1500"/>
         </scene>
         <!--Hemodynamics Detail View-->
         <scene sceneID="baV-O5-x1R">
@@ -141,8 +140,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btv-sx-oP5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxy-YN-HAP">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1268"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxy-YN-HAP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqE-Vq-Sm5">
                                                 <rect key="frame" x="8" y="149" width="304" height="21"/>
@@ -165,7 +164,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5F6-WC-qHb">
-                                                <rect key="frame" x="25" y="200" width="272" height="17"/>
+                                                <rect key="frame" x="25" y="186" width="272" height="17"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                 <color key="textColor" name="NeutralGray"/>
                                                 <nil key="highlightedColor"/>
@@ -184,15 +183,25 @@
                                                     <action selector="dismissHemodynamicsDetail:" destination="vdG-b5-eeE" eventType="touchUpInside" id="PvT-XJ-UQr"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CVP1" translatesAutoresizingMaskIntoConstraints="NO" id="EYn-UY-zMY">
+                                                <rect key="frame" x="8" y="217" width="304" height="187"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="187" id="Vt0-A9-Ohv"/>
+                                                    <constraint firstAttribute="width" constant="304" id="c7j-Sx-487"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="5F6-WC-qHb" firstAttribute="leading" secondItem="kxy-YN-HAP" secondAttribute="leading" constant="25" id="1QQ-XV-Wzo"/>
+                                            <constraint firstAttribute="trailing" secondItem="EYn-UY-zMY" secondAttribute="trailing" constant="8" id="5x2-de-eC2"/>
                                             <constraint firstItem="5Ga-y5-HcI" firstAttribute="top" secondItem="kxy-YN-HAP" secondAttribute="top" constant="27" id="9wQ-0p-gb0"/>
                                             <constraint firstItem="uqE-Vq-Sm5" firstAttribute="leading" secondItem="kxy-YN-HAP" secondAttribute="leading" constant="8" id="B2g-Nf-hpR"/>
+                                            <constraint firstItem="EYn-UY-zMY" firstAttribute="leading" secondItem="kxy-YN-HAP" secondAttribute="leading" constant="8" id="BzD-ac-OuB"/>
                                             <constraint firstAttribute="trailing" secondItem="uqE-Vq-Sm5" secondAttribute="trailing" constant="8" id="TD6-Z5-HUE"/>
-                                            <constraint firstItem="5F6-WC-qHb" firstAttribute="top" secondItem="uqE-Vq-Sm5" secondAttribute="bottom" constant="30" id="TJc-Qe-Wcq"/>
+                                            <constraint firstItem="5F6-WC-qHb" firstAttribute="top" secondItem="uqE-Vq-Sm5" secondAttribute="bottom" constant="16" id="TJc-Qe-Wcq"/>
                                             <constraint firstAttribute="trailing" secondItem="5Ga-y5-HcI" secondAttribute="trailing" constant="13" id="UKw-Ec-9wd"/>
+                                            <constraint firstItem="EYn-UY-zMY" firstAttribute="top" secondItem="5F6-WC-qHb" secondAttribute="bottom" constant="14" id="aPk-R5-mPI"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1268" id="bYc-96-8e9"/>
                                             <constraint firstItem="uqE-Vq-Sm5" firstAttribute="top" secondItem="8Vt-B5-JuL" secondAttribute="bottom" constant="11" id="czi-nb-ZPX"/>
                                             <constraint firstItem="8Vt-B5-JuL" firstAttribute="leading" secondItem="kxy-YN-HAP" secondAttribute="leading" constant="16" id="hKp-lX-pYe"/>
@@ -213,7 +222,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="btv-sx-oP5" firstAttribute="leading" secondItem="Qzl-Ux-dWB" secondAttribute="leading" id="5Jl-jf-vmp"/>
                             <constraint firstItem="btv-sx-oP5" firstAttribute="bottom" secondItem="Qzl-Ux-dWB" secondAttribute="bottom" id="7ho-bB-U31"/>
@@ -225,17 +234,19 @@
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="5F6-WC-qHb" id="ojN-QF-D3U"/>
                         <outlet property="hemoDynamics_Scroller" destination="btv-sx-oP5" id="tZS-gM-8V4"/>
+                        <outlet property="imageView" destination="EYn-UY-zMY" id="QEd-Dl-esG"/>
                         <outlet property="subtitle_Hemodynamics" destination="uqE-Vq-Sm5" id="OYa-sn-1da"/>
                         <outlet property="titleLabel" destination="8Vt-B5-JuL" id="OG5-ec-Jqp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ga-fr-lSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3802.5" y="-1500"/>
+            <point key="canvasLocation" x="3866" y="-1500"/>
         </scene>
     </scenes>
     <resources>
         <image name="CRITICAL_Hemodynamcis_Logo_Circle" width="1782" height="1771"/>
+        <image name="CVP1" width="1704" height="912"/>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="40q-2v-2mF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="40q-2v-2mF">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,8 +46,35 @@
                         <sections>
                             <tableViewSection id="Y6D-cN-baN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="9fl-F0-TF6" detailTextLabel="gX6-jD-lgG" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="9VX-2n-vq9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="5Ue-8e-sda" detailTextLabel="Cig-7X-v2F" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="DtG-rU-cAM">
                                         <rect key="frame" x="0.0" y="78" width="320" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DtG-rU-cAM" id="lo4-C2-F1B">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ABG Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Ue-8e-sda">
+                                                    <rect key="frame" x="16" y="12" width="101.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" name="Dark Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Arterial Blood Gas Interpretation " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cig-7X-v2F">
+                                                    <rect key="frame" x="16" y="35.5" width="191.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tcB-sh-Y3n" kind="showDetail" id="99B-Yz-tx6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="9fl-F0-TF6" detailTextLabel="gX6-jD-lgG" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="9VX-2n-vq9">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9VX-2n-vq9" id="LIf-be-lfy">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
@@ -74,7 +101,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="zaS-Cx-xVA" detailTextLabel="qUI-j7-Ad4" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="z3j-DK-eZx">
-                                        <rect key="frame" x="0.0" y="143" width="320" height="65"/>
+                                        <rect key="frame" x="0.0" y="208" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z3j-DK-eZx" id="d4J-Yn-n3e">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
@@ -98,6 +125,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="yqr-b8-fA5" kind="showDetail" id="gEm-34-tpL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="3Mp-ch-3WB" detailTextLabel="ZP8-FO-6R3" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="ZaG-F6-8OL">
+                                        <rect key="frame" x="0.0" y="273" width="320" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZaG-F6-8OL" id="tbn-Pb-2hg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Ventilator Optimization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Mp-ch-3WB">
+                                                    <rect key="frame" x="16" y="12" width="154.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" name="Dark Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Optimize Ventilation Parameters " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZP8-FO-6R3">
+                                                    <rect key="frame" x="16" y="35.5" width="189.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ad9-fn-A5g" kind="showDetail" id="2z9-fu-ddR"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -136,6 +190,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBe-5N-yOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1736" y="-1570"/>
+        </scene>
+        <!--VentilatorOptimization -->
+        <scene sceneID="Ui5-Rj-cOU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="H" storyboardName="VentilatorOptimization " id="ad9-fn-A5g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIR-HN-B47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="-1506"/>
+        </scene>
+        <!--ABGMainScreenView-->
+        <scene sceneID="8Vg-jP-m7w">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="C" storyboardName="ABGMainScreenView" id="tcB-sh-Y3n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBx-OE-hAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="-1450"/>
         </scene>
     </scenes>
     <resources>

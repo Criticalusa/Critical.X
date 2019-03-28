@@ -111,63 +111,57 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         medCalcTitle = ["P:F Ratio", //0 - A
                         "Anion Gap Calculator",//1 - B
-                        "ABG Calculator",//2 - C
-                        "Bicarbonate Deficit",//3 - D
-                        "Parkland Formula",//4 - E
-                        "Ideal Body Weight",//5 - F
-                        "02 Cylinder Calculator", //6 - G
-                        "Ventilator Optimization",//7 - H
-                        "MAP | CPP",//8 - I // Need to creat VC
-                        "Urine Output",//9 - J
-                        "IV Rate Calculator",//10 - K
-                        "Check My drip",//11 - L
-                        "FENa",//12 - M
-                        "Free Water Deficit",//13 - N
-                        "tPA Dose Calculator",//14 - O Need to creat VC
-                        "Winters Formula",//15 - P
-                        "Medical Spanish",//16 - Q
-                        "Pregnancy Calculator",//17 R
-                        "LOX Calculator", //18 - LOX
-                        "Shock Index"] // 19 - SI
+                        "Bicarbonate Deficit",//2 - D
+                        "Parkland Formula",//3 - E
+                        "Ideal Body Weight",//4 - F
+                        "02 Cylinder Calculator", //5 - G
+                        "MAP | CPP",//6 - I // Need to reat VC
+                        "Urine Output",//7 - J
+                        "IV Rate Calculator",//8 - K
+                        "Check My drip",//9 - L
+                        "FENa",//10 - M
+                        "Free Water Deficit",//11 - N
+                        "tPA Dose Calculator",//12 - O Need to creat VC
+                        "Winters Formula",//13 - P
+                        "Medical Spanish",//14 - Q
+                        "Pregnancy Calculator",//15 R
+                        "LOX Calculator", //16 - LOX
+                        "Shock Index"] // 17 - SI
         
         medCalcSubtitle = ["Pa02/Fi02 Ratio",//0
                            "Calculates the Anion Gap",//1
-                           "Arterial Blood Gas Calculator",//2
-                           "Calculates the deficit of bicarbonate",//3
-                           "Fluid replacement calculator post burns",//4
-                           "Devine formula",//5
-                           "Calculates the flow times remaining",//6
-                           "Optimize Ventilator Settings",//7
-                           "Mean Arterial Pressure & Cerebral Perfusion Pressure",//8
-                           "Calculates the U/O in mL/kg/hr",//9
-                           "Calculates the IV flow rate",//10
-                           "Confirm IV flow rates",//11
-                           "Calculates the fractional excretion of Na",//12
-                           "Free Water Deficit Calc",//13
-                           "Initial bolus and drip ",//14
-                           "Expected C02 Compensation",//15
-                           "Medical Spanish and Audio",//16
-                           "Calculates the expected due date", // 17
-                           "Calculates the time remaining with liquid qxygen", // 18
-                           "Calculates the shock index of a patient" ]//19
+                           "Calculates the deficit of bicarbonate",//2
+                           "Fluid replacement calculator post burns",//3
+                           "Devine formula",//4
+                           "Calculates the flow times remaining",//5
+                           "Mean Arterial Pressure & Cerebral Perfusion Pressure",//6
+                           "Calculates the U/O in mL/kg/hr",//7
+                           "Calculates the IV flow rate",//8
+                           "Confirm IV flow rates",//9
+                           "Calculates the fractional excretion of Na",//10
+                           "Free Water Deficit Calc",//11
+                           "Initial bolus and drip ",//12
+                           "Expected C02 Compensation",//13
+                           "Medical Spanish and Audio",//14
+                           "Calculates the expected due date", // 15
+                           "Calculates the time remaining with liquid qxygen", // 16
+                           "Calculates the shock index of a patient" ]//17
         
         StoryboardID = ["A", // 0
                         "B",
-                        "C",
                         "D",
                         "E",
-                        "F",
+                        "F", //4
                         "G",
-                        "H",
-                        "MAP",
+                        "MP",
                         "J",
                         "K",
-                        "L",
+                        "L", //10
                         "M",
                         "N",
                         "tpa",
                         "P", 
-                        "Q", 
+                        "Q", //15
                         "", 
                         "LOX",
                         "SI"]
@@ -176,8 +170,5 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
     }
     
     
-    
-    
-
-
+   
 }

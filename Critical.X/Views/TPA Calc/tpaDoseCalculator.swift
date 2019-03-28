@@ -45,7 +45,7 @@ class tpaDoseCalculator: UIViewController {
         self.view.endEditing(true) //This will hide the keyboard
 
         //Vaiables for the switch statement to place inside of the function
-        guard let weight = Double(txt_weightLabel.text!) else {
+        guard Double(txt_weightLabel.text!) != nil else {
             print("TPA Weight is empty")
             
             let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)

@@ -10,25 +10,46 @@ import UIKit
 
 
 class Hemodynamics_DetailView: UIViewController {
+    
     var titleString_hemodynamics = String()
+    
     var subTitle_hemodynamics = String()
+    
     var descriptionString_hemodynamics = String()
-
+    
+    var imageString = String()
     
     
     @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    
     @IBOutlet weak var subtitle_Hemodynamics: UILabel!
+    
     @IBOutlet weak var hemoDynamics_Scroller: UIScrollView!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         titleLabel.text = titleString_hemodynamics
+        
         subtitle_Hemodynamics.text = subTitle_hemodynamics
+        
         detailDescriptionLabel.text = descriptionString_hemodynamics
-        // Do any additional setup after loading the view.
+        
+        // Sets the image to the passed string
+        imageView.image = UIImage(named: imageString)
+        
+        displayImage()
     }
+    
+    var identifier = Int()
     
     @IBAction func dismissHemodynamicsDetail(_ sender: Any) {
         
@@ -38,15 +59,38 @@ class Hemodynamics_DetailView: UIViewController {
     }
     // Call the function in the viewDidAppear
     override func viewDidAppear(_ animated: Bool) {
+       
         // Calling the function
         setScrollViewContentSize()
     }
     
+    // Switch on the callID to set the image 
+    func displayImage()  {
+        
+        switch hemodynamicCallID {
+       
+        // CVP
+        case 3:
+            imageView.image = UIImage(named: "CVP1")
+         
+        // RV PRessire
+        case 4:
+            imageView.image = UIImage(named: "SwanWaveform")
+            
+            //PA Pressure
+        case 5:
+            imageView.image = UIImage(named: "PA")
+
+        default:
+            break
+        }
+    }
     
     // Heres the dynamic scrollFunction where we find the size of the dynamic label and set the scrollView to it.
     func setScrollViewContentSize() {
         
         var height: CGFloat
+        
         let lastView = self.hemoDynamics_Scroller.subviews[0].subviews.last!
         
         print(lastView.debugDescription) // should be what you expect
@@ -59,6 +103,7 @@ class Hemodynamics_DetailView: UIViewController {
         
         // sanity check on these
         print(lastViewYPos)
+        
         print(lastViewHeight)
         
         // Final height of the scrollView
@@ -70,4 +115,6 @@ class Hemodynamics_DetailView: UIViewController {
         // Setting the scollview to the final height.
         hemoDynamics_Scroller.contentSize.height = height
     }
+
+
 }

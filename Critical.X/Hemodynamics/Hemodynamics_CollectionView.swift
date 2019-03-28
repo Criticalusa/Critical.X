@@ -195,6 +195,9 @@ extension Hemodynamics_CollectionView {
                 // Present the View Controller
                 self.present(vc, animated: true, completion: nil)
 
+                // Name od the image to be passed
+                vc.imageString = "SwanWaveform"
+
                 // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
@@ -226,6 +229,9 @@ extension Hemodynamics_CollectionView {
                 // Present the View Controller
                 self.present(vc, animated: true, completion: nil)
 
+                // Name od the image to be passed
+                vc.imageString = "SwanWaveform"
+                
                 // Print Statement
                 print("Assigned id to send is \(assignVentID)")
                 
@@ -237,6 +243,9 @@ extension Hemodynamics_CollectionView {
                 
                 // What text to send to the global string to set to the label
                 vc.descriptionString_hemodynamics = ParameterDetails.PulmonaryArteryWedgePressure.rawValue
+                
+                // Name od the image to be passed
+                vc.imageString = "SwanWaveform"
                 
                 // Present the View Controller
                 self.present(vc, animated: true, completion: nil)

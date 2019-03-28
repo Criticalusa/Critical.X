@@ -17,12 +17,21 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var DetailSummaryLabel: UILabel!
     @IBOutlet weak var labScoller: UIScrollView!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
     
+
     public var data = [AnyHashable: Any]()
     private var datalist = [Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Lab Values"
+        //sets the data and delegate sources
+        let path: String? = Bundle.main.path(forResource: "LabValueX", ofType: "plist")
+        
+        datalist = NSArray(contentsOfFile: path ?? "") as! [Any]? ?? [Any]()
         
         print(data)
         
@@ -56,8 +65,20 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
     // Call the function in the viewDidAppear
     override func viewDidAppear(_ animated: Bool) {
-        setScrollViewContentSize()
+        //setScrollViewContentSize()
+        setScrollContentSize()
     }
+    
+    
+    func setScrollContentSize()  {
+        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+        scrollHeight.constant = DetailSummaryLabel.frame.origin.y + DetailSummaryLabel.frame.size.height +  480
+        
+        
+        print("\(DetailSummaryLabel.frame.size.height) Height constraint Value")
+    }
+    
     
     
     // Heres the dynamic scrollFunction
@@ -81,7 +102,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         // Final height of the scrollView with a buffer
         var buffer: CGFloat
 
-        buffer = 25
+        buffer = 428
 
         height = lastViewYPos + lastViewHeight + buffer
         
