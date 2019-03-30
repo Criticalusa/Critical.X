@@ -65,6 +65,34 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    // Once the view appears, the animation starts.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        
+        
+    }
+    
+    // Change the color back when the view dissappears
+    override func viewWillDisappear(_ animated: Bool) {
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        
+        
+    }
+    
+    
+    // Once the view appears, the animation starts.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+    
+        
+    }
+    
+ 
+    
     func interfaceConfig() -> Void {
         let Dripslist = (UserDefaults.standard.object(forKey:"drip_list") as! NSArray) as! [Any]
         Drip = (Dripslist[index] as! NSDictionary)

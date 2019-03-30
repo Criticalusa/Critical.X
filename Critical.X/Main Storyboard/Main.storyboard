@@ -293,7 +293,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Clouds"/>
-                        <color key="barTintColor" name="Critical Black"/>
+                        <color key="barTintColor" name="Steel"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -3189,9 +3189,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="QEB-Yn-Q6b">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critical Meds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOg-Xk-ap7" customClass="AKLabel" customModule="AKLabel">
+                                    <rect key="frame" x="15" y="6" width="229" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="40"/>
+                                    <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBo-aS-BrL" customClass="AKLabel" customModule="AKLabel">
+                                    <rect key="frame" x="16" y="47" width="173" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
+                                    <color key="textColor" name="Steel"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_Meds_1Logo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="5SN-vj-hMb">
+                                    <rect key="frame" x="267" y="8" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="OOO-lN-puL" customClass="PharmacologyCell" customModule="Critical_X" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="74"/>
+                                <rect key="frame" x="0.0" y="106" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OOO-lN-puL" id="CRv-gE-2GB">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
@@ -3995,6 +4020,7 @@
         <image name="BabyTab" width="37.5" height="37.5"/>
         <image name="CRITICALLogo_Circle" width="1782" height="1771"/>
         <image name="CRITICAL_Drips2_Logo_Circle" width="1782" height="1771"/>
+        <image name="CRITICAL_Meds_1Logo_Circle" width="1644" height="1644"/>
         <image name="CRITICAL_RSI_Logo_Circle" width="1782" height="1771"/>
         <image name="CriticalScattered" width="900" height="1800"/>
         <image name="CriticalTab" width="37.5" height="37.5"/>

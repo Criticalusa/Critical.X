@@ -48,12 +48,24 @@ class AirwayMenu: UIViewController {
         
     }
     
+ 
+  
+    
     //Clears the text box before the view appears so that there can be a nice animation.
     override func viewWillAppear(_ animated: Bool) {
         subTitleLabel.text = ""
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
         
     }
     
+    // Change the color back when the view dissappears
+    override func viewWillDisappear(_ animated: Bool) {
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
+        
+        
+    }
     override func viewDidAppear(_ animated: Bool) {
         subTitleLabel.animate(text: "Airway Management", duration: 1, completion: nil)
     }

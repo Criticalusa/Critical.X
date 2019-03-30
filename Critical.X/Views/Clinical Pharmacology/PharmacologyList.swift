@@ -19,6 +19,22 @@ class PharmacologyList: UITableViewController {
 
     let searchController = UISearchController(searchResultsController: nil)
     
+    
+    // Once the view appears, the animation starts.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+        
+          tableView.reloadData()
+        
+    }
+    
+  
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,10 +77,7 @@ class PharmacologyList: UITableViewController {
         
         
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
-    }
+ 
     
 
     // MARK: - Table view data source

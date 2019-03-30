@@ -116,9 +116,24 @@ class RSIDetail: UIViewController {
 
     }
     
+
+    
+    // Change the color back when the view dissappears
+    override func viewWillDisappear(_ animated: Bool) {
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
+        
+        
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        
+
         //Helper fuction
         rsiCalculation()
     }

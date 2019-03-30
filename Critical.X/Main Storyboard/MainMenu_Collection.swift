@@ -379,6 +379,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewWillAppear(_ animated: Bool) {
        animateNavBar()
+        
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
     }
     
     // Loads the animation once the view appears

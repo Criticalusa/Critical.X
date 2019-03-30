@@ -53,6 +53,25 @@ class CriticalPharmacology: UIViewController {
     private var detail_type = 0
     private var Drip:NSDictionary!
     
+    
+    // Once the view appears, the animation starts.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+        
+        
+    }
+    
+    // Change the color back when the view dissappears
+    override func viewWillDisappear(_ animated: Bool) {
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.navigationItem.title = "Critical Meds"
@@ -88,9 +107,7 @@ class CriticalPharmacology: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
+
     
     func interfaceConfig() -> Void {
         mechanism.sizeToFit()
