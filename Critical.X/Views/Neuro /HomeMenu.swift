@@ -24,6 +24,10 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Set the navigatin title
+        self.navigationItem.title = "Neuro"
+        
+
         mainMenu = ["Cranial Nerves","Stroke Scores","Herniation","Increased ICP","Neuro Exam","Stroke pathology", "Normal CT brain", "GCS"]
         
         subTitle =  ["Cranial Nerves","Assessment & Calculators","Overview of herniation process","Sign of increased intracranical pressure","Complete neurological exam","Different stroke pathologies", "CT scan of the brain", "Glascow Coma Scale"]

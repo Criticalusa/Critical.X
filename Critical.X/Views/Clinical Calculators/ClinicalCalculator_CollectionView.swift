@@ -108,6 +108,10 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         // Do any additional setup after loading the view.
         clinicalCalculatorSubTitile.animate(text: "Clinical Calculators and References", duration: 1, completion: nil)
         
+        // Set the navigatin title
+        self.navigationItem.title = "Clinical"
+        
+
         
         medCalcTitle = ["P:F Ratio", //0 - A
                         "Anion Gap Calculator",//1 - B

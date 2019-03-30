@@ -43,6 +43,9 @@ class RSIMain: UIViewController {
         
         rsiTextField.textColor = #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1)
        
+        // Set the navigatin title
+        self.navigationItem.title = "The Barringer Group ©"
+
 
     }
     

@@ -76,7 +76,8 @@ class CriticalPharmacology: UIViewController {
         super.viewDidLoad()
         //self.navigationItem.title = "Critical Meds"
         
-       
+        self.navigationItem.title = info["MainTitle"] as? String
+
         mainScrollView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
         lbl_Title.text = info["MainTitle"] as? String

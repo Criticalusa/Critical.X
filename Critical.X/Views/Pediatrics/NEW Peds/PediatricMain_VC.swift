@@ -135,7 +135,6 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
         
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)
-        
        
 }
     

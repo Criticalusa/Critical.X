@@ -31,7 +31,10 @@ class OBCollectionView: UIViewController, UICollectionViewDataSource, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
+        // Set the navigatin title
+        self.navigationItem.title = "OB"
+        
+
         // Do any additional setup after loading the view.
         // Animate the ultrasound title.
        OBTitleLabel.animate(text: "Fetal Heart Monitoring", duration: 1, completion: nil)

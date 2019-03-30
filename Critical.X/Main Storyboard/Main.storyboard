@@ -157,7 +157,7 @@
         <!--Home-->
         <scene sceneID="P6l-1G-H2j">
             <objects>
-                <viewController storyboardIdentifier="MainMenu" id="j09-5t-y3w" customClass="MainMenu_Collection" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainMenu" title="Home" id="j09-5t-y3w" customClass="MainMenu_Collection" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ve8-yD-jCp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,7 +289,7 @@
             <objects>
                 <navigationController title="Main Menu" automaticallyAdjustsScrollViewInsets="NO" id="Bca-mr-g7w" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jZn-sB-H9w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorTransitionMaskImage="2 hand" id="jZn-sB-H9w">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Clouds"/>
@@ -461,12 +461,12 @@
             </objects>
             <point key="canvasLocation" x="-3780" y="-787"/>
         </scene>
-        <!--The Barringer Group ©-->
+        <!--Home-->
         <scene sceneID="o7C-Qy-LqF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="99i-jV-hA7" sceneMemberID="viewController">
+                <tabBarController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="99i-jV-hA7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="The Barringer Group ©" id="Lem-MQ-QVd"/>
+                    <navigationItem key="navigationItem" id="Lem-MQ-QVd"/>
                     <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="centered" id="pks-Uu-NqS">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -4017,6 +4017,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2 hand" width="720" height="480"/>
         <image name="BabyTab" width="37.5" height="37.5"/>
         <image name="CRITICALLogo_Circle" width="1782" height="1771"/>
         <image name="CRITICAL_Drips2_Logo_Circle" width="1782" height="1771"/>

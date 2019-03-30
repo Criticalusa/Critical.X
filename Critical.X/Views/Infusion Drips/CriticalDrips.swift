@@ -50,7 +50,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Infusion Calculator"
+        self.navigationItem.title = "Drips"
         
         mainScrollView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
