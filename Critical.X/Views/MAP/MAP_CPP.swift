@@ -10,17 +10,23 @@ import UIKit
 
 class MAP_CPP: UIViewController {
     
+    
     @IBOutlet weak var closeButton: UIButton!
+    
     @IBOutlet weak var systolic: UITextField!
+    
     @IBOutlet weak var diastolic: UITextField!
+    
     @IBOutlet weak var icp: UITextField!
+    
     @IBOutlet weak var resultView: UIView!
     
     @IBOutlet weak var lbl_Result_MAP: UILabel!
+    
     @IBOutlet weak var lbl_Result_CPP: UILabel!
 
     
-    
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -67,13 +73,13 @@ class MAP_CPP: UIViewController {
             
         }
         
-      
-        
         let mapResult = (sbp + (2 * dbp)) / 3
         
         return mapResult
         
     }
+    
+    
     //Dismiss the view
     @IBAction func dismissMAP(_ sender: Any) {
         
@@ -151,11 +157,11 @@ class MAP_CPP: UIViewController {
     
     }
     
-  
-
-    /// Keyboard Dismissed after you touch the screen
+  /// Keyboard Dismissed after you touch the screen
     func doneButtonAction() {
-    self.view.endEditing(true)
-}
+    
+        self.view.endEditing(true)
+
+    }
 
 }

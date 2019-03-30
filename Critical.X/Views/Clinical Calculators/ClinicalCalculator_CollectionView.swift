@@ -153,7 +153,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "E", //3
                         "F", //4
                         "G", //5
-                        "MP", //6
+                        "MAP", //6
                         "J", //7
                         "K", //8
                         "L", //9
@@ -165,9 +165,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
                         "R",//15
                         "LOX",//16
                         "SI"]//17
-        
-        
-    }
+        }
     
     
    

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7j7-nr-Fyi">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +40,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xou-fM-Pou">
                                         <rect key="frame" x="229" y="13" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="CloseButton"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" name="Critical Black"/>
+                                        </state>
                                         <connections>
                                             <action selector="dismissPopUpVC:" destination="7j7-nr-Fyi" eventType="touchUpInside" id="o7R-BL-zQa"/>
                                         </connections>
@@ -203,7 +206,7 @@
                                                 </constraints>
                                                 <string key="text">The following user agreement and disclaimer applies to all The Barringer Group's programs, including but not limited to: Critical – X".
 
-Please be aware that all information as provided as part of Critical – X programs are not meant for definitive diagnostic purposes. They should be rechecked and confirmed against your facilities conventional medical devices, guidelines, and protocols. Critical's program is not a substitute for clinical judgment or standard – of – care medicine. While the authors and producers of critical strive to provide you with useful and accurate tools contained in this product, The Barringer group does not warrant and expressively disclaim that the information provided by this product is up – to – date, complete, or accurate.
+Please be aware that all information provided as part of Critical – X programs are not meant for definitive diagnostic purposes. They should be rechecked and confirmed against your facility's conventional medical devices, guidelines, and protocols. Critical's program is not a substitute for clinical judgment or standard – of – care medicine. While the authors and producers of Critical strive to provide you with useful and accurate tools contained in this product, The Barringer group does not warrant and expressively disclaim that the information provided by this product is up – to – date, complete, or accurate.
 
 You agree to use the product only as an education aid and not to diagnose or treat a condition or as a substitute for any or to override the exercise of professional judgment by a healthcare professional. Given these possibilities of human errors or changes in medical science, you should confirm the information in the product through independent sources. The Barringer Group is not responsible for misdiagnosis of an element or misuse of treatment due to typographical or other errors in the product, user negligence or otherwise.
 
@@ -395,12 +398,14 @@ You agree and acknowledge that you will, at all times, advise patients to seek p
     </scenes>
     <resources>
         <image name="CRITICALLogo_Circle" width="1782" height="1771"/>
-        <image name="CloseButton" width="107" height="95"/>
         <namedColor name="BelizeHole">
             <color red="0.16099999845027924" green="0.50199997425079346" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Clouds">
             <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Critical Black">
+            <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Critical Red">
             <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

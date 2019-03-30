@@ -36,11 +36,11 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
         
         let pageTwo = OnboardPage(title: "Customize Drip Doses",
                                   imageName: "updateDosages",
-                                  description: "Now have the ability customize and to see the concentration of the medication and mL's to be administered. Simply just swipe left!")
+                                  description: "Now users have the ability to customize and to see the concentration of the medication and mL's to be administered. Simply just swipe left!")
         
         let pageThree = OnboardPage(title: "New Settings in RSI",
                                     imageName: "settingsDemo",
-                                    description: "By going to the RSI settings, It's now possible to fully customize the RSI doses to match your local protocols")
+                                    description: "By going to the RSII settings, It's now possible to fully customize the RSI doses to match your local protocols")
         
         let pageFour = OnboardPage(title: "New Ultrasound",
                                    imageName: "onboardUltrasound",
@@ -48,7 +48,7 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
                                   
         let pageFive = OnboardPage(title: "Ventricular Assist Devices",
                                    imageName: "vadsDemo",
-                                   description:  "Not up-to-date on Vads? Check out the new information and guidlines on VADs in the cardiac section!")
+                                   description:  "Not up-to-date on vads? Check out the new information and guidlines on vads in the cardiac section!")
         
         
         

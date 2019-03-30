@@ -40,11 +40,11 @@ class WinterFormulaMain: UIViewController {
         
         // Takes the button and makes it into a circle
         /// Rounds the corners 15 pixels of the UIView name
-        resultsView.clipsToBounds = true
-        resultsView.layer.cornerRadius = 15
-        
-        descriptionViewBlack.clipsToBounds = true
-        descriptionViewBlack.layer.cornerRadius = 15
+//        resultsView.clipsToBounds = true
+//        resultsView.layer.cornerRadius = 15
+//
+//        descriptionViewBlack.clipsToBounds = true
+//        descriptionViewBlack.layer.cornerRadius = 15
         
         calculateButton.clipsToBounds = true
         calculateButton.layer.cornerRadius = 5
@@ -93,6 +93,7 @@ class WinterFormulaMain: UIViewController {
 
             return winters
         }
+        
         return winters
    }
     
@@ -104,7 +105,9 @@ class WinterFormulaMain: UIViewController {
         
         // Setting the variables
         let co2entered = Double(currentC02.text!)
+        
         let bicarb = Double(bicardTxtField.text!)
+        
         let winters = (1.5 * bicarb!) + 8 // Used to compare the current c02 with the calculated winters formula
        
         //Guard statement to say, if theres nothing in the c02 box, then set it to be blank and the conditional below will make the description textField blank.
@@ -127,6 +130,7 @@ class WinterFormulaMain: UIViewController {
         else if (co2entered! < winters - 2) {
             
             c02description.text = "A primary Respiratory Alkalosis is likely!"
+            
             print("Co2 entered is less,c02 entered is \(co2entered!)")
         }
             
@@ -135,7 +139,8 @@ class WinterFormulaMain: UIViewController {
         else if (co2entered! >= winters.rounded() - 2) && (co2entered! <= winters.rounded() + 2) {
             
             c02description.text = "pC02 seems to be compensating normally"
-          print("Co2 entered is WNL c02 entered is \(co2entered!)")
+          
+            print("Co2 entered is WNL c02 entered is \(co2entered!)")
         }
     }
     // MARK: - Calcualte button Method
@@ -175,7 +180,9 @@ class WinterFormulaMain: UIViewController {
         if (Double(co2entered!)) > wintersHigh {
             
             winterVerbiage = "The observed C02 tension is ⬆︎ at \(co2entered!) - which is higher than the expected C02 compensation - \(wintersHigh), suggesting that a relative hypoventilation is increasing the pC02 causing a concomitant Respiratory Acidosis to compensate."
+            
             wintersSmallTitleLabel.text = "Respiratory Acidosis"
+            
             print("WinterFormula Func: C02 higher than calculated winters")
             //"The known PaC02 is higher than expected at \(c02_value!). A superimposed Respiratory Acidosis is also likely."
             //"The PaC02 is high at \(c02_value!)), which is higher than the expected PaC02 compensation, suggesting that a concomitant Respiratory Acidosis is likely in addition to the primary disorder."

@@ -60,7 +60,7 @@ class RSIMain: UIViewController {
     // Animates the rsiSubtitle once the view is loaded.
     func animateRSI() -> Void {
         rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
-        rsiTitle.animate(text: "Rapid Sequence Induction", duration: 1, completion: nil)
+        rsiTitle.animate(text: "Rapid Sequence Induction and Intubation", duration: 1, completion: nil)
     }
     
     

@@ -122,7 +122,7 @@ extension LMA {
             }()
             
             let finalParagraph  = {
-                return "A disadvantage of using the standard LMA vs. the intubating LMA (iLMA) vs. the standard LMA is that the standard LMA does not allow high pressure positive pressure ventilation and does not fully protect against aspiration in non-fasting patients."
+                return "A disadvantage of using the standard LMA vs. the intubating LMA (iLMA) is that the standard LMA does not allow high pressure positive pressure ventilation and does not fully protect against aspiration in non-fasting patients."
             }()
             
             //label.bottom(10)
