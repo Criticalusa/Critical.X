@@ -396,7 +396,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
        
        // Set the navigation title to the current date configuration.
-        navigationController?.navigationBar.topItem?.title =  todaysDate
+        navigationController?.navigationBar.topItem?.title = todaysDate
 
         // navigationItem.title = "The Barringer Group ©"
     }
