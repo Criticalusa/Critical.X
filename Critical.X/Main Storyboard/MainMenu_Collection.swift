@@ -483,7 +483,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "VADs, EKG & 12 Leads, ACLS",// 2
             
-            "Medical Calculators & Medical Spanish",// 3
+            "Clinical Calculators & Medical Spanish",// 3
             
             "Clinical Drug Pharmacodynamics",// 4
             
