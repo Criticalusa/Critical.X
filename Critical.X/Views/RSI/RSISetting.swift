@@ -33,6 +33,7 @@ class RSISetting: UIViewController {
     
     @IBOutlet var txt_Etomidate: UITextField!
     @IBOutlet var txt_Ketamine: UITextField!
+    @IBOutlet weak var txt_Ketamine1: UITextField!
     @IBOutlet var txt_Versed_min: UITextField!
     @IBOutlet var txt_Versed_max: UITextField!
     @IBOutlet var txt_Propofol_min: UITextField!
@@ -98,12 +99,11 @@ class RSISetting: UIViewController {
         }
         else {
             
-            // MARK: Set user default parameters
-            Parameters =  ["atropine": 0.02,"lidocaine": 1,"fentanyl_min": 1,"fentanyl_max": 2,"vecDefasiculating": 0.01,"rocDefasiculating_min": 0.06,"rocDefasiculating_max": 0.12,"glycopyrolate_min": 0.1,"glycopyrolate_max": 0.2, "etomidate": 0.3,"ketamine": 1.5,"propofol_min": 1,"propofol_max": 2, "versed_min": 0.1,"versed_max": 0.2,"cisatricurium": 0.2,"vecuronium": 0.1,"rocuronium_min": 0.6,"rocuronium_max": 1.2,"succs_min": 1,"succs_max": 1.5,"lidocaine_mgMl": 20,"mgPerML_atropine": 0.1,"mgPerML_fentanyl": 50.0,"mgPerML_vecDefasc": 1.0,"mgPerML_rocDefasc": 10.0,"hello": 0.2,"ml_etomidate" : 2.0,"ml_ketamine": 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc": 10.0, "ml_cis" : 10.0]
-            
-            
-            
             UserDefaults.standard.set(Parameters, forKey: "parameters")
+
+            // MARK: Set user default parameters
+            Parameters =  ["atropine": 0.02,"lidocaine": 1,"fentanyl_min": 1,"fentanyl_max": 2,"vecDefasiculating": 0.01,"rocDefasiculating_min": 0.06,"rocDefasiculating_max": 0.12,"glycopyrolate_min": 0.1,"glycopyrolate_max": 0.2, "etomidate": 0.3,"ketamine": 1.0, "ketamineMax": 1.5, "propofol_min": 1,"propofol_max": 2, "versed_min": 0.1,"versed_max": 0.2,"cisatricurium": 0.2,"vecuronium": 0.1,"rocuronium_min": 0.6,"rocuronium_max": 1.2,"succs_min": 1,"succs_max": 1.5,"lidocaine_mgMl": 20,"mgPerML_atropine": 0.1,"mgPerML_fentanyl": 50.0,"mgPerML_vecDefasc": 1.0,"mgPerML_rocDefasc": 10.0,"hello": 0.2,"ml_etomidate" : 2.0,"ml_ketamine": 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc": 10.0, "ml_cis" : 10.0]
+            
             
             UserDefaults.standard.synchronize()
         }
@@ -133,6 +133,9 @@ class RSISetting: UIViewController {
         txt_Etomidate.text = "\(Parameters.object(forKey: "etomidate") as! Double)"
         
         txt_Ketamine.text = "\(Parameters.object(forKey: "ketamine") as! Double)"
+        
+
+        txt_Ketamine1.text = "\(Parameters.object(forKey: "ketamineMax") as! Double)"
         
         txt_Versed_min.text = "\(Parameters.object(forKey: "versed_min") as! Double)"
         
@@ -213,6 +216,8 @@ class RSISetting: UIViewController {
         
         Parameters.setValue(txt_Ketamine.text?.doubleValue, forKey: "ketamine")
         
+        Parameters.setValue(txt_Ketamine1.text?.doubleValue, forKey: "ketamineMax")
+
         Parameters.setValue(txt_Versed_min.text?.doubleValue, forKey: "versed_min")
         
         Parameters.setValue(txt_Versed_max.text?.doubleValue, forKey: "versed_max")
@@ -307,7 +312,7 @@ class RSISetting: UIViewController {
     
     @IBAction func resetDosageparameters(_ sender: Any) {
        
-        Parameters = UserDefaults.standard.object(forKey:"parameters") as! NSDictionary as! NSMutableDictionary
+        Parameters = UserDefaults.standard.object(forKey:"parameters") as! NSDictionary as? NSMutableDictionary
         
         Parameters =  ["atropine": 0.02,
                        "lidocaine": 1,
@@ -319,6 +324,7 @@ class RSISetting: UIViewController {
                        "glycopyrolate_max": 0.2,
                        "etomidate": 0.3,
                        "ketamine": 1.5,
+                       "ketamineMax": 2.0,
                        "propofol_min": 1,
                        "propofol_max": 2,
                        "versed_min": 0.1,
@@ -377,7 +383,8 @@ class RSISetting: UIViewController {
         txt_Rocuronium0_min.text = "0.06"
         txt_Rocuronium0_max.text = "0.12"
         txt_Etomidate.text? = "0.3"
-        txt_Ketamine.text = "1.5"
+        txt_Ketamine.text = "1.0"
+        txt_Ketamine1.text = "1.5"
         txt_Versed_min.text = "0.1"
         txt_Versed_max.text = "0.2"
         txt_Propofol_min.text = "1.0"
@@ -401,15 +408,7 @@ class RSISetting: UIViewController {
         
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 }
 

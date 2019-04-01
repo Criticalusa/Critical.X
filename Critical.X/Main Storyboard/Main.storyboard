@@ -2594,12 +2594,26 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TrK-sU-9DY">
-                                <rect key="frame" x="210" y="455" width="33" height="27"/>
+                                <rect key="frame" x="155" y="455" width="35" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" name="Steel"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.5" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6F-0C-9Rb">
+                                <rect key="frame" x="208" y="455" width="39" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" name="Steel"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-Zk-SWB">
+                                <rect key="frame" x="198" y="463" width="13" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="nGl-4c-4mP"/>
@@ -2629,6 +2643,7 @@
                         <outlet property="txt_Glycopyrolate_max" destination="l9M-r4-otc" id="XTc-kC-Wif"/>
                         <outlet property="txt_Glycopyrolate_min" destination="Oxq-AQ-mhn" id="uHY-mc-c6i"/>
                         <outlet property="txt_Ketamine" destination="TrK-sU-9DY" id="zBV-SS-aH5"/>
+                        <outlet property="txt_Ketamine1" destination="L6F-0C-9Rb" id="EBa-Bk-qhw"/>
                         <outlet property="txt_Lidocaine" destination="c0L-Xp-omk" id="Cxb-TX-Tae"/>
                         <outlet property="txt_Propofol_max" destination="lH3-jI-dDX" id="BSj-s4-Bey"/>
                         <outlet property="txt_Propofol_min" destination="oXL-l3-Tdd" id="dmd-53-jtQ"/>
@@ -2647,7 +2662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ng7-Qq-Ymo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714" y="124"/>
+            <point key="canvasLocation" x="-714.375" y="123.59154929577466"/>
         </scene>
         <!--Peds-->
         <scene sceneID="WIE-Zl-OeW">

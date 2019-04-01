@@ -175,7 +175,7 @@ class RSIDetail: UIViewController {
         else {
             
             // MARK: Set user default parameters
-            Parameters =  ["atropine": 0.02,"lidocaine": 1,"fentanyl_min": 1,"fentanyl_max": 2,"vecDefasiculating": 0.01,"rocDefasiculating_min": 0.06,"rocDefasiculating_max": 0.12,"glycopyrolate_min": 0.1,"glycopyrolate_max": 0.2, "etomidate": 0.3,"ketamine": 1.5,"propofol_min": 1,"propofol_max": 2, "versed_min": 0.1,"versed_max": 0.2,"cisatricurium": 0.2,"vecuronium": 0.1,"rocuronium_min": 0.6,"rocuronium_max": 1.2,"succs_min": 1,"succs_max": 1.5,"lidocaine_mgMl": 20,"mgPerML_atropine": 0.1,"mgPerML_fentanyl": 50.0,"mgPerML_vecDefasc": 1.0,"mgPerML_rocDefasc": 10.0,"hello": 0.2,"ml_etomidate" : 2.0,"ml_ketamine": 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc": 10.0, "ml_cis" : 10.0]
+            Parameters =  ["atropine": 0.02,"lidocaine": 1,"fentanyl_min": 1,"fentanyl_max": 2,"vecDefasiculating": 0.01,"rocDefasiculating_min": 0.06,"rocDefasiculating_max": 0.12,"glycopyrolate_min": 0.1,"glycopyrolate_max": 0.2, "etomidate": 0.3,"ketamine": 1.0,  "ketamineMax": 1.5,"propofol_min": 1,"propofol_max": 2, "versed_min": 0.1,"versed_max": 0.2,"cisatricurium": 0.2,"vecuronium": 0.1,"rocuronium_min": 0.6,"rocuronium_max": 1.2,"succs_min": 1,"succs_max": 1.5,"lidocaine_mgMl": 20,"mgPerML_atropine": 0.1,"mgPerML_fentanyl": 50.0,"mgPerML_vecDefasc": 1.0,"mgPerML_rocDefasc": 10.0,"hello": 0.2,"ml_etomidate" : 2.0,"ml_ketamine": 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc": 10.0, "ml_cis" : 10.0]
            
            
            
@@ -314,9 +314,10 @@ class RSIDetail: UIViewController {
         
         
         //MARK: Ketamine Dose
-        let ketamine = doseRange1(weightEntered!, Parameters.object(forKey: "ketamine") as! Double)
+        //let ketamine = doseRange1(weightEntered!, Parameters.object(forKey: "ketamine") as! Double)
         
-        
+        let ketamine = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "ketamine") as! Double, Parameters.object(forKey: "ketamineMax") as! Double)
+
         //MARK: Propofol Dose
         let propofol = doseRange2(weightEntered!, weightEntered!, Parameters.object(forKey: "propofol_min") as! Double, Parameters.object(forKey: "propofol_max") as! Double)
         
@@ -424,9 +425,9 @@ class RSIDetail: UIViewController {
         print(" versed key dose = \(Parameters.object(forKey: "ml_versed") as? Double)")
         
         ketamine_Label.text = ketamine
-        ketamineMLs.text = mL1_DoseCalculation(FinalDose: (Double (ketamine))!, PermL: 100)
+        //ketamineMLs.text = mL1_DoseCalculation(FinalDose: (Double (ketamine))!, PermL: 100)
         //MARK: ketamine = 200 mg in 20 Ml = 10 mg/ml
-        
+        ketamineMLs.text = doseRange2_mL (weightEntered!, weightEntered!, Parameters.object(forKey: "ketamine") as! Double, Parameters.object(forKey: "ketamineMax") as! Double, Parameters.object(forKey: "ml_ketamine") as! Double)
         
         
         
@@ -476,8 +477,9 @@ class RSIDetail: UIViewController {
         
         
         //MARK: - Ketamine concentration
-        unit_Ketamine.text = "\(Parameters.object(forKey: "ketamine") as! Double) mg/kg | \(Parameters.object(forKey: "ml_ketamine") as! Double) mg/mL"
+       // unit_Ketamine.text = "\(Parameters.object(forKey: "ketamine") as! Double) mg/kg | \(Parameters.object(forKey: "ml_ketamine") as! Double) mg/mL"
         
+        unit_Ketamine.text = "\(Parameters.object(forKey: "ketamine") as! Double) - \(Parameters.object(forKey: "ketamineMax") as! Double) mg/kg | \(Parameters.object(forKey: "ml_ketamine") as! Double) mg/mL"
         
         //MARK: - Versed concentration
         unit_Versed.text = "\(Parameters.object(forKey: "versed_min") as! Double)-\(Parameters.object(forKey: "versed_max") as! Double) mg/kg | \(Parameters.object(forKey: "ml_versed") as! Double) mg/mL"
