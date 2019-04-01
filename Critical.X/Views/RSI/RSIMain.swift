@@ -23,6 +23,47 @@ class RSIMain: UIViewController {
         }
     }
     
+    
+    func animateNavBar()  {
+        
+        let fadeTextAnimation = CATransition()
+        
+        fadeTextAnimation.duration = 0.3
+        
+        fadeTextAnimation.type = kCATransitionMoveIn
+        
+        //        kCATransitionFade
+        //        kCATransitionMoveIn
+        //        kCATransitionPush
+        //        kCATransitionReveal
+        //
+        
+        /*
+         The different date formats
+         Wednesday, Sep 12, 2018           --> EEEE, MMM d, yyyy
+         09/12/2018                        --> MM/dd/yyyy
+         09-12-2018 14:11                  --> MM-dd-yyyy HH:mm
+         Sep 12, 2:11 PM                   --> MMM d, h:mm a
+         September 2018                    --> MMMM yyyy
+         Sep 12, 2018                      --> MMM d, yyyy
+         Wed, 12 Sep 2018 14:11:54 +0000   --> E, d MMM yyyy HH:mm:ss Z
+         2018-09-12T14:11:54+0000          --> yyyy-MM-dd'T'HH:mm:ssZ
+         12.09.18                          --> dd.MM.yy
+         10:41:02.112                      --> HH:mm:ss.SSS
+         */
+        
+        let date : Date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "E, MMM d, h:mm a"
+        let todaysDate = dateFormatter.string(from: date)
+        
+        navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
+        
+        // Set the navigation title to the current date configuration.
+        navigationController?.navigationBar.topItem?.title = todaysDate
+        
+        // navigationItem.title = "The Barringer Group ©"
+    }
 //    var calculatedNumber: String = ""
     
     // Once the view appears, the animation starts.
@@ -32,9 +73,10 @@ class RSIMain: UIViewController {
         //change the color of the navigationbar
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
         
-        //Function to run the RSI animation title.
-        animateRSI()
+       
         
+        animateNavBar()
+
     }
     
     //MARK: ViewDidLoad
@@ -43,8 +85,10 @@ class RSIMain: UIViewController {
         
         rsiTextField.textColor = #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1)
        
+        //Function to run the RSI animation title.
+        animateRSI()
         // Set the navigatin title
-        self.navigationItem.title = "The Barringer Group ©"
+        //self.navigationItem.title = "The Barringer Group ©"
 
 
     }

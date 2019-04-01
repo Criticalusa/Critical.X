@@ -24,8 +24,8 @@ class PredictorsViewController: UIViewController, UICollectionViewDataSource, UI
     // Change the color back when the view dissappears
     override func viewWillDisappear(_ animated: Bool) {
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
-        
+//        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
+//        
         
     }
     

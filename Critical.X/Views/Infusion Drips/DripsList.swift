@@ -33,13 +33,13 @@ class DripsList: UITableViewController {
     }
     
     
-    // Change the color back when the view dissappears
-    override func viewWillDisappear(_ animated: Bool) {
-        //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
-        
-        
-    }
+//    // Change the color back when the view dissappears
+//    override func viewWillDisappear(_ animated: Bool) {
+//        //change the color of the navigationbar
+//        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
+//
+//        
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,12 +53,55 @@ class DripsList: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    
+    func animateNavBar()  {
+        
+        let fadeTextAnimation = CATransition()
+        
+        fadeTextAnimation.duration = 0.3
+        
+        fadeTextAnimation.type = kCATransitionMoveIn
+        
+        //        kCATransitionFade
+        //        kCATransitionMoveIn
+        //        kCATransitionPush
+        //        kCATransitionReveal
+        //
+        
+        /*
+         The different date formats
+         Wednesday, Sep 12, 2018           --> EEEE, MMM d, yyyy
+         09/12/2018                        --> MM/dd/yyyy
+         09-12-2018 14:11                  --> MM-dd-yyyy HH:mm
+         Sep 12, 2:11 PM                   --> MMM d, h:mm a
+         September 2018                    --> MMMM yyyy
+         Sep 12, 2018                      --> MMM d, yyyy
+         Wed, 12 Sep 2018 14:11:54 +0000   --> E, d MMM yyyy HH:mm:ss Z
+         2018-09-12T14:11:54+0000          --> yyyy-MM-dd'T'HH:mm:ssZ
+         12.09.18                          --> dd.MM.yy
+         10:41:02.112                      --> HH:mm:ss.SSS
+         */
+        
+        let date : Date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "E, MMM d, h:mm a"
+        let todaysDate = dateFormatter.string(from: date)
+        
+        navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
+        
+        // Set the navigation title to the current date configuration.
+        navigationController?.navigationBar.topItem?.title = todaysDate
+        
+        // navigationItem.title = "The Barringer Group ©"
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
         
+        animateNavBar()
         
         // Animates the title when the screen loads.
         dripSubTitle.animate(text: "Infusion Rates and Calculations", duration: 1, completion: nil)

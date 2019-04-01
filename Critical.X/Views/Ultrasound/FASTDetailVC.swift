@@ -87,7 +87,7 @@ class FASTDetailVC: UIViewController {
         
         abnormalFindings.attributedText = abnormalFindingsonScan
         
-         detailDescription.text = descriptionString
+        detailDescription.text = descriptionString
         
         ultrasoundImageView.image = UIImage(named: initialImageString)
         

@@ -68,7 +68,7 @@ class FAST_MAIN_VC: UIViewController {
               
                 morrisonsViewController.abnormalFindingsonScan = changeAttribute_Abnormal(text: AbnormalFindings.RUQ.rawValue)
                
-                morrisonsViewController.probeTitle = "3.5 Htz"
+                morrisonsViewController.probeTitle = "Phased Array"
                 
                 // Image Views
                 // Ultrasound probe position
@@ -100,7 +100,7 @@ class FAST_MAIN_VC: UIViewController {
                 LUQ.descriptionString = UltraSound_AcousticViewDescription.leftUpperQuadrant.rawValue
                 
                
-                LUQ.probeTitle = "3.5 Htz"
+                LUQ.probeTitle = "Phased Array"
                 
                 // Image Views
                 // First image
@@ -167,7 +167,7 @@ class FAST_MAIN_VC: UIViewController {
                 thoracic.descriptionString = UltraSound_AcousticViewDescription.Thoracic.rawValue
                 
                 
-                thoracic.probeTitle = "Linear "
+                thoracic.probeTitle = "Curvilinear / Phased Array"
                 
                 // Image Views
                 // First image
@@ -201,7 +201,7 @@ class FAST_MAIN_VC: UIViewController {
                 thoracic.descriptionString = UltraSound_AcousticViewDescription.Pelvic.rawValue
                 
                 
-                thoracic.probeTitle = "Linear "
+                thoracic.probeTitle = "Phased Array"
                 
                 // First image
                 thoracic.initialImageString = UltraSoundImages.PelvicProbe.rawValue
