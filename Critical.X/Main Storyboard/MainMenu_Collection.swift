@@ -406,7 +406,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         animateNavBar()
         
         //Establish random colors to call for the navbar to change.
-        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1) , #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1) ]
+        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1) , #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1), #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1) ]
 
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)
@@ -446,7 +446,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         mainMenu =
             ["About Critical", // 0
             
-            "Airway Management", // 1
+            "Airway", // 1
             
             "Cardiac",// 2
             
@@ -454,7 +454,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "Clinical Pharmacology", // 3
             
-            "Infusions", // 5
+            "Drips", // 5
             
             "Fluids / Blood products", // 6
             
@@ -507,7 +507,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "CXR, Ultrasound & CVC Insertion",// 14
             
-            "Ventilator Modes, ETC02 Waveform Capnography"]// 15
+            "ABG Calc, Modes, Capnography"]// 15
         
         // Images and associated Indexpaths
         //  "formula",// 3

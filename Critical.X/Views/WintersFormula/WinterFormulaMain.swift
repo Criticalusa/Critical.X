@@ -88,6 +88,7 @@ class WinterFormulaMain: UIViewController {
         
         let winters = (1.5 * bicarb!) + 8
         
+        
         guard let _ = bicarb else {
             _ = SCLAlertView().showWarning("Hold On...", subTitle: "Check all of the fields before calculating.")
 
@@ -102,6 +103,8 @@ class WinterFormulaMain: UIViewController {
     /// This checks the parameters of the c02. Sees is theres anything in the text field and evaluates it.
     func checkCo2Parameters() {
         
+       
+
         
         // Setting the variables
         let co2entered = Double(currentC02.text!)
@@ -118,6 +121,7 @@ class WinterFormulaMain: UIViewController {
             return
         }
         
+      
         // If the current c02 is greated than the calculated c02
         if (co2entered! > winters + 2) {
             
@@ -198,6 +202,24 @@ class WinterFormulaMain: UIViewController {
         
         let bicarb = Double(bicardTxtField.text!)
         let c02 = Double(currentC02.text!)
+        
+        
+        //Vaiables for the switch statement to place inside of the function
+        guard let bicarbs = Double(bicardTxtField.text!) else {
+            print("Bicarb is empty")
+            
+            let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)
+           
+            _ = SCLAlertView(appearance: appearance).showNotice("Wait!!", subTitle: "Enter at least a bicarb value, then recalculate!")
+            
+            resultsView.isHidden = true
+            
+            descriptionViewBlack.isHidden = true
+            
+            return
+            
+        }
+        
         
         // What happens when only the bicarb is entered and c02 is blank
         guard c02 != nil else {

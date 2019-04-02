@@ -15,7 +15,7 @@ class FreeWaterDeficitDetail: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var freeWaterView: UIView!
     @IBOutlet weak var iVFlowRateTxt: UILabel!
-    
+    @IBOutlet weak var deficitLabel: UILabel!
     
     //variables
     var resultChildMale:Double?
@@ -25,8 +25,9 @@ class FreeWaterDeficitDetail: UIViewController {
     var resultChildFemale:Double?
     var resultAdultFemale:Double?
     var resultElderlyFemale:Double?
+    var deficitLabelText: String?
     
-    
+    var negPos = String()
     var weight: Double?
     var desiredNa: Double?
     var currentNa: Double?
@@ -36,9 +37,9 @@ class FreeWaterDeficitDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        iVFlowRateTxt.clipsToBounds = true
-//        
-//        iVFlowRateTxt.layer.cornerRadius = 2
+        //        iVFlowRateTxt.clipsToBounds = true
+        //
+        //        iVFlowRateTxt.layer.cornerRadius = 2
         
         // here we round the top of the free Water deficit view only
         freeWaterView.clipsToBounds = true
@@ -47,6 +48,7 @@ class FreeWaterDeficitDetail: UIViewController {
         // Only curves the top of the view
         //freeWaterView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
+        deficitLabel.text = deficitLabelText
         // calls the method below to be executed.
         freeWaterCalculations()
     }
@@ -86,6 +88,10 @@ class FreeWaterDeficitDetail: UIViewController {
         switch idBlock { // Takes the ID block number in the IF statement from the sending VC and we can reference it here.
             
             
+            
+            
+            
+            
         //Male Calculations
         case 1: //Mark:Male Child
             
@@ -98,19 +104,41 @@ class FreeWaterDeficitDetail: UIViewController {
                 
                 iVFlowRateTxt.text = ""
                 
+                
             } else {
                 // Since we cant add a string to the end of the format, We just create another instance and add Liters later in the label.
                 let ChildMale = String(format:"%.1f",resultChildMale!)
                 
-                freeWaterResultLabel.text = ChildMale + " Liters"
-                
                 let infusionRate = (resultChildMale! / hoursToCorrectSodium) * 1000
                 
-                //let infusionRate = String(format:"%.1f",infusionRate1)
-                iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                //Check the result to see if its +/- and change the text
+                if let result = resultChildMale, result > 0 {
+                    
+                    negPos = "positive"
+                    
+                    //let infusionRate = String(format:"%.1f",infusionRate1)
+                    iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                }
+                
+                if let result = resultChildMale, result < 0 {
+                    
+                    negPos = "negative"
+                    
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                }
+                
+                deficitLabel.text = "This patient has a \(negPos) deficit of:"
+                
+                freeWaterResultLabel.text = ChildMale + " Liters"
+                
+                
+                
+                
                 
                 print("Child Male is " + ChildMale + " L")
+                
                 print("")
+                
                 print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
             }
         case 2: //Mark:Male Adult
@@ -135,8 +163,28 @@ class FreeWaterDeficitDetail: UIViewController {
                 //let infusionRate = String(format:"%.1f",infusionRate1)
                 iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
                 
+                //Check the result to see if its +/- and change the text
+                if let result = resultAdultMale, result > 0 {
+                    
+                    negPos = "positive"
+                    
+                    iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                }
+                
+                if let result = resultAdultMale, result < 0 {
+                    
+                    negPos = "negative"
+                    
+                    
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                }
+                
+                deficitLabel.text = "This patient has a \(negPos) deficit of:"
+                
                 print("Adult Male is " + AdultMale + " Liters")
+                
                 print("")
+                
                 print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
             }
             
@@ -157,7 +205,6 @@ class FreeWaterDeficitDetail: UIViewController {
                 let ElderlyMale = String(format:"%.1f",resultElderlyMale!)
                 
                 
-                
                 freeWaterResultLabel.text = ElderlyMale + " Liters"
                 
                 
@@ -168,9 +215,28 @@ class FreeWaterDeficitDetail: UIViewController {
                 //let infusionRate = String(format:"%.1f",infusionRate1)
                 iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
                 
+                //Check the result to see if its +/- and change the text
+                if let result = resultElderlyMale, result > 0 {
+                    
+                    negPos = "positive"
+                    
+                    
+                    iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                }
+                
+                if let result = resultElderlyMale, result < 0 {
+                    
+                    negPos = "negative"
+                    
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                }
+                
+                deficitLabel.text = "This patient has a \(negPos) deficit of:"
                 
                 print("Elderly Make is " + ElderlyMale + " Liters")
+                
                 print("")
+                
                 print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
             }
             
@@ -198,8 +264,30 @@ class FreeWaterDeficitDetail: UIViewController {
                 //let infusionRate = String(format:"%.1f",infusionRate1)
                 iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
                 
+                
+                //Check the result to see if its +/- and change the text
+                if let result = resultChildFemale, result > 0 {
+                    
+                    negPos = "positive"
+                    
+                    //let infusionRate = String(format:"%.1f",infusionRate1)
+                    iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                }
+                
+                if let result = resultChildFemale, result < 0 {
+                    
+                    negPos = "negative"
+                    
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                }
+                
+                deficitLabel.text = "This patient has a \(negPos) deficit of:"
+                
+                
                 print("Child female is " + ChildFemale + " Liters")
+                
                 print("")
+                
                 print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
             }
             
@@ -227,8 +315,29 @@ class FreeWaterDeficitDetail: UIViewController {
                 iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
                 
                 
+                //Check the result to see if its +/- and change the text
+                if let result = resultAdultFemale, result > 0 {
+                    
+                    negPos = "positive"
+                    
+                    //let infusionRate = String(format:"%.1f",infusionRate1)
+                    iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                }
+                
+                if let result = resultAdultFemale, result < 0 {
+                    
+                    negPos = "negative"
+                    
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                }
+                
+                deficitLabel.text = "This patient has a \(negPos) deficit of:"
+                
+                
                 print("Adult female is " + AdultFemale + " Liters")
+                
                 print("")
+                
                 print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
                 
             }
@@ -257,8 +366,30 @@ class FreeWaterDeficitDetail: UIViewController {
                 //let infusionRate = String(format:"%.1f",infusionRate1)
                 iVFlowRateTxt.text = "IV flow rate of \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium) hrs."
                 
+                
+                //Check the result to see if its +/- and change the text
+                if let result = resultElderlyFemale, result > 0 {
+                    
+                    negPos = "positive"
+                    
+                    //let infusionRate = String(format:"%.1f",infusionRate1)
+                    iVFlowRateTxt.text = "IV flow rate of \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium ) hrs."
+                }
+                
+                if let result = resultElderlyFemale, result < 0 {
+                    
+                    negPos = "negative"
+                    
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                }
+                
+                deficitLabel.text = "This patient has a \(negPos) deficit of:"
+                
+                
                 print("IV flow rate of \(infusionRate) cc/hr for \(hoursToCorrectSodium) hrs.")
+                
                 print("")
+                
                 print("Elderly Female is " + ElderlyFemale + " Liters")
             }
         default:
