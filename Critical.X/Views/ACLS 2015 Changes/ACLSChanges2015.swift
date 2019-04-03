@@ -15,12 +15,24 @@ class ACLSChanges2015: UIViewController {
     }
    
     
+    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
+    
     @IBOutlet weak var blsLabel: UILabel!
     @IBOutlet weak var aclsLabel: UILabel!
     @IBOutlet weak var postCardiacArrestLabel: UILabel!
     @IBOutlet weak var blsView: UIView!
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
+        scrollHeight.constant = blsLabel.frame.origin.y + blsLabel.frame.size.height + aclsLabel.frame.size.height + postCardiacArrestLabel.frame.size.height +  520
+        
+        
+        print("\(blsLabel.frame.origin.y + postCardiacArrestLabel.frame.size.height +  280) ACLS Height constraint Value")
+        
 
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
