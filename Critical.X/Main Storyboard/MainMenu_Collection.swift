@@ -406,7 +406,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         animateNavBar()
         
         //Establish random colors to call for the navbar to change.
-        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1),  #colorLiteral(red: 0.1609999985, green: 0.5019999743, blue: 0.7250000238, alpha: 1)]
+        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1),  #colorLiteral(red: 0.1609999985, green: 0.5019999743, blue: 0.7250000238, alpha: 1)]
 
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)
