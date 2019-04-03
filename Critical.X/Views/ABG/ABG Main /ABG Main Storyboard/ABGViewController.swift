@@ -637,7 +637,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Very low: Double Check"
                 
-                AlbuminSideLabel.textColor = #colorLiteral(red: 0.4495905638, green: 0.3577245474, blue: 0.8001251817, alpha: 1)
+                AlbuminSideLabel.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -654,7 +654,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Hypoalbuminemia"
                 
-                AlbuminSideLabel.textColor = #colorLiteral(red: 0.3522524834, green: 0.2723381221, blue: 0.6589055657, alpha: 1)
+                AlbuminSideLabel.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
@@ -693,7 +693,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AnalyzeButton.isEnabled = true
                 
-                AlbuminText.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+                AlbuminText.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
                 
                 //Checks to see if the button is set on or off and makes changes.
                 checkAnalyzeButtonStatus()
@@ -706,11 +706,11 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminSideLabel.text = "Hyperalbuminemia"
                 
-                AlbuminSideLabel.textColor  = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+                AlbuminSideLabel.textColor  = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 
-                AlbuminText.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+                AlbuminText.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
                 
                 //Checks to see if the button is set on or off and makes changes.
                 checkAnalyzeButtonStatus()
@@ -728,7 +728,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AnalyzeButton.isEnabled = true
                 
-                AlbuminText.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+                AlbuminText.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
                 
                 //Checks to see if the button is set on or off and makes changes.
                 checkAnalyzeButtonStatus()
@@ -742,7 +742,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
                 
                 AlbuminImage.image = nil
                 
-                AlbuminText.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+                AlbuminText.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
                 
                 AnalyzeButton.isEnabled = true
                 

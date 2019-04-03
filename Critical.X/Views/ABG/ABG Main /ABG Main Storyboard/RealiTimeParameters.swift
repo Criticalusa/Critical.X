@@ -220,7 +220,7 @@ extension ABGViewController {
             NaSideLabel.text = "Normal serum Na"
             NaSideLabel.textColor  =    #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
             AnalyzeButton.isEnabled = true
-            NATextField.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            NATextField.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             SodiumImage.image = #imageLiteral(resourceName: "CheckMark")
             checkAnalyzeButtonStatus()
 
@@ -325,7 +325,7 @@ extension ABGViewController {
         else {
             ChlorideSideLabel.text = "mEq/L"
             ChlorideSideLabel.textColor  =    #colorLiteral(red: 0.6802619696, green: 0.9382658601, blue: 0.7976928353, alpha: 1)
-            CLTextfield.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            CLTextfield.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             AnalyzeButton.isEnabled = true
             ChlorideImage.image = nil
             checkAnalyzeButtonStatus()
