@@ -14,7 +14,8 @@ class RSIMain: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var rsiTextField: UITextField! 
     @IBOutlet weak var rsiTitle: AKLabel!
-
+    @IBOutlet weak var lungPicture: UIImageView!
+    
     //Rounds the edges of the round button. 
     @IBOutlet weak var calculateButtonRadius : UIView! {
         didSet {
@@ -72,8 +73,7 @@ class RSIMain: UIViewController {
         
         //change the color of the navigationbar
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
-        
-       
+    
         
         animateNavBar()
 

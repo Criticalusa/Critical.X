@@ -83,6 +83,16 @@ class ACLSViewController: UIViewController {
         
     }
     
+    // Once the view appears, the animation starts.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        
+        
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         // Takes the name of the gif, delcared in the enum and passes it to the string rhythmName so that the function argument can take the string thats passed.

@@ -64,10 +64,10 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print(StoryboardID [indexPath.item])
         
         // Set the Storyboard ID to each indexPath.
         let SBID = StoryboardID [indexPath.item]
+        print(StoryboardID [indexPath.item] + " - Storyboard ID")
         
         // We only push Index 17 and for the rest we use MODAL transition
         switch indexPath.item {
@@ -76,7 +76,8 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "ReferencesMenu", bundle: nil)
             
-            let vc = storyboard.instantiateViewController(withIdentifier: "R")
+            // The storyboard ID of the viewControlle we want to transition to
+            let vc = storyboard.instantiateViewController(withIdentifier: "preggo")
             
             // Push the ViewController via Navigation
             self.navigationController?.pushViewController(vc, animated: true)
@@ -147,10 +148,10 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             "tPA Dose Calculator",  //15
             
             "Urine Output",          //16
-          
+            
             "Winters Formula",       //17
             
-           
+            
             
             
             
@@ -165,46 +166,36 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             "Confirm IV flow rates",//2
             
             "Calculates the fractional excretion of Na",//3
-           
+            
             "Free Water Deficit Calc",//4
             
             "Devine formula",//5
             
-            "IV Rate Calculator",   //6
+            "Calculates IV flow rate",   //6
             
             "LOX Calculator",        //7
             
-            "Medical Spanish",       //8
+            "Medical Spanish & Audio",       //8
             
-            "Calculates the IV flow rate",//9
-           
-            "Calculates the time remaining with liquid qxygen",//10
+            "Mean Arterial Pressure & Cerebral Perfusion Pressure",//9
             
-            "Medical Spanish and Audio",//11
+            "Calculates the Flow Time Remaining",//10
             
-            "Mean Arterial Pressure & Cerebral Perfusion Pressure",//12
+            "Fluid replacement calculator post burns",//11
             
-            "Calculates the flow times remaining",//13
+            "Pa02/Fi02 Ratio",//12
+            
+            "Calculates the expected due date",//13
+            
             
             "Shock Index",           //14
             
-            "tPA Dose Calculator",  //15
+            "Initial Bolus and Drip ",//15
             
-            "Fluid replacement calculator post burns",//16
+            "Calculates the U/O in mL/kg/hr",//16
             
-            "Pa02/Fi02 Ratio",//17
-            
-            "Calculates the expected due date",//0
-           
-            "Calculates the shock index of a patient",//1
-           
-            "Initial bolus and drip ",//2
-          
-            "Calculates the U/O in mL/kg/hr",//3
-           
-            "Expected C02 Compensation",//4
-            
-           ]
+            "Expected C02 Compensation",//17
+        ]
         
         StoryboardID = [
             
@@ -212,47 +203,37 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "D",//1
             
-            "L",//2
+            "checkDrip",//2
             
-            "M",//3
+            "fena",//3
             
-            "N",
+            "freeWater", // 4
             
-            "F",//4
+            "ibw",//5
             
-            "K",//5
+            "ivRateCalc",//6
             
-            "IV Rate Calculator",   //6
+            "LOX",        //7
             
-            "LOX Calculator",        //7
+            "spanish",//08
             
-            "Medical Spanish",       //8
+            "MAP",//09
             
-            "LOX",//9
+            "o2cylinder",//10
             
-            "Q",//10
+            "parkland",//11
             
-            "MAP",//11
+            "pfRatio",//12
             
-            "G",//12
-
-            "E",//13
+            "preggo",//13
             
-            "Shock Index",           //14
+            "SI",//14
             
-            "tPA Dose Calculator",  //15
+            "tpa",//15
             
-            "A",//16
+            "peepee",//16
             
-            "R",//17
-            
-            "SI",//0
-            
-            "tpa",//1
-            
-            "J",//2
-            
-            "P",//3
+            "winterTime",//17
             
         ]
     }
@@ -271,7 +252,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
     // Change the color back when the view dissappears
     override func viewWillDisappear(_ animated: Bool) {
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1609999985, green: 0.5019999743, blue: 0.7250000238, alpha: 1)
         
         
     }
