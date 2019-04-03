@@ -284,8 +284,8 @@ class EkgMenuTableViewController: UITableViewController {
                 
                 //Headings and titles
                 New_EKG_DataViewController.ekgTitle = "Second Degree Type I"
-                New_EKG_DataViewController.header = "Wenkeback"
-                New_EKG_DataViewController.subTitle = "2˚ Type I AV Block"
+                New_EKG_DataViewController.header = "Wenckeback"
+                New_EKG_DataViewController.subTitle = "Wenckeback"
                 
                 //Descriptions
                 New_EKG_DataViewController.ekgDescription = wenkebach_setAttributedString_ChangeColorsForText(text:RhythmDescription.Wenkebach.rawValue)

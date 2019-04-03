@@ -390,7 +390,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         let date : Date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "E, MMM d, h:mm a"
+        dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
         let todaysDate = dateFormatter.string(from: date)
         
         navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
@@ -406,7 +406,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         animateNavBar()
         
         //Establish random colors to call for the navbar to change.
-        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1) , #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1), #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1) ]
+        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1),  #colorLiteral(red: 0.1609999985, green: 0.5019999743, blue: 0.7250000238, alpha: 1)]
 
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)

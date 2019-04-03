@@ -57,7 +57,13 @@ class FreeWaterDeficit: UIViewController {
             destination.currentNa = Double(currentNaTxt.text!)
             destination.desiredNa = Double(desiredNaTxt.text!)
             
-            
+            //MARK: Guard function during the calculations.
+            guard let _ = weightTxt, let _ = currentNaTxt, let _ = desiredNaTxt  else {
+                
+                _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
+                print("Error! out of normal parameters")
+                
+                return }
             
         }
         
@@ -102,12 +108,7 @@ class FreeWaterDeficit: UIViewController {
                 case (0?,1?): //Mark:Male Adult
                     
                     //MARK: Guard function during the calculations.
-                    guard let _ = weightTxt, let _ = currentNaTxt, let _ = desiredNaTxt  else {
-                        
-                        _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
-                        print("Error! out of normal parameters")
-                        
-                        return }
+                 
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 2
                     
@@ -120,6 +121,14 @@ class FreeWaterDeficit: UIViewController {
                     let weight = Double (weightTxt.text!)
                     let desiredSodium = Double(desiredNaTxt.text!)
                     
+                    
+                    guard let _ = weight , let _ = sodium, let _ = desiredSodium  else {
+                        print("Error! out of normal parameters")
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Make sure all of the text fields have values before calculating.", closeButtonTitle:"OK")
+                        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+                        
+                        return }
                     
                     /// Settng the Child Male calculation to the resultMale double on the receiving VC.
                     freeWaterVC.resultAdultMale = (0.6 * weight! * ((sodium! / desiredSodium!)-1))
@@ -144,6 +153,15 @@ class FreeWaterDeficit: UIViewController {
                     let weight = Double (weightTxt.text!)
                     let desiredSodium = Double(desiredNaTxt.text!)
                     
+                    
+                    guard let _ = weight , let _ = sodium, let _ = desiredSodium  else {
+                        print("Error! out of normal parameters")
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Make sure all of the text fields have values before calculating.", closeButtonTitle:"OK")
+                        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+                        
+                        return }
+                    
                     /// Settng the Child Male calculation to the resultMale double on the receiving VC.
                     freeWaterVC.resultElderlyMale = (0.5 * weight! * ((sodium! / desiredSodium!)-1))
                     
@@ -166,6 +184,14 @@ class FreeWaterDeficit: UIViewController {
                     let weight = Double (weightTxt.text!)
                     let desiredSodium = Double(desiredNaTxt.text!)
                     
+                    
+                    guard let _ = weight , let _ = sodium, let _ = desiredSodium  else {
+                        print("Error! out of normal parameters")
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Make sure all of the text fields have values before calculating.", closeButtonTitle:"OK")
+                        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+                        
+                        return }
                     /// Settng the Child Male calculation to the resultMale double on the receiving VC.
                     freeWaterVC.resultChildFemale = (0.6 * weight! * ((sodium! / desiredSodium!)-1))
                     
@@ -174,7 +200,7 @@ class FreeWaterDeficit: UIViewController {
                     
                 case (1?,1?): //Mark:Female Adult
                     
-                    
+                 
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 5
                     // I set the ID block,  that is an INT  on the receiving view controller so I can access this in a switch statement.
@@ -186,6 +212,14 @@ class FreeWaterDeficit: UIViewController {
                     let weight = Double (weightTxt.text!)
                     let desiredSodium = Double(desiredNaTxt.text!)
                     
+                    
+                    guard let _ = weight , let _ = sodium, let _ = desiredSodium  else {
+                        print("Error! out of normal parameters")
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Make sure all of the text fields have values before calculating.", closeButtonTitle:"OK")
+                        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+                        
+                        return }
                     /// Settng the Child Male calculation to the resultMale double on the receiving VC.
                     freeWaterVC.resultAdultFemale = (0.5 * weight! * ((sodium! / desiredSodium!)-1))
                     
@@ -193,7 +227,13 @@ class FreeWaterDeficit: UIViewController {
                     
                 case (1?,2?): //Mark: Female Elderly
                     
-                    
+                    //MARK: Guard function during the calculations.
+                    guard let _ = weightTxt, let _ = currentNaTxt, let _ = desiredNaTxt  else {
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate value to calculate", closeButtonTitle:"OK")
+                        print("Error! out of normal parameters")
+                        
+                        return }
                     // Declare a number variable that I can pass to the receiving view controller so that it knows which block of code is being initialized.
                     let id = 6
                     // I set the ID block,  that is an INT  on the receiving view controller so I can access this in a switch statement.
@@ -204,6 +244,15 @@ class FreeWaterDeficit: UIViewController {
                     let sodium = Double(currentNaTxt.text!)
                     let weight = Double (weightTxt.text!)
                     let desiredSodium = Double(desiredNaTxt.text!)
+                    
+                    
+                    guard let _ = weight , let _ = sodium, let _ = desiredSodium  else {
+                        print("Error! out of normal parameters")
+                        
+                        _ = SCLAlertView().showError("Hold On...", subTitle:"Make sure all of the text fields have values before calculating.", closeButtonTitle:"OK")
+                        //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
+                        
+                        return }
                     
                     /// Settng the Child Male calculation to the resultMale double on the receiving VC.
                     freeWaterVC.resultElderlyFemale = (0.45 * weight! * ((sodium! / desiredSodium!)-1))
@@ -288,5 +337,18 @@ class FreeWaterDeficit: UIViewController {
     }
     
     
-    
+    @IBAction func calculateIfempty(_ sender: Any) {
+        
+        let sodium = Double(currentNaTxt.text!)
+        let weight = Double (weightTxt.text!)
+        let desiredSodium = Double(desiredNaTxt.text!)
+        let curentSodium = Double(currentNaTxt.text!)
+
+        guard sodium == nil, weight == nil, desiredSodium == nil, curentSodium == nil else {
+             print("Something is empty")
+            return
+        }
+    }
+
+
 }

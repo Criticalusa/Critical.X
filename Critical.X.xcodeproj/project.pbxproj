@@ -374,6 +374,7 @@
 		C4F8160D20FE401100D41CFB /* KingLT_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8160C20FE401100D41CFB /* KingLT_Extension.swift */; };
 		C4F8160F20FE407600D41CFB /* KingLT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8160E20FE407600D41CFB /* KingLT.swift */; };
 		C4F8161120FE54E800D41CFB /* Dynamic Scroller Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8161020FE54E800D41CFB /* Dynamic Scroller Extension.swift */; };
+		C4FC90B42254CC91004B69CF /* ClinicalReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC90B32254CC91004B69CF /* ClinicalReferences.swift */; };
 		D70D08FFC163B72AD0CEA40A /* Pods_Critical_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A962D86B917D11C4C08F5ED /* Pods_Critical_XTests.framework */; };
 		EDF2BDC1619711E0375CA455 /* Pods_Critical_X.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7415EAFE5F1B26EBCCB3AA51 /* Pods_Critical_X.framework */; };
 /* End PBXBuildFile section */
@@ -873,6 +874,7 @@
 		C4F8160C20FE401100D41CFB /* KingLT_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingLT_Extension.swift; sourceTree = "<group>"; };
 		C4F8160E20FE407600D41CFB /* KingLT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingLT.swift; sourceTree = "<group>"; };
 		C4F8161020FE54E800D41CFB /* Dynamic Scroller Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dynamic Scroller Extension.swift"; sourceTree = "<group>"; };
+		C4FC90B32254CC91004B69CF /* ClinicalReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalReferences.swift; sourceTree = "<group>"; };
 		E472C06F94433A8189BAC2BD /* Pods_Critical_XUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Critical_XUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB32238D3F98FB4F14FFF308 /* Pods-Critical.XTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Critical.XTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Critical.XTests/Pods-Critical.XTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1449,6 +1451,7 @@
 				C47AA23B21FDC91A00544095 /* MainMenu_Collection.swift */,
 				C47AA23A21FDC91A00544095 /* MenMenuCollectionViewCell.swift */,
 				C47AA23C21FDC91A00544095 /* OnboardingVC.swift */,
+				C4FC90B32254CC91004B69CF /* ClinicalReferences.swift */,
 			);
 			path = "Main Storyboard";
 			sourceTree = "<group>";
@@ -1955,7 +1958,6 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C4112D61221B35060019E1AB /* Shock Index */,
 				C410027621B8102900B3D21F /* ABG */,
 				C4D709D920FA5EEA00593760 /* Airway */,
 				C4A5566120102BBB0087B014 /* ACLS 2015 Changes */,
@@ -1969,7 +1971,7 @@
 				C41BD05F20F0E2FB0031C9CD /* Clinical Procedures */,
 				C4A77762200963A2002EEC86 /* CXR  */,
 				C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */,
-				C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */,
+				C4C25ED01FF9099500C5CD42 /* EKG , VAD, 12 Leads */,
 				C4A77764200963D2002EEC86 /* FeNa */,
 				C4C25EC91FF9099500C5CD42 /* Fluids And Electorlytes */,
 				C4A7776A20096507002EEC86 /* Free Water Deficit */,
@@ -1980,6 +1982,7 @@
 				C4A7776120096381002EEC86 /* IV Flow Rate */,
 				C4D4DF622062CAA300A384BD /* Lab Values */,
 				C4ED1371221ACC3E0041360F /* LOX */,
+				C4610F502227109B00A91297 /* MAP */,
 				C418AC6C200BB7C7001EBB04 /* Medical Spanish */,
 				C4278C48203F65DB003ABFF8 /* Neuro  */,
 				C47AA24221FF18E200544095 /* OB View */,
@@ -1989,6 +1992,7 @@
 				C4C25EE81FF9099600C5CD42 /* Pediatrics */,
 				C436ED412001B3B5008ACDC7 /* PF Ratio */,
 				C4C25EB91FF9099500C5CD42 /* RSI */,
+				C4112D61221B35060019E1AB /* Shock Index */,
 				C4112D60221B35000019E1AB /* TPA Calc */,
 				C4A77768200964AC002EEC86 /* Urine Output */,
 				C4D062BE21EA283500F2B84E /* Ultrasound */,
@@ -1999,7 +2003,6 @@
 				C4F8160B20FE127D00D41CFB /* EasyPeasyPlayground.playground */,
 				C44B51F220FA056A00ED5594 /* CriticalPlayground.playground */,
 				C4F8160820FDFF9500D41CFB /* SteviaPG.playground */,
-				C4610F502227109B00A91297 /* MAP */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2043,14 +2046,14 @@
 			path = "Fluids And Electorlytes";
 			sourceTree = "<group>";
 		};
-		C4C25ED01FF9099500C5CD42 /* EKG View Controllers and Gif's */ = {
+		C4C25ED01FF9099500C5CD42 /* EKG , VAD, 12 Leads */ = {
 			isa = PBXGroup;
 			children = (
 				C482F47D2233F49D008E2408 /* 12 Leads */,
 				C4C25EE31FF9099500C5CD42 /* EKG View Controllers & Media */,
 				C4C25ED11FF9099500C5CD42 /* EKG GIf's */,
 			);
-			path = "EKG View Controllers and Gif's";
+			path = "EKG , VAD, 12 Leads";
 			sourceTree = "<group>";
 		};
 		C4C25ED11FF9099500C5CD42 /* EKG GIf's */ = {
@@ -2781,6 +2784,7 @@
 				C4CF01CC22063A30006432BB /* Hemodynamics_DetailView.swift in Sources */,
 				C42F41851FF90E2B003BE489 /* PopTip+Transitions.swift in Sources */,
 				C431C89821E0EE1A00896204 /* PFRatioPopUp.swift in Sources */,
+				C4FC90B42254CC91004B69CF /* ClinicalReferences.swift in Sources */,
 				C4F8160F20FE407600D41CFB /* KingLT.swift in Sources */,
 				C48DC5242208D7B100BC222A /* 0-3KG.swift in Sources */,
 				C45AC31B1FFF219C000CF2CF /* Gradient.swift in Sources */,

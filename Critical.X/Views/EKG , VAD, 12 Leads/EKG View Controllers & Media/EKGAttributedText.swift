@@ -1385,7 +1385,7 @@ extension EkgMenuTableViewController {
 extension EkgMenuTableViewController {
     
     
-    //MARK: - Wenkebach
+    //MARK: - Wenckebach
     // We change the colors of the ekg description
     func wenkebach_setAttributedString_ChangeColorsForText(text: String) -> NSAttributedString
     {

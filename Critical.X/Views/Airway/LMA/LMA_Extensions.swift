@@ -113,12 +113,12 @@ extension LMA {
             let label = UILabel()
             
             let firstParagraph: String = {
-                return "The Laryngeal Mask Airway is an alternative airway device that's used during anesthesia to support the airway. It's an appropriate airway choice when bag valve mask ventilation is warranted but endotracheal intubation is not indicated. It's also used as a back-up airway device during failed oral tracheal intubation. Consisting of a silicone mask and a rubber connecting tube, it is inserted blindly into the oropharynx forming a low-pressure seal around the laryngeal inlet-permitting general positive pressure ventilation."
+                return "The Laryngeal Mask Airway is an alternative airway device that is used during anesthesia to support the airway. It is an appropriate airway choice when bag valve mask ventilation is warranted but endotracheal intubation is not indicated. It is also used as a back-up airway device during failed oral tracheal intubation. Consisting of a silicone mask and a rubber connecting tube, it is inserted blindly into the oropharynx forming a low-pressure seal around the laryngeal inlet-permitting general positive pressure ventilation."
             }()
             
             
             let contraIndicationInfo = {
-                return "The LMA is contraindicated in nonfasting patients, patients who exhibit morbid obesity, and those with obstructive or abnormal lesions of the oropharynx."
+                return "The LMA is contraindicated in non-fasting patients, patients who exhibit morbid obesity, and those with obstructive or abnormal lesions of the oropharynx."
             }()
             
             let finalParagraph  = {

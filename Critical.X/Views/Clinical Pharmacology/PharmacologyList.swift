@@ -51,7 +51,7 @@ class PharmacologyList: UITableViewController {
         
         let date : Date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "E, MMM d, h:mm a"
+        dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
         let todaysDate = dateFormatter.string(from: date)
         
         navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")

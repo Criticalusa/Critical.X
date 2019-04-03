@@ -31,7 +31,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2Nu-NE-B5R" customClass="NeuroCollectionViewCell" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="12.5" y="10" width="295" height="69"/>
+                                        <rect key="frame" x="13" y="10" width="295" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="295" height="69"/>
@@ -42,14 +42,14 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Increased ICP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-oO-4iE">
-                                                    <rect key="frame" x="64" y="8" width="211" height="41"/>
+                                                    <rect key="frame" x="64" y="8" width="211" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                                                     <color key="textColor" name="Bone"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview of herniation process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HXp-O1-vhh">
-                                                    <rect key="frame" x="64" y="39" width="211" height="24"/>
+                                                    <rect key="frame" x="64" y="35" width="211" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                     <color key="textColor" name="Silver"/>
@@ -100,464 +100,472 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFT-tb-wfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3020.625" y="-2254.2253521126759"/>
+            <point key="canvasLocation" x="-2957" y="-2244"/>
         </scene>
         <!--Cranial Nerves-->
         <scene sceneID="Ufw-PI-00T">
             <objects>
                 <viewController storyboardIdentifier="A" title="Cranial Nerves" id="cTq-hc-baF" customClass="CranialNerveVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SBU-S2-qBm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvg-wK-UbK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-SL-zlL">
-                                        <rect key="frame" x="8" y="30" width="304" height="49"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Cranial ">
-                                                <attributes>
-                                                    <font key="NSFont" size="40" name="HelveticaNeue-CondensedBlack"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="Nerves">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="40" name="HelveticaNeue-Medium"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-xj-YsO">
-                                        <rect key="frame" x="5" y="85" width="307" height="287"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9q-PH-XsE">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CranialNerveCartoon" translatesAutoresizingMaskIntoConstraints="NO" id="eRF-lU-Wgj">
-                                                <rect key="frame" x="0.0" y="10" width="307" height="267"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="eRF-lU-Wgj" firstAttribute="centerY" secondItem="IyL-xj-YsO" secondAttribute="centerY" id="1Oy-P9-swu"/>
-                                            <constraint firstAttribute="trailing" secondItem="eRF-lU-Wgj" secondAttribute="trailing" id="3f0-2O-6nf"/>
-                                            <constraint firstAttribute="height" constant="287" id="4i2-m3-5OX"/>
-                                            <constraint firstAttribute="bottom" secondItem="eRF-lU-Wgj" secondAttribute="bottom" constant="10" id="W1O-Is-6yE"/>
-                                            <constraint firstItem="eRF-lU-Wgj" firstAttribute="centerX" secondItem="IyL-xj-YsO" secondAttribute="centerX" id="cJF-Gw-Jlk"/>
-                                            <constraint firstItem="eRF-lU-Wgj" firstAttribute="top" secondItem="IyL-xj-YsO" secondAttribute="top" constant="10" id="phB-lB-1dA"/>
-                                            <constraint firstItem="eRF-lU-Wgj" firstAttribute="leading" secondItem="IyL-xj-YsO" secondAttribute="leading" id="zA8-Sj-jUi"/>
-                                        </constraints>
-                                    </scrollView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFP-Mx-YCE">
-                                        <rect key="frame" x="10" y="371" width="302" height="352"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-9N-6ul" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="39" width="300" height="281"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-SL-zlL">
+                                                <rect key="frame" x="8" y="30" width="304" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Cranial ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="40" name="HelveticaNeue-CondensedBlack"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Nerves">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="40" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyL-xj-YsO">
+                                                <rect key="frame" x="5" y="95" width="307" height="314"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgO-A4-rUJ">
-                                                        <rect key="frame" x="8" y="0.0" width="289" height="16"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="●">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" Sensory  ">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="● ">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" Motor  ">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="●">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="  Both ">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gah-Ri-Wfw">
-                                                        <rect key="frame" x="7" y="24" width="291" height="232"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="I:    ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Olfactory">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content"> - Smell
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CranialNerveCartoon" translatesAutoresizingMaskIntoConstraints="NO" id="eRF-lU-Wgj">
+                                                        <rect key="frame" x="0.0" y="11" width="297" height="267"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="297" id="FiU-vi-lxs"/>
+                                                            <constraint firstAttribute="height" constant="267" id="YDg-Qg-Ufz"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="eRF-lU-Wgj" secondAttribute="bottom" constant="11" id="CJT-4G-HYc"/>
+                                                    <constraint firstAttribute="width" constant="307" id="EOO-he-ciO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eRF-lU-Wgj" secondAttribute="trailing" id="Vw0-Lv-J2i"/>
+                                                    <constraint firstAttribute="height" constant="314" id="hdz-x9-nUm"/>
+                                                    <constraint firstItem="eRF-lU-Wgj" firstAttribute="leading" secondItem="IyL-xj-YsO" secondAttribute="leading" id="mr3-gJ-bZ6"/>
+                                                    <constraint firstItem="eRF-lU-Wgj" firstAttribute="top" secondItem="IyL-xj-YsO" secondAttribute="top" constant="11" id="xXe-CS-fGP"/>
+                                                </constraints>
+                                            </scrollView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFP-Mx-YCE">
+                                                <rect key="frame" x="10" y="384" width="302" height="359"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-9N-6ul" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                                        <rect key="frame" x="2" y="39" width="300" height="285"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgO-A4-rUJ">
+                                                                <rect key="frame" x="8" y="0.0" width="289" height="16"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="●">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" Sensory  ">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="● ">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" Motor  ">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="●">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="  Both ">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gah-Ri-Wfw">
+                                                                <rect key="frame" x="7" y="24" width="291" height="232"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="I:    ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Olfactory">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> - Smell
 II:   </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Optic">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content"> - Visual
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Optic">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> - Visual
 III:  </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Oculomotor">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content"> - Pupillary constriction, eye movements
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Oculomotor">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> - Pupillary constriction, eye movements
 IV:  </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Trochlear">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content"> - Downward and inward gaze
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Trochlear">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> - Downward and inward gaze
 V:   </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Trigeminal">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" - ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Facial sensation">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content">, mastication
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Trigeminal">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" - ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Facial sensation">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content">, mastication
 VI:  </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Abducens">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content">- Lateral eye movements
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Abducens">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content">- Lateral eye movements
 VII: </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Facial">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" - ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="taste">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content">, smiling, frowning
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Facial">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" - ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="taste">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content">, smiling, frowning
 VIII:</string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Acoustic">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content"> - Hearing, balancing 
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Acoustic">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> - Hearing, balancing 
 IX:  </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Glossopharyngeal">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="- ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Taste">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=", ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="gag">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="reflex">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=", ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="swallowing">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=", ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="throat">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Glossopharyngeal">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="- ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Taste">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=", ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="gag">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="reflex">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=", ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="swallowing">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=", ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="throat">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content">
 X:   </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Vagus">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" - ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Larynx">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content">, voicebox, decreased HR
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Vagus">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" - ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Larynx">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content">, voicebox, decreased HR
 XI:  </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Spinal">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Accessory">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content"> - Shoulder shrugs
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Spinal">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" ">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Accessory">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> - Shoulder shrugs
 XII: </string>
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Hypoglossal">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" - Movement of the tongue">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csb-vv-gz5">
-                                                        <rect key="frame" x="0.0" y="256" width="298" height="25"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                        <color key="backgroundColor" red="0.8912609816" green="0.35455638169999998" blue="0.39968371390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="Hypoglossal">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" - Movement of the tongue">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csb-vv-gz5">
+                                                                <rect key="frame" x="0.0" y="260" width="298" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                                <color key="backgroundColor" red="0.8912609816" green="0.35455638169999998" blue="0.39968371390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColorCard">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="6"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColorCard">
-                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="352" id="4kL-oB-ZKo"/>
+                                            <constraint firstAttribute="trailing" secondItem="IyL-xj-YsO" secondAttribute="trailing" constant="8" id="8zZ-IZ-W50"/>
+                                            <constraint firstAttribute="bottom" secondItem="IyL-xj-YsO" secondAttribute="bottom" constant="359" id="Vad-2H-cdb"/>
+                                            <constraint firstItem="IyL-xj-YsO" firstAttribute="leading" secondItem="X9q-PH-XsE" secondAttribute="leading" constant="5" id="Wea-tc-LPC"/>
+                                            <constraint firstAttribute="height" constant="768" id="zR9-Av-3Vn"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="trailing" secondItem="IyL-xj-YsO" secondAttribute="trailing" id="11R-Rq-aeq"/>
-                                    <constraint firstItem="VFP-Mx-YCE" firstAttribute="top" secondItem="IyL-xj-YsO" secondAttribute="bottom" constant="-1" id="3UQ-Hi-45e"/>
-                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leadingMargin" id="Qkc-eT-dRK"/>
-                                    <constraint firstItem="VFP-Mx-YCE" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leading" constant="10" id="Wjf-yH-Qmh"/>
-                                    <constraint firstItem="IyL-xj-YsO" firstAttribute="top" secondItem="4kF-SL-zlL" secondAttribute="bottom" constant="6" id="ccF-iV-mxP"/>
-                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="top" secondItem="qvg-wK-UbK" secondAttribute="top" constant="30" id="i5M-a3-GwF"/>
-                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="trailing" secondItem="qvg-wK-UbK" secondAttribute="trailingMargin" id="ikI-yF-XSn"/>
-                                    <constraint firstAttribute="bottom" secondItem="VFP-Mx-YCE" secondAttribute="bottom" constant="55" id="nnt-aa-pgf"/>
-                                    <constraint firstItem="IyL-xj-YsO" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leading" constant="5" id="pLP-zV-VZu"/>
-                                    <constraint firstItem="IyL-xj-YsO" firstAttribute="trailing" secondItem="VFP-Mx-YCE" secondAttribute="trailing" id="sDb-rC-8yB"/>
-                                    <constraint firstItem="4kF-SL-zlL" firstAttribute="centerX" secondItem="qvg-wK-UbK" secondAttribute="centerX" id="sQS-BW-kZm"/>
+                                    <constraint firstItem="X9q-PH-XsE" firstAttribute="width" secondItem="qvg-wK-UbK" secondAttribute="width" id="Kx5-aV-bJP"/>
+                                    <constraint firstItem="X9q-PH-XsE" firstAttribute="leading" secondItem="qvg-wK-UbK" secondAttribute="leading" id="n82-d8-EX4"/>
+                                    <constraint firstItem="X9q-PH-XsE" firstAttribute="top" secondItem="qvg-wK-UbK" secondAttribute="top" id="rF9-NG-w6g"/>
+                                    <constraint firstAttribute="bottom" secondItem="X9q-PH-XsE" secondAttribute="bottom" id="st2-HJ-ClQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="X9q-PH-XsE" secondAttribute="trailing" id="taG-NT-HbO"/>
                                 </constraints>
                             </scrollView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-wL-kH4">
@@ -571,13 +579,14 @@ XII: </string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qvg-wK-UbK" secondAttribute="bottom" constant="-210" id="1hJ-nf-lDG"/>
-                            <constraint firstAttribute="trailing" secondItem="qvg-wK-UbK" secondAttribute="trailing" id="EOs-NT-EaP"/>
-                            <constraint firstItem="qvg-wK-UbK" firstAttribute="top" secondItem="SBU-S2-qBm" secondAttribute="top" id="O7w-ov-Q8r"/>
-                            <constraint firstItem="qvg-wK-UbK" firstAttribute="leading" secondItem="SBU-S2-qBm" secondAttribute="leading" id="cgs-oU-qeH"/>
+                            <constraint firstItem="qvg-wK-UbK" firstAttribute="bottom" secondItem="QIG-Fp-X2F" secondAttribute="bottom" id="1oX-od-INM"/>
+                            <constraint firstItem="qvg-wK-UbK" firstAttribute="trailing" secondItem="QIG-Fp-X2F" secondAttribute="trailing" id="GIz-AI-LF8"/>
+                            <constraint firstItem="qvg-wK-UbK" firstAttribute="top" secondItem="SBU-S2-qBm" secondAttribute="top" id="Tce-QF-j3r"/>
+                            <constraint firstItem="qvg-wK-UbK" firstAttribute="leading" secondItem="QIG-Fp-X2F" secondAttribute="leading" id="cLS-Rr-u9U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QIG-Fp-X2F"/>
                     </view>
+                    <size key="freeformSize" width="320" height="768"/>
                     <connections>
                         <outlet property="cnScroller" destination="IyL-xj-YsO" id="c7M-mQ-Q7E"/>
                         <outlet property="cranialImage" destination="eRF-lU-Wgj" id="ENR-uM-Y99"/>
@@ -586,7 +595,7 @@ XII: </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4KT-yy-u0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2296.875" y="-2250"/>
+            <point key="canvasLocation" x="-2224" y="-2138"/>
         </scene>
         <!--GCS-->
         <scene sceneID="enS-Fp-FXn">
@@ -1139,7 +1148,7 @@ The herniation pattern and exam characteristics are as follows:
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1147,8 +1156,8 @@ The herniation pattern and exam characteristics are as follows:
                                         <string key="content">Cerebral cortex
 </string>
                                         <attributes>
-                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <color key="NSColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1161,14 +1170,14 @@ Motor -  Posturing that progresses from the decorticate to decerebrate.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Midbrain">
                                         <attributes>
                                             <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1182,14 +1191,14 @@ Motor -  Posturing progresses from the decorticate to decerebrate.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Pons">
                                         <attributes>
                                             <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1203,14 +1212,14 @@ Motor -  Flaccid.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Medulla">
                                         <attributes>
                                             <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1222,7 +1231,7 @@ Pupils -  Dilated, nonreactive, doll's eyes, no response to cold caloric auditor
 Motor - Flaccid. </string>
                                         <attributes>
                                             <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1534,115 +1543,76 @@ Motor - Flaccid. </string>
                                     <fragment>
                                         <string key="content">Intracranial hypertension is defined as an ICP &gt;20 mmHg for longer than five minutes.
 
-▶ Normal ICP: five – 15 mmHg.
-▶ Elevated ICP &gt;20 mmHg .
-▶ Sustained ICP &gt;40 mmHg – prognosis is poor.
-▶ Sustained ICP &gt;60 mmHg is fatal.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Normal ICP: five – 15 mmHg.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Elevated ICP &gt;20 mmHg .
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Sustained ICP &gt;40 mmHg – prognosis is poor.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content"> Sustained ICP &gt;60 mmHg is fatal.
 
 When brain swelling occurs, it increases intracranial pressure and will have effects on the following structures. First, the outer cerebral cortex. Then, it progresses to deeper structures such as the ventricles, diencephalon and finally the brainstem.
 
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Signs of an intracranial emergency">
                                         <attributes>
-                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-▶ ICP &gt;20 mmHg.
-▶ CPP &lt;60 mmHg.
-▶ The presence of blood in the cerebrospinal fluid.
-▶ Cerebrospinal fluid leaking around the insertion site.
-▶ Infection around the insertion site.
-▶ Cerebrospinal fluid drainage &gt;500 mL in 24 hours.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Causes of intracranial pressure">
-                                        <attributes>
-                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-▶ Interstitial edema.
-▶ Brain hypoxia.
-▶ Trauma.
-▶ Reduce cerebral blood flow or direct cerebral injury.
-▶ Mass effect directly resulting from a hematoma or hydrocephalus.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Pathophysiology
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="When ICP increases, you'll notice the following changes in this order:">
-                                        <attributes>
-                                            <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-▶ The ventricles will contract thus, a reduction of CSF.
-▶ Blood volume is reduced in the cranium by hyperventilation to PaCO2 which results in cerebral vasoconstriction.
-▶ Cushing's reflex (which is a late sign) will cause bradycardia and hypertension.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Airway management
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">▶ Intubation and mechanical ventilation are necessary.
-▶ Maintain oxygen delivery of at least 600 mL per minute per M2 by supporting the cardiac index, hemoglobin, and 
-maintaining the oxygen saturation.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Note: aggressive hyperventilation (PaCO2 30) is only used for intracranial hypertension resistant to treatment. Sustain hyperventilation can cause cerebral edema.</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <color key="NSColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1651,7 +1621,303 @@ maintaining the oxygen saturation.
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> ICP &gt;20 mmHg.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> CPP &lt;60 mmHg.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> The presence of blood in the cerebrospinal fluid.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Cerebrospinal fluid leaking around the insertion site.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Infection around the insertion site.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Cerebrospinal fluid drainage &gt;500 mL in 24 hours.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Causes of intracranial pressure">
+                                        <attributes>
+                                            <color key="NSColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Interstitial edema.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Brain hypoxia.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Trauma.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Reduce cerebral blood flow or direct cerebral injury.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Mass effect directly resulting from a hematoma or hydrocephalus.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Pathophysiology
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.67455112934112549" green="0.15692374110221863" blue="0.10914970934391022" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="When ICP increases, you'll notice the following changes in this order:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> The ventricles will contract thus, a reduction of CSF.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Blood volume is reduced in the cranium by hyperventilation to PaCO2 which results in cerebral vasoconstriction.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Cushing's reflex (which is a late sign) will cause bradycardia and hypertension.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Airway management
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Intubation and mechanical ventilation are necessary.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Maintain oxygen delivery of at least 600 mL per minute per M2 by supporting the cardiac index, hemoglobin, and 
+maintaining the oxygen saturation.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Note: aggressive hyperventilation (PaCO2 30) is only used for intracranial hypertension resistant to treatment. Sustain hyperventilation can cause cerebral edema.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1659,48 +1925,193 @@ Cg
                                         <string key="content">
 ︎</string>
                                         <attributes>
-                                            <font key="NSFont" size="14" name="LucidaGrande"/>
+                                            <color key="NSColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Treatment and management">
                                         <attributes>
-                                            <color key="NSColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <color key="NSColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-▶ Position the patient's head of the bed to 30 to 45°.
-▶ Maintain the head in a neutral position and make sure the tracheal ties are not tight.
-▶ Closely monitor I &amp; O for excess diuresis or fluid retention.
-▶ Mannitol: 0.25 – 1 g per kilogram. Maintain serum osmolarity 305 – 320 mOsm per liter.  Normal osmolarity is 272 to 90 mOsm per liter.
-▶ Lasix: 0.5 – 1 mg per kilogram. Sometimes given to decrease cerebral spinal fluid production.
-▶ Albumin 4 g/dL may help with cerebral edema.
-▶ Hypertonic saline 3%.
-▶ Barbiturate comas.
-▶ Beta blockers: labetalol 10 – 40 mg IV q 15 – 30 minutes.
-▶ Mean arterial pressure management (MAP) &gt; than 150 mmHg.
-▶ Note: 75% of cranial blood volume is Venus. Avoid Nitroglycerin and Nipride as these drugs will increase intracranial pressures.
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Position the patient's head of the bed to 30 to 45°.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Maintain the head in a neutral position and make sure the tracheal ties are not tight.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Closely monitor I &amp; O for excess diuresis or fluid retention.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Mannitol: 0.25 – 1 g per kilogram. Maintain serum osmolarity 305 – 320 mOsm per liter.  Normal osmolarity is 272 to 90 mOsm per liter.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Lasix: 0.5 – 1 mg per kilogram. Sometimes given to decrease cerebral spinal fluid production.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Albumin 4 g/dL may help with cerebral edema.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Hypertonic saline 3%.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Barbiturate comas.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Beta blockers: labetalol 10 – 40 mg IV q 15 – 30 minutes.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Mean arterial pressure management (MAP) &gt; than 150 mmHg.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Note: 75% of cranial blood volume is Venus. Avoid Nitroglycerin and Nipride as these drugs will increase intracranial pressures.
 
 </string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Critical Points">
                                         <attributes>
                                             <color key="NSColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1711,14 +2122,80 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-▶ Always think cerebral perfusion pressure, MAP - ICP.
-▶ Maintain cerebral perfusion pressure greater sign 60 – 70 mmHg. Maintain systolic blood pressures &gt;90 mmHg.
-▶ Utilize vasoactive medications if necessary, i.e., Neosynephrine.
-▶ Do not use D5W or 0.45% saline for maintenance fluids.
-▶ Sedation with propofol is preferred As it has a short half-life allowing for frequent neuro examinations to be conducted. It also lessens the chance of increased intracranial pressure caused by suctioning, coughing or agitation.</string>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Always think cerebral perfusion pressure, MAP - ICP.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Maintain cerebral perfusion pressure greater sign 60 – 70 mmHg. Maintain systolic blood pressures &gt;90 mmHg.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Utilize vasoactive medications if necessary, i.e., Neosynephrine.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Do not use D5W or 0.45% saline for maintenance fluids.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="▶">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Sedation with propofol is preferred As it has a short half-life allowing for frequent neuro examinations to be conducted. It also lessens the chance of increased intracranial pressure caused by suctioning, coughing or agitation.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -2366,7 +2843,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zID-Fg-MHV" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5127" y="-2257"/>
+            <point key="canvasLocation" x="1958" y="-1780"/>
         </scene>
         <!--RACE-->
         <scene sceneID="Xxr-yI-DeB">
@@ -3598,7 +4075,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One abnormal finding is 72% predictave of a stroke." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jaq-UY-Cbj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One abnormal finding is 72% predictive of a stroke." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jaq-UY-Cbj">
                                         <rect key="frame" x="26" y="13" width="272" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="rdp-cb-PUe"/>
@@ -3661,7 +4138,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJT-pN-8oW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2023" y="-2894"/>
+            <point key="canvasLocation" x="-930" y="-2895"/>
         </scene>
         <!--Stroke Detail-->
         <scene sceneID="Huc-oQ-m5j">

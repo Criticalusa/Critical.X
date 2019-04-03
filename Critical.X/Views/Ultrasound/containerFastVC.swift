@@ -62,8 +62,11 @@ class containerFastVC: UIViewController, UIScrollViewDelegate {
         
         // Here we populate the labbels for the container view
         imageOneLabel.text = descriptionStringOne
+        
         imageTwoLabel.text = descriptionStringTwo
+        
         imageThreeLabel.text = descriptionStringThree
+        
         imageFourLabel.text = descriptionStringFour
         
         receivedFromSetID = setID

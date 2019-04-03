@@ -232,7 +232,7 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 // We unhide the button here
                 detailView.hideButton = false
                 
-                detailView.troubleshootingString = "Impella Troubleshooting"
+                detailView.troubleshootingString = "Troubleshooting"
                 
                 // Creat the tag to reference for the button to go to webiste.
                 buttonTag = 4

@@ -14,7 +14,7 @@ import UIKit
     enum EKGDescription: String {
         
         case Overview = """
-        \rReading 12 lead EKG should be methodical, like reading chest x-rays. Below, we'll talk about the different morphology of the rhythm strips and how to assess each complex.
+        \rReading 12 lead EKG's should be methodical, like reading chest x-rays. Below, we'll talk about the different morphology of the rhythm strips and how to assess each complex.
         \rIn a 12 lead EKG, there are 3 limb leads (bipolar), 3 augmented limb leads (unipolar) and 6 precordial leads (v1-v6).
         \rLimb Leads (Bipolar): Consist of leads I, II, and III. There are 2 electrodes (- and +) that are equidistant from the heart and the signal moves towards the + lead- producing a positive-upright deflection on the tracing.
         \rAugmented Limb Leads (Unipolar): This consist of aVR, aVL, and aVF. Ironically, these letters all mean something. the "a" = augmented. The "V" = voltage and the "R,L'F" = right arm, left arm and left leg, respectively. These leads pick up electrical activity from the center of the heart towards the + lead - For example; aVR = center of the heart to the right arm etc..
@@ -29,7 +29,7 @@ import UIKit
         \r 6. Examine the axis and determine where is the rhythm originating from: Atrial, Ventricular, Junctional, Paced?
         \r 7. Make a differential interpretation.
         \rMorphology assessment
-        \rP-wave: The P-wave should always be positive and leads II, III, and aVF. If not, then it should not be considered a sinus rhythm. When looking at the precordial leads (V1 – V6), at times, the P waves can be biphasic in V1 (which is negatively deflected) no more than 1 mm.
+        \rP-wave: The P-wave should always be positive in leads II, III, and aVF. If not, then it should not be considered a sinus rhythm. When looking at the precordial leads (V1 – V6), at times, the P waves can be biphasic in V1 (which is negatively deflected) no more than 1 mm.
         \rIn a sinus rhythm, the P wave is always positively deflected in lead II. Biphasic P waves can be physiological in lead I. This is mainly from the negative deflection that's caused when the atrium is depolarized, and the vectors are directed away from V1.
         \rWhen the P waves don't depolarize simultaneously, double P waves are observed on the tracing. This can also represent left or right atrial enlargement.
         \rPR Interval: The PR interval should be between 0.12 – 0.20 seconds in all of the leads. Any increase in the duration of the PR interval could suggest a heart block. You can read more about the details of the different blocks in the EKG section.
@@ -37,13 +37,13 @@ import UIKit
         QRS complex: The QRS complex is the most visible part of the tracing which is comprised of three graphical deflections that represent depolarization of the ventricles. Typically, the duration should be less than 0.12 seconds. Any prolongation of the QRS complex can denote left or right bundle branch blocks, aberrant conductions, intraventricular disturbances or pre-excitation syndromes, i.e., Wolf-Parkinson-White (WPW).
         \rWith respects to the voltage, high-voltage QRS complexes represent ventricular hypertrophy ( R wave > 35 mm in the precordial leads). Conversely, low-voltage QRS complexes can be indicative of COPD, pericardial fusions, pleural fusions, or just a normal variant. The axis should be normal, or physiological left - in the limb leads between –30° to 90°.
         
-        ST Segment: ST elevation is measured at the J point. Usually, it should be flat and isoelectric. It should travel along the baseline. In the population, benign ST elevation is quite common especially in V2 – V6. Variation of the J point can be indicative of early repolarization or Brugada Syndrome – which is talked more about in the Brugada a section.
+        ST Segment: ST elevation is measured at the J point. Usually, it should be flat and isoelectric. It should travel along the baseline. In the population, benign ST elevation is quite common especially in V2 – V6. Variation of the J point can be indicative of early repolarization or Brugada Syndrome – which is talked more about in the Brugada section.
         \rIn normal individuals without ischemic events, concave ST elevations are common. ST elevation characteristically, in the event of ischemic events can be convex, upsloping, downsloping or horizontal.
-        \rThese changes can be indicative of STEMI, but also can be indicative of other pathological issues such as bundle branch blocks, coronary vasospasm's, ischemic events, Hyperkalemia, Aortic dissection's, Takotsubo's cardiomyopathy and Pulmonary embolism's alike.
+        \rThese changes can be indicative of STEMI, but also can be indicative of other pathological issues such as bundle branch blocks, coronary vasospasm's, ischemic events, Hyperkalemia, Aortic dissection's, Takotsubo's cardiomyopathy and Pulmonary embolisms alike.
         \rConversely, ST depression is not common and is recognized in the chest leads less than 0.5 mm. any ST depression identified can be indicative of ischemia, bundle branch blocks, left or right ventricular hypertrophy, heart failure.
         
         T Wave: The T wave should be concordant (in the same direction) as the QRS complex; however, it's acceptable to be inverted and lead V1 and also lead III.
-        \rDeep T wave inversions in V1-V6 without ST-segment changes should be concerning for Wellen's syndrome. Inversions that coincide with ST-segment elevation/depression should be concerning for myocardial ischemia.
+        \rDeep T wave inversions in V2-V3 (may extend to V1-V6) without ST-segment changes should be concerning for Wellen's syndrome. Inversions that coincide with ST-segment elevation/depression should be concerning for myocardial ischemia.
         \rPeaked T waves are associated with hyperkalemia, but also can be associated with ventricular hypertrophy, myocarditis or bundle branch blocks.
         """
         
@@ -67,7 +67,7 @@ import UIKit
         leads, there can be a ⬆︎ positive (upright) deflection, ⬇︎negative (downward) deflection or ⬇︎⬆︎ biphasic
         (both positive and negative) deflection.
         \rNormal Axis
-        This is the easiest one. As the impulse travels from 11 o'clock to 5 o'clock,  A positive deflection will be recognized and all the leads.
+        This is the easiest one. As the impulse travels from 11 o'clock to 5 o'clock,  A positive deflection will be recognized in all the leads.
         \rLeft Axis Deviation
         LAD typically is a result of an electrical conduction issue and is classified into two subcategories:
         Physiological left axis deviation (normal), and pathological left axis deviation (abnormal).
@@ -106,7 +106,7 @@ import UIKit
         \rINFARCTION PATTERNS
         Generally, infarctions that are more than 40% of the LV will result in cardiogenic shock.
         \rAnterior infarctions patterns can expand to the septal and lateral portions of the wall.
-        \rMainly there will be ST segment elevation prominent Q wave formation in the precordial leads
+        \rMainly there will be ST segment elevation, prominent Q wave formation in the precordial leads
         (V1-6) and/or the high lateral leads (I and aVL).
         \rReciprocal ST depression in the inferior leads (mainly III and aVF).
         \r• Anterior = V2-5
