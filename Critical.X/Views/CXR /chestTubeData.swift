@@ -39,11 +39,11 @@ class ChestXrayData: UIViewController {
         
         centralLineData.text = "Catheter Tip\n\n▶︎ The catheter tip of the central line should end approx. at the level of the right trachealbronchial angle. The tip of the tube should be aimed towards the lower part of the pleural cavity.\n\n▶︎ Rule out any pnuemothorax.\n\n▶︎ If you notice any mediastinal widening, this may be a direct result of great vessel damage"
         
-        ettData.text = "▶︎ The tip of the endotracheal tube should be approx. 3cm below the vocal chords and 2-4 cm above the carina - this should be approx. at the level of the aortic arch."
+        ettData.text = "▶︎ The tip of the endotracheal tube should be approximately 3 cm below the vocal chords and 2-4 cm above the carina - which is approximately at the level of the aortic arch."
         
         ventilationData.text = "▶︎ 1st, rule out any pnuemothorax, sub-q air pneumomediastinum or subpleural air cysts.\n\nNote:\n▶︎ Lung infiltrates may be diminished on the view due to increased aeration and pressures."
         
-        ngOgData.text = "▶︎ Verify that the tube is in the stomach and not coiled up in the esophagus or trachea."
+        ngOgData.text = "▶︎ Verify that the tube is in the stomach and not coiled up into the esophagus or trachea."
         
         trachData.text = "▶︎ Should be located halfway between the stoma and the carina.\n\n▶︎ Should be approx. 2/3 width of the trachea.\n\n▶︎The trach cuff should not cause buldging of the tracheal walls.\n \n▶︎ Check for sub-q are in the neck.\n\n▶︎ Finally, check for a widening mediastimum due to possible air leakages."
 

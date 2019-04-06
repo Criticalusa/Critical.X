@@ -22,9 +22,8 @@ class IntraAorticBalloonPumpMain: UITableViewController {
         
         //change the color of the navigationbar
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
-        
-        
-    }
+ }
+    
     
     // Change the color back when the view dissappears
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,6 +38,8 @@ class IntraAorticBalloonPumpMain: UITableViewController {
     //Create an array to populate the tableView
     let iabpMenuItems = [["Normal Timing", "Early Inflation", "Late Inflation", "Early Deflation", "Late Deflation"], ["Aortic Dissection / Perforation", "Ineffective Augmentation", "Bleeding at the insertion site", "Balloon rupture / Leak","Dysrhythmias","Vascular Injury","Failure to pump","Limb ischemia","Cardiac Arrest"]]
     // let images = ["normal","LAP","apnea","hypo","elevated","hyper"]
+    
+    
     
     //MARK: UITableViewDataSource
     

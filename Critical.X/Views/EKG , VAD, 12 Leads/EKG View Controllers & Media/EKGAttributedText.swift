@@ -929,7 +929,7 @@ extension EkgMenuTableViewController {
             // Set the string to the changed String so its set at the end
             
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.9925034642, green: 0.8121734858, blue: 0, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.8322971463, green: 0.7651839852, blue: 0.6244494915, alpha: 1), subString: changedString)
             //attributedText.underLine(subString: changedString)            // declare the font of the singled out text
             let customFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
             

@@ -67,7 +67,7 @@ class Stroke: UIViewController {
                 //Name of the image
                 strokeDetailInfo.ctImageName = "SAH1"
                 // Title Header
-                strokeDetailInfo.strokeHeading = "Subarrachnoid Hemorrhage"
+                strokeDetailInfo.strokeHeading = "Subarachnoid Hemorrhage"
                 // Description Header
                 // We have to access the class then t
                 strokeDetailInfo.strokeDescrip = StrokeDetail.CVADescription.sah.rawValue

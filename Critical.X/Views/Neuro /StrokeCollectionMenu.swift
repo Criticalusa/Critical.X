@@ -21,7 +21,7 @@ class StrokeCollectionMenu: UIViewController, UICollectionViewDataSource, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        strokeMenu = ["GCS","RACE Stroke Scale","Cincinnati Stroke","NIH", "Ischemia Stroke"]
+        strokeMenu = ["GCS","RACE Stroke Scale","Cincinnati Stroke","NIH", "Ischemic Stroke"]
         
         strokeSubtitleMenu = ["Glascow Coma Score","RACE Stroke Calculator","Cincinnati Stroke Calculator","National Institutes of Health Stroke Scale", "Ischemic Stroke Pathology & S/S"]
         

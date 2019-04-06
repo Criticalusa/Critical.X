@@ -29,13 +29,31 @@ class OBDetailView: UIViewController {
     @IBOutlet weak var fetalHeartImage: UIImageView!
     @IBOutlet weak var imageSmallDescription: UILabel!
     
+    ///////////////SET THIS TO THE CONTENTVIEW HEIGHT NOT SCROLLVIEW
+    // SEt the constrain to the CONTENT VIEWS HEIGHT NOT THE SCROLLER>
+    @IBOutlet weak var scrollHeight: NSLayoutConstraint!
+    // This is the constrain height of the scrollView.
+    
+    
+    //VIEWDID APPEAR!!!!!!!!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.REFERENCE THE ORIGIN ADD UP ALL OF THE VIEWS OR LABELS AND ADD A BUFFER
+        scrollHeight.constant = descriptionLabel.frame.origin.y + descriptionLabel.frame.size.height + 50
+        
+        print("\(descriptionLabel.frame.size.height) Height constraint Value")
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         
         // Set the label to the passed string
         titleLabel.text = titleName
         
-        // SEts the description label to the string which is connect oto an emum
+        // Sets the description label to the string which is connect oto an emum
         descriptionLabel.text = descriptionString
         
         imageSmallDescription.text = imageDescription

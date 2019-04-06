@@ -180,7 +180,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
     
     func checkAnalyzeButtonStatus()  {
         if AnalyzeButton.isEnabled == false {
-            AnalyzeButton.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            AnalyzeButton.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             AnalyzeButton.setTitle("Check parameters", for: .normal)
             
         }

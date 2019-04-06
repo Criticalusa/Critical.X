@@ -134,7 +134,6 @@ class RSISetting: UIViewController {
         
         txt_Ketamine.text = "\(Parameters.object(forKey: "ketamine") as! Double)"
         
-
         txt_Ketamine1.text = "\(Parameters.object(forKey: "ketamineMax") as! Double)"
         
         txt_Versed_min.text = "\(Parameters.object(forKey: "versed_min") as! Double)"

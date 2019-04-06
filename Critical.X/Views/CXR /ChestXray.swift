@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChestXray: UIViewController {
+class ChestXray: UIViewController, UIScrollViewDelegate {
     
     //Outlets
     @IBOutlet weak var cxrImageView: UIImageView!
@@ -26,8 +26,15 @@ class ChestXray: UIViewController {
         }
     }
     
+    @IBOutlet weak var cxrScroller: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.cxrScroller.minimumZoomScale = 1.0;
+        self.cxrScroller.maximumZoomScale = 5.0;
+        self.cxrScroller.delegate = self
+        
         
         /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
         cxrImageView.clipsToBounds = true
@@ -72,6 +79,12 @@ class ChestXray: UIViewController {
         //Adds the button to the view
         view.addSubview(switchButton)
         
+    }
+    
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        
+        return self.cxrImageView
     }
     
     @IBAction func closeChestXrayView(_ sender: Any) {

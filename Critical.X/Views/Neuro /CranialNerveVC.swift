@@ -20,7 +20,9 @@ class CranialNerveVC: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.cnScroller.minimumZoomScale = 1.0;
         self.cnScroller.maximumZoomScale = 5.0;
-        self.cnScroller.delegate = self;        //Rotates the label
+        self.cnScroller.delegate = self;
+        
+        //Rotates the label
         //CN1Label.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         cranialImage.image = #imageLiteral(resourceName: "CranialNerveCartoon.png")
 

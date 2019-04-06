@@ -30,7 +30,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
 
         mainMenu = ["Cranial Nerves","Stroke Scores","Herniation","Increased ICP","Neuro Exam","Stroke pathology", "Normal CT brain", "GCS"]
         
-        subTitle =  ["Cranial Nerves","Assessment & Calculators","Overview of herniation process","Sign of increased intracranical pressure","Complete neurological exam","Different stroke pathologies", "CT scan of the brain", "Glascow Coma Scale"]
+        subTitle =  ["Cranial Nerves","Assessment & Calculators","Overview of herniation process","Sign of increased intracranial pressure","Complete neurological exam","Different stroke pathologies", "CT scan of the brain", "Glascow Coma Scale"]
         
         
         cellImages = ["CranialNerves1","GCS1","Herniation","Brain 44","brainMap","Brain-1", "CT1", "Brain 44" ]
