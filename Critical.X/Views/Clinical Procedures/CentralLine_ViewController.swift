@@ -67,7 +67,7 @@ class CentralLine_ViewController: UIViewController {
         // Intro text
         centralLineInfo =
         """
-        \rCentral venous catheterization is necessary to monitor hemodynamics, administer medications and fluids in critically ill patients. It can also but used as a conduit for Pulmonary Artery catheters, transvenous pacemakers, defibrillators, CRRT, plasmapheresis, hemodialysis catheters, and venous stenting.
+        \rCentral venous catheterization is necessary to monitor hemodynamics, administer medications and fluids in critically ill patients. It can also be used as a conduit for Pulmonary Artery catheters, transvenous pacemakers, defibrillators, CRRT, plasmapheresis, hemodialysis catheters, and venous stenting.
         \rAnatomic sites for the catheter can vary. The central line can be placed in the jugular, subclavian vein, brachial and femoral vein(s). Venous mapping is considered the standard of care, as it can provide catheter guidance into the proper vein, limit insertion complications and catheter tunneling."
         """
         
@@ -78,8 +78,8 @@ class CentralLine_ViewController: UIViewController {
         // Central Line steps and techniques.
         technique =
         """
-        \rFirst place the ultrasound in the area of the of the neck and map out the anatomy of the Carotid artery and Internal Jugular vein.
-        The two tradition views to map out the anatomy will be the short axis and long axis views.
+        \rFirst place the ultrasound in the area of the neck and map out the anatomy of the Carotid artery and Internal Jugular vein.
+        The two traditional views to map out the anatomy will be the short axis and long axis views.
         \rCannulation of the right jugular vein is generally preferred as compared to the left because it provides more direct access to the right atrium, avoids the thoracic duct, reduces procedure time, and is associated with fewer complications.
         \r Preparation:
         \r • Check consent • Check vitals • Check for anti-coagulants and INR • Make sure that the QRS complex volume in up to ensure that any arrhythmias are identified while performing the procedure. • Check and prepare materials in the central line kit • Check equipment and ultrasound • Prep & drape the patient • TIMEOUT.
@@ -103,7 +103,7 @@ class CentralLine_ViewController: UIViewController {
         
         catheterPlacementString = """
         \rCXR Confirmation:
-        \rThe catheter is orientated vertically as shown the CXR below.
+        \rThe catheter is oriented vertically as shown in the CXR below.
         \rThe tip is projected over the anatomical location of the SVC just proximal to the cavo-atrial junction- approximately 1.5 cm above the level of the carina.
         \rThis is an ideal position for right-sided catheters for fluid administration and venous pressure monitoring, but not for long-term chemotherapy or dialysis.
         """

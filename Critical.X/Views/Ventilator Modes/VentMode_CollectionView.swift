@@ -20,6 +20,11 @@ class VentMode_CollectionView: UIViewController, UICollectionViewDelegate, UICol
     // Animate the title label
     @IBOutlet weak var VentTitleLabel: AKLabel!
 
+    @IBOutlet weak var closeButton: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
+    
     // Main Title
     var ventData = [String]()
     // Subtitles

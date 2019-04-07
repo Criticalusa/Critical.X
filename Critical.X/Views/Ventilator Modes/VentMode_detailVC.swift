@@ -19,13 +19,15 @@ class VentMode_detailVC: UIViewController {
     var subTitle = String()
     var ventDescriptionString = String()
 
-    
+    @IBOutlet weak var closeButton: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var ventDetailScrollView: UIScrollView!
-   
     @IBOutlet weak var scrollHeight: NSLayoutConstraint!
     
     //VIEWDID APPEAR!!!!!!!!
@@ -33,11 +35,9 @@ class VentMode_detailVC: UIViewController {
         super.viewDidAppear(true)
         
         /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
-        scrollHeight.constant = descriptionLabel.frame.origin.y + descriptionLabel.frame.size.height +  80
+        scrollHeight.constant = titleLabel.frame.origin.y + titleLabel.frame.origin.y + descriptionLabel.frame.size.height + 80
         
-        /// Takes the scroll height outlet for the view, and adds it the the labels that are in the view. Pads it about  100 pixels at the end.
-        //        scrollHeight2.constant = rsiProcessTitle.frame.origin.y + rsiProcessDescription.frame.size.height + 80
-        
+    
         print("\(descriptionLabel.frame.size.height) Height constraint Value")
         
     }

@@ -35,18 +35,18 @@ class ChestXrayData: UIViewController {
         super.viewDidLoad()
         
         // Chest tubes
-        chestTubeData.text = "Pleural Effusions\n\n▶︎ Should be inferiorposterior at the level of the 8th intercostal space - directily posterior. The tip of the tube should be aimed towards the lower part of the pleural cavity\n\nPneumothorax\n\n▶︎ Should be located anteriorly mid-clavicular at the level if the 3rd intercostal space or anterior axillary directed toward the apex of the 4-5 intercostal space. The tip if the chest tube should be aimed towards the upper pleural cavity."
+        chestTubeData.text = "Pleural Effusions\n\n• Should be inferior-posterior at the level of the 8th intercostal space - directly posterior. The tip of the tube should be aimed towards the lower part of the pleural cavity\n\nPneumothorax\n\n• Should be located anteriorly mid-clavicular at the level of the 3rd intercostal space or anterior axillary directed toward the apex of the 4th or 5th intercostal space. The tip of the chest tube should be aimed towards the upper pleural cavity."
         
-        centralLineData.text = "Catheter Tip\n\n▶︎ The catheter tip of the central line should end approx. at the level of the right trachealbronchial angle. The tip of the tube should be aimed towards the lower part of the pleural cavity.\n\n▶︎ Rule out any pnuemothorax.\n\n▶︎ If you notice any mediastinal widening, this may be a direct result of great vessel damage"
+        centralLineData.text = "Catheter Tip\n\n• The catheter tip of the central line should end approx. at the level of the right tracheobronchial angle. The tip of the tube should be aimed towards the lower part of the pleural cavity.\n\n• Rule out any pneumothorax.\n\n• If you notice any mediastinal widening, this may be a direct result of great vessel damage."
         
-        ettData.text = "▶︎ The tip of the endotracheal tube should be approximately 3 cm below the vocal chords and 2-4 cm above the carina - which is approximately at the level of the aortic arch."
+        ettData.text = "• The tip of the endotracheal tube should be approximately 3 cm below the vocal cords and 2-4 cm above the carina - which is approximately at the level of the aortic arch."
         
-        ventilationData.text = "▶︎ 1st, rule out any pnuemothorax, sub-q air pneumomediastinum or subpleural air cysts.\n\nNote:\n▶︎ Lung infiltrates may be diminished on the view due to increased aeration and pressures."
+        ventilationData.text = "• 1st, rule out any pneumothorax, sub-q air pneumomediastinum or subpleural air cysts.\n\nNote:\n• Lung infiltrates may be diminished on the view due to increased aeration and pressures."
         
-        ngOgData.text = "▶︎ Verify that the tube is in the stomach and not coiled up into the esophagus or trachea."
+        ngOgData.text = "• Verify that the tube is in the stomach and not coiled up into the esophagus or trachea."
         
-        trachData.text = "▶︎ Should be located halfway between the stoma and the carina.\n\n▶︎ Should be approx. 2/3 width of the trachea.\n\n▶︎The trach cuff should not cause buldging of the tracheal walls.\n \n▶︎ Check for sub-q are in the neck.\n\n▶︎ Finally, check for a widening mediastimum due to possible air leakages."
-
+        trachData.text = "• Should be located halfway between the stoma and the carina.\n\n• Should be approx. 2/3 width of the trachea.\n\n•The trach cuff should not cause bulging of the tracheal walls.\n \n• Check for sub-q air in the neck.\n\n• Finally, check for a widening mediastinum due to possible air leakages."
+        
         // Do any additional setup after loading the view.
     }
 

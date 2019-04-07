@@ -32,7 +32,7 @@ class Capnogrpahy: UITableViewController {
     
     
     //Create an array to populate the tableView
-    let capnographyMenu = ["Normal Waveform", "Apnea", "Hypoventilation", "Elevated Baseline", "Hyperventilation", "Loss of Aveloar Pressure"]
+    let capnographyMenu = ["Normal Waveform", "Apnea", "Hypoventilation", "Elevated Baseline", "Hyperventilation", "Loss of Alveloar Pressure"]
     // let images = ["normal","LAP","apnea","hypo","elevated","hyper"]
     
     //MARK: UITableViewDataSource

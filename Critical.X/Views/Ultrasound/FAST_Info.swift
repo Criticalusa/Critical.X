@@ -161,7 +161,7 @@ enum UltraSound_AcousticViewDescription: String {
     \rTechnique:
     \rProbe Indicator: 2 Views: Longitudinal (Cephalad) and 2) Transverse, to the patients right.
     
-    \rBegin with the probe midline in the abdomen and approx. 2cm above the symphysis pubis. Indicator cephalad. Scan the pelvic region until the bladder comes into view. It is easily identifiable due to the anechoic urine in the bladder. Sweep the entire bladder and look everywhere as free fluid can collect anywhere in the pelvis.
+    \rBegin with the probe midline in the abdomen and approx. 2 cm above the symphysis pubis with the indicator pointing cephalad. Scan the pelvic region until the bladder comes into view. It is easily identifiable due to the anechoic urine in the bladder. Sweep the entire bladder and look everywhere as free fluid can collect anywhere in the pelvis.
     
     \rRotate the probe 90 degrees transverse and sweep left to right. In males, free fluid usually will collect in the rectovesical pouch (between the bladder and prostate). In females, in the pelvic Cul de Sac (posterior to the uterus in females).
     \rSometimes, seminal fluid can be mistaken for free fluid in males. In females, ovarian cysts, fibroids and physiological fluid such as menstruation and infection can be mistaken as well.
@@ -228,7 +228,7 @@ enum AbnormalFindings: String {
     
     \rPleural Effusion: Pleural effusions will show as an anechoic (jet black) collection observed at the costophrenic angle above the diaphragm (diaphragmatic recess) when the probe is in the posterior axillary line.
     
-    \rBarcode Sign: A.k.a stratosphere sign. In the M-mode, barcode sign represents absent lung sliding - indicative of a pneumothorax at the intercostal space, the sonographer will see a continuous pattern of linear lines that extend from left to right, parallel to the hyperechoic pleural line. The sandy beach appearance will be a continuance of the linear pattern of lines viewed in the chest wall.
+    \rBarcode Sign: A.k.a stratosphere sign. In the M-mode, barcode sign represents absent lung sliding which is indicative of a pneumothorax at the intercostal space. The sonographer will see a continuous pattern of linear lines that extend from left to right, parallel to the hyperechoic pleural line. The sandy beach appearance will be a continuance of the linear pattern of lines viewed in the chest wall.
     
     """
     

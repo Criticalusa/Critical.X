@@ -422,7 +422,7 @@ extension VentMode_detailVC {
         let seven = "4. T-Low:"
         let increaseing = "Increasing the CPAP level can improve alveolar stability, and improve oxygenation. Adding pressure support (PS) to CPAP can improve ventilation (CO2 removal)."
         let remember = "The patient must be able to generate a  breath to use this mode."
-        let remember2 = "Remember, the patient must beable to spontaneusly breath on their own."
+        let remember2 = "Remember, the patient must be able to spontaneously breathe on their own."
         
         if text.contains(increaseing){
             changedString = increaseing
@@ -673,10 +673,10 @@ extension VentMode_detailVC {
         // What text to change
         let whatToKnow = "What to know:"
         let bottomLine = "Bottom Line:"
-        let One = "Disadvantages to IMV:"
-        let two = "the ventilator does not make any attempt to synchronize those spontaneous breaths with mandatory breaths"
-        let three = "respiratory rates that exceeded 40 bpm"
-        let four = "not synchronized"
+        let One = "very high plateau pressures"
+        let two = "subset of pressure control ventilation in which the inspiratory time is longer than the expiratory time"
+        let three = "This mode can lead to air trapping, and all patients should be paralyzed and sedated while using IRV."
+        let four = "END OF EXPIRATION."
         
         
         
@@ -685,7 +685,7 @@ extension VentMode_detailVC {
             changedString = four
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.7378575206, green: 0.2320150733, blue: 0.1414205134, alpha: 1), subString: changedString)
             
             let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             // Change the font of the string
@@ -707,7 +707,7 @@ extension VentMode_detailVC {
             changedString = two
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), subString: changedString)
+            attributedText.apply(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), subString: changedString)
             
             let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             // Change the font of the string
@@ -717,7 +717,7 @@ extension VentMode_detailVC {
             changedString = One
             // Set the string to the changed String so its set at the end
             // This is the color of the singled out text.
-            attributedText.apply(color:#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), subString: changedString)
+            attributedText.apply(color:#colorLiteral(red: 0.7378575206, green: 0.2320150733, blue: 0.1414205134, alpha: 1), subString: changedString)
             
             let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
             // Change the font of the string
@@ -766,7 +766,7 @@ extension VentMode_detailVC {
         // What text to change
         let whatToKnow = "What to know:"
         let bottomLine = "Bottom Line:"
-        let One = "Disadvantages to IMV:"
+        let One = "Simply put, the pressure is the endpoint rather than volume."
         let two = "constant pressure is maintained throughout the preset inspiratory time (I – time)"
         let three = "respiratory rates that exceeded 40 bpm"
         let four = "not synchronized"
@@ -776,9 +776,22 @@ extension VentMode_detailVC {
         let D = " 75% of the difference between the Ppeak and PEEP"
         let E = "Delta + PEEP"
         let F = "Delta = Pplat - PEEP"
-        let G = "As compliance changes, tidal volumes change (Compliance = volume/pressure)"
+        let G = "As compliance and resistance changes, tidal volumes change (Compliance = volume/pressure)."
+        let delta = "Delta = Ppk - PEEP"
 
-
+        
+        if text.contains(delta){
+            changedString = delta
+            // Set the string to the changed String so its set at the end
+            // This is the color of the singled out text.
+            attributedText.apply(color: #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1), subString: changedString)
+            
+            let openSansFont = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+            // Change the font of the string
+            attributedText.apply(font: openSansFont!, subString: changedString)
+        }
+        
+        
         if text.contains(G){
             changedString = G
             // Set the string to the changed String so its set at the end
