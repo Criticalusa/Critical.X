@@ -170,7 +170,7 @@ class IVDripRate: UIViewController {
     @IBAction func segmentChangeLabel(_ sender: Any) {
         switch segment?.selectedIndex {
         case 0?:
-            print("0 changed to mLs")
+            print("0 changed to mL's")
             
             //Change the time label to ml's when segment 1 is selected
             timeLabel.text = "min"

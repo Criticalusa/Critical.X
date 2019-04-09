@@ -144,7 +144,7 @@ enum VentilatorModes: String {
     \rThere's an assist window that the ventilator sets to look for spontaneous breathing. If no breath is detected, then a mandatory breath will be given.
     \rCaveat: This is all good if the patient is healthy and strong however, most intubated patients in the ICU are not. It’s easier for these patients to breath faster, rather than take adequate deep breaths.
     \rTherefore, the quality of breaths that are taken over the set rate is usually inadequate and lead to a higher work of breathing. Adding pressure support can normalize spontaneous tidal volumes, and decrease tachypnea.
-    \rBottom Line:🎖 SIMV will act exactly the same as A/C in paralyzed/heavily sedated patients. If the ventilator settings are set a TV 550 and a RR 12, the patient is guaranteed 12 breaths per/min at 550 mLs.
+    \rBottom Line:🎖 SIMV will act exactly the same as A/C in paralyzed/heavily sedated patients. If the ventilator settings are set a TV 550 and a RR 12, the patient is guaranteed 12 breaths per/min at 550 mL's.
     \rFor any additional breaths over the set rate, the patient will receive the set level of pressure support, and tidal volume will be based on patient effort, airway resistance, and lung compliance.
     
     """
