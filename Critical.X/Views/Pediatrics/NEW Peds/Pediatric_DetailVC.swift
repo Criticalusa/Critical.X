@@ -28,9 +28,9 @@ class Pediatric_DetailVC: UIViewController, UIScrollViewDelegate {
     }
     }
     
-    @IBOutlet weak var pedscrollView: UIScrollView!
+    @IBOutlet weak var pedscrollView            : UIScrollView!
     
-    @IBOutlet weak var popOVerWeightLabel: UILabel!
+    @IBOutlet weak var popOVerWeightLabel       : UILabel!
     
     @IBOutlet weak var criticalImageView        : UIImageView!
     
@@ -499,7 +499,16 @@ class Pediatric_DetailVC: UIViewController, UIScrollViewDelegate {
     // MARK: - Load the VIEW
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
+        guard weightEntered != nil else {
+            
+            _ = SCLAlertView().showError("Hold On...", subTitle:"Please enter a dose", closeButtonTitle:"OK")
+
+            
+            print("weight not entered")
+        return
+            
+        }
         popOVerWeightLabel.text = "\(weightEntered!)"
         
         // ScrollDelegate

@@ -239,12 +239,17 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
         
         
     }
+    
+ 
+    
     //MARK: Prepare for the SEGUE
     override public func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         ///// Checks the segue destination, grabs the number value from the textfield and passes the data.
         if let destination = segue.destination as? Pediatric_DetailVC {
+            
+        
             
             //Takes the Double (weightEntered) variable from the detail page, and parses it as the textFireld (Double) becuase the textField is oridescriptionsted as a string.
             destination.weightEntered = Double (pediatrictextField.text!)
@@ -256,6 +261,10 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
         
         
     }
+    
+    
+
+
     
     //MARK: - Animation
     /**
@@ -289,6 +298,30 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
     }
 
 }
+
+//MARK: - If the text is empty, show alert and cancel the segue,
+extension PediatricMain_VC {
+/// Also works covering both conditions in one line of code.
+
+/// Cancels the segue transition if the textBox is empty
+override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    if identifier == "A" {
+        if (self.pediatrictextField.text?.isEmpty)! || (pediatrictextField.text == "0.0") {
+            print("segue cancelled")
+            
+            _ = SCLAlertView().showError("Hold On...", subTitle:"Please enter a weight", closeButtonTitle:"OK")
+
+            // Also can add an alert here.
+            return false
+        }
+    }
+    
+    // by default, transition
+    return true
+}
+
+}
+
 
 
 extension PediatricMain_VC {
