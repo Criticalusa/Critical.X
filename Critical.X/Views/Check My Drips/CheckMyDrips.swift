@@ -79,7 +79,13 @@ class CheckMyDrips: UIViewController {
     @IBAction func popOverPicker(_ sender: UIButton) {
         //Properties
         
-        drugDosage = Double (dosage.text!) as! Double
+        drugDosage = Double (dosage.text!)
+        
+        guard drugDosage != nil else {
+            _ = SCLAlertView().showError("Hold On...", subTitle:"Please enter a dose", closeButtonTitle:"OK")
+            
+        return }
+        
         
         let fluidInTheIVBag = Double(ivBagCc.text!)
         
@@ -87,7 +93,7 @@ class CheckMyDrips: UIViewController {
         
         let weight = Double(weightTxt.text!)
         
-        guard let dse = drugDosage, let bg = fluidInTheIVBag, let f = ivFlowRate else {
+        guard  let bg = fluidInTheIVBag, let f = ivFlowRate else {
             print ("Error with the text. ");
             
             ///Red Alert
@@ -98,6 +104,8 @@ class CheckMyDrips: UIViewController {
             
             
             return  }
+        
+         drugDosage = Double (dosage.text!)
         
         
         // MARK: - Calculate concentration per mL
