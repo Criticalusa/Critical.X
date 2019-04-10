@@ -146,6 +146,16 @@ class newO2TankCalc: UIViewController {
         
         let newPsi = Double(sender.text!)
         
+        // If we delete text values it changes the usable psi text and doesnt calculate.
+        guard newPsi != nil else {
+            print("new PSI is empty")
+            
+            // Set the label to be empty and not to calculate
+            usablePsi.text = "Usable PSI:"
+
+            return
+        }
+        
         usablePsi.text = "Usable PSI: \(Int(newPsi! - 200))"
 
     }
@@ -197,8 +207,6 @@ func doneButtonAction() {
                 self.fi02Label.isHidden = true
                 
                 self.fi02TextField.isHidden = true
-                
-                
                 
                 self.biasFLowSegnent.isHidden = true
                 
@@ -305,7 +313,7 @@ func doneButtonAction() {
         
         let fio2 = Double(fi02TextField.text!)
 
-        guard let _ = psi else {
+        guard let _ = psi, let _ = liters else {
             
             //            _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the fields before calculating.", closeButtonTitle:"OK")
             //        SCLAlertView().showError(self, title: kErrorTitle, subTitle: kSubtitle)
@@ -466,9 +474,9 @@ func doneButtonAction() {
         
         self.resultsLabel.text = String(format:"%.1f",D) // Rounds to the 1st decimal place
         
-        
-        self.minutesLabel.text = "Minutes"
-        
+        self.descriptionLabel.text = "A \"D\" cylinder with \(psi!) PSI | \(liters!) L/min"
+
+        minutesLabel.text = "Hours : Minutes"
         
         self.resultsLabel.text = "\(timeLeftOver.hours): \(timeLeftOver.leftMinites)"
         
@@ -593,8 +601,7 @@ func doneButtonAction() {
         resultsLabel.text = "\(timeLeftOver.hours): \(timeLeftOver.leftMinites)"
         
         
-        minutesLabel.text = "Hr:Min"
-        
+        minutesLabel.text = "Hours : Minutes"
         descriptionLabel.text = "A \"D\" cylinder with \(psi!) PSI at a total LPM of \(correctedFlow ) L/min"
         
         view.endEditing(true)

@@ -53,7 +53,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"D\" cylinder with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"D\" cylinder with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
@@ -121,7 +121,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"G\" cylinder with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"G\" cylinder with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
@@ -190,7 +190,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"HK\" cylinder with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"HK\" cylinder with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
@@ -258,7 +258,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"M\" cylinder with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"M\" cylinder with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
@@ -327,7 +327,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"EC135_1\" tank with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"EC135\" 1 tank with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
@@ -397,7 +397,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"EC135\" 2 tank with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"EC135\" 2 tank with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
@@ -467,7 +467,7 @@ extension newO2TankCalc {
         self.minutesLabel.text = "Hr:Min"
         
         // Set description label
-        self.descriptionLabel.text = "A \"EC135\" 2 tank with \(psi!) PSI at a total of LPM of \(totalLpm) L/min"
+        self.descriptionLabel.text = "A \"EC135\" 2 tank with \(psi!) PSI | \(liters!) L/min"
         
         self.view.endEditing(true)
         
