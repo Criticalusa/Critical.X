@@ -477,11 +477,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             "Ventilator Management"] // 16
         
         mainMenuDetail =
-            ["Rate Us, Email, Disclaimer  Information",// 0
+            ["Rate Us ⭐️, Email 📩, Dream Forum",// 0
             
             "Intubation, Difficult Airway Algorithms",// 1
             
-            "VADs, EKG & 12 Leads, ACLS",// 2
+            "VADs, ECG & 12 Leads, ACLS",// 2
             
             "Clinical Calculators & Medical Spanish",// 3
             
