@@ -203,18 +203,18 @@ class UrineOutput: UIViewController {
         
     }
     
-    /// Cancels the segue transition if the textBox is empty
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "urineSegue" {
-            if (weightTextField.text?.isEmpty)! || (urineOurputTextField.text == "0.0") || (urineOurputTextField.text?.isEmpty)! || (weightTextField.text == "0.0") {
-                print("segue cancelled")
-                return false
-            }
-        }
-        
-        // by default, transition
-        return true
-    }
+//    /// Cancels the segue transition if the textBox is empty
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "urineSegue" {
+//            if (weightTextField.text?.isEmpty)! || (urineOurputTextField.text == "0.0") || (urineOurputTextField.text?.isEmpty)! || (weightTextField.text == "0.0") {
+//                print("segue cancelled")
+//                return false
+//            }
+//        }
+//
+//        // by default, transition
+//        return true
+//    }
     
 
     
@@ -226,3 +226,30 @@ class UrineOutput: UIViewController {
     }
     
 }//end of the class
+
+extension UrineOutput {
+    
+    /// Also works covering both conditions in one line of code.
+    
+    /// Cancels the segue transition if the textBox is empty
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "urineSegue" {
+            if (weightTextField.text?.isEmpty)! || (hoursTextField.text?.isEmpty)! || (hoursTextField.text?.isEmpty)!  || (urineOurputTextField.text == "0.0") || (weightTextField.text == "0.0") || (hoursTextField.text == "0.0") {
+                
+                print("segue cancelled")
+                
+               
+        
+                _ = SCLAlertView().showError("Hold On...", subTitle:"Check all of the text fields before calculating. Enter an appropriate weight greater than zero to calculate", closeButtonTitle:"OK")
+                
+                
+                return false
+            }
+        }
+        
+        // by default, transition
+        return true
+    }
+    
+
+}
