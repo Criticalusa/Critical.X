@@ -69,34 +69,58 @@ class RateCriticalPopUp: UIViewController, MFMailComposeViewControllerDelegate {
     
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
-            let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
-            mail.setToRecipients(["criticalusa@gmail.com"])
-            mail.setSubject("Critical -X Feedback for IOS")
-            mail.setMessageBody("<p>Hi, Great app. I would love to offer some constructive feedback to improve the functionality.</p>", isHTML: true)
             
-           
+            let mail = MFMailComposeViewController()
+            
+            // Swift 4
+            let version : Any! = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+            let build : Any! = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
+            
+            
+            mail.mailComposeDelegate = self
+            
+            mail.setToRecipients(["criticalusa@gmail.com"])
+            
+            // Subject that puts the build in the email.
+            mail.setSubject("Critical Feedback: IOS Version: \(String(describing: build!))")
+            
+            //mail.setMessageBody("<p>Hi, Great app. I would love to offer some constructive feedback to improve the functionality.</p>", isHTML: true)
+            
+            
+            print("Version: \(String(describing: version))")
+            
+            print("Build: \(String(describing: build))")
+            
             present(mail, animated: true)
+        
         } else {
             // show failure alert
         }
       
         }
+    
+    
+ 
+    // Dismissed the controller
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        self.dismiss(animated: true, completion: nil)
         
-        // After the email view closes out we get a Thank you alert view.
+        // Dismiss the email controller
+        controller.dismiss(animated: true)
+        
+        // Show the alert
         SCLAlertView().showTitle("Thank you!",
                                  subTitle: "Your message was sent to the Critical Team!",
                                  timeout: nil,
-                                 completeText: "Done",
+                                 completeText: "Thanks!",
                                  style: .success,
                                  colorStyle: 0xD93829,//Critical Red
-                                 colorTextButton: 0xFFFFFF, // White color
-                                 circleIconImage: UIImage.init(named: "CRITICAL1.ekg"),
-                                 animationStyle: .topToBottom)
-        
+            colorTextButton: 0xFFFFFF, // White color
+            circleIconImage: UIImage.init(named: "Critical_Logo4"),
+            animationStyle: .topToBottom)
+
     }
+    
+
     
     //MARK: - Critical Dream Team Button
     @IBAction func criticalDreamTeamButtonClicked(_ sender: Any) {

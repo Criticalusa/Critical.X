@@ -332,6 +332,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             txtInfusionRate.text = String(format:"%.1f", infusion)
         }
         else if unit == "mcg/kg/min" {
+            
             var yields = totalDose/IvBag
             lblUnitYields.text = "mg/mL"
             if yields < 1 {
