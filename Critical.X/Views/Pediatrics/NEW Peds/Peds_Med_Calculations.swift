@@ -912,9 +912,9 @@ extension Pediatric_DetailVC {
         benadryl_ML.text   = "\(benadrylML.oneDecimalPlace)"
         
         
-        //MARK: - Epinephrine IM
+        //MARK: - Epinephrine IM 1:1000
         // Populate the concentration label.
-        epiIM_DetailDoseLabel.text = "0.01 mg/kg IM | 1 mg/mL | IV, IM, IO"
+        epiIM_DetailDoseLabel.text = "0.01 mg/kg IM | 0.01 mg/mL | IV, IM, IO"
         
         let epiIM = calculateDoseOne(Dose: 0.01)
         print("epiIM Dose " + "\(epiIM)")
@@ -922,10 +922,10 @@ extension Pediatric_DetailVC {
         let epi_IM_ML = convertMLfromCalculatedDose(patientDosePerKG: 0.01, doseIn_Mg_G: 1, mL: 1)
         print("epiIM ML " + "\(epi_IM_ML)")
         // Set the dose text
-        epiIM_Dose.text = String.localizedStringWithFormat("%.1f", epiIM)
+        epiIM_Dose.text = String.localizedStringWithFormat("%.2f", epiIM)
         
         // Set the mL's
-        epiIM_ML.text   = "\(epi_IM_ML.oneDecimalPlace)"
+        epiIM_ML.text   = "\(epi_IM_ML.twoDecimalPlace)"
         
         
         //MARK: - Solu-medrol

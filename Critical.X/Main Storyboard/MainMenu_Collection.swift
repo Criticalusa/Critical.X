@@ -390,7 +390,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         let date : Date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
+        dateFormatter.dateFormat = "h:mm a E MMM d"
+        // dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
+
         let todaysDate = dateFormatter.string(from: date)
         
         navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
