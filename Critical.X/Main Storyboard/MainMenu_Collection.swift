@@ -156,9 +156,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Afternoon \(randomMorning), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi!", "Cheers!", "Good Morning!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Buenos Dias","Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)!"]
             
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Buenos Dias", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -200,9 +200,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi!", "Cheers!", "Good Afternoon!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)!"]
             
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Hey", "Ciao!","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -243,7 +243,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
            
             //Create an array of different greetings.
             
-            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)!"]
             
             let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
             
@@ -282,9 +282,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Evening \(randomEvening), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi!", "Cheers!", "Good Evening!", "Welcome Back!", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Hola","Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)!"]
             
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
            
             
             //Get the index at each array at RANDOM
