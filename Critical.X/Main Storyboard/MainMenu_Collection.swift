@@ -390,7 +390,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         let date : Date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm a E MMM d"
+        dateFormatter.dateFormat = "h:mm a  E MMM d"
         // dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
 
         let todaysDate = dateFormatter.string(from: date)
