@@ -119,20 +119,20 @@ enum UltraSound_AcousticViewDescription: String {
     
     case CardaicView =
     """
-    \rThe cardiac view is used to detect circumstantial free fluid around the pericardial sac, free fluid between the RV and liver, and to identify cardiac tamponade. It can be separated into two separate views 1. Subxiphoid and 2. The parasternal long axis view (PLAX). As it's usually sufficient to evaluate one view to check for the presence of pericardial effusions, it's essential to learn all in the event one view is not easily obtained.
-    
+    \rThe cardiac view is used to detect circumferential free fluid around the pericardial sac, free fluid between the RV and liver, and to identify cardiac tamponade. It can be separated into three separate views:
     \rThe traditional cardiac acoustic windows obtained are:
     \r1. Subxyphoid
     \r2. Parasternal Long Axis (PLAX)
     \r3. Parasternal Short Axis (PSAX)
     
+    As it's usually sufficient to evaluate one view to check for the presence of pericardial effusions, it's essential to learn all in the event one view is not easily obtained.
     \rTechnique:
     \rProbe Indicator: Probe indicator points towards the left side of the patient.
     \rStart inferiorly to the xiphoid process and place the probe in the transverse axis parallel to the abdominal wall. Firmly plunge the probe slightly under the ribs until the cardiac silhouette comes into view.
     
-    \rIn a routine scan, the four chambers of the heart, and the pericardial sac should be visible. The pericardium is hyperechoic. The sonographer should be able to appreciate these eight landmarks. 1. Liver, 2. Right Atrium, 3. Left Atrium, 4. Mitral Valve, 5. Left Ventricle, 6. Right Ventricle, 7. Ventricular septum and 8) Tricuspid valve.
+    \rIn a routine scan, the four chambers of the heart, and the pericardial sac should be visible. The pericardium is hyperechoic. The sonographer should be able to appreciate these eight landmarks. 1. Liver 2. Right Atrium 3. Left Atrium 4. Mitral Valve 5. Left Ventricle 6. Right Ventricle 7. Ventricular septum and 8. Tricuspid valve.
     
-    \rBelow you can see an overview of the subxiphoid view. Notice the landmarks.
+    \rBelow you can see appreciate an overview of the subxiphoid view. Notice the landmarks.
     """
     
     case Thoracic =
@@ -140,9 +140,9 @@ enum UltraSound_AcousticViewDescription: String {
     \rThe anterior thoracic view is used to evaluate the presence of a pneumothorax, hemothorax, pulmonary edema or pleural effusion, pleural sliding or lung consolidation.  In most cases, the anterior window should be able to rule out a pneumothorax but does not exclude the possibility of smaller pneumothoraces.
     
     \rThe traditional cardiac acoustic windows obtained are:
-    \r1. Anterior Chest
-    \r2. Lateral Chest Wall
-    \r3. Costophrenic Angle
+    \r1. Anterior Chest.
+    \r2. Lateral Chest Wall.
+    \r3. Costophrenic Angle.
     
     \rTechnique:
     \rProbe Indicator: Indicator facing cephalad.
@@ -159,7 +159,7 @@ enum UltraSound_AcousticViewDescription: String {
     The pelvis is the most dependent part of the peritoneal space and the most likely place to appreciate free fluid. The pelvic view is used to evaluate free fluid around the bladder and the pouch of Douglas. Although it is essential for the bladder to be filled in order to fully evaluate the pelvis, with an empty bladder, it is harder to detect free fluid. Also, try to get an image before a Foley catheter is placed.
     
     \rTechnique:
-    \rProbe Indicator: 2 Views: Longitudinal (Cephalad) and 2) Transverse, to the patients right.
+    \rProbe Indicator: 2 Views: Longitudinal (Cephalad) and Transverse (to the patients right).
     
     \rBegin with the probe midline in the abdomen and approx. 2 cm above the symphysis pubis with the indicator pointing cephalad. Scan the pelvic region until the bladder comes into view. It is easily identifiable due to the anechoic urine in the bladder. Sweep the entire bladder and look everywhere as free fluid can collect anywhere in the pelvis.
     
@@ -183,7 +183,7 @@ enum AbnormalFindings: String {
     case RUQ = """
     Concerning findings in the RUQ should be consistent with solid organ injuries and hemoperitoneum.
     
-    1) Hemoperitoneum: When there is a suspected hemoperitoneum,  the sonographer will notice an anechoic (black) region usually in the Morison's pouch, between the liver and kidney. If there is free fluid (jet black) in Morrison's pouch, it should be seen around the lower edge and tip of the liver.
+    1) Hemoperitoneum: When there is a suspected hemoperitoneum,  the sonographer will notice an anechoic (black) region usually in the Morison's pouch, between the liver and kidney. If there is free fluid (jet black) in Morison's pouch, it should be seen around the lower edge and tip of the liver.
     
     2) Solid Organ Injuries: Look for lacerations to the liver and kidneys as well as ruptures.
     
@@ -198,7 +198,7 @@ enum AbnormalFindings: String {
     Concerning findings in the LUQ should be consistent with solid organ injuries and/or hemoperitoneum.
     
     1) Hemoperitoneum: When there is a suspected hemoperitoneum, the sonographer will notice an anechoic (black) region around the spleen usually at the inferior and superior poles of the left kidney between the spleen and diaphragm.
-    \rDue to the phrenicocolic ligament blood is restricted to flow down the paracolic gutter, so it collects in perisplenic space. Also, fluid collection can be appreciated in the pleural and subdiaphragmatic spaces as well.
+    \rDue to the phrenicocolic ligament blood is restricted to flow down the paracolic gutter, so it collects in perisplenic space. Also, a fluid collection can be appreciated in the pleural and subdiaphragmatic spaces as well.
     
     2) Solid Organ Injuries: Look for renal and splenic lacerations as well as ruptures.
     
@@ -217,18 +217,22 @@ enum AbnormalFindings: String {
     
     \r3) Cardiac Tamponade: Defined when pericardial effusion pressure exceeds atrial and ventricular pressures, coupled with a dilated IVC (which overall inhibits cardiac filling). Although considered a late finding, the clinician will also see septal bowing or flattening towards the LV.
     
-    \rNote: In those patients who are hypotensive with ventricular collapse consider a pericardiocentesis.
+    \rNote: In those patients who are hypotensive with ventricular collapse, consider a pericardiocentesis.
     """
     
     case Thoracic =
     """
     \rConcerning findings in the thoracic view should be consistent with B-lines, pleural effusions, pneumothorax, and consolidation:
     
-    \rB-Lines: These are laser-like verticle lines that arise from the pleural line down to the bottom of the screen that moves with normal respiration. This is indicative of alveolar-interstitial syndrome. In those patients with pulmonary edema, the frequency of B-lines correlates with the severity of the edema. They can also be used to monitor the effectiveness of therapy.
+    \rB-Lines: These are laser-like verticle lines that arise from the pleural line down to the bottom of the screen that moves with normal respiration. This is indicative of alveolar-interstitial syndrome.
+    
+    In those patients with pulmonary edema, the frequency of B-lines correlates with the severity of the edema. They can also be used to monitor the effectiveness of therapy.
     
     \rPleural Effusion: Pleural effusions will show as an anechoic (jet black) collection observed at the costophrenic angle above the diaphragm (diaphragmatic recess) when the probe is in the posterior axillary line.
     
-    \rBarcode Sign: A.k.a stratosphere sign. In the M-mode, barcode sign represents absent lung sliding which is indicative of a pneumothorax at the intercostal space. The sonographer will see a continuous pattern of linear lines that extend from left to right, parallel to the hyperechoic pleural line. The sandy beach appearance will be a continuance of the linear pattern of lines viewed in the chest wall.
+    \rBarcode Sign: A.k.a stratosphere sign. In the M-mode, barcode sign represents absent lung sliding which is indicative of a pneumothorax at the intercostal space.
+    
+    The sonographer will see a continuous pattern of linear lines that extend from left to right, parallel to the hyperechoic pleural line. The sandy beach appearance will be a continuance of the linear pattern of lines viewed in the chest wall.
     
     """
     

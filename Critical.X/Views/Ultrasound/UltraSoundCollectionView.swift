@@ -64,6 +64,21 @@ class UltraSoundCollectionView: UIViewController, UICollectionViewDataSource, UI
         cell.USMain_CellLabel.text = ultrasoundMainMenu[indexPath.item]
         cell.USDetail_CellLabel.text = ultrasoundMenuDetail [indexPath.item]
         
+        // Change the color of the other 2 Cells that are in construction.
+        switch indexPath.item {
+        // Color changes for the 2nd and 3rd collection cell.
+        case 1,2:
+        
+            cell.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+                
+            cell.USDetail_CellLabel.textColor = #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1)
+        
+        default:
+        
+            cell.backgroundColor = #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1)
+        
+            cell.USDetail_CellLabel.textColor = #colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1)
+        }
         
         return cell
     }
@@ -78,7 +93,7 @@ class UltraSoundCollectionView: UIViewController, UICollectionViewDataSource, UI
         // Only secue for FAST
         switch indexPath.item {
         case 0:
-            // Name has to reflect the origionting SB.
+            // Here we segue - The Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "Ultrasound", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "Fast")
             self.present(vc, animated: true, completion: nil)
@@ -86,15 +101,12 @@ class UltraSoundCollectionView: UIViewController, UICollectionViewDataSource, UI
             // Show alert for the other RUSH and Resp views
         default:
             // Language to show the alert
-          _ = SCLAlertView().showError("Not quite yet...", subTitle:"We are currently working on the content for this section. It should be available in the next update.", closeButtonTitle:"Thanks")
+          _ = SCLAlertView().showError("Not quite yet...", subTitle:"We are currently working on the content for this section. The content should be available in the next major update.", closeButtonTitle:"Thanks")
             
         }
             // Set the Storyboard ID to each indexPath.
             //let SBID = storyBoardID [indexPath.item]
-            
         
-        
-
             // Push the ViewController via Navigation
 //            self.navigationController?.pushViewController(vc, animated: true)
         

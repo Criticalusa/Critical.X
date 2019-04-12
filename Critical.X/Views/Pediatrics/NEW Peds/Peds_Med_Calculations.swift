@@ -914,7 +914,7 @@ extension Pediatric_DetailVC {
         
         //MARK: - Epinephrine IM 1:1000
         // Populate the concentration label.
-        epiIM_DetailDoseLabel.text = "0.01 mg/kg IM | 0.01 mg/mL | IV, IM, IO"
+        epiIM_DetailDoseLabel.text = "0.01 mg/kg IM | 1 mg/mL | IV, IM, IO"
         
         let epiIM = calculateDoseOne(Dose: 0.01)
         print("epiIM Dose " + "\(epiIM)")
