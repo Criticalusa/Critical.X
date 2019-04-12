@@ -16,7 +16,8 @@ var usernameEntered = String ()
 class OnboardingVC: UIViewController, UITextFieldDelegate {
     
    
-   @IBOutlet weak var newButton: UIButton!
+    @IBOutlet weak var letsGoButton: UIButton!
+    @IBOutlet weak var newButton: UIButton!
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -91,8 +92,20 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
 
     }
     
+// When someone types in the textField. We change the color of the letsgo button. 
+    @IBAction func TextFieldValueChanged(_ sender: Any) {
+        
+        if ((sender as AnyObject).text?.count)! > 0 {
+            letsGoButton.backgroundColor = #colorLiteral(red: 0.3411764706, green: 0.6549019608, blue: 0.4509803922, alpha: 1)
+            print("Someone is typing their name")
+        } else {
+            letsGoButton.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+            print("text is empty")
 
-   
+        }
+        
+    }
+    
     
    
     
@@ -125,9 +138,24 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         
     }
-
+    
+    
+// When the done button is pressed on the keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Dismiss the keyboard
         textField.resignFirstResponder()
+        
+        // Animation the lets go button
+        self.letsGoButton.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        self.letsGoButton.alpha = 0.0;
+        
+        UIView.animate(withDuration: 1.0, animations: {
+          
+            self.letsGoButton.alpha = 1.0
+            self.letsGoButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        })
+        
+        
         return true
     }
     
