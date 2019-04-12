@@ -126,6 +126,10 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
         
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     /// Keyboard Dismissed after you touch the screen
     func doneButtonAction() {
