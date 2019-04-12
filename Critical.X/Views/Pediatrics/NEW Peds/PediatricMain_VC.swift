@@ -120,6 +120,7 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
         // Runs the animation code for the label and button to show when the VC appears
         showAnimate()
         
+        // Animate the navBar
         animateNavBar()
         
         //change the color of the navigationbar with random color
@@ -127,6 +128,7 @@ class PediatricMain_VC: UIViewController, UICollectionViewDelegate, UICollection
         
     }
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

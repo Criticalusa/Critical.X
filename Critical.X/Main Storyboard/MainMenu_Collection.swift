@@ -156,7 +156,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Afternoon \(randomMorning), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Hey", "Ciao","Buenos Dias","Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Buenos Dias","Cheers", "Good Morning ", "Welcome Back", "Happy \(dayOfTheWeek)!"]
             
             let greetingFormal: Array = ["Hi", "Hey", "Ciao","Buenos Dias", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)"]
             

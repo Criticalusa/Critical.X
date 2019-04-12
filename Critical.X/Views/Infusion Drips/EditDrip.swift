@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet var txtTotalDose: UITextField!
@@ -16,7 +17,9 @@ class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet var txtMaxDose: UITextField!
     @IBOutlet var txtDefaultDose: UITextField!
     @IBOutlet var txtDoseUnit: UITextField!
-
+    
+    
+    @IBOutlet weak var unitLabelMainVC: UILabel!
     
     @IBOutlet weak var saveButton: UIButton!
     
@@ -27,18 +30,26 @@ class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     public var index = 0
     var Dripslist : NSMutableArray!
     var Drip : NSMutableDictionary!
-    
+    var dosingUnit: String?
+
     var unit : String!
     let UnitList = ["mcg/min", "mg/min", "mcg/hr","mg/hr", "g/hr", "units/hr", "units/min", "mUnits/min", "mcg/kg/min", "mcg/kg/hr", "mg/kg/hr"]
     var UnitPickerView : UIPickerView!
     
     
+ 
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        Dripslist = NSMutableArray.init(array: UserDefaults.standard.object(forKey:"drip_list") as! NSArray)
-        Drip = NSMutableDictionary.init(dictionary: Dripslist[index] as! NSDictionary)
         
+        print(index , "This is the index")
+    
+        Dripslist = NSMutableArray.init(array: UserDefaults.standard.object(forKey:"drip_list") as! NSArray)
+        
+        Drip = NSMutableDictionary.init(dictionary: Dripslist[index] as! NSDictionary)
         
         self.navigationItem.title = Drip.object(forKey: "maintitle") as? String
         
@@ -48,11 +59,28 @@ class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         txtMaxDose.text = Drip.object(forKey: "max") as? String
         txtDefaultDose.text = Drip.object(forKey: "dose") as? String
         
-        unit = Drip.object(forKey: "unit") as! String
+        unit = Drip.object(forKey: "unit") as? String
         txtDoseUnit.text = unit
         lblUnitMin.text = unit
         lblUnitMax.text = unit
         lblUnitDefault.text = unit
+        
+        switch index {
+        
+        case 16, 30:// heparin & vasopressin
+            unitLabelMainVC.text = "units"
+            print("heparin & vasopressin changed label to grams")
+        
+        case 20:// Mag Suflate
+           
+            unitLabelMainVC.text = "g"
+            print("mag sulfate changed label to grams")
+        
+        default:
+            break
+            
+        }
+        
         
         saveButton.clipsToBounds = true
         saveButton.layer.cornerRadius = 4
@@ -63,7 +91,7 @@ class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         UnitPickerView.showsSelectionIndicator = true
         txtDoseUnit.inputView = UnitPickerView
     }
-    
+
     @IBAction func SaveClick(_ sender: Any) {
         Drip.setValue(txtTotalDose.text, forKey: "totaldose")
         Drip.setValue(txtIvBag.text, forKey: "bag")
@@ -107,14 +135,6 @@ class EditDrip: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
 
 }
