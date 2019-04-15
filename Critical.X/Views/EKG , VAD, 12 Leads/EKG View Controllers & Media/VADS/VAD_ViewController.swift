@@ -19,6 +19,7 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var VADTitle: AKLabel!
     @IBOutlet weak var vadCollectionView: UICollectionView!
     
+    @IBOutlet weak var closeButton: UIButton!
     // Variable declaration.
     var vad_MainMenu = [String]()
     
@@ -41,8 +42,10 @@ class VAD_ViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         vad_MainMenu = ["Basic Overview", "TAH","Heart Mate II","HVAD", "Impella"]
         
-        vad_MenuDetail = ["Mechanical overview","Syncardia: BiVAD-Total Artificial Heart","2nd Generation Axial-flow pump","Medtronic 3rd Generation Centrifugal flow", "Abiomed - Micro-axial flow pump"]
+        vad_MenuDetail = ["MECHANICAL OVERVIEW","SYNCARDIA: BIVAD-TOTAL ARTIFICIAL HEART","2ND GENERATION AXIAL-FLOW PUMP","MEDTRONIC 3RD GENERATION CENTRIFUGAL FLOW", "ABIOMED - MICRO-AXIAL FLOW PUMP"]
         
+        // Takes the button and makes it into a circle
+        closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
         
     }
     

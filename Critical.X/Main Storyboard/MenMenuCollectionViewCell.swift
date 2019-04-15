@@ -17,6 +17,7 @@ class MenMenuCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mainMenuDetail_CellLabel: UILabel!
 
     
+    
     override var bounds: CGRect {
         didSet {
             self.layoutIfNeeded()

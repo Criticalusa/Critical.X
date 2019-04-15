@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jEl-tG-RD1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jEl-tG-RD1">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,7 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="700"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2G-4J-Xse">
-                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="694"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="692"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fox-QL-7VW" customClass="AKLabel" customModule="AKLabel">
                                                             <rect key="frame" x="16" y="78" width="287" height="64"/>
@@ -41,13 +40,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current HC03" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO6-ij-Abz">
-                                                            <rect key="frame" x="20" y="244" width="126.5" height="28"/>
+                                                            <rect key="frame" x="20" y="242" width="126.5" height="28"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
                                                             <color key="textColor" name="Silver"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifq-x8-NFm">
-                                                            <rect key="frame" x="64" y="338" width="193" height="36"/>
+                                                            <rect key="frame" x="64" y="336" width="193" height="36"/>
                                                             <color key="backgroundColor" name="Bone"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="36" id="aZQ-Pb-Ytp"/>
@@ -61,15 +60,15 @@
                                                                 <action selector="calcualteBicarbDeficit:" destination="jEl-tG-RD1" eventType="touchUpInside" id="t0q-kF-5oq"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-9y-rCd">
-                                                            <rect key="frame" x="16" y="134" width="287" height="18"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-9y-rCd">
+                                                            <rect key="frame" x="16" y="134" width="287" height="16"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="13"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLo-fa-tuP">
                                                             <rect key="frame" x="269" y="35" width="35" height="35"/>
-                                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                            <color key="backgroundColor" name="Critical Red"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="qd4-Rl-D15"/>
                                                                 <constraint firstAttribute="width" constant="35" id="rQM-7G-gy4"/>
@@ -84,7 +83,7 @@
                                                             </connections>
                                                         </button>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="HC03" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-or-zvi" customClass="KaedeTextField" customModule="TextFieldEffects">
-                                                            <rect key="frame" x="200" y="243" width="99" height="35"/>
+                                                            <rect key="frame" x="200" y="241" width="99" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="99" id="Mkr-3m-Jej"/>
                                                                 <constraint firstAttribute="height" constant="35" id="eNo-Ud-JMs"/>
@@ -111,7 +110,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOO-SL-tMe">
-                                                            <rect key="frame" x="20" y="274" width="64" height="15"/>
+                                                            <rect key="frame" x="20" y="272" width="64" height="15"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="22-26">
                                                                     <attributes>
@@ -138,7 +137,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxn-DC-uWn">
-                                                            <rect key="frame" x="20" y="183" width="107.5" height="28"/>
+                                                            <rect key="frame" x="20" y="181" width="107.5" height="28"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
                                                             <color key="textColor" name="Silver"/>
                                                             <nil key="highlightedColor"/>
@@ -157,7 +156,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KG" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-OQ-QaS" customClass="KaedeTextField" customModule="TextFieldEffects">
-                                                            <rect key="frame" x="200" y="180" width="103" height="37"/>
+                                                            <rect key="frame" x="200" y="178" width="103" height="37"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="103" id="Zbq-Pn-8KW"/>
                                                                 <constraint firstAttribute="height" constant="37" id="gWf-bE-xH0"/>
@@ -184,7 +183,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUv-b9-lWt">
-                                                            <rect key="frame" x="16" y="421" width="287" height="201"/>
+                                                            <rect key="frame" x="16" y="419" width="287" height="201"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xe-Je-xQb">
                                                                     <rect key="frame" x="8" y="51" width="270" height="105"/>
@@ -327,6 +326,9 @@
         </namedColor>
         <namedColor name="Critical Black">
             <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Critical Red">
+            <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Silver">
             <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

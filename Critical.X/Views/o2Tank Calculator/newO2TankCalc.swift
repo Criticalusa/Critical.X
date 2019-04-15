@@ -101,16 +101,16 @@ class newO2TankCalc: UIViewController {
         switch biasFLowSegnent.selectedSegmentIndex {
         case 0:
             biasFlow = 3
-            biasFlowLabel.text = " Adult/Peds Circut: A bias flow of 3 L/min added to the flow rate"
+            biasFlowLabel.text = "ADULT/PEDS CIRCUT: A BIAS FLOW OF 3 L/MIN IS ADDED TO THE FLOW RATE."
             print("Bias flow rate is \(biasFlow)")
         case 1:
             biasFlow = 4
             print("Bias flow rate is \(biasFlow)")
-            biasFlowLabel.text = " Neonatal Circut: A bias flow of 4 L/min added to the flow rate"
+            biasFlowLabel.text = "NEONATAL CIRCUT: A BIAS FLOW OF 4 L/MIN IS ADDED TO THE FLOW RATE."
 
         case 2:
             biasFlow = 0
-            biasFlowLabel.text = " No bias flow added to the flow rate"
+            biasFlowLabel.text = "NO BIAS FLOW ADDED TO THE FLOW RATE."
 
             print("Bias flow rate is \(biasFlow)")
 

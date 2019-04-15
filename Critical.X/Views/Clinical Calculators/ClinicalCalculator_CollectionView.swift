@@ -107,7 +107,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        clinicalCalculatorSubTitile.animate(text: "Clinical Calculators and References", duration: 1, completion: nil)
+        clinicalCalculatorSubTitile.animate(text: "CLINICAL REFERENCES & CALCULATORS", duration: 1, completion: nil)
         
         // Set the navigatin title
         self.navigationItem.title = "Clinical"
@@ -159,43 +159,45 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         medCalcSubtitle = [
             
-            "Calculates the Anion Gap",//0
+            "CALCULATES THE ANION GAP",//0
             
-            "Calculates the deficit of bicarbonate",//1
+            "CALCULATES THE DEFICIT OF BICARBONATE",//1
             
-            "Confirm IV flow rates",//2
+            "CONFIRM IV FLOW RATES",//2
             
-            "Calculates the fractional excretion of Na",//3
+            "CALCULATES THE FRACTIONAL EXCRETION OF NA",//3
             
-            "Free Water Deficit Calc",//4
+            "FREE WATER DEFICIT CALC",//4
             
-            "Devine formula",//5
+            "DEVINE FORMULA",//5
             
-            "Calculates IV flow rate",   //6
+            "CALCULATES IV FLOW RATE",   //6
             
-            "LOX Calculator",        //7
+            "LOX CALCULATOR",        //7
             
-            "Medical Spanish & Audio",       //8
+            "MEDICAL SPANISH & AUDIO",       //8
             
-            "Mean Arterial Pressure & Cerebral Perfusion Pressure",//9
+            "MEAN ARTERIAL PRESSURE & CEREBRAL PERFUSION PRESSURE",//9
             
-            "Calculates the Flow Time Remaining",//10
+            "CALCULATES THE FLOW TIME REMAINING",//10
             
-            "Fluid replacement calculator post burns",//11
+            "FLUID REPLACEMENT CALCULATOR POST BURNS",//11
             
-            "Pa02/Fi02 Ratio",//12
+            "PA02/FI02 RATIO",//12
             
-            "Calculates the expected due date",//13
+            "CALCULATES THE EXPECTED DUE DATE",//13
             
+            "SHOCK INDEX",           //14
             
-            "Shock Index",           //14
+            "INITIAL BOLUS AND DRIP ",//15
             
-            "Initial Bolus and Drip ",//15
+            "CALCULATES THE U/O IN ML/KG/HR",//16
             
-            "Calculates the U/O in mL/kg/hr",//16
-            
-            "Expected C02 Compensation",//17
+            "EXPECTED C02 COMPENSATION",//17
+
         ]
+        
+        
         
         StoryboardID = [
             

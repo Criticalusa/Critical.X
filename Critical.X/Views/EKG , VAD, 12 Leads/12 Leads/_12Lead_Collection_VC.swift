@@ -16,6 +16,10 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var EKGTitleLabel: AKLabel!
     @IBOutlet weak var ekg12CollectionView: UICollectionView!
    
+    @IBOutlet weak var closeButton: UIButton!{
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
     var ekgTitles = [String]()
     var ekgSubtitles = [String]()
     
@@ -35,14 +39,15 @@ class _12Lead_Collection_VC: UIViewController, UICollectionViewDataSource, UICol
             "Wellen's",// 6
             "Sgarbossa's"] //7
         
-        ekgSubtitles = ["Lead assessment and morphology",
-                        "Learn the axis of the heart",
-                        "Overview of the Anterior and Septal Wall",
-                        "Overview of an Inferior Wall  Infarction",
-                        "Overview of a Lateral Wall Infarction",
-                        "Syndrome",
-                        "Syndrome",
-                        "Criteria",]
+        ekgSubtitles = ["LEAD ASSESSMENT AND MORPHOLOGY",
+                        "LEARN THE AXIS OF THE HEART",
+                        "OVERVIEW OF THE ANTERIOR AND SEPTAL WALL",
+                        "OVERVIEW OF AN INFERIOR WALL  INFARCTION",
+                        "OVERVIEW OF A LATERAL WALL INFARCTION",
+                        "SYNDROME",
+                        "SYNDROME",
+                        "CRITERIA",]
+
     }
 
   

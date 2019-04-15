@@ -10,8 +10,10 @@ import UIKit
 
 class MAP_CPP: UIViewController {
     
-    
-    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var closeButton: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
     
     @IBOutlet weak var systolic: UITextField!
     

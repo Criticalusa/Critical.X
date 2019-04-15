@@ -134,7 +134,8 @@ import UIKit
         Anterolateral STEMI due to LAD occlusion.
         \rInferior-posterior-lateral STEMI due to LCx occlusion.
         \rIsolated lateral infarction due to occlusion of smaller branch arteries such as the D1, Obtuse marginal or ramus intermedius.
-        \rChanges in leads I, aVL, V5, and V6 will have ST-segment elevations. Elevations localized to just leads I, and aVL are referenced to a high lateral STEMI. Reciprocal depression will be noted in the inferior leads. Hypotension, AV blocks and other myocardial damage usually accompany lateral wall MI's.
+        \rChanges in leads I, aVL, V5, and V6 will have ST-segment elevations. Elevations localized to just leads I, and aVL are referenced to a high lateral STEMI.
+        \rReciprocal depression will be noted in the inferior leads. Hypotension, AV blocks and other myocardial damage usually accompany lateral wall MI's.
         """
         case BrugadaSyndrome =
         """
