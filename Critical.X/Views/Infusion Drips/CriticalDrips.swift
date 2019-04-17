@@ -264,6 +264,9 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         let IvBag = Float(txtIvBag.text!)!
         let Dose = Float(txtDose.text!)!
         
+
+        
+        
         if unit == "mcg/min" {
             let yields = totalDose/IvBag * 1000
             lblYields.text = String(format:"%.1f", yields)

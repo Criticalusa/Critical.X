@@ -325,9 +325,9 @@ extension ResultViewController {
         attributedText.apply(font: customFont!, subString: "Although there's low-quality evidence from observational studies, current literature suggests that NaHC03 is held unless the pH is < 7.1, then address the primary process once the pH rises.")
         
         //4 Change color
-        attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Advantages of NaHC03:")
+        attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Disadvantages of NaHC03:")
         // Change font
-        attributedText.apply(font: customFont!, subString: "Advantages of NaHC03:")
+        attributedText.apply(font: customFont!, subString: "Disadvantages of NaHC03:")
         
         //5 Change color
         attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: "Disadvantages include:")
@@ -621,7 +621,7 @@ extension ResultViewController {
         let sideEffect =  "A side effect of NaHC03 treatment is the subsequent rise in PaC02."
         let moreTHanOne =  "More than one primary acid-base disorder may be present simultaneously. "
         let althoughLowQuality = "Although there's low-quality evidence from observational studies, current literature suggests that NaHC03 is held unless the pH is < 7.1, then address the primary process once the pH rises."
-        let advantagesOfHC03 = "Advantages of NaHC03:"
+        let advantagesOfHC03 = "Disadvantages of NaHC03:"
         let disadvantages = "Disadvantages include:"
         let bicarbNotInvolved = "Bicarbonate is not involved in this disorder as it can't buffer itself. It's almost always contraindicated in treatment."
         

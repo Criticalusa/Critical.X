@@ -11,7 +11,13 @@ import AKLabel
 
 class RSIMain: UIViewController {
    
-    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var closeButton: UIButton! {
+        didSet {
+            // Takes the button and makes it into a circle
+            closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
+        }
+        
+    }
     @IBOutlet weak var rsiTextField: UITextField! 
     @IBOutlet weak var rsiTitle: AKLabel!
     @IBOutlet weak var lungPicture: UIImageView!

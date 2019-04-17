@@ -95,6 +95,7 @@ extension VentMode_CollectionView {
         
         
         let storyboard = UIStoryboard(name: "VentModes", bundle: nil) // Has to reflect the storyBoard they are on.
+        
         if let vc = storyboard.instantiateViewController(withIdentifier: "A") as? VentMode_detailVC {
             
             // Set these first to the strings to pass

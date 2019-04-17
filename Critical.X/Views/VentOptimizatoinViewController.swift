@@ -55,6 +55,10 @@ class VentOptimizatoinViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var calculateButton: UIButton!
     @IBOutlet weak var sideLineView: UIView!
     @IBOutlet weak var ventScroller: UIScrollView!
+    @IBOutlet weak var closeButton: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
     
     // MARK: - View Didload method
     override func viewDidLoad() {

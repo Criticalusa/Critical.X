@@ -166,6 +166,13 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var PrimaryDView: UIView!
     
+    
+    @IBOutlet weak var closeButton: UIButton! {
+        // Takes the button and makes it into a circle
+        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+    }
+    
+    
     /// ---
     /// #  We check the current state of the button and change the color depending on the state
     /// ## Subtitle 2

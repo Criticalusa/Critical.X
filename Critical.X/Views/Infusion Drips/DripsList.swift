@@ -99,12 +99,12 @@ class DripsList: UITableViewController {
         super.viewWillAppear(true)
         
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1609999985, green: 0.5019999743, blue: 0.7250000238, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)
         
         animateNavBar()
         
         // Animates the title when the screen loads.
-        dripSubTitle.animate(text: "Infusion Rates and Calculations", duration: 1, completion: nil)
+        dripSubTitle.animate(text: "INFUSION RATES AND CALCULATIONS", duration: 1, completion: nil)
 
         
         

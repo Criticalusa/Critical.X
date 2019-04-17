@@ -254,7 +254,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
     // Change the color back when the view dissappears
     override func viewWillDisappear(_ animated: Bool) {
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1609999985, green: 0.5019999743, blue: 0.7250000238, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)
         
         
     }

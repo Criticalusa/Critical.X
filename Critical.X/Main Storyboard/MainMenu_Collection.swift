@@ -621,6 +621,15 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             self.present(aboutVC, animated: true, completion: nil)
             
         }
+            
+            // PEDIATRICS PAGE --> MODAL
+        else if indexPath.row == 6 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let fluid = storyboard.instantiateViewController(withIdentifier: "Fluids blood products") // Making sure the identifier matches the SBID
+            self.present(fluid, animated: true, completion: nil)
+            
+        }
+            
             // PEDIATRICS PAGE --> MODAL
         else if indexPath.row == 10 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB

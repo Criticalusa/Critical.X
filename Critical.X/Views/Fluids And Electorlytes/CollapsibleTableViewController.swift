@@ -25,6 +25,9 @@ class CollapsibleTableViewController: UITableViewController {
         self.title = "Fluids, Blood Products"
     }
     
+    @IBAction func closeFluids(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
     
     // Once the view appears, the animation starts.
     override func viewWillAppear(_ animated: Bool) {
@@ -54,16 +57,20 @@ class CollapsibleTableViewController: UITableViewController {
 extension CollapsibleTableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
+        
         return sections.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
         return sections[section].collapsed ? 0 : sections[section].items.count
     }
     
     // Cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: CollapsibleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
+        
+        let cell: CollapsibleTableViewCell =
+            tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
             
             CollapsibleTableViewCell(style: .default, reuseIdentifier: "cell")
         
@@ -77,6 +84,7 @@ extension CollapsibleTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return UITableViewAutomaticDimension
     }
     
@@ -84,21 +92,28 @@ extension CollapsibleTableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
+        
         header.titleLabel.text = sections[section].name
+        
         header.arrowLabel.text = ">"
+        
         header.setCollapsed(sections[section].collapsed)
         
         header.section = section
+        
         header.delegate = self
         
         return header
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
         return 44.0
     }
     
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForFooterInSection
+        section: Int) -> CGFloat {
+        
         return 1.0
     }
 
