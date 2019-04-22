@@ -43,7 +43,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     @IBOutlet var viewCard2: CardView!
     
     
-    public var index = 0
+    public var  index = 0
     private var step: Float = 1
     private var detail_type = 0
     private var Drip:NSDictionary!

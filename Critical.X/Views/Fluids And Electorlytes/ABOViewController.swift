@@ -83,6 +83,8 @@ class ABOViewController: UIViewController {
     @IBAction func popOverPicker(_ sender: UIButton) {
         //Properties
         
+        
+        
         // What happends when we select a picker segment,
         //        McPicker.showAsPopover(data: data, fromViewController: self, sourceView: sender, cancelHandler: { () -> Void in
         //
@@ -95,13 +97,14 @@ class ABOViewController: UIViewController {
                 //self.label.text = name
                 
                 
+                
                 //MARK: - A pos
                 if name == "A Pos" {
                     
                     
-                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.1529999971, green: 0.6819999814, blue: 0.3759999871, alpha: 1)
+                    self.bloodTypeLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
                     
-                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
                     
                     self.bloodTypeLabel.text = "A"
                     
@@ -129,9 +132,9 @@ class ABOViewController: UIViewController {
                     // MARK: - A neg
                 else if name == "A Neg" {
                     
-                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 1)
                     
-                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
                     
                     self.bloodTypeLabel.text = "A"
                     
@@ -164,9 +167,9 @@ class ABOViewController: UIViewController {
                     // MARK: - B pos
                 else if name == "B Pos" {
                     
-                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.3100000024, green: 0.5180000067, blue: 0.7689999938, alpha: 1)
+                    self.bloodTypeLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
                     
-                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
                     
                     self.bloodTypeLabel.text = "B"
                     
@@ -243,7 +246,7 @@ class ABOViewController: UIViewController {
                     
                     
                     // Set the Labels
-                    self.donateLabel.text = "AB Pos"
+                    self.donateLabel.text = "Only AB Pos"
                     
                     self.receiveLabel.text = "Everyone - Universal Recipient"
                     
@@ -261,9 +264,9 @@ class ABOViewController: UIViewController {
                     // MARK: - AB neg
                 else if name == "AB Neg" {
                     
-                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 1)
                     
-                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
                     
                     self.bloodTypeLabel.text = "AB"
                     
@@ -293,18 +296,15 @@ class ABOViewController: UIViewController {
                     // MARK: - O pos
                 else if name == "O Pos" {
                     
-                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
+                    self.bloodTypeLabel.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
                     
-                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+                    self.bloodTypeBGView.backgroundColor = #colorLiteral(red: 0.3411764706, green: 0.6549019608, blue: 0.4509803922, alpha: 1)
                     
                     self.bloodTypeLabel.text = "O"
                     
                     self.posNegText.text = "POS"
                     
-                    self.bloodButton.titleLabel?.textAlignment = .center
-                    
-                    self.bloodButton.titleLabel?.text = "O Positive"
-                    
+                   
                     
                     // Set the Labels
                     self.donateLabel.text = "O Pos | A Pos | B Pos | AB Pos"
@@ -321,6 +321,10 @@ class ABOViewController: UIViewController {
                     
                     self.view.endEditing(true)
                     
+                    self.bloodButton.titleLabel?.textAlignment = .center
+                    
+                    self.bloodButton.titleLabel?.text = "O Positive"
+                    
                 }
                 
                     // MARK: -  O neg
@@ -334,15 +338,12 @@ class ABOViewController: UIViewController {
                     
                     self.posNegText.text = "Neg"
                     
-                    self.bloodButton.titleLabel?.textAlignment = .center
-                    
-                    self.bloodButton.titleLabel?.text = "O Negative"
-                    
+                   
                     
                     // Set the Labels
                     self.donateLabel.text = "Everyone - Universal Donor"
                     
-                    self.receiveLabel.text = "O Pos & O Neg"
+                    self.receiveLabel.text = "Only O Neg"
                     
                     
                     self.resultView.isHidden = false
@@ -350,7 +351,12 @@ class ABOViewController: UIViewController {
                     self.showAnimate()
                     
                     print("O Negative selected")
+                    
                     self.view.endEditing(true)
+                    
+                    self.bloodButton.titleLabel?.textAlignment = .center
+                    
+                    self.bloodButton.titleLabel?.text = "O Negative"
                     
                 }
             
