@@ -284,69 +284,104 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             txtInfusionRate.text = String(format:"%.2f", infusion)
         }
         else if unit == "mg/min" {
+            
             let yields = totalDose/IvBag
+            
             lblYields.text = String(format:"%.1f", yields)
+            
             lblUnitYields.text = "mg/mL"
             
             let infusion = Dose/yields * 60
+            
             txtInfusionRate.text = String(format:"%.2f", infusion)
         }
         else if unit == "mg/hr" {
+            
             let yields = totalDose/IvBag
+            
             lblYields.text = String(format:"%.1f", yields)
+            
             lblUnitYields.text = "mg/mL"
             
             let infusion = Dose/yields
+            
             txtInfusionRate.text = String(format:"%.1f", infusion)
         }
         else if unit == "g/hr" {
+            
             let yields = totalDose/IvBag
+            
             lblYields.text = String(format:"%.1f", yields)
+            
             lblUnitYields.text = "mg/mL"
             
             let infusion = (Dose/yields)
+            
             txtInfusionRate.text = String(format:"%.2f", infusion)
         }
         else if unit == "units/min" {
+            
             let yields = totalDose/IvBag
+            
             lblYields.text = String(format:"%.2f", yields)
+            
             lblUnitTotalDose.text = "units"
+            
             lblUnitYields.text = "units/mL"
             
             let infusion = Dose/yields * 60
+            
             txtInfusionRate.text = String(format:"%.2f", infusion)
         }
         else if unit == "mUnits/min" {
+            
             let yields = totalDose/IvBag
+            
             lblYields.text = String(format:"%.2f", yields)
+            
             lblUnitTotalDose.text = "mUnits"
+            
             lblUnitYields.text = "mUnits/mL"
             
             let infusion = Dose/yields * 60/1000
+            
             txtInfusionRate.text = String(format:"%.1f", infusion)
         }
         else if unit == "units/hr" {
+            
             let yields = totalDose/IvBag
+            
             lblYields.text = String(format:"%.2f", yields)
+            
             lblUnitTotalDose.text = "units"
+            
             lblUnitYields.text = "units/mL"
             
             let infusion = Dose/yields
+            
             txtInfusionRate.text = String(format:"%.1f", infusion)
         }
         else if unit == "mcg/kg/min" {
             
             var yields = totalDose/IvBag
+            
             lblUnitYields.text = "mg/mL"
+            
             if yields < 1 {
+                
                 yields = totalDose/IvBag*1000
+                
                 lblUnitYields.text = "mcg/mL"
             }
+            
             lblYields.text = String(format:"%.1f", yields)
             
             let infusion = Dose * weight/(totalDose/IvBag*1000)*60
+            
             txtInfusionRate.text = String(format:"%.1f", infusion)
         }
+        
+        
         else if unit == "units/kg/min" {
             var yields = totalDose/IvBag
             lblUnitYields.text = "mg/mL"
