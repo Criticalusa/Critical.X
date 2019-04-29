@@ -51,6 +51,31 @@ public var sectionsData: [Section] = [
         
         Item(name: "0.9% NS (0.9% Normal Saline)", detail: "Indications:\nReplacement, Treatment of metabolic alkalosis, A priming fluid for hemodialysis, to begin and end blood transfusions. Small volumes of 0.9% NaCl (preservative-free or bacteriostatic) are used to reconstitute or dilute other medications.\n\nAdvantages:\nResembles extracellular fluid. Reduces edema by osmotic effects. Helps maintain water distribution, fluid and electrolyte balance, acid-base equilibrium, and osmotic pressure.\n\nDisadvantages:\nDilutes RBC's and plasma proteins. Hyperchloremic Metabolic Acidosis.\n\nComposition:\nOsmolarity: 308 mOsm/L; Na 154 mEq/L; Chloride 154 mEq/L."),
         
+        Item(name: "Plasma-Lyte 148 (pH 7.4)", detail: """
+            \rOverview:
+            PlasmaLyte is a multi-formulated family of balanced crystalloids which closely mimics human plasma for its electrolytes, osmolality, and pH
+            content.
+
+            PlasmaLyte is unique unlike other crystalloids because it also contains additional ions act as a buffer and contain anions such as acetate, gluconate and
+            even lactate that are converted to bicarbonate, CO2, and water.
+
+            The recommended infusion rate is usually  500 ml to 3 liters/ 24 h. Roughly 40 mL/kg/24h in adults, the
+            elderly and adolescents.
+            \rIndications:
+            Hemorrhagic Shock, mild-moderate acidosis, fluid replacement (e.g., after burns, head injury, fracture, infection, intraoperative, etc.)
+            \rAdvantages:
+            Corrects acid-base balance issues such as acidosis which addressing volume and electrolyte deficiencies.
+            \rDisadvantages:
+            Fluid overload, peripheral/pulmonary edema, weight gain, and increased / worsening intracranial pressure. Contraindicated in those with Hyperkalemia,
+            Hypochlorhydria, Metabolic or respiratory alkalosis, heart blocks, renal failure.
+
+            May cause hypocalcemia (contents contain no calcium) - due to an increase in plasma
+            pH, its alkalinizing effect may lower the concentration of ionized (not protein-bound) calcium.
+            \rComposition:
+            pH: 7.4, Osmolarity: 295 mOsm/l (approx.), Na+: 140 mEq/L , K+: 5.0 mEq/L, Mg: 3.0 mEq/L, Cl-: 98 mEq/L, Sodium Acetate trihydrate (CH3COO-): 27 mEq/L , Sodium
+            Gluconate (C6H11O7-): 23 mEq/L.
+            """),
+        
         Item(name: "3% Saline (3% Hypertonic Saline)", detail: "Indications:\nTo increase the serum sodium and plasma volume. Moderate inflammatory response in patients who are in shock.\n\nAdvantages:\nIt takes less fluid to resuscitate. Improves cardiac output and blood flow. It is as effective as mannitol in patients with increased intracranial pressure.\n\nDisadvantages:\nIf administered too fast, the patient could become hypokalemic and the Na could increase approximately 2-3 mmol/L. Seizures and dysrhythmias could result.\n\nComposition:\nOsmolarity: 1026 mOsm/L; Na 512 mEq/L; Chloride 513 mEq/L."),
         
         Item(name: "Ringers Lactate", detail: "Indications:\nFluid volume replacement for hemorrhagic shock. Contains the same components as the interstitial fluid- which tends to shift to the vasculature during hemorrhage.\n\nAdvantages:\nPotassium and calcium promote myocardial contractility. The fluid is isotonic. Electrolytes are balanced and lactate is converted to glucose and carbonic acid.\n\nDisadvantages:\nDilutes the plasma proteins in red blood cells.\n\nComposition:\nSodium  130 mEq/L, Chloride: 109 mEq/L, Potassium: 4 mEq/L, Calcium: 3 mEq/L, Lactate: 27 mEq/L, pH: 6.5, Osmolarity: 275 mOsm/liter."),
@@ -67,7 +92,9 @@ public var sectionsData: [Section] = [
         
         
         Item(name: "Hextend", detail: "Overview:\nHetastarch (hydroxyethyl) is a plasma volume expander derived from natural sources of starch. It works by restoring blood plasma lost through severe bleeding. Hetastarch also contains electrolytes (sodium, calcium potassium, magnesium) which are minerals essential for many functions in the body, including the brain and nervous system, heartbeat, and fluid balance. \n\nIndications:\nHespan is not a substitute for blood or plasma and is indicated in hypovolemia to provide plasma volume expansion. \n\nAdvantages:\nMacromolecule that expands the volume 150% lasting 424 – 36 hours. There is a lower risk for allergic reaction and dextran or albumin.\n\nDisadvantages:\nIncrease in serum amylase, glucose decreases factor VII. Prolonging the PT – PTT and decreasing platelets. Dilution of red blood cells.\n\nComposition:\nSodium :154 mEq per liter, Chloride: 154 mg/L, Osmolality: 310 mOsm per liter"),
-        
+    
+         
+         
         Item(name: "Plasmanate (Plasma Protein Factor)", detail: "Indications:\nIncreases osmotic pressure in patients who are in shock due to burns, crushing injuries when there is a loss of plasma.\n\nAdvantages:\nCompatible with whole blood or PRBC's. Very low risk for allergic reactions. An adequate replacement for human plasma as it can increase blood volume for up to 48 hrs. Useful in pediatric patients in shock due to infection or dehydration.\n\nDisadvantages:\nAllergic reactions may cause hypotension if greater than 10mL/ min is given during surgery. Can cause flushing, urticaria, back pain, nausea, headache. Those who are severely anemic, present with CHF, or hypervolemic.\n\nComposition:\n5% human plasma protein in Normal Saline, Albumin 44 g/L. Osmolality - 290 mOsm/L. Note: Plasmanate is made from human plasma and the patient can be exposed to infectious diseases or viruses."),
         
         ]), // End of the section
