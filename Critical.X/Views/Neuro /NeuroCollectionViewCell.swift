@@ -32,7 +32,7 @@ class NeuroCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.neuroCellImage.layer.masksToBounds = true
+        //self.neuroCellImage.layer.masksToBounds = true
     }
     
     override func layoutSubviews() {
@@ -47,7 +47,7 @@ class NeuroCollectionViewCell: UICollectionViewCell {
     }
     
     func setCircularImageView() {
-        self.neuroCellImage.layer.cornerRadius = CGFloat(roundf(Float(self.neuroCellImage.frame.size.width / 2.0)))
+//        self.neuroCellImage.layer.cornerRadius = CGFloat(roundf(Float(self.neuroCellImage.frame.size.width / 2.0)))
     }
     // Takes the collectionView cell and makes a shadow behind the cell. Make sure set the BG color of the cell to white.
     func setShadows() -> Void {

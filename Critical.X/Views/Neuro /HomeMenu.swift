@@ -30,10 +30,10 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
 
         mainMenu = ["Cranial Nerves","Stroke Scores","Herniation","Increased ICP","Neuro Exam","Stroke pathology", "Normal CT brain", "GCS"]
         
-        subTitle =  ["Cranial Nerves","Assessment & Calculators","Overview of herniation process","Sign of increased intracranial pressure","Complete neurological exam","Different stroke pathologies", "CT scan of the brain", "Glascow Coma Scale"]
+        subTitle =  ["CRANIAL NERVES","ASSESSMENT & CALCULATORS","OVERVIEW OF HERNIATION PROCESS","SIGN OF INCREASED INTRACRANIAL PRESSURE","COMPLETE NEUROLOGICAL EXAM","DIFFERENT STROKE PATHOLOGIES", "CT SCAN OF THE BRAIN", "GLASCOW COMA SCALE"]
         
         
-        cellImages = ["CranialNerves1","GCS1","Herniation","Brain 44","brainMap","Brain-1", "CT1", "Brain 44" ]
+//        cellImages = ["CranialNerves1","GCS1","Herniation","Brain 44","brainMap","Brain-1", "CT1", "Brain 44" ]
         
         storyBoardID = ["A","StrokeCollection","C","D","E","F", "G", "gcsB"]
         
@@ -56,7 +56,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         
         cell.neuroSubtitleLabel.text = subTitle[indexPath.item]
 
-        cell.neuroCellImage.image = UIImage (named:cellImages[indexPath.item])
+//        cell.neuroCellImage.image = UIImage (named:cellImages[indexPath.item])
         
         return cell
     }

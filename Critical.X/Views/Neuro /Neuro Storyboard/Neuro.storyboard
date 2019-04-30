@@ -23,43 +23,38 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MDi-kF-HMP">
-                                    <size key="itemSize" width="295" height="69"/>
+                                    <size key="itemSize" width="297" height="69"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2Nu-NE-B5R" customClass="NeuroCollectionViewCell" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="12.5" y="10" width="295" height="69"/>
+                                        <rect key="frame" x="11.5" y="10" width="297" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="295" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="297" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brain-1" translatesAutoresizingMaskIntoConstraints="NO" id="5S2-Kd-gUG">
-                                                    <rect key="frame" x="9" y="11" width="43" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Increased ICP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-oO-4iE">
-                                                    <rect key="frame" x="64" y="8" width="211" height="34"/>
+                                                    <rect key="frame" x="1" y="8" width="295" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
-                                                    <color key="textColor" name="Bone"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview of herniation process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HXp-O1-vhh">
-                                                    <rect key="frame" x="64" y="35" width="211" height="24"/>
+                                                    <rect key="frame" x="1" y="35" width="295" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                                    <color key="textColor" name="Silver"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                        <size key="customSize" width="295" height="69"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="297" height="69"/>
                                         <connections>
-                                            <outlet property="neuroCellImage" destination="5S2-Kd-gUG" id="6Ah-J3-WiT"/>
                                             <outlet property="neuroCellLabel" destination="ekp-oO-4iE" id="Uir-sQ-wA9"/>
                                             <outlet property="neuroSubtitleLabel" destination="HXp-O1-vhh" id="g7v-eF-uvb"/>
                                         </connections>
@@ -99,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFT-tb-wfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2957" y="-2244"/>
+            <point key="canvasLocation" x="-2958.75" y="-2244.7183098591549"/>
         </scene>
         <!--Cranial Nerves-->
         <scene sceneID="Ufw-PI-00T">
@@ -1287,41 +1282,41 @@ Motor - Flaccid. </string>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-iq-ftc">
-                                <rect key="frame" x="16" y="138" width="288" height="380"/>
+                                <rect key="frame" x="0.0" y="138" width="320" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="380" id="UVV-8y-Yj9"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="JQK-nc-MNt">
-                                    <size key="itemSize" width="275" height="63"/>
+                                    <size key="itemSize" width="291" height="63"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="TTC-mF-aYB" customClass="StrokeCollectionCell" customModule="Critical_X" customModuleProvider="target">
-                                        <rect key="frame" x="6.5" y="0.0" width="275" height="63"/>
+                                        <rect key="frame" x="14.5" y="0.0" width="291" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="275" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-P0-KMl">
-                                                    <rect key="frame" x="0.0" y="5" width="275" height="28"/>
+                                                    <rect key="frame" x="0.0" y="5" width="291" height="28"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
-                                                    <color key="textColor" name="Bone"/>
+                                                    <color key="textColor" name="Critical Black"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Institutes of Health Stroke Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb5-j8-j6M">
-                                                    <rect key="frame" x="0.0" y="30" width="275" height="27.5"/>
+                                                    <rect key="frame" x="0.0" y="30" width="291" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                                    <color key="textColor" name="Silver"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <color key="backgroundColor" name="Dark Gray"/>
                                         <constraints>
                                             <constraint firstItem="pFV-P0-KMl" firstAttribute="leading" secondItem="TTC-mF-aYB" secondAttribute="leading" id="F65-xd-UNL"/>
                                             <constraint firstAttribute="bottom" secondItem="pFV-P0-KMl" secondAttribute="bottom" constant="30" id="GcE-EZ-TmG"/>
@@ -1361,17 +1356,17 @@ Motor - Flaccid. </string>
                         <constraints>
                             <constraint firstItem="PwY-JQ-MNb" firstAttribute="bottom" secondItem="aVS-iq-ftc" secondAttribute="bottom" constant="50" id="AZG-Ww-x4B"/>
                             <constraint firstItem="aVS-iq-ftc" firstAttribute="top" secondItem="dmj-S9-wtJ" secondAttribute="bottom" constant="49" id="LKN-tS-JKA"/>
-                            <constraint firstItem="dmj-S9-wtJ" firstAttribute="leading" secondItem="aVS-iq-ftc" secondAttribute="leading" id="LmE-6y-0yC"/>
+                            <constraint firstItem="dmj-S9-wtJ" firstAttribute="leading" secondItem="aVS-iq-ftc" secondAttribute="leading" constant="16" id="LmE-6y-0yC"/>
                             <constraint firstItem="dmj-S9-wtJ" firstAttribute="leading" secondItem="PwY-JQ-MNb" secondAttribute="leading" constant="16" id="MJA-KJ-Qoe"/>
                             <constraint firstItem="dmj-S9-wtJ" firstAttribute="top" secondItem="PwY-JQ-MNb" secondAttribute="top" constant="20" id="OxA-d7-nab"/>
                             <constraint firstItem="4RP-Ur-QYI" firstAttribute="top" secondItem="dmj-S9-wtJ" secondAttribute="bottom" constant="5" id="VHx-6B-K54"/>
                             <constraint firstItem="PwY-JQ-MNb" firstAttribute="trailing" secondItem="dmj-S9-wtJ" secondAttribute="trailing" constant="16" id="b2b-SX-Yuf"/>
                             <constraint firstItem="4RP-Ur-QYI" firstAttribute="leading" secondItem="PwY-JQ-MNb" secondAttribute="leading" constant="140" id="bxv-4V-JEw"/>
-                            <constraint firstItem="aVS-iq-ftc" firstAttribute="trailing" secondItem="C5Q-40-wZb" secondAttribute="trailingMargin" id="chM-m9-lyA"/>
+                            <constraint firstItem="aVS-iq-ftc" firstAttribute="trailing" secondItem="C5Q-40-wZb" secondAttribute="trailingMargin" constant="16" id="chM-m9-lyA"/>
                             <constraint firstItem="dmj-S9-wtJ" firstAttribute="centerX" secondItem="PwY-JQ-MNb" secondAttribute="centerX" id="f9e-e7-j8x"/>
                             <constraint firstItem="dmj-S9-wtJ" firstAttribute="top" secondItem="PwY-JQ-MNb" secondAttribute="top" constant="20" id="fUB-Wk-eBz"/>
-                            <constraint firstItem="dmj-S9-wtJ" firstAttribute="trailing" secondItem="aVS-iq-ftc" secondAttribute="trailing" id="j4H-UI-K6q"/>
-                            <constraint firstItem="aVS-iq-ftc" firstAttribute="leading" secondItem="C5Q-40-wZb" secondAttribute="leadingMargin" id="r72-nB-XTd"/>
+                            <constraint firstItem="dmj-S9-wtJ" firstAttribute="trailing" secondItem="aVS-iq-ftc" secondAttribute="trailing" constant="-16" id="j4H-UI-K6q"/>
+                            <constraint firstItem="aVS-iq-ftc" firstAttribute="leading" secondItem="C5Q-40-wZb" secondAttribute="leadingMargin" constant="-16" id="r72-nB-XTd"/>
                             <constraint firstItem="PwY-JQ-MNb" firstAttribute="trailing" secondItem="4RP-Ur-QYI" secondAttribute="trailing" constant="140" id="vkq-x5-Rox"/>
                             <constraint firstItem="aVS-iq-ftc" firstAttribute="top" secondItem="dmj-S9-wtJ" secondAttribute="bottom" constant="49" id="zY9-6h-2Gc"/>
                         </constraints>
@@ -1556,46 +1551,7 @@ Motor - Flaccid. </string>
 </string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1635,46 +1591,7 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1711,46 +1628,7 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1788,52 +1666,13 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">•  The ventricles will contract thus, a reduction of CSF.
+                                        <string key="content">•  The ventricles will contract thus, a reduction of CSF.
 •  Blood volume is reduced in the cranium by hyperventilation to PaCO2 which results in cerebral vasoconstriction.
 •  Cushing's reflex (which is a late sign) will cause bradycardia and hypertension.
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1860,46 +1699,7 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1954,7 +1754,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">•  Position the patient's head of the bed to 30 to 45°.
+                                        <string key="content">•  Position the patient's head of the bed to 30 to 45°.
 •  Maintain the head in a neutral position and make sure the tracheal ties are not tight.
 •  Closely monitor I &amp; O for excess diuresis or fluid retention.
 •  Mannitol: 0.25 – 1 g per kilogram. Maintain serum osmolarity 305 – 320 mOsm per liter.  Normal osmolarity is 272 to 90 mOsm per liter.
@@ -1965,49 +1765,10 @@ Cg
 •  Beta blockers: labetalol 10 – 40 mg IV q 15 – 30 minutes.
 •  Mean arterial pressure management (MAP) &gt; than 150 mmHg.
 •  Note: 75% of cranial blood volume is Venus. Avoid Nitroglycerin and Nipride as these drugs will increase intracranial pressures.
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -2049,53 +1810,14 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">•  Always think cerebral perfusion pressure, MAP - ICP.
+                                        <string key="content">•  Always think cerebral perfusion pressure, MAP - ICP.
 •  Maintain cerebral perfusion pressure greater sign 60 – 70 mmHg. Maintain systolic blood pressures &gt;90 mmHg.
 •  Utilize vasoactive medications if necessary, i.e., Neosynephrine.
 •  Do not use D5W or 0.45% saline for maintenance fluids.
-•  Sedation with propofol is preferred As it has a short half-life allowing for frequent neuro examinations to be conducted. It also lessens the chance of increased intracranial pressure caused by suctioning, coughing or agitation.</mutableString>
+•  Sedation with propofol is preferred As it has a short half-life allowing for frequent neuro examinations to be conducted. It also lessens the chance of increased intracranial pressure caused by suctioning, coughing or agitation.</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -2154,7 +1876,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Consciousness is the most sensitive indicator of neurological change and can be defined as a state of general awareness of oneself and the environment.
+                                        <string key="content">Consciousness is the most sensitive indicator of neurological change and can be defined as a state of general awareness of oneself and the environment.
 
 Consciousness is also tricky to measure directly but is also measured by observing how the patient responds to specific stimuli.
 
@@ -2170,7 +1892,7 @@ Abnormal neurological signs can be a result of the following conditions:
 
 Assessing the level of consciousness (LOC) can be done by using the Glasgow Coma Scale or from the different states listed below:
 
-</mutableString>
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
@@ -6497,7 +6219,6 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         </scene>
     </scenes>
     <resources>
-        <image name="Brain-1" width="612" height="746"/>
         <image name="CRITICAL_Neuro_Logo1_Circle" width="1782" height="1896"/>
         <image name="CT1" width="509" height="505"/>
         <image name="CranialNerveCartoon" width="801" height="840"/>
@@ -6543,9 +6264,6 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         </namedColor>
         <namedColor name="Seagull">
             <color red="0.46000000834465027" green="0.74000000953674316" blue="0.79000002145767212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Silver">
-            <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Viola">
             <color red="0.79000002145767212" green="0.50999999046325684" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
