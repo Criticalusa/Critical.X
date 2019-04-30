@@ -220,7 +220,7 @@ class IdealBodyWeight: UIViewController {
                     //
                     
                     // maleIBWCalculation is set to zero on the receiving view controller, here I tell it if the segment is equal to zero from these calculations.
-                    IBW.maleIBWCalculation =  (50 + 2.3 * (Double (heightText.text!)! - 60))
+                    IBW.maleIBWCalculation =  (50 + 2.3 * (Double (heightText.text!)! - 60)).roundTo(places: 1)
                     
                     
                     //Set the female calculations to zero, or it will crash showing nil.
@@ -248,7 +248,7 @@ class IdealBodyWeight: UIViewController {
                     
                     IBW.desiredTV = Double (desiredTVText.text!)
                     
-                    IBW.femaleIBWCalculation =  (45.5 + 2.3 * (Double (heightText.text!)! - 60))
+                    IBW.femaleIBWCalculation =  (45.5 + 2.3 * (Double (heightText.text!)! - 60)).roundTo(places: 1)
                     
                     IBW.maleIBWCalculation = 0
                     

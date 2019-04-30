@@ -125,7 +125,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "Free Water Deficit",    //4
             
-            "Ideal Body Weight",     //5
+            "Tidal Volume Calculator",     //5
             
             "IV Rate Calculator",   //6
             
@@ -169,7 +169,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "FREE WATER DEFICIT CALC",//4
             
-            "DEVINE FORMULA",//5
+            "CALCULATES BASED ON IDEAL BODY WEIGHT",//5
             
             "CALCULATES IV FLOW RATE",   //6
             

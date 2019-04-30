@@ -175,6 +175,10 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         animateViewMoving(up: false, moveValue: 100)
     }
+    
+    
+    /// Keyboard Dismissed after you touch the screen
+ 
     func animateViewMoving (up:Bool, moveValue :CGFloat){
         
         let movementDuration:TimeInterval = 0.3
@@ -191,6 +195,7 @@ class OnboardingVC: UIViewController, UITextFieldDelegate {
         
         UIView.commitAnimations()
     }
+    
     
     /**
      Animate Label

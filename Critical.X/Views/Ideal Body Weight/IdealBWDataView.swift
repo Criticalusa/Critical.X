@@ -9,6 +9,7 @@
 import UIKit
 
 var desiredTV: Double?
+
 var heightEntered: Double?
 
 var maleIBWCalculation: Double = 0
@@ -31,11 +32,13 @@ class IdealBWDataView: UIViewController {
     @IBOutlet weak var tidalVolumeTextLabel: UILabel!
     
     var desiredTV: Double?
+    
     var heightEntered: Double?
     
     var maleIBWCalculation: Double?
     
     var femaleIBWCalculation: Double?
+    
     var genderLabel: String = ""
     
     var femalelbs: Double?
