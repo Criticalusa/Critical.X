@@ -19,7 +19,7 @@ pod 'lottie-ios'
 pod 'EasyPeasy'
 pod 'SteviaLayout'
 pod 'OnboardKit'
-
+pod 'Siren'
 pod ‘TTSegmentedControl’
   target 'Critical.XTests' do
     inherit! :search_paths

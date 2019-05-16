@@ -21,7 +21,11 @@ public class AKLabel: UILabel {
     @objc private func updateText() {
         if  currentIndex == textToAnimate.endIndex {
             text = String(textToAnimate[..<currentIndex])
-            displayLink.remove(from: .main, forMode: .defaultRunLoopMode)
+            
+            displayLink?.remove(from: RunLoop.current, forMode: RunLoopMode.defaultRunLoopMode)
+
+            //displayLink.remove(from: .main, forMode: .defaultRunLoopMode)
+            
             self.completion?()
             return
         }

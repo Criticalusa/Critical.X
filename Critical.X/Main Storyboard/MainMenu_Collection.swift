@@ -9,8 +9,12 @@
 import UIKit
 import LTMorphingLabel
 import EasyPeasy
+import SCLAlertView
 
-var username = UserDefaults.standard.value(forKey: "name")
+
+
+
+
 
 extension Date {
    
@@ -51,6 +55,8 @@ extension String {
     }
     
     
+ 
+
     
     // Random Emoji's to be displayed during the Morning
     
@@ -180,13 +186,13 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 
                 let displayRandomGreeting = greetings.randomElement()
                 
-                label.text = "\(randomMorning) \(displayRandomGreeting!)"
+                label.text = "\(displayRandomGreeting!) \(randomMorning)"
                 
                 print("There was no username Entered section 5-12")
                 
             } else if username != nil {
                 
-                label.text = "\(randomMorning) \(formalDisplayRandomGreeting), \(username!)!"
+                label.text = "\(formalDisplayRandomGreeting), \(username!)! \(randomMorning) "
                 
                 print("Name was entered section 5-12")
             }
@@ -220,14 +226,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 
                 let displayRandomGreeting = greetings.randomElement()
                 
-                label.text = "\(randomMorning) \(displayRandomGreeting!) "
+                label.text = "\(displayRandomGreeting!) \(randomMorning) "
                 
                 print("There was no username Entered 12-18 hr section")
             }
             else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
                
-                label.text = "\(randomAfternoon) \(formalDisplayRandomGreeting), \(username!)!"
+                label.text = "\(formalDisplayRandomGreeting), \(username!)! \(randomAfternoon) "
                
                 print("A Name was entered 12-18 hrs section")
 
@@ -269,7 +275,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
                 //let displayRandomGreeting = greetings.randomElement()
-                    label.text = "\(randomEvening) \(formalDisplayRandomGreeting), \(username!)!"
+                    label.text = "\(formalDisplayRandomGreeting), \(username!)! \(randomEvening) "
                     
                 
                 print("A Name was entered 18-24 hrs section")
@@ -303,12 +309,12 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 username = noName
                 //label.text = "Good Morning! \(randomAfternoon)"
                 if let displayRandomGreeting = greetings.randomElement() {
-                    label.text = "\(randomEvening) \(displayRandomGreeting)"
+                    label.text = "\(displayRandomGreeting) \(randomEvening) "
 
                 }
             } else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
-                label.text = "\(randomEvening) \(formalDisplayRandomGreeting), \(username!)"
+                label.text = "\(formalDisplayRandomGreeting), \(username!) \(randomEvening) "
                 
             }
             
@@ -319,6 +325,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     
+ 
     
     
     func setAnimationLabel(){
@@ -408,12 +415,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         animateNavBar()
         
         //Establish random colors to call for the navbar to change.
-        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1)]
+        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1),  #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1), #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1)]
 
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)
     }
     
+ 
+ 
     // Loads the animation once the view appears
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -422,7 +431,14 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         getTimefromDate()
         
+       
+        
     }
+        
+        
+        
+    
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         
@@ -435,9 +451,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     
+        // Make a call to check the appVersion 
+        //ArgAppUpdater.getSingleton().showUpdateWithConfirmation()
         
-//        self.navigationItem.title = "Critical - The Barringer Group ©"
+        //        self.navigationItem.title = "Critical - The Barringer Group ©"
 //        let navBarAppearance = UINavigationBar.appearance()
 //        navBarAppearance.tintColor = .white
 //        navBarAppearance.titleTextAttributes = [
@@ -445,6 +462,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
 //            NSAttributedString.Key.font: UIFont(name: "Marker Felt", size: 18)!]
        
         
+        //MARK: - Menu Screen Items
         mainMenu =
             ["About Critical", // 0
             
@@ -476,7 +494,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "Procedures & Imaging", // 14
             
-            "Ventilator Management"] // 16
+            "Ventilator Management", // 15
+         
+            "Clinical References"] // 16
         
         mainMenuDetail =
             ["Rate Us ⭐️, Email 📩, Dream Forum",// 0
@@ -509,13 +529,15 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "CXR, Ultrasound & CVC Insertion",// 14
             
-            "ABG Calc, Modes, Capnography"]// 15
+            "ABG Calc, Modes, Capnography",// 15
+        
+            "Review Of The Clinical Evidence" ]
         
         // Images and associated Indexpaths
         //  "formula",// 3
         // "Pharmacology",// 4
         cellImages =
-            ["Critical_Logo4",// 0
+            ["Critical_Logo4",// 0 
             
             "CRITICAL_Airway_Logo_Circle",// 1
             
@@ -545,7 +567,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "CRITICAL_SpecialProcedures_Logo_Circle",// 14
             
-            "CRITICAL_VentLogo_Circle"]// 15
+            "CRITICAL_VentLogo_Circle", // 15
+        
+            "Critical_References"]// 16
         
         // StoryBoard ID and associated Indexpaths
         storyBoardID = ["About Critical", // 0
@@ -578,7 +602,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "Procedures & imaging", // 14
             
-            "Ventilator management"] // 15
+            "Ventilator management", // 15
+        
+            "references"] // 16
         
         // Do any additional setup after loading the view.
     }
@@ -616,42 +642,69 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         // ABOUT PAGE --> MODAL
         if indexPath.row == 0 {
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            
             let aboutVC = storyboard.instantiateViewController(withIdentifier: "About Critical") // Making sure the identifier matches the SBID
+            
             self.present(aboutVC, animated: true, completion: nil)
             
         }
             
             // PEDIATRICS PAGE --> MODAL
         else if indexPath.row == 6 {
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            
             let fluid = storyboard.instantiateViewController(withIdentifier: "Fluids blood products") // Making sure the identifier matches the SBID
+            
             self.present(fluid, animated: true, completion: nil)
             
         }
             
             // PEDIATRICS PAGE --> MODAL
         else if indexPath.row == 10 {
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Critical Peds") // Making sure the identifier matches the SBID
+            
             self.present(rsiVC, animated: true, completion: nil)
             
         }
             // RSI PAGE --> MODAL
         else if indexPath.row == 13 {
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Rapid sequence intubation") // Making sure the identifier matches the SBID
+            
             self.present(rsiVC, animated: true, completion: nil)
             
         }
             
             // Hemodynamics VC PAGE --> MODAL
         else if indexPath.row == 12 {
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Hemo") // Making sure the identifier matches the SBID
+            
             self.present(rsiVC, animated: true, completion: nil)
             
         }
+            
+            // Clinical References VC PAGE --> MODAL
+        else if indexPath.row == 16 {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            
+            let rsiVC = storyboard.instantiateViewController(withIdentifier: "references") // Making sure the identifier matches the SBID
+            
+            self.present(rsiVC, animated: true, completion: nil)
+            
+        }
+            
             //  Everything else will be pushed via navigation here.
         else {
             // Set the Storyboard ID to each indexPath.

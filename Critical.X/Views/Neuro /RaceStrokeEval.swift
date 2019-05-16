@@ -135,7 +135,7 @@ class RaceStrokeEval: UIViewController {
     }
     
     
-    //MARK: - Arm Movement buttons
+    //MARK: - Arm Movement buttons 
     @IBAction func armMovementNormaltoMild(_ sender: Any) {
         if armMotor_normaltoMild.isSelected == true {
             armMotor_normaltoMild.isSelected = false
