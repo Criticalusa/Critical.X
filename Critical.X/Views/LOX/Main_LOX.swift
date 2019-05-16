@@ -175,11 +175,17 @@ class Main_LOX: UIViewController {
             
             // Displays alert with Critical Logo
             let appearance = SCLAlertView.SCLAppearance(
+                
                 kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                
                 kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                
                 kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                
                 showCloseButton: true,
+                
                 dynamicAnimatorActive: true,
+                
                 buttonsLayout: .horizontal
             )
             
@@ -208,6 +214,7 @@ class Main_LOX: UIViewController {
             
             
         }
+       
         timeResultLabel.text = loxCalculation(tankWeight: tankWeightEntered ?? 0 , literPerMin: lpmEntered ?? 0)
         
         //unhide the view
@@ -219,10 +226,7 @@ class Main_LOX: UIViewController {
         print("LOX was NOT empty")
 
         
-        
-     
-      
-    }
+   }
     
 
 /// Keyboard Dismissed after you touch the screen
@@ -246,19 +250,23 @@ func doneButtonAction() {
         resultView.isHidden = false
         // Animation for the Results UIView
         self.resultView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        
         self.resultView.alpha = 0.0;
         
         UIView.animate(withDuration: 0.25, animations: {
             self.resultView.alpha = 1.0
+           
             self.resultView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         })
         
         // Animation for the label to come in a little later
         self.timeResultLabel.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        
         self.timeResultLabel.alpha = 0.0;
         
         UIView.animate(withDuration: 1.5, animations: {
             self.timeResultLabel.alpha = 1.0
+            
             self.timeResultLabel.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         })
         

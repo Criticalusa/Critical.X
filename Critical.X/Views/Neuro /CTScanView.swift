@@ -17,7 +17,7 @@ class CTScanView: UIViewController, UITextFieldDelegate, HorizontalDialDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         degreesValueLabel?.text = "CT Slice"
-
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1)
     }
     
     func horizontalDialDidValueChanged(_ horizontalDial: HorizontalDial) {

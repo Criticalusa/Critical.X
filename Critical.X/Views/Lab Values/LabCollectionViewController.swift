@@ -21,14 +21,22 @@ class LabCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = "Lab Values"
+        
         //sets the data and delegate sources
         let path: String? = Bundle.main.path(forResource: "LabValueX", ofType: "plist")
         
         dataList = NSArray(contentsOfFile: path ?? "") as! [Any]? ?? [Any]()
         
+        // Change the color of the Navigtion Bar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1)
+
+        
         // Do any additional setup after loading the view.
     }
+    
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -24,6 +24,11 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        // Change the color of the navigation bar
+        
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1)
+
         // Set the navigatin title
         self.navigationItem.title = "Neuro"
         
@@ -38,6 +43,8 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         storyBoardID = ["A","StrokeCollection","C","D","E","F", "G", "gcsB"]
         
         // Do any additional setup after loading the view.
+        
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

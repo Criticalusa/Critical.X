@@ -67,11 +67,13 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         // Set the Storyboard ID to each indexPath.
         let SBID = StoryboardID [indexPath.item]
+        
         print(StoryboardID [indexPath.item] + " - Storyboard ID")
         
         // We only push Index 17 and for the rest we use MODAL transition
         switch indexPath.item {
-        case 13:
+       
+        case 14:  // Pregnancy Calculator
             
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "ReferencesMenu", bundle: nil)
@@ -104,6 +106,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
     }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -115,49 +118,54 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         
         medCalcTitle = [
-            "Anion Gap Calculator",  //0
             
-            "Bicarbonate Deficit",   //1
+            "ABG Calculator", // 0
             
-            "Check My drip",         //2
+            "Anion Gap Calculator",  //1
             
-            "FENa",                  //3
+            "Bicarbonate Deficit",   //2
             
-            "Free Water Deficit",    //4
+            "Check My drip",         //3
             
-            "Tidal Volume Calculator",     //5
+            "FENa",                  //4
             
-            "IV Rate Calculator",   //6
+            "Free Water Deficit",    //5
             
-            "LOX Calculator",        //7
+            "Tidal Volume Calculator",  //6
             
-            "Medical Spanish",       //8
+            "IV Rate Calculator",   //7
             
-            "MAP | CPP",             //9
+            "LOX Calculator",        //8
             
-            "02 Cylinder Calculator",//10
+            "Medical Spanish",       //9
             
-            "Parkland Formula",      //11
+            "MAP | CPP",             //10
             
-            "P:F Ratio",             //12
+            "02 Cylinder Calculator",//11
             
-            "Pregnancy Calculator",  //13
+            "Parkland Formula",      //12
             
-            "Shock Index",           //14
+            "P:F Ratio",             //13
             
-            "tPA Dose Calculator",  //15
+            "Pregnancy Calculator",  //14
             
-            "Urine Output",          //16
+            "Shock Index",           //15
             
-            "Winters Formula",       //17
+            "tPA Dose Calculator",  //16
             
+            "Urine Output",          //17
             
+            "Ventilator Optimization",// 18
             
-            
-            
-        ]
+            "Winters Formula"       //19
+            ]
+        
+        
+        
         
         medCalcSubtitle = [
+            
+            "INTERPRET ARTERIAL BLOOD GASES",
             
             "CALCULATES THE ANION GAP",//0
             
@@ -193,49 +201,59 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "CALCULATES THE U/O IN ML/KG/HR",//16
             
-            "EXPECTED C02 COMPENSATION",//17
+            "OPTIMIZE VENTILATOR SETTINGS",
+            
+            "EXPECTED C02 COMPENSATION" //17
 
+            
+            
         ]
         
         
         
         StoryboardID = [
             
-            "B",//0
+            "ABG", //0
             
-            "D",//1
+            "B",//1
             
-            "checkDrip",//2
+            "D",//2
             
-            "fena",//3
+            "checkDrip",//3
             
-            "freeWater", // 4
+            "fena",//4
             
-            "ibw",//5
+            "freeWater", // 5
             
-            "ivRateCalc",//6
+            "ibw",//6
             
-            "LOX",        //7
+            "ivRateCalc",//7
             
-            "spanish",//08
+            "LOX",      //8
             
-            "MAP",//09
+            "spanish",// 9
             
-            "o2cylinder",//10
+            "MAP",//10
             
-            "parkland",//11
+            "o2cylinder",//11
             
-            "pfRatio",//12
+            "parkland",//12
             
-            "preggo",//13
+            "pfRatio",//13
             
-            "SI",//14
+            "preggo",//14
             
-            "tpa",//15
+            "SI",//15
             
-            "peepee",//16
+            "tpa",//16
             
-            "winterTime",//17
+            "peepee",//17
+            
+            "VentOp", //18
+            
+            "winterTime",//19
+            
+            
             
         ]
     }
