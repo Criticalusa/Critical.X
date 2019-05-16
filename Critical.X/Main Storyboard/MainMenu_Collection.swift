@@ -547,7 +547,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "CRITICAL_Meds_1Logo_Circle",// 4
             
-            "CRITICAL_Drips2_Logo_Circle",// 5
+            "CRITICAL_BloodProducts_Logo_Circle",// 5
             
             "CRITICAL_CBC_Logo_Circle",// 6
             

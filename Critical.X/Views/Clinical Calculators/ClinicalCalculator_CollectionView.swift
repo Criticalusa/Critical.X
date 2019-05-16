@@ -264,7 +264,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         super.viewWillAppear(true)
         
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1)
         
         
     }
