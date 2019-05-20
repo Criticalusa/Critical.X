@@ -768,6 +768,8 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         print("ABG MAIN View Controller was dismissed")
         
     }
+    
+    //MARK: - ViewDidAppear
     override func viewDidAppear(_ animated: Bool) {
         // Animation for the button
         self.mainTitle.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
@@ -777,6 +779,12 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             self.mainTitle.alpha = 1.0
             self.mainTitle.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         })
+        
+        // Color Range, change title with random colors.
+        
+        let randomNavBarColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1),#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1),#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)]
+        mainTitle.textColor = UIColor.random(from: randomNavBarColors)
+        mainTitle.text = "ABG"
         
         // Set the Background color to origional
         AnalyzeButton.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
@@ -804,11 +812,7 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
-        // Color Range, change title with random colors.
-        
-        let randomNavBarColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1),#colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1),#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)]
-        mainTitle.textColor = UIColor.random(from: randomNavBarColors)
-        mainTitle.text = "ABG"
+      
         
         // Hide the primary view.
         PrimaryDView.isHidden = true
