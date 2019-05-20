@@ -46,6 +46,8 @@ class DripsList: UITableViewController {
         
         self.navigationItem.title = "Drips"
         
+        self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         

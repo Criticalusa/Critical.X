@@ -57,6 +57,8 @@ class IABPDetail: UIViewController, UIScrollViewDelegate {
         
         super.viewDidLoad()
 
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1)
         
         headingLabel.text = mainTitle
         
