@@ -804,10 +804,16 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
+        // Color Range, change title with random colors.
+        
+        let randomNavBarColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1),#colorLiteral(red: 0.3289999962, green: 0.5289999843, blue: 0.6430000067, alpha: 1),#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)]
+        mainTitle.textColor = UIColor.random(from: randomNavBarColors)
+        mainTitle.text = "ABG"
+        
         // Hide the primary view.
         PrimaryDView.isHidden = true
         
-        // Animate the side line as soon as we start to edit the textField when it is selected
+        //MARK: Animate the side line as soon as we start to edit the textField when it is selected
         if c02TextField.isEditing == true {
             animateC02()
         }
@@ -842,8 +848,11 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         //  bgImage.loadGif(name: "human_lungs")
         
         // Hides the delta gap calc button on startup
+        
         deltaBUTTON.isHidden = true
+        
         theoryButton.isHidden = true
+        
         main_DisorderTitle_Label.animate(text: "Enter at least the pH and PaC02", duration: 1, completion: nil)
         
         /// adopts the text field delegate so that we can only use numbers in the text field whenc called below.
@@ -868,21 +877,29 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         
         
         // Round the corners of the top of the UIView
+        
         view.clipsToBounds = true
+        
         view.layer.cornerRadius = 10
+        
         view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         
         //# MARK: Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
+       
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+       
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+       
         tap.cancelsTouchesInView = false
+       
         self.view.addGestureRecognizer(tap)
         
         // Animations of pH and C02 lines
         animatepHLineView()
         
         animateC02LineView()
+        
         loadingPulse.center.y = self.pHTextField.frame.midY
         
         animatePulse()
