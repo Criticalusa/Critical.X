@@ -11,8 +11,9 @@ import UIKit
 class CriticalDrips: UIViewController, UITextFieldDelegate {
     
     
+    //MARK: - Outlets
     @IBOutlet var mainScrollView: UIScrollView!
-    
+    @IBOutlet weak var dripView: UIView!
     @IBOutlet var lbl_Title: UILabel!
     @IBOutlet var lbl_SubTitle: UILabel!
     
@@ -48,6 +49,8 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     private var detail_type = 0
     private var Drip:NSDictionary!
     
+    
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -72,15 +75,6 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     }
     
     
-    ///// Moving the screen when textField is engaged.
-    
-    // MARK - Start Editing The Text Field
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        moveTextField(textField, moveDistance: -250, up: true)
-    }
-    
-  
-    
     // Hide the keyboard when the return key pressed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -89,27 +83,52 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    // Move the text field in a pretty animation!
-    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+    
+    //MARK:  Moving the screen when textField is engaged.
+    func doneButtonAction() {
+        self.view.endEditing(true)
+    }
+    
+  
+    //MARK: - TEXT FIELD DELEGATES
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateViewMoving(up: true, moveValue: 250)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateViewMoving(up: false, moveValue: 250)
         
-        let moveDuration = 0.2
+        if textField.text != "" {
+            Calculate()
+        }
         
-        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+    }
+    
+    
+    //MARK: - KEYBOARD ANIMATION FOR THE VIEW
+   
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
         
+        let movementDuration:TimeInterval = 0.3
         
-        UIView.beginAnimations("animateTextField", context: nil)
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        
+        UIView.beginAnimations( "animateView", context: nil)
         
         UIView.setAnimationBeginsFromCurrentState(true)
         
-        UIView.setAnimationDuration(moveDuration)
+        UIView.setAnimationDuration(movementDuration )
         
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
-        
         
         UIView.commitAnimations()
     }
     
+  
     
+    
+    //MARK: - NAV BAR ANIMATION
     
     func animateNavBar()  {
         
@@ -154,6 +173,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     
  
     
+    //MARK: - ViewWillAppear
     // Once the view appears, the animation starts.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -182,23 +202,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     }
     
     
-    func animateViewMoving (up:Bool, moveValue :CGFloat){
-        
-        let movementDuration:TimeInterval = 0.3
-        
-        let movement:CGFloat = ( up ? -moveValue : moveValue)
-        
-        UIView.beginAnimations( "animateView", context: nil)
-        
-        UIView.setAnimationBeginsFromCurrentState(true)
-        
-        UIView.setAnimationDuration(movementDuration )
-        
-        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
-        
-        UIView.commitAnimations()
-    }
-    
+
     
     
     func interfaceConfig() -> Void {
@@ -230,6 +234,9 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         
         Calculate()
     }
+    
+    
+    //MARK: - Switch Tabs
     
     func SwitchTabs() -> Void {
         var x_underLine:CGFloat = 0.0
@@ -313,16 +320,10 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         txtDose.text = String(format:"%.2f", roundedValue)
         Calculate()
     }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.text != "" {
-            Calculate()
-        }
-        
-        // Added for textFIELD
-        moveTextField(textField, moveDistance: -250, up: false)
 
-    }
+    
+    
+    //MARK: - Calculate Dosages
     
     func Calculate() -> Void {
         let unit = Drip.object(forKey: "unit") as! String
