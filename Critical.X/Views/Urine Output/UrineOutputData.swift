@@ -62,10 +62,9 @@ class UrineOutputData: UIViewController {
             averageUO.textColor = Colorify.Alizarin
         } else {
             averageUO.text = "Average urine output: \(avgUO) mL/hr"
-            averageUO.textColor = Colorify.Steel
+            averageUO.textColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        
         }
-        
-        
         
         //MARK: -  Switch on the Segments
         

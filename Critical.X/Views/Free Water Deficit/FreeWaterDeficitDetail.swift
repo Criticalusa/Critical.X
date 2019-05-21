@@ -124,7 +124,7 @@ class FreeWaterDeficitDetail: UIViewController {
                     
                     negPos = "negative"
                     
-                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate ).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
+                    iVFlowRateTxt.text = "Diurese the patient \((infusionRate).oneDecimalPlace) cc/hr for \(hoursToCorrectSodium * -1 ) hrs."
                 }
                 
                 deficitLabel.text = "This patient has a \(negPos) deficit of:"
