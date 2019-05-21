@@ -782,7 +782,10 @@ class ABGViewController: UIViewController, UITextFieldDelegate {
         
         // Color Range, change title with random colors.
         
-        let randomNavBarColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1),#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1),#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1), #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)]
+        // Random array of colors for the title
+        let randomNavBarColors = [#colorLiteral(red: 0.9100000262, green: 0.5500000119, blue: 0.5699999928, alpha: 1),#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1),#colorLiteral(red: 0.6269999743, green: 0.9330000281, blue: 0.753000021, alpha: 1),#colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)]
+        let randomTitle = ["ABG", "GAS ANALYSIS"]
+        
         mainTitle.textColor = UIColor.random(from: randomNavBarColors)
         mainTitle.text = "ABG"
         

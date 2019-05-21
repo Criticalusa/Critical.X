@@ -522,9 +522,17 @@ extension newO2TankCalc {
         
         
         guard   let _  = psitTxt.text,
+            
             let _  = fi02TextField.text,
+            
             let _  = tvTextField.text,
-            let _  = rrTextField.text
+            
+            let _  = rrTextField.text,
+            
+            let _  = rr,
+            
+            let _ = TV
+            
             else {
                 print("values not filled all the way in for the Vent")
                 _ = SCLAlertView().showWarning("Hold On...", subTitle: "Fill in all of the fields before calculating.")
@@ -628,7 +636,11 @@ extension newO2TankCalc {
             
             let _  = tvTextField.text,
             
-            let _  = rrTextField.text
+            let _  = rrTextField.text,
+        
+            let _  = rr,
+            
+            let _ = TV
             
             else {
                 print("values not filled all the way in for the Vent")
@@ -735,7 +747,11 @@ extension newO2TankCalc {
             
             let _  = tvTextField.text,
             
-            let _  = rrTextField.text
+            let _  = rrTextField.text,
+        
+            let _  = rr,
+            
+            let _ = TV
             
             else {
                 print("values not filled all the way in for the Vent")
@@ -842,7 +858,11 @@ extension newO2TankCalc {
             
             let _  = tvTextField.text,
             
-            let _  = rrTextField.text
+            let _  = rrTextField.text,
+        
+            let _  = rr,
+            
+            let _ = TV
             
             else {
                 print("values not filled all the way in for the Vent")
@@ -932,6 +952,8 @@ extension newO2TankCalc {
 extension newO2TankCalc {
     
     func calculateVent_EC135_1() -> Void {
+        
+        
         let psi = Double(psitTxt.text!)
         
         _ = Double(rrTextField.text!)
@@ -946,14 +968,19 @@ extension newO2TankCalc {
         // Guard for whats required in the calculation
         guard   let _  = psitTxt.text,
             
-            let _  = fi02TextField.text,
+                let _  = fi02TextField.text,
             
-            let _  = tvTextField.text,
+                let _  = tvTextField.text,
             
-            let _  = rrTextField.text
+                let _  = rrTextField.text,
             
-            else {
-                print("values not filled all the way in for the Vent")
+                let _  = rr,
+            
+                let _ = TV
+            
+                else {
+                
+                    print("values not filled all the way in for the Vent")
                 _ = SCLAlertView().showWarning("Hold On...", subTitle: "Fill in all of the fields before calculating.")
                 
                 return  }
@@ -1058,7 +1085,11 @@ extension newO2TankCalc {
             
             let _  = tvTextField.text,
             
-            let _  = rrTextField.text
+            let _  = rrTextField.text,
+        
+            let _  = rr,
+            
+            let _ = TV
             
             else {
                 print("values not filled all the way in for the Vent")
@@ -1168,7 +1199,11 @@ extension newO2TankCalc {
             
             let _  = tvTextField.text,
             
-            let _  = rrTextField.text
+            let _  = rrTextField.text,
+        
+            let _  = rr,
+            
+            let _ = TV
             
             else {
                 print("values not filled all the way in for the Vent")

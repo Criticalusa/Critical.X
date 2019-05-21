@@ -76,15 +76,18 @@ class newO2TankCalc: UIViewController {
         // Takes care of the keyboard dismiss
         /// Code allows you to tap anywhere on the screen to dismiss the decimal keyboard.
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
         tap.cancelsTouchesInView = false
+        
         self.view.addGestureRecognizer(tap)
         
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
         loadpositions()
-
     }
     
     @IBAction func dismiss02(_ sender: Any) {
@@ -122,23 +125,84 @@ class newO2TankCalc: UIViewController {
     func loadpositions()  {
         
         // These are the postions we want the view and labesl to start when the view loads.
-        self.cylinderLabel.frame = CGRect(
-            x: 17,
-            y: 306,
-            width: self.view.bounds.width,
-            height: self.cylinderLabel.frame.size.height)
+//        self.cylinderLabel.frame = CGRect(
+//            x: 17,
+//            y: 306,
+//            width: self.view.bounds.width,
+//            height: self.cylinderLabel.frame.size.height)
+//
+//        self.pickerButton.frame = CGRect(
+//            x: 20,
+//            y: 325,
+//            width: self.view.bounds.width,
+//            height: self.pickerButton.frame.size.height)
+//
+//        self.resultView.frame = CGRect(
+//            x: 6,
+//            y: self.pickerButton.frame.maxY + 5,
+//            width: self.view.bounds.width,
+//            height: self.resultView.frame.size.height)
         
-        self.pickerButton.frame = CGRect(
-            x: 20,
-            y: 325,
-            width: self.view.bounds.width,
-            height: self.pickerButton.frame.size.height)
-        
-        self.resultView.frame = CGRect(
-            x: 6,
-            y: self.pickerButton.frame.maxY + 5,
-            width: self.view.bounds.width,
-            height: self.resultView.frame.size.height)
+        UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
+            
+            
+            //Animations
+            self.rrTextField.isHidden = true
+            
+            self.tvTextField.isHidden = true
+            
+            self.tvLabel.isHidden = true
+            
+            self.respRateLabel.isHidden = true
+            
+            self.fi02Label.isHidden = true
+            
+            self.fi02TextField.isHidden = true
+            
+            self.biasFLowSegnent.isHidden = true
+            
+            self.biasFlowLabel.isHidden = true
+            
+            
+            self.cylinderLabel.frame = CGRect(
+                x: 17,
+                y: 306,
+                width: self.view.bounds.width,
+                height: self.cylinderLabel.frame.size.height)
+            
+            self.pickerButton.frame = CGRect(
+                x: 20,
+                y: 325,
+                width: self.view.bounds.width,
+                height: self.pickerButton.frame.size.height)
+            
+            self.resultView.frame = CGRect(
+                x: 6,
+                y: self.pickerButton.frame.maxY + 5,
+                width: self.view.bounds.width,
+                height: self.resultView.frame.size.height)
+            
+            // Clear the textFields.
+            self.psitTxt.text = ""
+            
+            self.litersMinTxt.text = ""
+            
+            self.rrTextField.text = ""
+            
+            self.tvTextField.text = ""
+            
+            self.fi02TextField.text = ""
+            
+            self.resultView.isHidden = true
+            
+            self.pickerButton.text("Select Tank Size")
+            
+            
+            print("textFields were cleared.")
+            
+        }, completion: { (finished) in
+            print("complete")
+        })
 
     }
     
@@ -161,20 +225,25 @@ class newO2TankCalc: UIViewController {
     }
     
     @IBOutlet weak var rrTextField: UITextField!
+    
     @IBOutlet weak var tvTextField: UITextField!
+    
     @IBOutlet weak var fi02TextField: UITextField!
 
     @IBOutlet weak var tvLabel: UILabel!
+    
     @IBOutlet weak var respRateLabel: UILabel!
   
     @IBOutlet weak var cylinderLabel: UILabel!
+    
     @IBOutlet weak var pickerButton: UIButton!
+   
     @IBOutlet weak var fi02Label: UILabel!
     
     @IBOutlet weak var lMinLabel: UILabel!
     
     
- 
+
 
 
 /// Keyboard Dismissed after you touch the screen
@@ -188,17 +257,18 @@ func doneButtonAction() {
     @IBAction func ventSegment(_ sender: Any) {
         
         switch ventSegmento2!.selectedSegmentIndex {
+        
         case 0:
+            
             print("free flow selected")
         
-            
             UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
                 
                 
                 //Animations
                 self.rrTextField.isHidden = true
                 
-               self.tvTextField.isHidden = true
+                self.tvTextField.isHidden = true
                 
                 self.tvLabel.isHidden = true
                 
@@ -231,6 +301,23 @@ func doneButtonAction() {
                     width: self.view.bounds.width,
                     height: self.resultView.frame.size.height)
                 
+                // Clear the textFields.
+                self.psitTxt.text = ""
+                
+                self.litersMinTxt.text = ""
+                
+                self.rrTextField.text = ""
+                
+                self.tvTextField.text = ""
+                
+                self.fi02TextField.text = ""
+                
+                self.resultView.isHidden = true
+                
+                self.pickerButton.text("Select Tank Size")
+
+                
+                print("textFields were cleared.")
                 
             }, completion: { (finished) in
                 print("complete")
@@ -243,7 +330,7 @@ func doneButtonAction() {
             print("ventilator  selected")
 
             lMinLabel.text = "L/Min (optional)"
-            UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
+            UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
                 
                 self.rrTextField.isHidden = false
                 
@@ -280,6 +367,26 @@ func doneButtonAction() {
                     width: self.view.bounds.width,
                     height: self.resultView.frame.size.height)
             
+                
+                // Clear the textFields.
+                self.psitTxt.text = ""
+                
+                self.litersMinTxt.text = ""
+                
+                self.rrTextField.text = ""
+                
+                self.tvTextField.text = ""
+                
+                self.fi02TextField.text = ""
+                
+                self.pickerButton.text("Select Tank Size")
+                
+                self.resultView.isHidden = true
+                
+                print("textFields were cleared.")
+                
+                
+                
             }, completion: { (finished) in
                 print("complete")
             })
@@ -358,6 +465,9 @@ func doneButtonAction() {
                
                 case 0:
                     
+                
+                  
+                
                     if name == "D" {
                        
                         self.calculateFlow_D()
@@ -394,6 +504,8 @@ func doneButtonAction() {
                 
                     // For the vent settings
                   case 1:
+                    
+                 
                     
                     if name == "D" {
                     
