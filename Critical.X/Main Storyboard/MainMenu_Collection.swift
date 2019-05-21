@@ -531,7 +531,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "ABG Calc, Modes, Capnography",// 15
         
-            "Review Of The Clinical Evidence" ]
+            "Review The Clinical Evidence" ]
         
         // Images and associated Indexpaths
         //  "formula",// 3
