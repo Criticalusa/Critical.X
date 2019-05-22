@@ -18,7 +18,7 @@ import SCLAlertView
 
 extension Date {
    
-    func dayOfWeek() -> String? {
+    func dayOfWeek_CalStar() -> String? {
    
         let dateFormatter = DateFormatter()
    
@@ -35,7 +35,7 @@ extension String {
     
     // Random Emoji's to be displayed during the afternoon
     
-    static func randomAfternoon(length: Int = 1) -> String {
+    static func randomAfternoon_CalStar(length: Int = 1) -> String {
         
         let afternoonEmoji = ["🌞","🌤","😎","🌎"]
         
@@ -60,7 +60,7 @@ extension String {
     
     // Random Emoji's to be displayed during the Morning
     
-    static func randomMorning(length: Int = 1) -> String {
+    static func randomMorning_CalStar(length: Int = 1) -> String {
        
         let morningEmoji = ["☀️","🌞","🌤", "😀", "😌"]
        
@@ -79,7 +79,7 @@ extension String {
     }
     
     // Random Emoji's to be displayed during the evening
-    static func randomEvening(length: Int = 1) -> String {
+    static func randomEvening_CalStar(length: Int = 1) -> String {
         
         let eveningEmoji = ["🌒","🌖","🌙", "🌛", "🌝"]
         
@@ -101,7 +101,7 @@ extension String {
 
 
 //MARK: - Begin Class
-class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate  {
+class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LTMorphingLabelDelegate  {
     
     
     //MARK: - Outlets
@@ -142,19 +142,19 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
 
         // Create new variable to store the day of the week
         // Gets the day of the week from the extension above
-        let dayOfTheWeek = Date().dayOfWeek()!
+        let dayOfTheWeek_CalStar = Date().dayOfWeek()!
         
        
         // Print the day of the week
-        print ("Today is \(dayOfTheWeek)")
+        print ("Today is \(dayOfTheWeek_CalStar)")
         
         // Setting a new variable to the function in the extension above.
         
-        let randomMorning = String.randomMorning()
+        let randomMorning = String.randomMorning_CalStar()
         
-        let randomAfternoon = String.randomAfternoon()
+        let randomAfternoon = String.randomAfternoon_CalStar()
         
-        let randomEvening = String.randomEvening()
+        let randomEvening = String.randomEvening_CalStar()
         
     
         
@@ -164,9 +164,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Afternoon \(randomMorning), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Hey", "Ciao","Buenos Dias","Cheers", "Good Morning ", "Welcome Back", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Buenos Dias","Cheers", "Good Morning ", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Buenos Dias", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Buenos Dias", "Cheers", "Good Morning", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -208,9 +208,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Hey", "Ciao","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Hey", "Ciao!","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Hey", "Ciao!","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -251,9 +251,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
            
             //Create an array of different greetings.
             
-            let greetings: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
             
             //Get the index at each array at RANDOM
             
@@ -290,9 +290,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             //label.text = "Good Evening \(randomEvening), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Hey", "Ciao","Hola","Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)!"]
+            let greetings: Array = ["Hi", "Hey", "Ciao","Hola","Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek)"]
+            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
            
             
             //Get the index at each array at RANDOM
@@ -452,17 +452,15 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     
    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        #if CALSTAR
-        print("CalStar is running")
-        #else
-        print("Critical is running")
-        #endif
+        
+        
         
         //MARK: - Menu Screen Items
         mainMenu =
-            ["About Critical", // 0
+            ["About Critical-CalStar", // 0
             
             "Airway", // 1
             
@@ -494,7 +492,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "Ventilator Management", // 15
          
-            "Clinical References"] // 16
+            "Clinical Evidence", //16
+        
+            "CalStar Protocols"] // 17
+        
         
         mainMenuDetail =
             ["Rate Us ⭐️, Email 📩, Dream Forum",// 0
@@ -529,7 +530,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "ABG Calc, Modes, Capnography",// 15
         
-            "Review The Clinical Evidence" ]
+            "Review The Clinical Evidence",
+        
+            "Company Policies & Procedures"]
         
         // Images and associated Indexpaths
         //  "formula",// 3
@@ -567,7 +570,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "CRITICAL_VentLogo_Circle", // 15
         
-            "Critical_References"]// 16
+            "Critical_References",
+        
+            "Critical-CalStarLogo"]// 16
         
         // StoryBoard ID and associated Indexpaths
         storyBoardID = ["About Critical", // 0
@@ -596,13 +601,15 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "Hemo", // 12
             
-            "Rapid sequence intubation", // 13
+            "RSICalStar", // 13
             
             "Procedures & imaging", // 14
             
             "Ventilator management", // 15
         
-            "references"] // 16
+            "references", //16
+        
+            "Protocols"] // 17
         
         // Do any additional setup after loading the view.
         
@@ -642,7 +649,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         // ABOUT PAGE --> MODAL
         if indexPath.row == 0 {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
             
             let aboutVC = storyboard.instantiateViewController(withIdentifier: "About Critical") // Making sure the identifier matches the SBID
             
@@ -653,7 +660,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             // PEDIATRICS PAGE --> MODAL
         else if indexPath.row == 6 {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
             
             let fluid = storyboard.instantiateViewController(withIdentifier: "Fluids blood products") // Making sure the identifier matches the SBID
             
@@ -664,17 +671,18 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             // PEDIATRICS PAGE --> MODAL
         else if indexPath.row == 10 {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
             
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Critical Peds") // Making sure the identifier matches the SBID
             
             self.present(rsiVC, animated: true, completion: nil)
             
         }
+           
             // RSI PAGE --> MODAL
         else if indexPath.row == 13 {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
             
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Rapid sequence intubation") // Making sure the identifier matches the SBID
             
@@ -682,10 +690,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
         }
             
+            
             // Hemodynamics VC PAGE --> MODAL
         else if indexPath.row == 12 {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
             
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "Hemo") // Making sure the identifier matches the SBID
             
@@ -696,7 +705,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             // Clinical References VC PAGE --> MODAL
         else if indexPath.row == 16 {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Name has to reflect the origionting SB
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
             
             let rsiVC = storyboard.instantiateViewController(withIdentifier: "references") // Making sure the identifier matches the SBID
             
@@ -710,7 +719,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             let SBID = storyBoardID [indexPath.item]
             
             // Name has to reflect the origionting SB.
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil)
+            
             let vc = storyboard.instantiateViewController(withIdentifier: SBID)
             
             // Push the ViewController via Navigation

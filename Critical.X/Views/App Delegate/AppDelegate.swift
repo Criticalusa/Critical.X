@@ -45,11 +45,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // We make the call to check for anupdate only after the window
         let siren = Siren.shared
+        
         siren.checkVersion(checkType: .immediately)
 
-        
+        #if CALSTAR
+        let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil)
+        #else
         // Here we say what story board we are coming from.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        #endif
         
         // Creating a variable for the viewController
         var vc: UIViewController

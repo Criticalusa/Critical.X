@@ -95,6 +95,9 @@ class RSIMain: UIViewController {
         animateRSI()
         // Set the navigatin title
         //self.navigationItem.title = "The Barringer Group ©"
+        
+   
+        
 
 
     }
@@ -104,7 +107,16 @@ class RSIMain: UIViewController {
     // Animates the rsiSubtitle once the view is loaded.
     func animateRSI() -> Void {
         rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
+        
+        #if CALSTAR
+        
+        rsiTitle.animate(text: "CalStar RSI", duration: 1, completion: nil)
+        
+        #else
+        
         rsiTitle.animate(text: "Rapid Sequence Induction and Intubation", duration: 1, completion: nil)
+
+        #endif
     }
     
     

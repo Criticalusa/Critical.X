@@ -100,10 +100,54 @@ class RSISetting: UIViewController {
         else {
             
             UserDefaults.standard.set(Parameters, forKey: "parameters")
-
+            #if CALSTAR
+            
+            print("CalStar dose parameters")
+            Parameters =  ["atropine": 0.02,
+                           "lidocaine": 1,
+                           "fentanyl_min": 1,
+                           "fentanyl_max": 2,
+                           "vecDefasiculating": 0.01,
+                           "rocDefasiculating_min": 0.06,
+                           "rocDefasiculating_max": 0.12,
+                           "glycopyrolate_min": 0.1,
+                           "glycopyrolate_max": 0.2,
+                           "etomidate": 0.3,
+                           "ketamine": 1.5,
+                           "ketamineMax": 2.0,
+                           "propofol_min": 2,
+                           "propofol_max": 5,
+                           "versed_min": 0.1,
+                           "versed_max": 0.2,
+                           "cisatricurium": 0.2,
+                           "vecuronium": 0.1,
+                           "rocuronium_min": 0.6,
+                           "rocuronium_max": 1.2,
+                           "succs_min": 1,
+                           "succs_max": 1.5,
+                           "lidocaine_mgMl": 20,
+                           "mgPerML_atropine": 0.1,
+                           "mgPerML_fentanyl": 50.0,
+                           "mgPerML_vecDefasc": 1.0,
+                           "mgPerML_rocDefasc": 10.0,
+                           "hello": 0.2,
+                           "ml_etomidate" : 2.0,
+                           "ml_ketamine": 100.0,
+                           "ml_versed" : 5.0,
+                           "ml_propofol" : 10.0,
+                           "ml_succs" : 10.0,
+                           "ml_vec" : 1.0,
+                           "ml_roc": 10.0,
+                           "ml_cis" : 10.0]
+            #else
+            
             // MARK: Set user default parameters
+            
+            print("Critical Dose parameters")
+            
             Parameters =  ["atropine": 0.02,"lidocaine": 1,"fentanyl_min": 1,"fentanyl_max": 2,"vecDefasiculating": 0.01,"rocDefasiculating_min": 0.06,"rocDefasiculating_max": 0.12,"glycopyrolate_min": 0.1,"glycopyrolate_max": 0.2, "etomidate": 0.3,"ketamine": 1.0, "ketamineMax": 2.0, "propofol_min": 1,"propofol_max": 2, "versed_min": 0.1,"versed_max": 0.2,"cisatricurium": 0.2,"vecuronium": 0.1,"rocuronium_min": 0.6,"rocuronium_max": 1.2,"succs_min": 1,"succs_max": 1.5,"lidocaine_mgMl": 20,"mgPerML_atropine": 0.1,"mgPerML_fentanyl": 50.0,"mgPerML_vecDefasc": 1.0,"mgPerML_rocDefasc": 10.0,"hello": 0.2,"ml_etomidate" : 2.0,"ml_ketamine": 100.0, "ml_versed" : 5.0, "ml_propofol" : 10.0, "ml_succs" : 10.0,"ml_vec" : 1.0, "ml_roc": 10.0, "ml_cis" : 10.0]
             
+            #endif
             
             UserDefaults.standard.synchronize()
         }
@@ -313,6 +357,91 @@ class RSISetting: UIViewController {
        
         Parameters = UserDefaults.standard.object(forKey:"parameters") as! NSDictionary as? NSMutableDictionary
         
+        #if CALSTAR
+        
+        print("CalStar dose parameters")
+        Parameters =  ["atropine": 0.02,
+                       "lidocaine": 1,
+                       "fentanyl_min": 1,
+                       "fentanyl_max": 2,
+                       "vecDefasiculating": 0.01,
+                       "rocDefasiculating_min": 0.06,
+                       "rocDefasiculating_max": 0.12,
+                       "glycopyrolate_min": 0.1,
+                       "glycopyrolate_max": 0.2,
+                       "etomidate": 0.3,
+                       "ketamine": 1.5,
+                       "ketamineMax": 2.0,
+                       "propofol_min": 2,
+                       "propofol_max": 5,
+                       "versed_min": 0.1,
+                       "versed_max": 0.2,
+                       "cisatricurium": 0.2,
+                       "vecuronium": 0.1,
+                       "rocuronium_min": 0.6,
+                       "rocuronium_max": 1.2,
+                       "succs_min": 1,
+                       "succs_max": 1.5,
+                       "lidocaine_mgMl": 20,
+                       "mgPerML_atropine": 0.1,
+                       "mgPerML_fentanyl": 50.0,
+                       "mgPerML_vecDefasc": 1.0,
+                       "mgPerML_rocDefasc": 10.0,
+                       "hello": 0.2,
+                       "ml_etomidate" : 2.0,
+                       "ml_ketamine": 100.0,
+                       "ml_versed" : 5.0,
+                       "ml_propofol" : 10.0,
+                       "ml_succs" : 10.0,
+                       "ml_vec" : 1.0,
+                       "ml_roc": 10.0,
+                       "ml_cis" : 10.0]
+        
+        // Concentration updates mg/mL
+        mgML_Lidocaine.text = "20.0"
+        mgML_atropine.text = "0.1"
+        mgML_fentanyl.text? = "50.0"
+        mgML_vecDefasc.text? = "1.0"
+        mgML_rocDefasc.text = "10.0"
+        mgML_glycopyrolate.text = "0.2"
+        mgML_etomidate.text = "2.0"
+        mgML_ketamine.text = "100.0"
+        mgML_versed.text = "5.0"
+        mgML_propofol.text = "10.0"
+        mgML_succs.text = "10.0"
+        mgML_cis.text = "10.0"
+        mgML_roc.text = "10.0"
+        mgML_vec.text = "1.0"
+        
+        
+        // Drug doses to be reset to
+        txt_Lidocaine.text = "1.0"
+        txt_Atropine.text? = "0.02"
+        txt_Fentanyl_min.text? = "1.0"
+        txt_Fentanyl_max.text? = "2.0"
+        txt_Vecuronium.text? = "0.01"
+        txt_Glycopyrolate_min.text = "0.1"
+        txt_Glycopyrolate_max.text = "0.2"
+        txt_Rocuronium0_min.text = "0.06"
+        txt_Rocuronium0_max.text = "0.12"
+        txt_Etomidate.text? = "0.3"
+        txt_Ketamine.text = "1.0"
+        txt_Ketamine1.text = "2.0"
+        txt_Versed_min.text = "0.1"
+        txt_Versed_max.text = "0.2"
+        txt_Propofol_min.text = "1.0"
+        txt_Propofol_max.text = "2.0"
+        txt_Succinylcholine_min.text = "1.0"
+        txt_Succinylcholine_max.text = "1.5"
+        txt_Vecuronium2.text = "0.1"
+        txt_Rocuronium_min.text = "0.6"
+        txt_Rocuronium_max.text = "1.2"
+        txt_Cisatricurium.text = "0.2"
+        
+        
+        #else
+        print("Critical dose parameters")
+
         Parameters =  ["atropine": 0.02,
                        "lidocaine": 1,
                        "fentanyl_min": 1, "fentanyl_max": 2,
@@ -395,6 +524,7 @@ class RSISetting: UIViewController {
         txt_Rocuronium_max.text = "1.2"
         txt_Cisatricurium.text = "0.2"
         
+        #endif
         UserDefaults.standard.synchronize()
         
         for (key,value) in Parameters {
