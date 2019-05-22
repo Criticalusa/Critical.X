@@ -217,7 +217,6 @@
 		C472EFAA2006920C00501217 /* ParklandFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472EFA82006920C00501217 /* ParklandFormula.swift */; };
 		C47551EC1FFDD8E300400C0C /* result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47551EB1FFDD8E300400C0C /* result.swift */; };
 		C47AA23D21FDC91A00544095 /* MenMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AA23A21FDC91A00544095 /* MenMenuCollectionViewCell.swift */; };
-		C47AA23E21FDC91A00544095 /* MainMenu_Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AA23B21FDC91A00544095 /* MainMenu_Collection.swift */; };
 		C47AA23F21FDC91A00544095 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AA23C21FDC91A00544095 /* OnboardingVC.swift */; };
 		C47AA24421FF18FA00544095 /* Obstetrics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47AA24321FF18FA00544095 /* Obstetrics.storyboard */; };
 		C47AA24621FF197400544095 /* OBCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AA24521FF197400544095 /* OBCollectionView.swift */; };
@@ -232,6 +231,9 @@
 		C482F47F2233F4D7008E2408 /* _12Lead_Collection_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482F47E2233F4D7008E2408 /* _12Lead_Collection_Cell.swift */; };
 		C482F4812233F4FB008E2408 /* _12Lead_Collection_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482F4802233F4FB008E2408 /* _12Lead_Collection_VC.swift */; };
 		C482F48322340D11008E2408 /* _12Lead_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482F48222340D11008E2408 /* _12Lead_DetailViewController.swift */; };
+		C48402932295F40900E56EE2 /* CalSTARProtocol.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48402922295F40900E56EE2 /* CalSTARProtocol.storyboard */; };
+		C48402952295F5AE00E56EE2 /* CalStarProtocol_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402942295F5AE00E56EE2 /* CalStarProtocol_ViewController.swift */; };
+		C48402972295F5CE00E56EE2 /* CalStar_Protocol_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402962295F5CE00E56EE2 /* CalStar_Protocol_CollectionViewCell.swift */; };
 		C488C84321EAB3AF00A98124 /* Heart_Parasternal.gif in Resources */ = {isa = PBXBuildFile; fileRef = C488C84221EAB3AE00A98124 /* Heart_Parasternal.gif */; };
 		C488C84521EAB40700A98124 /* Heart_subxyphoid.gif in Resources */ = {isa = PBXBuildFile; fileRef = C488C84421EAB40700A98124 /* Heart_subxyphoid.gif */; };
 		C488C84721EBB23C00A98124 /* ContainerFastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488C84621EBB23C00A98124 /* ContainerFastVC.swift */; };
@@ -1112,6 +1114,9 @@
 		C482F47E2233F4D7008E2408 /* _12Lead_Collection_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _12Lead_Collection_Cell.swift; sourceTree = "<group>"; };
 		C482F4802233F4FB008E2408 /* _12Lead_Collection_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _12Lead_Collection_VC.swift; sourceTree = "<group>"; };
 		C482F48222340D11008E2408 /* _12Lead_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _12Lead_DetailViewController.swift; sourceTree = "<group>"; };
+		C48402922295F40900E56EE2 /* CalSTARProtocol.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalSTARProtocol.storyboard; sourceTree = "<group>"; };
+		C48402942295F5AE00E56EE2 /* CalStarProtocol_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalStarProtocol_ViewController.swift; sourceTree = "<group>"; };
+		C48402962295F5CE00E56EE2 /* CalStar_Protocol_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalStar_Protocol_CollectionViewCell.swift; sourceTree = "<group>"; };
 		C488C84221EAB3AE00A98124 /* Heart_Parasternal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Heart_Parasternal.gif; sourceTree = "<group>"; };
 		C488C84421EAB40700A98124 /* Heart_subxyphoid.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Heart_subxyphoid.gif; sourceTree = "<group>"; };
 		C488C84621EBB23C00A98124 /* ContainerFastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerFastVC.swift; sourceTree = "<group>"; };
@@ -1847,14 +1852,13 @@
 			isa = PBXGroup;
 			children = (
 				7955134A1FD4B4F6005856F3 /* Main.storyboard */,
-				C4CE2D93229588790061B10D /* CalStar Main StoryBoard */,
 				79E2EF4D1F9CC18000701ACC /* LaunchScreen.storyboard */,
 				C47AA23B21FDC91A00544095 /* MainMenu_Collection.swift */,
 				C47AA23A21FDC91A00544095 /* MenMenuCollectionViewCell.swift */,
 				C47AA23C21FDC91A00544095 /* OnboardingVC.swift */,
 				C4CE2D89229572E60061B10D /* LaunchScreenCalStar.storyboard */,
-				C4CE2D912295825A0061B10D /* CalStar_MainMenu_Collection.swift */,
 				C4CE2D8F229581850061B10D /* Main_CalStar.storyboard */,
+				C4CE2D912295825A0061B10D /* CalStar_MainMenu_Collection.swift */,
 			);
 			path = "Main Storyboard";
 			sourceTree = "<group>";
@@ -2137,6 +2141,16 @@
 			path = "12 Leads";
 			sourceTree = "<group>";
 		};
+		C48402912295F3CC00E56EE2 /* CalStar Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C48402922295F40900E56EE2 /* CalSTARProtocol.storyboard */,
+				C48402942295F5AE00E56EE2 /* CalStarProtocol_ViewController.swift */,
+				C48402962295F5CE00E56EE2 /* CalStar_Protocol_CollectionViewCell.swift */,
+			);
+			path = "CalStar Protocols";
+			sourceTree = "<group>";
+		};
 		C49DBEEC203E1FDE00247A9E /* Infusion Drips */ = {
 			isa = PBXGroup;
 			children = (
@@ -2371,6 +2385,7 @@
 		C4C25EBE1FF9099500C5CD42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C48402912295F3CC00E56EE2 /* CalStar Protocols */,
 				C4A77765200963F1002EEC86 /* App Delegate */,
 				C4B67C2F2289CD5F002199D5 /* Clinical References */,
 				C410027621B8102900B3D21F /* ABG */,
@@ -2518,13 +2533,6 @@
 				C41BD07120F10E870031C9CD /* OLD Pediatrics Files */,
 			);
 			path = Pediatrics;
-			sourceTree = "<group>";
-		};
-		C4CE2D93229588790061B10D /* CalStar Main StoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "CalStar Main StoryBoard";
 			sourceTree = "<group>";
 		};
 		C4CF01C6220639CF006432BB /* Hemodynamics */ = {
@@ -3219,6 +3227,7 @@
 				C4CE2D5B22956D800061B10D /* Pelvic_NormalMale.gif in Resources */,
 				C4CE2D5D22956D800061B10D /* needwater.wav in Resources */,
 				C4CE2D5E22956D800061B10D /* bePatient.wav in Resources */,
+				C48402932295F40900E56EE2 /* CalSTARProtocol.storyboard in Resources */,
 				C4CE2D5F22956D800061B10D /* paramedic.wav in Resources */,
 				C4CE2D6022956D800061B10D /* 2ndDegreeTypeI ( Wenkeback).gif in Resources */,
 				C4CE2D6122956D800061B10D /* Pelvic-NormalFemale.gif in Resources */,
@@ -3544,7 +3553,6 @@
 				C4C25EFC1FF9099600C5CD42 /* Extensions.swift in Sources */,
 				C4D4DF7B20631C7500A384BD /* CriticalDrips.swift in Sources */,
 				C48DC5272208D7BD00BC222A /* ColorFromHex.swift in Sources */,
-				C47AA23E21FDC91A00544095 /* MainMenu_Collection.swift in Sources */,
 				C42F41821FF90E2B003BE489 /* PopTip+Draw.swift in Sources */,
 				C4AD336F22345BAD00326BC6 /* _12Lead_Attributes.swift in Sources */,
 				C4278C39203F6054003ABFF8 /* StrokeCollectionCell.swift in Sources */,
@@ -3640,6 +3648,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48402952295F5AE00E56EE2 /* CalStarProtocol_ViewController.swift in Sources */,
 				C4CE2C0D22956D800061B10D /* HomeMenu.swift in Sources */,
 				C4CE2C0E22956D800061B10D /* Cincinatti.swift in Sources */,
 				C4CE2C0F22956D800061B10D /* FAST_Info.swift in Sources */,
@@ -3792,6 +3801,7 @@
 				C4CE2CA122956D800061B10D /* CustomSegmentedController.swift in Sources */,
 				C4CE2CA222956D800061B10D /* CranialNerveVC.swift in Sources */,
 				C4CE2CA322956D800061B10D /* ParklandFormula.swift in Sources */,
+				C48402972295F5CE00E56EE2 /* CalStar_Protocol_CollectionViewCell.swift in Sources */,
 				C4CE2CA422956D800061B10D /* OBCollectionCell.swift in Sources */,
 				C4CE2CA522956D800061B10D /* PFRatio.swift in Sources */,
 				C4CE2CA622956D800061B10D /* FluidBloodCollection.swift in Sources */,
@@ -3985,7 +3995,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E36ADCD4A8ABD6D0224F09A /* Pods-Critical.X.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Critical-AppIcon-Navy";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -4008,7 +4018,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CA952E10585B86A876A5E27 /* Pods-Critical.X.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Critical-AppIcon-Navy";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -4100,7 +4110,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E36ADCD4A8ABD6D0224F09A /* Pods-Critical.X.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-CalStar";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "CalStar AppIcon";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -4124,7 +4134,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CA952E10585B86A876A5E27 /* Pods-Critical.X.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-CalStar";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "CalStar AppIcon";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

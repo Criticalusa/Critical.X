@@ -106,6 +106,7 @@ class RSIMain: UIViewController {
     
     // Animates the rsiSubtitle once the view is loaded.
     func animateRSI() -> Void {
+        
         rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
         
         #if CALSTAR

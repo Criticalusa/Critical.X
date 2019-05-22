@@ -713,6 +713,17 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
             
         }
             
+            // Clinical References VC PAGE --> MODAL
+        else if indexPath.row == 17 {
+            
+            let storyboard = UIStoryboard(name: "Main_CalStar", bundle: nil) // Name has to reflect the origionting SB
+            
+            let rsiVC = storyboard.instantiateViewController(withIdentifier: "Protocols") // Making sure the identifier matches the SBID
+            
+            self.present(rsiVC, animated: true, completion: nil)
+            
+        }
+            
             //  Everything else will be pushed via navigation here.
         else {
             // Set the Storyboard ID to each indexPath.

@@ -15,6 +15,9 @@ class DripsList: UITableViewController {
     //Outlet labels for the animation which has the AKLabel subclass.
     @IBOutlet weak var dripSubTitle: AKLabel!
 
+    @IBOutlet weak var dripTitle: UILabel!
+    
+
     // Variable to pass data
     private var Dripslist = [Any]()
     
@@ -33,13 +36,7 @@ class DripsList: UITableViewController {
     }
     
     
-//    // Change the color back when the view dissappears
-//    override func viewWillDisappear(_ animated: Bool) {
-//        //change the color of the navigationbar
-//        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.3759999871, green: 0.4900000095, blue: 0.5450000167, alpha: 1)
-//
-//        
-//    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,8 +82,11 @@ class DripsList: UITableViewController {
          */
         
         let date : Date = Date()
+        
         let dateFormatter = DateFormatter()
+        
         dateFormatter.dateFormat = "h:mm a  E MMM d"
+        
         let todaysDate = dateFormatter.string(from: date)
         
         navigationController?.navigationBar.layer.add(fadeTextAnimation, forKey: "fadeText")
@@ -100,15 +100,16 @@ class DripsList: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+       
         //change the color of the navigationbar
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1)
         
+        //Call the time and date animation
         animateNavBar()
         
         // Animates the title when the screen loads.
         dripSubTitle.animate(text: "INFUSION RATES AND CALCULATIONS", duration: 1, completion: nil)
 
-        
         
         if ((UserDefaults.standard.object(forKey:"drip_list")) != nil) {
             Dripslist = (UserDefaults.standard.object(forKey:"drip_list") as! NSArray) as! [Any]
@@ -126,7 +127,14 @@ class DripsList: UITableViewController {
         }
        
         self.tableView.reloadData()
+       
+      
     }
+    
+    
+    
+  
+    
     
     @IBAction func ResetClick(_ sender: Any) {
         let path: String! = Bundle.main.path(forResource: "Calculator", ofType: "plist")

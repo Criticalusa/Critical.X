@@ -24,6 +24,7 @@ class ClinReferencesViewController: UIViewController, UICollectionViewDelegate, 
     
     // Main Title
     var referenceTitles = [String]()
+    
     // Subtitles
     var referenceLinks = [String]()
     
