@@ -14,6 +14,7 @@ class CalStar_Protocol_CollectionViewCell: UICollectionViewCell {
         
         @IBOutlet weak var protocolTitleLabel: UILabel!
         @IBOutlet weak var protocolDetailLabel: UILabel!
+        @IBOutlet weak var imageCell: UIImageView!
         
         override func layoutSubviews() {
             super.layoutSubviews()

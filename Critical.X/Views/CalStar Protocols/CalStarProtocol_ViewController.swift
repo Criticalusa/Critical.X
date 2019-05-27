@@ -7,109 +7,305 @@
 //
 
 import UIKit
+import SCLAlertView
 
-class CalStarProtocol_ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+class CalStarProtocol_ViewController: UIViewController, UISearchBarDelegate {
+   
 
-    @IBOutlet weak var csCollectionView: UICollectionView!
+
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var closeButton: UIButton! {
-        // Takes the button and makes it into a circle
-        didSet {closeButton.layer.cornerRadius = closeButton.frame.size.width / 2 }
+
+    var resuseID = "cellId"
+    
+    var protocolArray = [CalProtocols]()
+    
+    var searchProtocolArray = [CalProtocols]()
+    
+    
+    // Once the view appears, the animation starts.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        //change the color of the navigationbar
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1)
+        
+        // Set the title of the navigationBar
+        navigationController?.navigationBar.topItem?.title = ""
+
     }
-    
-    // Main Title
-    var protocolTitles = [String]()
-    
-    // Subtitles
-    var protocolSubject = [String]()
     
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
-        // SEt the titles
-        protocolTitles = [
-            
-            "Weather Mimimums",
-            "Respiratory Emergencies",
-       ]
+
+        // Functions
+        createSarchbar()
         
-        protocolSubject = [
-            
-            //SAH
-           "Aviation",
-           
-           "Medical",
-            
-          
-        ]
-        
+        setUpProtocols()
     }
     
-    @IBAction func dismissClinicalView(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
-        print("View Controller was dismissed")
-        
+    /// Keyboard Dismissed after you touch the screen
+    func doneButtonAction() {
+        self.view.endEditing(true)
     }
+    
    
     
-}
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateViewMoving(up: true, moveValue: 100)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateViewMoving(up: false, moveValue: 100)
+    }
+    
+    
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        
+        let movementDuration:TimeInterval = 0.3
+        
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        
+        UIView.beginAnimations( "animateView", context: nil)
+        
+        UIView.setAnimationBeginsFromCurrentState(true)
+        
+        UIView.setAnimationDuration(movementDuration )
+        
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        
+        UIView.commitAnimations()
+    }
 
-extension CalStarProtocol_ViewController {
     
-    // MARK: UICollectionViewDataSource
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+    func createSarchbar() {
+        
+        
+       let searchBar = UISearchBar()
+
+        searchBar.showsCancelButton = false
+        
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.navigationItem.hidesBackButton = false
+        
+        self.navigationItem.backBarButtonItem?.title = ""
+
+        searchBar.placeholder = "Search Protocols"
+        
+        searchBar.keyboardAppearance = .dark
+        
+        searchBar.keyboardType = .emailAddress
+        
+        searchBar.delegate = self
+
+        self.navigationItem.titleView = searchBar
+        
+
+     
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return protocolTitles.count
+    private func setUpProtocols() {
+        
+        // Make the Protocol Categories
+        // Airway Protocols
+        
+        protocolArray.append(CalProtocols(name: "Bougie",
+                                          category: CategoryType.airway.execute(),
+                                          image: CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "Cricothyrotomy",
+                                          category: CategoryType.airway.execute(),
+                                          image:CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "KING LTS-D Airway",
+                                          category: CategoryType.airway.execute(),
+                                          image:CategoryType.calstarImage.execute()))
+        
+        
+        
+        
+        //Cardiac Protocols.
+        
+        protocolArray.append(CalProtocols(name: "Asystole",
+                                          category:CategoryType.cardiac.execute() ,
+                                          image:CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "Bradycardia",
+                                          category:CategoryType.cardiac.execute() ,
+                                          image: CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "Pulseless Arrest",
+                                          category: CategoryType.cardiac.execute(),
+                                          image: CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "Tachycardia",
+                                          category: CategoryType.cardiac.execute(),
+                                          image: CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "Heart Blocks",
+                                          category: CategoryType.cardiac.execute(),
+                                          image: CategoryType.calstarImage.execute()))
+        
+        protocolArray.append(CalProtocols(name: "12 Leads",
+                                          category: CategoryType.cardiac.execute(),
+                                          image: CategoryType.calstarImage.execute()))
+        
+        
+        
+        searchProtocolArray = protocolArray
+        
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        //Delcare the place where we are getting the cell info
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! CalStar_Protocol_CollectionViewCell
-        
-        // Configure the cell from the oulets in the cell Class.
-        cell.protocolTitleLabel.text = protocolTitles [indexPath.item]
-        
-        cell.protocolDetailLabel.text = protocolSubject [indexPath.item]
-        
-        // We are changing the color of the Detail Subtitle only here.
-        return cell
-    }
-    
-    // Pass the data from the cells and data to the detailView Controller.
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
-        
-        switch indexPath.item {
+        searchProtocolArray = protocolArray.filter({ regulations -> Bool in
             
-            //  Segue to the reference page from each cell. //  Opens the webView outside the app no VC
+            switch searchBar.selectedScopeButtonIndex {
+                
+            case 0:
+                
+                if searchText.isEmpty { return true }
+                
+                return regulations.name.lowercased().contains(searchText.lowercased())
+                
+            case 1:
+                
+                if searchText.isEmpty { return regulations.category == CategoryType.airway.execute() }
+                
+                return regulations.name.lowercased().contains(searchText.lowercased()) &&
+                    
+                    regulations.category == CategoryType.airway.execute()
+                
+            case 2:
+                
+                if searchText.isEmpty { return regulations.category == CategoryType.cardiac.execute() }
+                
+                return regulations.name.lowercased().contains(searchText.lowercased()) &&
+                    
+                    regulations.category == CategoryType.cardiac.execute()
+           
             
-        case 0: //
-            if let url = URL(string: "https://calstar.org/services/safety/") {
-                UIApplication.shared.open(url, options: [:])
+            default:
+                return false
             }
+        })
+        collectionView.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        switch selectedScope {
             
-       
+        case 0:
+            searchProtocolArray = protocolArray
             
-            
-            
-            
-            
+        case 1:
+            searchProtocolArray = protocolArray.filter({ regulations -> Bool in
+                regulations.category == CategoryType.airway.execute()
+
+
+            })
+        case 2:
+            searchProtocolArray = protocolArray.filter({ regulations -> Bool in
+                regulations.category == CategoryType.cardiac.execute()
+            })
+        
         default:
             break
         }
         
+        collectionView.reloadData()
+    }
+    
+}
+
+
+extension CalStarProtocol_ViewController:  UICollectionViewDataSource, UICollectionViewDelegate {
+   
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return searchProtocolArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: resuseID, for: indexPath) as! CalStar_Protocol_CollectionViewCell
+        
+        cell.protocolTitleLabel.text = searchProtocolArray[indexPath.row].name
+        
+        cell.protocolDetailLabel.text = searchProtocolArray[indexPath.row].category
+        
+        cell.imageCell.image = UIImage(named:searchProtocolArray[indexPath.row].image)
+        
+        return cell
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        print(indexPath.item + 1)
+        
+        switch indexPath.item + 1 {
+        
+        case 1:
+            if let url = URL(string: "https://calstar.org/services/safety/") {
+                            UIApplication.shared.open(url, options: [:])}
+            
+            print("You selected \(indexPath.item + 1)")
+
+        case 2:
+            if let url = URL(string: "https://www.critical-app.com") {
+                UIApplication.shared.open(url, options: [:])}
+            
+            print("You selected \(indexPath.item + 1)")
+            
+        
+        
+        default:
+            _ = SCLAlertView().showWarning("Sorry", subTitle: "We are working on coding this transition.")
+            
+
+        } // Close switch
+        
+} // Close function
+    } // Close the class
+
+
+
+class CalProtocols {
+    let name: String
+    let image: String
+    let category: String
+    
+    init(name: String, category: String, image: String) {
+        self.name = name
+        self.category = category
+        self.image = image
     }
 }
+
+enum CategoryType: String {
+    case airway = "Airway"
+    case respiratory = "Respiratory"
+    case cardiac = "Cardiac"
+    
+    
+    case calstarImage = "Critical-CalStarLogo"
+    
+    
+    func execute() -> String {
+        return self.rawValue
+    }
+}
+
