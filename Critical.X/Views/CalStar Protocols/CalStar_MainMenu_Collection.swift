@@ -208,9 +208,9 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
             
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Hey", "Ciao","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
+            let greetings: Array = ["Hi", "Hey", "It's a good day", "Ciao","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Hey", "Ciao!","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
+            let greetingFormal: Array = ["Hi", "Hey","It's a good day", "Ciao!","Hola", "What's up", "Cheers", "Good Afternoon", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
             
             //Get the index at each array at RANDOM
             let index = Int(arc4random_uniform(UInt32(greetings.count)))
@@ -251,9 +251,9 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
            
             //Create an array of different greetings.
             
-            let greetings: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
+            let greetings: Array = ["Hi", "It's a good evening", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
+            let greetingFormal: Array = ["Hi", "It's a good evening", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
             
             //Get the index at each array at RANDOM
             
@@ -290,9 +290,9 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
             //label.text = "Good Evening \(randomEvening), Jadie."
             
             //Create an array of different greetings.
-            let greetings: Array = ["Hi", "Hey", "Ciao","Hola","Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
+            let greetings: Array = ["Hi", "It's a good evening", "Hey", "Ciao","Hola","Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
+            let greetingFormal: Array = ["Hi", "It's a good evenin", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
            
             
             //Get the index at each array at RANDOM
@@ -418,7 +418,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         animateNavBar()
         
         //Establish random colors to call for the navbar to change.
-        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1), #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)]
+        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1) , #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)]
 
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)

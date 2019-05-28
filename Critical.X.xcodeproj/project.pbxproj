@@ -1194,8 +1194,8 @@
 		C4C9AAE020F44F8800510823 /* ClinicalProceduresTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalProceduresTBV.swift; sourceTree = "<group>"; };
 		C4CE2D8622956D800061B10D /* Critical-CalStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Critical-CalStar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CE2D8722956D800061B10D /* CriticalCalStar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CriticalCalStar-Info.plist"; path = "/Users/jadiebarringeriii/Library/Mobile Documents/com~apple~CloudDocs/Swift Projects/Xcode Projects/Critical.X/CriticalCalStar-Info.plist"; sourceTree = "<absolute>"; };
-		C4CE2D89229572E60061B10D /* LaunchScreenCalStar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreenCalStar.storyboard; path = "CalStar Main StoryBoard/LaunchScreenCalStar.storyboard"; sourceTree = "<group>"; };
-		C4CE2D8F229581850061B10D /* Main_CalStar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main_CalStar.storyboard; path = "Critical.X/Main Storyboard/Main_CalStar.storyboard"; sourceTree = SOURCE_ROOT; };
+		C4CE2D89229572E60061B10D /* LaunchScreenCalStar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenCalStar.storyboard; sourceTree = "<group>"; };
+		C4CE2D8F229581850061B10D /* Main_CalStar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main_CalStar.storyboard; path = "Critical.X/Views/CalStar Protocols/Main_CalStar.storyboard"; sourceTree = SOURCE_ROOT; };
 		C4CE2D912295825A0061B10D /* CalStar_MainMenu_Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalStar_MainMenu_Collection.swift; sourceTree = "<group>"; };
 		C4CF01C22202A03B006432BB /* VentDescriptionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentDescriptionEnum.swift; sourceTree = "<group>"; };
 		C4CF01C42203D1D3006432BB /* VentAttributeChanages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentAttributeChanages.swift; sourceTree = "<group>"; };
@@ -1687,7 +1687,6 @@
 			isa = PBXGroup;
 			children = (
 				C415BDDA20EE8EA7003A2406 /* RSI.storyboard */,
-				C43443972295A2D700971192 /* RSI_CalStar.storyboard */,
 			);
 			path = "RSI Storyboard";
 			sourceTree = "<group>";
@@ -1856,9 +1855,6 @@
 				C47AA23B21FDC91A00544095 /* MainMenu_Collection.swift */,
 				C47AA23A21FDC91A00544095 /* MenMenuCollectionViewCell.swift */,
 				C47AA23C21FDC91A00544095 /* OnboardingVC.swift */,
-				C4CE2D89229572E60061B10D /* LaunchScreenCalStar.storyboard */,
-				C4CE2D8F229581850061B10D /* Main_CalStar.storyboard */,
-				C4CE2D912295825A0061B10D /* CalStar_MainMenu_Collection.swift */,
 			);
 			path = "Main Storyboard";
 			sourceTree = "<group>";
@@ -2144,7 +2140,11 @@
 		C48402912295F3CC00E56EE2 /* CalStar Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				C4CE2D89229572E60061B10D /* LaunchScreenCalStar.storyboard */,
+				C4CE2D8F229581850061B10D /* Main_CalStar.storyboard */,
 				C48402922295F40900E56EE2 /* CalSTARProtocol.storyboard */,
+				C43443972295A2D700971192 /* RSI_CalStar.storyboard */,
+				C4CE2D912295825A0061B10D /* CalStar_MainMenu_Collection.swift */,
 				C48402962295F5CE00E56EE2 /* CalStar_Protocol_CollectionViewCell.swift */,
 				C48402942295F5AE00E56EE2 /* CalStarProtocol_ViewController.swift */,
 			);

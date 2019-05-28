@@ -129,7 +129,7 @@ class CalStarProtocol_ViewController: UIViewController, UISearchBarDelegate {
                                           category: CategoryType.airway.execute(),
                                           image:CategoryType.calstarImage.execute()))
         
-        
+    
         
         
         //Cardiac Protocols.
