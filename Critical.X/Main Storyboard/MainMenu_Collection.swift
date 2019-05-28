@@ -460,9 +460,11 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         print("Critical is running")
         #endif
         
+        // Declare the build to pass in the collection menu so the version can be visible.
+        let build : Any! = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
         //MARK: - Menu Screen Items
         mainMenu =
-            ["About Critical", // 0
+            ["About Critical v.\(String(describing: build!))", // 0
             
             "Airway", // 1
             

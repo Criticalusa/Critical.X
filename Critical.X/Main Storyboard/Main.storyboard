@@ -185,7 +185,7 @@
                                 <color key="backgroundColor" name="Clouds"/>
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Critical_LogoBlackOutline copy" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-8h-Pza">
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Critical_Logo4" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-8h-Pza">
                                 <rect key="frame" x="140" y="72" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cq3-VM-aNO"/>
@@ -197,7 +197,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0O-GZ-H1Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0O-GZ-H1Q" customClass="LTMorphingLabel">
                                 <rect key="frame" x="16" y="127" width="288" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="WAN-fK-elv"/>
@@ -282,8 +282,8 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="wpz-3n-DGL"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="criticalLogo" destination="cwD-8h-Pza" id="ogW-Nl-V6Z"/>
-                        <outlet property="label" destination="O0O-GZ-H1Q" id="Ajc-0T-AsQ"/>
+                        <outlet property="criticalLogo" destination="cwD-8h-Pza" id="SKR-S2-v6D"/>
+                        <outlet property="label" destination="O0O-GZ-H1Q" id="aZ1-JW-iKc"/>
                         <outlet property="menuCollectionView" destination="DXn-zS-yaf" id="dqs-eb-hFh"/>
                     </connections>
                 </viewController>
@@ -534,7 +534,6 @@
                                 </state>
                                 <connections>
                                     <action selector="calcualteGuard:" destination="vLV-Yh-6Rk" eventType="touchUpInside" id="X5O-KN-QZ2"/>
-                                    <action selector="sendEmailFeedback:" destination="HXd-hj-Kph" eventType="touchUpInside" id="IgL-h1-W1R"/>
                                     <segue destination="HXd-hj-Kph" kind="presentation" identifier="RSI" id="SLG-cy-cMu">
                                         <segue key="commit" inheritsFrom="parent" id="3jO-hb-cKC"/>
                                         <segue key="preview" inheritsFrom="commit" id="HET-8z-SYg"/>
@@ -4047,6 +4046,7 @@
         <image name="CRITICAL_RSI_Logo_Circle" width="1782" height="1771"/>
         <image name="CriticalScattered" width="900" height="1800"/>
         <image name="CriticalTab" width="37.5" height="37.5"/>
+        <image name="Critical_Logo4" width="768" height="768"/>
         <image name="Critical_LogoBlackOutline copy" width="512" height="512"/>
         <image name="LungsGreen" width="512" height="512"/>
         <image name="RSIIBarIcon" width="37.5" height="37.5"/>
