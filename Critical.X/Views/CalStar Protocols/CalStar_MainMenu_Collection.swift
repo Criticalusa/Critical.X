@@ -18,7 +18,7 @@ import SCLAlertView
 
 extension Date {
    
-    func dayOfWeek_CalStar() -> String? {
+    func dayOfWeek() -> String? {
    
         let dateFormatter = DateFormatter()
    
@@ -458,21 +458,23 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         super.viewDidLoad()
         
         
-        
+        // Declare the build to pass in the collection menu so the version can be visible.
+        let build : Any! = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
+       
         
         //MARK: - Menu Screen Items
         mainMenu =
-            ["About Critical-CalStar", // 0
+            ["About Critical-CalStar  v.\(String(describing: build!))", // 0
             
             "Airway", // 1
             
             "Cardiac",// 2
             
-            "Clinical Calculators",// 2
+            "CalStar Calculators",// 2
             
-            "Clinical Pharmacology", // 3
+            "CalStar Pharmacology", // 3
             
-            "Drips", // 5
+            "CalStar Drips", // 5
             
             "Fluids / Blood products", // 6
             
