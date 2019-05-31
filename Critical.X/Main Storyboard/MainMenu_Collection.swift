@@ -460,9 +460,16 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         print("Critical is running")
         #endif
         
+        
+        
         // Declare the build to pass in the collection menu so the version can be visible.
         let build : Any! = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
         //MARK: - Menu Screen Items
+        
+        let about = "About Critical v.\(String(describing: build!))"
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: about)
+        
+
         mainMenu =
             ["About Critical v.\(String(describing: build!))", // 0
             
@@ -537,7 +544,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         //  "formula",// 3
         // "Pharmacology",// 4
         cellImages =
-            ["Critical_Logo4",// 0 
+            ["Critical_Logo_OutlineNavy",// 0 
             
             "CRITICAL_Airway_Logo_Circle",// 1
             

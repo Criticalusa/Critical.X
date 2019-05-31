@@ -115,7 +115,7 @@ class RateCriticalPopUp: UIViewController, MFMailComposeViewControllerDelegate {
                                  style: .success,
                                  colorStyle: 0xD93829,//Critical Red
             colorTextButton: 0xFFFFFF, // White color
-            circleIconImage: UIImage.init(named: "Critical_Logo4"),
+            circleIconImage: UIImage.init(named: "Critical_Logo_OutlineNavy"),
             animationStyle: .topToBottom)
 
     }

@@ -542,7 +542,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         //  "formula",// 3
         // "Pharmacology",// 4
         cellImages =
-            ["Critical_Logo4",// 0 
+            ["Critical_Logo_OutlineNavy",// 0 
             
             "CRITICAL_Airway_Logo_Circle",// 1
             
