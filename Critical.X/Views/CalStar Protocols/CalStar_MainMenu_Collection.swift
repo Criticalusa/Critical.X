@@ -13,9 +13,6 @@ import SCLAlertView
 
 
 
-
-
-
 extension Date {
    
     func dayOfWeek() -> String? {
@@ -84,7 +81,6 @@ extension String {
         let eveningEmoji = ["🌒","🌖","🌙", "🌛", "🌝"]
         
         var randomString: String = ""
-        
         
         
         for _ in 0..<length {
@@ -292,7 +288,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
             //Create an array of different greetings.
             let greetings: Array = ["Hi", "It's a good evening", "Hey", "Ciao","Hola","Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)!"]
             
-            let greetingFormal: Array = ["Hi", "It's a good evenin", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
+            let greetingFormal: Array = ["Hi", "It's a good evening", "Hey", "Ciao","Hola", "Cheers", "Good Evening", "Welcome Back", "Happy \(dayOfTheWeek_CalStar)"]
            
             
             //Get the index at each array at RANDOM
@@ -314,7 +310,9 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
                     label.text = "\(displayRandomGreeting) \(randomEvening) "
 
                 }
-            } else if username != nil {
+            }
+            
+            else if username != nil {
                 //label.text = "Good Morning \(randomAfternoon), \(username!)!"
                 label.text = "\(formalDisplayRandomGreeting), \(username!) \(randomEvening) "
                 
@@ -365,9 +363,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         
         /** Create the UILabel */
         
-   
-      
-    }
+   }
     
     //MARK: - Animate Nav Bar
     func animateNavBar()  {
@@ -399,7 +395,9 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
          */
         
         let date : Date = Date()
+        
         let dateFormatter = DateFormatter()
+        
         dateFormatter.dateFormat = "E MMM d  |  h:mm a"
         // dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
 
@@ -418,7 +416,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         animateNavBar()
         
         //Establish random colors to call for the navbar to change.
-        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1) , #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1), #colorLiteral(red: 0.9358316064, green: 0.3514818549, blue: 0.1909768581, alpha: 1)]
+        let randomNavBarColors = [ #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1) , #colorLiteral(red: 0.05098039216, green: 0.1019607843, blue: 0.1411764706, alpha: 1) ,  #colorLiteral(red: 0.08235294118, green: 0.5607843137, blue: 0.6117647059, alpha: 1) , #colorLiteral(red: 0.9358316064, green: 0.3514818549, blue: 0.1909768581, alpha: 1) ]
 
         //change the color of the navigationbar with random color
         self.navigationController?.navigationBar.barTintColor = UIColor.random(from: randomNavBarColors)
@@ -428,6 +426,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
  
     // Loads the animation once the view appears
     override func viewDidAppear(_ animated: Bool) {
+        
         super.viewWillAppear(true)
         
         setAnimationLabel()
@@ -440,9 +439,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         
         
         
-    
-    
-    
+//MARK: - ViewDidDissappear
     override func viewDidDisappear(_ animated: Bool) {
         
         // Clear the animation label once the view dissappears.
@@ -452,7 +449,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
     
 
     
-    
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -566,7 +563,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
             
             "OB",//  11
             
-            "CRITICAL_Hemodynamcis_Logo_Circle",// 12
+            "CRITICAL_EKG_Logo",// 12
             
             "CRITICAL_RSI_Logo_Circle",// 13
             
@@ -620,7 +617,7 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
     }
     
 
-    
+    //MARK: - DataSource Methods
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -633,8 +630,11 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenMenuCollectionViewCell
         
+        
         cell.mainMenu_CellLabel.text = mainMenu[indexPath.item]
+        
         cell.mainMenuDetail_CellLabel.text = mainMenuDetail [indexPath.item]
+        
         cell.mainMenu_CellImage.image = UIImage (named:cellImages[indexPath.item])
      
         return cell
@@ -718,7 +718,6 @@ class CalStar_MainMenu_Collection: UIViewController, UICollectionViewDataSource,
         }
             
 
-            
             //  Everything else will be pushed via navigation here.
         else {
             // Set the Storyboard ID to each indexPath.
