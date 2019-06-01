@@ -79,7 +79,7 @@ class CRRT_MainVC: UIViewController {
         
         let calculation = weight * dose
         
-        return calculation
+        return calculation.roundTo(places: 1)
     }
     
     
@@ -121,7 +121,7 @@ class CRRT_MainVC: UIViewController {
         let newFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
         
         // Set the attribute.
-        attributedText.apply(color: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), subString: newCalculation)
+        attributedText.apply(color: #colorLiteral(red: 0.9843137255, green: 1, blue: 0.7098039216, alpha: 1), subString: newCalculation)
         attributedText.apply(font: newFont!, subString: newCalculation)
         
         // SEt the attribute to the label. 
