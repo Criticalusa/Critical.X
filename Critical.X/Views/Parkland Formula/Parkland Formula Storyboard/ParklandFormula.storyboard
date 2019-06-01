@@ -9,16 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Display-Medium.otf">
-            <string>SFProDisplay-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Parkland Formula-->
         <scene sceneID="AJI-bi-yIA">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="Qen-h7-OmU" customClass="ParklandFormula" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Qen-h7-OmU" customClass="ParklandFormula" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FKg-Sj-JjE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,11 +38,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gd-V1-XYt">
-                                                <rect key="frame" x="17" y="406" width="285" height="74"/>
+                                                <rect key="frame" x="17" y="406" width="285" height="73"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Body Surface Area" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKG-vK-cRN">
-                                                        <rect key="frame" x="10" y="32" width="267" height="17"/>
-                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                                        <rect key="frame" x="10" y="32" width="267" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Clouds"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -75,13 +70,13 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlI-Ch-SQX">
-                                                <rect key="frame" x="265" y="45" width="40" height="40"/>
+                                                <rect key="frame" x="255" y="50" width="50" height="20"/>
                                                 <color key="backgroundColor" name="Critical Red"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="DsV-R3-bzW"/>
-                                                    <constraint firstAttribute="height" constant="40" id="nNn-IT-sKk"/>
+                                                    <constraint firstAttribute="width" constant="50" id="DsV-R3-bzW"/>
+                                                    <constraint firstAttribute="height" constant="20" id="nNn-IT-sKk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="X">
                                                     <color key="titleColor" name="Clouds"/>
                                                 </state>
@@ -104,12 +99,12 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-fY-8cE">
-                                                <rect key="frame" x="18" y="493" width="284" height="82"/>
+                                                <rect key="frame" x="18" y="492" width="284" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Body Surface Area" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFx-2L-m3g">
-                                                        <rect key="frame" x="8" y="29" width="268" height="17"/>
-                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
-                                                        <color key="textColor" name="Salmon"/>
+                                                        <rect key="frame" x="8" y="29" width="268" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="Pale Yellow"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infusion Rates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-gI-hk2">
@@ -142,7 +137,7 @@
                                                     <constraint firstAttribute="height" constant="51" id="UaO-UF-yAM"/>
                                                     <constraint firstAttribute="width" constant="88" id="hge-FX-kJd"/>
                                                 </constraints>
-                                                <color key="textColor" name="Salmon"/>
+                                                <color key="textColor" name="Critical Red"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="27"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                                 <userDefinedRuntimeAttributes>
@@ -163,7 +158,7 @@
                                                     <constraint firstAttribute="height" constant="31" id="XPB-us-fJL"/>
                                                     <constraint firstAttribute="width" constant="280" id="ir8-GB-3Gv"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="11"/>
                                                 <color key="textColor" name="Critical Red"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -189,7 +184,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYB-MD-zli">
                                                 <rect key="frame" x="58" y="345" width="207" height="36"/>
-                                                <color key="backgroundColor" name="Marina"/>
+                                                <color key="backgroundColor" name="BelizeHole"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="GUO-Xy-PJl"/>
                                                     <constraint firstAttribute="width" constant="207" id="rFn-kA-GZ9"/>
@@ -223,7 +218,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parkland Formula" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-7T-rma" customClass="AKLabel" customModule="AKLabel">
-                                                <rect key="frame" x="11" y="91" width="296" height="40"/>
+                                                <rect key="frame" x="11" y="101" width="296" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="296" id="I5a-Cr-C0Q"/>
                                                     <constraint firstAttribute="height" constant="40" id="MjB-fr-6Ot"/>
@@ -270,9 +265,9 @@
                                             <constraint firstItem="7tt-Jk-HKU" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="18" id="LXy-oh-csF"/>
                                             <constraint firstItem="Owv-7T-rma" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="11" id="LoS-h5-xbI"/>
                                             <constraint firstItem="xsE-fY-8cE" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="18" id="QOX-Zs-ebb"/>
-                                            <constraint firstItem="Owv-7T-rma" firstAttribute="top" secondItem="lpM-ul-pSR" secondAttribute="top" constant="91" id="Tvl-MV-EU9"/>
-                                            <constraint firstItem="GlI-Ch-SQX" firstAttribute="top" secondItem="lpM-ul-pSR" secondAttribute="top" constant="45" id="We8-rU-cYT"/>
-                                            <constraint firstItem="7tt-Jk-HKU" firstAttribute="top" secondItem="GlI-Ch-SQX" secondAttribute="bottom" constant="60" id="XjW-FL-h4k"/>
+                                            <constraint firstItem="Owv-7T-rma" firstAttribute="top" secondItem="lpM-ul-pSR" secondAttribute="top" constant="101" id="Tvl-MV-EU9"/>
+                                            <constraint firstItem="GlI-Ch-SQX" firstAttribute="top" secondItem="lpM-ul-pSR" secondAttribute="top" constant="50" id="We8-rU-cYT"/>
+                                            <constraint firstItem="7tt-Jk-HKU" firstAttribute="top" secondItem="GlI-Ch-SQX" secondAttribute="bottom" constant="75" id="XjW-FL-h4k"/>
                                             <constraint firstItem="a5n-Ly-Fci" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" id="Yab-jC-J3R"/>
                                             <constraint firstAttribute="trailing" secondItem="On8-xU-bjF" secondAttribute="trailing" constant="21" id="ZXU-SH-0fN"/>
                                             <constraint firstItem="pDH-hA-YJD" firstAttribute="leading" secondItem="lpM-ul-pSR" secondAttribute="leading" constant="13" id="acS-Ya-20A"/>
@@ -287,7 +282,7 @@
                                             <constraint firstItem="Me9-5x-suF" firstAttribute="top" secondItem="On8-xU-bjF" secondAttribute="bottom" constant="7" id="kVk-k1-Abk"/>
                                             <constraint firstItem="a5n-Ly-Fci" firstAttribute="top" secondItem="jCj-uB-l2A" secondAttribute="bottom" constant="9" id="pHL-5s-aaE"/>
                                             <constraint firstAttribute="height" constant="700" id="pOZ-Nb-dgT"/>
-                                            <constraint firstItem="7tt-Jk-HKU" firstAttribute="top" secondItem="Owv-7T-rma" secondAttribute="bottom" constant="14" id="pur-QA-BBv"/>
+                                            <constraint firstItem="7tt-Jk-HKU" firstAttribute="top" secondItem="Owv-7T-rma" secondAttribute="bottom" constant="4" id="pur-QA-BBv"/>
                                             <constraint firstItem="4Gd-V1-XYt" firstAttribute="top" secondItem="rYB-MD-zli" secondAttribute="bottom" constant="25" id="so0-1y-9PJ"/>
                                             <constraint firstItem="YP3-Sf-l2y" firstAttribute="leading" secondItem="ZyA-EH-AgP" secondAttribute="trailing" constant="50" id="tDQ-0K-dhC"/>
                                             <constraint firstItem="On8-xU-bjF" firstAttribute="leading" secondItem="jCj-uB-l2A" secondAttribute="trailing" constant="40" id="tPj-5V-9cg"/>
@@ -340,7 +335,7 @@
         <!--Parkland Data-->
         <scene sceneID="1Uy-dD-vTK">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="dMc-NW-bdq" customClass="ParklandData" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="dMc-NW-bdq" customClass="ParklandData" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wla-oI-g5l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -424,6 +419,9 @@
         <namedColor name="Alizarin">
             <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="BelizeHole">
+            <color red="0.16099999845027924" green="0.50199997425079346" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Bone">
             <color red="0.92941176470588238" green="0.88235294117647056" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -436,14 +434,11 @@
         <namedColor name="Critical Red">
             <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Marina">
-            <color red="0.31000000238418579" green="0.51800000667572021" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Niagara">
             <color red="0.32899999618530273" green="0.52899998426437378" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Salmon">
-            <color red="0.9100000262260437" green="0.55000001192092896" blue="0.56999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Pale Yellow">
+            <color red="0.98431372549019602" green="1" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Silver">
             <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

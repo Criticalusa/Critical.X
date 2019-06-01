@@ -102,15 +102,30 @@ class CRRT_MainVC: UIViewController {
             
             let alert = SCLAlertView()
             let alertText = "Make sure to fill in all values before calculating "
-            _ = alert.showSuccess("Wait...", subTitle: alertText)
+            _ = alert.showError("Wait...", subTitle: alertText)
             
             self.resultView.isHidden = true
 
             return
         }
         
+        // What i specifically want to be colored.
+        let newCalculation = "\(calculateDialysisDose(weight: kg ?? 0 , dose: doseTxt ?? 25.0).oneDecimalPlace)"
         // calculation from above fn.
-        finalDoseLabel.text = "With a weight of \(kg!) kg, and target dose of \(doseTxt!) ml/kg/hr\n\n The calculated desired dose of dialysate is \( calculateDialysisDose(weight: kg ?? 0 , dose: doseTxt ?? 25.0)) mL/hr."
+        
+        // Full Text.
+        let  resultText = "With a weight of \(kg!) kg, and target dose of \(doseTxt!) ml/kg/hr\n\n The calculated desired dose of dialysate is \(newCalculation) mL/hr."
+        
+        //Create the attribute
+        let attributedText = NSMutableAttributedString.getAttributedString(fromString: resultText)
+        let newFont = UIFont(name: "HelveticaNeue-Bold", size: 15.0)
+        
+        // Set the attribute.
+        attributedText.apply(color: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), subString: newCalculation)
+        attributedText.apply(font: newFont!, subString: newCalculation)
+        
+        // SEt the attribute to the label. 
+        finalDoseLabel.attributedText = attributedText
         
         //Animate the view
         showAnimate()

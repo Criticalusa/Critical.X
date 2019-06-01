@@ -17,14 +17,20 @@ class tpaDoseCalculator: UIViewController {
 
     @IBOutlet weak var resulLabel: UILabel!
     
+    @IBOutlet weak var closebutton: UIButton!
+    
     //MARK: - ViewDIDLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
-// Show an alert about the dangers first.
-        
+        /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
+        closebutton.clipsToBounds = true
+        closebutton.layer.cornerRadius = 6
+
+        // Show an alert about the dangers first.
         let appearance = SCLAlertView.SCLAppearance(dynamicAnimatorActive: true)
-        _ = SCLAlertView(appearance: appearance).showNotice("Important!!", subTitle: "Use for ischemic strokes only - not for PE or MI. This is not a primary means to administer tPA. This is to double check your calculation!")
+        _ = SCLAlertView(appearance: appearance).showNotice("Important!!",
+                                                            subTitle: "Use for ischemic strokes only - not for PE or MI. This is not a primary means to administer tPA. This is to double check your calculation!")
         
         
         // Hide the view

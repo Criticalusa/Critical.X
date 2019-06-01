@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XPB-iA-8Fg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XPB-iA-8Fg">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Display-Heavy.otf">
-            <string>SFProDisplay-Heavy</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Tpa Dose Calculator-->
         <scene sceneID="Tn3-0Z-lCN">
             <objects>
-                <viewController storyboardIdentifier="tpa" modalPresentationStyle="overCurrentContext" id="XPB-iA-8Fg" customClass="tpaDoseCalculator" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tpa" modalPresentationStyle="overCurrentContext" id="XPB-iA-8Fg" customClass="tpaDoseCalculator" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETt-XE-gBV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +53,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tissue Plasminogen Activator (Stroke)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr6-gs-EmT">
-                                                            <rect key="frame" x="20" y="122" width="280" height="27"/>
+                                                            <rect key="frame" x="20" y="127" width="280" height="27"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
                                                             <color key="textColor" name="Critical Red"/>
@@ -68,8 +63,9 @@
                                                             <rect key="frame" x="84" y="228" width="154" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" name="Concentrate"/>
-                                                            <state key="normal" title="Button">
-                                                                <color key="titleColor" name="Bone"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                                            <state key="normal" title="Calculate">
+                                                                <color key="titleColor" name="Clouds"/>
                                                             </state>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -82,11 +78,12 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-xY-BmZ">
-                                                            <rect key="frame" x="264" y="48" width="40" height="40"/>
+                                                            <rect key="frame" x="251" y="53" width="50" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <color key="backgroundColor" name="Critical Red"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <state key="normal" title="X">
-                                                                <color key="titleColor" name="Bone"/>
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
                                                             <connections>
                                                                 <action selector="dismissTPA:" destination="XPB-iA-8Fg" eventType="touchUpInside" id="bHy-W5-gGe"/>
@@ -112,8 +109,8 @@
 IV infusion over 60 min is 45.4 mg
 
 The remaining 49.6 mg's is to be discarded.</string>
-                                                                    <fontDescription key="fontDescription" name="SFProDisplay-Heavy" family="SF Pro Display" pointSize="16"/>
-                                                                    <color key="textColor" name="Bone"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="16"/>
+                                                                    <color key="textColor" name="Clouds"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -141,6 +138,7 @@ The remaining 49.6 mg's is to be discarded.</string>
                         <viewLayoutGuide key="safeArea" id="HWT-rG-l9f"/>
                     </view>
                     <connections>
+                        <outlet property="closebutton" destination="GbD-xY-BmZ" id="t6x-OX-irM"/>
                         <outlet property="resulLabel" destination="gra-Mp-pqk" id="Xel-1y-noD"/>
                         <outlet property="resultView" destination="n6q-gB-wld" id="WXl-YY-Jh2"/>
                         <outlet property="txt_weightLabel" destination="zam-wH-I9D" id="2ms-ag-iuk"/>
@@ -154,6 +152,9 @@ The remaining 49.6 mg's is to be discarded.</string>
     <resources>
         <namedColor name="Bone">
             <color red="0.92941176470588238" green="0.88235294117647056" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Clouds">
+            <color red="0.92500001192092896" green="0.94099998474121094" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Concentrate">
             <color red="0.58399999141693115" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -184,7 +184,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "CONFIRM IV FLOW RATES",//3
             
-            "Calculate desired dose of dialysate in CRRT", //4
+            "CALCULATE DESIRED DOSE OF DIALYSATE IN CRRT", //4
             
             
             
@@ -285,7 +285,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         super.viewWillAppear(true)
         
         //change the color of the navigation Bar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8167747855, green: 0.2564189732, blue: 0.2553805709, alpha: 1)
         
         
     }
@@ -293,7 +293,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
     // Change the color back when the view dissappears
     override func viewWillDisappear(_ animated: Bool) {
         //change the color of the navigation Bar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.150000006, green: 0.1899999976, blue: 0.2399999946, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.04688691348, green: 0.1025837436, blue: 0.1407855749, alpha: 1)
         
         
     }

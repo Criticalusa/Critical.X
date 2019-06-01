@@ -36,7 +36,9 @@ class ParklandFormula: UIViewController {
         
         
         // Takes the close button and makes it into a circle
-        closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
+        closeButton.clipsToBounds = true
+        closeButton.layer.cornerRadius = 6
+
         /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
         parklandResultsView.clipsToBounds = true
         parklandResultsView.layer.cornerRadius = 10
@@ -136,6 +138,9 @@ func doneButtonAction() {
         
 
         return "To infuse \(firstEight) L's over 8 hrs., consider an infusion rate of \(infusionRateEight / 2 ) mL/hr.\n\nFor the final 16 hrs., consider an infusion rate of \(infusionRateSisteen / 2) mL/hr to infuse remainder \(overSixteen ) L."
+        
+        
+        
     }
 
     func analyzeParkland() {
