@@ -70,10 +70,10 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         print(StoryboardID [indexPath.item] + " - Storyboard ID")
         
-        // We only push Index 17 and for the rest we use MODAL transition
+        // We only push these and for the rest we use MODAL transition
         switch indexPath.item {
        
-        case 14:  // Pregnancy Calculator
+        case 15:  // Pregnancy Calculator
             
             // Name has to reflect the origionting SB.
             let storyboard = UIStoryboard(name: "ReferencesMenu", bundle: nil)
@@ -127,6 +127,11 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "Check My drip",         //3
             
+            "CRRT Dosing Calculator", //4
+            
+            
+            
+            
             "FENa",                  //4
             
             "Free Water Deficit",    //5
@@ -137,6 +142,9 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             
             "LOX Calculator",        //8
             
+            
+            
+            
             "Medical Spanish",       //9
             
             "MAP | CPP",             //10
@@ -146,6 +154,9 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             "Parkland Formula",      //12
             
             "P:F Ratio",             //13
+            
+            
+            
             
             "Pregnancy Calculator",  //14
             
@@ -165,33 +176,41 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         medCalcSubtitle = [
             
-            "INTERPRET ARTERIAL BLOOD GASES",
+            "INTERPRET ARTERIAL BLOOD GASES", //0
             
-            "CALCULATES THE ANION GAP",//0
+            "CALCULATES THE ANION GAP",//1
             
-            "CALCULATES THE DEFICIT OF BICARBONATE",//1
+            "CALCULATES THE DEFICIT OF BICARBONATE",//2
             
-            "CONFIRM IV FLOW RATES",//2
+            "CONFIRM IV FLOW RATES",//3
             
-            "CALCULATES THE FRACTIONAL EXCRETION OF NA",//3
+            "Calculate desired dose of dialysate in CRRT", //4
             
-            "FREE WATER DEFICIT CALC",//4
             
-            "CALCULATES BASED ON IDEAL BODY WEIGHT",//5
             
-            "CALCULATES IV FLOW RATE",   //6
+            "CALCULATES THE FRACTIONAL EXCRETION OF NA",//5
             
-            "LOX CALCULATOR",        //7
+            "FREE WATER DEFICIT CALC",// 6
             
-            "MEDICAL SPANISH & AUDIO",       //8
+            "CALCULATES BASED ON IDEAL BODY WEIGHT",// 7
             
-            "MEAN ARTERIAL PRESSURE & CEREBRAL PERFUSION PRESSURE",//9
+            "CALCULATES IV FLOW RATE",   //8
+            
+            "LOX CALCULATOR",        //9
+            
+            
+            
+            "MEDICAL SPANISH & AUDIO",       // 10
+            
+            "MEAN ARTERIAL PRESSURE & CEREBRAL PERFUSION PRESSURE",// 11
             
             "CALCULATES THE FLOW TIME REMAINING",//10
             
             "FLUID REPLACEMENT CALCULATOR POST BURNS",//11
             
             "PA02/FI02 RATIO",//12
+            
+            
             
             "CALCULATES THE EXPECTED DUE DATE",//13
             
@@ -220,6 +239,8 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             "D",//2
             
             "checkDrip",//3
+            
+            "CRRT", //4
             
             "fena",//4
             

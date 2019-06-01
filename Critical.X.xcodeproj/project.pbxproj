@@ -263,6 +263,10 @@
 		C492B90E201AE8BE0042CE20 /* RSIMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492B909201AE8BC0042CE20 /* RSIMain.swift */; };
 		C492B90F201AE8BE0042CE20 /* RSISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492B90A201AE8BD0042CE20 /* RSISetting.swift */; };
 		C492B910201AE8BE0042CE20 /* RSI_Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492B90B201AE8BD0042CE20 /* RSI_Additional.swift */; };
+		C4986FB122A2FBD900745EFC /* CRRT-Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4986FB022A2FBD900745EFC /* CRRT-Calc.storyboard */; };
+		C4986FB222A2FBD900745EFC /* CRRT-Calc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4986FB022A2FBD900745EFC /* CRRT-Calc.storyboard */; };
+		C4986FB422A2FC1400745EFC /* CRRT-MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4986FB322A2FC1400745EFC /* CRRT-MainVC.swift */; };
+		C4986FB522A2FC1400745EFC /* CRRT-MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4986FB322A2FC1400745EFC /* CRRT-MainVC.swift */; };
 		C4A5566020101F160087B014 /* ACLSChanges2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5565F20101F150087B014 /* ACLSChanges2015.swift */; };
 		C4A77697200822B8002EEC86 /* BicarbonateDeficit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */; };
 		C4A776DF2008E893002EEC86 /* JPSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A776DE2008E893002EEC86 /* JPSwitchButton.swift */; };
@@ -1134,6 +1138,8 @@
 		C492B909201AE8BC0042CE20 /* RSIMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIMain.swift; sourceTree = "<group>"; };
 		C492B90A201AE8BD0042CE20 /* RSISetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSISetting.swift; sourceTree = "<group>"; };
 		C492B90B201AE8BD0042CE20 /* RSI_Additional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSI_Additional.swift; sourceTree = "<group>"; };
+		C4986FB022A2FBD900745EFC /* CRRT-Calc.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "CRRT-Calc.storyboard"; sourceTree = "<group>"; };
+		C4986FB322A2FC1400745EFC /* CRRT-MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CRRT-MainVC.swift"; sourceTree = "<group>"; };
 		C4A5565F20101F150087B014 /* ACLSChanges2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLSChanges2015.swift; sourceTree = "<group>"; };
 		C4A77696200822B8002EEC86 /* BicarbonateDeficit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicarbonateDeficit.swift; sourceTree = "<group>"; };
 		C4A776DE2008E893002EEC86 /* JPSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPSwitchButton.swift; sourceTree = "<group>"; };
@@ -2165,6 +2171,15 @@
 			path = "CalStar Protocols";
 			sourceTree = "<group>";
 		};
+		C4986FAF22A2FBA500745EFC /* CRRT Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C4986FB022A2FBD900745EFC /* CRRT-Calc.storyboard */,
+				C4986FB322A2FC1400745EFC /* CRRT-MainVC.swift */,
+			);
+			path = "CRRT Calculator";
+			sourceTree = "<group>";
+		};
 		C49DBEEC203E1FDE00247A9E /* Infusion Drips */ = {
 			isa = PBXGroup;
 			children = (
@@ -2412,6 +2427,7 @@
 				C4EAB61D20923CB70073400E /* Clinical Pharmacology */,
 				C430D2E820EEAF9B00A99985 /* Clinical Calculators */,
 				C41BD05F20F0E2FB0031C9CD /* Clinical Procedures */,
+				C4986FAF22A2FBA500745EFC /* CRRT Calculator */,
 				C4A77762200963A2002EEC86 /* CXR  */,
 				C4C25EC01FF9099500C5CD42 /* Disclaimer & Rate  */,
 				C4C25ED01FF9099500C5CD42 /* EKG , VAD, 12 Leads */,
@@ -3075,6 +3091,7 @@
 				C4D062C021EA285D00F2B84E /* Ultrasound.storyboard in Resources */,
 				C418AC38200BAB07001EBB04 /* howDoYouFeel.wav in Resources */,
 				7955134B1FD4B4F6005856F3 /* Main.storyboard in Resources */,
+				C4986FB122A2FBD900745EFC /* CRRT-Calc.storyboard in Resources */,
 				C418AC5B200BAB07001EBB04 /* anyThatSpeaksEnglish.wav in Resources */,
 				C418AC68200BAB07001EBB04 /* dontmove.wav in Resources */,
 				C430D2D020EE98B100A99985 /* BicarbDeficit.storyboard in Resources */,
@@ -3217,6 +3234,7 @@
 				C4CE2D4222956D800061B10D /* 2ndDegreeTypeII.v2.gif in Resources */,
 				C4CE2D4322956D800061B10D /* Obstetrics.storyboard in Resources */,
 				C4CE2D4422956D800061B10D /* Pelvic-NormalMaleAndFemale.gif in Resources */,
+				C4986FB222A2FBD900745EFC /* CRRT-Calc.storyboard in Resources */,
 				C4CE2D4522956D800061B10D /* everyWillBeFine.wav in Resources */,
 				C4CE2D4622956D800061B10D /* LUQ_PosFast2.gif in Resources */,
 				C4CE2D4722956D800061B10D /* speakSlowly.wav in Resources */,
@@ -3521,6 +3539,7 @@
 				C42F41841FF90E2B003BE489 /* Popover.swift in Sources */,
 				C42D0C6021F4F3F500A221CC /* FAST_ImagePop.swift in Sources */,
 				C472EF1520027E6C00501217 /* VentilatorOptimizationMain.swift in Sources */,
+				C4986FB422A2FC1400745EFC /* CRRT-MainVC.swift in Sources */,
 				C4D709E220FC2D0E00593760 /* UIButton Extension Animation.swift in Sources */,
 				C4290B5620F8CE6A0067A828 /* AppStoreReview.swift in Sources */,
 				C4C25F141FF9099600C5CD42 /* Swift+Gif.swift in Sources */,
@@ -3691,6 +3710,7 @@
 				C4CE2C1722956D800061B10D /* OBTextDescription.swift in Sources */,
 				C4CE2C1822956D800061B10D /* PredictorsDifficultAirway.swift in Sources */,
 				C4CE2C1922956D800061B10D /* IdealBWDataView.swift in Sources */,
+				C4986FB522A2FC1400745EFC /* CRRT-MainVC.swift in Sources */,
 				C4CE2C1A22956D800061B10D /* IABPVideoPlayer.swift in Sources */,
 				C4CE2C1B22956D800061B10D /* Hemodynamic_Information.swift in Sources */,
 				C4CE2C1C22956D800061B10D /* RoundUIView Extension.swift in Sources */,
