@@ -85,7 +85,7 @@ class DripsList: UITableViewController {
         
         let dateFormatter = DateFormatter()
         
-        dateFormatter.dateFormat = "h:mm a  E MMM d"
+        dateFormatter.dateFormat = "E MMM d  |  h:mm a"
         
         let todaysDate = dateFormatter.string(from: date)
         

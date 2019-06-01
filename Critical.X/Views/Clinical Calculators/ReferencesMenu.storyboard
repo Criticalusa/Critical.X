@@ -29,7 +29,7 @@
         <!--References-->
         <scene sceneID="c3D-Us-sp2">
             <objects>
-                <tableViewController storyboardIdentifier="Clinical Calculators1" title="References" id="JS4-bn-pTR" customClass="MedCalulationsTableViewController" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Clinical Calculators1" title="References" id="JS4-bn-pTR" customClass="MedCalulationsTableViewController" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="nrk-LB-Ube">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -515,7 +515,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4f1-am-iz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1537.5" y="-78.16901408450704"/>
+            <point key="canvasLocation" x="-1676" y="-110"/>
         </scene>
         <!--PFRatio-->
         <scene sceneID="sXq-ir-wfz">
@@ -672,7 +672,7 @@
         <!--Clinical Calculator Collection View-->
         <scene sceneID="Uqf-bZ-98X">
             <objects>
-                <viewController storyboardIdentifier="Clinical Calculators" modalPresentationStyle="overCurrentContext" id="OKr-zp-IFJ" customClass="ClinicalCalculator_CollectionView" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Clinical Calculators" modalPresentationStyle="overCurrentContext" id="OKr-zp-IFJ" customClass="ClinicalCalculator_CollectionView" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7b-QG-62l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -720,7 +720,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="lFx-GI-pot" customClass="ClinicalCalc_CollectionCell" customModule="Critical_X" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="lFx-GI-pot" customClass="ClinicalCalc_CollectionCell" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="9" y="0.0" width="302" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -732,7 +732,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
-                                                    <color key="textColor" name="Salmon"/>
+                                                    <color key="textColor" red="0.93699997663497925" green="0.66384062025299251" blue="0.65047597531100698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -749,7 +749,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" name="Midnight"/>
+                                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="subTitle" destination="azm-js-0Dr" id="wJ2-39-Kd5"/>
                                             <outlet property="titleLabel" destination="KWa-uJ-Tfv" id="OeG-fQ-4G5"/>
@@ -787,7 +787,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZB-cX-ykj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318.75" y="-120.4225352112676"/>
+            <point key="canvasLocation" x="-780" y="-111"/>
         </scene>
     </scenes>
     <resources>
@@ -805,12 +805,6 @@
         </namedColor>
         <namedColor name="Dark Liver">
             <color red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Midnight">
-            <color red="0.15000000596046448" green="0.18999999761581421" blue="0.23999999463558197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Salmon">
-            <color red="0.9100000262260437" green="0.55000001192092896" blue="0.56999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

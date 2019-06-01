@@ -400,7 +400,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
         let date : Date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm a  E MMM d"
+        dateFormatter.dateFormat = "E MMM d  |  h:mm a"
         // dateFormatter.dateFormat = "EEEE, MMM d, h:mm a"
 
         let todaysDate = dateFormatter.string(from: date)
@@ -415,8 +415,10 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewWillAppear(_ animated: Bool) {
        
-        animateNavBar()
+    
         
+        animateNavBar()
+        //
         //Establish random colors to call for the navbar to change.
         let randomNavBarColors = [ #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1) , #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1), #colorLiteral(red: 0.2039999962, green: 0.2860000134, blue: 0.3689999878, alpha: 1), #colorLiteral(red: 0.05098039216, green: 0.1019607843, blue: 0.1411764706, alpha: 1), #colorLiteral(red: 0.9358316064, green: 0.3514818549, blue: 0.1909768581, alpha: 1)]
 
@@ -568,7 +570,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
             
             "OB",//  11
             
-            "CRITICAL_Hemodynamcis_Logo_Circle",// 12
+            "CRITICAL_EKG_Logo",// 12
             
             "CRITICAL_RSI_Logo_Circle",// 13
             

@@ -166,7 +166,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fJ2-1p-chC" secondAttribute="bottom" id="02R-Da-mOf"/>
                             <constraint firstItem="0l5-LA-C82" firstAttribute="leading" secondItem="fJ2-1p-chC" secondAttribute="leading" id="89H-jw-JbH"/>
@@ -1041,8 +1041,9 @@
                                                     <color key="textColor" name="Amber"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="CRITICAL_RSI_Logo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="McR-U6-cDZ">
-                                                    <rect key="frame" x="167" y="166" width="60" height="16"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_RSI_Logo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="McR-U6-cDZ">
+                                                    <rect key="frame" x="159" y="122" width="60" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1060,7 +1061,6 @@
                                                 <constraint firstItem="uX9-Jg-dmY" firstAttribute="top" secondItem="hp7-oi-tP2" secondAttribute="top" constant="189" id="KjM-K1-LfF"/>
                                                 <constraint firstItem="uX9-Jg-dmY" firstAttribute="leading" secondItem="hp7-oi-tP2" secondAttribute="leading" id="RdZ-DP-P46"/>
                                                 <constraint firstItem="yGg-Mh-XLJ" firstAttribute="baseline" secondItem="94e-Fa-t51" secondAttribute="baseline" id="SE3-s6-PfH"/>
-                                                <constraint firstItem="JiE-Ge-zHm" firstAttribute="top" secondItem="McR-U6-cDZ" secondAttribute="bottom" constant="153.00000000000045" id="TPO-tX-tLM"/>
                                                 <constraint firstItem="ihZ-eL-IEs" firstAttribute="leading" secondItem="JiE-Ge-zHm" secondAttribute="trailing" constant="25" id="UMx-3J-qhi"/>
                                                 <constraint firstAttribute="trailing" secondItem="ihZ-eL-IEs" secondAttribute="trailing" constant="16" id="VgS-k3-SIK"/>
                                                 <constraint firstItem="kb1-DR-QPW" firstAttribute="trailing" secondItem="uNv-Xf-8u5" secondAttribute="trailing" id="cF7-qN-gL9"/>
@@ -2173,7 +2173,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fh1-oE-8yr"/>
                     </view>
                     <connections>
@@ -2224,7 +2224,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CRITICAL_RSI_Logo_Circle" width="1782" height="1771"/>
+        <image name="CRITICAL_RSI_Logo_Circle" width="1024" height="1024"/>
         <image name="LungsGreen" width="512" height="512"/>
         <image name="settings_Light" width="2000" height="2000"/>
         <namedColor name="Amber">
