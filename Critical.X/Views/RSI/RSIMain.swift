@@ -78,7 +78,7 @@ class RSIMain: UIViewController {
         super.viewWillAppear(true)
         
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.05098039216, green: 0.1019607843, blue: 0.1411764706, alpha: 1)
     
         
         animateNavBar()
@@ -107,11 +107,14 @@ class RSIMain: UIViewController {
     // Animates the rsiSubtitle once the view is loaded.
     func animateRSI() -> Void {
         
+        //gets the name from the initial login and stores it.""
+        //let username = UserDefaults.standard.value(forKey: "name")
+        
         rsiTitle.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 13)
         
         #if CALSTAR
         
-        rsiTitle.animate(text: "CalStar RSI", duration: 1, completion: nil)
+        rsiTitle.animate(text: "CalStar - Rapid Sequence Intubation protocol", duration: 1, completion: nil)
         
         #else
         

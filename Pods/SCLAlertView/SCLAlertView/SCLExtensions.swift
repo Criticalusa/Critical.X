@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Foundation
 extension Int {
     
     func toUIColor() -> UIColor {

@@ -8,14 +8,20 @@
 
 import UIKit
 import SCLAlertView
+import Foundation
 
-class CalStarProtocol_ViewController: UIViewController, UISearchBarDelegate {
+
+
+
+
+
+
+class CalStarProtocol_ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate{
    
 
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-
     var resuseID = "cellId"
     
     var protocolArray = [CalProtocols]()
@@ -35,15 +41,20 @@ class CalStarProtocol_ViewController: UIViewController, UISearchBarDelegate {
 
     }
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-
         // Functions
         createSarchbar()
         
         setUpProtocols()
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
     
     /// Keyboard Dismissed after you touch the screen
@@ -80,8 +91,8 @@ class CalStarProtocol_ViewController: UIViewController, UISearchBarDelegate {
     }
 
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
     }
     
     func createSarchbar() {

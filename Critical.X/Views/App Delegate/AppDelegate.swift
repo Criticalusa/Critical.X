@@ -55,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         #endif
         
+        
         // Creating a variable for the viewController
         var vc: UIViewController
         
