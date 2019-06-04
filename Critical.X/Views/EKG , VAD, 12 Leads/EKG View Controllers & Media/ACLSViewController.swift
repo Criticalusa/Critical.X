@@ -88,7 +88,7 @@ class ACLSViewController: UIViewController {
         super.viewWillAppear(true)
         
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1803921569, green: 0.1803921569, blue: 0.1803921569, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1209579483, green: 0.1654035449, blue: 0.1951536536, alpha: 1)
         
         
     }

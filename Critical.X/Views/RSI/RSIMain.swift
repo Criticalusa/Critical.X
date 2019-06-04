@@ -14,7 +14,9 @@ class RSIMain: UIViewController {
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             // Takes the button and makes it into a circle
-            closeButton.layer.cornerRadius = closeButton.frame.size.width / 2
+            /// Rounds the corners 15 pixels of the UIView name. 4 px for a button
+            closeButton.clipsToBounds = true
+            closeButton.layer.cornerRadius = 6
         }
         
     }
@@ -78,7 +80,7 @@ class RSIMain: UIViewController {
         super.viewWillAppear(true)
         
         //change the color of the navigationbar
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.05098039216, green: 0.1019607843, blue: 0.1411764706, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1209579483, green: 0.1654035449, blue: 0.1951536536, alpha: 1)
     
         
         animateNavBar()

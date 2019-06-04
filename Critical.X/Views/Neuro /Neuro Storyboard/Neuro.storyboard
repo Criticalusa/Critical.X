@@ -13,7 +13,7 @@
         <!--Critical -->
         <scene sceneID="Bfz-MH-FUq">
             <objects>
-                <viewController storyboardIdentifier="Neuro" title="Critical " id="1ly-sg-x3g" customClass="HomeMenu" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Neuro" title="Critical " id="1ly-sg-x3g" customClass="HomeMenu" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7VQ-Zf-LwI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2Nu-NE-B5R" customClass="NeuroCollectionViewCell" customModule="Critical_X" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2Nu-NE-B5R" customClass="NeuroCollectionViewCell" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="11.5" y="10" width="297" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -39,20 +39,20 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Increased ICP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-oO-4iE">
                                                     <rect key="frame" x="1" y="8" width="295" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
-                                                    <color key="textColor" name="Burnt Sienna"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" name="Bone"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview of herniation process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HXp-O1-vhh">
-                                                    <rect key="frame" x="1" y="35" width="295" height="23"/>
+                                                    <rect key="frame" x="1" y="40" width="295" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="11"/>
+                                                    <color key="textColor" name="NeutralGray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" name="Midnight"/>
+                                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="297" height="69"/>
                                         <connections>
                                             <outlet property="neuroCellLabel" destination="ekp-oO-4iE" id="Uir-sQ-wA9"/>
@@ -69,12 +69,16 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="85"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critical Neuro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsE-7a-dp5">
-                                        <rect key="frame" x="8" y="28" width="304" height="41"/>
+                                        <rect key="frame" x="8" y="43" width="304" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="40"/>
-                                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="Critical Red"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_Neuro_Logo1_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="OJl-pB-ZKf">
+                                        <rect key="frame" x="8" y="18" width="36" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -99,7 +103,7 @@
         <!--Cranial Nerves-->
         <scene sceneID="Ufw-PI-00T">
             <objects>
-                <viewController storyboardIdentifier="A" title="Cranial Nerves" id="cTq-hc-baF" customClass="CranialNerveVC" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A" title="Cranial Nerves" id="cTq-hc-baF" customClass="CranialNerveVC" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SBU-S2-qBm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -154,7 +158,7 @@
                                                 <rect key="frame" x="10" y="384" width="302" height="359"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-9N-6ul" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhC-9N-6ul" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                         <rect key="frame" x="2" y="39" width="300" height="285"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <subviews>
@@ -594,7 +598,7 @@ XII: </string>
         <!--GCS-->
         <scene sceneID="enS-Fp-FXn">
             <objects>
-                <viewController storyboardIdentifier="gcsB" title="GCS" id="T0R-Ff-yQv" customClass="GCS" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gcsB" title="GCS" id="T0R-Ff-yQv" customClass="GCS" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P5x-Fd-vp5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -622,7 +626,7 @@ XII: </string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGh-eB-0cX">
                                 <rect key="frame" x="0.0" y="101" width="375" height="849"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nJ-vp-sck" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nJ-vp-sck" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16" y="69" width="343" height="218"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Eye opening" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xk-6z-SOl">
@@ -731,7 +735,7 @@ XII: </string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h23-AI-j43" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h23-AI-j43" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16" y="319" width="343" height="238"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Verbal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMt-zG-u82">
@@ -855,7 +859,7 @@ XII: </string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsM-43-Vm2" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsM-43-Vm2" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16" y="584" width="343" height="272"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Motor Response" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRt-St-qiX">
@@ -1118,7 +1122,7 @@ XII: </string>
                     <viewLayoutGuide key="safeArea" id="BS1-AP-2ZQ"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="490" y="-2273"/>
+            <point key="canvasLocation" x="488.4375" y="-2273.2394366197182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1ha-Hu-uRG">
@@ -1129,7 +1133,7 @@ XII: </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGd-44-2Is">
-                                <rect key="frame" x="12" y="89" width="296" height="479"/>
+                                <rect key="frame" x="12" y="87" width="296" height="481"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1233,7 +1237,7 @@ Motor - Flaccid. </string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-rR-TKE">
-                                <rect key="frame" x="14" y="33" width="290" height="42"/>
+                                <rect key="frame" x="14" y="28" width="290" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Wx3-Hi-C9j"/>
                                 </constraints>
@@ -1259,8 +1263,8 @@ Motor - Flaccid. </string>
                         <constraints>
                             <constraint firstItem="kGd-44-2Is" firstAttribute="leading" secondItem="NNx-jN-nUd" secondAttribute="leading" constant="12" id="2Vl-hW-kRG"/>
                             <constraint firstItem="lbt-rR-TKE" firstAttribute="trailing" secondItem="FuB-2a-HRf" secondAttribute="trailingMargin" id="6qn-rc-nuF"/>
-                            <constraint firstItem="kGd-44-2Is" firstAttribute="top" secondItem="lbt-rR-TKE" secondAttribute="bottom" constant="14" id="EVC-Ut-4ns"/>
-                            <constraint firstItem="lbt-rR-TKE" firstAttribute="top" secondItem="NNx-jN-nUd" secondAttribute="top" constant="13" id="N0Q-R9-YBb"/>
+                            <constraint firstItem="kGd-44-2Is" firstAttribute="top" secondItem="lbt-rR-TKE" secondAttribute="bottom" constant="17" id="EVC-Ut-4ns"/>
+                            <constraint firstItem="lbt-rR-TKE" firstAttribute="top" secondItem="NNx-jN-nUd" secondAttribute="top" constant="8" id="N0Q-R9-YBb"/>
                             <constraint firstItem="lbt-rR-TKE" firstAttribute="leading" secondItem="NNx-jN-nUd" secondAttribute="leading" constant="14" id="W8J-Jw-9yr"/>
                             <constraint firstItem="kGd-44-2Is" firstAttribute="bottom" secondItem="NNx-jN-nUd" secondAttribute="bottom" id="X5c-CL-FoA"/>
                             <constraint firstItem="kGd-44-2Is" firstAttribute="centerX" secondItem="FuB-2a-HRf" secondAttribute="centerX" id="oqo-tD-mRC"/>
@@ -1271,12 +1275,12 @@ Motor - Flaccid. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHz-Uv-zP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="-2475"/>
+            <point key="canvasLocation" x="1179.375" y="-2475"/>
         </scene>
         <!--Stroke Collection Menu-->
         <scene sceneID="hjW-CQ-wai">
             <objects>
-                <viewController storyboardIdentifier="StrokeCollection" id="UiX-fd-hr7" customClass="StrokeCollectionMenu" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StrokeCollection" id="UiX-fd-hr7" customClass="StrokeCollectionMenu" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5Q-40-wZb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -1294,7 +1298,7 @@ Motor - Flaccid. </string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="TTC-mF-aYB" customClass="StrokeCollectionCell" customModule="Critical_X" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="TTC-mF-aYB" customClass="StrokeCollectionCell" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="14.5" y="0.0" width="291" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1302,21 +1306,21 @@ Motor - Flaccid. </string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-P0-KMl">
-                                                    <rect key="frame" x="0.0" y="5" width="291" height="28"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
-                                                    <color key="textColor" name="Midnight"/>
+                                                    <rect key="frame" x="0.0" y="1.5" width="291" height="31.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" name="Bone"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="National Institutes of Health Stroke Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb5-j8-j6M">
                                                     <rect key="frame" x="0.0" y="30" width="291" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="11"/>
+                                                    <color key="textColor" name="NeutralGray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" name="Dark Coral"/>
+                                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="pFV-P0-KMl" firstAttribute="leading" secondItem="TTC-mF-aYB" secondAttribute="leading" id="F65-xd-UNL"/>
                                             <constraint firstAttribute="bottom" secondItem="pFV-P0-KMl" secondAttribute="bottom" constant="30" id="GcE-EZ-TmG"/>
@@ -1341,7 +1345,7 @@ Motor - Flaccid. </string>
                                     <constraint firstAttribute="width" constant="288" id="xga-u4-RSR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" name="Dark Liver"/>
+                                <color key="textColor" name="Critical Red"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRITICAL_Neuro_Logo1_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="4RP-Ur-QYI">
@@ -1531,7 +1535,7 @@ Motor - Flaccid. </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pX-I2-sSM">
-                                <rect key="frame" x="16" y="84" width="288" height="464"/>
+                                <rect key="frame" x="16" y="80" width="288" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1852,7 +1856,7 @@ Cg
                             <constraint firstItem="SGu-X8-Kdn" firstAttribute="trailing" secondItem="RNN-CA-GRL" secondAttribute="trailing" constant="14" id="McJ-6i-ifZ"/>
                             <constraint firstAttribute="bottom" secondItem="9pX-I2-sSM" secondAttribute="bottom" constant="20" symbolic="YES" id="QeN-ta-fFW"/>
                             <constraint firstItem="RNN-CA-GRL" firstAttribute="leading" secondItem="j4M-wL-ghc" secondAttribute="leadingMargin" id="WQ5-59-4bQ"/>
-                            <constraint firstItem="9pX-I2-sSM" firstAttribute="top" secondItem="RNN-CA-GRL" secondAttribute="bottom" constant="22" id="aXa-jo-kpQ"/>
+                            <constraint firstItem="9pX-I2-sSM" firstAttribute="top" secondItem="RNN-CA-GRL" secondAttribute="bottom" constant="18" id="aXa-jo-kpQ"/>
                             <constraint firstItem="9pX-I2-sSM" firstAttribute="trailing" secondItem="j4M-wL-ghc" secondAttribute="trailingMargin" id="df3-qn-CUK"/>
                             <constraint firstItem="RNN-CA-GRL" firstAttribute="leading" secondItem="9pX-I2-sSM" secondAttribute="leading" id="nnY-H2-h2c"/>
                         </constraints>
@@ -1861,7 +1865,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbl-mC-ayt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834" y="-2475"/>
+            <point key="canvasLocation" x="1833.75" y="-2475"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uYO-B1-knR">
@@ -2053,7 +2057,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <!--Stroke-->
         <scene sceneID="vZv-Xc-9na">
             <objects>
-                <viewController storyboardIdentifier="F" id="6Ga-Dr-mf7" customClass="Stroke" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="F" id="6Ga-Dr-mf7" customClass="Stroke" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="ZJb-rI-Q4v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -2067,7 +2071,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-eH-qJh">
-                                                <rect key="frame" x="28" y="50" width="264" height="69"/>
+                                                <rect key="frame" x="28" y="40" width="264" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <attributedString key="attributedText">
@@ -2185,6 +2189,10 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     <segue destination="fcD-4h-4Qf" kind="showDetail" identifier="epi" id="8Az-Hd-7Ii"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_Neuro_Logo1_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="FtF-vf-wFm">
+                                                <rect key="frame" x="142" y="96" width="36" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                     </view>
                                 </subviews>
@@ -2199,12 +2207,12 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5a5-Sm-uuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488" y="-2475"/>
+            <point key="canvasLocation" x="2486.25" y="-2475"/>
         </scene>
         <!--Delegate-->
         <scene sceneID="QB3-cD-evb">
             <objects>
-                <viewController storyboardIdentifier="G" title="CT Brain" id="nY8-wm-mcl" customClass="CTScanView" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="G" title="CT Brain" id="nY8-wm-mcl" customClass="CTScanView" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XIE-ct-KWY"/>
                         <viewControllerLayoutGuide type="bottom" id="ryj-v8-6mj"/>
@@ -2242,7 +2250,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                     <constraint firstAttribute="width" secondItem="h09-UK-HKf" secondAttribute="height" multiplier="1:1" id="uBR-m8-aOK"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5I-8A-KMZ" customClass="HorizontalDial" customModule="Critical_X" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5I-8A-KMZ" customClass="HorizontalDial" customModule="Critical_CalStar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="320" width="320" height="60"/>
                                 <color key="backgroundColor" red="0.23484848480000001" green="0.23484848480000001" blue="0.23484848480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2469,7 +2477,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <!--RACE-->
         <scene sceneID="Xxr-yI-DeB">
             <objects>
-                <viewController storyboardIdentifier="Race" title="RACE" id="Wyv-oI-ZTT" customClass="RaceStrokeEval" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Race" title="RACE" id="Wyv-oI-ZTT" customClass="RaceStrokeEval" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B4h-fo-w9q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2500,7 +2508,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIq-xx-HIF">
                                 <rect key="frame" x="0.0" y="165.5" width="375" height="1485.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5P-So-097" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5P-So-097" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="19" width="342" height="157"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facial palsy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3u-88-EAJ">
@@ -2597,7 +2605,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5U-dd-pAZ" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5U-dd-pAZ" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="199" width="342" height="154"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arm motor impairment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB8-XC-2Qt">
@@ -2693,7 +2701,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZf-Mk-dzF" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZf-Mk-dzF" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="374" width="342" height="154"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leg motor impairment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1n-WY-9LT">
@@ -2799,7 +2807,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-rl-1Y6">
                                         <rect key="frame" x="16.5" y="549" width="345" height="129"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-uk-wfM" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-uk-wfM" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="165" height="129"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR7-eY-8s1">
@@ -2878,7 +2886,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhP-nv-gmF" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhP-nv-gmF" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="165" height="129"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hemiparesis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZv-sy-sy7">
@@ -2960,7 +2968,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                             <constraint firstItem="nhP-nv-gmF" firstAttribute="leading" secondItem="GjH-rl-1Y6" secondAttribute="leading" constant="180" id="2xd-7e-VWH"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAN-lx-pkG" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAN-lx-pkG" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="705" width="342" height="233"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aphasia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kx-ly-JtW">
@@ -3008,7 +3016,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qri-Tl-rFo" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qri-Tl-rFo" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="20" y="955" width="341.5" height="234"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h86-hR-ygy">
@@ -3370,7 +3378,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <!--Cincinatti-->
         <scene sceneID="lKr-sd-wrb">
             <objects>
-                <viewController storyboardIdentifier="Cinci" id="QHL-zX-HWl" customClass="Cincinatti" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cinci" id="QHL-zX-HWl" customClass="Cincinatti" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgs-nQ-DW3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3407,7 +3415,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ka-92-8Tw">
                                 <rect key="frame" x="0.0" y="86.5" width="320" height="481.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-oq-kVl" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-oq-kVl" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16" y="69" width="288" height="192"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Facial Droop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDE-BM-97l">
@@ -3497,7 +3505,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-ga-Fio" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-ga-Fio" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16" y="279" width="288" height="206"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="     Arm Drift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amc-NK-0Gc">
@@ -3597,7 +3605,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0u8-SJ-rpf" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0u8-SJ-rpf" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                         <rect key="frame" x="16" y="512" width="288" height="205"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Speech" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF5-DI-ehd">
@@ -3766,7 +3774,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <!--Stroke Detail-->
         <scene sceneID="Huc-oQ-m5j">
             <objects>
-                <viewController storyboardIdentifier="StrokeDetail" id="fcD-4h-4Qf" customClass="StrokeDetail" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StrokeDetail" id="fcD-4h-4Qf" customClass="StrokeDetail" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="64r-Fl-oWo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3812,7 +3820,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     <constraint firstAttribute="width" constant="195" id="bhg-pl-eHf"/>
                                                 </constraints>
                                             </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCP-Yh-504" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCP-Yh-504" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="384" width="293" height="92"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="250" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU9-Ox-yqC">
@@ -3921,7 +3929,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <!--NIH -->
         <scene sceneID="eCg-AK-ppR">
             <objects>
-                <viewController storyboardIdentifier="NIH" title="NIH " id="93O-AR-JgK" customClass="NIHStrokeScale" customModule="Critical_X" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NIH" title="NIH " id="93O-AR-JgK" customClass="NIHStrokeScale" customModule="Critical_CalStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rvm-So-A9i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="3550"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3956,7 +3964,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb2-h9-DSg" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="3" width="320" height="3423"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvF-MF-S1h" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvF-MF-S1h" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="66" width="288" height="218"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1A: Level Of Consciousness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCM-Lf-dQY">
@@ -4086,7 +4094,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoD-VX-rmM" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoD-VX-rmM" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="306" width="288" height="172"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1B: Asks month &amp; age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INk-OS-lat">
@@ -4197,7 +4205,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZK-Fx-lgy" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZK-Fx-lgy" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="511" width="288" height="167"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1C: Blinks eyes &amp; squezes hands" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-Hz-3jM">
@@ -4318,7 +4326,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                 <color key="textColor" name="Midnight"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-wU-Sle" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-wU-Sle" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="887" width="288" height="193"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3: Visual Fields: See objects in 4 quadrants " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzk-Vg-4aR">
@@ -4452,7 +4460,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-lD-wIq" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-lD-wIq" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="1098" width="288" height="193"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4: Facial palsy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmG-Mj-fZG">
@@ -4586,7 +4594,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-zk-FYb" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-zk-FYb" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="698" width="288" height="167"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2: Horizontal Eye Movement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLL-Jb-RSU">
@@ -4697,7 +4705,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4BL-RB-Isf" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4BL-RB-Isf" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="1312" width="288" height="273"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5A: Left Arm: Hold arm straight out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZr-EB-2s4">
@@ -4877,7 +4885,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-1X-m4s" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-1X-m4s" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="1599" width="288" height="273"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5B: Right Arm: Hold arm straight out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bCN-pe-bun">
@@ -5057,7 +5065,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1E-A1-HOe" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1E-A1-HOe" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="1885" width="288" height="273"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6A: Left Leg: Keep leg off the bed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-Sd-gnn">
@@ -5237,7 +5245,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-Fr-fWN" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-Fr-fWN" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="14" y="2172" width="288" height="273"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6B: Right Leg: Keep leg off the bed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-bL-4ft">
@@ -5417,7 +5425,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgO-fC-hJt" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgO-fC-hJt" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="2463" width="288" height="163"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7: Limb Ataxia - Finger to nose, Heel-knee-shin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LfF-zJ-9Pv">
@@ -5528,7 +5536,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ms-A5-suj" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ms-A5-suj" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="2642" width="288" height="163"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8: Sensation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6N-im-06J">
@@ -5639,7 +5647,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-ap-O7w" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUJ-ap-O7w" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="2818" width="288" height="201"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9: Language / Aphasia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iao-Kv-6UL">
@@ -5773,7 +5781,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eV-ZX-ml2" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eV-ZX-ml2" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="3035" width="288" height="205"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10: Dysarthria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-SC-fKd">
@@ -5907,7 +5915,7 @@ The patient does not respond to painful stimuli at all. The patient also may be 
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-Pb-Cpl" customClass="CardView" customModule="Critical_X" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-Pb-Cpl" customClass="CardView" customModule="Critical_CalStar" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="3254" width="288" height="169"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11: Neglect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1l-db-jkZ">
@@ -6221,15 +6229,12 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         </scene>
     </scenes>
     <resources>
-        <image name="CRITICAL_Neuro_Logo1_Circle" width="1536" height="1536"/>
+        <image name="CRITICAL_Neuro_Logo1_Circle" width="1782" height="1771"/>
         <image name="CT1" width="509" height="505"/>
         <image name="CranialNerveCartoon" width="801" height="840"/>
         <image name="Subdural" width="527" height="512"/>
         <namedColor name="Bone">
             <color red="0.92941176470588238" green="0.88235294117647056" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Burnt Sienna">
-            <color red="0.92199999094009399" green="0.46299999952316284" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Carrot">
             <color red="0.90200001001358032" green="0.49399998784065247" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6246,9 +6251,6 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         <namedColor name="Critical Red">
             <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Dark Coral">
-            <color red="0.81999999284744263" green="0.34999999403953552" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Dark Gray">
             <color red="0.40000000596046448" green="0.42699998617172241" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -6263,6 +6265,9 @@ The patient does not respond to painful stimuli at all. The patient also may be 
         </namedColor>
         <namedColor name="Nephritis">
             <color red="0.15299999713897705" green="0.68199998140335083" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NeutralGray">
+            <color red="0.55699998140335083" green="0.5690000057220459" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Niagara">
             <color red="0.32899999618530273" green="0.52899998426437378" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

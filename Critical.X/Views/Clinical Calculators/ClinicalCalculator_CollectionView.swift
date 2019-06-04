@@ -110,7 +110,7 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        clinicalCalculatorSubTitile.animate(text: "CLINICAL REFERENCES & CALCULATORS", duration: 1, completion: nil)
+        clinicalCalculatorSubTitile.animate(text: "Clinical References & Calculators", duration: 1, completion: nil)
         
         // Set the navigatin title
         self.navigationItem.title = "Clinical"
@@ -118,21 +118,20 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
         
         
         medCalcTitle = [
-            
             "ABG Calculator", // 0
             
             "Anion Gap Calculator",  //1
             
             "Bicarbonate Deficit",   //2
             
-            "Check My drip",         //3
+            "Check My Drip",         //3
             
             "CRRT Dosing Calculator", //4
             
             
             
             
-            "FENa",                  //4
+            "FeNa",                  //4
             
             "Free Water Deficit",    //5
             
@@ -169,65 +168,66 @@ class ClinicalCalculator_CollectionView: UIViewController, UICollectionViewDeleg
             "Ventilator Optimization",// 18
             
             "Winters Formula"       //19
-            ]
+        ]
         
         
         
         
         medCalcSubtitle = [
             
-            "INTERPRET ARTERIAL BLOOD GASES", //0
+            "Interpret arterial blood gases", //0
             
-            "CALCULATES THE ANION GAP",//1
+            "Calculates the Anion Gap",//1
             
-            "CALCULATES THE DEFICIT OF BICARBONATE",//2
+            "Calculates the deficit of bicarbonate",//2
             
-            "CONFIRM IV FLOW RATES",//3
+            "Confirm IV flow rates",//3
             
-            "CALCULATE DESIRED DOSE OF DIALYSATE IN CRRT", //4
-            
-            
-            
-            "CALCULATES THE FRACTIONAL EXCRETION OF NA",//5
-            
-            "FREE WATER DEFICIT CALC",// 6
-            
-            "CALCULATES BASED ON IDEAL BODY WEIGHT",// 7
-            
-            "CALCULATES IV FLOW RATE",   //8
-            
-            "LOX CALCULATOR",        //9
+            "Calculate desired dose of dialysate in CRRT", //4
             
             
             
-            "MEDICAL SPANISH & AUDIO",       // 10
+            "Calculates the fractional excretion of Na",//5
             
-            "MEAN ARTERIAL PRESSURE & CEREBRAL PERFUSION PRESSURE",// 11
+            "Calculates deficit of free water",// 6
             
-            "CALCULATES THE FLOW TIME REMAINING",//10
+            "Calculation based on ideal body weight",// 7
             
-            "FLUID REPLACEMENT CALCULATOR POST BURNS",//11
+            "Calculates IV flow rate",   //8
             
-            "PA02/FI02 RATIO",//12
+            "Lox calculator",        //9
             
             
             
-            "CALCULATES THE EXPECTED DUE DATE",//13
+            "Medical Spanish & Sudio",       // 10
             
-            "SHOCK INDEX",           //14
+            "Mean arterial pressure & cerebral perfusion pressure",// 11
             
-            "INITIAL BOLUS AND DRIP ",//15
+            "Calculates the flow time remaining",//10
             
-            "CALCULATES THE U/O IN ML/KG/HR",//16
+            "Fluid replacement calculator post burns",//11
             
-            "OPTIMIZE VENTILATOR SETTINGS",
+            "Pa02/fi02 ratio",//12
             
-            "EXPECTED C02 COMPENSATION" //17
-
+            
+            
+            "Calculates the expected due date",//13
+            
+            "Shock index",           //14
+            
+            "Initial bolus and drip ",//15
+            
+            "Calculates the U/O in ml/kg/hr",//16
+            
+            "Optimize ventilator settings",
+            
+            "Expected C02 compensation" //17
+            
             
             
         ]
         
+
         
         
         StoryboardID = [

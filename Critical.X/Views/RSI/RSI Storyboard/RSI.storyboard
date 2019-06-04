@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-1p-chC">
+                            <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ2-1p-chC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HPa-JZ-FZR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -45,7 +45,7 @@
                                     </fragment>
                                     <fragment content="Kg's">
                                         <attributes>
-                                            <color key="NSColor" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.96323853731155396" green="0.97654396295547485" blue="0.72152644395828247" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="11" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-gE-gJc">
-                                <rect key="frame" x="82" y="283" width="210" height="37"/>
+                                <rect key="frame" x="110" y="283" width="155" height="37"/>
                                 <color key="backgroundColor" name="Critical Red"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="plS-gQ-Ug3"/>
@@ -78,7 +78,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="yPV-OC-RF0"/>
                                 </constraints>
-                                <color key="textColor" name="Critical Red"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="45"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
@@ -133,7 +133,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-NB-6wI" customClass="AKLabel" customModule="AKLabel">
                                         <rect key="frame" x="16" y="103" width="351" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
-                                        <color key="textColor" name="Amber"/>
+                                        <color key="textColor" name="Pale Yellow"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -152,12 +152,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ty-jS-tEb">
-                                <rect key="frame" x="317" y="37" width="30" height="30"/>
+                                <rect key="frame" x="312" y="42" width="51" height="21"/>
                                 <color key="backgroundColor" name="Critical Red"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="WEE-tw-gcc"/>
+                                    <constraint firstAttribute="height" constant="21" id="DhE-un-BDF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -166,34 +166,34 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10832016915082932" green="0.16542214155197144" blue="0.28628778457641602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fJ2-1p-chC" secondAttribute="bottom" id="02R-Da-mOf"/>
+                            <constraint firstItem="7ty-jS-tEb" firstAttribute="leading" secondItem="kS6-tg-GhY" secondAttribute="leading" constant="312" id="7vF-Xc-3Hv"/>
                             <constraint firstItem="0l5-LA-C82" firstAttribute="leading" secondItem="fJ2-1p-chC" secondAttribute="leading" id="89H-jw-JbH"/>
                             <constraint firstItem="fJ2-1p-chC" firstAttribute="leading" secondItem="kS6-tg-GhY" secondAttribute="leading" id="8ZF-gC-nst"/>
                             <constraint firstItem="fJ2-1p-chC" firstAttribute="trailing" secondItem="kS6-tg-GhY" secondAttribute="trailing" id="9h8-ui-L79"/>
                             <constraint firstItem="0l5-LA-C82" firstAttribute="top" secondItem="IT2-6B-cc1" secondAttribute="topMargin" constant="-3" id="At8-0i-IRD"/>
                             <constraint firstItem="TTl-vG-Mxw" firstAttribute="top" secondItem="GY9-i7-u5v" secondAttribute="bottom" constant="8" symbolic="YES" id="EfC-Y6-6DL"/>
                             <constraint firstItem="TTl-vG-Mxw" firstAttribute="leading" secondItem="3yO-S5-GjT" secondAttribute="leading" id="GYU-kL-E4A"/>
-                            <constraint firstItem="7ty-jS-tEb" firstAttribute="top" secondItem="kS6-tg-GhY" secondAttribute="top" constant="17" id="HAd-EX-iLv"/>
                             <constraint firstItem="R7g-gE-gJc" firstAttribute="top" secondItem="O0Y-Q0-bhj" secondAttribute="bottom" constant="93" id="J7Q-cT-0uY"/>
-                            <constraint firstItem="R7g-gE-gJc" firstAttribute="leading" secondItem="O0Y-Q0-bhj" secondAttribute="leading" constant="-20" id="N6p-wA-yQk"/>
+                            <constraint firstItem="R7g-gE-gJc" firstAttribute="leading" secondItem="O0Y-Q0-bhj" secondAttribute="leading" constant="8" id="N6p-wA-yQk"/>
                             <constraint firstItem="0l5-LA-C82" firstAttribute="trailing" secondItem="fJ2-1p-chC" secondAttribute="trailing" id="NZC-fm-ZWb"/>
                             <constraint firstItem="kS6-tg-GhY" firstAttribute="bottom" secondItem="R7g-gE-gJc" secondAttribute="bottom" constant="347" id="Nks-I1-NZR"/>
                             <constraint firstItem="GY9-i7-u5v" firstAttribute="centerX" secondItem="O0Y-Q0-bhj" secondAttribute="centerX" id="NqS-xh-GEY"/>
-                            <constraint firstItem="kS6-tg-GhY" firstAttribute="trailing" secondItem="7ty-jS-tEb" secondAttribute="trailing" constant="28" id="Ogs-HJ-Xvz"/>
                             <constraint firstItem="kS6-tg-GhY" firstAttribute="trailing" secondItem="O0Y-Q0-bhj" secondAttribute="trailing" constant="102" id="Ouf-Ny-O1U"/>
                             <constraint firstItem="O0Y-Q0-bhj" firstAttribute="top" secondItem="kS6-tg-GhY" secondAttribute="top" constant="82" id="Vjt-vS-EwZ"/>
                             <constraint firstItem="kS6-tg-GhY" firstAttribute="trailing" secondItem="3yO-S5-GjT" secondAttribute="trailing" constant="16" id="X04-z0-04m"/>
                             <constraint firstItem="TTl-vG-Mxw" firstAttribute="trailing" secondItem="3yO-S5-GjT" secondAttribute="trailing" id="fKK-sD-mYv"/>
                             <constraint firstItem="fJ2-1p-chC" firstAttribute="top" secondItem="IT2-6B-cc1" secondAttribute="top" id="hSN-K9-6SW"/>
                             <constraint firstItem="GY9-i7-u5v" firstAttribute="leading" secondItem="kS6-tg-GhY" secondAttribute="leading" constant="135" id="iZ5-D3-e8v"/>
-                            <constraint firstItem="7ty-jS-tEb" firstAttribute="leading" secondItem="kS6-tg-GhY" secondAttribute="leading" constant="317" id="plI-sU-Ock"/>
                             <constraint firstItem="GY9-i7-u5v" firstAttribute="top" secondItem="3yO-S5-GjT" secondAttribute="bottom" constant="170" id="qA8-xj-ule"/>
+                            <constraint firstItem="7ty-jS-tEb" firstAttribute="top" secondItem="kS6-tg-GhY" secondAttribute="top" constant="22" id="qyE-WC-cGO"/>
                             <constraint firstItem="TTl-vG-Mxw" firstAttribute="bottom" secondItem="O0Y-Q0-bhj" secondAttribute="bottom" constant="75" id="rTY-tI-yyl"/>
                             <constraint firstItem="3yO-S5-GjT" firstAttribute="leading" secondItem="kS6-tg-GhY" secondAttribute="leading" constant="16" id="sPM-lf-N02"/>
+                            <constraint firstItem="kS6-tg-GhY" firstAttribute="trailing" secondItem="7ty-jS-tEb" secondAttribute="trailing" constant="12" id="t6i-aI-Ace"/>
                             <constraint firstItem="GY9-i7-u5v" firstAttribute="centerX" secondItem="TTl-vG-Mxw" secondAttribute="centerX" id="tdV-7E-xEF"/>
-                            <constraint firstItem="R7g-gE-gJc" firstAttribute="trailing" secondItem="O0Y-Q0-bhj" secondAttribute="trailing" constant="19" id="yu0-Sv-cbr"/>
+                            <constraint firstItem="R7g-gE-gJc" firstAttribute="trailing" secondItem="O0Y-Q0-bhj" secondAttribute="trailing" constant="-8" id="yu0-Sv-cbr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kS6-tg-GhY"/>
                     </view>
@@ -216,7 +216,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvx-06-I3g">
+                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvx-06-I3g">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oKT-hD-sgH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
@@ -673,7 +673,7 @@
                                                                 <constraint firstAttribute="height" constant="18" id="Jyl-fm-tHx"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.6-1.2 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-Km-3fj">
@@ -683,13 +683,13 @@
                                                                 <constraint firstAttribute="height" constant="18" id="J7Q-zY-wl6"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n7D-GJ-EPd">
                                                             <rect key="frame" x="254" y="884" width="107" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.6-1.2 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TCP-HV-ZZg">
@@ -699,58 +699,58 @@
                                                                 <constraint firstAttribute="height" constant="18" id="zgq-Qm-0ds"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="11"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AuH-2r-Kiv">
                                                             <rect key="frame" x="260.5" y="755" width="95.5" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="11"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1-1.5 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BaE-C5-Lkj">
                                                             <rect key="frame" x="134" y="271" width="108" height="18"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Defasciculating Dose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UwB-gA-Nwz">
                                                             <rect key="frame" x="9" y="271" width="96" height="18"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Defasciculating Dose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="upf-RV-8Sb">
                                                             <rect key="frame" x="266" y="271" width="96" height="18"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d1j-Nf-0dY">
                                                             <rect key="frame" x="261.5" y="440" width="86" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.3 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oNq-qf-ZIw">
                                                             <rect key="frame" x="28" y="440" width="96" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.1- 0.2 mg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tgb-k4-Age">
                                                             <rect key="frame" x="27" y="580" width="100" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-2 mcg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gzj-qv-WzQ">
                                                             <rect key="frame" x="258.5" y="580" width="97.5" height="18"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" name="Amber"/>
+                                                            <color key="textColor" name="Pale Yellow"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -1028,7 +1028,7 @@
                                                         <constraint firstAttribute="height" constant="18" id="lqo-Ep-XlQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                    <color key="textColor" name="Amber"/>
+                                                    <color key="textColor" name="Pale Yellow"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-2 mcg/kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihZ-eL-IEs">
@@ -1038,7 +1038,7 @@
                                                         <constraint firstAttribute="height" constant="18" id="gtf-Iy-Mnp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
-                                                    <color key="textColor" name="Amber"/>
+                                                    <color key="textColor" name="Pale Yellow"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CRITICAL_RSI_Logo_Circle" translatesAutoresizingMaskIntoConstraints="NO" id="McR-U6-cDZ">
@@ -1046,7 +1046,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Pg3-Fv-B2h" firstAttribute="firstBaseline" secondItem="yGg-Mh-XLJ" secondAttribute="firstBaseline" id="0U7-Uh-jHX"/>
                                                 <constraint firstItem="yGg-Mh-XLJ" firstAttribute="firstBaseline" secondItem="94e-Fa-t51" secondAttribute="firstBaseline" id="17A-PF-Jtr"/>
@@ -1085,6 +1085,7 @@
                                         <constraint firstAttribute="bottom" secondItem="hp7-oi-tP2" secondAttribute="bottom" constant="-2" id="jFr-TR-fyo"/>
                                     </constraints>
                                 </view>
+                                <color key="backgroundColor" name="WetAsphalt"/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
@@ -1487,7 +1488,7 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1083201692" green="0.16542214159999999" blue="0.28628778459999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PYs-2J-6tD" secondAttribute="trailing" id="0UW-4x-l6G"/>
                             <constraint firstAttribute="bottom" secondItem="PYs-2J-6tD" secondAttribute="bottom" id="Rq5-oK-37h"/>
@@ -1966,7 +1967,7 @@
                                 <rect key="frame" x="164" y="114" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.1" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yal-A0-cfI">
@@ -2001,35 +2002,35 @@
                                 <rect key="frame" x="165" y="153" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mcg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIn-37-ZVB">
                                 <rect key="frame" x="163" y="190" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVl-T6-Ksz">
                                 <rect key="frame" x="163" y="233" width="52" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1p-bM-tjI">
                                 <rect key="frame" x="165" y="276" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rX-DY-ne0">
                                 <rect key="frame" x="163" y="317" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CbU-J9-VW0">
@@ -2043,56 +2044,56 @@
                                 <rect key="frame" x="163" y="420" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP8-Up-q3h">
                                 <rect key="frame" x="163" y="462" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gy-n5-0fm">
                                 <rect key="frame" x="165" y="505" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtF-dc-Bqw">
                                 <rect key="frame" x="163" y="546" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-bA-2HU">
                                 <rect key="frame" x="165" y="656" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-I7-zEI">
                                 <rect key="frame" x="165" y="696" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZv-E0-a7S">
                                 <rect key="frame" x="167" y="734" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/mL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6H-cF-RQX">
                                 <rect key="frame" x="165" y="775" width="50" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="Amethyst"/>
+                                <color key="textColor" name="Pale Yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7M-9Q-F4S">
@@ -2173,7 +2174,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.048727708110920247" green="0.1019607843" blue="0.15914973159509199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fh1-oE-8yr"/>
                     </view>
                     <connections>
@@ -2224,15 +2225,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CRITICAL_RSI_Logo_Circle" width="1024" height="1024"/>
+        <image name="CRITICAL_RSI_Logo_Circle" width="1782" height="1771"/>
         <image name="LungsGreen" width="512" height="512"/>
         <image name="settings_Light" width="2000" height="2000"/>
-        <namedColor name="Amber">
-            <color red="1" green="0.75700002908706665" blue="0.027000000700354576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Amethyst">
-            <color red="0.60799998044967651" green="0.34900000691413879" blue="0.71399998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Cello">
             <color red="0.23000000417232513" green="0.30000001192092896" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -2245,8 +2240,14 @@
         <namedColor name="Critical Red">
             <color red="0.81568627450980391" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Pale Yellow">
+            <color red="0.98431372549019602" green="1" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Silver">
             <color red="0.74099999666213989" green="0.76499998569488525" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WetAsphalt">
+            <color red="0.20399999618530273" green="0.28600001335144043" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>

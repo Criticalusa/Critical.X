@@ -30,6 +30,9 @@ class MenMenuCollectionViewCell: UICollectionViewCell {
         self.mainMenu_CellImage.layer.masksToBounds = true
     }
     
+    
+    //MARK: - Layout subviews
+
     override func layoutSubviews() {
         super.layoutSubviews()
         

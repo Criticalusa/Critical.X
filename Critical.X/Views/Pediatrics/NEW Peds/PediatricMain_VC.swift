@@ -454,7 +454,6 @@ extension PediatricMain_VC {
         //let SBID = OBstoryBoardID [indexPath.item]
         
         
-        
         let storyboard = UIStoryboard(name: "Critical Pediatrics New", bundle: nil) // Has to reflect the storyBoard they are on.
         
         if let vc = storyboard.instantiateViewController(withIdentifier: "A") as? Pediatric_DetailVC {

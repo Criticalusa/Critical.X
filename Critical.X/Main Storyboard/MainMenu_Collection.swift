@@ -199,7 +199,8 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
                 print("Name was entered section 5-12")
             }
             
-            print("Today is \(day)")
+            print("Today is \(day)")   
+
             
         
         // If the time is between Noon and 6pm
@@ -471,7 +472,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         let about = "About Critical v.\(String(describing: build!))"
         let attributedText = NSMutableAttributedString.getAttributedString(fromString: about)
         
-
+        //MARK: Main Titles
         mainMenu =
             ["About Critical v.\(String(describing: build!))", // 0
             
@@ -507,6 +508,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
          
             "Clinical References"] // 16
         
+        //MARK: Detail Subtitles
         mainMenuDetail =
             ["Rate Us ⭐️, Email 📩, Dream Forum",// 0
             
@@ -542,9 +544,9 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
         
             "Review The Clinical Evidence" ]
         
-        // Images and associated Indexpaths
-        //  "formula",// 3
-        // "Pharmacology",// 4
+        
+        //MARK: Images and associated Indexpaths
+       
         cellImages =
             ["Critical_Logo_OutlineNavy",// 0 
             
@@ -620,15 +622,17 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     }
     
 
-    
+    //MARK: - Delegates and DataSources
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
+    //MARK: - Num of row in section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return mainMenu.count
     }
     
+    //MARK: - Cell for items at index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MenMenuCollectionViewCell
@@ -641,7 +645,7 @@ class MainMenu_Collection: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     
-    
+    //MARK: - DidSelectItem
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         print(storyBoardID [indexPath.item])

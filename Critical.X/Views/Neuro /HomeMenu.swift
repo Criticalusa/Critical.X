@@ -56,6 +56,7 @@ class HomeMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NeuroCollectionViewCell
         
         // Populate the cell labels
