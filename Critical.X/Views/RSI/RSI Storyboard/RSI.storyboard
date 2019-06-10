@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -65,7 +66,6 @@
                                 </state>
                                 <connections>
                                     <action selector="calcualteGuard:" destination="pdy-75-K71" eventType="touchUpInside" id="DD2-lf-IeA"/>
-                                    <action selector="sendEmailFeedback:" destination="zk3-L2-ETO" eventType="touchUpInside" id="DJj-F8-D91"/>
                                     <segue destination="zk3-L2-ETO" kind="presentation" identifier="RSI" id="OZ9-tF-HqJ">
                                         <segue key="commit" inheritsFrom="parent" id="o7f-tb-Jvl"/>
                                         <segue key="preview" inheritsFrom="commit" id="syz-Qb-EfG"/>
@@ -206,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aN-N4-2yr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2396" y="53.523238380809602"/>
+            <point key="canvasLocation" x="2383" y="98"/>
         </scene>
         <!--RSI Detail Screen-->
         <scene sceneID="Xan-VF-cO0">
@@ -317,12 +317,12 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Induction Agents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5Z-En-JTm">
                                                             <rect key="frame" x="0.0" y="305" width="378" height="45"/>
-                                                            <color key="backgroundColor" name="Cool Mint"/>
+                                                            <color key="backgroundColor" name="Pale Yellow"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="45" id="k80-fr-eR2"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="27"/>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" red="0.05205558985" green="0.10104579480000001" blue="0.14118179680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neuromuscular Blockades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac2-wb-UZr">
@@ -1668,7 +1668,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Induction Agents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71K-0n-Fbg">
                                 <rect key="frame" x="0.0" y="351" width="377" height="45"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Cool Mint"/>
+                                <color key="backgroundColor" red="0.96323853729999998" green="0.97654396300000001" blue="0.72152644399999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="29"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
