@@ -107,6 +107,7 @@ class NIHStrokeScale: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var neglect_Mild: UIButton!
     @IBOutlet weak var neglect_Profound: UIButton!
 
+    // Small window view ! 
     @IBOutlet weak var scoreView: UIView! {
         didSet {
             // Takes the view and makes it into a circle
@@ -161,6 +162,18 @@ class NIHStrokeScale: UIViewController, UIScrollViewDelegate {
        
         // Set a variable to the contentOffset position Y
         let scrollPosition = self.NIHScrollView.contentOffset.y
+        
+        // Change the color of the backround depending where we are scrolling.
+        switch scrollPosition {
+        
+        case 0...510:
+           
+            scoreView.backgroundColor =  #colorLiteral(red: 0.03563400358, green: 0.1026722118, blue: 0.1450521946, alpha: 1)
+        
+        default:
+            scoreView.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.2549019608, blue: 0.2549019608, alpha: 1)
+
+        }
        
         //Conditional when the scrollView starts to scroll past a certain Y value
         if (scrollPosition >= 25) {
