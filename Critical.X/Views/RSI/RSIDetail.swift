@@ -165,6 +165,8 @@ class RSIDetail: UIViewController {
             
             //UserDefaults.standard.object(forKey:"parameters") as! NSMutableDictionary
 
+            UserDefaults.standard.synchronize()
+
         }
         else {
             
@@ -230,7 +232,7 @@ class RSIDetail: UIViewController {
         print("Dictionary Values")
         
         for (key,value) in Parameters {
-            
+
             print("\(key) : \(value)")
         }
         

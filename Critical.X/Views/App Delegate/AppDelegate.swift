@@ -8,6 +8,7 @@
 
 import UIKit
 import Siren
+import IQKeyboardManagerSwift
 
 extension UIApplication {
     
@@ -74,6 +75,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.enable = true
         
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

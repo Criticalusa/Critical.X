@@ -22,6 +22,7 @@ pod 'Siren'
 pod 'Firebase/Analytics'
 pod 'Firebase/RemoteConfig'
 pod 'TTSegmentedControl'
+pod 'IQKeyboardManagerSwift'
 
 end
 

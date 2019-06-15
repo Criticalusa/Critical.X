@@ -8,6 +8,23 @@
 
 import UIKit
 
+
+// Put this piece of code anywhere you like
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissTheKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissTheKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+
+
+
 class CriticalDrips: UIViewController, UITextFieldDelegate {
     
     
@@ -74,6 +91,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+   
     
     // Hide the keyboard when the return key pressed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -98,6 +116,8 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         animateViewMoving(up: false, moveValue: 250)
+        
+        doneButtonAction()
         
         if textField.text != "" {
             Calculate()
