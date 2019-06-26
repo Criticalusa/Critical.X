@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 
 // Put this piece of code anywhere you like
@@ -33,7 +34,9 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dripView: UIView!
     @IBOutlet var lbl_Title: UILabel!
     @IBOutlet var lbl_SubTitle: UILabel!
-    
+    @IBOutlet weak var arrowAnimation: LOTAnimationView!
+    @IBOutlet weak var redDotAnimate: LOTAnimationView!
+
     @IBOutlet var lblDoseRange: UILabel!
     @IBOutlet var lblYields: UILabel!
     @IBOutlet var lblUnit: UILabel!
@@ -54,7 +57,8 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
     @IBOutlet var btn_AdversEffects: UIButton!
     @IBOutlet var btnWhatToKnow: UIButton!
     @IBOutlet var underLine: UIView!
-    
+    @IBOutlet weak var totalDoseLabelUnit: UILabel!
+
     @IBOutlet var lbl_Details: UILabel!
     
     @IBOutlet var viewCard1: CardView!
@@ -88,7 +92,17 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         interfaceConfig()
         SwitchTabs()
         
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //MARK: Play the lottie animation for the arrow concentrationView. 
+        arrowAnimation.setAnimation(named: "animateDots")
+        arrowAnimation.play()
+        arrowAnimation.loopAnimation = true
+        
+        
+        //redDotAnimate in the infusion View
+        redDotAnimate.setAnimation(named: "redDotAnimate")
+        redDotAnimate.play()
+        redDotAnimate.loopAnimation = true
     }
     
    
@@ -231,7 +245,8 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         
         lbl_Title.text = Drip.object(forKey: "maintitle") as? String
         lbl_SubTitle.text = Drip.object(forKey: "BrandName") as? String
-        
+        lblUnitTotalDose.text = Drip.object(forKey: "doseLabelUnit") as? String
+
         let minValue = Drip.object(forKey: "min") as! String
         let maxValue = Drip.object(forKey: "max") as! String
         let unit = Drip.object(forKey: "unit") as! String
@@ -353,6 +368,7 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         let IvBag = Float(txtIvBag.text!)!
         let Dose = Float(txtDose.text!)!
         
+        lblUnitTotalDose.text = "mg"
 
         
         
@@ -398,12 +414,14 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
         }
         else if unit == "g/hr" {
             
-            let yields = totalDose/IvBag
+            let yields = totalDose/IvBag * 1000
             
             lblYields.text = String(format:"%.1f", yields)
             
             lblUnitYields.text = "mg/mL"
             
+            lblUnitTotalDose.text = "grams"
+
             let infusion = (Dose/yields)
             
             txtInfusionRate.text = String(format:"%.2f", infusion)
