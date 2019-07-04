@@ -422,9 +422,9 @@ class CriticalDrips: UIViewController, UITextFieldDelegate {
             
             lblUnitTotalDose.text = "grams"
 
-            let infusion = (Dose/yields)
+            let infusion = (Dose/yields) * 1000
             
-            txtInfusionRate.text = String(format:"%.2f", infusion)
+            txtInfusionRate.text = String(format:"%.1f", infusion)
         }
         else if unit == "units/min" {
             
