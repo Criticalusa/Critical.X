@@ -48,7 +48,7 @@ class O2TankCalculator: UIViewController {
         
         
         //Add items to the segmented Control // Takes the button and makes it into a circle
-        segmento2?.items = ["D", "E", "G", "H/K", "M", "EC 135 1"]
+        segmento2?.items = ["D", "E", "G", "H/K", "M", "EC 135 1, Bell 206"]
         
     }
     
